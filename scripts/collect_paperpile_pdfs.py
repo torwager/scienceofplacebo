@@ -8,7 +8,7 @@ sys.path.insert(0, ".")
 from pipeline import db, config
 
 PP = Path.home() / "Library/CloudStorage/GoogleDrive-tor.d.wager@dartmouth.edu/My Drive/Paperpile"
-DEST = Path.home() / "Documents/scienceofplacebo-private/pdfs"
+DEST = Path("/Users/f003vz1/Dartmouth College Dropbox/Tor Wager/A12_Computational_dev_projects/scienceofplacebo-private/pdfs")
 KW = re.compile(r"placebo|nocebo|expectan|expectation|open[- ]label|sham|conditioning|suggestion|hypnosis|hypnotic|belief|mindset|context effect|treatment context", re.I)
 PAT = re.compile(r"^(?P<auth>.+?)\s+(?P<year>\d{4}[a-z]?)\s+-\s+(?P<title>.+?)(?:\s+\((?P<dup>\d+)\))?\.pdf$", re.I)
 
