@@ -15,9 +15,10 @@
   <div class="page-head">
     <p class="eyebrow">Database</p>
     <h1>Placebo research database</h1>
-    <p>Full-text search over titles, abstracts and assigned keywords. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND.</p>
+    <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND.</p>
   </div>
-  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords — e.g. naloxone conditioning, open-label placebo IBS, nocebo side effects" autocomplete="off" aria-label="Search"><button class="btn primary" id="go">Search</button></div>
+  <div class="stat-row" id="stats"></div>
+  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. naloxone conditioning, open-label placebo IBS" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Benedetti F" autocomplete="off" aria-label="Author" style="flex:0 1 260px"><button class="btn primary" id="go">Search</button></div>
   <div class="layout">
     <aside class="filters" id="filters" aria-label="Filter by keyword"></aside>
     <section>
@@ -46,8 +47,13 @@
   const { state } = await SOP.loadCore();
   const PAGE = 25;
   const { filters, params } = SOP.filtersFromQuery();
-  const els = Object.fromEntries(["q", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "showAdjacent", "results", "pager"].map(id => [id, document.getElementById(id)]));
+  document.getElementById("stats").innerHTML = `<div class="stat"><b class="tnum">${state.stats.n_core.toLocaleString()}</b><span>papers in the database</span></div>
+    <div class="stat"><b class="tnum">${state.stats.n_adjacent.toLocaleString()}</b><span>adjacent papers</span></div>
+    <div class="stat"><b class="tnum">${state.stats.n_screened.toLocaleString()}</b><span>candidates screened</span></div>
+    <div class="stat"><b>${SOP.fmtDate(state.stats.updated)}</b><span>last search</span></div>`;
+  const els = Object.fromEntries(["q", "qa", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "showAdjacent", "results", "pager"].map(id => [id, document.getElementById(id)]));
   els.q.value = params.get("q") || "";
+  els.qa.value = params.get("author") || "";
   els.sort.value = params.get("sort") || (els.q.value ? "rel" : "new");
   els.showAdjacent.checked = params.get("adj") === "1";
   const years = state.stats.years;
@@ -80,7 +86,9 @@
       const ms = await buildIndex();
       hits = new Map(ms.search(q).map(h => [h.id, h.score]));
     }
-    let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)));
+    const qa = els.qa.value.trim().toLowerCase();
+    const authorHit = r => !qa || (r.au || []).some(a => a.toLowerCase().includes(qa));
+    let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)) && authorHit(r));
     const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
     pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
     SOP.renderFilters(els.filters, pool, filters, () => { page = 1; run(); });
@@ -92,10 +100,10 @@
     else shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
     const pages = Math.max(1, Math.ceil(shown.length / PAGE));
     page = Math.min(Math.max(1, page), pages);
-    els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "");
+    els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "") + (qa ? ` by ${els.qa.value.trim()}` : "");
     els.active.innerHTML = SOP.activeChips(filters);
-    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q;
-    SOP.filtersToQuery(filters, { q, sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa;
+    SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
     els.results.innerHTML = slice.length ? slice.map(r => SOP.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
     els.pager.innerHTML = pages > 1 ? `<button class="btn" id="prev" ${page <= 1 ? "disabled" : ""}>‹ Prev</button><span class="small muted tnum">page ${page} of ${pages}</span><button class="btn" id="next" ${page >= pages ? "disabled" : ""}>Next ›</button>` : "";
@@ -105,9 +113,10 @@
   }
   els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "new"; run(); };
   els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
+  els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
   els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = () => { page = 1; run(); };
   els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
-  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; page = 1; run(); };
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; page = 1; run(); };
   SOP.bindCardChips(els.results, filters, () => { page = 1; run(); });
   run();
   if (!els.q.value) buildIndex(); // warm the index in the background

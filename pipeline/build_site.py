@@ -32,7 +32,7 @@ def derive_kind(tags):
 
 def slim(rec):
     cls = rec.get("classification") or {}
-    tags = derive_kind(dict(cls.get("tags") or {}))
+    tags = dict(cls.get("tags") or {})
     authors = rec.get("authors") or []
     first = authors[0] if authors else ""
     if isinstance(first, dict):
@@ -57,6 +57,7 @@ def slim(rec):
         "added": rec.get("date_added") or "",
         "tags": {k: (v if isinstance(v, list) else [v]) for k, v in tags.items() if v and v not in ("not_applicable", ["not_applicable"], "none_reported", ["none_reported"])},
         "kw": (cls.get("free_keywords") or [])[:8],
+        "au": [a if isinstance(a, str) else (a.get("family", "") + " " + "".join(w[0] for w in (a.get("given") or "").split())).strip() for a in authors][:40],
     }
 
 
@@ -90,8 +91,9 @@ def bibliometrics(visible, index):
         for ax, vals in tags.items():
             for v in vals:
                 tag_counts[ax][v] += 1
-        if tags.get("kind"):
-            kind_year[y][tags["kind"][0]] += 1
+        kind = KIND_OF.get((tags.get("article_type") or [None])[0])
+        if kind:
+            kind_year[y][kind] += 1
         for f in tags.get("study_focus", []):
             focus_year[y][f] += 1
         for m in tags.get("outcome_measures", []):
@@ -148,7 +150,7 @@ def researcher_graph(visible, index, min_papers=8):
             papers_of[a].append(s)
     nodes = [a for a, ps in papers_of.items() if len(ps) >= min_papers]
     nodes.sort(key=lambda a: -len(papers_of[a]))
-    nodes = nodes[:400]
+    nodes = nodes[:700]
     idx = {a: i for i, a in enumerate(nodes)}
     co = Counter(); shared = defaultdict(list)
     for r, s in zip(visible, index):

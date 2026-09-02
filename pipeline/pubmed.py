@@ -111,11 +111,16 @@ def parse_records(xml_bytes):
             elif coll:
                 authors.append(coll)
         doi = pmcid = None
-        for aid in art.findall(".//ArticleIdList/ArticleId"):
+        # Only the article's own ids: PubmedData/ArticleIdList (NOT the ArticleIdLists inside the reference list)
+        for aid in art.findall("./PubmedData/ArticleIdList/ArticleId"):
             if aid.get("IdType") == "doi" and aid.text:
                 doi = aid.text.strip().lower()
-            if aid.get("IdType") == "pmc":
-                pmcid = aid.text
+            if aid.get("IdType") == "pmc" and aid.text:
+                pmcid = aid.text.strip()
+        if not doi:
+            for el in art.findall(".//Article/ELocationID"):
+                if el.get("EIdType") == "doi" and el.text:
+                    doi = el.text.strip().lower()
         date = _date_from(art)
         recs.append({
             "pmid": pmid,

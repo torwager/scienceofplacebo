@@ -11,7 +11,7 @@
 <style>
   .net-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1rem; align-items: start; }
   @media (max-width: 900px) { .net-wrap { grid-template-columns: 1fr; } }
-  .net { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; height: min(72vh, 760px); box-shadow: var(--shadow); }
+  .net { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; height: min(82vh, 900px); box-shadow: var(--shadow); }
   .net svg { width: 100%; height: 100%; display: block; cursor: grab; }
   .net svg:active { cursor: grabbing; }
   .net .link { stroke: var(--line-2); stroke-opacity: .7; }
@@ -21,6 +21,9 @@
   .net .node.hi circle { fill: var(--amber-deep); stroke: var(--ink); }
   .net .node.dim { opacity: .25; }
   .net .link.dim { stroke-opacity: .08; }
+  .net .node text.minor { display: none; }
+  .net.zoomed .node text.minor, .net .node.hi text.minor, .net .node.nb text.minor { display: block; }
+  .net .link.w1 { stroke-opacity: .25; }
   .net .node text { font-size: 11px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
   .toolbar { position: absolute; top: .7rem; left: .7rem; display: flex; gap: .4rem; flex-wrap: wrap; z-index: 2; }
   .toolbar .btn { font-size: .8rem; padding: .45em .9em; }
@@ -37,24 +40,25 @@
 <body>
 <div id="site-header"></div>
 <main class="wrap">
-  <div class="page-head">
-    <p class="eyebrow">Researcher network</p>
-    <h1>Who works with whom, and on what</h1>
-    <p>Researchers with at least <span id="minp">8</span> papers in the database. Toggle between <b>co-authorship</b> (a link means the two have published together; thicker means more papers) and <b>similarity</b> (a link means the two study similar things, judged from the keyword tags and free keywords of their papers). Drag nodes, scroll to zoom, hover or click a node or link for details.</p>
-  </div>
+  <div class="page-head" style="margin-bottom:.8rem"><p class="eyebrow">Researcher network</p></div>
   <div class="net-wrap">
     <div class="net" id="net">
       <div class="toolbar">
         <button class="btn on" id="mode-co">Co-authorship</button>
         <button class="btn" id="mode-sim">Similarity</button>
         <button class="btn" id="reset">Reset view</button>
+        <input id="find" type="search" list="names" placeholder="Find an author…" aria-label="Find an author" autocomplete="off" style="font:inherit;font-size:.8rem;padding:.45em .8em;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);width:180px">
+        <datalist id="names"></datalist>
       </div>
       <svg id="svg" role="img" aria-label="Force-directed graph of placebo researchers"></svg>
       <div class="legend" id="legend">Node size = papers in the database</div>
     </div>
     <aside class="panel" id="panel"><h3>Hover a researcher</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin it.</p></aside>
   </div>
-  <p class="small muted" style="margin-top:1rem">Names are PubMed author strings (surname plus initials), so people who share a name are merged and one person with variable initials may be split. The threshold and the graph are recomputed on every build as the database grows.</p>
+  <div class="prose" style="margin-top:1.2rem">
+    <p>Researchers with at least <span id="minp">8</span> papers in the database. Toggle between <b>co-authorship</b> (a link means the two have published together; thicker means more shared papers) and <b>similarity</b> (a link means the two study similar things, judged from the keyword tags and free keywords of their papers). Drag nodes, scroll to zoom, hover or click a node or link for details, or type a name in the search box to highlight an author.</p>
+  </div>
+  <p class="small muted" style="margin-top:.6rem">Names are PubMed author strings (surname plus initials), so people who share a name are merged and one person with variable initials may be split. The threshold and the graph are recomputed on every build as the database grows.</p>
 </main>
 <div id="site-footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
@@ -72,13 +76,13 @@
   let W = box.clientWidth, H = box.clientHeight;
   const g = svg.append("g");
   const linkLayer = g.append("g"), nodeLayer = g.append("g");
-  const zoom = d3.zoom().scaleExtent([0.3, 5]).on("zoom", e => g.attr("transform", e.transform));
+  const zoom = d3.zoom().scaleExtent([0.3, 6]).on("zoom", e => { g.attr("transform", e.transform); box.classList.toggle("zoomed", e.transform.k > 1.7); });
   svg.call(zoom);
-  const nodes = G.nodes.map(n => ({ ...n }));
+  const nodes = G.nodes.map((n, i) => ({ ...n, rank: i }));
   const byId = new Map(nodes.map(n => [n.id, n]));
-  const r = d3.scaleSqrt().domain([G.min_papers, d3.max(nodes, n => n.n) || 10]).range([5, 22]);
+  const r = d3.scaleSqrt().domain([G.min_papers, d3.max(nodes, n => n.n) || 10]).range([3.5, 20]);
   let mode = "coauthor", pinned = null;
-  const sim = d3.forceSimulation(nodes).force("charge", d3.forceManyBody().strength(-420)).force("center", d3.forceCenter(W / 2, H / 2)).force("collide", d3.forceCollide(n => r(n.n) + 16)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03));
+  const sim = d3.forceSimulation(nodes).force("charge", d3.forceManyBody().strength(-260).distanceMax(420)).force("center", d3.forceCenter(W / 2, H / 2)).force("collide", d3.forceCollide(n => r(n.n) + 6)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03));
 
   function edges() {
     const raw = mode === "coauthor" ? G.coauthor : G.similarity;
@@ -90,13 +94,13 @@
     link = link.data(es, d => d.source.id !== undefined ? d.source.id + "-" + d.target.id : d.source + "-" + d.target);
     link.exit().remove();
     link = link.enter().append("line").attr("class", "link").merge(link)
-      .attr("class", "link" + (mode === "similarity" ? " sim" : ""))
-      .attr("stroke-width", d => mode === "coauthor" ? Math.min(8, 1 + d.w * 1.2) : 1 + d.w * 4)
+      .attr("class", d => "link" + (mode === "similarity" ? " sim" : "") + (mode === "coauthor" && d.w === 1 ? " w1" : ""))
+      .attr("stroke-width", d => mode === "coauthor" ? Math.min(7, .6 + d.w * 1.1) : .8 + d.w * 3)
       .on("mouseenter", (ev, d) => { hi(null, d); showLink(d); }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } else hi(pinned, null); });
     node = node.data(nodes, d => d.id);
     const enter = node.enter().append("g").attr("class", "node").call(d3.drag().on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; }).on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
     enter.append("circle").attr("r", d => r(d.n));
-    enter.append("text").attr("dy", d => r(d.n) + 12).attr("text-anchor", "middle").text(d => d.name);
+    enter.append("text").attr("dy", d => r(d.n) + 12).attr("text-anchor", "middle").text(d => d.name).attr("class", d => d.rank < 60 ? "lbl major" : "lbl minor");
     enter.on("mouseenter", (ev, d) => { if (!pinned) { hi(d, null); showNode(d); } }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } })
       .on("click", (ev, d) => { ev.stopPropagation(); pinned = pinned === d ? null : d; hi(pinned, null); if (pinned) showNode(d); else idle(); });
     node = enter.merge(node);
@@ -108,14 +112,14 @@
     node.attr("transform", d => `translate(${d.x},${d.y})`);
   });
   function hi(n, l) {
-    if (!n && !l) { node.classed("hi", false).classed("dim", false); link.classed("hi", false).classed("dim", false); return; }
+    if (!n && !l) { node.classed("hi", false).classed("nb", false).classed("dim", false); link.classed("hi", false).classed("dim", false); return; }
     if (n) {
       const nb = new Set([n.id]);
       link.each(d => { if (d.source.id === n.id) nb.add(d.target.id); if (d.target.id === n.id) nb.add(d.source.id); });
-      node.classed("hi", d => d.id === n.id).classed("dim", d => !nb.has(d.id));
+      node.classed("hi", d => d.id === n.id).classed("nb", d => nb.has(d.id) && d.id !== n.id).classed("dim", d => !nb.has(d.id));
       link.classed("hi", d => d.source.id === n.id || d.target.id === n.id).classed("dim", d => !(d.source.id === n.id || d.target.id === n.id));
     } else {
-      node.classed("dim", d => d.id !== l.source.id && d.id !== l.target.id).classed("hi", d => d.id === l.source.id || d.id === l.target.id);
+      node.classed("nb", false).classed("dim", d => d.id !== l.source.id && d.id !== l.target.id).classed("hi", d => d.id === l.source.id || d.id === l.target.id);
       link.classed("hi", d => d === l).classed("dim", d => d !== l);
     }
   }
@@ -125,7 +129,7 @@
     panel.innerHTML = `<h3>${esc(d.name)}</h3><div class="kv">${d.n} papers in the database${d.y0 ? ` · ${d.y0}–${d.y1}` : ""} · ${deg} ${mode === "coauthor" ? "co-authors" : "similar researchers"} shown</div>
       <div class="chips">${d.tags.map(([ax, v, n]) => chip(ax, v)).join("")}</div>
       <div class="small muted">Recent papers</div><ul>${d.papers.map(p => `<li><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>
-      <p class="small"><a href="database.html?q=${encodeURIComponent(d.name.split(" ")[0])}">All papers by this surname →</a></p>`;
+      <p class="small"><a href="database.html?author=${encodeURIComponent(d.name)}">All papers by this author →</a></p>`;
   }
   function showLink(l) {
     const a = byId.get(l.source.id ?? l.source), b = byId.get(l.target.id ?? l.target);
@@ -136,6 +140,18 @@
     }
   }
   function idle() { panel.innerHTML = `<h3>Hover a researcher</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin it.</p>`; }
+  // author search: highlight + pin the best match
+  const findEl = document.getElementById("find");
+  document.getElementById("names").innerHTML = nodes.map(n => `<option value="${esc(n.name)}">`).join("");
+  findEl.addEventListener("input", () => {
+    const q = findEl.value.trim().toLowerCase();
+    if (!q) { pinned = null; hi(null, null); idle(); return; }
+    const m = nodes.find(n => n.name.toLowerCase() === q) || nodes.find(n => n.name.toLowerCase().startsWith(q)) || nodes.find(n => n.name.toLowerCase().includes(q));
+    if (!m) { node.classed("dim", true).classed("hi", false); link.classed("dim", true); panel.innerHTML = `<h3>No match</h3><p class="muted small">No author with at least ${G.min_papers} papers matches “${esc(findEl.value)}”. Try the <a href="database.html?author=${encodeURIComponent(findEl.value.trim())}">database author search</a>.</p>`; return; }
+    pinned = m; hi(m, null); showNode(m);
+    const t = d3.zoomTransform(svg.node());
+    if (m.x != null) svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - m.x * Math.max(1, t.k), H / 2 - m.y * Math.max(1, t.k)).scale(Math.max(1, t.k)));
+  });
   document.getElementById("mode-co").onclick = () => setMode("coauthor");
   document.getElementById("mode-sim").onclick = () => setMode("similarity");
   function setMode(m) { mode = m; document.getElementById("mode-co").classList.toggle("on", m === "coauthor"); document.getElementById("mode-sim").classList.toggle("on", m === "similarity"); document.getElementById("legend").textContent = m === "coauthor" ? "Node size = papers in the database · link width = co-authored papers" : "Node size = papers in the database · link = similar keyword profile"; pinned = null; render(); hi(null, null); idle(); }

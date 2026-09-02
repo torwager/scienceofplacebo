@@ -44,8 +44,8 @@ window.SOP = (function () {
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
 
   // axes shown as chips on cards, in display order
-  const CARD_AXES = ["study_focus", "kind", "design", "population", "condition_domain", "outcome_measures", "effects", "moderators"];
-  const FILTER_AXES = ["study_focus", "kind", "article_type", "design", "population", "condition_domain", "outcome_measures", "effects", "mechanisms", "moderators", "intervention_type", "species"];
+  const CARD_AXES = ["study_focus", "article_type", "design", "population", "condition_domain", "outcome_measures", "effects", "moderators"];
+  const FILTER_AXES = ["study_focus", "article_type", "design", "population", "condition_domain", "outcome_measures", "effects", "mechanisms", "moderators", "intervention_type", "species"];
 
   function chipsFor(rec, onClick, axes = CARD_AXES, max = 12) {
     const out = [];

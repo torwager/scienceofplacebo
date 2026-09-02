@@ -72,7 +72,8 @@
   const tip = document.getElementById("tip");
   function showTip(e, html) { tip.innerHTML = html; tip.style.opacity = 1; const x = Math.min(e.clientX + 14, window.innerWidth - 280), y = e.clientY + 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
   function hideTip() { tip.style.opacity = 0; }
-  const lab = (ax, v) => SOP.label(ax, v);
+  const KIND = { empirical: "Empirical", review: "Review", theory: "Theory / commentary" };
+  const lab = (ax, v) => ax === "kind" ? (KIND[v] || v) : SOP.label(ax, v);
   const thisYear = new Date().getFullYear();
   document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
 
@@ -156,7 +157,7 @@
   const tc = B.tag_counts;
   const html = [
     card("Papers per year", "Included papers by publication year. The current year is shown lighter because it is incomplete.", barsByYear(yrs, vals, { aria: "Papers per year" }) + table(yrs.map((y, i) => [y, vals[i]]), ["Year", "Papers"]), true),
-    card("Empirical, review or theory", "Share of papers each year by kind of article.", stackedShare(B.kind_by_year, "kind", { k: 3, aria: "Kind of article by year" })),
+    card("Empirical, review or theory", "Share of papers each year, grouped from the article-type tag.", stackedShare(B.kind_by_year, "kind", { k: 3, aria: "Kind of article by year" })),
     card("Study focus", "Share of papers each year by what was studied: effects (context contrasts) versus responses (change on an inert treatment), placebo versus nocebo.", stackedShare(B.focus_by_year, "study_focus", { k: 5, aria: "Study focus by year" })),
     card("Outcome measures over time", "Share of papers using each class of outcome measure (papers can use several).", stackedShare(B.modality_by_year, "outcome_measures", { k: 7, aria: "Outcome measures by year" })),
     card("Designs over time", "Share of papers by study design (papers can use several).", stackedShare(B.design_by_year, "design", { k: 7, aria: "Designs by year" })),

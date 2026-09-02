@@ -18,8 +18,8 @@
   .curtain-media { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; z-index: 0; background: linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg-3) 100%); }
   .hero-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 2rem; padding: 72px var(--pad) 0; max-width: var(--max); margin: 0 auto; }
   @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; align-content: center; gap: 1.2rem; padding-top: 88px; } }
-  .hero-copy h1 { font-size: clamp(2.6rem, 5.6vw, 4.4rem); margin-bottom: .3em; max-width: 11em; }
-  .hero-copy .lede { font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: var(--ink-2); max-width: 32em; margin: 0 0 1.5rem; }
+  .hero-copy h1 { font-size: clamp(2.4rem, 4.8vw, 3.8rem); margin-bottom: .35em; max-width: 12em; }
+  .hero-copy .lede { font-size: clamp(.98rem, 1.25vw, 1.1rem); color: var(--ink-2); max-width: 38em; margin: 0 0 1.4rem; line-height: 1.55; }
   .hero-pill { display: inline-flex; align-items: center; gap: .6em; padding: .45em 1em .45em .6em; border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); border: 1px solid var(--line); font-size: .88rem; font-weight: 500; margin-bottom: 1.3rem; backdrop-filter: blur(6px); }
   .hero-pill .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 4px rgba(233,185,73,.25); }
   .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
@@ -78,7 +78,6 @@
       <a href="resources.html">Resources</a>
       <a href="discuss.html">Discussion</a>
       <a href="about.html">About</a>
-      <a class="cta" href="database.html">Search the database</a>
     </nav>
   </div>
 </header>
@@ -88,17 +87,16 @@
   <div class="curtain-media" id="hero">
     <div class="hero-grid">
       <div class="hero-copy">
-        <div class="hero-pill"><span class="dot"></span> Updated daily · <span id="hero-count">thousands of</span> tagged papers</div>
-        <h1>The science of placebo, in one place.</h1>
-        <p class="lede">A living bibliography of peer-reviewed research on placebo and nocebo effects and responses, found by a daily literature search, screened against explicit criteria, tagged by design, population, outcome and findings, and linked to the publisher.</p>
+                <h1>The science of placebo effects</h1>
+        <p class="lede">Placebo effects are the causal effects of the treatment context, including cues, social context, verbal suggestions, and learned associations, on the trajectory of health and wellbeing. This site integrates scientific research on placebo effects as a service to the scientific community and the public. New papers from the peer-reviewed literature are integrated each day, and a searchable database provides a way to browse past literature from the 1940s to today. See the menu at the top and the links below for this and more, including a graph of researchers, upcoming events, and other scientific resources.</p>
         <div class="hero-actions">
-          <a class="btn primary" href="feed.html">See this week's papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn primary" href="feed.html">New papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn-ghost" href="database.html">Search the database</a>
         </div>
       </div>
       <div class="pill-stage">
         <div class="pill" id="pill" aria-label="A placebo capsule. Move your cursor over it to reveal the picture it hides." role="img">
-          <img src="assets/scene.svg" alt="" width="1200" height="520" draggable="false">
+          <img src="assets/scene.jpg" onerror="if(!this.dataset.fb){this.dataset.fb=1;this.src='assets/scene.svg'}" alt="" width="1200" height="520" draggable="false">
           <canvas id="veil" aria-hidden="true"></canvas>
         </div>
         <div class="pill-shadow" aria-hidden="true"></div>
@@ -109,24 +107,9 @@
   </div>
 
   <div class="curtain-body" id="start">
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="rv"><p class="eyebrow">What this is</p><h2>Every study of placebo and nocebo effects, found, screened and tagged as it appears.</h2></div>
-          <p class="rv rv-d1">The placebo effect is the causal effect of the treatment context, the beliefs, cues and relationships that surround a treatment, on health. This site tracks the research that measures it: what was manipulated, in whom, with what outcome, and what was found.</p>
-        </div>
-        <dl class="facts rv rv-d1" id="facts">
-          <div><dt>Papers</dt><dd id="f-papers">…</dd></div>
-          <div><dt>Screened</dt><dd id="f-screened">…</dd></div>
-          <div><dt>Sources</dt><dd>PubMed · Europe PMC · OpenAlex</dd></div>
-          <div><dt>Last search</dt><dd id="f-updated">…</dd></div>
-        </dl>
-      </div>
-    </section>
-
     <section class="section-tight">
       <div class="wrap">
-        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the hub</h2></div></div>
+        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the site</h2></div></div>
         <div class="tiles">
           <a class="tile glow rv" href="feed.html"><div><div class="ic">✦</div><h3>New papers</h3><p>This week's placebo and nocebo studies, with color-coded keyword chips you can filter on.</p></div><span class="go">Open the feed <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
           <a class="tile glow rv rv-d1" href="database.html"><div><div class="ic">⌕</div><h3>Database</h3><p>Search titles, abstracts and tags across the whole literature, from the 1940s to this morning.</p></div><span class="go">Search <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
@@ -144,7 +127,7 @@
       <div class="wrap">
         <div class="section-head">
           <div class="rv"><p class="eyebrow">Latest</p><h2>Just added</h2></div>
-          <p class="rv rv-d1">The three most recent core studies. <a href="feed.html">See the full feed</a> or subscribe by <a href="feed.xml">RSS</a>.</p>
+          <p class="rv rv-d1">The three most recently added studies. <a href="feed.html">See all new papers</a> or subscribe by <a href="feed.xml">RSS</a>.</p>
         </div>
         <div class="latest rv rv-d1" id="latest"><div class="spinner">Loading…</div></div>
       </div>
@@ -154,8 +137,8 @@
       <div class="wrap">
         <div class="rv">
           <p class="eyebrow">Standing on JIPS</p>
-          <h2>Inspired by the Journal of Interdisciplinary Placebo Studies database</h2>
-          <p>From 2016 to 2025, Katja Weimer, Paul Enck and colleagues hand-curated a monthly list of new placebo and nocebo publications and a library of more than 5,000 papers. Science of Placebo picks up that work with an automated daily search, seeded with their lists.</p>
+          <h2>Building on the Journal of Interdisciplinary Placebo Studies database</h2>
+          <p>From 2016 to 2025, Katja Weimer, Paul Enck and colleagues hand-curated a monthly list of new placebo and nocebo publications and a library of more than 5,000 papers. Science of Placebo continues that work with an automated daily search, and its historical collection was seeded with their lists.</p>
           <p><a class="btn primary" href="https://jips.online/" target="_blank" rel="noopener">Visit jips.online ↗</a> <a class="btn btn-ghost" href="about.html" style="color:#fff">How this site works</a></p>
         </div>
         <div class="rv rv-d1"><span class="pill-logo" aria-hidden="true"></span></div>
@@ -179,11 +162,6 @@
 <script>
 (async function () {
   const { state } = await SOP.loadCore();
-  const n = state.stats.n_core;
-  document.getElementById("hero-count").textContent = n.toLocaleString();
-  document.getElementById("f-papers").textContent = n.toLocaleString();
-  document.getElementById("f-screened").textContent = state.stats.n_screened.toLocaleString();
-  document.getElementById("f-updated").textContent = SOP.fmtDate(state.stats.updated);
   const core = state.index.filter(r => r.sc === "core").sort((a, b) => (b.added + b.d).localeCompare(a.added + a.d)).slice(0, 3);
   document.getElementById("latest").innerHTML = core.map(r => SOP.paperCard(r)).join("");
 })().catch(e => console.error("landing:", e));

@@ -88,15 +88,6 @@
   pill.addEventListener("pointerdown", e => reveal(e.clientX, e.clientY));
   pill.addEventListener("touchmove", e => { const t = e.touches[0]; if (t) reveal(t.clientX, t.clientY); }, { passive: true });
 
-  // A gentle ambient peek before the first interaction, so the hero hints at what it hides.
-  if (!reduce) {
-    setTimeout(() => {
-      if (idle) {
-        const r = canvas.getBoundingClientRect();
-        reveal(r.left + W * 0.62, r.top + H * 0.5);
-      }
-    }, 2200);
-  }
   let rt; window.addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(resize, 120); });
   const mq = window.matchMedia("(prefers-color-scheme: dark)"); if (mq.addEventListener) mq.addEventListener("change", () => draw(performance.now()));
   resize();
