@@ -7,6 +7,8 @@
       <a href="feed.html">New papers</a>
       <a href="database.html">Database</a>
       <a href="bibliometrics.html">Bibliometrics</a>
+      <a href="network.html">Researchers</a>
+      <a href="news.html">In the news</a>
       <a href="events.html">Events</a>
       <a href="resources.html">Resources</a>
       <a href="discuss.html">Discussion</a>
@@ -14,7 +16,7 @@
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
     <div><strong>Science of Placebo</strong>A curated, continuously updated bibliography of placebo and nocebo research, run by the Cognitive and Affective Neuroscience Lab at Dartmouth. Inspired by the <a href="https://jips.online/" target="_blank" rel="noopener">JIPS placebo database</a>. <span id="foot-updated"></span></div>
-    <div><strong>Explore</strong><ul><li><a href="feed.html">New papers</a></li><li><a href="database.html">Database</a></li><li><a href="bibliometrics.html">Bibliometrics</a></li><li><a href="feed.xml">RSS feed</a></li></ul></div>
+    <div><strong>Explore</strong><ul><li><a href="feed.html">New papers</a></li><li><a href="database.html">Database</a></li><li><a href="bibliometrics.html">Bibliometrics</a></li><li><a href="network.html">Researcher network</a></li><li><a href="news.html">In the news</a></li><li><a href="feed.xml">RSS feed</a></li></ul></div>
     <div><strong>Community</strong><ul><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="https://github.com/torwager/scienceofplacebo">Source &amp; data on GitHub</a></li></ul></div>
   </div></footer>`;
   const h = document.getElementById("site-header"); if (h) h.outerHTML = header;

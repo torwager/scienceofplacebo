@@ -136,6 +136,71 @@ def bibliometrics(visible, index):
     }
 
 
+def researcher_graph(visible, index, min_papers=8):
+    """Nodes: authors with >= min_papers papers. Edges: co-authorship counts, and tag-profile cosine similarity (top-5 per author)."""
+    import math
+    from collections import Counter, defaultdict
+    def name(a):
+        return a if isinstance(a, str) else (a.get("family", "") + " " + "".join(w[0] for w in (a.get("given") or "").split())).strip()
+    papers_of = defaultdict(list)
+    for r, s in zip(visible, index):
+        for a in {name(a) for a in (r.get("authors") or []) if name(a)}:
+            papers_of[a].append(s)
+    nodes = [a for a, ps in papers_of.items() if len(ps) >= min_papers]
+    nodes.sort(key=lambda a: -len(papers_of[a]))
+    nodes = nodes[:400]
+    idx = {a: i for i, a in enumerate(nodes)}
+    co = Counter(); shared = defaultdict(list)
+    for r, s in zip(visible, index):
+        au = sorted({name(a) for a in (r.get("authors") or []) if name(a) in idx})
+        for i in range(len(au)):
+            for j in range(i + 1, len(au)):
+                co[(au[i], au[j])] += 1
+                if len(shared[(au[i], au[j])]) < 6:
+                    shared[(au[i], au[j])].append({"id": s["id"], "t": s["t"], "y": s["y"]})
+    # tag profiles
+    profiles = {}
+    for a in nodes:
+        c = Counter()
+        for s in papers_of[a]:
+            for ax, vals in s["tags"].items():
+                if ax in ("kind", "species", "age_group"):
+                    continue
+                for v in vals:
+                    c[ax + ":" + v] += 1
+            for k in s.get("kw", []):
+                c["kw:" + k.lower()] += 1
+        n = math.sqrt(sum(v * v for v in c.values())) or 1
+        profiles[a] = {k: v / n for k, v in c.items()}
+    sim_edges = []
+    for i, a in enumerate(nodes):
+        pa = profiles[a]
+        sims = []
+        for b in nodes[i + 1:]:
+            pb = profiles[b]
+            dot = sum(v * pb.get(k, 0) for k, v in pa.items() if k in pb)
+            if dot > 0.25:
+                sims.append((dot, b))
+        sims.sort(reverse=True)
+        for dot, b in sims[:6]:
+            sim_edges.append({"s": idx[a], "t": idx[b], "w": round(dot, 3)})
+    def top_tags(a):
+        c = Counter()
+        for s in papers_of[a]:
+            for ax in ("condition_domain", "mechanisms", "population", "outcome_measures", "design"):
+                for v in s["tags"].get(ax, []):
+                    c[(ax, v)] += 1
+        return [[ax, v, n] for (ax, v), n in c.most_common(8)]
+    out_nodes = []
+    for a in nodes:
+        ps = papers_of[a]
+        ys = [s["y"] for s in ps if s["y"]]
+        out_nodes.append({"id": idx[a], "name": a, "n": len(ps), "y0": min(ys) if ys else None, "y1": max(ys) if ys else None,
+                          "tags": top_tags(a), "papers": [{"id": s["id"], "t": s["t"], "y": s["y"]} for s in sorted(ps, key=lambda s: -(s["y"] or 0))[:5]]})
+    co_edges = [{"s": idx[a], "t": idx[b], "w": n, "papers": shared[(a, b)]} for (a, b), n in co.items()]
+    return {"min_papers": min_papers, "nodes": out_nodes, "coauthor": co_edges, "similarity": sim_edges}
+
+
 def main():
     papers = db.load_all()
     site = config.SITE_DATA
@@ -175,6 +240,11 @@ def main():
     }
     json.dump(stats, open(site / "stats.json", "w"), indent=1)
     json.dump(bibliometrics(visible, index), open(site / "bibliometrics.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    json.dump(researcher_graph(visible, index), open(site / "graph.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    for name in ("news.json",):
+        src = config.DATA / name
+        if src.exists():
+            shutil.copy(src, site / name)
     core = [r for r in index if r["sc"] == "core"]
     core_recent = sorted(core, key=lambda r: (r["added"], r["d"]), reverse=True)[:config.FEED_CAP]
     (config.ROOT / "site" / "feed.xml").write_text(rss(core_recent))

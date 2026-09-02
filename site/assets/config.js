@@ -3,11 +3,11 @@
 window.SOP_CONFIG = {
   repo: "torwager/scienceofplacebo",
   giscus: {
-    repoId: "",            // filled by scripts/setup_giscus.py
-    category: "Papers",
-    categoryId: "",
+    repoId: "R_kgDOUMJV2A",
+    category: "General",
+    categoryId: "DIC_kwDOUMJV2M4DEvFY",   // TODO: create a "Papers" category in GitHub Discussions and put its id here
     generalCategory: "General",
-    generalCategoryId: ""
+    generalCategoryId: "DIC_kwDOUMJV2M4DEvFY"
   },
   // Private full-text store (authenticated). Empty until the store is configured.
   privatePdfBase: ""

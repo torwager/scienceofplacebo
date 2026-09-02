@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — in the news</title>
+<meta name="description" content="News stories, podcast episodes and blog posts about placebo and nocebo effects, refreshed every two days.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .news-list { display: grid; gap: .6rem; max-width: 900px; }
+  .news { display: grid; grid-template-columns: 92px 1fr; gap: .2rem 1rem; padding: .8rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); align-items: baseline; }
+  .news .when { font-family: var(--mono); font-size: .76rem; color: var(--muted); }
+  .news .t { font-family: var(--serif); font-size: 1.08rem; line-height: 1.3; }
+  .news .t a { color: var(--ink); text-decoration: none; }
+  .news .t a:hover { color: var(--steel-deep); text-decoration: underline; }
+  .news .src { grid-column: 2; font-size: .82rem; color: var(--muted); display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+  .news .snip { grid-column: 2; font-size: .88rem; color: var(--ink-2); }
+  .badge.podcast { background: var(--nocebo-soft); color: var(--nocebo); }
+  .badge.news { background: var(--steel-soft); color: var(--steel-deep); }
+  .kinds { display: flex; gap: .4rem; flex-wrap: wrap; }
+  .kinds .btn.on { background: var(--amber); border-color: transparent; color: #1a2332; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">In the news</p>
+    <h1>Placebo effects in the news</h1>
+    <p>News stories, podcast episodes and blog posts that discuss placebo and nocebo effects, found every two days by a bot that searches Google News and podcast directories and asks an AI reader to drop items that only mention a placebo comparator. Inclusion is not endorsement; read critically.</p>
+  </div>
+  <div class="filter-top">
+    <div class="kinds"><button class="btn on" data-kind="all">All</button><button class="btn" data-kind="news">News &amp; blogs</button><button class="btn" data-kind="podcast">Podcasts</button></div>
+    <span class="count" id="count" style="margin-left:.6rem"></span>
+    <a class="btn link" id="suggest" href="#" style="margin-left:auto">Suggest a story</a>
+  </div>
+  <div class="news-list" id="list"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  document.getElementById("suggest").href = `https://github.com/${SOP_CONFIG.repo}/issues/new?title=${encodeURIComponent("News suggestion: ")}&body=${encodeURIComponent("Title:\nURL:\nOutlet / podcast:\nDate:\n")}`;
+  const data = await SOP.getJSON("data/news.json");
+  const esc = SOP.esc;
+  let kind = "all";
+  function render() {
+    const items = data.items.filter(i => kind === "all" || i.kind === kind);
+    document.getElementById("count").textContent = `${items.length} items · updated ${data.updated}`;
+    let html = "", last = "";
+    for (const i of items) {
+      const month = (i.date || i.added || "").slice(0, 7);
+      if (month !== last) { html += `<div class="week-head">${SOP.fmtDate(month + "-01")}</div>`; last = month; }
+      html += `<div class="news"><span class="when">${esc(SOP.fmtDate(i.date) || "")}</span><span class="t"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></span>
+        <span class="src"><span class="badge ${i.kind}">${i.kind === "podcast" ? "podcast" : "news"}</span>${esc(i.source || "")}</span>${i.snippet ? `<span class="snip">${esc(i.snippet)}</span>` : ""}</div>`;
+    }
+    document.getElementById("list").innerHTML = html || '<div class="empty">Nothing yet.</div>';
+  }
+  document.querySelectorAll(".kinds .btn").forEach(b => b.onclick = () => { kind = b.dataset.kind; document.querySelectorAll(".kinds .btn").forEach(x => x.classList.toggle("on", x === b)); render(); });
+  render();
+})().catch(e => { document.getElementById("list").innerHTML = `<div class="empty">Could not load news (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

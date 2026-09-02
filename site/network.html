@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — researcher network</title>
+<meta name="description" content="An interactive map of placebo researchers, linked by co-authorship or by similarity of the topics they study.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .net-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1rem; align-items: start; }
+  @media (max-width: 900px) { .net-wrap { grid-template-columns: 1fr; } }
+  .net { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; height: min(72vh, 760px); box-shadow: var(--shadow); }
+  .net svg { width: 100%; height: 100%; display: block; cursor: grab; }
+  .net svg:active { cursor: grabbing; }
+  .net .link { stroke: var(--line-2); stroke-opacity: .7; }
+  .net .link.sim { stroke: var(--steel); stroke-opacity: .35; }
+  .net .link.hi { stroke: var(--amber-deep); stroke-opacity: 1; }
+  .net .node circle { fill: var(--amber); stroke: var(--surface); stroke-width: 1.5px; cursor: pointer; }
+  .net .node.hi circle { fill: var(--amber-deep); stroke: var(--ink); }
+  .net .node.dim { opacity: .25; }
+  .net .link.dim { stroke-opacity: .08; }
+  .net .node text { font-size: 11px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+  .toolbar { position: absolute; top: .7rem; left: .7rem; display: flex; gap: .4rem; flex-wrap: wrap; z-index: 2; }
+  .toolbar .btn { font-size: .8rem; padding: .45em .9em; }
+  .toolbar .btn.on { background: var(--amber); border-color: transparent; color: #1a2332; }
+  .legend { position: absolute; right: .8rem; bottom: .7rem; font-size: .76rem; color: var(--muted); background: color-mix(in srgb, var(--surface) 85%, transparent); padding: .3rem .6rem; border-radius: 8px; }
+  .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem; min-height: 200px; font-size: .9rem; position: sticky; top: 88px; }
+  .panel h3 { margin: 0 0 .2rem; }
+  .panel .kv { color: var(--muted); font-size: .82rem; margin-bottom: .6rem; }
+  .panel ul { padding-left: 1.1rem; margin: .3rem 0; }
+  .panel li { margin: .2rem 0; }
+  .panel .chips { display: flex; flex-wrap: wrap; gap: .25rem; margin: .4rem 0 .6rem; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Researcher network</p>
+    <h1>Who works with whom, and on what</h1>
+    <p>Researchers with at least <span id="minp">8</span> papers in the database. Toggle between <b>co-authorship</b> (a link means the two have published together; thicker means more papers) and <b>similarity</b> (a link means the two study similar things, judged from the keyword tags and free keywords of their papers). Drag nodes, scroll to zoom, hover or click a node or link for details.</p>
+  </div>
+  <div class="net-wrap">
+    <div class="net" id="net">
+      <div class="toolbar">
+        <button class="btn on" id="mode-co">Co-authorship</button>
+        <button class="btn" id="mode-sim">Similarity</button>
+        <button class="btn" id="reset">Reset view</button>
+      </div>
+      <svg id="svg" role="img" aria-label="Force-directed graph of placebo researchers"></svg>
+      <div class="legend" id="legend">Node size = papers in the database</div>
+    </div>
+    <aside class="panel" id="panel"><h3>Hover a researcher</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin it.</p></aside>
+  </div>
+  <p class="small muted" style="margin-top:1rem">Names are PubMed author strings (surname plus initials), so people who share a name are merged and one person with variable initials may be split. The threshold and the graph are recomputed on every build as the database grows.</p>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const G = await SOP.getJSON("data/graph.json");
+  document.getElementById("minp").textContent = G.min_papers;
+  document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
+  const esc = SOP.esc, panel = document.getElementById("panel");
+  const svg = d3.select("#svg"), box = document.getElementById("net");
+  let W = box.clientWidth, H = box.clientHeight;
+  const g = svg.append("g");
+  const linkLayer = g.append("g"), nodeLayer = g.append("g");
+  const zoom = d3.zoom().scaleExtent([0.3, 5]).on("zoom", e => g.attr("transform", e.transform));
+  svg.call(zoom);
+  const nodes = G.nodes.map(n => ({ ...n }));
+  const byId = new Map(nodes.map(n => [n.id, n]));
+  const r = d3.scaleSqrt().domain([G.min_papers, d3.max(nodes, n => n.n) || 10]).range([5, 22]);
+  let mode = "coauthor", pinned = null;
+  const sim = d3.forceSimulation(nodes).force("charge", d3.forceManyBody().strength(-420)).force("center", d3.forceCenter(W / 2, H / 2)).force("collide", d3.forceCollide(n => r(n.n) + 16)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03));
+
+  function edges() {
+    const raw = mode === "coauthor" ? G.coauthor : G.similarity;
+    return raw.map(e => ({ source: e.s, target: e.t, w: e.w, papers: e.papers || null }));
+  }
+  let link = linkLayer.selectAll("line"), node = nodeLayer.selectAll("g");
+  function render() {
+    const es = edges();
+    link = link.data(es, d => d.source.id !== undefined ? d.source.id + "-" + d.target.id : d.source + "-" + d.target);
+    link.exit().remove();
+    link = link.enter().append("line").attr("class", "link").merge(link)
+      .attr("class", "link" + (mode === "similarity" ? " sim" : ""))
+      .attr("stroke-width", d => mode === "coauthor" ? Math.min(8, 1 + d.w * 1.2) : 1 + d.w * 4)
+      .on("mouseenter", (ev, d) => { hi(null, d); showLink(d); }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } else hi(pinned, null); });
+    node = node.data(nodes, d => d.id);
+    const enter = node.enter().append("g").attr("class", "node").call(d3.drag().on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; }).on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    enter.append("circle").attr("r", d => r(d.n));
+    enter.append("text").attr("dy", d => r(d.n) + 12).attr("text-anchor", "middle").text(d => d.name);
+    enter.on("mouseenter", (ev, d) => { if (!pinned) { hi(d, null); showNode(d); } }).on("mouseleave", () => { if (!pinned) { hi(null, null); idle(); } })
+      .on("click", (ev, d) => { ev.stopPropagation(); pinned = pinned === d ? null : d; hi(pinned, null); if (pinned) showNode(d); else idle(); });
+    node = enter.merge(node);
+    sim.force("link", d3.forceLink(es).id(d => d.id).distance(d => mode === "coauthor" ? 130 - Math.min(60, d.w * 8) : 170 - d.w * 90).strength(d => mode === "coauthor" ? Math.min(.9, .15 + d.w * .1) : d.w * .8));
+    sim.alpha(.9).restart();
+  }
+  sim.on("tick", () => {
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+  function hi(n, l) {
+    if (!n && !l) { node.classed("hi", false).classed("dim", false); link.classed("hi", false).classed("dim", false); return; }
+    if (n) {
+      const nb = new Set([n.id]);
+      link.each(d => { if (d.source.id === n.id) nb.add(d.target.id); if (d.target.id === n.id) nb.add(d.source.id); });
+      node.classed("hi", d => d.id === n.id).classed("dim", d => !nb.has(d.id));
+      link.classed("hi", d => d.source.id === n.id || d.target.id === n.id).classed("dim", d => !(d.source.id === n.id || d.target.id === n.id));
+    } else {
+      node.classed("dim", d => d.id !== l.source.id && d.id !== l.target.id).classed("hi", d => d.id === l.source.id || d.id === l.target.id);
+      link.classed("hi", d => d === l).classed("dim", d => d !== l);
+    }
+  }
+  const chip = (ax, v) => `<span class="chip static" style="${SOP.chipColors(ax, v)}">${esc(SOP.label(ax, v))}</span>`;
+  function showNode(d) {
+    const deg = edges().filter(e => e.source.id === d.id || e.target.id === d.id || e.source === d.id || e.target === d.id).length;
+    panel.innerHTML = `<h3>${esc(d.name)}</h3><div class="kv">${d.n} papers in the database${d.y0 ? ` · ${d.y0}–${d.y1}` : ""} · ${deg} ${mode === "coauthor" ? "co-authors" : "similar researchers"} shown</div>
+      <div class="chips">${d.tags.map(([ax, v, n]) => chip(ax, v)).join("")}</div>
+      <div class="small muted">Recent papers</div><ul>${d.papers.map(p => `<li><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>
+      <p class="small"><a href="database.html?q=${encodeURIComponent(d.name.split(" ")[0])}">All papers by this surname →</a></p>`;
+  }
+  function showLink(l) {
+    const a = byId.get(l.source.id ?? l.source), b = byId.get(l.target.id ?? l.target);
+    if (mode === "coauthor") {
+      panel.innerHTML = `<h3>${esc(a.name)} &amp; ${esc(b.name)}</h3><div class="kv">${l.w} co-authored paper${l.w === 1 ? "" : "s"} in the database</div><ul>${(l.papers || []).map(p => `<li><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a> <span class="muted">(${p.y || ""})</span></li>`).join("")}</ul>${l.w > (l.papers || []).length ? `<p class="small muted">and ${l.w - l.papers.length} more</p>` : ""}`;
+    } else {
+      panel.innerHTML = `<h3>${esc(a.name)} ~ ${esc(b.name)}</h3><div class="kv">Topic similarity ${Math.round(l.w * 100)}% (cosine of keyword-tag profiles)</div><div class="small muted">Shared emphases</div><div class="chips">${a.tags.filter(t => b.tags.some(u => u[0] === t[0] && u[1] === t[1])).slice(0, 8).map(([ax, v]) => chip(ax, v)).join("") || '<span class="muted small">none among the top tags</span>'}</div>`;
+    }
+  }
+  function idle() { panel.innerHTML = `<h3>Hover a researcher</h3><p class="muted small">Details about the person or the connection appear here. Click a node to pin it.</p>`; }
+  document.getElementById("mode-co").onclick = () => setMode("coauthor");
+  document.getElementById("mode-sim").onclick = () => setMode("similarity");
+  function setMode(m) { mode = m; document.getElementById("mode-co").classList.toggle("on", m === "coauthor"); document.getElementById("mode-sim").classList.toggle("on", m === "similarity"); document.getElementById("legend").textContent = m === "coauthor" ? "Node size = papers in the database · link width = co-authored papers" : "Node size = papers in the database · link = similar keyword profile"; pinned = null; render(); hi(null, null); idle(); }
+  document.getElementById("reset").onclick = () => { svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity); pinned = null; hi(null, null); idle(); };
+  svg.on("click", () => { pinned = null; hi(null, null); idle(); });
+  window.addEventListener("resize", () => { W = box.clientWidth; H = box.clientHeight; sim.force("center", d3.forceCenter(W / 2, H / 2)).force("x", d3.forceX(W / 2).strength(.02)).force("y", d3.forceY(H / 2).strength(.03)).alpha(.3).restart(); });
+  render();
+})().catch(e => { document.getElementById("panel").innerHTML = `<div class="empty">Could not load the graph (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>
