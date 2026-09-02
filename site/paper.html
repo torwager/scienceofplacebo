@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <p class="small"><a href="javascript:history.length>1?history.back():location.assign('database.html')">← Back</a></p>
+  <article class="detail" id="detail"><div class="spinner">Loading paper…</div></article>
+  <section style="max-width:900px;margin-top:1.4rem">
+    <h2 style="margin-bottom:.4rem">Discussion</h2>
+    <p class="small muted">Comments are GitHub Discussions threads, one per paper. Sign in with GitHub to post.</p>
+    <div id="giscus"></div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const id = new URLSearchParams(location.search).get("id");
+  const slim = state.index.find(r => r.id === id);
+  const el = document.getElementById("detail");
+  if (!slim) { el.innerHTML = '<div class="empty">Paper not found in the public database.</div>'; return; }
+  const shard = await SOP.getJSON(`data/papers/${slim.y || 0}.json`);
+  const r = shard[id];
+  const cls = r.classification || {}, tags = cls.tags || {}, scr = cls.screening || {};
+  document.title = r.title + " — Science of Placebo";
+  const authors = (r.authors || []).map(a => typeof a === "string" ? a : (a.family + (a.given ? " " + a.given : ""))).join(", ");
+  const links = [];
+  if (r.doi) links.push(`<a class="btn" href="https://doi.org/${SOP.esc(r.doi)}" target="_blank" rel="noopener">Publisher ↗</a>`);
+  else if (r.landing_url) links.push(`<a class="btn" href="${SOP.esc(r.landing_url)}" target="_blank" rel="noopener">Publisher ↗</a>`);
+  if (r.pmid) links.push(`<a class="btn" href="https://pubmed.ncbi.nlm.nih.gov/${SOP.esc(r.pmid)}/" target="_blank" rel="noopener">PubMed</a>`);
+  if (r.pmcid) links.push(`<a class="btn" href="https://pmc.ncbi.nlm.nih.gov/articles/${SOP.esc(r.pmcid)}/" target="_blank" rel="noopener">PMC full text</a>`);
+  if (r.oa_pdf_url) links.push(`<a class="btn" href="${SOP.esc(r.oa_pdf_url)}" target="_blank" rel="noopener">Open-access PDF</a>`);
+  if ((r.private_pdf || {}).available && SOP_CONFIG.privatePdfBase) links.push(`<a class="btn" href="${SOP.esc(SOP_CONFIG.privatePdfBase + r.private_pdf.store_key)}" target="_blank" rel="noopener">Full text (members)</a>`);
+  const axisRows = SOP.FILTER_AXES.concat(["age_group"]).map(ax => {
+    const vals = tags[ax]; const arr = Array.isArray(vals) ? vals : (vals ? [vals] : []);
+    if (!arr.length) return "";
+    return `<div class="axis-row"><span class="axis">${SOP.esc(state.axes[ax] ? state.axes[ax].label : ax)}</span><span class="chips">${SOP.chipsFor({ tags: { [ax]: arr } }, false, [ax], 30)}</span></div>`;
+  }).join("");
+  const focus = tags.study_focus || [];
+  const nocebo = focus.some(f => f.startsWith("nocebo"));
+  el.innerHTML = `
+    <div class="meta small muted">${SOP.esc(r.journal || "")} · ${SOP.fmtDate(r.date) || r.year || ""}${r.scope === "adjacent" ? ' · <span class="badge adjacent">adjacent</span>' : ""}</div>
+    <h1>${SOP.esc(r.title)}</h1>
+    <div class="small">${SOP.esc(authors)}</div>
+    <div class="links" style="display:flex;gap:.5rem;flex-wrap:wrap">${links.join("")}</div>
+    ${cls.summary ? `<div class="callout${nocebo ? " nocebo" : ""}"><b>In one sentence.</b> ${SOP.esc(cls.summary)}${cls.key_finding ? " " + SOP.esc(cls.key_finding) : ""}</div>` : ""}
+    <div><h3 style="margin-bottom:.3rem">Abstract</h3><div class="abstract">${r.abstract ? SOP.esc(r.abstract) : '<span class="muted">No abstract available; see the publisher page.</span>'}</div></div>
+    <div><h3 style="margin-bottom:.5rem">Keywords</h3><div style="display:grid;gap:.5rem">${axisRows}
+      ${(cls.free_keywords || []).length ? `<div class="axis-row"><span class="axis">Free keywords</span><span>${cls.free_keywords.map(k => `<a class="chip static" href="database.html?q=${encodeURIComponent(k)}" style="cursor:pointer">${SOP.esc(k)}</a>`).join(" ")}</span></div>` : ""}</div></div>
+    <dl class="kv">
+      ${cls.sample_size ? `<dt>Sample size</dt><dd class="tnum">${SOP.esc(cls.sample_size)}</dd>` : ""}
+      ${r.doi ? `<dt>DOI</dt><dd class="mono"><a href="https://doi.org/${SOP.esc(r.doi)}">${SOP.esc(r.doi)}</a></dd>` : ""}
+      ${r.pmid ? `<dt>PMID</dt><dd class="mono">${SOP.esc(r.pmid)}</dd>` : ""}
+      ${r.cited_by_count != null ? `<dt>Citations</dt><dd class="tnum">${r.cited_by_count} (OpenAlex)</dd>` : ""}
+      <dt>Found via</dt><dd>${SOP.esc((r.sources || []).join(", ") || "PubMed")}${(r.sources || []).includes("jips") ? ' · listed by <a href="https://jips.online/" target="_blank" rel="noopener">JIPS</a>' : ""}</dd>
+      <dt>Added</dt><dd>${SOP.esc(r.date_added || "")}</dd>
+      ${scr.rationale ? `<dt>Screening note</dt><dd class="muted">${SOP.esc(scr.rationale)} <span class="tnum">(confidence ${scr.confidence})</span> — tags were assigned by ${SOP.esc(cls.model || "an AI model")} from the title and abstract and may contain errors; <a href="https://github.com/${SOP_CONFIG.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">suggest a correction</a>.</dd>` : ""}
+    </dl>`;
+  // giscus thread keyed on the paper id
+  const g = SOP_CONFIG.giscus;
+  if (g.repoId && g.categoryId) {
+    const s = document.createElement("script");
+    s.src = "https://giscus.app/client.js"; s.async = true; s.crossOrigin = "anonymous";
+    Object.entries({ "data-repo": SOP_CONFIG.repo, "data-repo-id": g.repoId, "data-category": g.category, "data-category-id": g.categoryId, "data-mapping": "specific", "data-term": id, "data-strict": "1", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-input-position": "top", "data-theme": "preferred_color_scheme", "data-lang": "en", "data-loading": "lazy" }).forEach(([k, v]) => s.setAttribute(k, v));
+    document.getElementById("giscus").appendChild(s);
+  } else {
+    document.getElementById("giscus").innerHTML = '<div class="empty">Comments will appear here once GitHub Discussions is connected.</div>';
+  }
+})().catch(e => { document.getElementById("detail").innerHTML = `<div class="empty">Could not load paper (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

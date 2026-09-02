@@ -1,0 +1,87 @@
+name: Daily literature search and site deploy
+
+on:
+  schedule:
+    - cron: "23 9 * * *"     # 09:23 UTC daily (off the hour to avoid queue delays)
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Lookback window in days"
+        default: "5"
+      skip_search:
+        description: "Skip discovery; only rebuild and deploy the site"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ["site/**", "data/**", "pipeline/build_site.py", "pipeline/taxonomy.json"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  search-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Daily search, screening and tagging
+        if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          SOP_LLM_MODEL: ${{ vars.SOP_LLM_MODEL }}
+        run: python -m pipeline.run_daily --days ${{ inputs.days || 5 }}
+      - name: Commit data back to the repository
+        if: ${{ github.event_name != 'push' && inputs.skip_search != true }}
+        run: |
+          git config user.name "sop-bot"
+          git config user.email "sop-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "no data changes"; else
+            git commit -m "data: daily update $(date -u +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Build site data
+        run: python -m pipeline.build_site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Open an issue if the run failed
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue list --label pipeline-failure --state open --json number --jq '.[0].number' > /tmp/n || true
+          if [ -s /tmp/n ] && [ "$(cat /tmp/n)" != "" ]; then
+            gh issue comment "$(cat /tmp/n)" --body "Daily run failed again: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          else
+            gh issue create --title "Pipeline failure: daily run" --label pipeline-failure --body "See $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" || true
+          fi
+
+  deploy:
+    needs: search-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo</title>
+<meta name="description" content="A research hub for the science of placebo and nocebo effects: a daily-updated feed of new papers, a searchable tagged database, bibliometrics, events, resources and discussion.">
+<meta property="og:title" content="Science of Placebo">
+<meta property="og:description" content="A living bibliography of placebo and nocebo research, updated daily and tagged by design, population, outcome and findings.">
+<meta property="og:type" content="website">
+<link rel="alternate" type="application/rss+xml" title="Science of Placebo: new papers" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  /* landing-only */
+  .curtain { position: relative; }
+  .curtain-media { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; z-index: 0; background: linear-gradient(160deg, var(--bg) 0%, var(--bg-2) 55%, var(--bg-3) 100%); }
+  .hero-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 2rem; padding: 72px var(--pad) 0; max-width: var(--max); margin: 0 auto; }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; align-content: center; gap: 1.2rem; padding-top: 88px; } }
+  .hero-copy h1 { font-size: clamp(2.6rem, 5.6vw, 4.4rem); margin-bottom: .3em; max-width: 11em; }
+  .hero-copy .lede { font-size: clamp(1.05rem, 1.5vw, 1.25rem); color: var(--ink-2); max-width: 32em; margin: 0 0 1.5rem; }
+  .hero-pill { display: inline-flex; align-items: center; gap: .6em; padding: .45em 1em .45em .6em; border-radius: 999px; background: color-mix(in srgb, var(--surface) 70%, transparent); border: 1px solid var(--line); font-size: .88rem; font-weight: 500; margin-bottom: 1.3rem; backdrop-filter: blur(6px); }
+  .hero-pill .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 4px rgba(233,185,73,.25); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; align-items: center; }
+  /* the pill */
+  .pill-stage { position: relative; display: grid; place-items: center; padding: 1rem 0; }
+  .pill { position: relative; width: min(100%, 560px); aspect-ratio: 1200 / 520; border-radius: 999px; overflow: hidden; box-shadow: 0 30px 60px -24px rgba(26,35,50,.45), 0 4px 10px -4px rgba(26,35,50,.2); cursor: crosshair; transform: rotate(-8deg); transition: transform .6s var(--ease), box-shadow .6s var(--ease); touch-action: none; isolation: isolate; }
+  .pill:hover, .pill.revealing { transform: rotate(-4deg) scale(1.02); box-shadow: 0 40px 70px -26px rgba(26,35,50,.5), 0 6px 14px -4px rgba(26,35,50,.22); }
+  .pill img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; user-select: none; -webkit-user-drag: none; }
+  .pill canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  .pill-shadow { position: absolute; left: 12%; right: 12%; bottom: -8px; height: 28px; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(26,35,50,.28), rgba(26,35,50,0) 70%); filter: blur(4px); pointer-events: none; }
+  .hero-hint { position: absolute; right: var(--pad); bottom: 30px; z-index: 2; font-size: .8rem; color: var(--muted); display: flex; align-items: center; gap: .5em; pointer-events: none; }
+  .hero-hint .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); animation: pulse 2.2s infinite; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(233,185,73,.6);} 70% { box-shadow: 0 0 0 10px rgba(233,185,73,0);} }
+  .scroll-cue { position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%); z-index: 3; }
+  .scroll-cue a { display: inline-flex; align-items: center; gap: .6em; padding: .7em 1.3em; border-radius: 999px; background: var(--ink); color: var(--bg); font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; box-shadow: 0 12px 28px -10px rgba(26,35,50,.55); transition: transform .3s var(--ease); }
+  .scroll-cue a:hover { transform: translateY(-2px); }
+  .scroll-cue a svg { width: 16px; height: 16px; animation: nudge 1.8s infinite; }
+  @keyframes nudge { 0%,100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+  @media (max-width: 720px) { .hero-hint { display: none; } .scroll-cue { display: none; } .curtain-media { height: auto; min-height: 100svh; } .hero-grid { position: relative; padding-bottom: 2rem; } }
+  .curtain-body { position: relative; z-index: 1; background: var(--bg); box-shadow: 0 -30px 60px -30px rgba(26,35,50,.18); border-top: 1px solid rgba(255,255,255,.7); }
+  .curtain-body::before { content: ""; display: block; height: 6px; background: linear-gradient(90deg, var(--amber), var(--amber-soft)); opacity: .9; }
+  @media (prefers-reduced-motion: reduce) { .curtain-media { position: relative; height: auto; min-height: 80vh; } }
+  .section { padding: clamp(56px, 8vw, 104px) 0; }
+  .section-tight { padding: clamp(36px, 5vw, 64px) 0; }
+  .section-head { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: clamp(28px, 4vw, 48px); align-items: end; }
+  @media (min-width: 900px) { .section-head { grid-template-columns: 1.1fr 1fr; gap: 3rem; } }
+  .section-head p { margin: 0; color: var(--ink-2); font-size: 1.08rem; }
+  .facts { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.8rem 0; margin: 0; }
+  @media (min-width: 760px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+  .facts dt { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: .3rem; }
+  .facts dd { margin: 0; font-family: var(--serif); font-size: 1.5rem; line-height: 1.2; }
+  .latest { display: grid; gap: .8rem; grid-template-columns: 1fr; }
+  @media (min-width: 860px) { .latest { grid-template-columns: repeat(3, 1fr); } }
+  .latest .paper { min-height: 100%; }
+  .darkstrip { background: var(--ink); color: #eef0f3; }
+  :root[data-theme="dark"] .darkstrip, .darkstrip { --ink: #eef0f3; }
+  .darkstrip h2 { color: #fff; }
+  .darkstrip p { color: #b7bec9; }
+  .darkstrip .wrap { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 860px) { .darkstrip .wrap { grid-template-columns: 1.2fr 1fr; gap: 3rem; } }
+  .darkstrip .pill-logo { width: 120px; height: 60px; border-radius: 40px; margin: 0 auto; box-shadow: 0 30px 50px -20px rgba(0,0,0,.6); }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="pill-logo" aria-hidden="true"></span><span><b>Science</b> of Placebo</span></a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="feed.html">New papers</a>
+      <a href="database.html">Database</a>
+      <a href="bibliometrics.html">Bibliometrics</a>
+      <a href="events.html">Events</a>
+      <a href="resources.html">Resources</a>
+      <a href="discuss.html">Discussion</a>
+      <a href="about.html">About</a>
+      <a class="cta" href="database.html">Search the database</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="curtain">
+  <div class="curtain-media" id="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-pill"><span class="dot"></span> Updated daily · <span id="hero-count">thousands of</span> tagged papers</div>
+        <h1>The science of placebo, in one place.</h1>
+        <p class="lede">A living bibliography of peer-reviewed research on placebo and nocebo effects and responses, found by a daily literature search, screened against explicit criteria, tagged by design, population, outcome and findings, and linked to the publisher.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="feed.html">See this week's papers <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="database.html">Search the database</a>
+        </div>
+      </div>
+      <div class="pill-stage">
+        <div class="pill" id="pill" aria-label="A placebo capsule. Move your cursor over it to reveal the picture it hides." role="img">
+          <img src="assets/scene.svg" alt="" width="1200" height="520" draggable="false">
+          <canvas id="veil" aria-hidden="true"></canvas>
+        </div>
+        <div class="pill-shadow" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="hero-hint"><span class="pulse"></span> Move your cursor over the pill</div>
+    <div class="scroll-cue"><a href="#start">Explore <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a></div>
+  </div>
+
+  <div class="curtain-body" id="start">
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="rv"><p class="eyebrow">What this is</p><h2>Every study of placebo and nocebo effects, found, screened and tagged as it appears.</h2></div>
+          <p class="rv rv-d1">The placebo effect is the causal effect of the treatment context, the beliefs, cues and relationships that surround a treatment, on health. This site tracks the research that measures it: what was manipulated, in whom, with what outcome, and what was found.</p>
+        </div>
+        <dl class="facts rv rv-d1" id="facts">
+          <div><dt>Papers</dt><dd id="f-papers">…</dd></div>
+          <div><dt>Screened</dt><dd id="f-screened">…</dd></div>
+          <div><dt>Sources</dt><dd>PubMed · Europe PMC · OpenAlex</dd></div>
+          <div><dt>Last search</dt><dd id="f-updated">…</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="wrap">
+        <div class="section-head"><div class="rv"><p class="eyebrow">Sections</p><h2>Explore the hub</h2></div></div>
+        <div class="tiles">
+          <a class="tile glow rv" href="feed.html"><div><div class="ic">✦</div><h3>New papers</h3><p>This week's placebo and nocebo studies, with color-coded keyword chips you can filter on.</p></div><span class="go">Open the feed <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="database.html"><div><div class="ic">⌕</div><h3>Database</h3><p>Search titles, abstracts and tags across the whole literature, from the 1940s to this morning.</p></div><span class="go">Search <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="bibliometrics.html"><div><div class="ic">▥</div><h3>Bibliometrics</h3><p>How the field has grown: papers per year, designs, populations, outcomes, journals and authors.</p></div><span class="go">See the analysis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv" href="events.html"><div><div class="ic">◷</div><h3>Events</h3><p>Conferences, symposia, webinars and summer schools in the coming year.</p></div><span class="go">Upcoming events <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d1" href="resources.html"><div><div class="ic">⌂</div><h3>Resources</h3><p>Centers, programs, labs, societies and databases devoted to placebo research worldwide.</p></div><span class="go">Browse resources <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="tile glow rv rv-d2" href="discuss.html"><div><div class="ic">✎</div><h3>Discussion</h3><p>Comment on papers and talk with other researchers about findings, methods and clinical use.</p></div><span class="go">Join the discussion <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="rv"><p class="eyebrow">Latest</p><h2>Just added</h2></div>
+          <p class="rv rv-d1">The three most recent core studies. <a href="feed.html">See the full feed</a> or subscribe by <a href="feed.xml">RSS</a>.</p>
+        </div>
+        <div class="latest rv rv-d1" id="latest"><div class="spinner">Loading…</div></div>
+      </div>
+    </section>
+
+    <section class="section darkstrip">
+      <div class="wrap">
+        <div class="rv">
+          <p class="eyebrow">Standing on JIPS</p>
+          <h2>Inspired by the Journal of Interdisciplinary Placebo Studies database</h2>
+          <p>From 2016 to 2025, Katja Weimer, Paul Enck and colleagues hand-curated a monthly list of new placebo and nocebo publications and a library of more than 5,000 papers. Science of Placebo picks up that work with an automated daily search, seeded with their lists.</p>
+          <p><a class="btn primary" href="https://jips.online/" target="_blank" rel="noopener">Visit jips.online ↗</a> <a class="btn btn-ghost" href="about.html" style="color:#fff">How this site works</a></p>
+        </div>
+        <div class="rv rv-d1"><span class="pill-logo" aria-hidden="true"></span></div>
+      </div>
+    </section>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div><strong>Science of Placebo</strong>A curated, continuously updated bibliography of placebo and nocebo research, run by the Cognitive and Affective Neuroscience Lab at Dartmouth. Metadata, tags and summaries CC-BY-4.0; code MIT.</div>
+    <div><strong>Explore</strong><ul><li><a href="feed.html">New papers</a></li><li><a href="database.html">Database</a></li><li><a href="bibliometrics.html">Bibliometrics</a></li><li><a href="feed.xml">RSS feed</a></li></ul></div>
+    <div><strong>Community</strong><ul><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="https://github.com/torwager/scienceofplacebo">Source &amp; data on GitHub</a></li></ul></div>
+  </div>
+</footer>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/hero.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const n = state.stats.n_core;
+  document.getElementById("hero-count").textContent = n.toLocaleString();
+  document.getElementById("f-papers").textContent = n.toLocaleString();
+  document.getElementById("f-screened").textContent = state.stats.n_screened.toLocaleString();
+  document.getElementById("f-updated").textContent = SOP.fmtDate(state.stats.updated);
+  const core = state.index.filter(r => r.sc === "core").sort((a, b) => (b.added + b.d).localeCompare(a.added + a.d)).slice(0, 3);
+  document.getElementById("latest").innerHTML = core.map(r => SOP.paperCard(r)).join("");
+})().catch(e => console.error("landing:", e));
+</script>
+</body>
+</html>

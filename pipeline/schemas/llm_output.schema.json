@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LLM screening+tagging output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["screening", "tags", "summary", "key_finding", "sample_size", "free_keywords"],
+  "properties": {
+    "screening": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "confidence", "rationale", "exclusion_reason", "peer_reviewed"],
+      "properties": {
+        "decision": {"type": "string", "enum": ["include", "exclude", "uncertain"]},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "rationale": {"type": "string"},
+        "exclusion_reason": {"type": ["string", "null"], "enum": ["placebo_control_only", "not_about_placebo_or_nocebo", "not_peer_reviewed_or_scientific", "insufficient_information", "duplicate_or_erratum", "not_a_study_of_effects_or_responses", null]},
+        "peer_reviewed": {"type": "boolean"}
+      }
+    },
+    "tags": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["study_focus", "article_type", "species", "population", "age_group", "condition_domain", "outcome_measures", "design", "effects", "mechanisms", "moderators", "intervention_type"],
+      "properties": {
+        "study_focus": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:study_focus__"]}},
+        "article_type": {"type": "string", "enum": ["__ENUM:article_type__"]},
+        "species": {"type": "string", "enum": ["__ENUM:species__"]},
+        "population": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:population__"]}},
+        "age_group": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:age_group__"]}},
+        "condition_domain": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:condition_domain__"]}},
+        "outcome_measures": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:outcome_measures__"]}},
+        "design": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:design__"]}},
+        "effects": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:effects__"]}},
+        "mechanisms": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:mechanisms__"]}},
+        "moderators": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:moderators__"]}},
+        "intervention_type": {"type": "array", "items": {"type": "string", "enum": ["__ENUM:intervention_type__"]}}
+      }
+    },
+    "summary": {"type": "string"},
+    "key_finding": {"type": ["string", "null"]},
+    "sample_size": {"type": ["integer", "null"]},
+    "free_keywords": {"type": "array", "items": {"type": "string"}}
+  },
+  "x-note": "The '__ENUM:<axis>__' placeholders are expanded from taxonomy.json at load time (see llm_client.build_output_schema) so the enum lists never drift from the vocabulary."
+}

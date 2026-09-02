@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — discussion</title>
+<meta name="description" content="Discussion board for placebo and nocebo researchers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Discussion</p>
+    <h1>Discussion</h1>
+    <p>A place to discuss placebo science: new findings, methods, replication, clinical use, and the site itself. Each paper also has its own thread on its detail page. Comments run on GitHub Discussions; sign in with a GitHub account to post. Everything is public and archived.</p>
+  </div>
+  <p class="small"><a id="all-threads" href="#" target="_blank" rel="noopener">Browse all threads on GitHub ↗</a></p>
+  <div id="giscus" style="max-width:900px"></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(function () {
+  document.getElementById("all-threads").href = `https://github.com/${SOP_CONFIG.repo}/discussions`;
+  const g = SOP_CONFIG.giscus;
+  if (g.repoId && g.generalCategoryId) {
+    const s = document.createElement("script");
+    s.src = "https://giscus.app/client.js"; s.async = true; s.crossOrigin = "anonymous";
+    Object.entries({ "data-repo": SOP_CONFIG.repo, "data-repo-id": g.repoId, "data-category": g.generalCategory, "data-category-id": g.generalCategoryId, "data-mapping": "specific", "data-term": "General discussion", "data-strict": "0", "data-reactions-enabled": "1", "data-emit-metadata": "0", "data-input-position": "top", "data-theme": "preferred_color_scheme", "data-lang": "en" }).forEach(([k, v]) => s.setAttribute(k, v));
+    document.getElementById("giscus").appendChild(s);
+  } else {
+    document.getElementById("giscus").innerHTML = `<div class="empty">The discussion board is not connected yet. Once GitHub Discussions is enabled for the repository, threads will appear here. In the meantime, use <a href="https://github.com/${SOP_CONFIG.repo}/discussions">the GitHub Discussions page</a>.</div>`;
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — events</title>
+<meta name="description" content="Upcoming conferences, symposia, webinars and summer schools on placebo and nocebo research.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Events</p>
+    <h1>Placebo science events</h1>
+    <p>Conferences, symposia, webinars and courses within the next twelve months, plus recurring series worth watching. Know of one we are missing? <a id="suggest" href="#">Suggest an event</a>.</p>
+  </div>
+  <div id="events"><div class="spinner">Loading events…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  document.getElementById("suggest").href = `https://github.com/${SOP_CONFIG.repo}/issues/new?title=${encodeURIComponent("Event suggestion: ")}&body=${encodeURIComponent("Name:\nDates:\nLocation / online:\nURL:\nWhy it is relevant to placebo science:\n")}`;
+  const data = await SOP.getJSON("data/events.json");
+  const today = new Date().toISOString().slice(0, 10);
+  const horizon = new Date(); horizon.setUTCFullYear(horizon.getUTCFullYear() + 1);
+  const hz = horizon.toISOString().slice(0, 10);
+  const esc = SOP.esc;
+  const fmt = e => {
+    if (!e.start) return "Date to be announced";
+    const s = SOP.fmtDate(e.start), t = e.end && e.end !== e.start ? " – " + SOP.fmtDate(e.end) : "";
+    return s + t;
+  };
+  const card = e => `<div class="card"><span class="date">${fmt(e)}</span><h3><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a></h3>
+    <div class="where">${esc([e.location, e.organizer].filter(Boolean).join(" · "))}${e.type ? ` · <span class="badge">${esc(e.type)}</span>` : ""}</div>
+    ${e.description ? `<p>${esc(e.description)}</p>` : ""}</div>`;
+  const upcoming = data.events.filter(e => e.start && e.start >= today && e.start <= hz).sort((a, b) => a.start.localeCompare(b.start));
+  const tba = data.events.filter(e => !e.start || e.start > hz);
+  const past = data.events.filter(e => e.start && e.start < today && e.start >= today.slice(0, 4) + "-01-01").sort((a, b) => b.start.localeCompare(a.start));
+  let html = "";
+  html += `<div class="section"><h2>Upcoming</h2><span class="muted">${upcoming.length} within the next year</span></div>`;
+  html += upcoming.length ? `<div class="cards">${upcoming.map(card).join("")}</div>` : '<div class="empty">No dated events in the window yet.</div>';
+  if (tba.length) html += `<div class="section"><h2>Recurring series &amp; dates to be announced</h2></div><div class="cards">${tba.map(card).join("")}</div>`;
+  if (past.length) html += `<div class="section"><h2>Earlier this year</h2></div><div class="cards">${past.map(card).join("")}</div>`;
+  html += `<p class="small muted" style="margin-top:1.4rem">Event list last reviewed ${esc(data.updated || "")}. Dates come from the organizers' pages; always confirm with the official site.</p>`;
+  document.getElementById("events").innerHTML = html;
+})().catch(e => { document.getElementById("events").innerHTML = `<div class="empty">Could not load events (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

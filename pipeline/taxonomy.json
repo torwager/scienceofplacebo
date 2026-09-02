@@ -1,0 +1,1184 @@
+{
+ "taxonomy_version": "1.0.0",
+ "notes": "Controlled vocabulary for Science of Placebo tagging. Every axis is multi-valued unless 'multi' is false. Chip color = axis color (one hue per axis); the 'effects' axis is the one exception with value-level colors. Colors give light-mode and dark-mode (bg, fg) pairs.",
+ "chip_style": {
+  "light": "background = bg, text/border = fg, border 1px, radius 999px, font 12px/600",
+  "dark": "use dark.bg / dark.fg; same geometry"
+ },
+ "axes": [
+  {
+   "id": "study_focus",
+   "label": "Study focus",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "violet",
+    "light": {
+     "bg": "#EDE9FE",
+     "fg": "#5B21B6"
+    },
+    "dark": {
+     "bg": "#2E1065",
+     "fg": "#C4B5FD"
+    }
+   },
+   "values": [
+    {
+     "id": "placebo_effect",
+     "label": "Placebo effect",
+     "def": "Causal effect of a placebo/context manipulation vs. a reduced, augmented, or absent context (controlled comparison; Wager & Atlas 2015)."
+    },
+    {
+     "id": "nocebo_effect",
+     "label": "Nocebo effect",
+     "def": "Causal adverse effect of a negative context/expectation manipulation vs. control."
+    },
+    {
+     "id": "placebo_response",
+     "label": "Placebo response",
+     "def": "Improvement in a placebo/sham arm relative to baseline without a no-treatment control; includes predictors and magnitude of placebo response in trials."
+    },
+    {
+     "id": "nocebo_response",
+     "label": "Nocebo response",
+     "def": "Adverse events or symptom worsening in a placebo/sham arm relative to baseline."
+    },
+    {
+     "id": "placebo_and_nocebo",
+     "label": "Placebo + nocebo",
+     "def": "Both positive and negative expectation/context effects or responses are studied in the same paper."
+    },
+    {
+     "id": "placebo_science_other",
+     "label": "Placebo science (other)",
+     "def": "Ethics, clinical use, attitudes, definitions, history, or methodology of placebo research without measuring an effect or response."
+    }
+   ]
+  },
+  {
+   "id": "kind",
+   "label": "Kind",
+   "multi": false,
+   "derived_from": "article_type",
+   "values": [
+    {
+     "id": "empirical",
+     "label": "Empirical",
+     "def": "Reports new data: primary studies, secondary analyses, case reports, methods papers with data."
+    },
+    {
+     "id": "review",
+     "label": "Review",
+     "def": "Synthesizes existing studies: meta-analysis, systematic or narrative review."
+    },
+    {
+     "id": "theory",
+     "label": "Theory",
+     "def": "Conceptual, theoretical, historical or commentary work without new data; protocols."
+    }
+   ],
+   "color": {
+    "hue": "violet",
+    "light": {
+     "bg": "#E8E4F5",
+     "fg": "#3F2E7A"
+    },
+    "dark": {
+     "bg": "#2A2350",
+     "fg": "#C9BDF0"
+    }
+   }
+  },
+  {
+   "id": "article_type",
+   "label": "Article type",
+   "multi": false,
+   "required": true,
+   "color": {
+    "hue": "slate",
+    "light": {
+     "bg": "#F1F5F9",
+     "fg": "#334155"
+    },
+    "dark": {
+     "bg": "#1E293B",
+     "fg": "#CBD5E1"
+    }
+   },
+   "values": [
+    {
+     "id": "empirical_primary",
+     "label": "Empirical",
+     "def": "New data collected for this study (experiment, trial, survey, qualitative)."
+    },
+    {
+     "id": "secondary_analysis",
+     "label": "Secondary analysis",
+     "def": "Re-analysis of existing trial/cohort data (e.g., placebo-arm analyses, IPD, registry)."
+    },
+    {
+     "id": "meta_analysis",
+     "label": "Meta-analysis",
+     "def": "Quantitative pooling of studies (with or without systematic search)."
+    },
+    {
+     "id": "systematic_review",
+     "label": "Systematic review",
+     "def": "Systematic search and synthesis without quantitative pooling."
+    },
+    {
+     "id": "narrative_review",
+     "label": "Review",
+     "def": "Narrative or scoping review of a topic."
+    },
+    {
+     "id": "theory_commentary",
+     "label": "Theory / commentary",
+     "def": "Conceptual, theoretical, opinion, perspective, or debate piece."
+    },
+    {
+     "id": "protocol",
+     "label": "Protocol",
+     "def": "Registered study protocol or design paper without results."
+    },
+    {
+     "id": "case_report",
+     "label": "Case report",
+     "def": "Single case or small case series."
+    },
+    {
+     "id": "methods_measurement",
+     "label": "Methods",
+     "def": "Development or validation of measures, paradigms, or analysis methods for placebo research."
+    },
+    {
+     "id": "editorial_letter",
+     "label": "Editorial / letter",
+     "def": "Editorial, letter to the editor, or reply."
+    }
+   ]
+  },
+  {
+   "id": "species",
+   "label": "Species",
+   "multi": false,
+   "required": true,
+   "color": {
+    "hue": "brown",
+    "light": {
+     "bg": "#FDF3E7",
+     "fg": "#7C4A1E"
+    },
+    "dark": {
+     "bg": "#3B2413",
+     "fg": "#E8C6A0"
+    }
+   },
+   "values": [
+    {
+     "id": "human",
+     "label": "Human",
+     "def": "Human participants or human data."
+    },
+    {
+     "id": "nonhuman_animal",
+     "label": "Animal",
+     "def": "Non-human animals (rodent, primate, dog, etc.), including conditioned pharmacological responses."
+    },
+    {
+     "id": "computational_in_silico",
+     "label": "Computational",
+     "def": "Simulation or modeling without new biological data."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "Reviews/commentaries not tied to a species."
+    }
+   ]
+  },
+  {
+   "id": "population",
+   "label": "Population",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "green",
+    "light": {
+     "bg": "#DCFCE7",
+     "fg": "#166534"
+    },
+    "dark": {
+     "bg": "#052E16",
+     "fg": "#86EFAC"
+    }
+   },
+   "values": [
+    {
+     "id": "healthy_adult",
+     "label": "Healthy adults",
+     "def": "Healthy volunteers roughly 18-64 y."
+    },
+    {
+     "id": "healthy_pediatric",
+     "label": "Healthy children/adolescents",
+     "def": "Healthy participants under 18 y."
+    },
+    {
+     "id": "healthy_older_adult",
+     "label": "Healthy older adults",
+     "def": "Healthy participants roughly 65+ y."
+    },
+    {
+     "id": "chronic_pain",
+     "label": "Chronic pain",
+     "def": "Persistent pain conditions: low back pain, fibromyalgia, osteoarthritis, neuropathic pain, migraine/headache, TMD, etc."
+    },
+    {
+     "id": "acute_clinical_pain",
+     "label": "Acute clinical pain",
+     "def": "Postoperative, procedural, labor, dental, or injury pain in patients."
+    },
+    {
+     "id": "chronic_fatigue",
+     "label": "Chronic fatigue",
+     "def": "ME/CFS, cancer-related fatigue, or other chronic fatigue populations."
+    },
+    {
+     "id": "depression",
+     "label": "Depression",
+     "def": "Major depression or depressive symptoms as the sampled population."
+    },
+    {
+     "id": "anxiety_disorders",
+     "label": "Anxiety disorders",
+     "def": "GAD, panic, social anxiety, phobias, OCD-spectrum."
+    },
+    {
+     "id": "ptsd_stress",
+     "label": "PTSD / stress",
+     "def": "Trauma- and stress-related disorders."
+    },
+    {
+     "id": "cancer",
+     "label": "Cancer",
+     "def": "Oncology patients (symptoms, side effects, survivorship)."
+    },
+    {
+     "id": "parkinson_movement",
+     "label": "Parkinson / movement",
+     "def": "Parkinson's disease, dystonia, tremor, other movement disorders."
+    },
+    {
+     "id": "other_neurological",
+     "label": "Other neurological",
+     "def": "MS, epilepsy, stroke, TBI, dementia, restless legs, etc."
+    },
+    {
+     "id": "gi_ibs",
+     "label": "GI / IBS",
+     "def": "Irritable bowel syndrome, functional dyspepsia, IBD, nausea populations."
+    },
+    {
+     "id": "allergy_respiratory",
+     "label": "Allergy / respiratory",
+     "def": "Asthma, allergic rhinitis, COPD, cough."
+    },
+    {
+     "id": "cardiovascular",
+     "label": "Cardiovascular",
+     "def": "Hypertension, angina, heart failure, cardiac surgery."
+    },
+    {
+     "id": "sleep_disorders",
+     "label": "Sleep",
+     "def": "Insomnia and other sleep disorders."
+    },
+    {
+     "id": "substance_use",
+     "label": "Substance use",
+     "def": "Alcohol, nicotine, opioid, or other substance use disorders."
+    },
+    {
+     "id": "psychosis",
+     "label": "Psychosis",
+     "def": "Schizophrenia-spectrum and bipolar populations."
+    },
+    {
+     "id": "dermatology",
+     "label": "Dermatology",
+     "def": "Skin conditions including chronic itch, psoriasis, eczema, urticaria."
+    },
+    {
+     "id": "metabolic_endocrine",
+     "label": "Metabolic / endocrine",
+     "def": "Diabetes, obesity, thyroid, menopause."
+    },
+    {
+     "id": "autoimmune_rheum",
+     "label": "Autoimmune / rheumatologic",
+     "def": "RA, lupus, psoriatic arthritis, other immune-mediated disease."
+    },
+    {
+     "id": "surgical_patients",
+     "label": "Surgical patients",
+     "def": "Patients undergoing surgery or invasive procedures (sham-surgery contexts)."
+    },
+    {
+     "id": "pediatric_clinical",
+     "label": "Pediatric patients",
+     "def": "Clinical samples under 18 y (combine with a condition tag)."
+    },
+    {
+     "id": "athletes",
+     "label": "Athletes",
+     "def": "Trained or recreational athletes; exercise performance samples."
+    },
+    {
+     "id": "clinicians_providers",
+     "label": "Clinicians / providers",
+     "def": "Physicians, nurses, pharmacists, students as the surveyed population."
+    },
+    {
+     "id": "general_public",
+     "label": "General public",
+     "def": "Lay samples surveyed about placebo attitudes or beliefs."
+    },
+    {
+     "id": "mixed_clinical",
+     "label": "Mixed clinical",
+     "def": "Multiple clinical conditions pooled (typical of meta-analyses)."
+    },
+    {
+     "id": "other_clinical",
+     "label": "Other clinical",
+     "def": "Clinical population not listed."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "No sampled population (theory, methods)."
+    }
+   ]
+  },
+  {
+   "id": "age_group",
+   "label": "Age group",
+   "multi": true,
+   "required": false,
+   "color": {
+    "hue": "lime",
+    "light": {
+     "bg": "#ECFCCB",
+     "fg": "#3F6212"
+    },
+    "dark": {
+     "bg": "#1A2E05",
+     "fg": "#BEF264"
+    }
+   },
+   "values": [
+    {
+     "id": "children_adolescents",
+     "label": "Children / adolescents",
+     "def": "Under 18 y."
+    },
+    {
+     "id": "adults",
+     "label": "Adults",
+     "def": "18-64 y."
+    },
+    {
+     "id": "older_adults",
+     "label": "Older adults",
+     "def": "65+ y."
+    },
+    {
+     "id": "mixed_unspecified",
+     "label": "Mixed / unspecified",
+     "def": "Broad or unreported age range."
+    }
+   ]
+  },
+  {
+   "id": "condition_domain",
+   "label": "Domain",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "teal",
+    "light": {
+     "bg": "#CCFBF1",
+     "fg": "#115E59"
+    },
+    "dark": {
+     "bg": "#042F2E",
+     "fg": "#5EEAD4"
+    }
+   },
+   "values": [
+    {
+     "id": "pain",
+     "label": "Pain",
+     "def": "Experimental or clinical pain outcomes (analgesia, hyperalgesia)."
+    },
+    {
+     "id": "itch",
+     "label": "Itch",
+     "def": "Pruritus outcomes."
+    },
+    {
+     "id": "nausea_gi",
+     "label": "Nausea / GI",
+     "def": "Nausea, motion sickness, gastric motility, bowel symptoms."
+    },
+    {
+     "id": "motor_function",
+     "label": "Motor function",
+     "def": "Motor symptoms, strength, movement performance (e.g., Parkinson's, fatigue in exercise)."
+    },
+    {
+     "id": "mood_depression",
+     "label": "Mood / depression",
+     "def": "Depressive symptoms and mood outcomes."
+    },
+    {
+     "id": "anxiety_stress",
+     "label": "Anxiety / stress",
+     "def": "Anxiety, stress reactivity, fear."
+    },
+    {
+     "id": "fatigue",
+     "label": "Fatigue",
+     "def": "Fatigue and energy outcomes."
+    },
+    {
+     "id": "sleep",
+     "label": "Sleep",
+     "def": "Sleep quality, latency, insomnia symptoms."
+    },
+    {
+     "id": "cognition",
+     "label": "Cognition",
+     "def": "Memory, attention, executive function, cognitive enhancement."
+    },
+    {
+     "id": "immune_inflammation",
+     "label": "Immune / inflammation",
+     "def": "Cytokines, immune cell function, allergic response, conditioned immunosuppression."
+    },
+    {
+     "id": "cardiovascular_bp",
+     "label": "Cardiovascular",
+     "def": "Blood pressure, heart rate, cardiac outcomes."
+    },
+    {
+     "id": "respiratory",
+     "label": "Respiratory",
+     "def": "Lung function, dyspnea, cough, asthma symptoms."
+    },
+    {
+     "id": "endocrine_hormonal",
+     "label": "Endocrine / hormonal",
+     "def": "Cortisol, growth hormone, insulin, sex hormones, oxytocin as outcomes."
+    },
+    {
+     "id": "sport_exercise_performance",
+     "label": "Sport / exercise",
+     "def": "Athletic or exercise performance, ergogenic placebo effects."
+    },
+    {
+     "id": "sensory_perception",
+     "label": "Sensory / perception",
+     "def": "Taste, smell, vision, hearing, thermal perception outcomes other than pain/itch."
+    },
+    {
+     "id": "appetite_metabolism",
+     "label": "Appetite / metabolism",
+     "def": "Hunger, satiety, ghrelin, glucose, weight."
+    },
+    {
+     "id": "sexual_function",
+     "label": "Sexual function",
+     "def": "Sexual desire, arousal, dysfunction outcomes."
+    },
+    {
+     "id": "addiction_craving",
+     "label": "Addiction / craving",
+     "def": "Craving, drug effects under expectancy manipulation, alcohol/caffeine/nicotine placebo."
+    },
+    {
+     "id": "adverse_events",
+     "label": "Adverse events",
+     "def": "Side effects, drug discontinuation, symptom reporting after negative information."
+    },
+    {
+     "id": "global_health_qol",
+     "label": "Global health / QoL",
+     "def": "Global improvement, quality of life, functioning."
+    },
+    {
+     "id": "other",
+     "label": "Other",
+     "def": "Domain not listed."
+    }
+   ]
+  },
+  {
+   "id": "outcome_measures",
+   "label": "Outcome measure",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "blue",
+    "light": {
+     "bg": "#DBEAFE",
+     "fg": "#1E40AF"
+    },
+    "dark": {
+     "bg": "#172554",
+     "fg": "#93C5FD"
+    }
+   },
+   "values": [
+    {
+     "id": "self_report",
+     "label": "Self-report",
+     "def": "Ratings, questionnaires, VAS/NRS, diaries."
+    },
+    {
+     "id": "behavioral_performance",
+     "label": "Behavioral / performance",
+     "def": "Reaction time, accuracy, tolerance, endurance, task performance."
+    },
+    {
+     "id": "clinician_rated",
+     "label": "Clinician-rated",
+     "def": "Observer-rated scales (e.g., HAM-D, UPDRS)."
+    },
+    {
+     "id": "clinical_endpoint",
+     "label": "Clinical endpoint",
+     "def": "Disease markers, events, lab values, healing, relapse."
+    },
+    {
+     "id": "autonomic",
+     "label": "Autonomic",
+     "def": "Heart rate/HRV, skin conductance, blood pressure, respiration, pupillometry."
+    },
+    {
+     "id": "neuroendocrine",
+     "label": "Neuroendocrine",
+     "def": "Cortisol, ACTH, oxytocin, catecholamines, other hormones."
+    },
+    {
+     "id": "immune_inflammatory",
+     "label": "Immune / inflammatory",
+     "def": "Cytokines, immune cell assays, histamine, wheal/flare."
+    },
+    {
+     "id": "smri",
+     "label": "sMRI",
+     "def": "Structural MRI (volume, thickness, DTI/diffusion)."
+    },
+    {
+     "id": "fmri",
+     "label": "fMRI",
+     "def": "Functional MRI (task, resting-state, spinal, connectivity, MVPA)."
+    },
+    {
+     "id": "pet_metabolism",
+     "label": "PET (metabolism/flow)",
+     "def": "FDG-PET, blood-flow PET."
+    },
+    {
+     "id": "pet_neurochemical",
+     "label": "PET (neurochemical)",
+     "def": "Receptor-ligand PET (e.g., carfentanil, raclopride)."
+    },
+    {
+     "id": "eeg",
+     "label": "EEG / ERP",
+     "def": "Scalp EEG, evoked potentials (incl. laser-evoked), intracranial EEG."
+    },
+    {
+     "id": "meg",
+     "label": "MEG",
+     "def": "Magnetoencephalography."
+    },
+    {
+     "id": "nirs",
+     "label": "NIRS",
+     "def": "Functional near-infrared spectroscopy."
+    },
+    {
+     "id": "spinal_peripheral_electrophysiology",
+     "label": "Spinal / peripheral electrophysiology",
+     "def": "RIII reflex, EMG, nerve conduction, microneurography."
+    },
+    {
+     "id": "tms_physiology",
+     "label": "TMS physiology",
+     "def": "Motor-evoked potentials or cortical excitability as outcome."
+    },
+    {
+     "id": "motor_kinematic",
+     "label": "Motor / kinematic",
+     "def": "Movement kinematics, force, gait, tremor recordings."
+    },
+    {
+     "id": "genetic_molecular",
+     "label": "Genetic / molecular",
+     "def": "Genotype, gene expression, epigenetics, microbiome."
+    },
+    {
+     "id": "pharmacokinetic",
+     "label": "Pharmacokinetic",
+     "def": "Drug/metabolite concentrations."
+    },
+    {
+     "id": "healthcare_utilization",
+     "label": "Healthcare utilization",
+     "def": "Medication use, visits, adherence, discontinuation, costs."
+    },
+    {
+     "id": "other",
+     "label": "Other",
+     "def": "Measure not listed."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "No outcome measured."
+    }
+   ]
+  },
+  {
+   "id": "design",
+   "label": "Design",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "orange",
+    "light": {
+     "bg": "#FFEDD5",
+     "fg": "#9A3412"
+    },
+    "dark": {
+     "bg": "#431407",
+     "fg": "#FDBA74"
+    }
+   },
+   "values": [
+    {
+     "id": "parallel_groups_rct",
+     "label": "Parallel-groups RCT",
+     "def": "Participants randomized to placebo-context vs. control-context (or no-treatment) groups."
+    },
+    {
+     "id": "crossover_rct",
+     "label": "Crossover RCT",
+     "def": "Each participant receives all conditions in randomized order."
+    },
+    {
+     "id": "within_subject_experimental",
+     "label": "Within-subject experimental",
+     "def": "Placebo vs. control cues/sites/trials within person in a lab paradigm (e.g., conditioning + test)."
+    },
+    {
+     "id": "open_hidden",
+     "label": "Open-hidden",
+     "def": "Overt vs. covert administration of an active treatment."
+    },
+    {
+     "id": "balanced_placebo",
+     "label": "Balanced placebo design",
+     "def": "2x2 crossing of told-drug/told-placebo with received-drug/received-placebo."
+    },
+    {
+     "id": "placebo_vs_no_treatment_arm",
+     "label": "Placebo vs. no-treatment arm",
+     "def": "Trial including both a placebo arm and a natural-history/no-treatment arm."
+    },
+    {
+     "id": "single_group_pre_post",
+     "label": "Single-group pre/post",
+     "def": "Placebo-arm change from baseline without an untreated control (placebo response)."
+    },
+    {
+     "id": "placebo_arm_secondary_analysis",
+     "label": "Placebo-arm analysis",
+     "def": "Analysis of placebo/sham arms from existing trials (predictors, trajectories, meta-regression)."
+    },
+    {
+     "id": "observational",
+     "label": "Observational",
+     "def": "Cohort, cross-sectional, case-control, or naturalistic data."
+    },
+    {
+     "id": "survey_interview",
+     "label": "Survey / qualitative",
+     "def": "Questionnaire, interview, or focus-group study."
+    },
+    {
+     "id": "animal_experiment",
+     "label": "Animal experiment",
+     "def": "Controlled experiment in non-human animals."
+    },
+    {
+     "id": "computational_modeling",
+     "label": "Computational modeling",
+     "def": "Model fitting or simulation as the primary design."
+    },
+    {
+     "id": "meta_analytic",
+     "label": "Meta-analytic",
+     "def": "Pooled analysis across studies."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "No study design (theory, commentary)."
+    }
+   ]
+  },
+  {
+   "id": "effects",
+   "label": "Findings",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "value-specific",
+    "light": {
+     "bg": "#F3F4F6",
+     "fg": "#374151"
+    },
+    "dark": {
+     "bg": "#1F2937",
+     "fg": "#D1D5DB"
+    }
+   },
+   "value_colors": {
+    "significant_subjective": {
+     "light": {
+      "bg": "#D1FAE5",
+      "fg": "#065F46"
+     },
+     "dark": {
+      "bg": "#022C22",
+      "fg": "#6EE7B7"
+     }
+    },
+    "significant_objective": {
+     "light": {
+      "bg": "#A7F3D0",
+      "fg": "#064E3B"
+     },
+     "dark": {
+      "bg": "#064E3B",
+      "fg": "#A7F3D0"
+     }
+    },
+    "null_subjective": {
+     "light": {
+      "bg": "#F3F4F6",
+      "fg": "#4B5563"
+     },
+     "dark": {
+      "bg": "#1F2937",
+      "fg": "#9CA3AF"
+     }
+    },
+    "null_objective": {
+     "light": {
+      "bg": "#E5E7EB",
+      "fg": "#374151"
+     },
+     "dark": {
+      "bg": "#111827",
+      "fg": "#9CA3AF"
+     }
+    },
+    "mixed_inconsistent": {
+     "light": {
+      "bg": "#FEF3C7",
+      "fg": "#92400E"
+     },
+     "dark": {
+      "bg": "#451A03",
+      "fg": "#FCD34D"
+     }
+    },
+    "not_applicable": {
+     "light": {
+      "bg": "#F9FAFB",
+      "fg": "#6B7280"
+     },
+     "dark": {
+      "bg": "#111827",
+      "fg": "#6B7280"
+     }
+    }
+   },
+   "values": [
+    {
+     "id": "significant_subjective",
+     "label": "Effect on subjective",
+     "def": "Statistically reliable placebo/nocebo effect or response on self-report outcomes."
+    },
+    {
+     "id": "significant_objective",
+     "label": "Effect on objective",
+     "def": "Reliable effect on physiological, neural, behavioral, or clinician-rated/clinical outcomes."
+    },
+    {
+     "id": "null_subjective",
+     "label": "Null on subjective",
+     "def": "No reliable effect on self-report outcomes."
+    },
+    {
+     "id": "null_objective",
+     "label": "Null on objective",
+     "def": "No reliable effect on objective outcomes."
+    },
+    {
+     "id": "mixed_inconsistent",
+     "label": "Mixed",
+     "def": "Effects present for some outcomes/conditions/subgroups but not others, or moderated."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "No effect estimate (protocol, theory, methods)."
+    }
+   ]
+  },
+  {
+   "id": "mechanisms",
+   "label": "Mechanism / topic",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "fuchsia",
+    "light": {
+     "bg": "#FAE8FF",
+     "fg": "#86198F"
+    },
+    "dark": {
+     "bg": "#4A044E",
+     "fg": "#F0ABFC"
+    }
+   },
+   "values": [
+    {
+     "id": "verbal_suggestion_expectation",
+     "label": "Expectation / suggestion",
+     "def": "Verbal instructions or induced expectancies as the manipulated or measured mechanism."
+    },
+    {
+     "id": "classical_conditioning",
+     "label": "Conditioning",
+     "def": "Pharmacological or experiential conditioning procedures (incl. subliminal/unconscious)."
+    },
+    {
+     "id": "social_observational_learning",
+     "label": "Social learning",
+     "def": "Observing others, peer models, social information."
+    },
+    {
+     "id": "open_label_placebo",
+     "label": "Open-label placebo",
+     "def": "Placebo given honestly without deception."
+    },
+    {
+     "id": "treatment_cues_dose_route",
+     "label": "Treatment cues (dose/route/price/brand)",
+     "def": "Pill color, number, price, branding, route, invasiveness, device appearance."
+    },
+    {
+     "id": "provider_patient_interaction",
+     "label": "Provider-patient interaction",
+     "def": "Empathy, warmth, competence, communication style, therapeutic alliance."
+    },
+    {
+     "id": "therapeutic_ritual_context",
+     "label": "Ritual / context",
+     "def": "Setting, ritual, symbolic features of care."
+    },
+    {
+     "id": "neurobiology_opioid",
+     "label": "Opioid system",
+     "def": "Endogenous opioid involvement (naloxone, PET, genetics)."
+    },
+    {
+     "id": "neurobiology_dopamine",
+     "label": "Dopamine system",
+     "def": "Dopaminergic involvement (reward, Parkinson's, PET)."
+    },
+    {
+     "id": "neurobiology_other_neurochemical",
+     "label": "Other neurochemistry",
+     "def": "Endocannabinoid, CCK, oxytocin, vasopressin, serotonin, immune signaling."
+    },
+    {
+     "id": "neural_systems_circuits",
+     "label": "Neural systems",
+     "def": "Brain regions/circuits, descending modulation, spinal mechanisms, neural signatures."
+    },
+    {
+     "id": "genetics_placebome",
+     "label": "Genetics",
+     "def": "Genetic variation associated with placebo/nocebo responses."
+    },
+    {
+     "id": "computational_predictive_processing",
+     "label": "Computational / predictive processing",
+     "def": "Bayesian, reinforcement-learning, or predictive-coding accounts and model fits."
+    },
+    {
+     "id": "emotion_anxiety_regulation",
+     "label": "Emotion / anxiety",
+     "def": "Anxiety reduction, affect, reward/relief as mediators."
+    },
+    {
+     "id": "attention_cognitive_appraisal",
+     "label": "Attention / appraisal",
+     "def": "Attention, interpretation, mindset, self-efficacy, control."
+    },
+    {
+     "id": "prior_treatment_experience",
+     "label": "Prior experience / learning history",
+     "def": "Treatment history, previous response or failure, carry-over."
+    },
+    {
+     "id": "nocebo_communication_disclosure",
+     "label": "Side-effect communication",
+     "def": "Informed consent framing, side-effect disclosure, framing and nocebo."
+    },
+    {
+     "id": "media_social_contagion",
+     "label": "Media / social contagion",
+     "def": "Media reports, mass psychogenic illness, generic-switch nocebo, social spread."
+    },
+    {
+     "id": "clinical_use_ethics_attitudes",
+     "label": "Clinical use / ethics / attitudes",
+     "def": "Prevalence of placebo prescribing, ethics, deception, patient and clinician attitudes."
+    },
+    {
+     "id": "trial_methodology_placebo_response",
+     "label": "Trial methodology",
+     "def": "Placebo response magnitude/trends in RCTs, blinding, run-in, expectation assessment, design recommendations."
+    },
+    {
+     "id": "harnessing_placebo_clinical",
+     "label": "Harnessing placebo effects",
+     "def": "Interventions that leverage expectation/context to improve outcomes (dose-extending, communication training)."
+    },
+    {
+     "id": "history_conceptual",
+     "label": "History / concepts",
+     "def": "Definitions, history, philosophy of placebo."
+    },
+    {
+     "id": "other",
+     "label": "Other",
+     "def": "Mechanism or topic not listed."
+    }
+   ]
+  },
+  {
+   "id": "moderators",
+   "label": "Moderators",
+   "multi": true,
+   "required": false,
+   "color": {
+    "hue": "amber",
+    "light": {
+     "bg": "#FEF3C7",
+     "fg": "#92400E"
+    },
+    "dark": {
+     "bg": "#451A03",
+     "fg": "#FCD34D"
+    }
+   },
+   "values": [
+    {
+     "id": "neurostimulation",
+     "label": "Neurostimulation",
+     "def": "TMS/tDCS/tACS/DBS used to modulate the placebo effect."
+    },
+    {
+     "id": "pharmacological_manipulation",
+     "label": "Pharmacological manipulation",
+     "def": "Drugs (naloxone, proglumide, diazepam, etc.) used to block or enhance the effect."
+    },
+    {
+     "id": "personality_traits",
+     "label": "Personality",
+     "def": "Optimism, suggestibility, neuroticism, absorption, etc."
+    },
+    {
+     "id": "genetics",
+     "label": "Genetics",
+     "def": "Genotype as moderator."
+    },
+    {
+     "id": "sex_gender",
+     "label": "Sex / gender",
+     "def": "Sex or gender differences."
+    },
+    {
+     "id": "age",
+     "label": "Age",
+     "def": "Age as moderator."
+    },
+    {
+     "id": "culture_ethnicity",
+     "label": "Culture / ethnicity",
+     "def": "Cross-cultural or ethnic differences."
+    },
+    {
+     "id": "prior_experience",
+     "label": "Prior experience",
+     "def": "Learning history, previous treatment success/failure."
+    },
+    {
+     "id": "mood_anxiety_state",
+     "label": "Mood / anxiety state",
+     "def": "State affect, stress, or anxiety as moderator."
+    },
+    {
+     "id": "expectation_level",
+     "label": "Expectation level",
+     "def": "Measured or induced strength of expectation."
+    },
+    {
+     "id": "provider_characteristics",
+     "label": "Provider characteristics",
+     "def": "Clinician warmth, competence, status, gender."
+    },
+    {
+     "id": "treatment_characteristics",
+     "label": "Treatment characteristics",
+     "def": "Route, invasiveness, price, brand, dose frequency."
+    },
+    {
+     "id": "disease_severity_duration",
+     "label": "Disease severity / duration",
+     "def": "Baseline severity, chronicity."
+    },
+    {
+     "id": "trial_characteristics",
+     "label": "Trial characteristics",
+     "def": "Number of arms, allocation ratio, trial year, sample size, contact frequency."
+    },
+    {
+     "id": "none_reported",
+     "label": "None",
+     "def": "No moderator analysis."
+    }
+   ]
+  },
+  {
+   "id": "intervention_type",
+   "label": "Placebo type",
+   "multi": true,
+   "required": true,
+   "color": {
+    "hue": "cyan",
+    "light": {
+     "bg": "#CFFAFE",
+     "fg": "#155E75"
+    },
+    "dark": {
+     "bg": "#083344",
+     "fg": "#67E8F9"
+    }
+   },
+   "values": [
+    {
+     "id": "inert_pill_capsule",
+     "label": "Pill / capsule",
+     "def": "Oral inert tablet or capsule."
+    },
+    {
+     "id": "saline_injection_infusion",
+     "label": "Injection / infusion",
+     "def": "Saline or inert injection/IV."
+    },
+    {
+     "id": "topical_cream",
+     "label": "Topical",
+     "def": "Inert cream, gel, patch."
+    },
+    {
+     "id": "sham_device",
+     "label": "Sham device",
+     "def": "Inactive device (e.g., sham TENS, laser, magnet)."
+    },
+    {
+     "id": "sham_surgery",
+     "label": "Sham surgery",
+     "def": "Simulated surgical or invasive procedure."
+    },
+    {
+     "id": "sham_acupuncture",
+     "label": "Sham acupuncture",
+     "def": "Non-penetrating or off-point needling."
+    },
+    {
+     "id": "sham_neurostimulation",
+     "label": "Sham neurostimulation",
+     "def": "Sham TMS/tDCS/DBS as the placebo."
+    },
+    {
+     "id": "sham_psychological",
+     "label": "Sham psychological / attention control",
+     "def": "Inert psychological intervention or attention placebo."
+    },
+    {
+     "id": "digital_virtual",
+     "label": "Digital / virtual",
+     "def": "App, VR, or online placebo; digital OLP."
+    },
+    {
+     "id": "open_label_placebo",
+     "label": "Open-label placebo",
+     "def": "Placebo administered with disclosure."
+    },
+    {
+     "id": "active_drug_context_manipulation",
+     "label": "Active drug + context manipulation",
+     "def": "Real drug delivered with varied expectation/context (open-hidden, balanced placebo, dose-extending)."
+    },
+    {
+     "id": "verbal_suggestion_only",
+     "label": "Suggestion only",
+     "def": "Expectation manipulated without a physical placebo vehicle."
+    },
+    {
+     "id": "placebo_food_drink",
+     "label": "Food / drink",
+     "def": "Placebo beverage or food (caffeine, alcohol, supplement placebo)."
+    },
+    {
+     "id": "sham_exercise_physical",
+     "label": "Sham physical therapy",
+     "def": "Sham manual therapy, exercise, or physiotherapy."
+    },
+    {
+     "id": "other",
+     "label": "Other",
+     "def": "Vehicle not listed."
+    },
+    {
+     "id": "not_applicable",
+     "label": "N/A",
+     "def": "No placebo administered (surveys, theory)."
+    }
+   ]
+  }
+ ]
+}

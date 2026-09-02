@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — database</title>
+<meta name="description" content="Search every peer-reviewed study of placebo and nocebo effects by title, abstract and keyword tags.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Database</p>
+    <h1>Placebo research database</h1>
+    <p>Full-text search over titles, abstracts and assigned keywords. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND.</p>
+  </div>
+  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords — e.g. naloxone conditioning, open-label placebo IBS, nocebo side effects" autocomplete="off" aria-label="Search"><button class="btn primary" id="go">Search</button></div>
+  <div class="layout">
+    <aside class="filters" id="filters" aria-label="Filter by keyword"></aside>
+    <section>
+      <div class="filter-top">
+        <span class="count" id="count"></span>
+        <span id="active"></span>
+        <button class="btn link" id="clear" hidden>Clear</button>
+        <div class="sortbar" style="margin-left:auto">
+          <label>Sort <select id="sort"><option value="rel">relevance</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
+          <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
+          <label><input type="checkbox" id="showAdjacent"> adjacent</label>
+        </div>
+      </div>
+      <div class="papers" id="results"><div class="spinner">Loading database…</div></div>
+      <div class="pager" id="pager"></div>
+    </section>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/minisearch/7.2.0/umd/index.min.js"></script>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const PAGE = 25;
+  const { filters, params } = SOP.filtersFromQuery();
+  const els = Object.fromEntries(["q", "go", "filters", "count", "active", "clear", "sort", "yfrom", "yto", "showAdjacent", "results", "pager"].map(id => [id, document.getElementById(id)]));
+  els.q.value = params.get("q") || "";
+  els.sort.value = params.get("sort") || (els.q.value ? "rel" : "new");
+  els.showAdjacent.checked = params.get("adj") === "1";
+  const years = state.stats.years;
+  for (const y of years.slice().reverse()) { els.yfrom.add(new Option(y, y)); els.yto.add(new Option(y, y)); }
+  els.yfrom.value = params.get("from") || ""; els.yto.value = params.get("to") || "";
+  document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
+  let page = +(params.get("p") || 1);
+  const byId = new Map(state.index.map(r => [r.id, r]));
+
+  // Build the search index lazily from per-year text shards (title + abstract + keywords).
+  let mini = null, building = null;
+  function buildIndex() {
+    if (building) return building;
+    building = (async () => {
+      const ms = new MiniSearch({ fields: ["t", "ab", "kw"], storeFields: [], searchOptions: { boost: { t: 3, kw: 2 }, prefix: true, fuzzy: 0.15, combineWith: "AND" } });
+      const shards = Object.keys(state.stats.shards);
+      const docs = await Promise.all(shards.map(y => SOP.getJSON(`data/text/${y}.json`).catch(() => [])));
+      for (const d of docs) ms.addAll(d);
+      mini = ms;
+      return ms;
+    })();
+    return building;
+  }
+
+  async function run() {
+    const q = els.q.value.trim();
+    let hits = null; // Map id -> score
+    if (q) {
+      els.results.innerHTML = '<div class="spinner">Searching…</div>';
+      const ms = await buildIndex();
+      hits = new Map(ms.search(q).map(h => [h.id, h.score]));
+    }
+    let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)));
+    const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
+    pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
+    SOP.renderFilters(els.filters, pool, filters, () => { page = 1; run(); });
+    const shown = pool.filter(r => SOP.matches(r, filters));
+    const sort = els.sort.value;
+    if (sort === "rel" && hits) shown.sort((a, b) => hits.get(b.id) - hits.get(a.id));
+    else if (sort === "old") shown.sort((a, b) => (a.d || "").localeCompare(b.d || ""));
+    else if (sort === "cited") shown.sort((a, b) => (b.cited || 0) - (a.cited || 0));
+    else shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
+    const pages = Math.max(1, Math.ceil(shown.length / PAGE));
+    page = Math.min(Math.max(1, page), pages);
+    els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "");
+    els.active.innerHTML = SOP.activeChips(filters);
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q;
+    SOP.filtersToQuery(filters, { q, sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
+    const slice = shown.slice((page - 1) * PAGE, page * PAGE);
+    els.results.innerHTML = slice.length ? slice.map(r => SOP.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
+    els.pager.innerHTML = pages > 1 ? `<button class="btn" id="prev" ${page <= 1 ? "disabled" : ""}>‹ Prev</button><span class="small muted tnum">page ${page} of ${pages}</span><button class="btn" id="next" ${page >= pages ? "disabled" : ""}>Next ›</button>` : "";
+    const prev = document.getElementById("prev"), next = document.getElementById("next");
+    if (prev) prev.onclick = () => { page--; run(); window.scrollTo({ top: 0 }); };
+    if (next) next.onclick = () => { page++; run(); window.scrollTo({ top: 0 }); };
+  }
+  els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "new"; run(); };
+  els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
+  els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = () => { page = 1; run(); };
+  els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; page = 1; run(); };
+  SOP.bindCardChips(els.results, filters, () => { page = 1; run(); });
+  run();
+  if (!els.q.value) buildIndex(); // warm the index in the background
+})().catch(e => { document.getElementById("results").innerHTML = `<div class="empty">Could not load data (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

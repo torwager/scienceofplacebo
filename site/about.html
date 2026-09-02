@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — about</title>
+<meta name="description" content="How the Science of Placebo bibliography is built: sources, inclusion criteria, AI tagging, and how to contribute.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head"><p class="eyebrow">About</p><h1>About Science of Placebo</h1></div>
+  <div class="prose">
+    <p>Science of Placebo is a research hub and living bibliography for the science of placebo and nocebo effects. Every day it searches the biomedical literature, screens what it finds against explicit inclusion criteria, tags each included paper with a controlled vocabulary, and publishes the result here with links to the publisher. The whole thing runs in the open: the data, the code and the daily search live in <a href="https://github.com/torwager/scienceofplacebo">one public GitHub repository</a>.</p>
+
+    <div class="jips"><span class="pill-logo" aria-hidden="true"></span><div><b>Standing on JIPS.</b> The <a href="https://jips.online/" target="_blank" rel="noopener">Journal of Interdisciplinary Placebo Studies database</a> (Katja Weimer, Paul Enck and colleagues) curated monthly lists of new placebo and nocebo publications from 2016 to 2025. That work is the inspiration for this site, and their monthly lists seeded the database and were used to tune the search. If you use the historical collection, please credit JIPS.</div></div>
+
+    <h2>What is included</h2>
+    <p>We include peer-reviewed scientific studies, empirical or review, of the <b>placebo effect</b>, <b>nocebo effect</b>, <b>placebo response</b> or <b>nocebo response</b>.</p>
+    <ul>
+      <li><b>Placebo and nocebo effects</b> are causal effects of a placebo treatment or of the psychosocial or physical treatment context, estimated against a reduced, augmented or absent context: parallel groups (placebo versus no treatment), crossover, open versus hidden administration, balanced placebo designs, conditioning versus control, suggestion versus neutral instruction, and related designs (Wager &amp; Atlas, <i>Nature Reviews Neuroscience</i>, 2015).</li>
+      <li><b>Placebo and nocebo responses</b> are changes on an inert treatment relative to pre-treatment in a single group. We include studies with good information on responses, including analyses of placebo arms, predictors of response, and meta-analyses of placebo response or placebo-arm adverse events.</li>
+      <li>Mechanistic and moderator studies (brain imaging, pharmacology, genetics, personality, learning, clinician communication), open-label placebo trials, expectancy manipulations of active treatments, and animal models of conditioned drug responses are in scope.</li>
+      <li><b>Excluded</b>: trials and meta-analyses in which a placebo or sham arm is only the comparator for an efficacy question; editorials, letters and commentaries; protocols; and papers that mention placebo only in passing.</li>
+      <li><b>Adjacent</b> papers, which are about placebo but are not studies of effects or responses (attitude surveys, ethics, blinding and trial-design methodology, placebo manufacturing), are kept in the database with an "adjacent" badge and are hidden from the default feed.</li>
+    </ul>
+
+    <h2>How papers are found and tagged</h2>
+    <ul>
+      <li><b>Sources.</b> PubMed (E-utilities) is the primary source, with Europe PMC for preprints and open-access full text and OpenAlex for journals outside PubMed and for open-access links. Google Scholar has no API and forbids automated queries, so it is not searched.</li>
+      <li><b>Screening and tagging.</b> A large language model reads the title, abstract and indexing terms of each candidate, applies the criteria above, and assigns keywords along twelve axes: study focus, article type, species, population, age group, condition domain, outcome measures, design, findings, mechanism or topic, moderators, and placebo type. It also writes the one-sentence summary shown on each card and reports its confidence. Low-confidence papers go to a review queue instead of the site.</li>
+      <li><b>Accuracy.</b> Tags are machine-assigned from abstracts and will sometimes be wrong. Every paper page has a link to suggest a correction; corrections are applied by hand and override the model.</li>
+      <li><b>Feed.</b> The front page shows papers added in the last week, or the last month when a week is thin, capped at about two dozen. The full database is searchable by title, abstract and tags.</li>
+    </ul>
+
+    <h2>Full text</h2>
+    <p>Where a paper has an open-access version we link to it. A private collection of full-text PDFs is maintained for authorized collaborators and is not exposed on the public site.</p>
+
+    <h2>Contributing</h2>
+    <ul>
+      <li>Suggest a missing paper, an event or a resource, or a tag correction, by <a href="https://github.com/torwager/scienceofplacebo/issues/new">opening an issue</a>.</li>
+      <li>Discuss findings on the <a href="discuss.html">discussion board</a> or on any paper's page.</li>
+      <li>The data files are plain JSON in the repository and may be reused with attribution to Science of Placebo and, for the 2016 to 2025 seed set, to JIPS.</li>
+    </ul>
+
+    <h2>People</h2>
+    <p>Science of Placebo is run by <a href="https://sites.dartmouth.edu/canlab/" target="_blank" rel="noopener">Tor Wager and the Cognitive and Affective Neuroscience Lab</a> at Dartmouth College.</p>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>

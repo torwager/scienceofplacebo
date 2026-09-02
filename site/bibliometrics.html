@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — bibliometrics</title>
+<meta name="description" content="A bibliometric analysis of the placebo and nocebo literature: growth over time, designs, populations, outcome measures, journals and authors.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .viz-root { --surface-1: #ffffff; --text-primary: #1a2332; --text-secondary: #646b75; --grid: #e8e4dc;
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --s4: #eda100; --s5: #e87ba4; --s6: #008300; --s7: #4a3aa7; --s8: #e34948; --seq: #2a78d6; }
+  @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) .viz-root { --surface-1: #1a2029; --text-primary: #e8e6df; --text-secondary: #a9afa9; --grid: #2a303a;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --seq: #3987e5; } }
+  :root[data-theme="dark"] .viz-root { --surface-1: #1a2029; --text-primary: #e8e6df; --text-secondary: #a9afa9; --grid: #2a303a;
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --s4: #c98500; --s5: #d55181; --s6: #008300; --s7: #9085e9; --s8: #e66767; --seq: #3987e5; }
+  .viz-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 900px) { .viz-grid { grid-template-columns: 1fr 1fr; } .viz-grid .wide { grid-column: 1 / -1; } }
+  .viz { background: var(--surface-1); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem 1.1rem; display: grid; gap: .5rem; min-width: 0; }
+  .viz h3 { font-family: var(--sans); font-weight: 600; font-size: 1rem; margin: 0; color: var(--text-primary); }
+  .viz .sub { font-size: .84rem; color: var(--text-secondary); margin: -.3rem 0 .2rem; }
+  .viz svg { width: 100%; height: auto; display: block; overflow: visible; font-family: var(--sans); }
+  .viz .axis text { fill: var(--text-secondary); font-size: 11px; }
+  .viz .axis line, .viz .grid line { stroke: var(--grid); stroke-width: 1; }
+  .viz .lbl { fill: var(--text-primary); font-size: 11px; }
+  .viz .lbl.muted { fill: var(--text-secondary); }
+  .legend { display: flex; flex-wrap: wrap; gap: .3rem .9rem; font-size: .8rem; color: var(--text-secondary); }
+  .legend span { display: inline-flex; align-items: center; gap: .4em; }
+  .legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+  .tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--bg); font-size: .8rem; padding: .4rem .6rem; border-radius: 8px; box-shadow: var(--shadow); z-index: 60; max-width: 260px; opacity: 0; transition: opacity .12s; }
+  .tip b { display: block; font-weight: 600; }
+  .hbar rect { transition: opacity .15s; }
+  .hbar:hover rect { opacity: .8; }
+  .viz table { border-collapse: collapse; font-size: .84rem; width: 100%; }
+  .viz td, .viz th { padding: .25rem .5rem; border-bottom: 1px solid var(--grid); text-align: left; }
+  .viz td.n, .viz th.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .viz details summary { cursor: pointer; font-size: .8rem; color: var(--text-secondary); }
+  .cite { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.2rem; font-size: .95rem; max-width: 900px; }
+  .num-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .8rem; margin: .4rem 0 1.4rem; }
+  .num { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: .8rem 1rem; }
+  .num b { font-family: var(--serif); font-size: 1.7rem; font-weight: 400; display: block; line-height: 1.1; }
+  .num span { font-size: .74rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap viz-root">
+  <div class="page-head">
+    <p class="eyebrow">Bibliometrics</p>
+    <h1>The shape of placebo research</h1>
+    <p>A descriptive analysis of the papers in this database: how the literature has grown, what kinds of studies are published, in whom, measured how, and where. Figures are recomputed from the database on every build, so they reflect the collection as it stands today (papers marked <em>adjacent</em> are included; excluded candidates are not).</p>
+  </div>
+  <div class="cite">
+    <b>Prior work.</b> The first dedicated bibliometric study of this literature used the JIPS database: Weimer K, Buschhart C, Broelz EK, Enck P, Horing B. <a href="https://pubmed.ncbi.nlm.nih.gov/35401284/" target="_blank" rel="noopener">Bibliometric properties of placebo literature from the JIPS database: a descriptive study</a>. <i>Frontiers in Psychiatry</i> 2022. They analysed about 5,000 curated articles from 1946 onward and described publication growth, article types, topics, authorship networks and citation impact, comparing placebo research with addiction research as a reference field. The figures below follow the same descriptive spirit on an automatically screened and tagged collection, and add the tag axes this site assigns (study focus, design, population, outcome modality, findings).
+  </div>
+  <div class="num-row" id="nums"></div>
+  <div class="viz-grid" id="viz"><div class="spinner">Computing…</div></div>
+  <p class="small muted" style="margin-top:1.4rem">Notes. Tags are machine-assigned from titles and abstracts and carry some error; counts for the current year are partial. Author counts use PubMed surname plus initials, so two people sharing a name are merged and one person with variant initials is split. Citation counts come from OpenAlex where available. The database is seeded with the JIPS monthly lists (2016 to 2025) and a PubMed backfill of the older literature, so coverage before 2016 depends on PubMed indexing and the search terms described on the <a href="about.html">about page</a>.</p>
+</main>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const B = await SOP.getJSON("data/bibliometrics.json");
+  const esc = SOP.esc;
+  const S = ["var(--s1)", "var(--s2)", "var(--s3)", "var(--s4)", "var(--s5)", "var(--s6)", "var(--s7)", "var(--s8)"];
+  const tip = document.getElementById("tip");
+  function showTip(e, html) { tip.innerHTML = html; tip.style.opacity = 1; const x = Math.min(e.clientX + 14, window.innerWidth - 280), y = e.clientY + 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
+  function hideTip() { tip.style.opacity = 0; }
+  const lab = (ax, v) => SOP.label(ax, v);
+  const thisYear = new Date().getFullYear();
+  document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
+
+  document.getElementById("nums").innerHTML = [
+    [B.n.toLocaleString(), "papers"], [B.years[0] + "–" + B.years[B.years.length - 1], "years covered"], [B.n_journals.toLocaleString(), "journals"], [B.n_authors.toLocaleString(), "distinct authors"], [B.n_jips_seed.toLocaleString(), "from JIPS lists"]
+  ].map(([v, l]) => `<div class="num"><b>${v}</b><span>${l}</span></div>`).join("");
+
+  // ---------- chart builders (inline SVG) ----------
+  function barsByYear(years, values, opts = {}) {
+    const W = 640, H = 240, m = { t: 12, r: 8, b: 30, l: 40 };
+    const iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const max = Math.max(1, ...values);
+    const ticks = niceTicks(max, 4);
+    const bw = iw / years.length;
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria || "")}">`;
+    s += `<g class="grid">` + ticks.map(t => `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih - t / max * ih}" y2="${m.t + ih - t / max * ih}"/>`).join("") + `</g>`;
+    s += `<g class="axis">` + ticks.map(t => `<text x="${m.l - 6}" y="${m.t + ih - t / max * ih + 4}" text-anchor="end">${t}</text>`).join("") + `</g>`;
+    years.forEach((y, i) => {
+      const h = values[i] / max * ih, x = m.l + i * bw + 1, w = Math.max(1, bw - 2);
+      const partial = y === thisYear;
+      s += `<g class="hbar" data-tip="<b>${y}</b>${values[i]} papers${partial ? " (year in progress)" : ""}"><rect x="${x}" y="${m.t + ih - h}" width="${w}" height="${h}" rx="${Math.min(3, w / 2)}" fill="var(--seq)" opacity="${partial ? .45 : 1}"/><rect x="${x}" y="${m.t}" width="${w}" height="${ih}" fill="transparent"/></g>`;
+    });
+    const step = years.length > 40 ? 10 : years.length > 20 ? 5 : 2;
+    s += `<g class="axis">` + years.map((y, i) => y % step === 0 ? `<text x="${m.l + i * bw + bw / 2}" y="${H - 10}" text-anchor="middle">${y}</text>` : "").join("") + `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih}" y2="${m.t + ih}"/></g>`;
+    return s + `</svg>`;
+  }
+  function stackedShare(series, axis, opts = {}) {
+    // 100% stacked area by year, top-k keys (rest folded to Other); years with < minN papers are skipped at the start
+    const keys = series.keys.slice(0, opts.k || 6);
+    const rows = series.rows.filter(r => r.slice(1).reduce((a, b) => a + b, 0) >= (opts.minN || 5));
+    if (rows.length < 3) return `<div class="empty">Not enough tagged papers yet.</div>`;
+    const W = 640, H = 240, m = { t: 12, r: 8, b: 30, l: 40 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const years = rows.map(r => r[0]);
+    const idx = keys.map(k => series.keys.indexOf(k) + 1);
+    const totals = rows.map(r => r.slice(1).reduce((a, b) => a + b, 0));
+    const shares = rows.map((r, ri) => { const vals = idx.map(i => r[i] / totals[ri]); const other = 1 - vals.reduce((a, b) => a + b, 0); return vals.concat([Math.max(0, other)]); });
+    const allKeys = keys.concat(["other"]);
+    const x = i => m.l + i / (years.length - 1) * iw;
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria || "")}">`;
+    s += `<g class="grid">` + [0, .25, .5, .75, 1].map(t => `<line x1="${m.l}" x2="${W - m.r}" y1="${m.t + ih - t * ih}" y2="${m.t + ih - t * ih}"/>`).join("") + `</g>`;
+    s += `<g class="axis">` + [0, .5, 1].map(t => `<text x="${m.l - 6}" y="${m.t + ih - t * ih + 4}" text-anchor="end">${Math.round(t * 100)}%</text>`).join("") + `</g>`;
+    let base = years.map(() => 0);
+    allKeys.forEach((k, ki) => {
+      const top = years.map((_, i) => base[i] + shares[i][ki]);
+      const path = years.map((_, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${(m.t + ih - top[i] * ih).toFixed(1)}`).join("") + years.map((_, i) => { const j = years.length - 1 - i; return `L${x(j).toFixed(1)},${(m.t + ih - base[j] * ih).toFixed(1)}`; }).join("") + "Z";
+      const color = k === "other" ? "var(--grid)" : S[ki];
+      s += `<path d="${path}" fill="${color}" stroke="var(--surface-1)" stroke-width="1.5" class="hbar" data-key="${esc(k)}"/>`;
+      base = top;
+    });
+    // invisible hover columns
+    years.forEach((y, i) => {
+      const parts = allKeys.map((k, ki) => `${k === "other" ? "Other" : lab(axis, k)}: ${Math.round(shares[i][ki] * 100)}%`).join("<br>");
+      const cw = iw / (years.length - 1);
+      s += `<rect x="${x(i) - cw / 2}" y="${m.t}" width="${cw}" height="${ih}" fill="transparent" class="hbar" data-tip="<b>${y} · ${totals[i]} papers</b>${parts}"/>`;
+    });
+    const step = years.length > 40 ? 10 : years.length > 20 ? 5 : 2;
+    s += `<g class="axis">` + years.map((y, i) => y % step === 0 ? `<text x="${x(i)}" y="${H - 10}" text-anchor="middle">${y}</text>` : "").join("") + `</g></svg>`;
+    s += `<div class="legend">` + allKeys.map((k, ki) => `<span><i style="background:${k === "other" ? "var(--grid)" : S[ki]}"></i>${k === "other" ? "Other" : esc(lab(axis, k))}</span>`).join("") + `</div>`;
+    return s;
+  }
+  function hbars(pairs, opts = {}) {
+    const rows = pairs.slice(0, opts.k || 12);
+    const max = Math.max(1, ...rows.map(r => r[1]));
+    const W = 640, rh = 22, m = { l: 190, r: 48, t: 4 }, iw = W - m.l - m.r, H = m.t + rows.length * rh + 4;
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.aria || "")}">`;
+    rows.forEach(([k, v], i) => {
+      const y = m.t + i * rh, w = v / max * iw;
+      const name = opts.axis ? lab(opts.axis, k) : k;
+      s += `<g class="hbar" data-tip="<b>${esc(name)}</b>${v} papers">
+        <text class="lbl" x="${m.l - 8}" y="${y + rh / 2 + 4}" text-anchor="end">${esc(name.length > 30 ? name.slice(0, 29) + "…" : name)}</text>
+        <rect x="${m.l}" y="${y + 4}" width="${Math.max(2, w)}" height="${rh - 8}" rx="3" fill="${opts.color || "var(--seq)"}"/>
+        <text class="lbl muted" x="${m.l + w + 6}" y="${y + rh / 2 + 4}">${v}</text></g>`;
+    });
+    return s + `</svg>`;
+  }
+  function niceTicks(max, n) { const raw = max / n, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p, step = (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; const out = []; for (let t = 0; t <= max; t += step) out.push(Math.round(t)); return out; }
+  function table(pairs, head, axis) { return `<details><summary>Show as table</summary><table><tr><th>${esc(head[0])}</th><th class="n">${esc(head[1])}</th></tr>${pairs.map(([k, v]) => `<tr><td>${esc(axis ? lab(axis, k) : k)}</td><td class="n">${v}</td></tr>`).join("")}</table></details>`; }
+  function card(title, sub, body, wide) { return `<div class="viz${wide ? " wide" : ""}"><h3>${title}</h3><div class="sub">${sub}</div>${body}</div>`; }
+
+  const yrs = B.years.filter(y => y >= 1940), vals = yrs.map(y => B.per_year[B.years.indexOf(y)]);
+  const tc = B.tag_counts;
+  const html = [
+    card("Papers per year", "Included papers by publication year. The current year is shown lighter because it is incomplete.", barsByYear(yrs, vals, { aria: "Papers per year" }) + table(yrs.map((y, i) => [y, vals[i]]), ["Year", "Papers"]), true),
+    card("Empirical, review or theory", "Share of papers each year by kind of article.", stackedShare(B.kind_by_year, "kind", { k: 3, aria: "Kind of article by year" })),
+    card("Study focus", "Share of papers each year by what was studied: effects (context contrasts) versus responses (change on an inert treatment), placebo versus nocebo.", stackedShare(B.focus_by_year, "study_focus", { k: 5, aria: "Study focus by year" })),
+    card("Outcome measures over time", "Share of papers using each class of outcome measure (papers can use several).", stackedShare(B.modality_by_year, "outcome_measures", { k: 7, aria: "Outcome measures by year" })),
+    card("Designs over time", "Share of papers by study design (papers can use several).", stackedShare(B.design_by_year, "design", { k: 7, aria: "Designs by year" })),
+    card("Populations", "Who was studied, across the whole collection.", hbars(tc.population || [], { axis: "population", k: 14, aria: "Populations" }) + table(tc.population || [], ["Population", "Papers"], "population")),
+    card("Condition domains", "The outcome domain each study addressed.", hbars(tc.condition_domain || [], { axis: "condition_domain", k: 14, color: "var(--s2)", aria: "Condition domains" }) + table(tc.condition_domain || [], ["Domain", "Papers"], "condition_domain")),
+    card("Mechanisms and topics", "Mechanistic or topical focus.", hbars(tc.mechanisms || [], { axis: "mechanisms", k: 14, color: "var(--s7)", aria: "Mechanisms" }) + table(tc.mechanisms || [], ["Mechanism", "Papers"], "mechanisms")),
+    card("Findings", "What the papers reported about placebo or nocebo effects on subjective and objective outcomes.", hbars(tc.effects || [], { axis: "effects", k: 6, color: "var(--s3)", aria: "Findings" }) + table(tc.effects || [], ["Finding", "Papers"], "effects")),
+    card("Journals", "Journals publishing the most papers in the collection.", hbars(B.top_journals, { k: 15, aria: "Top journals" }) + table(B.top_journals, ["Journal", "Papers"])),
+    card("Most frequent authors", "Authors appearing most often in author lists (any position).", hbars(B.top_authors, { k: 15, color: "var(--s5)", aria: "Most frequent authors" }) + table(B.top_authors, ["Author", "Papers"])),
+    card("Most frequent first and senior authors", "First authors (left) and last authors (right).", `<div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem">${hbars(B.top_first_authors, { k: 10, color: "var(--s1)", aria: "First authors" })}${hbars(B.top_last_authors, { k: 10, color: "var(--s4)", aria: "Last authors" })}</div>`, true),
+    card("Most cited", "Citation counts from OpenAlex.", `<table><tr><th>Paper</th><th class="n">Citations</th></tr>${B.most_cited.slice(0, 15).map(p => `<tr><td><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a><div class="small muted">${esc(p.a)} · ${esc(p.j)} · ${p.y}</div></td><td class="n">${p.cites}</td></tr>`).join("")}</table>`, true),
+  ].join("");
+  const viz = document.getElementById("viz");
+  viz.innerHTML = html;
+  viz.addEventListener("mousemove", e => { const g = e.target.closest("[data-tip]"); if (g) showTip(e, g.dataset.tip); else hideTip(); });
+  viz.addEventListener("mouseleave", hideTip);
+})().catch(e => { document.getElementById("viz").innerHTML = `<div class="empty">Could not load bibliometrics (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

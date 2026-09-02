@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://torwager.github.io/scienceofplacebo/schemas/paper.schema.json",
+  "title": "Science of Placebo paper record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "schema_version", "title", "authors", "year", "discovery", "date_added", "status"],
+  "properties": {
+    "id": {"type": "string", "description": "Stable key. Prefer 'doi:<lowercase doi>'; else 'pmid:<n>'; else 'h:<sha1(title|year)[:12]>'."},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "status": {"type": "string", "enum": ["included", "excluded", "needs_review"], "description": "Publication status on the site; derived from classification.screening.decision and human review."},
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["family"], "properties": {"family": {"type": "string"}, "given": {"type": "string"}, "orcid": {"type": "string"}, "affiliation": {"type": "string"}}}},
+    "first_author": {"type": "string", "description": "Family name of first author (denormalized for display/sort)."},
+    "journal": {"type": "string"},
+    "journal_abbrev": {"type": "string"},
+    "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+    "publication_date": {"type": "string", "format": "date", "description": "Earliest of epub/print dates, ISO 8601."},
+    "volume": {"type": "string"},
+    "issue": {"type": "string"},
+    "pages": {"type": "string"},
+    "doi": {"type": "string", "pattern": "^10\\.\\S+$"},
+    "pmid": {"type": "string", "pattern": "^[0-9]+$"},
+    "pmcid": {"type": "string", "pattern": "^PMC[0-9]+$"},
+    "openalex_id": {"type": "string"},
+    "semantic_scholar_id": {"type": "string"},
+    "abstract": {"type": "string"},
+    "author_keywords": {"type": "array", "items": {"type": "string"}},
+    "mesh_terms": {"type": "array", "items": {"type": "string"}},
+    "language": {"type": "string", "default": "en"},
+    "publication_types": {"type": "array", "items": {"type": "string"}, "description": "PubMed publication types verbatim (e.g., 'Randomized Controlled Trial', 'Review')."},
+    "urls": {"type": "object", "additionalProperties": false, "properties": {
+      "publisher": {"type": "string", "format": "uri", "description": "https://doi.org/<doi> or publisher landing page. Required for display."},
+      "pubmed": {"type": "string", "format": "uri"},
+      "pmc": {"type": "string", "format": "uri"},
+      "openalex": {"type": "string", "format": "uri"},
+      "jips": {"type": "string", "format": "uri", "description": "JIPS monthly post that listed this paper, if any."}
+    }},
+    "open_access": {"type": "object", "additionalProperties": false, "properties": {
+      "status": {"type": "string", "enum": ["gold", "green", "hybrid", "bronze", "closed", "unknown"]},
+      "oa_pdf_url": {"type": "string", "format": "uri"},
+      "license": {"type": "string"},
+      "source": {"type": "string", "description": "unpaywall | openalex | europepmc | publisher"}
+    }},
+    "private_pdf": {"type": "object", "additionalProperties": false, "description": "Metadata only; the file lives in the private store, never in the public repo.", "properties": {
+      "available": {"type": "boolean"},
+      "store_key": {"type": "string", "description": "Opaque key in the private PDF store (e.g., '<id>.pdf')."},
+      "source": {"type": "string", "enum": ["paperpile", "oa_download", "manual"]},
+      "sha256": {"type": "string"},
+      "pages": {"type": "integer"},
+      "added": {"type": "string", "format": "date-time"}
+    }},
+    "classification": {"type": "object", "additionalProperties": false, "required": ["taxonomy_version", "prompt_version", "provider", "model", "input_mode", "classified_at", "screening", "tags", "summary"], "properties": {
+      "taxonomy_version": {"type": "string"},
+      "prompt_version": {"type": "string"},
+      "provider": {"type": "string", "enum": ["anthropic", "openai"]},
+      "model": {"type": "string"},
+      "input_mode": {"type": "string", "enum": ["title_only", "title_abstract", "full_text"]},
+      "classified_at": {"type": "string", "format": "date-time"},
+      "screening": {"$ref": "#/$defs/screening"},
+      "tags": {"$ref": "#/$defs/tags"},
+      "summary": {"type": "string", "maxLength": 400, "description": "One-sentence plain-language summary of what the paper found or argues."},
+      "key_finding": {"type": "string", "maxLength": 400, "description": "Optional second sentence: main effect size / direction / clinical implication."},
+      "sample_size": {"type": ["integer", "null"], "description": "Total N analyzed (participants, or studies for meta-analyses)."},
+      "free_keywords": {"type": "array", "maxItems": 8, "items": {"type": "string"}, "description": "Lower-case free-text keywords not covered by the taxonomy (e.g., 'fibromyalgia', 'naloxone', 'conditioned immunosuppression')."},
+      "usage": {"type": "object", "additionalProperties": true, "description": "Token usage/cost for audit."}
+    }},
+    "review": {"type": "object", "additionalProperties": false, "properties": {
+      "state": {"type": "string", "enum": ["unreviewed", "confirmed", "corrected", "rejected"]},
+      "reviewer": {"type": "string"},
+      "reviewed_at": {"type": "string", "format": "date-time"},
+      "notes": {"type": "string"},
+      "overrides": {"$ref": "#/$defs/tags", "description": "Human-corrected tags; when present the site displays these instead of classification.tags."}
+    }},
+    "discovery": {"type": "object", "additionalProperties": false, "required": ["source", "found_at"], "properties": {
+      "source": {"type": "string", "enum": ["pubmed", "europepmc", "crossref", "openalex", "semantic_scholar", "google_scholar", "jips_seed", "paperpile", "manual", "citation_chase"]},
+      "query_id": {"type": "string", "description": "Identifier of the saved search that surfaced the paper."},
+      "found_at": {"type": "string", "format": "date-time"},
+      "also_found_in": {"type": "array", "items": {"type": "string"}}
+    }},
+    "date_added": {"type": "string", "format": "date", "description": "Date the record entered the public database (drives the feed)."},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "history": {"type": "array", "items": {"type": "object", "additionalProperties": true}, "description": "Optional audit trail of reclassifications."}
+  },
+  "$defs": {
+    "screening": {"type": "object", "additionalProperties": false, "required": ["decision", "confidence", "rationale"], "properties": {
+      "decision": {"type": "string", "enum": ["include", "exclude", "uncertain"]},
+      "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+      "rationale": {"type": "string", "maxLength": 300, "description": "One sentence citing the criterion that decided it."},
+      "exclusion_reason": {"type": ["string", "null"], "enum": ["placebo_control_only", "not_about_placebo_or_nocebo", "not_peer_reviewed_or_scientific", "insufficient_information", "duplicate_or_erratum", "not_a_study_of_effects_or_responses", null]},
+      "peer_reviewed": {"type": "boolean"}
+    }},
+    "tags": {"type": "object", "additionalProperties": false, "properties": {
+      "study_focus": {"type": "array", "items": {"type": "string"}},
+      "article_type": {"type": "string"},
+      "species": {"type": "string"},
+      "population": {"type": "array", "items": {"type": "string"}},
+      "age_group": {"type": "array", "items": {"type": "string"}},
+      "condition_domain": {"type": "array", "items": {"type": "string"}},
+      "outcome_measures": {"type": "array", "items": {"type": "string"}},
+      "design": {"type": "array", "items": {"type": "string"}},
+      "effects": {"type": "array", "items": {"type": "string"}},
+      "mechanisms": {"type": "array", "items": {"type": "string"}},
+      "moderators": {"type": "array", "items": {"type": "string"}},
+      "intervention_type": {"type": "array", "items": {"type": "string"}}
+    }}
+  }
+}

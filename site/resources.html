@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — resources</title>
+<meta name="description" content="Centers, programs, labs, societies, networks and databases devoted to placebo and nocebo research worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Resources</p>
+    <h1>Placebo science resources</h1>
+    <p>Where placebo and nocebo research happens: centers and consortia, research programs, individual labs, societies and networks, and reference databases. Missing your group? <a id="suggest" href="#">Add it</a>.</p>
+  </div>
+  <div class="jips"><span class="pill-logo" aria-hidden="true"></span><div><b>JIPS — the Journal of Interdisciplinary Placebo Studies database.</b> Katja Weimer, Paul Enck and colleagues hand-curated monthly lists of new placebo and nocebo publications from 2016 to 2025 and maintain a library of more than 5,000 papers. Science of Placebo is inspired by that work and was seeded with their monthly lists. <a href="https://jips.online/" target="_blank" rel="noopener">Visit jips.online ↗</a></div></div>
+  <div class="filter-top"><input id="rq" type="search" placeholder="Filter by name, place or person" aria-label="Filter resources" style="font:inherit;padding:.45rem .7rem;border-radius:8px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);min-width:260px"><span class="count" id="rcount"></span></div>
+  <div id="resources"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  document.getElementById("suggest").href = `https://github.com/${SOP_CONFIG.repo}/issues/new?title=${encodeURIComponent("Resource suggestion: ")}&body=${encodeURIComponent("Name:\nInstitution / country:\nURL:\nLead(s):\nOne-line description:\n")}`;
+  const data = await SOP.getJSON("data/resources.json");
+  const esc = SOP.esc;
+  const GROUPS = [["center", "Centers & consortia"], ["program", "Research programs"], ["lab", "Labs & research groups"], ["society", "Societies & networks"], ["network", "Societies & networks"], ["database", "Databases, journals & reference"], ["journal", "Databases, journals & reference"], ["funder", "Funders & other"], ["other", "Funders & other"]];
+  const order = [...new Set(GROUPS.map(g => g[1]))];
+  const groupOf = t => (GROUPS.find(g => g[0] === t) || GROUPS[GROUPS.length - 1])[1];
+  const row = r => `<div class="res"><span class="name"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a></span><span class="country">${esc(r.country || "")}</span>
+    <span class="sub">${esc([r.institution, r.lead].filter(Boolean).join(" · "))}${r.description ? (r.institution || r.lead ? " — " : "") + esc(r.description) : ""}</span></div>`;
+  function render() {
+    const q = document.getElementById("rq").value.trim().toLowerCase();
+    const items = data.resources.filter(r => !q || [r.name, r.institution, r.lead, r.country, r.description].join(" ").toLowerCase().includes(q));
+    document.getElementById("rcount").textContent = `${items.length} of ${data.resources.length}`;
+    let html = "";
+    for (const g of order) {
+      const rows = items.filter(r => groupOf(r.type) === g).sort((a, b) => (a.country || "").localeCompare(b.country || "") || a.name.localeCompare(b.name));
+      if (!rows.length) continue;
+      html += `<div class="section"><h2>${g}</h2><span class="muted">${rows.length}</span></div><div class="res-list">${rows.map(row).join("")}</div>`;
+    }
+    document.getElementById("resources").innerHTML = html || '<div class="empty">Nothing matches.</div>';
+  }
+  document.getElementById("rq").addEventListener("input", render);
+  render();
+})().catch(e => { document.getElementById("resources").innerHTML = `<div class="empty">Could not load resources (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

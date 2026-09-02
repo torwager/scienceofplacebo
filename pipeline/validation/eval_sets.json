@@ -1,0 +1,45 @@
+{
+  "purpose": "Definitions of the labeled sets used to measure screening accuracy (include/exclude) and tag agreement. Built by pipeline/validation/build_eval_set.py (to be written).",
+  "positives": {
+    "jips_curated": {
+      "description": "All papers listed in JIPS monthly 'placebo/nocebo publications' posts (2016-2025). Hand-selected by Enck/Weimer editors; treat as gold INCLUDE.",
+      "source": "https://jips.online/ monthly posts; parse citation + DOI + PMID; resolve via PubMed efetch for abstract/MeSH/pubtypes",
+      "expected_n": "~2500-4000 (20-40/month x ~110 months)",
+      "holdout": "Stratified 20% by year held out for final reporting; the rest available for prompt tuning."
+    },
+    "paperpile_placebo": {
+      "description": "Paperpile PDFs whose filename contains 'placebo' (~716). Author-curated; mostly INCLUDE but contains some efficacy RCTs. Use as a secondary positive set after a quick manual pass on ~100.",
+      "source": "/Users/f003vz1/Library/CloudStorage/GoogleDrive-tor.d.wager@dartmouth.edu/My Drive/Paperpile/All Papers/*/"
+    }
+  },
+  "negatives": {
+    "pubmed_placebo_controlled_rct": {
+      "description": "Efficacy RCTs that use a placebo control but do not study the placebo effect. Gold EXCLUDE (after light manual audit of ~150 to remove the ~2-5% that do analyze placebo response).",
+      "pubmed_query": "(\"Randomized Controlled Trial\"[pt] AND placebo[tiab] AND (efficacy[tiab] OR versus placebo[tiab] OR compared with placebo[tiab]) NOT (\"placebo effect\"[tiab] OR \"placebo effects\"[tiab] OR \"placebo response\"[tiab] OR \"placebo responses\"[tiab] OR nocebo[tiab] OR expectan*[tiab] OR \"open-label placebo\"[tiab] OR \"Placebo Effect\"[mh])) AND 2016:2025[dp] AND english[la]",
+      "sampling": "Random 1500 PMIDs, stratified by year and by the JIPS journal distribution where possible so negatives resemble positives in topic/venue.",
+      "note": "This is the hard negative class: abstracts contain the word 'placebo' throughout."
+    },
+    "pubmed_hard_negatives_placebo_response_mention": {
+      "description": "Efficacy RCTs and drug meta-analyses whose abstracts mention 'placebo response' or 'placebo group improved' only descriptively. Manually labeled (n~200). These calibrate the 'placebo is comparator only' rule.",
+      "pubmed_query": "(\"Randomized Controlled Trial\"[pt] OR \"Meta-Analysis\"[pt]) AND (\"placebo response\"[tiab] OR \"placebo group\"[tiab]) AND (efficacy[ti] OR versus[ti] OR vs[ti]) AND 2016:2025[dp]",
+      "labeling": "Two raters (Tor + one lab member) label 200; disagreements adjudicated. Gives inter-rater kappa as the ceiling for model performance."
+    },
+    "pubmed_topical_noise": {
+      "description": "Papers that a broad daily query would surface but are off-topic: 'placebo' in MeSH only, pharmacology reviews, trial protocols of drugs. Random 500 from the daily discovery query minus the positives.",
+      "pubmed_query": "placebo[tiab] AND 2016:2025[dp] NOT (\"placebo effect\"[tiab] OR nocebo[tiab] OR expectan*[tiab])"
+    }
+  },
+  "metrics": {
+    "screening": ["precision", "recall", "F1", "MCC for include vs exclude (uncertain counted as include for recall, as exclude for precision; report both)", "calibration: reliability diagram of confidence vs accuracy in 10 bins; ECE", "confusion by exclusion_reason"],
+    "tagging": ["per-axis micro/macro F1 vs human tags on 200 papers (2 raters)", "exact-match rate for single-valued axes (article_type, species)", "Jaccard for multi-valued axes", "inter-rater kappa as ceiling"],
+    "targets": {"recall_on_jips": ">= 0.95", "precision_vs_pubmed_rct_negatives": ">= 0.95", "uncertain_rate": "<= 10% (those go to a human review queue)", "tag_macro_F1": ">= 0.75 on major axes (study_focus, design, condition_domain, article_type)"}
+  },
+  "procedure": [
+    "1. Build sets; dedupe by DOI/PMID; drop any paper present in both positives and negatives.",
+    "2. Split: dev (60%) / test (40%) with stratification by year and set.",
+    "3. Run every candidate model on dev with prompt v1 via Batch API (50% off); compute metrics; inspect 50 false negatives + 50 false positives per model.",
+    "4. Revise prompt rules (not the taxonomy ids) -> v1.1; re-run on dev only. Freeze.",
+    "5. Report test-set metrics once per model; pick default model; record in docs/validation.md with date, model ids, prompt_version, taxonomy_version.",
+    "6. Ongoing: sample 20 random includes + 10 excludes/week for spot review; log corrections in record.review; recompute metrics quarterly; re-run classification when prompt_version or taxonomy_version changes."
+  ]
+}
