@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — my list</title>
+<meta name="description" content="Your starred placebo papers.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .tools { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; margin-bottom: 1rem; }
+  .notice { background: var(--amber-soft); border-left: 3px solid var(--amber); padding: .7rem 1rem; border-radius: 0 10px 10px 0; font-size: .92rem; max-width: 72ch; margin-bottom: 1.2rem; }
+  textarea { width: 100%; min-height: 120px; font-family: var(--mono); font-size: .8rem; border: 1px solid var(--line-2); border-radius: 10px; padding: .6rem; background: var(--surface); color: var(--ink); }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">My list</p>
+    <h1>Papers you have starred</h1>
+    <p>Star any paper (☆) on the feed, in the database or on its page to keep it here. On the feed and database pages, tick "only my list" to filter to these papers.</p>
+  </div>
+  <div class="notice" id="notice">Your list is stored in this browser only. Use <b>Export</b> to save it as a file or move it to another device, and <b>Import</b> to load one. Signing in to sync the list across devices and to nominate papers for the community's curated list is coming; see <a href="join.html">Join the community</a>.</div>
+  <div class="tools">
+    <span class="count" id="count"></span>
+    <label class="small muted" style="margin-left:.4rem">Sort <select id="sort"><option value="added">recently starred</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
+    <span style="margin-left:auto"></span>
+    <button class="btn" id="export">Export</button>
+    <button class="btn" id="import">Import</button>
+    <button class="btn" id="copy">Copy citations</button>
+    <button class="btn link" id="clear">Clear list</button>
+  </div>
+  <div id="io" hidden style="margin-bottom:1rem"><textarea id="iotext" placeholder="Paste an exported list here, then click Load"></textarea><div class="tools" style="margin-top:.4rem"><button class="btn primary" id="load">Load</button><button class="btn" id="ioclose">Close</button><span class="small muted" id="iomsg"></span></div></div>
+  <div class="papers" id="list"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const byId = new Map(state.index.map(r => [r.id, r]));
+  const listEl = document.getElementById("list"), sortEl = document.getElementById("sort");
+  document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
+  function render() {
+    const ids = [...SOP.list.ids()];
+    const missing = ids.filter(id => !byId.has(id)).length;
+    let recs = ids.map(id => byId.get(id)).filter(Boolean);
+    const s = sortEl.value;
+    if (s === "new") recs.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
+    else if (s === "old") recs.sort((a, b) => (a.d || "").localeCompare(b.d || ""));
+    else if (s === "cited") recs.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)));
+    else recs.reverse();
+    document.getElementById("count").textContent = `${recs.length} paper${recs.length === 1 ? "" : "s"}` + (missing ? ` (${missing} no longer in the public database)` : "");
+    listEl.innerHTML = recs.length ? recs.map(r => SOP.paperCard(r)).join("") : '<div class="empty">Your list is empty. Star papers on the <a href="feed.html">feed</a> or in the <a href="database.html">database</a>.</div>';
+  }
+  sortEl.onchange = render;
+  SOP.bindStars(listEl);
+  document.addEventListener("sop:list", () => { /* keep the card until the page re-renders, so an accidental un-star can be undone */ });
+  document.getElementById("export").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = SOP.list.export(); document.getElementById("iomsg").textContent = "Copy this text and keep it, or paste it on another device with Import."; document.getElementById("iotext").select(); };
+  document.getElementById("import").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = ""; document.getElementById("iomsg").textContent = "Paste an exported list, then click Load. Papers are added to your current list."; document.getElementById("iotext").focus(); };
+  document.getElementById("load").onclick = () => { try { const j = JSON.parse(document.getElementById("iotext").value); const ids = Array.isArray(j) ? j : j.ids; if (!Array.isArray(ids)) throw new Error("no ids"); SOP.list.add(ids.filter(x => typeof x === "string")); document.getElementById("iomsg").textContent = `Loaded ${ids.length} ids.`; render(); } catch (e) { document.getElementById("iomsg").textContent = "That does not look like an exported list."; } };
+  document.getElementById("ioclose").onclick = () => { document.getElementById("io").hidden = true; };
+  document.getElementById("copy").onclick = async () => {
+    const recs = [...SOP.list.ids()].map(id => byId.get(id)).filter(Boolean);
+    const text = recs.map(r => `${r.a} (${r.y}). ${r.t} ${r.j}.${r.doi ? " https://doi.org/" + r.doi : (r.pmid ? " PMID " + r.pmid : "")}`).join("\n\n");
+    try { await navigator.clipboard.writeText(text); document.getElementById("count").textContent += " · citations copied"; } catch (e) { document.getElementById("io").hidden = false; document.getElementById("iotext").value = text; document.getElementById("iomsg").textContent = "Copy the citations from the box."; }
+  };
+  document.getElementById("clear").onclick = () => { if (SOP.list.size() && window.confirm("Remove all papers from your list?")) { SOP.list.clear(); render(); } };
+  render();
+})().catch(e => { document.getElementById("list").innerHTML = `<div class="empty">Could not load data (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

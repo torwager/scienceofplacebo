@@ -7,6 +7,7 @@
 <meta name="description" content="Search every peer-reviewed study of placebo and nocebo effects by title, abstract and keyword tags.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
@@ -29,6 +30,7 @@
         <div class="sortbar" style="margin-left:auto">
           <label>Sort <select id="sort"><option value="rel">relevance</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
           <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
+          <label><input type="checkbox" id="onlyList"> my list</label>
           <label><input type="checkbox" id="showAdjacent"> adjacent</label>
         </div>
       </div>
@@ -91,7 +93,8 @@
     // "wager" matches any author whose surname is Wager; "wager td" (surname + initials) matches that person only
     const authorMatch = a => { const n = a.toLowerCase(); if (!qa) return true; if (qa.includes(" ")) return n === qa || n.startsWith(qa); return n === qa || n.startsWith(qa + " ") || n.includes(" " + qa + " ") || n.endsWith(" " + qa); };
     const authorHit = r => !qa || (r.au || []).some(authorMatch);
-    let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)) && authorHit(r));
+    const onlyList = document.getElementById("onlyList").checked;
+    let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)) && authorHit(r) && (!onlyList || SOP.list.has(r.id)));
     const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
     pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
     SOP.renderFilters(els.filters, pool, filters, () => { page = 1; run(); });
@@ -114,7 +117,7 @@
       const names = Object.entries(counts).sort((a, b) => b[1] - a[1]);
       who.innerHTML = names.length > 1 ? `<span class="small muted">Matches ${names.length} author names:</span> ` + names.slice(0, 12).map(([a, n]) => `<button class="chip" data-author="${SOP.esc(a)}">${SOP.esc(a)} <span class="muted tnum">${n}</span></button>`).join(" ") + (names.length > 12 ? ` <span class="small muted">and ${names.length - 12} more</span>` : "") : "";
     } else who.innerHTML = "";
-    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.showAdjacent.checked;
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.showAdjacent.checked && !onlyList;
     SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
     els.results.innerHTML = slice.length ? slice.map(r => SOP.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
@@ -126,9 +129,10 @@
   els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "new"; run(); };
   els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
   els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
-  els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = () => { page = 1; run(); };
+  els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = document.getElementById("onlyList").onchange = () => { page = 1; run(); };
+  SOP.bindStars(els.results);
   els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
-  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = false; els.sort.value = "new"; page = 1; run(); };
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = false; document.getElementById("onlyList").checked = false; els.sort.value = "new"; page = 1; run(); };
   // typing in either box applies on Enter, on the Search button, or when the box loses focus
   els.qa.addEventListener("change", () => { page = 1; run(); });
   document.getElementById("who").addEventListener("click", e => { const b = e.target.closest("[data-author]"); if (!b) return; els.qa.value = b.dataset.author; page = 1; run(); });

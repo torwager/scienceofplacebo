@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — join the community</title>
+<meta name="description" content="Star papers, keep a personal list, nominate papers for the community's curated list, and join the discussion.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .steps { display: grid; gap: 1rem; grid-template-columns: 1fr; max-width: 980px; }
+  @media (min-width: 820px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+  .step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.3rem 1.2rem; box-shadow: var(--shadow); display: grid; gap: .4rem; align-content: start; }
+  .step .ic { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; background: var(--amber-soft); color: var(--amber-deep); font-size: 1.3rem; }
+  .step h3 { margin: .4rem 0 0; }
+  .step p { margin: 0; color: var(--ink-2); font-size: .95rem; }
+  .step .soon { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--steel-deep); background: var(--steel-soft); padding: .15em .5em; border-radius: 5px; width: max-content; }
+  .signin { background: var(--surface); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 1.3rem 1.4rem; max-width: 980px; margin-top: 1.4rem; display: grid; gap: .6rem; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Join the community</p>
+    <h1>Make the site yours, and help curate it</h1>
+    <p>Science of Placebo is a shared resource for people who study, practise, or are curious about placebo and nocebo effects. Here is what you can do now, and what a free account will add.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="ic">★</div><h3>Keep a list of papers</h3><p>Star any paper on the feed, in the database or on its page. "My list" collects them, filters the feed and database to them, exports them, and copies citations. Available now, no account needed; the list lives in your browser.</p><p><a href="mylist.html">Open my list →</a></p></div>
+    <div class="step"><div class="ic">✎</div><h3>Discuss</h3><p>Comment on any paper and take part in the discussion board. Posting uses a GitHub account, which is free and takes a minute to create.</p><p><a href="discuss.html">Go to the board →</a></p></div>
+    <div class="step"><div class="ic">◎</div><span class="soon">Coming next</span><h3>Nominate for the curated list</h3><p>With a free account, your stars are saved across devices and count as nominations. The most-nominated papers form a community-curated reading list, recomputed daily and open to everyone.</p></div>
+  </div>
+  <div class="signin" id="signin">
+    <h2 style="margin:0">Sign in</h2>
+    <p class="muted" style="margin:0">Accounts are not open yet. When they are, you will sign in with the same GitHub identity used for comments; the site stores only your GitHub user id and the ids of the papers you star, never a password. Your browser list will be merged into the account the first time you sign in.</p>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>
