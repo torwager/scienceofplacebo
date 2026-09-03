@@ -18,6 +18,7 @@
     <div><strong>Science of Placebo</strong>A curated, continuously updated bibliography of placebo and nocebo research, run by the Cognitive and Affective Neuroscience Lab at Dartmouth. Inspired by the <a href="https://jips.online/" target="_blank" rel="noopener">JIPS placebo database</a>. <span id="foot-updated"></span></div>
     <div><strong>Explore</strong><ul><li><a href="feed.html">New papers</a></li><li><a href="database.html">Database</a></li><li><a href="bibliometrics.html">Bibliometrics</a></li><li><a href="network.html">Researcher network</a></li><li><a href="news.html">In the news</a></li><li><a href="feed.xml">RSS feed</a></li></ul></div>
     <div><strong>Community</strong><ul><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="https://github.com/torwager/scienceofplacebo">Source &amp; data on GitHub</a></li></ul></div>
+    <div class="credit-row"><span class="credit">Designed by <a href="https://canlab.science" target="_blank" rel="noopener">Tor Wager</a></span></div>
   </div></footer>`;
   const h = document.getElementById("site-header"); if (h) h.outerHTML = header;
   const f = document.getElementById("site-footer"); if (f) f.outerHTML = footer;
