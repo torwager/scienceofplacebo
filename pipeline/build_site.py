@@ -244,7 +244,7 @@ def main():
     json.dump(stats, open(site / "stats.json", "w"), indent=1)
     json.dump(bibliometrics(visible, index), open(site / "bibliometrics.json", "w"), ensure_ascii=False, separators=(",", ":"))
     json.dump(researcher_graph(visible, index), open(site / "graph.json", "w"), ensure_ascii=False, separators=(",", ":"))
-    for name in ("news.json",):
+    for name in ("news.json", "discussions.json"):
         src = config.DATA / name
         if src.exists():
             shutil.copy(src, site / name)

@@ -20,6 +20,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  discussions: read
 
 concurrency:
   group: daily
@@ -58,6 +59,10 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+      - name: Export discussions for the board page
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python -m pipeline.discussions || true
       - name: Build site data
         run: python -m pipeline.build_site
       - uses: actions/configure-pages@v5
