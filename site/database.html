@@ -25,7 +25,7 @@
       <div class="filter-top">
         <span class="count" id="count"></span>
         <span id="active"></span>
-        <button class="btn link" id="clear" hidden>Clear</button>
+        <button class="btn link" id="clear" hidden>Clear all filters</button>
         <div class="sortbar" style="margin-left:auto">
           <label>Sort <select id="sort"><option value="rel">relevance</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
           <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
@@ -87,7 +87,7 @@
       hits = new Map(ms.search(q).map(h => [h.id, h.score]));
     }
     const qa = els.qa.value.trim().toLowerCase();
-    const authorHit = r => !qa || (r.au || []).some(a => a.toLowerCase().includes(qa));
+    const authorHit = r => !qa || (r.au || []).some(a => { const n = a.toLowerCase(); return n.startsWith(qa) || n.includes(" " + qa); });
     let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)) && authorHit(r));
     const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
     pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
@@ -96,13 +96,14 @@
     const sort = els.sort.value;
     if (sort === "rel" && hits) shown.sort((a, b) => hits.get(b.id) - hits.get(a.id));
     else if (sort === "old") shown.sort((a, b) => (a.d || "").localeCompare(b.d || ""));
-    else if (sort === "cited") shown.sort((a, b) => (b.cited || 0) - (a.cited || 0));
+    else if (sort === "cited") shown.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)) || (b.d || "").localeCompare(a.d || ""));
+    else if (sort === "rel" && !hits) shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
     else shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
     const pages = Math.max(1, Math.ceil(shown.length / PAGE));
     page = Math.min(Math.max(1, page), pages);
     els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "") + (qa ? ` by ${els.qa.value.trim()}` : "");
     els.active.innerHTML = SOP.activeChips(filters);
-    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa;
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.showAdjacent.checked;
     SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
     els.results.innerHTML = slice.length ? slice.map(r => SOP.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
@@ -116,7 +117,10 @@
   els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
   els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = () => { page = 1; run(); };
   els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
-  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; page = 1; run(); };
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = false; els.sort.value = "new"; page = 1; run(); };
+  // typing in either box applies on Enter, on the Search button, or when the box loses focus
+  els.qa.addEventListener("change", () => { page = 1; run(); });
+  els.q.addEventListener("change", () => { page = 1; if (!els.q.value.trim() && els.sort.value === "rel") els.sort.value = "new"; run(); });
   SOP.bindCardChips(els.results, filters, () => { page = 1; run(); });
   run();
   if (!els.q.value) buildIndex(); // warm the index in the background

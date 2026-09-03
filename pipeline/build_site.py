@@ -54,6 +54,7 @@ def slim(rec):
         "pdf": bool((rec.get("private_pdf") or {}).get("available")),
         "n": cls.get("sample_size"),
         "c": (cls.get("screening") or {}).get("confidence"),
+        "cit": rec.get("cited_by_count"),
         "added": rec.get("date_added") or "",
         "tags": {k: (v if isinstance(v, list) else [v]) for k, v in tags.items() if v and v not in ("not_applicable", ["not_applicable"], "none_reported", ["none_reported"])},
         "kw": (cls.get("free_keywords") or [])[:8],
