@@ -88,6 +88,7 @@ window.SOP = (function () {
       const b = e.target.closest("[data-star]"); if (!b) return;
       e.preventDefault(); e.stopPropagation();
       const on = list.toggle(b.dataset.star);
+      document.dispatchEvent(new CustomEvent("sop:star", { detail: { id: b.dataset.star, on } }));
       document.querySelectorAll(`[data-star="${CSS.escape(b.dataset.star)}"]`).forEach(x => { x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); x.textContent = on ? "★" : "☆"; x.title = on ? "Remove from my list" : "Add to my list"; });
     });
   }

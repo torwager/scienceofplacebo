@@ -9,6 +9,8 @@ window.SOP_CONFIG = {
     generalCategory: "General",
     generalCategoryId: "DIC_kwDOUMJV2M4DEvFY"
   },
+  // Community API (Cloudflare Worker, see worker/README.md). Empty until deployed; then e.g. "https://community.scienceofplacebo.org".
+  communityApi: "",
   // Private full-text store (authenticated). Empty until the store is configured.
   privatePdfBase: ""
 };
