@@ -8,6 +8,7 @@
 <link rel="alternate" type="application/rss+xml" title="Science of Placebo: new papers" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
@@ -26,6 +27,7 @@
         <span class="count" id="count"></span>
         <span id="active"></span>
         <button class="btn link" id="clear" hidden>Clear filters</button>
+        <label class="small muted"><input type="checkbox" id="onlyList"> only my list</label>
         <label class="small muted" style="margin-left:auto"><input type="checkbox" id="showAdjacent"> include adjacent papers</label>
       </div>
       <div class="papers" id="feed"><div class="spinner">Loading the latest papers…</div></div>
@@ -60,7 +62,8 @@
   }
   function render() {
     const { recent, win } = pool();
-    const shown = recent.filter(r => SOP.matches(r, filters)).slice(0, CAP);
+    const onlyList = document.getElementById("onlyList").checked;
+    const shown = recent.filter(r => SOP.matches(r, filters) && (!onlyList || SOP.list.has(r.id))).slice(0, CAP);
     SOP.renderFilters(filtEl, recent.slice(0, 400), filters, render);
     const label = win === 7 ? "added this week" : win === 31 ? "added this month" : "most recent";
     document.getElementById("count").textContent = `${shown.length} of ${Math.min(recent.length, win ? recent.length : 400)} papers ${label}`;
@@ -79,7 +82,9 @@
   document.getElementById("active").addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); render(); });
   document.getElementById("clear").onclick = () => { for (const k in filters) filters[k].clear(); render(); };
   adj.onchange = render;
+  document.getElementById("onlyList").onchange = render;
   SOP.bindCardChips(feedEl, filters, render);
+  SOP.bindStars(feedEl);
   render();
 })().catch(e => { document.getElementById("feed").innerHTML = `<div class="empty">Could not load data (${SOP.esc(e.message)}).</div>`; });
 </script>

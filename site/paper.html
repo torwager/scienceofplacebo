@@ -6,6 +6,7 @@
 <title>Science of Placebo — paper</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
@@ -53,7 +54,7 @@
     <div class="meta small muted">${SOP.esc(r.journal || "")} · ${SOP.fmtDate(r.date) || r.year || ""}${r.scope === "adjacent" ? ' · <span class="badge adjacent">adjacent</span>' : ""}</div>
     <h1>${SOP.esc(r.title)}</h1>
     <div class="small">${SOP.esc(authors)}</div>
-    <div class="links" style="display:flex;gap:.5rem;flex-wrap:wrap">${links.join("")}</div>
+    <div class="links" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">${links.join("")}<span class="btn" style="padding:.5em .9em">${SOP.starBtn(id)} <span class="small">My list</span></span></div>
     ${cls.summary ? `<div class="callout${nocebo ? " nocebo" : ""}"><b>In one sentence.</b> ${SOP.esc(cls.summary)}${cls.key_finding ? " " + SOP.esc(cls.key_finding) : ""}</div>` : ""}
     <div><h3 style="margin-bottom:.3rem">Abstract</h3><div class="abstract">${r.abstract ? SOP.esc(r.abstract) : '<span class="muted">No abstract available; see the publisher page.</span>'}</div></div>
     <div><h3 style="margin-bottom:.5rem">Keywords</h3><div style="display:grid;gap:.5rem">${axisRows}
@@ -67,6 +68,7 @@
       <dt>Added</dt><dd>${SOP.esc(r.date_added || "")}</dd>
       ${scr.rationale ? `<dt>Screening note</dt><dd class="muted">${SOP.esc(scr.rationale)} <span class="tnum">(confidence ${scr.confidence})</span> — tags were assigned by ${SOP.esc(cls.model || "an AI model")} from the title and abstract and may contain errors; <a href="https://github.com/${SOP_CONFIG.repo}/issues/new?title=${encodeURIComponent("Tag correction: " + r.title.slice(0, 80))}&body=${encodeURIComponent("Paper: " + id + "\n\nSuggested change:\n")}" target="_blank" rel="noopener">suggest a correction</a>.</dd>` : ""}
     </dl>`;
+  SOP.bindStars(el);
   // giscus thread keyed on the paper id
   const g = SOP_CONFIG.giscus;
   if (g.repoId && g.categoryId) {

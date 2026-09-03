@@ -66,6 +66,34 @@ window.SOP = (function () {
     return day && day !== "01" ? `${+day} ${mon} ${y}` : `${mon} ${y}`;
   }
 
+  // ---- My list: starred papers, kept in this browser (stage 1); an account will sync it later (stage 2)
+  const LIST_KEY = "sop.mylist.v1";
+  const list = {
+    _ids: null,
+    ids() { if (this._ids) return this._ids; try { this._ids = new Set(JSON.parse(localStorage.getItem(LIST_KEY) || "[]")); } catch (e) { this._ids = new Set(); } return this._ids; },
+    has(id) { return this.ids().has(id); },
+    size() { return this.ids().size; },
+    save() { try { localStorage.setItem(LIST_KEY, JSON.stringify([...this.ids()])); } catch (e) { /* storage unavailable */ } document.dispatchEvent(new CustomEvent("sop:list", { detail: { size: this.size() } })); },
+    toggle(id) { const s = this.ids(); if (s.has(id)) s.delete(id); else s.add(id); this.save(); return s.has(id); },
+    add(ids) { const s = this.ids(); for (const id of ids) s.add(id); this.save(); },
+    clear() { this._ids = new Set(); this.save(); },
+    export() { return JSON.stringify({ site: "scienceofplacebo.org", exported: new Date().toISOString().slice(0, 10), ids: [...this.ids()] }, null, 1); },
+  };
+  function starBtn(id) {
+    const on = list.has(id);
+    return `<button class="star${on ? " on" : ""}" data-star="${esc(id)}" aria-pressed="${on}" title="${on ? "Remove from my list" : "Add to my list"}">${on ? "★" : "☆"}</button>`;
+  }
+  function bindStars(container) {
+    container.addEventListener("click", e => {
+      const b = e.target.closest("[data-star]"); if (!b) return;
+      e.preventDefault(); e.stopPropagation();
+      const on = list.toggle(b.dataset.star);
+      document.querySelectorAll(`[data-star="${CSS.escape(b.dataset.star)}"]`).forEach(x => { x.classList.toggle("on", on); x.setAttribute("aria-pressed", on); x.textContent = on ? "★" : "☆"; x.title = on ? "Remove from my list" : "Add to my list"; });
+    });
+  }
+  function updateListBadge() { document.querySelectorAll(".nav a[href='mylist.html']").forEach(a => { const n = list.size(); a.innerHTML = `My list${n ? ` <span class="navcount">${n}</span>` : ""}`; }); }
+  document.addEventListener("sop:list", updateListBadge);
+
   function paperCard(r, opts = {}) {
     const isNew = opts.newSince && r.added >= opts.newSince;
     const links = [];
@@ -73,7 +101,7 @@ window.SOP = (function () {
     if (r.pmid) links.push(`<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.pmid)}/" target="_blank" rel="noopener">PubMed</a>`);
     links.push(`<a href="paper.html?id=${encodeURIComponent(r.id)}">Details &amp; discussion</a>`);
     return `<article class="paper" data-id="${esc(r.id)}">
-      <div class="title"><a href="paper.html?id=${encodeURIComponent(r.id)}">${esc(r.t)}</a></div>
+      <div class="title">${starBtn(r.id)}<a href="paper.html?id=${encodeURIComponent(r.id)}">${esc(r.t)}</a></div>
       <div class="meta"><span>${esc(r.a)}</span><span>${esc(r.j)}</span><span class="date">${fmtDate(r.d) || r.y || ""}</span>
         ${isNew ? '<span class="badge new">new</span>' : ""}${r.sc === "adjacent" ? '<span class="badge adjacent" title="Placebo-related but not a study of placebo/nocebo effects or responses (e.g., attitudes, ethics, methodology)">adjacent</span>' : ""}${r.oa ? '<span class="badge oa" title="Open-access full text available">OA</span>' : ""}</div>
       ${r.s ? `<div class="summary">${esc(r.s)}</div>` : ""}
@@ -175,5 +203,5 @@ window.SOP = (function () {
     document.querySelectorAll(".nav a").forEach(a => { if (a.getAttribute("href") === here) a.classList.add("active"); });
   }
 
-  return { state, loadCore, getJSON, chipsFor, paperCard, matches, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, nav, chipColors, CARD_AXES, FILTER_AXES };
+  return { state, loadCore, getJSON, chipsFor, paperCard, matches, list, starBtn, bindStars, updateListBadge, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, nav, chipColors, CARD_AXES, FILTER_AXES };
 })();
