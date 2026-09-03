@@ -18,7 +18,7 @@
     <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND.</p>
   </div>
   <div class="stat-row" id="stats"></div>
-  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. naloxone conditioning, open-label placebo IBS" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Benedetti F" autocomplete="off" aria-label="Author" style="flex:0 1 260px"><button class="btn primary" id="go">Search</button></div>
+  <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. naloxone conditioning, open-label placebo IBS" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Benedetti or Benedetti F" autocomplete="off" aria-label="Author" style="flex:0 1 260px"><button class="btn primary" id="go">Search</button></div>
   <div class="layout">
     <aside class="filters" id="filters" aria-label="Filter by keyword"></aside>
     <section>
@@ -32,6 +32,7 @@
           <label><input type="checkbox" id="showAdjacent"> adjacent</label>
         </div>
       </div>
+      <div id="who" style="margin:-.2rem 0 .7rem;display:flex;flex-wrap:wrap;gap:.3rem;align-items:center"></div>
       <div class="papers" id="results"><div class="spinner">Loading database…</div></div>
       <div class="pager" id="pager"></div>
     </section>
@@ -86,8 +87,10 @@
       const ms = await buildIndex();
       hits = new Map(ms.search(q).map(h => [h.id, h.score]));
     }
-    const qa = els.qa.value.trim().toLowerCase();
-    const authorHit = r => !qa || (r.au || []).some(a => { const n = a.toLowerCase(); return n.startsWith(qa) || n.includes(" " + qa); });
+    const qa = els.qa.value.trim().toLowerCase().replace(/\s+/g, " ");
+    // "wager" matches any author whose surname is Wager; "wager td" (surname + initials) matches that person only
+    const authorMatch = a => { const n = a.toLowerCase(); if (!qa) return true; if (qa.includes(" ")) return n === qa || n.startsWith(qa); return n === qa || n.startsWith(qa + " ") || n.includes(" " + qa + " ") || n.endsWith(" " + qa); };
+    const authorHit = r => !qa || (r.au || []).some(authorMatch);
     let pool = state.index.filter(r => (r.sc === "core" || (els.showAdjacent.checked && r.sc === "adjacent")) && (!hits || hits.has(r.id)) && authorHit(r));
     const yf = +els.yfrom.value || 0, yt = +els.yto.value || 9999;
     pool = pool.filter(r => (r.y || 0) >= yf && (r.y || 0) <= yt);
@@ -103,6 +106,14 @@
     page = Math.min(Math.max(1, page), pages);
     els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "") + (qa ? ` by ${els.qa.value.trim()}` : "");
     els.active.innerHTML = SOP.activeChips(filters);
+    // author disambiguation: when the query matches several distinct author strings, list them so one person can be picked
+    const who = document.getElementById("who");
+    if (qa) {
+      const counts = {};
+      for (const r of pool) for (const a of new Set((r.au || []).filter(authorMatch))) counts[a] = (counts[a] || 0) + 1;
+      const names = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      who.innerHTML = names.length > 1 ? `<span class="small muted">Matches ${names.length} author names:</span> ` + names.slice(0, 12).map(([a, n]) => `<button class="chip" data-author="${SOP.esc(a)}">${SOP.esc(a)} <span class="muted tnum">${n}</span></button>`).join(" ") + (names.length > 12 ? ` <span class="small muted">and ${names.length - 12} more</span>` : "") : "";
+    } else who.innerHTML = "";
     els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.showAdjacent.checked;
     SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
@@ -120,6 +131,7 @@
   els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = false; els.sort.value = "new"; page = 1; run(); };
   // typing in either box applies on Enter, on the Search button, or when the box loses focus
   els.qa.addEventListener("change", () => { page = 1; run(); });
+  document.getElementById("who").addEventListener("click", e => { const b = e.target.closest("[data-author]"); if (!b) return; els.qa.value = b.dataset.author; page = 1; run(); });
   els.q.addEventListener("change", () => { page = 1; if (!els.q.value.trim() && els.sort.value === "rel") els.sort.value = "new"; run(); });
   SOP.bindCardChips(els.results, filters, () => { page = 1; run(); });
   run();
