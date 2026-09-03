@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — news &amp; events</title>
+<meta name="description" content="Placebo effects in the news, and upcoming conferences, talks and courses.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="Science of Placebo"><meta property="og:title" content="Science of Placebo — news &amp; events"><meta property="og:description" content="Placebo effects in the news, and upcoming conferences, talks and courses."><meta property="og:type" content="website"><meta property="og:url" content="https://scienceofplacebo.org/newsevents.html"><meta property="og:image" content="https://scienceofplacebo.org/assets/og.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://scienceofplacebo.org/assets/og.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>.tiles.two { grid-template-columns: 1fr; } @media (min-width: 700px) { .tiles.two { grid-template-columns: 1fr 1fr; } } .peek { margin-top: 2rem; } .peek h2 { font-size: 1.3rem; margin-bottom: .5rem; }</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head"><p class="eyebrow">News &amp; events</p><h1>Placebo effects in the news, and where to meet</h1></div>
+  <div class="tiles two">
+    <a class="tile glow" href="news.html"><div><div class="ic">▤</div><h3>In the news</h3><p>News stories, podcast episodes and blog posts about placebo and nocebo effects, refreshed every two days.</p></div><span class="go" id="news-go">Read the coverage <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    <a class="tile glow" href="events.html"><div><div class="ic">◷</div><h3>Events</h3><p>Conferences, symposia, webinars and summer schools within the next year, plus recurring series.</p></div><span class="go" id="events-go">Upcoming events <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+  </div>
+  <div class="peek"><h2>Latest news</h2><div class="news-list" id="latest-news"></div></div>
+  <div class="peek"><h2>Next events</h2><div class="cards" id="next-events"></div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script>
+(async function () {
+  const esc = SOP.esc;
+  const [news, ev] = await Promise.all([SOP.getJSON("data/news.json").catch(() => ({ items: [] })), SOP.getJSON("data/events.json").catch(() => ({ events: [] }))]);
+  document.getElementById("news-go").firstChild.textContent = `Read the coverage (${news.items.length} items) `;
+  document.getElementById("latest-news").innerHTML = news.items.slice(0, 5).map(i => `<div class="res"><span class="name"><a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a></span><span class="country">${esc(SOP.fmtDate(i.date) || "")}</span><span class="sub">${esc(i.source || "")}${i.kind === "podcast" ? " · podcast" : ""}</span></div>`).join("") || '<div class="empty">No items yet.</div>';
+  const today = new Date().toISOString().slice(0, 10);
+  const up = ev.events.filter(e => e.start && e.start >= today).sort((a, b) => a.start.localeCompare(b.start)).slice(0, 4);
+  document.getElementById("events-go").firstChild.textContent = `Upcoming events (${ev.events.filter(e => e.start && e.start >= today).length}) `;
+  document.getElementById("next-events").innerHTML = up.map(e => `<div class="card"><span class="date">${esc(SOP.fmtDate(e.start))}${e.end && e.end !== e.start ? " – " + esc(SOP.fmtDate(e.end)) : ""}</span><h3><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.name)}</a></h3><div class="where">${esc(e.location || "")}</div></div>`).join("") || '<div class="empty">No dated events.</div>';
+})().catch(() => {});
+</script>
+</body>
+</html>

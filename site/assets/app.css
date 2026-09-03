@@ -73,6 +73,12 @@ main.wrap { padding-top: 104px; padding-bottom: 4rem; }
 .nav a:hover { background: rgba(26,35,50,.06); color: var(--ink); }
 .nav a.active { background: var(--amber-soft); color: var(--ink); font-weight: 600; }
 .nav a.cta { background: var(--amber); color: #1a2332; font-weight: 600; margin-left: .4rem; }
+.menu { position: relative; }
+.menu-list { display: none; position: absolute; top: 100%; left: 0; min-width: 180px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: .35rem; flex-direction: column; z-index: 60; }
+.menu-list a { display: block; padding: .5em .8em; border-radius: 8px; font-size: .9rem; color: var(--ink-2); }
+.menu-list a:hover { background: var(--surface-2); color: var(--ink); }
+.menu:hover .menu-list, .menu:focus-within .menu-list, .menu.open .menu-list { display: flex; }
+@media (max-width: 900px) { .menu-list { position: static; display: flex; box-shadow: none; border: none; padding-left: 1rem; } }
 .nav-toggle { display: none; background: none; border: 1px solid var(--line-2); border-radius: 999px; width: 42px; height: 42px; cursor: pointer; align-items: center; justify-content: center; }
 .nav-toggle span { display: block; width: 18px; height: 2px; background: var(--ink); position: relative; }
 .nav-toggle span::before, .nav-toggle span::after { content: ""; position: absolute; left: 0; width: 18px; height: 2px; background: var(--ink); }
