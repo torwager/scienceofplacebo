@@ -6,12 +6,15 @@ scope:  core      -> shown in feed and database (empirical/review study of place
         review    -> model was uncertain; kept in a review queue, not on the site
 """
 import os
+import re
 from .llm_client import Classifier, PROMPT_VERSION, load_taxonomy
 
 SKIP_PUB_TYPES = {"Comment", "Editorial", "Letter", "News", "Published Erratum", "Retracted Publication",
                   "Retraction of Publication", "Newspaper Article", "Interview", "Biography", "Portrait",
                   "Autobiography", "Bibliography", "Directory", "Legal Case", "Patient Education Handout"}
-ADJACENT_TYPES = {"editorial_letter", "protocol"}
+ADJACENT_TYPES = {"editorial_letter"}
+EXCLUDED_TYPES = {"protocol"}  # protocols without results are never included
+PROTOCOL_TITLE = re.compile(r"\b(study|trial) protocol\b|\bprotocol (for|of) (a|an)\b|\bprotocol paper\b", re.I)
 
 _clf = None
 
@@ -34,6 +37,8 @@ def prefilter(rec):
         return "language"
     if not rec.get("title"):
         return "no_title"
+    if "Clinical Trial Protocol" in (rec.get("pub_types") or []) or PROTOCOL_TITLE.search(rec["title"]):
+        return "protocol"
     return None
 
 
@@ -53,6 +58,8 @@ def derive_scope(data):
     if s["decision"] == "uncertain" or s["confidence"] < 0.5:
         return "review"
     tags = data["tags"]
+    if tags.get("article_type") in EXCLUDED_TYPES:
+        return "exclude"
     focus = [f for f in tags.get("study_focus") or [] if f != "placebo_science_other"]
     if tags.get("article_type") in ADJACENT_TYPES or not focus:
         return "adjacent"

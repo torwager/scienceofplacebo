@@ -49,6 +49,8 @@ EXCLUDE when:
   response (e.g., general treatment-expectation questionnaires validated in patients, adherence surveys).
 - Placebo/nocebo appears only as a keyword, MeSH term or phrase ("placebo-controlled"), or the paper is about
   something else.
+- **Study protocols and trial registrations without results** ("study protocol for a randomized trial", "protocol for a
+  systematic review", SPIRIT protocols): EXCLUDE with `not_a_study_of_effects_or_responses`, whatever the topic.
 - Not scientific literature (news, adverts, meeting abstracts without data, retraction notices, duplicates).
 - The available text is insufficient to judge; then choose `uncertain`, not `exclude`.
 

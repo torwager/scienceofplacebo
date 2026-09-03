@@ -2,7 +2,7 @@
 data/papers and recorded in data/screened.json."""
 import json, sys, time, collections
 sys.path.insert(0, ".")
-from pipeline import db
+from pipeline import db, classify
 from pipeline.llm_client import PROMPT_VERSION
 
 papers = db.load_all(); screened = db.load_screened()
@@ -10,6 +10,7 @@ rows = {}
 for line in open("work/rescreen.jsonl"):
     j = json.loads(line)
     if j.get("prompt_version") == PROMPT_VERSION and j["scope"] != "error":
+        j["scope"] = classify.derive_scope(j["classification"])  # re-derive with the current rules (e.g. protocols excluded)
         rows[j["id"]] = j
 moves = collections.Counter(); removed = 0
 for rid, j in rows.items():
