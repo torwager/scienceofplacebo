@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Science of Placebo — community picks</title>
+<meta name="description" content="The placebo papers most often starred by members of the Science of Placebo community.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .rank { font-family: var(--serif); font-size: 1.4rem; color: var(--muted); min-width: 2.2rem; }
+  .pick { display: grid; grid-template-columns: auto 1fr; gap: .8rem; align-items: start; }
+  .votes { font-size: .78rem; color: var(--amber-deep); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Community picks</p>
+    <h1>Papers the community recommends</h1>
+    <p>Ranked by how many signed-in members have starred them. Star papers on the feed, in the database or on any paper page; with an account your stars count here. <a href="join.html">Join the community</a> to take part.</p>
+  </div>
+  <div class="filter-top"><span class="count" id="count"></span><span class="small muted" style="margin-left:auto" id="updated"></span></div>
+  <div class="papers" id="list"><div class="spinner">Loading…</div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+<script src="assets/account.js"></script>
+<script>
+(async function () {
+  const { state } = await SOP.loadCore();
+  const listEl = document.getElementById("list");
+  document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
+  if (!SOP_CONFIG.communityApi) { listEl.innerHTML = '<div class="empty">Community accounts are not open yet, so there are no shared picks to show. Your own stars are on <a href="mylist.html">My list</a>.</div>'; return; }
+  const data = await SOP.getJSON(SOP_CONFIG.communityApi + "/api/picks");
+  const byId = new Map(state.index.map(r => [r.id, r]));
+  const picks = data.picks.map(p => ({ ...p, r: byId.get(p.id) })).filter(p => p.r);
+  document.getElementById("count").textContent = `${picks.length} papers starred by members`;
+  document.getElementById("updated").textContent = "Counts refresh every few minutes.";
+  listEl.innerHTML = picks.length ? picks.map((p, i) => `<div class="pick"><span class="rank tnum">${i + 1}</span><div>${SOP.paperCard(p.r).replace('<div class="meta">', `<div class="meta"><span class="votes">★ ${p.n} member${p.n === 1 ? "" : "s"}</span>`)}</div></div>`).join("") : '<div class="empty">No stars from signed-in members yet. Be the first: star a paper and sign in.</div>';
+  SOP.bindStars(listEl);
+})().catch(e => { document.getElementById("list").innerHTML = `<div class="empty">Could not load picks (${SOP.esc(e.message)}).</div>`; });
+</script>
+</body>
+</html>

@@ -23,7 +23,7 @@
     <h1>Papers you have starred</h1>
     <p>Star any paper (☆) on the feed, in the database or on its page to keep it here. On the feed and database pages, tick "only my list" to filter to these papers.</p>
   </div>
-  <div class="notice" id="notice">Your list is stored in this browser only. Use <b>Export</b> to save it as a file or move it to another device, and <b>Import</b> to load one. Signing in to sync the list across devices and to nominate papers for the community's curated list is coming; see <a href="join.html">Join the community</a>.</div>
+  <div class="notice" id="notice"><div data-account="full" style="margin-bottom:.4rem"></div>Without an account the list is stored in this browser only: use <b>Export</b> to save it or move it to another device, and <b>Import</b> to load one. See <a href="join.html">Join the community</a> and the <a href="picks.html">community picks</a>.</div>
   <div class="tools">
     <span class="count" id="count"></span>
     <label class="small muted" style="margin-left:.4rem">Sort <select id="sort"><option value="added">recently starred</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
@@ -40,6 +40,7 @@
 <script src="assets/config.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/layout.js"></script>
+<script src="assets/account.js"></script>
 <script>
 (async function () {
   const { state } = await SOP.loadCore();
