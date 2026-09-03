@@ -286,74 +286,79 @@
 "Meta-Analysis",
 "Systematic Review"
 ],
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:15:09Z",
+"classified_at": "2026-09-02T19:03:02Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Narrative review whose main aim was to synthesize and resolve the expectancy vs. conditioning theories of the placebo effect, meeting inclusion criteria for placebo science.",
+"confidence": 0.9,
+"rationale": "Systematic review and meta-analysis explicitly compared CBT alone versus CBT plus pill placebo, testing the causal/additive effect of a pill placebo on treatment response.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_effect",
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "not_applicable",
+"article_type": "meta_analysis",
+"species": "human",
 "population": [
-"not_applicable"
+"other_clinical",
+"general_public"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"other"
+"anxiety_stress"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"clinician_rated"
 ],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective",
+"significant_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"classical_conditioning",
-"attention_cognitive_appraisal"
+"treatment_cues_dose_route",
+"therapeutic_ritual_context",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Reviews the expectancy and conditioning literatures and argued that both shape placebo effects, with conditioning sometimes producing effects not mediated by conscious expectancies.",
-"key_finding": "Concluded that verbal suggestion and conditioning both shape placebo effects and that conditioning can sometimes produce non-conscious placebo effects independent of conscious expectancy.",
-"sample_size": null,
+"summary": "Meta-analysis of three RCTs found that adding a pill placebo to CBT for panic disorder increased acute-phase response rates versus CBT alone, with the difference not significant at follow-up.",
+"key_finding": "CBT+pill placebo produced a 26% greater chance of response (95% CI 2% to 55%) at end of acute treatment versus CBT alone.",
+"sample_size": 3,
 "free_keywords": [
-"expectancy theory",
-"classical conditioning",
-"learning",
-"mediation",
-"placebo mechanisms",
-"conscious_expectancy"
+"panic disorder",
+"cognitive-behavior therapy",
+"pill placebo",
+"response rate",
+"acute treatment",
+"augmentation",
+"randomized controlled trials"
 ],
 "usage": {
-"input_tokens": 1212,
+"input_tokens": 1344,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 730,
-"cost_usd": 0.00188
+"output_tokens": 835,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -1668,11 +1673,8 @@
 "doi": "10.1007/s11606-007-0332-z",
 "pmid": "17994270",
 "pmcid": "PMC2173915",
-"abstract": "Placebo treatment in clinical practice can be given either in order to comply with the wishes of the patient, or with the purpose of doing good and not causing harm. In the former instance, the procedure may be in accordance with the interests of the patient, yet be in conflict with the interests of the medical profession. In the latter instance, the procedure presupposes that in most cases the patient has not been informed of the nature of the treatment; this type of procedure may jeopardize a trusting patient-doctor relationship. Therefore, it is of interest to investigate both the extent to which patients and physicians feel they can accept placebo treatment and a paternalistic attitude, and in which particular situations. In order to shed some light on this matter, we compiled a questionnaire built around three case histories which problematize placebo treatment and paternalistic acts. The questionnaire was distributed to 100 patients and 100 physicians. 83 patients and 94 physicians responded. The results show that patients and physicians do not automatically follow specific group interests. Physicians are more inclined to respect the patient's option to refuse medical treatment than the patients are inclined to respect a physician's professional autonomy. Patients appear more to be paternalistic in their judgements than physicians, but one cannot rule out the possibility that the answers of the physicians reflect the fact that placebo treatment represent a socially undesirable behaviour. We conclude that theoretical and normative analyses of the perspective of the actors ought to be supplemented by empirical research.(ABSTRACT TRUNCATED AT 250 WORDS)",
-"keywords": [
-"Empirical Approach",
-"Professional Patient Relationship"
-],
+"abstract": "BACKGROUND: The placebo and the placebo effect are often investigated in the context of clinical trials. Little data exist on the use of placebos in the course of routine health care. OBJECTIVE: The aim of this study is to describe a group of academic physicians' use of placebos and their knowledge, attitudes, and beliefs about placebos and the placebo effect. DESIGN: A 16-question anonymous web-based survey of physicians from Internal Medicine departments of 3 Chicago-area medical schools was used. RESULTS: There were 231/466 (50%) physicians who responded; of these, 45% reported they had used a placebo in clinical practice. The most common reasons for placebo use were to calm the patient and as supplemental treatment. Physicians did not widely agree on the definition of a placebo and had a variety of explanations for its mechanism of action. Ninety-six percent of the respondents believed that placebos can have therapeutic effects, and up to 40% of the physicians reported that placebos could benefit patients physiologically for certain health problems. Only 12% of the respondents said that placebo use in routine medical care should be categorically prohibited. Regarding \"placebo-like\" treatment, 48% of respondents reported giving at least 1 type of treatment in a situation where there was no evidence of clinical efficacy. CONCLUSION: Nearly half of the respondents use placebos in clinical practice and most believe in the mind-body connection. The results of this study, based on retrospective self-reported behavior, are subject to recall bias and may not be representative of American physicians.",
+"keywords": [],
 "mesh": [
 "Adult",
 "Attitude of Health Personnel",
@@ -1700,11 +1702,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:55:00Z",
+"classified_at": "2026-09-02T19:02:41Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Survey study whose stated aim was to compare patient and physician attitudes toward placebo treatment, so placebo/ethics attitudes are the main subject.",
+"rationale": "Survey study of physicians' use, beliefs, and attitudes about placebo use in clinical practice directly addresses placebo science (clinical use/attitudes).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1715,12 +1717,10 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public",
 "clinicians_providers"
 ],
 "age_group": [
-"adults",
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
@@ -1744,23 +1744,25 @@
 "not_applicable"
 ]
 },
-"summary": "Surveyed 100 patients and 100 physicians in Sweden about acceptability and circumstances of placebo treatment and paternalism, and analyzed differences in attitudes.",
-"key_finding": "Physicians were more likely to respect patients' right to refuse treatment while patients showed more paternalistic judgments than physicians.",
-"sample_size": 177,
+"summary": "Surveyed 231 academic physicians about placebo use and beliefs, finding 45% reported using placebos and strong belief in mind-body therapeutic effects.",
+"key_finding": "45% of responding physicians reported having used a placebo in clinical practice; 96% believed placebos can have therapeutic effects.",
+"sample_size": 231,
 "free_keywords": [
-"sweden",
-"attitudes",
-"paternalism",
-"disclosure",
-"trust",
-"patient-physician relations"
+"physician survey",
+"academic physicians",
+"clinical practice",
+"mind-body",
+"practice patterns",
+"placebo_prescribing",
+"beliefs",
+"web-based survey"
 ],
 "usage": {
-"input_tokens": 1429,
+"input_tokens": 1430,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00184
+"output_tokens": 518,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -1773,7 +1775,8 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2173915",
 "landing_url": "https://doi.org/10.1007/s11606-007-0332-z",
 "cited_by_count": 162,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1212/01.wnl.0000278226.96003.f8",
@@ -2988,76 +2991,76 @@
 "Journal Article",
 "Validation Study"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:23:14Z",
+"classified_at": "2026-09-02T19:01:54Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized single-blind crossover trial that explicitly validated a sham (Streitberger) acupuncture placebo and compared real vs placebo needling, addressing placebo control validity and responses.",
+"rationale": "Methods/validation study whose primary aim was to develop and validate a double-blind placebo (non-penetrating) acupuncture needle and assess practitioner and patient masking, meeting criteria for placebo science methods.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
-"article_type": "empirical_primary",
+"article_type": "methods_measurement",
 "species": "human",
 "population": [
-"surgical_patients"
+"healthy_adult"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
-"pain"
+"sensory_perception"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"clinician_rated"
 ],
 "design": [
-"crossover_rct"
+"within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"not_applicable"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
-"therapeutic_ritual_context",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"sham_acupuncture"
+"sham_acupuncture",
+"other"
 ]
 },
-"summary": "Validated the Streitberger non-penetrating acupuncture needle in a single-blind randomized crossover pilot with 37 orthopaedic joint-replacement patients, found no major differences between real and placebo needling on sensations or outcomes, though ~40% detected differences.",
-"key_finding": "No significant differences in needle sensations or clinical outcomes between real and placebo acupuncture, but ~40% of participants reported they could tell a difference.",
-"sample_size": 37,
+"summary": "Validated a double-blind non-penetrating placebo acupuncture needle and found it could mask practitioners and patients, with lower de qi and skin-penetration sensations for non-penetrating needles.",
+"key_finding": "Practitioner identification was frequently unidentifiable/incorrect and patients did not report receiving non-penetrating needles; de qi and skin-penetration sensations were substantially less common with non-penetrating needles (≈33–42% vs 80%).",
+"sample_size": 60,
 "free_keywords": [
-"streitberger needle",
-"acupuncture placebo",
-"hip knee replacement",
-"needle sensation",
-"validation study",
-"single-blind crossover",
-"orthopaedic patients"
+"de qi",
+"non-penetrating needle",
+"double-blind",
+"acupuncture",
+"blinding validation",
+"LI4",
+"SJ5"
 ],
 "usage": {
-"input_tokens": 1438,
+"input_tokens": 1472,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1046,
-"cost_usd": 0.00257
+"output_tokens": 890,
+"cost_usd": 0.00227
 }
 },
 "sources": [
@@ -6502,6 +6505,134 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.neuron.2007.06.028",
+"title": "Individual differences in reward responding explain placebo-induced expectations and effects.",
+"authors": [
+"Scott DJ",
+"Stohler CS",
+"Egnatuk CM",
+"Wang H",
+"Koeppe RA",
+"Zubieta JK"
+],
+"journal": "Neuron",
+"journal_abbrev": "Neuron",
+"year": 2007,
+"date": "2007-07-19",
+"doi": "10.1016/j.neuron.2007.06.028",
+"pmid": "17640532",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "Expectations, positive or negative, are modulating factors influencing behavior. They are also thought to underlie placebo effects, impacting perceptions and biological processes. Using healthy human subjects, we examined the role of the nucleus accumbens (NAC), a region centrally involved in the encoding of reward expectation, in the formation of placebo responses. Employing functional molecular imaging, activation of NAC dopamine (DA) release was observed during placebo administration and related to its anticipated effects, perception-anticipation mismatches, and placebo effect development. In additional functional MRI studies, the expectation of monetary gain increased NAC synaptic activity in a manner proportional to placebo-induced DA release, anticipated effects, perception-anticipation differentials, and actual placebo effects. Individual variations in NAC response to reward expectation accounted for 28% of the variance in the formation of placebo analgesia.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Dopamine",
+"Female",
+"Games, Experimental",
+"Humans",
+"Individuality",
+"Magnetic Resonance Imaging",
+"Male",
+"Nucleus Accumbens",
+"Pain",
+"Placebo Effect",
+"Positron-Emission Tomography",
+"Reference Values",
+"Reward",
+"Set, Psychology"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, N.I.H., Extramural"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T19:00:33Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Empirical human imaging study that directly measured placebo-induced analgesia and its relation to nucleus accumbens dopamine release, so placebo effect was the primary focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"pet_neurochemical",
+"fmri"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"neurobiology_dopamine",
+"neural_systems_circuits",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"expectation_level",
+"personality_traits"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
+},
+"summary": "Found that nucleus accumbens dopamine release and reward-related fMRI responses during placebo administration predicted placebo analgesia in healthy adults, with individual differences accounting for 28% of variance.",
+"key_finding": "Individual differences in NAC reward responding explained 28% of variance in placebo-induced analgesia.",
+"sample_size": null,
+"free_keywords": [
+"nucleus accumbens",
+"dopamine",
+"placebo analgesia",
+"PET",
+"fMRI",
+"reward expectation",
+"healthy volunteers",
+"reward system"
+],
+"usage": {
+"input_tokens": 1285,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 874,
+"cost_usd": 0.00219
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-07-19",
+"private_pdf": null
+},
+{
 "id": "doi:10.2337/dc07-0608",
 "title": "Factors that impact symptomatic diabetic peripheral neuropathy in placebo-administered patients from two 1-year clinical trials.",
 "authors": [
@@ -8945,6 +9076,124 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1097/01.anes.0000265418.68005.8a",
+"title": "Naloxone-insensitive epidural placebo analgesia in a chronic pain patient.",
+"authors": [
+"Kupers R",
+"Maeyaert J",
+"Boly M",
+"Faymonville ME",
+"Laureys S"
+],
+"journal": "Anesthesiology",
+"journal_abbrev": "Anesthesiology",
+"year": 2007,
+"date": "2007-06-01",
+"doi": "10.1097/01.anes.0000265418.68005.8a",
+"pmid": "17525602",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "",
+"keywords": [],
+"mesh": [
+"Analgesia, Epidural",
+"Female",
+"Humans",
+"Middle Aged",
+"Naloxone",
+"Narcotic Antagonists",
+"Pain Management",
+"Placebo Effect",
+"Positron-Emission Tomography"
+],
+"pub_types": [
+"Case Reports",
+"Journal Article",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_only",
+"classified_at": "2026-09-02T19:00:22Z",
+"screening": {
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Case report whose main subject was placebo (epidural) analgesia and its pharmacological (naloxone) sensitivity, meeting inclusion for placebo science.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "case_report",
+"species": "human",
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"pet_metabolism"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"neurobiology_opioid",
+"neural_systems_circuits",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"pharmacological_manipulation"
+],
+"intervention_type": [
+"saline_injection_infusion"
+]
+},
+"summary": "Reported a single chronic pain patient who experienced analgesia after an epidural placebo, with PET changes and analgesia that was not reversed by naloxone.",
+"key_finding": "Found epidural placebo analgesia accompanied by PET changes that was naloxone-insensitive, suggesting non-opioid mechanisms.",
+"sample_size": 1,
+"free_keywords": [
+"epidural",
+"naloxone",
+"positron emission tomography",
+"chronic pain",
+"case report",
+"analgesia"
+],
+"usage": {
+"input_tokens": 1114,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 948,
+"cost_usd": 0.0023
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-06-01",
+"private_pdf": null
+},
+{
 "id": "doi:10.1089/acm.2007.6316",
 "title": "Correlated change in upper limb function and motor cortex activation after verum and sham acupuncture in patients with chronic stroke.",
 "authors": [
@@ -10656,6 +10905,124 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.jpsychores.2006.12.005",
+"title": "Further evidence for individual differences in placebo responding: an interactionist perspective.",
+"authors": [
+"Geers AL",
+"Kosbab K",
+"Helfer SG",
+"Weiland PE",
+"Wellman JA"
+],
+"journal": "Journal of psychosomatic research",
+"journal_abbrev": "J Psychosom Res",
+"year": 2007,
+"date": "2007-05-01",
+"doi": "10.1016/j.jpsychores.2006.12.005",
+"pmid": "17467411",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "OBJECTIVE: A prior investigation found that individuals low in optimism are more likely to follow a negative placebo (nocebo) expectation. The present study tested the hypothesis that individuals high in optimism are more likely to follow a positive placebo expectation. METHODS: Individuals (N=56) varying in their level of optimism were randomly assigned to one of three conditions. In the first condition, participants were given the expectation that a placebo sleep treatment would improve their sleep quality (placebo expectation condition). In the second condition, participants engaged in the same sleep treatment activity but were not given the positive placebo expectation (treatment control condition). Finally, a third group did not receive the positive placebo expectation and also did not engage in the placebo sleep treatment (no-placebo control condition). RESULTS: Optimism was positively associated with better sleep quality in the placebo expectation condition (r=.48, P<.05). Optimism scores were not associated with better sleep quality in either the treatment control condition (r=-.17, P=.46) or the no-placebo control condition (r=-.24, P=.35). CONCLUSION: Dispositional optimism relates to placebo responding. This relationship, however, is not manifested in a simple increase or decrease in all types of placebo responding. Rather, it appears that, as optimism increases, response to the positive placebo expectation increases, whereas response to nocebo expectation decreases. It is recommended that future research on personality and placebo effects consider the interaction between situational and dispositional variables.",
+"keywords": [],
+"mesh": [
+"Adolescent",
+"Adult",
+"Female",
+"Humans",
+"Individuality",
+"Male",
+"Personality Inventory",
+"Placebo Effect",
+"Set, Psychology",
+"Sleep Wake Disorders",
+"Social Desirability",
+"Temperament"
+],
+"pub_types": [
+"Journal Article",
+"Randomized Controlled Trial"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:59:26Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Randomized experimental manipulation of positive placebo expectation with control arms tested placebo responding and its moderation by dispositional optimism, meeting the placebo effect inclusion criteria.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"sleep"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
+"moderators": [
+"personality_traits",
+"expectation_level"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
+},
+"summary": "Found that dispositional optimism predicted better self-reported sleep quality only in the positive placebo-expectation condition versus control conditions.",
+"key_finding": "Optimism correlated with improved sleep in the placebo expectation condition (r = .48, p < .05) but not in treatment-control or no-placebo control.",
+"sample_size": 56,
+"free_keywords": [
+"optimism",
+"placebo expectation",
+"nocebo",
+"sleep quality",
+"personality",
+"randomized"
+],
+"usage": {
+"input_tokens": 1402,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 744,
+"cost_usd": 0.00196
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-05-01",
+"private_pdf": null
+},
+{
 "id": "doi:10.1016/j.jpeds.2007.02.051",
 "title": "Duct tape may not be superior to placebo in the treatment of common warts.",
 "authors": [
@@ -10974,6 +11341,128 @@
 "landing_url": "https://doi.org/10.1002/ptr.2084",
 "cited_by_count": 27,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1111/j.1468-2982.2007.01332.x",
+"title": "Factors associated with the prophylactic effect of placebo injections in subjects enrolled in a study of botulinum toxin for migraine.",
+"authors": [
+"Schwedt TJ",
+"Hentz JG",
+"Dodick DW"
+],
+"journal": "Cephalalgia : an international journal of headache",
+"journal_abbrev": "Cephalalgia",
+"year": 2007,
+"date": "2007-04-25",
+"doi": "10.1111/j.1468-2982.2007.01332.x",
+"pmid": "17459081",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "We set out to identify predictors for the prophylactic effect of placebo injections in subjects with migraine by post hoc analysis of 81 subjects with episodic migraine receiving single-blind placebo injections in a prospective trial of botulinum toxin. Possible predictors of placebo prophylaxis were compared among placebo responders (PRs) and placebo non-responders (PNRs). There were 34 PRs (42%) and 47 PNRs (58%). Male gender [odds ratio (OR) 5.83, 95% confidence interval (CI) 1.12, 30.14, P = 0.022], a history of opioid use (OR 4.44, 95% CI 1.47, 13.41, P = 0.005) and injections in the neck/shoulders (OR 2.44, 95% CI 0.93, 3.19, P = 0.033) were associated with placebo response. Of subjects with two or more of these signs, 88% were PRs compared with 31% of subjects with one or less. Male gender, opioid use and injections in the neck/shoulders are associated with placebo prophylaxis. These findings may have important implications for the design of future clinical trials and for the clinical management of migraineurs.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Analgesics, Opioid",
+"Botulinum Toxins, Type A",
+"Double-Blind Method",
+"Female",
+"Humans",
+"Male",
+"Migraine Disorders",
+"Neuromuscular Agents",
+"Placebo Effect",
+"Sex Factors"
+],
+"pub_types": [
+"Clinical Trial, Phase II",
+"Journal Article",
+"Multicenter Study",
+"Randomized Controlled Trial"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:59:20Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Post-hoc secondary analysis of placebo arm responders in a randomized trial directly studied predictors of placebo prophylaxis (placebo response).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis",
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"prior_treatment_experience",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"sex_gender",
+"prior_experience",
+"treatment_characteristics"
+],
+"intervention_type": [
+"saline_injection_infusion"
+]
+},
+"summary": "Analyzed 81 episodic migraine subjects who received single-blind placebo injections and identified predictors (male sex, prior opioid use, neck/shoulder injections) associated with placebo prophylaxis.",
+"key_finding": "Placebo response rate was 42%; male sex (OR 5.83), prior opioid use (OR 4.44), and injections in neck/shoulders (OR 2.44) were associated with being a placebo responder.",
+"sample_size": 81,
+"free_keywords": [
+"migraine",
+"botulinum toxin trial",
+"placebo injections",
+"placebo responder",
+"single-blind",
+"opioid history",
+"prophylaxis",
+"neck injections"
+],
+"usage": {
+"input_tokens": 512,
+"cache_read_input_tokens": 5760,
+"cache_creation_input_tokens": 0,
+"output_tokens": 767,
+"cost_usd": 0.00181
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-04-25",
+"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.jaci.2007.03.016",
@@ -13376,74 +13865,68 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:22:14Z",
+"classified_at": "2026-09-02T18:58:44Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Prospective double-blind crossover study that tested effects of verbal suggestion with inhaled saline on FEV1 and dyspnea, directly investigating placebo-like/nocebo responses and suggestibility as a moderator.",
+"confidence": 0.9,
+"rationale": "Meta-analysis whose main aim was to quantify placebo effects/responses on objectively measured peripheral (physical vs biochemical) parameters across randomized clinical trials.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
-"general_public",
-"other_clinical",
-"allergy_respiratory"
+"mixed_clinical"
 ],
 "age_group": [
-"adults",
 "mixed_unspecified"
 ],
 "condition_domain": [
-"respiratory"
+"other"
 ],
 "outcome_measures": [
 "clinical_endpoint",
-"self_report"
+"immune_inflammatory"
 ],
 "design": [
-"crossover_rct",
-"within_subject_experimental"
+"meta_analytic"
 ],
 "effects": [
-"significant_objective",
-"significant_subjective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"personality_traits",
-"expectation_level"
+"trial_characteristics"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"not_applicable"
 ]
 },
-"summary": "Found that suggestible asthmatic subjects showed larger FEV1 decreases after inhaled saline paired with suggestion of bronchoconstriction than suggestion-resistant subjects in a double-blind crossover pilot.",
-"key_finding": "Five of eight suggestible versus one of nine suggestion-resistant subjects had >150 ml FEV1 fall after sham bronchoconstrictor (p = .027).",
-"sample_size": 17,
+"summary": "Meta-analysis found that placebo interventions produced small-to-moderate improvements on physical peripheral parameters but negligible or negative effects on biochemical parameters across randomized clinical trials.",
+"key_finding": "Physical parameters: Hedges' g ≈ 0.34 (95% CI 0.22–0.46) in one analysis and g ≈ 0.22 (95% CI 0.07–0.36) in a second; biochemical parameters: g ≈ 0.03 (95% CI -0.04–0.10) and g ≈ -0.17 (95% CI -0.31–-0.02) in subanalyses.",
+"sample_size": null,
 "free_keywords": [
-"asthma",
-"fev1",
-"bronchoconstriction",
-"borg scale",
-"suggestibility",
-"creative imagination scale",
-"sham challenge"
+"peripheral biomarkers",
+"objective outcomes",
+"placebo-controlled trials",
+"hedges g",
+"physical vs biochemical",
+"stable disease",
+"randomized trials"
 ],
 "usage": {
-"input_tokens": 601,
-"cache_read_input_tokens": 5760,
+"input_tokens": 1542,
+"cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1117,
-"cost_usd": 0.00253
+"output_tokens": 1083,
+"cost_usd": 0.00267
 }
 },
 "sources": [
@@ -14031,6 +14514,123 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1111/j.1600-0447.2006.00951.x",
+"title": "Antidepressants in child and adolescent depression: where are the bugs?",
+"authors": [
+"Moreno C",
+"Arango C",
+"Parellada M",
+"Shaffer D",
+"Bird H"
+],
+"journal": "Acta psychiatrica Scandinavica",
+"journal_abbrev": "Acta Psychiatr Scand",
+"year": 2007,
+"date": "2007-03-01",
+"doi": "10.1111/j.1600-0447.2006.00951.x",
+"pmid": "17302618",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "OBJECTIVE: To examine the data on the effect of antidepressant medication in depressed children and adolescents and the causes of the results obtained. METHOD: A systematic literature search was conducted, supplemented by a manual search, and a search of public online information on paediatric antidepressant trials reviewed by regulatory agencies. RESULTS: Data gathered from published and unpublished randomized controlled trials vary in their findings, with most of the studies showing a lack of efficacy characterized by a high placebo response rate. CONCLUSION: Differences from efficacy results with the same drugs in adult depression may be because of neurobiological developmental correlates, developmental differences in pharmacokinetics and pharmacodynamics, high rates of placebo response in children, and a number of methodological influences. There are several areas needing more attention in paediatric antidepressant clinical trials. Judicious use of published and unpublished studies to assess who may benefit from treatment with antidepressants seems warranted.",
+"keywords": [],
+"mesh": [
+"Adolescent",
+"Antidepressive Agents",
+"Child",
+"Major Depressive Disorder",
+"Humans",
+"Treatment Outcome"
+],
+"pub_types": [
+"Journal Article",
+"Meta-Analysis",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:58:14Z",
+"screening": {
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Meta-analysis of antidepressant trials in children/adolescents that explicitly analyzed high placebo response rates and methodological causes, so placebo response and trial-methodology are substantive subjects.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response",
+"placebo_science_other"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"neurobiology_other_neurochemical"
+],
+"moderators": [
+"age",
+"disease_severity_duration",
+"trial_characteristics"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
+},
+"summary": "Pooled published and unpublished RCTs of antidepressants in depressed children/adolescents reviewed and found generally high placebo response rates and variable drug efficacy, discussing developmental, pharmacokinetic, and methodological contributors.",
+"key_finding": "Found high placebo response rates in pediatric antidepressant trials that may explain reduced observed drug efficacy compared with adults.",
+"sample_size": null,
+"free_keywords": [
+"paediatric",
+"ssri",
+"regulatory",
+"publication_bias",
+"placebo_response",
+"meta-analysis"
+],
+"usage": {
+"input_tokens": 1273,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 734,
+"cost_usd": 0.00191
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-03-01",
+"private_pdf": null
+},
+{
 "id": "doi:10.1111/j.1533-2500.2007.00104.x",
 "title": "Placebo theory and its implications for research and clinical practice: a review of the recent literature.",
 "authors": [
@@ -14277,6 +14877,120 @@
 "landing_url": "https://doi.org/10.1111/j.1468-2982.2007.01278.x",
 "cited_by_count": 47,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1111/j.1445-5994.2007.01264.x",
+"title": "Attitudes of medical students to placebo therapy.",
+"authors": [
+"Lim EC",
+"Seet RC"
+],
+"journal": "Internal medicine journal",
+"journal_abbrev": "Intern Med J",
+"year": 2007,
+"date": "2007-03-01",
+"doi": "10.1111/j.1445-5994.2007.01264.x",
+"pmid": "17316333",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "BACKGROUND: Studies have described opposing perceptions of placebo use, with laypersons for and health-care workers against it. Opinions of medical students have not previously been elicited. This study was based on online electronic survey on beliefs, knowledge and attitudes about placebo therapy, that is, use of placebo in clinical practice, rather than in randomized controlled clinical trials. METHODS: The participants were preclinical (years 1, 2) and clinical (years 3-5) medical students. Descriptive analyses and chi2 tests were used to compare the opinions of preclinical and clinical students with statistical significance set at P < 0.05. RESULTS: Four hundred and two (35.6%) out of 1153 students responded, of which 181 were preclinical and 221 were clinical students. Two hundred and eighty-five (70.9%) students felt that placebo therapy was acceptable and 134 (33.3%) believed that it was beneficial in organic disease. Fifty-two (12.9%) students felt that it was ethical to prescribe placebo for organic disease with known definitive treatment, 259 (64.4%) for organic disease with no known treatment and 328 (81.6%) for psychogenic disease. More preclinical than clinical students approved of placebo therapy (odds ratio 2.140 (95% confidence interval 1.161-3.944), P = 0.015) and opined that it was ethical to prescribe placebo therapy to organic diseases for which there was appropriate treatment (odds ratio 1.800 (95% confidence interval 0.992-3.266), P = 0.053). A greater number of clinical when compared with preclinical students said that there is evidence that placebo therapy has a beneficial effect on organic disease (odds ratio 2.299 (95% confidence interval 1.468-4.405), P < 0.001). CONCLUSION: Our medical students felt that placebo therapy is acceptable in certain situations. We identified their erroneous acceptance of placebo therapy in organic diseases, for which there is established treatment, as an area to be addressed in our undergraduate curriculum.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Attitude",
+"Clinical Medicine",
+"Education, Medical, Undergraduate",
+"Ethics, Clinical",
+"Female",
+"Humans",
+"Male",
+"Placebos",
+"Psychophysiologic Disorders",
+"Students, Medical",
+"Surveys and Questionnaires"
+],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:58:18Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Survey study whose primary aim was to measure medical students' attitudes and beliefs about placebo therapy (placebo prescribing/ethics), meeting inclusion for placebo science (attitudes/ethics).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"survey_interview"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"provider_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Surveyed medical students about beliefs and attitudes toward placebo therapy and found most students considered placebo use acceptable in certain situations, with variation by training stage.",
+"key_finding": "Found 70.9% of respondents felt placebo therapy was acceptable, 81.6% supported its use for psychogenic disease, and preclinical students were more likely than clinical students to approve use (OR 2.14).",
+"sample_size": 402,
+"free_keywords": [
+"medical students",
+"placebo prescribing",
+"ethics",
+"undergraduate curriculum",
+"acceptability",
+"psychogenic disease",
+"organic disease",
+"attitudes"
+],
+"usage": {
+"input_tokens": 1521,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 776,
+"cost_usd": 0.00205
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-03-01",
+"private_pdf": null
 },
 {
 "id": "doi:10.1111/j.1365-2869.2007.00566.x",
@@ -16706,6 +17420,135 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.pain.2006.12.006",
+"title": "The impact of patient expectations on outcomes in four randomized controlled trials of acupuncture in patients with chronic pain.",
+"authors": [
+"Linde K",
+"Witt CM",
+"Streng A",
+"Weidenhammer W",
+"Wagenpfeil S",
+"Brinkhaus B",
+"Willich SN",
+"Melchart D"
+],
+"journal": "Pain",
+"journal_abbrev": "Pain",
+"year": 2007,
+"date": "2007-01-25",
+"doi": "10.1016/j.pain.2006.12.006",
+"pmid": "17257756",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "In a pooled analysis of four randomized controlled trials of acupuncture in patients with migraine, tension-type headache, chronic low back pain, and osteoarthritis of the knee we investigated the influence of expectations on clinical outcome. The 864 patients included in the analysis received either 12 sessions of acupuncture or minimal (i.e. sham) acupuncture (superficial needling of non-acupuncture points) over an 8 week period. Patients were asked at baseline whether they considered acupuncture to be an effective therapy in general and what they personally expected from the treatment. After three acupuncture sessions patients were asked how confident they were that they would benefit from the treatment strategy they were receiving. Patients were classified as responders if the respective main outcome measure improved by at least fifty percent. Both univariate and multivariate analyses adjusted for potential confounders (such as condition, intervention group, age, sex, duration of complaints, etc.) consistently showed a significant influence of attitudes and expectations on outcome. After completion of treatment, the odds ratio for response between patients considering acupuncture an effective or highly effective therapy and patients who were more sceptical was 1.67 (95% confidence interval 1.20-2.32). For personal expectations and confidence after the third session, odds ratios were 2.03 (1.26-3.26) and 2.35 (1.68-3.30), respectively. Results from the 6-month follow-up were similar. In conclusion, in our trials a significant association was shown between better improvement and higher outcome expectations.",
+"keywords": [],
+"mesh": [
+"Acupuncture Therapy",
+"Adult",
+"Attitude to Health",
+"Chronic Disease",
+"Female",
+"Germany",
+"Humans",
+"Male",
+"Middle Aged",
+"Outcome Assessment, Health Care",
+"Pain",
+"Pain Management",
+"Pain Measurement",
+"Patient Satisfaction",
+"Placebo Effect",
+"Treatment Outcome"
+],
+"pub_types": [
+"Journal Article",
+"Randomized Controlled Trial",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:57:58Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Pooled secondary analysis of four RCTs that explicitly tested how patient expectations predicted clinical outcomes (placebo-related question) in acupuncture trials.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response",
+"placebo_science_other"
+],
+"article_type": "secondary_analysis",
+"species": "human",
+"population": [
+"mixed_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
+"moderators": [
+"expectation_level",
+"trial_characteristics"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
+},
+"summary": "Pooled analysis of four RCTs (n=864) of acupuncture vs minimal/sham acupuncture found that patients' positive attitudes and higher expectations predicted greater clinically significant improvement (≥50%); effects persisted at 6-month follow-up.",
+"key_finding": "Higher baseline and early confidence in acupuncture predicted greater odds of response (ORs ~1.67–2.35 for attitude, personal expectation, and confidence).",
+"sample_size": 864,
+"free_keywords": [
+"acupuncture",
+"minimal acupuncture",
+"migraine",
+"tension-type headache",
+"low back pain",
+"osteoarthritis knee",
+"responder_50",
+"expectation"
+],
+"usage": {
+"input_tokens": 1431,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 785,
+"cost_usd": 0.00205
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2007-01-25",
+"private_pdf": null
+},
+{
 "id": "doi:10.1093/ije/dyl303",
 "title": "Commentary: Assessing the effects of the Scottish Smokefree Law--the placebo effect and the importance of obtaining unbiased data.",
 "authors": [
@@ -16970,30 +17813,30 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:10:17Z",
+"classified_at": "2026-09-02T18:58:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized sham-controlled trial that evaluated a manual placebo (blinding success) and compared outcomes between active and sham treatments, so placebo/placebo-response was an object of study.",
+"rationale": "Study experimentally measured participant expectations for different sham/placebo procedures to inform placebo selection in OMT trials, making placebo the primary object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"chronic_pain"
+"general_public",
+"healthy_adult"
 ],
 "age_group": [
 "adults"
@@ -17005,47 +17848,44 @@
 "self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"crossover_rct",
+"within_subject_experimental",
+"survey_interview"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_subjective"
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
-"provider_patient_interaction",
-"therapeutic_ritual_context",
+"verbal_suggestion_expectation",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"prior_experience",
-"expectation_level",
-"sex_gender",
-"age"
+"none_reported"
 ],
 "intervention_type": [
 "sham_exercise_physical",
-"other"
+"sham_device"
 ]
 },
-"summary": "Randomized trial tested a standardized sham manual chiropractic intervention versus active manipulation in 111 adults with subacute/chronic low back pain, found both groups improved on self-report but no between-group differences, and blinding was unsuccessful.",
-"key_finding": "Both sham and active groups showed clinically significant self-reported improvement but no significant difference between groups (N=111).",
-"sample_size": 111,
+"summary": "Measured expectations for HVLA, light touch, and sub-therapeutic ultrasound in 30 adults and found higher expectations for HVLA versus light touch, suggesting sub-therapeutic ultrasound may be a more believable placebo for OMT trials.",
+"key_finding": "Participants rated HVLA more positively than light touch on likelihood to speed recovery and improve function (p=0.025 and p=0.039), while ultrasound expectations were similar to HVLA.",
+"sample_size": 30,
 "free_keywords": [
-"chiropractic",
-"low back pain",
-"flexion-distraction",
-"sham manipulation",
-"Roland-Morris",
-"Pain Disability Index",
-"blinding",
-"manual therapy"
+"osteopathic manipulative treatment",
+"HVLA",
+"light touch",
+"subtherapeutic ultrasound",
+"expectation",
+"placebo selection",
+"low back pain"
 ],
 "usage": {
-"input_tokens": 1535,
+"input_tokens": 1577,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 870,
-"cost_usd": 0.00225
+"output_tokens": 1282,
+"cost_usd": 0.00308
 }
 },
 "sources": [

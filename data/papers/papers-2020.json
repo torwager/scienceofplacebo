@@ -612,7 +612,7 @@
 "date": "2020-12-21",
 "doi": "10.1080/17437199.2020.1854051",
 "pmid": "33228474",
-"pmcid": null,
+"pmcid": "PMC7016304",
 "abstract": "INTRODUCTION: Treatment expectations are a key mechanism of placebo effects in clinical trials. In a previous study (PSY-HEART-I), preoperative expectation optimisation improved quality of life 6 months postcardiac surgery. However, barriers such as travel distance, staffing shortages and COVID-19 limited participation. This study evaluates the feasibility and acceptability of iEXPECT, a brief internet-based intervention designed to optimise expectations before heart surgery. METHODS AND ANALYSIS: In this three-arm, multicentre randomised controlled trial, 160 patients undergoing elective coronary artery bypass graft surgery are randomised to: (a) standard of care (SOC); (b) SOC plus iEXPECT with phone-based guidance (iEXPECT enhanced) or (c) SOC plus iEXPECT with email-based guidance (iEXPECT limited). The intervention includes four 20 min online modules addressing surgical benefits, side effects and coping strategies. Modules are accompanied by personalised guidance provided through feedback on each module via email or telephone (three before surgery, three booster sessions at 6, 12 and 18 weeks postsurgery). Assessments occur at baseline (5-21 days before surgery), preoperatively (day before surgery), 7 days postsurgery and 6 months later. Primary feasibility outcomes include recruitment (≥1 participant/week/centre), retention (≥49% completing 6-month follow-up including biomarkers) and engagement (≥75% completing ≥1 presurgery module). Acceptability is measured by self-reported enjoyment, usefulness and impact, with acceptance defined as mean scores >3.4 (5-point Likert scale) and CSQ-I ratings. Secondary outcomes include psychological measures, inflammatory markers and heart rate variability. ETHICS AND DISSEMINATION: Ethical approval was granted by the Ethics Committees of Philipps University Marburg (AZ 229/23 BO) and the University of Giessen (AZ 186/23). All participants provide written informed consent. Results will be shared via publications, conferences and public outreach with relevant consumer advocacy groups. TRIAL REGISTRATION NUMBER: DRKS00033284.",
 "keywords": [
 "Patients’ expectations",
@@ -728,7 +728,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/17437199.2020.1854051",
 "cited_by_count": 27,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1371/journal.pone.0243996",
@@ -780,17 +781,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T16:28:19Z",
+"classified_at": "2026-09-02T16:27:51Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject experimental manipulation showed that visual color cues causally altered pain perception (context-induced hyperalgesia), addressing mechanisms of context/expectation effects on pain.",
+"rationale": "Empirical human experiment whose primary aim was to test observationally induced placebo analgesia (placebo effect) and moderators.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -813,33 +814,38 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
-"attention_cognitive_appraisal"
+"social_observational_learning",
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"sex_gender"
+"personality_traits",
+"provider_characteristics",
+"none_reported"
 ],
 "intervention_type": [
-"other"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Found that colored visual cues, especially red, increased experienced electrocutaneous pain compared with a blank slide, and study 2 showed expectations were affected.",
-"key_finding": "Red color cues produced higher pain ratings than green or blue cues (color-induced hyperalgesia).",
+"summary": "Found that observational learning with a model's pain ratings produced placebo analgesia to color cues in healthy adults, and model role plus observer traits did not predict effect magnitude.",
+"key_finding": "Observing a model's differential pain ratings produced reliable placebo analgesia on subjective pain reports, and introducing the model as coworker versus fellow participant did not alter the effect.",
 "sample_size": null,
 "free_keywords": [
 "electrocutaneous",
-"color cue",
-"visual cue",
-"hyperalgesia",
-"cue-induced pain",
-"expectancy"
+"color cues",
+"observational learning",
+"placebo analgesia",
+"empathy",
+"conformity",
+"model role",
+"pain ratings"
 ],
 "usage": {
-"input_tokens": 1329,
+"input_tokens": 1412,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 938,
-"cost_usd": 0.00233
+"output_tokens": 845,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -2387,71 +2393,71 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T17:35:38Z",
+"classified_at": "2026-09-02T17:25:28Z",
 "screening": {
 "decision": "include",
-"confidence": 0.84,
-"rationale": "Animal experimental study directly tested conditioned (placebo-like) antidepressant effects by comparing cue-evoked responses to controls, meeting criteria for placebo effect research.",
+"confidence": 0.9,
+"rationale": "Secondary analysis of phase III RCTs tested OPRM1 (A118G) genotype as a predictor of antidepressant response in the antidepressant+placebo arm (placebo response), meeting inclusion criteria for placebo_response and placebo science mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response",
+"placebo_science_other"
 ],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
+"article_type": "secondary_analysis",
+"species": "human",
 "population": [
-"not_applicable"
+"depression"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"mood_depression",
-"motor_function"
+"mood_depression"
 ],
 "outcome_measures": [
-"behavioral_performance"
+"clinician_rated"
 ],
 "design": [
-"animal_experiment"
+"parallel_groups_rct",
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
-"significant_objective",
-"mixed_inconsistent"
+"significant_subjective",
+"null_subjective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route",
-"neural_systems_circuits"
+"genetics_placebome",
+"neurobiology_opioid",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"sex_gender",
-"none_reported"
+"genetics"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Demonstrated that environmental cues previously paired with ketamine reduced forced-swim immobility in male (but not female) mice, modeling conditioned antidepressant-like placebo effects.",
-"key_finding": "Conditioned cues produced antidepressant-like behavioral effects comparable to acute ketamine in male mice.",
+"summary": "Analyzed OPRM1 rs1799971 genotype effects on antidepressant and dissociative responses across two phase III esketamine trials and found greater antidepressant improvement in G-allele carriers in the antidepressant+placebo arm but no genotype effect in the esketamine arm.",
+"key_finding": "G-allele carriers showed significantly larger MADRS reductions on day 2 in the antidepressant+placebo arm, consistent with endogenous opioid involvement in placebo response.",
 "sample_size": null,
 "free_keywords": [
-"ketamine",
-"forced swim test",
-"classical conditioning",
-"CD-1 mice",
-"locomotion",
-"sex differences",
-"antidepressant-like"
+"esketamine",
+"A118G",
+"OPRM1",
+"treatment-resistant depression",
+"MADRS",
+"dissociation",
+"nasal spray"
 ],
 "usage": {
-"input_tokens": 517,
-"cache_read_input_tokens": 5760,
+"input_tokens": 1669,
+"cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00212
+"output_tokens": 1097,
+"cost_usd": 0.00273
 }
 },
 "sources": [
@@ -3195,7 +3201,7 @@
 "doi": "10.1038/s41582-020-0406-7",
 "pmid": "32887960",
 "pmcid": null,
-"abstract": "We set out to identify predictors for the prophylactic effect of placebo injections in subjects with migraine by post hoc analysis of 81 subjects with episodic migraine receiving single-blind placebo injections in a prospective trial of botulinum toxin. Possible predictors of placebo prophylaxis were compared among placebo responders (PRs) and placebo non-responders (PNRs). There were 34 PRs (42%) and 47 PNRs (58%). Male gender [odds ratio (OR) 5.83, 95% confidence interval (CI) 1.12, 30.14, P = 0.022], a history of opioid use (OR 4.44, 95% CI 1.47, 13.41, P = 0.005) and injections in the neck/shoulders (OR 2.44, 95% CI 0.93, 3.19, P = 0.033) were associated with placebo response. Of subjects with two or more of these signs, 88% were PRs compared with 31% of subjects with one or less. Male gender, opioid use and injections in the neck/shoulders are associated with placebo prophylaxis. These findings may have important implications for the design of future clinical trials and for the clinical management of migraineurs.",
+"abstract": "",
 "keywords": [],
 "mesh": [
 "Double-Blind Method",
@@ -3207,79 +3213,75 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:59:20Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-02T16:26:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Post-hoc secondary analysis of placebo arm responders in a randomized trial directly studied predictors of placebo prophylaxis (placebo response).",
+"confidence": 0.7,
+"rationale": "Title and journal indicate the paper is a commentary focused on disentangling placebo effects in migraine treatment, making placebo science the main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
-"article_type": "secondary_analysis",
+"article_type": "theory_commentary",
 "species": "human",
 "population": [
 "other_clinical"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
-"self_report"
+"not_applicable"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
-"single_group_pre_post"
+"not_applicable"
 ],
 "effects": [
-"significant_subjective"
+"not_applicable"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"prior_treatment_experience",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"nocebo_communication_disclosure"
 ],
 "moderators": [
-"sex_gender",
-"prior_experience",
-"treatment_characteristics"
+"trial_characteristics"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"not_applicable"
 ]
 },
-"summary": "Analyzed 81 episodic migraine subjects who received single-blind placebo injections and identified predictors (male sex, prior opioid use, neck/shoulder injections) associated with placebo prophylaxis.",
-"key_finding": "Placebo response rate was 42%; male sex (OR 5.83), prior opioid use (OR 4.44), and injections in neck/shoulders (OR 2.44) were associated with being a placebo responder.",
-"sample_size": 81,
+"summary": "Discusses challenges and approaches to separating placebo-related effects from specific treatment effects in migraine clinical research.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
 "migraine",
-"botulinum toxin trial",
-"placebo injections",
-"placebo responder",
-"single-blind",
-"opioid history",
-"prophylaxis",
-"neck injections"
+"headache",
+"clinical_trials",
+"placebo_response",
+"analgesics",
+"triptans"
 ],
 "usage": {
-"input_tokens": 512,
+"input_tokens": 176,
 "cache_read_input_tokens": 5760,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00181
+"output_tokens": 628,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -3293,7 +3295,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1038/s41582-020-0406-7",
 "cited_by_count": 5,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1016/j.psyneuen.2020.105081",
@@ -6130,6 +6133,125 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1098/rstb.2010.0384",
+"title": "Identifying Anticipated Events of Future Clinical Trials by Leveraging Data from the Placebo Arms of Completed Trials.",
+"authors": [
+"Tan XL",
+"Kern DM",
+"Cepeda MS"
+],
+"journal": "Therapeutic innovation & regulatory science",
+"journal_abbrev": "Ther Innov Regul Sci",
+"year": 2020,
+"date": "2020-11-09",
+"doi": "10.1098/rstb.2010.0384",
+"pmid": "33165761",
+"pmcid": "PMC5029817",
+"openalex_id": null,
+"abstract": "BACKGROUND: An important component of a systematic strategy for safety surveillance is prospective identification of anticipated serious adverse events (SAEs). Developing a structured approach to identify anticipated events and estimating their incidence can help align the safety strategy and the safety surveillance efforts. METHODS: We developed a novel approach to identify anticipated events for a hypothetical randomized, double-blind, controlled trial in subjects with bipolar disorder using the adverse events reported in the placebo arm of trials from the ClinicalTrials.gov database. We searched the ClinicalTrials.gov database for all trials on bipolar depression with similar inclusion/exclusion criteria and study duration as our hypothetical study. The frequencies of anticipated events in placebo arms were abstracted from each trial and 95% confidence intervals (CI) were calculated using the Clopper-Pearson method. Meta-analysis with a random effects model was performed to obtain a summary estimate and 95% CI for the events identified in more than one trial. RESULTS: A total of 129 clinical trials were initially identified, and 18 were ultimately selected as they met all the selection criteria. There were 69 unique anticipated SAEs identified, and 13 out of 69 were reported in at least 2 clinical trials. The top 5 anticipated SAEs for our study were: (1) hospitalization, psychiatric symptom (3.57%); (2) suicidal behavior, overdose (3.57%), (3) cholecystitis (2.86%); (4) fall (2.86%); (5) road traffic accident, injury (2.86%). CONCLUSION: We successfully identified the anticipated events from registered trials that included a population similar to our trial. This method for identifying anticipated events could be applied to other disease areas.",
+"keywords": [
+"Adverse events",
+"Anticipated events",
+"Bipolar disorder",
+"Clinical trials",
+"Placebo",
+"Safety report"
+],
+"mesh": [
+"Double-Blind Method",
+"Hospitalization",
+"Humans",
+"Prospective Studies",
+"Randomized Controlled Trials as Topic"
+],
+"pub_types": [
+"Journal Article",
+"Meta-Analysis"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T17:29:16Z",
+"screening": {
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Meta-analysis that pooled data from placebo arms to estimate incidence of adverse events (placebo-arm secondary analysis), meeting inclusion criteria for placebo-response/placebo-arm analyses.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"depression",
+"mixed_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"clinical_endpoint",
+"healthcare_utilization"
+],
+"design": [
+"meta_analytic",
+"placebo_arm_secondary_analysis"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Pooled placebo-arm adverse event data from trials in bipolar depression to identify anticipated serious adverse events and estimated their incidence for safety planning.",
+"key_finding": "Identified 69 unique anticipated SAEs from 18 trials, with top events including psychiatric hospitalization and suicidal behavior each ~3.6%.",
+"sample_size": 18,
+"free_keywords": [
+"bipolar_depression",
+"serious adverse events",
+"clinicaltrials.gov",
+"safety surveillance",
+"hospitalization",
+"suicide_attempt",
+"placebo_arm",
+"meta-analysis"
+],
+"usage": {
+"input_tokens": 1439,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 1056,
+"cost_usd": 0.00259
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2020-11-09",
+"private_pdf": null
+},
+{
 "id": "doi:10.1016/j.jdin.2020.09.005",
 "title": "Quantifying the natural variation in lesion counts over time in untreated hidradenitis suppurativa: Implications for outcome measures and trial design.",
 "authors": [
@@ -7584,6 +7706,127 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1080/15265161.2011.652798",
+"title": "How Do Nocebo Phenomena Provide a Theoretical Framework for the COVID-19 Pandemic?",
+"authors": [
+"Amanzio M",
+"Howick J",
+"Bartoli M",
+"Cipriani GE",
+"Kong J"
+],
+"journal": "Frontiers in psychology",
+"journal_abbrev": "Front Psychol",
+"year": 2020,
+"date": "2020-10-30",
+"doi": "10.1080/15265161.2011.652798",
+"pmid": "33192929",
+"pmcid": "PMC3352765",
+"openalex_id": null,
+"abstract": "BACKGROUND: Trial participants in placebo groups report experiencing adverse events (AEs). Existing systematic reviews have not been synthesized, leaving questions about why these events occur as well as their prevalence across different conditions unanswered. OBJECTIVES: (1) To synthesize the evidence of prevalence of AEs in trial placebo groups across different conditions. (2) To compare AEs in trial placebo groups with AEs reported in untreated groups within a subset of randomized trials. SEARCH METHODS: We searched PubMed for records with the word \"nocebo\" in the title and \"systematic\" in any field. We also contacted experts and hand-searched references of included studies. STUDY ELIGIBILITY: We included any systematic review of randomized trials where nocebo effects were reported. We excluded systematic reviews of non-randomized studies. PARTICIPANTS AND INTERVENTIONS: We included studies in any disease area. STUDY APPRAISAL AND SYNTHESIS METHODS: We appraised the quality of the studies using a shortened version of the Assessment of Multiple Systematic Reviews tool (AMSTAR) tool. We reported medians and interquartile ranges (IQRs) of AEs. Among the trials within the review that included untreated groups, we compared the prevalence of AEs in untreated groups with the prevalence of AEs in placebo groups. RESULTS: We identified 20 systematic reviews. These included 1271 randomized trials and 250,726 placebo-treated patients. The median prevalence of AEs in trial placebo groups was 49.1% (IQR 25.7-64.4%). The median rate of dropouts due to AEs was 5% (IQR 2.28-8.4%). Within the 15 of trials that reported AEs in untreated groups, we found that the AE rate in placebo groups (6.51%) was higher than that reported in untreated groups (4.25%). LIMITATIONS: This study was limited by the quality of included reviews and the small number of trials that included untreated groups. CONCLUSIONS AND IMPLICATIONS OF KEY FINDINGS: AEs in trial placebo groups are common and cannot be attributed entirely to natural history. Trial methodologies that reduce AEs in placebo groups while satisfying the requirement of informed consent should be developed and implemented.",
+"keywords": [
+"COVID-19 pandemic",
+"mood changes",
+"negative expectation",
+"nocebo effects in randomised controlled trials",
+"nocebo responses in brain imaging studies",
+"psychosocial context"
+],
+"mesh": [
+"Adolescent",
+"Analysis of Variance",
+"Anxiety",
+"Conditioning, Psychological",
+"Electric Stimulation",
+"Female",
+"Healthy Volunteers",
+"Humans",
+"Hyperalgesia",
+"Male",
+"Nocebo Effect",
+"Pain",
+"Pain Measurement",
+"Placebo Effect",
+"Young Adult"
+],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T18:25:32Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "The paper is a conceptual/ethical essay whose main subject is nocebo effects in informed consent and proposes clinical guidance, matching 'placebo science more broadly' inclusion criteria.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Argues that detailed side-effect disclosure can induce nocebo harms and proposed a pragmatic 'contextualized informed consent' approach to minimize nocebo responses while preserving patient autonomy.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"informed consent",
+"nocebo",
+"ethics",
+"physician-patient communication",
+"side-effect disclosure",
+"autonomy",
+"nonmaleficence"
+],
+"usage": {
+"input_tokens": 1332,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 964,
+"cost_usd": 0.00238
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-10-30",
+"private_pdf": null
+},
+{
 "id": "doi:10.3389/fpsyg.2020.589826",
 "title": "Effects of Coloring Food Images on the Propensity to Eat: A Placebo Approach With Color Suggestions.",
 "authors": [
@@ -8039,6 +8282,132 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.jpain.2020.10.004",
+"title": "Prior Pain Exposure and Mere Possession of a Placebo Analgesic Predict Placebo Analgesia: Findings From a Randomized, Double-Blinded, Controlled Trial.",
+"authors": [
+"Yeung VW",
+"Geers AL"
+],
+"journal": "The journal of pain",
+"journal_abbrev": "J Pain",
+"year": 2020,
+"date": "2020-10-27",
+"doi": "10.1016/j.jpain.2020.10.004",
+"pmid": "33127585",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "A recent study found that merely possessing a placebo analgesic reduces pain. The current study tested for a possible moderator of this effect. Specifically, does the mere possession of a placebo analgesic affect pain for individuals with and without immediate prior experience with the pain task? Healthy participants (N = 127) were randomized to prior pain (PP) condition or without prior pain (No-PP) condition. In the PP condition, participants first did a preliminary trial of a cold pressor test (CPT) to induce direct experience with this pain stimulus. Then they were randomized to possess an inert cream described as either an analgesic cream or an anti-itch cream (pain-irrelevant control object). Participants then completed the main CPT. In the No-PP condition, participants underwent identical procedures and randomization except that they did not do a preliminary CPT, thus having no immediate prior CPT pain experience. We found a significant prior pain experience and possession status interaction effect on placebo analgesia. Participants in the No-PP condition showed evidence of lower pain when they merely possessed an analgesic cream than an anti-itch cream. Such mere possession effect was not found in the PP condition. The impact of expectancy and emotion on the underlying process are discussed. PERSPECTIVE: This article presents a novel finding that prior pain exposure and mere possession of a placebo analgesic predicted placebo analgesia. It offers a novel perspective on the time course of placebo effect. It provides practical implications on potential pain intervention for clinicians and paradigm design for researchers of placebo study.",
+"keywords": [
+"Expectation",
+"analgesia",
+"cold pressor",
+"mere possession",
+"placebo"
+],
+"mesh": [
+"Adolescent",
+"Adult",
+"Analgesia",
+"Analgesics",
+"Anticipation, Psychological",
+"Female",
+"Humans",
+"Male",
+"Nociceptive Pain",
+"Placebo Effect",
+"Placebos",
+"Skin Cream",
+"Young Adult"
+],
+"pub_types": [
+"Journal Article",
+"Randomized Controlled Trial",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T16:27:21Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Randomized controlled experiment that tested the causal effect of possessing an inert analgesic cream on pain (placebo effect) and examined prior pain as a moderator.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience",
+"treatment_cues_dose_route",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"topical_cream"
+]
+},
+"summary": "Randomized trial (N=127) found that merely possessing an inert analgesic cream reduced self-reported pain on a cold pressor test for participants without prior CPT exposure, but not for those who had immediate prior pain experience.",
+"key_finding": "Mere possession of an analgesic-labeled cream produced placebo analgesia in participants without prior pain exposure; the effect was absent after prior pain.",
+"sample_size": 127,
+"free_keywords": [
+"cold pressor",
+"CPT",
+"mere possession",
+"analgesic cream",
+"placebo analgesia",
+"prior pain",
+"young adult"
+],
+"usage": {
+"input_tokens": 1440,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 891,
+"cost_usd": 0.00226
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-10-27",
+"private_pdf": null
+},
+{
 "id": "doi:10.1007/s12529-020-09933-1",
 "title": "Open-Label Placebo Treatment: Outcome Expectations and General Acceptance in the Lay Population.",
 "authors": [
@@ -8396,6 +8765,147 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1159/000510738",
+"title": "What Should Clinicians Tell Patients about Placebo and Nocebo Effects? Practical Considerations Based on Expert Consensus.",
+"authors": [
+"Evers AWM",
+"Colloca L",
+"Blease C",
+"Gaab J",
+"Jensen KB",
+"Atlas LY",
+"Beedie CJ",
+"Benedetti F",
+"Bingel U",
+"Büchel C",
+"Bussemaker J",
+"Colagiuri B",
+"Crum AJ",
+"Finniss DG",
+"Geers AL",
+"Howick J",
+"Klinger R",
+"Meeuwis SH",
+"Meissner K",
+"Napadow V",
+"Petrie KJ",
+"Rief W",
+"Smeets I",
+"Wager TD",
+"Wanigasekera V",
+"Vase L",
+"Kelley JM",
+"Kirsch I",
+"Consortium of Placebo Experts"
+],
+"journal": "Psychotherapy and psychosomatics",
+"journal_abbrev": "Psychother Psychosom",
+"year": 2020,
+"date": "2020-10-19",
+"doi": "10.1159/000510738",
+"pmid": "33075796",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "INTRODUCTION: Clinical and laboratory studies demonstrate that placebo and nocebo effects influence various symptoms and conditions after the administration of both inert and active treatments. OBJECTIVE: There is an increasing need for up-to-date recommendations on how to inform patients about placebo and nocebo effects in clinical practice and train clinicians how to disclose this information. METHODS: Based on previous clinical recommendations concerning placebo and nocebo effects, a 3-step, invitation-only Delphi study was conducted among an interdisciplinary group of internationally recognized experts. The study consisted of open- and closed-ended survey questions followed by a final expert meeting. The surveys were subdivided into 3 parts: (1) informing patients about placebo effects, (2) informing patients about nocebo effects, and (3) training clinicians how to communicate this information to the patients. RESULTS: There was consensus that communicating general information about placebo and nocebo effects to patients (e.g., explaining their role in treatment) could be beneficial, but that such information needs to be adjusted to match the specific clinical context (e.g., condition and treatment). Experts also agreed that training clinicians to communicate about placebo and nocebo effects should be a regular and integrated part of medical education that makes use of multiple formats, including face-to-face and online modalities. CONCLUSIONS: The current 3-step Delphi study provides consensus-based recommendations and practical considerations for disclosures about placebo and nocebo effects in clinical practice. Future research is needed on how to optimally tailor information to specific clinical conditions and patients' needs, and on developing standardized disclosure training modules for clinicians.",
+"keywords": [
+"Disclosure",
+"Expert consensus",
+"Nocebo effects",
+"Patient-clinician communication",
+"Placebo effects"
+],
+"mesh": [
+"Humans",
+"Nocebo Effect",
+"Placebo Effect",
+"Surveys and Questionnaires"
+],
+"pub_types": [
+"Journal Article",
+"Consensus Statement"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T16:27:12Z",
+"screening": {
+"decision": "include",
+"confidence": 0.92,
+"rationale": "Delphi consensus study whose primary aim was recommendations on informing patients and training clinicians about placebo and nocebo effects (placebo science/communication), meeting inclusion criterion 5.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"survey_interview"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"clinical_use_ethics_attitudes",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Conducted a 3-step Delphi survey of international experts and produced consensus-based recommendations on how clinicians should disclose and communicate placebo and nocebo effects and on training clinicians to do so.",
+"key_finding": "Reached consensus that general disclosure about placebo/nocebo effects can be beneficial and should be tailored to clinical context, and that clinician training should be integrated into medical education.",
+"sample_size": null,
+"free_keywords": [
+"delphi",
+"consensus",
+"communication training",
+"disclosure",
+"expert_panel",
+"medical education"
+],
+"usage": {
+"input_tokens": 1405,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 793,
+"cost_usd": 0.00206
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-10-19",
+"private_pdf": null
+},
+{
 "id": "doi:10.1155/2020/8820443",
 "title": "Personality Differences of Brain Networks in Placebo Analgesia and Nocebo Hyperalgesia: A Psychophysiological Interaction (PPI) Approach in fMRI.",
 "authors": [
@@ -8449,28 +8959,28 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:04:54Z",
+"classified_at": "2026-09-02T16:27:21Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Within-subject experimental fMRI study that directly manipulated expectation (nocebo saline vs open saline) and analyzed nocebo-induced itch and brain responses in atopic dermatitis patients, meeting nocebo effect inclusion criteria.",
+"confidence": 0.85,
+"rationale": "Human experimental study used conditioning to induce and compare placebo analgesia and nocebo hyperalgesia within subjects and analyzed these responses and their neural correlates, so placebo/nocebo were the primary objects of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"dermatology"
+"healthy_adult"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"itch"
+"pain"
 ],
 "outcome_measures": [
 "self_report",
@@ -8484,35 +8994,38 @@
 "significant_objective"
 ],
 "mechanisms": [
+"classical_conditioning",
 "verbal_suggestion_expectation",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"emotion_anxiety_regulation"
 ],
 "moderators": [
-"none_reported"
+"personality_traits"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"verbal_suggestion_only",
+"sham_psychological"
 ]
 },
-"summary": "Tested nocebo saline vs open saline in atopic dermatitis patients and found greater itch and greater dlPFC, caudate, and intraparietal sulcus fMRI responses to nocebo saline.",
-"key_finding": "Nocebo saline increased subjective itch (p<0.01) and elicited greater dlPFC and caudate activation that paralleled real-allergen responses.",
-"sample_size": null,
+"summary": "Tested conditioning-induced placebo analgesia and nocebo hyperalgesia in 30 healthy adults and found personality (extraversion) differences in VAS pain changes and in fMRI PPI networks underlying placebo and nocebo responses.",
+"key_finding": "Found that extraversion vs introversion modulated both behavioral VAS changes (placebo and nocebo) and distinct functional connectivity patterns including limbic deactivation for placebo and DLPFC/anxiety-control differences for nocebo.",
+"sample_size": 30,
 "free_keywords": [
-"atopic dermatitis",
-"pruritus",
-"dlPFC",
-"caudate",
-"intraparietal sulcus",
-"skin test",
-"expectation",
-"fMRI"
+"VAS",
+"psychophysiological interaction",
+"dorsolateral prefrontal cortex",
+"limbic system",
+"conditioning",
+"extraversion",
+"hyperalgesia",
+"placebo analgesia"
 ],
 "usage": {
-"input_tokens": 1449,
+"input_tokens": 1585,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 691,
-"cost_usd": 0.00187
+"output_tokens": 827,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -9277,6 +9790,125 @@
 "landing_url": "https://doi.org/10.1186/s13063-020-04710-7",
 "cited_by_count": 3,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1126/scitranslmed.aal2999",
+"title": "Why we need more research into the placebo response in psychiatry.",
+"authors": [
+"Huneke NTM",
+"van der Wee N",
+"Garner M",
+"Baldwin DS"
+],
+"journal": "Psychological medicine",
+"journal_abbrev": "Psychol Med",
+"year": 2020,
+"date": "2020-10-08",
+"doi": "10.1126/scitranslmed.aal2999",
+"pmid": "33028433",
+"pmcid": "PMC6850502",
+"openalex_id": null,
+"abstract": "BACKGROUND AND OBJECTIVE: Placebo and nocebo effects are beneficial or adverse treatment outcomes upon administration of inert treatment components. These effects have been frequently studied on pain. It remains unclear to what extent generalisation occurs in these effects on pain and other somatic sensations. This review outlines the current knowledge on stimulus generalisation (i.e., generalisation over various stimuli) and response generalisation (i.e., generalisation over various responses) of placebo and nocebo effects on prevalent somatic sensations (i.e., pain, itch, dyspnea, nausea and fatigue). DATABASES AND DATA TREATMENT: The databases PubMed, Web of Science and PsycINFO were systematically searched for peer-reviewed articles reporting on experimental studies in humans of the induction and generalisation of placebo and nocebo effects on prevalent somatic sensations. RESULTS: Of 2025 records identified, 23 studies were included. These studies indicated that placebo and nocebo effects can generalise over stimuli (at perceptual, categorical and treatment levels) and over responses within modalities. Most studies investigated pain; fewer studies investigated itch, dyspnea, nausea and fatigue. Generalisation effects tend to be larger when the generalisation stimuli and responses more closely resemble the initial stimulus or response. Generalisation was more likely if a combination of verbal suggestion and conditioning was employed to induce placebo or nocebo effects than if either suggestion or conditioning was employed alone. Response generalisation across modalities remains unclear. CONCLUSIONS: Placebo and nocebo effects can generalise over stimuli and responses. More experimental and clinical research is warranted to address carryover effects of placebo and nocebo effects. SIGNIFICANCE: The current review provides an overview of the literature on the generalisation of placebo and nocebo effects to diverse stimuli and responses. This can ultimately benefit healthcare providers to prevent carryover effects of treatment failure and harness carryover effects of treatment success.",
+"keywords": [
+"Placebo response",
+"placebo",
+"psychiatric medicine",
+"psychotropic trials"
+],
+"mesh": [
+"Clinical Trials as Topic",
+"Humans",
+"Mental Disorders",
+"Placebo Effect",
+"Placebos",
+"Psychiatry"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, Non-U.S. Gov't",
+"Review"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T16:54:44Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Within-subject experimental study in healthy volunteers directly compared induced placebo and nocebo effects on pain with follow-up, so placebo/nocebo effects are the main object of study.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_and_nocebo",
+"placebo_effect",
+"nocebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
+},
+"summary": "Compared induced placebo and nocebo effects on experimental pain in 104 healthy participants using verbal suggestion and conditioning, found both effects at immediate and 1-week tests, with nocebo effects stronger and persistence predicted by initial responses.",
+"key_finding": "Nocebo-induced pain increases were larger than placebo analgesia at both immediate and 1-week follow-up; sustained effects were predicted by the magnitude of Day 1 responses.",
+"sample_size": 104,
+"free_keywords": [
+"experimental pain",
+"conditioning",
+"follow-up",
+"preregistered",
+"healthy volunteers",
+"nocebo stronger"
+],
+"usage": {
+"input_tokens": 447,
+"cache_read_input_tokens": 5760,
+"cache_creation_input_tokens": 0,
+"output_tokens": 1028,
+"cost_usd": 0.00231
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-10-08",
+"private_pdf": null
 },
 {
 "id": "doi:10.1093/eurheartj/suaa117",
@@ -10883,7 +11515,7 @@
 "doi": "10.3389/fphys.2020.549807",
 "pmid": "33101048",
 "pmcid": "PMC7544987",
-"abstract": "OBJECTIVE: Placebo effects on pain and other subjective parameters are well-established, but the evidence for placebo effects on autonomic functions is scarce. Our randomized-controlled trial aimed to investigate autonomic responses after a suggestive placebo intervention intended to increase or decrease blood pressure (BP). METHODS: 92 healthy subjects inhaled a placebo spray with the prior suggestion that it contained an effective drug to either increase or decrease BP, or the information that a placebo was administered (controls). BP, heart rate, stroke volume, peripheral resistance, heart rate variability and skin conductance level were monitored 30min before and after placebo administration. The expected and the subjectively perceived drug effect were measured by means of visual analog scales. RESULTS: We found no statistically significant differences between the groups with respect to BP, heart rate, stroke volume, total peripheral resistance and heart rate variability responses to the verbal suggestions. Skin conductance response was more pronounced in the BP decrease group compared with controls (p=0.04), but this finding might be due to chance, given the multiple tests. Within the total study sample, BP, total peripheral resistance, low frequency power of heart rate variability and skin conductance were significantly higher after the placebo spray independent of the associated suggestions. Subjects in the BP increase and BP decrease condition had higher ratings of the expected and the subjectively perceived drug effect compared with controls (all p<0.05). CONCLUSION: We found no evidence that specific verbal suggestions during placebo interventions affect BP in healthy subjects.",
+"abstract": "Background: Placebo/nocebo effects involve the autonomic nervous system, including cardiac activity, but studies have reported inconsistent findings on how cardiac activity is modulated following a placebo/nocebo effect. However, no systematic review has been conducted to provide a clear picture of cardiac placebo responses. Objective: The main goal of the present study is to review the effects of placebo analgesia and nocebo hyperalgesia on cardiac activity as measured by blood pressure, heart rate, and heart rate variability. Methods: Using several Boolean keyword combinations, the PubMed, EMBASE, PsycINFO, Cochrane Review Library, and ISI Web of Knowledge databases were searched until January 5, 2020, to find studies that analyzed blood pressure, heart rate, or heart rate variability indexes following a placebo analgesic/nocebo hyperalgesic effect. Results: Nineteen studies were found, with some reporting more than one index of cardiac activity; eight studies were on blood pressure, 14 studies on heart rate, and six on heart rate variability. No reliable association between placebo/nocebo effects and blood pressure or heart rate was found. However, placebo effects reduced, and nocebo effects increased low-frequency heart rate variability, and heart rate variability significantly predicted placebo effects in two studies. Conclusion: Placebo/nocebo effects can have reliable effects on heart rate variability, but not on heart rate and blood pressure.",
 "keywords": [
 "blood pressure",
 "cardiac activity",
@@ -10894,18 +11526,7 @@
 "placebo effects",
 "review—systematic"
 ],
-"mesh": [
-"Adolescent",
-"Adult",
-"Autonomic Agents",
-"Autonomic Nervous System",
-"Blood Pressure",
-"Female",
-"Heart Rate",
-"Humans",
-"Male",
-"Placebo Effect"
-],
+"mesh": [],
 "pub_types": [
 "Systematic Review",
 "Journal Article"
@@ -10917,66 +11538,68 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:19:33Z",
+"classified_at": "2026-09-02T16:27:21Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized controlled trial that manipulated verbal suggestions with a placebo spray to test causal placebo effects on autonomic/BP outcomes.",
+"rationale": "Systematic review whose stated aim was to synthesize evidence on placebo analgesia and nocebo hyperalgesia effects on cardiac activity (placebo/nocebo as main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_and_nocebo"
 ],
-"article_type": "empirical_primary",
+"article_type": "systematic_review",
 "species": "human",
 "population": [
-"healthy_adult"
+"mixed_clinical"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"cardiovascular_bp"
+"pain"
 ],
 "outcome_measures": [
-"self_report",
 "autonomic"
 ],
 "design": [
-"parallel_groups_rct"
+"not_applicable"
 ],
 "effects": [
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"neural_systems_circuits",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Randomized trial tested verbal suggestions with a placebo spray to raise or lower blood pressure in 92 healthy adults and found no evidence that specific suggestions altered BP, though some autonomic measures changed.",
-"key_finding": "Found no between-group BP effects of suggestive placebo; some autonomic indices (skin conductance, TPR, LF-HRV) changed regardless of suggestion.",
-"sample_size": 92,
+"summary": "Systematic review of 19 studies examined whether placebo analgesia and nocebo hyperalgesia modulated blood pressure, heart rate, and HRV, finding consistent effects on HRV but not on HR or blood pressure.",
+"key_finding": "Found no reliable association of placebo/nocebo with blood pressure or heart rate, but placebo decreased and nocebo increased low-frequency HRV, with HRV predicting placebo effects in some studies.",
+"sample_size": 19,
 "free_keywords": [
-"placebo spray",
-"blood pressure",
-"skin conductance",
 "heart rate variability",
-"stroke volume"
+"blood pressure",
+"heart rate",
+"placebo analgesia",
+"nocebo hyperalgesia",
+"autonomic nervous system",
+"low-frequency hrv"
 ],
 "usage": {
-"input_tokens": 1406,
+"input_tokens": 1360,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 701,
-"cost_usd": 0.00188
+"output_tokens": 999,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -10990,7 +11613,8 @@
 "oa_pdf_url": "https://www.frontiersin.org/articles/10.3389/fphys.2020.549807/pdf",
 "landing_url": "https://doi.org/10.3389/fphys.2020.549807",
 "cited_by_count": 16,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1186/s10194-020-01178-3",
@@ -11022,7 +11646,7 @@
 "doi": "10.1186/s10194-020-01178-3",
 "pmid": "32977761",
 "pmcid": "PMC7519524",
-"abstract": "IMPORTANCE: When analyzing results of randomized clinical trials, the treatment with the greatest specific effect compared with its placebo control is considered to be the most effective one. Although systematic variations of improvements in placebo control groups would have important implications for the interpretation of placebo-controlled trials, the knowledge base on the subject is weak. OBJECTIVE: To investigate whether different types of placebo treatments are associated with different responses using the studies of migraine prophylaxis for this analysis. DESIGN, SETTING, AND PARTICIPANTS: We searched relevant sources through February 2012 and contacted the authors to identify randomized clinical trials on the prophylaxis of migraine with an observation period of at least 8 weeks after randomization that compared an experimental treatment with a placebo control group. We calculated pooled random-effects estimates according to the type of placebo for the proportions of treatment response. We performed meta-regression analyses to identify sources of heterogeneity. In a network meta-analysis, direct and indirect comparisons within and across trials were combined. Additional analyses were performed for continuous outcomes. EXPOSURE: Active migraine treatment and the placebo control conditions. MAIN OUTCOMES AND MEASURES: Proportion of treatment responders, defined as having an attack frequency reduction of at least 50%. Other available outcomes in order of preference included a reduction of 50% or greater in migraine days, the number of headache days, or headache score or a significant improvement as assessed by the patients or their physicians. RESULTS: Of the 102 eligible trials, 23 could not be included in the meta-analyses owing to insufficient data. Sham acupuncture (proportion of responders, 0.38 [95% CI, 0.30-0.47]) and sham surgery (0.58 [0.37-0.77]) were associated with a more pronounced reduction of migraine frequency than oral pharmacological placebos (0.22 [0.17-0.28]) and were the only significant predictors of response in placebo groups in multivariable analyses (P = .005 and P = .001, respectively). Network meta-analysis confirmed that more patients reported response in sham acupuncture groups than in oral pharmacological placebo groups (odds ratio, 1.88 [95% CI, 1.30-2.72]). Corresponding analyses for continuous outcomes showed similar findings. CONCLUSIONS AND RELEVANCE: Sham acupuncture and sham surgery are associated with higher responder ratios than oral pharmacological placebos. Clinicians who treat patients with migraine should be aware that a relevant part of the overall effect they observe in practice might be due to nonspecific effects and that the size of such effects might differ between treatment modalities.",
+"abstract": "BACKGROUND AND AIM: Despite recent publications, practitioners remain unfamiliar with the current terminology related to the placebo and nocebo phenomena observed in clinical trials and practice, nor with the factors that modulate them. To cover the gap, the European Headache Federation appointed a panel of experts to clarify the terms associated with the use of placebo in clinical trials. METHODS: The working group identified relevant questions and agreed upon recommendations. Because no data were required to answer the questions, the GRADE approach was not applicable, and thus only expert opinion was provided according to an amended Delphi method. The initial 12 topics for discussion were revised in the opinion of the majority of the panelists, and after a total of 6 rounds of negotiations, the final agreement is presented. RESULTS/RECOMMENDATIONS: Two primary and mechanism-based recommendations are provided for the results of clinical trials: [1] to distinguish the placebo or nocebo response from the placebo or nocebo effect; and [2] for any favorable outcome observed after placebo administration, the term \"placebo response\" should be used, and for any unfavorable outcome recorded after placebo administration, the term \"nocebo response\" should be used (12 out of 17 panelists agreed, 70.6% agreement). The placebo or nocebo responses are attributed to a set of factors including those that are related to the medical condition (e.g. natural history, random comorbidities, etc.), along with idiosyncratic ones, in which the placebo or nocebo effects are attributed to idiosyncratic, or nonspecific mechanisms, exclusively (e.g. expectation, conditioning, observational learning etc.). To help investigators and practitioners, the panel summarized a list of environmental factors and idiosyncratic dynamics modulating placebo and nocebo effects. Some of them are modifiable, and investigators or physicians need to know about them in order to modify these factors appropriately to improve treatment. One secondary recommendation addresses the use of the terms \"placebo\" and \"nocebo\" (\"placebos\" and \"nocebos\" in plural), which refer to the triggers of the placebo/nocebo effects or responses, respectively, and which are inert agents or interventions that should not be confused with the placebo/nocebo responses or effects themselves (all panelists agreed, 100% agreement). CONCLUSION: The working group recommends distinguishing the term response from effect to describe health changes from before to after placebo application and to distinguish the terms placebo(s) or nocebo(s) from the health consequences that they cause (placebo/nocebo responses or effects).",
 "keywords": [
 "Nocebo",
 "Nocebo effect",
@@ -11040,80 +11664,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:22:07Z",
+"classified_at": "2026-09-02T16:27:01Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Systematic review and network meta-analysis that explicitly measured and compared placebo-group response rates across placebo types in migraine prophylaxis (placebo_response topic).",
+"confidence": 0.85,
+"rationale": "Expert-panel consensus paper whose stated aim was to clarify placebo/nocebo terminology and factors modulating them, fitting placebo science guidance inclusion criteria.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
-"article_type": "meta_analysis",
-"species": "human",
+"article_type": "narrative_review",
+"species": "not_applicable",
 "population": [
-"chronic_pain"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"other"
 ],
 "outcome_measures": [
-"self_report",
-"clinical_endpoint"
+"not_applicable"
 ],
 "design": [
-"meta_analytic"
+"not_applicable"
 ],
 "effects": [
-"significant_subjective"
+"not_applicable"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"treatment_cues_dose_route",
-"therapeutic_ritual_context",
-"provider_patient_interaction"
+"history_conceptual",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
-"treatment_characteristics",
-"trial_characteristics"
+"none_reported"
 ],
 "intervention_type": [
-"sham_acupuncture",
-"sham_surgery",
-"inert_pill_capsule"
+"not_applicable"
 ]
 },
-"summary": "Pooled randomized trials of migraine prophylaxis found that responder rates in placebo groups differed by placebo type, with sham acupuncture and sham surgery showing higher response than oral pharmacological placebos.",
-"key_finding": "Sham acupuncture (38% responders) and sham surgery (58%) had higher placebo responder proportions than oral pharmacological placebos (22%); network meta-analysis OR 1.88 (95% CI 1.30–2.72) for sham acupuncture vs oral placebo.",
-"sample_size": 79,
+"summary": "Provided expert-consensus recommendations distinguishing placebo/nocebo responses from effects and clarifying terminology and modulating factors for clinical trials and practice.",
+"key_finding": "Recommended using 'placebo/nocebo response' for outcome changes after placebo and distinguishing these from causal 'placebo/nocebo effects', with a list of contextual moderators.",
+"sample_size": null,
 "free_keywords": [
-"migraine",
-"responder rate",
-"network meta-analysis",
-"sham acupuncture",
-"sham surgery",
-"oral placebo",
-"randomized controlled trials"
+"terminology",
+"delphi",
+"consensus",
+"headache",
+"european headache federation"
 ],
 "usage": {
-"input_tokens": 1646,
+"input_tokens": 1604,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 892,
-"cost_usd": 0.00232
+"output_tokens": 632,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -11127,7 +11744,8 @@
 "oa_pdf_url": "https://thejournalofheadacheandpain.biomedcentral.com/track/pdf/10.1186/s10194-020-01178-3",
 "landing_url": "https://doi.org/10.1186/s10194-020-01178-3",
 "cited_by_count": 48,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1136/bmjopen-2020-036773",
@@ -11302,17 +11920,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:47:16Z",
+"classified_at": "2026-09-02T16:27:08Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical human study whose stated aim and analyses examined placebo analgesic response, its neural correlates, and personality predictors.",
+"rationale": "Randomized controlled design comparing placebo treatment versus no treatment with primary analyses targeting the placebo effect and proteomic predictors.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -11323,50 +11942,53 @@
 "adults"
 ],
 "condition_domain": [
-"pain"
+"nausea_gi"
 ],
 "outcome_measures": [
 "self_report",
-"smri"
+"autonomic",
+"immune_inflammatory",
+"genetic_molecular"
 ],
 "design": [
-"within_subject_experimental",
-"crossover_rct"
+"parallel_groups_rct",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_subjective",
 "significant_objective"
 ],
 "mechanisms": [
-"neurobiology_dopamine",
-"neural_systems_circuits",
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"genetics_placebome",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"personality_traits"
+"sex_gender"
 ],
 "intervention_type": [
-"topical_cream"
+"sham_device",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Found that individual differences in dopamine-related personality traits and gray-matter density in ventral striatum, insula, and prefrontal cortex predicted the magnitude of placebo analgesia after a sham topical treatment.",
-"key_finding": "Dopamine-related personality traits and greater ventral striatum/prefrontal GMD were associated with larger placebo analgesic responses.",
-"sample_size": null,
+"summary": "Randomized study exposed 90 participants to a nauseating stimulus across two days and randomized them to placebo or no treatment on day two, finding significant placebo effects on nausea and motion sickness and identifying 74 plasma proteins correlated with the placebo effect.",
+"key_finding": "Found significant reduction in nausea and motion-sickness with placebo versus no treatment and identified proteomic signatures (74 proteins) that distinguished placebo responders from non-responders.",
+"sample_size": 90,
 "free_keywords": [
-"ventral striatum",
-"voxel-based morphometry",
-"dopamine",
-"personality",
-"placebo analgesia",
-"insula",
-"prefrontal cortex"
+"proteomics",
+"plasma proteins",
+"motion sickness",
+"gastric myoelectrical activity",
+"acute-phase proteins",
+"roc",
+"placebo responders"
 ],
 "usage": {
-"input_tokens": 1329,
+"input_tokens": 1333,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 880,
-"cost_usd": 0.00221
+"output_tokens": 1147,
+"cost_usd": 0.00275
 }
 },
 "sources": [
@@ -11919,11 +12541,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T16:26:58Z",
+"classified_at": "2026-09-02T17:07:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Methods paper developed a reporting checklist specifically about placebo and sham controls and their reporting, meeting inclusion as placebo_science guidance/methods.",
+"confidence": 0.8,
+"rationale": "Substantive scholarly reply/commentary focused on interpretation and methodology of placebo effects in manual therapy, meeting criteria for editorial/commentary about placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11931,8 +12553,8 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "methods_measurement",
-"species": "human",
+"article_type": "editorial_letter",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -11952,8 +12574,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"clinical_use_ethics_attitudes"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -11962,25 +12583,22 @@
 "not_applicable"
 ]
 },
-"summary": "Developed TIDieR-Placebo, a consensus-based checklist to improve reporting of placebo and sham controls using expert surveys, a Delphi process, and stakeholder consultation.",
+"summary": "Replied to a comment by defending and clarifying methodological and interpretive issues about placebo effects in manual therapy and meta-analytic practices.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"tidier-placebo",
-"reporting guideline",
-"delphi",
-"blinding assessment",
-"placebo components",
-"sham controls",
-"trial reporting",
-"intervention description"
+"manual therapy",
+"meta-analysis",
+"methodology",
+"placebo interpretation",
+"commentary"
 ],
 "usage": {
-"input_tokens": 1481,
+"input_tokens": 1223,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 658,
-"cost_usd": 0.00181
+"output_tokens": 571,
+"cost_usd": 0.00157
 }
 },
 "sources": [
@@ -12258,78 +12876,90 @@
 "Journal Article",
 "Review"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:10:18Z",
+"classified_at": "2026-09-02T16:26:59Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical human study that experimentally administered an intranasal placebo with suggestion and reported placebo effects on subjective and physiological stress and analyzed personality predictors of responding.",
+"rationale": "Narrative review whose main aim was to summarize placebo mechanisms and clinical implications, so placebo science is the principal subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_science_other"
 ],
-"article_type": "empirical_primary",
+"article_type": "narrative_review",
 "species": "human",
 "population": [
-"healthy_adult"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"anxiety_stress"
+"pain",
+"motor_function",
+"mood_depression",
+"endocrine_hormonal",
+"other"
 ],
 "outcome_measures": [
 "self_report",
-"autonomic"
+"behavioral_performance",
+"clinician_rated",
+"neuroendocrine",
+"fmri"
 ],
 "design": [
-"within_subject_experimental",
-"parallel_groups_rct"
+"not_applicable"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"not_applicable"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"classical_conditioning",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"neurobiology_opioid",
+"neural_systems_circuits",
+"prior_treatment_experience",
+"clinical_use_ethics_attitudes",
+"harnessing_placebo_clinical"
 ],
 "moderators": [
-"personality_traits"
+"provider_characteristics",
+"prior_experience",
+"expectation_level"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Tested an intranasal placebo 'serotonin' given with suggestion before a second stress task in 63 healthy adults and found placebo-related reductions in subjective stress and changes in heart rate/HRV, with personality traits predicting responsiveness.",
-"key_finding": "Lower optimism and lower behavioural drive predicted greater subjective and physiological placebo-related benefit.",
-"sample_size": 63,
+"summary": "Reviews psychosocial and neurobiological mechanisms of placebo effects and discusses clinical harnessing, ethics, and the roles of expectation, conditioning, and clinician behavior.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
-"intranasal spray",
-"psychosocial stress",
-"heart rate variability",
-"optimism",
-"extraversion",
-"personality predictors",
-"placebo suggestion"
+"endogenous opioids",
+"bedside manner",
+"reward expectation",
+"hormonal control",
+"neuroimaging",
+"conditioned responses"
 ],
 "usage": {
-"input_tokens": 483,
+"input_tokens": 480,
 "cache_read_input_tokens": 5760,
 "cache_creation_input_tokens": 0,
-"output_tokens": 902,
-"cost_usd": 0.00207
+"output_tokens": 949,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -12622,11 +13252,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T17:40:41Z",
+"classified_at": "2026-09-02T17:28:11Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Narrative review whose main aim was to synthesize neuroimaging and molecular evidence about expectancy-driven placebo effects and opioid neurotransmission.",
+"rationale": "Survey study of knowledge, attitudes, and beliefs about placebo interventions among health-professions students, meeting inclusion for placebo-related attitudes/ethics research.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -12634,66 +13264,55 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"clinicians_providers"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"pain",
-"mood_depression",
 "other"
 ],
 "outcome_measures": [
-"pet_neurochemical",
-"fmri",
-"self_report"
+"self_report",
+"not_applicable"
 ],
 "design": [
-"not_applicable"
+"survey_interview"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"neurobiology_opioid",
-"neural_systems_circuits",
-"classical_conditioning",
-"genetics_placebome",
-"therapeutic_ritual_context"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
-"genetics",
-"prior_experience",
-"none_reported"
+"provider_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Reviewed PET and molecular imaging evidence that expectancy-driven placebo effects engage endogenous μ-opioid neurotransmission linked to analgesia and emotional improvement.",
-"key_finding": "Argued that activation of endogenous opioid networks by expectancies underlies placebo analgesia and mood benefits and is shaped by genetics and learning.",
-"sample_size": null,
+"summary": "Found low overall knowledge about placebo interventions and differing attitudes between medical and nursing students, with nurses more likely to view placebos as effective and medical students more likely to oppose permissive use.",
+"key_finding": "Nursing students scored higher on placebo knowledge and were more likely to endorse placebo effectiveness (P<0.001); medical students favored prohibition unless supported by research.",
+"sample_size": 187,
 "free_keywords": [
-"carfentanil",
-"μ-opioid",
-"PET",
-"molecular neuroimaging",
-"expectancy",
-"analgesia",
-"resilience",
-"placebo"
+"placebo knowledge",
+"placebo attitudes",
+"medical students",
+"nursing students",
+"placebo ethics",
+"survey",
+"health professions education"
 ],
 "usage": {
-"input_tokens": 1373,
-"cache_read_input_tokens": 4864,
+"input_tokens": 577,
+"cache_read_input_tokens": 5760,
 "cache_creation_input_tokens": 0,
-"output_tokens": 891,
-"cost_usd": 0.00225
+"output_tokens": 633,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -18456,6 +19075,133 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1136/bmj.m1668",
+"title": "Placebos in chronic pain: evidence, theory, ethics, and use in clinical practice.",
+"authors": [
+"Kaptchuk TJ",
+"Hemond CC",
+"Miller FG"
+],
+"journal": "BMJ (Clinical research ed.)",
+"journal_abbrev": "BMJ",
+"year": 2020,
+"date": "2020-07-20",
+"doi": "10.1136/bmj.m1668",
+"pmid": "32690477",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "Despite their ubiquitous presence, placebos and placebo effects retain an ambiguous and unsettling presence in biomedicine. Specifically focused on chronic pain, this review examines the effect of placebo treatment under three distinct frameworks: double blind, deception, and open label honestly prescribed. These specific conditions do not necessarily differentially modify placebo outcomes. Psychological, clinical, and neurological theories of placebo effects are scrutinized. In chronic pain, conscious expectation does not reliably predict placebo effects. A supportive patient-physician relationship may enhance placebo effects. This review highlights \"predictive coding\" and \"bayesian brain\" as emerging models derived from computational neurobiology that offer a unified framework to explain the heterogeneous evidence on placebos. These models invert the dogma of the brain as a stimulus driven organ to one in which perception relies heavily on learnt, top down, cortical predictions to infer the source of incoming sensory data. In predictive coding/bayesian brain, both chronic pain (significantly modulated by central sensitization) and its alleviation with placebo treatment are explicated as centrally encoded, mostly non-conscious, bayesian biases. The review then evaluates seven ways in which placebos are used in clinical practice and research and their bioethical implications. In this way, it shows that placebo effects are evidence based, clinically relevant, and potentially ethical tools for relieving chronic pain.",
+"keywords": [],
+"mesh": [
+"Bayes Theorem",
+"Chronic Pain",
+"Deception",
+"Double-Blind Method",
+"Ethics, Medical",
+"Humans",
+"Physician-Patient Relations",
+"Placebo Effect",
+"Placebos",
+"Practice Patterns, Physicians'"
+],
+"pub_types": [
+"Journal Article",
+"Review"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T16:26:27Z",
+"screening": {
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Narrative review focused on placebo evidence, mechanisms (predictive coding), ethics, and clinical use specifically in chronic pain, so placebo science is the main subject.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "human",
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"computational_predictive_processing",
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"neural_systems_circuits",
+"treatment_cues_dose_route",
+"history_conceptual"
+],
+"moderators": [
+"provider_characteristics",
+"trial_characteristics",
+"disease_severity_duration",
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo",
+"verbal_suggestion_only",
+"inert_pill_capsule",
+"not_applicable"
+]
+},
+"summary": "Reviewed evidence, theory, ethics, and clinical uses of placebos in chronic pain, emphasizing predictive coding models and clinical implications of deception and open-label prescribing.",
+"key_finding": "Argued that placebo effects are evidence-based and clinically relevant in chronic pain and that predictive coding models can unify heterogeneous findings.",
+"sample_size": null,
+"free_keywords": [
+"predictive coding",
+"bayesian brain",
+"central sensitization",
+"therapeutic relationship",
+"ethics",
+"open-label placebo",
+"deception",
+"chronic pain"
+],
+"usage": {
+"input_tokens": 1371,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 758,
+"cost_usd": 0.00198
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-07-20",
+"private_pdf": null
+},
+{
 "id": "doi:10.1097/pr9.0000000000000828",
 "title": "Conditioning open-label placebo: a pilot pharmacobehavioral approach for opioid dose reduction and pain control.",
 "authors": [
@@ -21837,11 +22583,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T19:43:12Z",
+"classified_at": "2026-09-02T16:28:05Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized clinical experiment that induced a nocebo hyperalgesic response and tested pharmacological blockade (proglumide), so nocebo effect was the primary object of study.",
+"rationale": "Randomized manipulation of negative expectation (inert capsule + suggestion) tested causal nocebo effects on soreness and performance versus a no-treatment control.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -21852,54 +22598,58 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"surgical_patients"
+"healthy_adult"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"motor_function",
+"sport_exercise_performance"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"behavioral_performance",
+"motor_kinematic"
 ],
 "design": [
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective"
+"null_subjective",
+"significant_objective"
 ],
 "mechanisms": [
-"nocebo_communication_disclosure",
-"neurobiology_other_neurochemical",
-"emotion_anxiety_regulation"
+"verbal_suggestion_expectation",
+"nocebo_communication_disclosure"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"none_reported"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"inert_pill_capsule",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Found that adding proglumide to saline abolished experimentally induced nocebo hyperalgesia in postoperative patients in a dose-dependent manner, and naloxone did not reverse this blockade.",
-"key_finding": "Proglumide at 0.5 and 5 mg blocked nocebo-induced pain increases while 0.05 mg was ineffective and naloxone did not reverse the blockade.",
+"summary": "Found that negative expectation via an inert capsule and suggestion did not increase perceived soreness but reduced elbow ROM and repetitions 48 h after unaccustomed resistance exercise.",
+"key_finding": "Negative-belief vs control produced large impairments in ROM (d = 1.83) and total repetitions (d = 2.51) at 48 h, while soreness increased similarly in both groups.",
 "sample_size": null,
 "free_keywords": [
-"proglumide",
-"cholecystokinin",
-"postoperative pain",
-"hyperalgesia",
-"saline",
-"naloxone",
-"anxiety",
-"randomized"
+"eccentric bicep curl",
+"algometer",
+"goniometer",
+"untrained males",
+"RPE",
+"gluten-free cornstarch",
+"48 h follow-up"
 ],
 "usage": {
-"input_tokens": 1379,
+"input_tokens": 1451,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1075,
-"cost_usd": 0.00262
+"output_tokens": 1039,
+"cost_usd": 0.00256
 }
 },
 "sources": [
@@ -23203,7 +23953,7 @@
 "date": "2020-06-09",
 "doi": "10.1016/bs.irn.2020.03.029",
 "pmid": "32563291",
-"pmcid": null,
+"pmcid": "PMC7648094",
 "abstract": "OBJECTIVES: To understand how different individuals respond to placebo effects, it is relevant to disentangle the influence of someone's personality and genetic variations. The aim of this exploratory study was to investigate the role of different personality characteristics and different single-nucleotide polymorphisms (SNPs) on the responsiveness to placebo analgesia. METHODS: Secondary data analyses were conducted on an experimental behavioural study in healthy controls primarily aimed at the influence of three learning mechanisms (i.e., verbal suggestions, classical conditioning, or observational learning) or combinations thereof, on placebo analgesia in heat pain. Moderation by five different personality characteristics (optimism, neuroticism, worrying, empathy, and somatosensory amplification) was studied. Also, the predictive role of three different SNPs on the OPRM-1 gene, the COMT gene, and the FAAH gene on placebo analgesia was assessed. The personality characteristics were studied with validated questionnaires. The genetic variants were obtained by sequencing DNA from saliva cells. RESULTS: The moderation analysis from 206 participants concerning the personality characteristics did not show significant effects. Of the 108 (52%) genotyped participants, the results showed no significant relationship between any of the SNPs and placebo analgesia. CONCLUSIONS: Results did not support a role of a person's personality characteristics or genetic variations in predicting their responsiveness to placebo analgesia through learning mechanisms. The clinical relevance of predicting someone's responsiveness to placebo effects, therefore, requires careful reconsideration.",
 "keywords": [
 "Extrinsic determinants",
@@ -23313,7 +24063,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/bs.irn.2020.03.029",
 "cited_by_count": 43,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1016/bs.irn.2020.03.028",
@@ -23441,6 +24192,132 @@
 "landing_url": "https://doi.org/10.1016/bs.irn.2020.03.028",
 "cited_by_count": 16,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.17179/excli2017-480",
+"title": "Effectiveness of Natural Frequency Technology® on cognition, sleep, and mood of adults with high perceived stress: A randomized, double-blind, placebo-controlled crossover study.",
+"authors": [
+"Hausenblas HA",
+"Hooper S",
+"Knight A",
+"Hooper D"
+],
+"journal": "Brain and behavior",
+"journal_abbrev": "Brain Behav",
+"year": 2020,
+"date": "2020-06-08",
+"doi": "10.17179/excli2017-480",
+"pmid": "32515134",
+"pmcid": "PMC5579396",
+"openalex_id": null,
+"abstract": "INTRODUCTION: NexQuest Natural Frequency Technology® (NFT® ), intended to enhance biological function using naturally occurring frequencies, may be a nonpharmacological intervention to improve stress and health. The study purpose was to determine the effectiveness of NFT® for improving stress, sleep quality, mood, and cognition in adults. METHODS: Using a double-blind placebo-controlled crossover design, participants with high perceived stress (N = 42, M age = 43.8) were assessed at baseline (BL) and assigned to either the Placebo Watch (PW) or Wellness Watch (WW) condition for 2 weeks, and then 2 weeks in the alternate condition. Participants completed the following self-report surveys of Perceived Stress Scale, Pittsburgh Sleep Quality Index, Insomnia Severity Index, Food Craving Questionnaire, and Profile of Mood States, as well as the CNS Vital Signs neurocognitive test at BL and following each condition. RESULTS: The WW condition had significant improvements in sleep duration and Complex Attention compared to the PW group. Compared to BL, both conditions had significant improvements for perceived stress, food cravings, mood, sleep quality, and several cognitive tests, p's < .05. CONCLUSION: Despite the placebo effect, NFT® may be a natural alterative for improving stress and health. Research is needed examining the efficacy of NFT® in a variety of populations and environments.",
+"keywords": [
+"Natural Frequency Technology",
+"cognition",
+"mood",
+"stress"
+],
+"mesh": [
+"Adult",
+"Cognition",
+"Cross-Over Studies",
+"Double-Blind Method",
+"Humans",
+"Sleep",
+"Stress, Psychological",
+"Technology",
+"Treatment Outcome"
+],
+"pub_types": [
+"Journal Article",
+"Randomized Controlled Trial",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T17:25:59Z",
+"screening": {
+"decision": "include",
+"confidence": 0.86,
+"rationale": "Randomized double-blind placebo-controlled crossover trial that directly compared an active device (NFT Wellness Watch) with a placebo watch, testing device versus placebo effects on sleep, mood, stress, and cognition.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cognition",
+"sleep",
+"mood_depression",
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"behavioral_performance"
+],
+"design": [
+"crossover_rct"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_device"
+]
+},
+"summary": "Randomized double-blind crossover trial in 42 adults with high perceived stress tested a wearable Natural Frequency Technology device versus a placebo watch and found device-specific improvements in sleep duration and complex attention.",
+"key_finding": "Wellness Watch produced greater improvements in self-reported sleep duration and objective complex attention compared with placebo; both conditions showed pre-post improvements suggesting non-specific/placebo effects.",
+"sample_size": 42,
+"free_keywords": [
+"natural frequency technology",
+"nft",
+"wellness watch",
+"placebo watch",
+"perceived stress",
+"cns vital signs",
+"crossover",
+"complex attention"
+],
+"usage": {
+"input_tokens": 1398,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 751,
+"cost_usd": 0.00197
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2020-06-08",
+"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.jad.2020.06.010",
@@ -25017,7 +25894,7 @@
 "doi": "10.1016/j.joca.2020.05.007",
 "pmid": "32416220",
 "pmcid": "PMC7483273",
-"abstract": "BACKGROUND: Research has demonstrated the efficacy of analgesic placebos. The manner in which they are usually delivered deceptively raises questions about their impact on recipients. However, there has been little empirical investigation into the potential harms of analgesic placebo. Moreover, the role of deception in determining the magnitude of analgesic placebo response remains poorly understood. PURPOSE: This study aimed to investigate the consequences of deceptive placebo analgesia in terms of ethical/psychological effects and efficacy. METHODS: Healthy adults (N = 75) were randomized to a control group, deceptive placebo manipulation, or non-deceptive placebo manipulation. All participants underwent repeated pain testing using a thermal stimulus. Placebo manipulation groups underwent placebo conditioning involving a cream that was described as being either analgesic or inert. State-specific negative mood and attitudes toward research and pain treatment were assessed before and after placebo conditioning. RESULTS: Deceptive and non-deceptive placebo manipulations yielded pain ratings that did not differ significantly from one another but did differ from those of the control group, which experienced a pain sensitization response across trials. Results thus indicated that both deceptive and non-deceptive placebo manipulations prevented pain sensitization. Across groups, the participants reported improved depression, anxiety, frustration, and fear. The use of placebo did not negatively impact participants' attitudes and beliefs about research or pain treatments. The participants tended to rate several parameters related to research participation more positively after participating in our study. CONCLUSIONS: Our results indicate that the placebo manipulation groups experienced an anti-sensitization effect. The use of analgesic placebo did not result in any detrimental ethical or psychological effects.",
+"abstract": "OBJECTIVE: Conduct a systematic review and use meta-analytic techniques to estimate the proportion of total treatment effect that can be attributable to contextual effects (PCE) in adults receiving nonpharmacological, nonsurgical (NPNS) treatments for knee osteoarthritis (OA). DESIGN: We reviewed the published literature to identify five frequently studied NPNS treatments for knee OA: exercise, acupuncture, ultrasound, laser, and transcutaneous electrical nerve stimulation (TENS). We searched for randomized controlled trials (RCTs) of these treatments and abstracted pre- and post-intervention pain scores for groups receiving placebo and active treatments. For each study we calculated the PCE by dividing the change in pain in the placebo group by the change in pain in the active treatment group. We log transformed the PCE measure and pooled across studies using a random effects model. RESULTS: We identified 25 studies for analysis and clustered the RCTs into two groups: acupuncture and topical energy modalities (TEM). 13 acupuncture studies included 1,653 subjects and 12 TEM studies included 572 subjects. The combined PCE was 0.61 (95% CI 0.46-0.80) for acupuncture and 0.69 (95% CI 0.54-0.88) for TEM. CONCLUSION: Our findings suggest that about 61% and 69% of the total treatment effect experienced by subjects receiving acupuncture and TEM treatments, respectively, for knee OA pain may be explained by contextual effects. Contextual effects may include the placebo effect, changes attributable to natural history, and effects of co-therapies. These data highlight the important role of contextual effects in the response to NPNS OA treatments.",
 "keywords": [
 "Contextual effect",
 "Knee osteoarthritis",
@@ -25050,22 +25927,22 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T16:34:35Z",
+"classified_at": "2026-09-02T16:25:57Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized trial that tested deceptive vs non-deceptive placebo conditioning versus control on thermal pain, directly studying placebo analgesia and ethical outcomes.",
+"rationale": "Meta-analysis explicitly estimated the proportion of treatment effect attributable to contextual/placebo effects across RCT placebo and active arms for nonpharmacological knee OA therapies.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
-"healthy_adult"
+"chronic_pain"
 ],
 "age_group": [
 "adults"
@@ -25077,38 +25954,41 @@
 "self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"meta_analytic"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"classical_conditioning"
+"trial_methodology_placebo_response",
+"therapeutic_ritual_context"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
-"topical_cream"
+"sham_acupuncture",
+"sham_device"
 ]
 },
-"summary": "Randomized healthy adults (N=75) received deceptive placebo, non-deceptive placebo, or control during repeated thermal pain testing and placebo groups prevented pain sensitization versus control without harming attitudes or mood.",
-"key_finding": "Both deceptive and non-deceptive placebo conditioning prevented pain sensitization compared with control.",
-"sample_size": 75,
+"summary": "Found that contextual effects explained about 61% of acupuncture and 69% of topical energy modality treatment effects on pain in knee osteoarthritis in pooled RCTs.",
+"key_finding": "Pooled proportion of contextual effect (PCE) was 0.61 (95% CI 0.46-0.80) for acupuncture (13 studies, 1653 subjects) and 0.69 (95% CI 0.54-0.88) for topical energy modalities (12 studies, 572 subjects).",
+"sample_size": 25,
 "free_keywords": [
-"thermal pain",
-"heat pain",
-"analgesic cream",
-"deception",
-"placebo conditioning"
+"knee osteoarthritis",
+"PCE",
+"transcutaneous electrical nerve stimulation",
+"ultrasound",
+"laser therapy",
+"acupuncture",
+"contextual_effects"
 ],
 "usage": {
-"input_tokens": 1447,
+"input_tokens": 1476,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 668,
-"cost_usd": 0.00182
+"output_tokens": 818,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -25122,7 +26002,8 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7483273",
 "landing_url": "https://doi.org/10.1016/j.joca.2020.05.007",
 "cited_by_count": 37,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1007/s00426-020-01353-w",
@@ -33020,6 +33901,147 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/s0140-6736(19)33137-x",
+"title": "Considerations and methods for placebo controls in surgical trials (ASPIRE guidelines).",
+"authors": [
+"Beard DJ",
+"Campbell MK",
+"Blazeby JM",
+"Carr AJ",
+"Weijer C",
+"Cuthbertson BH",
+"Buchbinder R",
+"Pinkney T",
+"Bishop FL",
+"Pugh J",
+"Cousins S",
+"Harris IA",
+"Lohmander LS",
+"Blencowe N",
+"Gillies K",
+"Probst P",
+"Brennan C",
+"Cook A",
+"Farrar-Hockley D",
+"Savulescu J",
+"Huxtable R",
+"Rangan A",
+"Tracey I",
+"Brocklehurst P",
+"Ferreira ML",
+"Nicholl J",
+"Reeves BC",
+"Hamdy F",
+"Rowley SC",
+"Cook JA"
+],
+"journal": "Lancet (London, England)",
+"journal_abbrev": "Lancet",
+"year": 2020,
+"date": "2020-03-07",
+"doi": "10.1016/s0140-6736(19)33137-x",
+"pmid": "32145797",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "Placebo comparisons are increasingly being considered for randomised trials assessing the efficacy of surgical interventions. The aim of this Review is to provide a summary of knowledge on placebo controls in surgical trials. A placebo control is a complex type of comparison group in the surgical setting and, although powerful, presents many challenges. This Review outlines what a placebo control entails and present understanding of this tool in the context of surgery. We consider when placebo controls in surgery are acceptable (and when they are desirable) in terms of ethical arguments and regulatory requirements, how a placebo control should be designed, how to identify and mitigate risk for participants in these trials, and how such trials should be done and interpreted. Use of placebo controls is justified in randomised controlled trials of surgical interventions provided there is a strong scientific and ethical rationale. Surgical placebos might be most appropriate when there is poor evidence for the efficacy of the procedure and a justified concern that results of a trial would be associated with high risk of bias, particularly because of the placebo effect. Feasibility work is recommended to optimise the design and implementation of randomised controlled trials. This Review forms an outline for best practice and provides guidance, in the form of the Applying Surgical Placebo in Randomised Evaluations (known as ASPIRE) checklist, for those considering the use of a placebo control in a surgical randomised controlled trial.",
+"keywords": [],
+"mesh": [
+"Guidelines as Topic",
+"Humans",
+"Placebos",
+"Randomized Controlled Trials as Topic",
+"Research Design",
+"Surgical Procedures, Operative"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, Non-U.S. Gov't",
+"Review"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T17:24:23Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Majority of the paper is a scholarly review/guideline focused on the use, design, ethics, and methodology of placebo (sham) controls in surgical trials, making placebo science the main subject.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "human",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
+"therapeutic_ritual_context",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Reviews ethical, methodological, and practical guidance for using placebo (sham) controls in surgical randomized trials and presents the ASPIRE checklist for best practice.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"aspire checklist",
+"surgical placebo",
+"sham surgery",
+"ethics",
+"blinding",
+"feasibility",
+"trial design",
+"placebo control"
+],
+"usage": {
+"input_tokens": 1367,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 634,
+"cost_usd": 0.00173
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2020-03-07",
+"private_pdf": null
+},
+{
 "id": "doi:10.1007/s00213-020-05464-5",
 "title": "Tripping on nothing: placebo psychedelics and contextual factors.",
 "authors": [
@@ -35103,87 +36125,74 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:09:14Z",
+"classified_at": "2026-09-02T16:25:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review whose main subject is placebo analgesia and nocebo hyperalgesia mechanisms and clinical implications, meeting the 'placebo science' inclusion criteria.",
+"confidence": 0.85,
+"rationale": "Study experimentally tested whether matching patients' administration-route preference altered analgesic response to an active drug, i.e., a context/expectation effect on treatment outcome.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
 "placebo_effect",
-"nocebo_effect"
+"placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult",
-"chronic_pain",
-"acute_clinical_pain"
+"acute_clinical_pain",
+"general_public"
 ],
 "age_group": [
-"adults"
+"adults",
+"mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"global_health_qol"
 ],
 "outcome_measures": [
-"self_report",
-"clinician_rated",
-"fmri",
-"pet_neurochemical",
-"neuroendocrine",
-"autonomic"
+"self_report"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct",
+"single_group_pre_post"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_opioid",
-"neurobiology_dopamine",
-"therapeutic_ritual_context",
-"provider_patient_interaction"
+"prior_treatment_experience",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "expectation_level",
-"prior_experience",
-"provider_characteristics"
+"none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"saline_injection_infusion",
-"sham_device",
-"open_label_placebo",
-"verbal_suggestion_only"
+"active_drug_context_manipulation",
+"inert_pill_capsule"
 ]
 },
-"summary": "Reviews neurobiological and contextual mechanisms of placebo analgesia and nocebo hyperalgesia across laboratory and clinical studies and discusses clinical implications of context-driven modulation of pain.",
-"key_finding": "Different positive and negative contexts engage distinct neurochemical systems and can modulate pain via reward and aversive mechanisms.",
-"sample_size": null,
+"summary": "Randomized prospective trial found that acute low back pain patients who received diclofenac via their preferred administration route experienced greater self-reported pain reduction than those receiving their undesired route.",
+"key_finding": "Patients receiving diclofenac via their desired route had larger pain reduction (mean 4.05 ± 2.8) versus undesired route (2.08 ± 1.8).",
+"sample_size": 38,
 "free_keywords": [
-"placebo analgesia",
-"nocebo hyperalgesia",
-"reward circuitry",
-"naloxone",
-"fMRI",
-"conditioning",
-"contextual ritual"
+"diclofenac",
+"administration-route-preference",
+"intramuscular",
+"oral",
+"acute low back pain",
+"emergency department"
 ],
 "usage": {
-"input_tokens": 1271,
+"input_tokens": 1450,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1231,
-"cost_usd": 0.0029
+"output_tokens": 910,
+"cost_usd": 0.0023
 }
 },
 "sources": [
@@ -35726,7 +36735,7 @@
 "doi": "10.1136/bmjopen-2019-032868",
 "pmid": "32071176",
 "pmcid": "PMC7045079",
-"abstract": "BACKGROUND: In a systematic review and meta-analysis we summarize the available evidence on how frequently general practitioners/family physicians (GPs) use pure placebos (e.g., placebo pills) and non-specific therapies (sometimes referred to as impure placebos; e.g., antibiotics for common cold). METHODS: We searched Medline, PubMed and SCOPUS up to July 2018 to identify cross-sectional quantitative surveys among GPs. Outcomes of primary interest were the percentages of GPs having used any placebo, pure placebos or non-specific therapies at least once in their career, at least once in the last year, at least monthly or at least weekly. Outcomes were described as proportions and pooled with random-effects meta-analysis. RESULTS: Of 674 publications, 16 studies from 13 countries with a total of 2.981 participating GPs (range 27 to 783) met the inclusion criteria. The percentage of GPs having used any form of placebo at least once in their career ranged from 29% to 97%, in the last year at least once from 46% to 95%, at least monthly from 15% to 89%, and at least weekly from 1% to 75%. The use of non-specific therapies by far outnumbered the use of pure placebo. For example, the proportion of GPs using pure placebos at least monthly varied between 2% and 15% compared to 53% and 89% for non-specific therapies; use at least weekly varied between 1% and 3% for pure placebos and between 16% and 75% for non-specific therapies. Besides eliciting placebos effects, many other reasons related to patient expectations, demands and medical problems were reported as reasons for applying placebo interventions. CONCLUSION: High prevalence estimates of placebo use among GPs are mainly driven by the frequent use of non-specific therapies; pure placebos are used rarely. The interpretation of our quantitative findings is complicated by the diversity of definitions and survey methods.",
+"abstract": "INTRODUCTION: Recent evidence suggests that for certain clinical conditions, placebos can improve clinical outcomes even without deception. These so-called open-label placebos (OLPs) bear the advantage of a significant lower risk of adverse events and comply with ethical principles. Although premenstrual syndrome (PMS) seems to be considerably susceptible to placebo effects, no study has examined open-OLP responses on PMS. METHODS AND ANALYSIS: To test the efficacy of OLPs in women suffering from PMS, a clinical randomised controlled trial including two OLP study groups (with and without treatment rationale) was designed to investigate on the effect on PMS. PMS symptoms are monitored on a daily basis via a symptom diary, adverse events are monitored intermittently. The study started in spring 2018 and patients will be included until a maximum of 150 participants are randomised. Besides the primary outcome PMS symptom intensity and interference, an array of further variables is assessed. Multilevel modelling will be used for data analyses. ETHICS AND DISSEMINATION: Ethics approval was obtained from the Ethics Committee Northwest and Central Switzerland. Results of the main analysis and of secondary analyses will be submitted for publication in peer-reviewed journals. TRIAL REGISTRATION NUMBERS: (1) ClinicalTrials.gov (NCT03547661); (2) Swiss national registration (SNCTP000002809).",
 "keywords": [
 "PMS symptom diary",
 "open-label placebos",
@@ -35754,18 +36763,18 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T17:48:19Z",
+"classified_at": "2026-09-02T16:25:10Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Systematic review and meta-analysis explicitly evaluated open-label placebo (nondeceptive placebo) efficacy versus no treatment.",
+"confidence": 0.95,
+"rationale": "Protocol for a randomized trial whose primary aim is to test the causal effect of an open-label placebo on PMS symptoms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -35773,62 +36782,55 @@
 "study_focus": [
 "placebo_effect"
 ],
-"article_type": "meta_analysis",
+"article_type": "protocol",
 "species": "human",
 "population": [
-"mixed_clinical"
+"other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"pain",
 "mood_depression",
-"global_health_qol",
-"nausea_gi",
-"respiratory",
-"cognition",
 "other"
 ],
 "outcome_measures": [
 "self_report"
 ],
 "design": [
-"meta_analytic"
+"parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective"
+"not_applicable"
 ],
 "mechanisms": [
 "open_label_placebo",
-"verbal_suggestion_expectation",
-"trial_methodology_placebo_response"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "open_label_placebo"
 ]
 },
-"summary": "Meta-analysis found open-label placebos produced positive clinical effects versus no treatment across five randomized trials (260 participants).",
-"key_finding": "Found standardized mean difference 0.88 (95% CI 0.62 to 1.14) favoring open-label placebo versus no treatment.",
-"sample_size": 5,
+"summary": "Protocol for a randomized controlled trial testing open-label placebo (two OLP arms with/without rationale) for premenstrual syndrome in up to 150 women, using daily symptom diaries and multilevel modelling.",
+"key_finding": null,
+"sample_size": 150,
 "free_keywords": [
+"premenstrual syndrome",
+"pms",
 "open-label placebo",
-"irritable bowel syndrome",
-"depression",
-"allergic rhinitis",
-"back pain",
-"attention deficit hyperactivity disorder",
-"nondeceptive placebo"
+"symptom diary",
+"women",
+"switzerland"
 ],
 "usage": {
-"input_tokens": 1446,
-"cache_read_input_tokens": 4864,
+"input_tokens": 497,
+"cache_read_input_tokens": 5760,
 "cache_creation_input_tokens": 0,
-"output_tokens": 975,
-"cost_usd": 0.00243
+"output_tokens": 947,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -35842,7 +36844,8 @@
 "oa_pdf_url": "https://doi.org/10.1136/bmjopen-2019-032868",
 "landing_url": "https://doi.org/10.1136/bmjopen-2019-032868",
 "cited_by_count": 42,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1111/acer.14293",
@@ -36261,11 +37264,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T16:35:54Z",
+"classified_at": "2026-09-02T16:25:18Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized trial that explicitly manipulated expectation (verbal suggestion) and conditioning to test causal placebo analgesia in chronic low back pain patients.",
+"confidence": 0.88,
+"rationale": "Laboratory conditioning with a within-subject test compared responses to placebo-predictive vs control cues to estimate placebo analgesic effects and tested expectation as a mediator, meeting the placebo-effect inclusion criterion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -36276,6 +37279,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
+"healthy_adult",
 "chronic_pain"
 ],
 "age_group": [
@@ -36285,47 +37289,47 @@
 "pain"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"within_subject_experimental"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
 "classical_conditioning",
-"therapeutic_ritual_context"
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"expectation_level"
+"expectation_level",
+"prior_experience"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"verbal_suggestion_only",
+"topical_cream",
+"not_applicable"
 ]
 },
-"summary": "Randomized trial in 48 chronic low back pain patients found that an inert saline solution presented as a sham opioid (vs described as a neutral placebo) produced reduced clinical and acute pain ratings and improved functional capacity, with effects shaped by verbal suggestion and conditioning.",
-"key_finding": "Presenting NaCl as an effective 'opioid' with verbal suggestion and conditioning produced significant reductions in pain ratings and improved functional performance (all p<0.01 to p<0.001).",
-"sample_size": 48,
+"summary": "Classified 579 healthy and TMD participants by conditioning trajectories and found those with larger or increasing learned cue differences showed greater placebo analgesia, with expectation mediating the effect.",
+"key_finding": "Latent classes with persistently greater or increasing delta scores during conditioning exhibited larger placebo analgesia during testing, mediated by expectation.",
+"sample_size": 579,
 "free_keywords": [
-"low back pain",
-"sham opioid",
+"latent class analysis",
 "conditioning",
-"expectation",
-"functional capacity",
-"numerical rating scale",
-"clinical analgesia",
-"saline solution"
+"temporomandibular disorder",
+"TMD",
+"visual cue",
+"heat pain",
+"VAS"
 ],
 "usage": {
-"input_tokens": 600,
-"cache_read_input_tokens": 5760,
+"input_tokens": 1466,
+"cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 871,
-"cost_usd": 0.00204
+"output_tokens": 907,
+"cost_usd": 0.0023
 }
 },
 "sources": [
@@ -36340,6 +37344,130 @@
 "landing_url": "https://doi.org/10.3389/fpsyt.2020.00039",
 "cited_by_count": 11,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1111/jsr.12997",
+"title": "Dynamic features of placebo effects addressing persistent insomnia disorder: A meta-analysis of placebo-controlled randomized clinical trials.",
+"authors": [
+"Jiang B",
+"He D",
+"Guo Z",
+"Gao Z"
+],
+"journal": "Journal of sleep research",
+"journal_abbrev": "J Sleep Res",
+"year": 2020,
+"date": "2020-02-12",
+"doi": "10.1111/jsr.12997",
+"pmid": "32052501",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "It has been accepted knowledge that placebo effects have been significant in insomnia clinical trials. However, the dynamic features of placebo effects have not been clarified. Our aim was therefore to conduct a meta-analysis of placebo-controlled randomized clinical trials to characterize the dynamic features of placebo effects addressing persistent insomnia disorder. We performed a comprehensive literature search for randomized, placebo-controlled, double-blind clinical trials evaluating the efficacy of therapeutic regimens addressing persistent insomnia disorder. We pooled separate effect size estimates (Hedge's g) of placebo and regimen conditions across trials for outcome measures, and multilevel mixed-effects models were used to explore potential sources of heterogeneity. The placebo effects were significant and robust to improve the symptoms of insomnia, and subjective measures were significantly smaller than objective measures (p < .001), but placebo response rates were nearly identical between subjective and objective measures. The overall placebo effects were influenced by publication year (p = .015), treatment duration (p = .010), sample size (p < .001) and therapeutic regimen (p < .001). Placebo effects showed a diphasic feature within treatment duration: initially a decrease and subsequently being stable; a sustained decline trend after withdrawals; and a steady-to-upward trend for a mixed therapeutic regimens in a large-scale period over decades. The dynamic features of placebo effects addressing persistent insomnia disorder may lead to the development and validation of dosing strategies that require less medication exposure to maintain clinical effects.",
+"keywords": [
+"effect size",
+"insomnia disorder",
+"meta-analysis",
+"placebo effects"
+],
+"mesh": [
+"Double-Blind Method",
+"Female",
+"Humans",
+"Male",
+"Placebo Effect",
+"Randomized Controlled Trials as Topic",
+"Sleep Initiation and Maintenance Disorders"
+],
+"pub_types": [
+"Journal Article",
+"Meta-Analysis",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T16:25:08Z",
+"screening": {
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Meta-analysis explicitly evaluated placebo effects and placebo response dynamics across randomized, placebo-controlled insomnia trials, matching inclusion criteria for placebo science and placebo response/meta-analysis.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"sleep"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"trial_characteristics",
+"treatment_characteristics"
+],
+"intervention_type": [
+"other"
+]
+},
+"summary": "Meta-analysis of randomized, placebo-controlled trials in persistent insomnia found significant and dynamic placebo effects, with subjective effects smaller than objective measures and moderators including publication year, treatment duration, sample size, and regimen.",
+"key_finding": "Found significant placebo effects for insomnia; subjective measures were smaller than objective measures, and effects varied by publication year, treatment duration, sample size, and therapeutic regimen.",
+"sample_size": null,
+"free_keywords": [
+"insomnia",
+"polysomnography",
+"hedges_g",
+"randomized_controlled_trials",
+"treatment_duration",
+"placebo_response_rate",
+"meta-regression",
+"publication_year"
+],
+"usage": {
+"input_tokens": 1399,
+"cache_read_input_tokens": 4864,
+"cache_creation_input_tokens": 0,
+"output_tokens": 879,
+"cost_usd": 0.00223
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-02-12",
+"private_pdf": null
 },
 {
 "id": "doi:10.1136/bmjspcare-2019-002163",
@@ -36374,81 +37502,75 @@
 "Meta-Analysis",
 "Systematic Review"
 ],
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:09:39Z",
+"classified_at": "2026-09-02T16:25:00Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Narrative review focused on how placebo effects and contextual/therapeutic factors contribute to palliative care symptom relief, so placebo science is the main subject.",
+"rationale": "Systematic review/meta-analysis explicitly quantified placebo response (within-arm change) in placebo groups of trials for cancer-related fatigue, matching inclusion criterion for placebo_response and trial_methodology analysis.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "narrative_review",
-"species": "not_applicable",
+"article_type": "meta_analysis",
+"species": "human",
 "population": [
-"not_applicable"
+"cancer"
 ],
 "age_group": [
+"adults",
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain",
-"respiratory",
-"mood_depression",
-"global_health_qol"
+"fatigue"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report"
 ],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective"
 ],
 "mechanisms": [
-"provider_patient_interaction",
-"therapeutic_ritual_context",
-"attention_cognitive_appraisal",
-"emotion_anxiety_regulation",
-"clinical_use_ethics_attitudes",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics",
+"treatment_characteristics"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Reviews evidence that placebo effects and therapeutic context contribute to symptom relief in palliative care and discusses mechanisms and implications for research and service commissioning.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Meta-analysis quantified the placebo-group change in randomized drug trials for cancer-related fatigue and found a small but significant placebo response.",
+"key_finding": "Pooled standardized mean change in placebo groups was −0.23 (95% CI −0.42 to −0.04), indicating a small but statistically significant placebo response.",
+"sample_size": 30,
 "free_keywords": [
-"palliative care",
-"breathlessness",
-"complementary therapies",
-"therapeutic relationship",
-"meaning",
-"symptom perception",
-"end-of-life"
+"cancer-related fatigue",
+"CRF",
+"standardised mean change",
+"meta-regression",
+"Cochrane risk of bias",
+"placebo-arm",
+"drug trials"
 ],
 "usage": {
-"input_tokens": 351,
-"cache_read_input_tokens": 5760,
+"input_tokens": 1403,
+"cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 769,
-"cost_usd": 0.00177
+"output_tokens": 759,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -37824,6 +38946,137 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1523/jneurosci.0439-05.2005",
+"title": "Placebo Effect on Modulating Empathic Pain: Reduced Activation in Posterior Insula.",
+"authors": [
+"Zhao Y",
+"Liu R",
+"Zhang J",
+"Luo J",
+"Zhang W"
+],
+"journal": "Frontiers in behavioral neuroscience",
+"journal_abbrev": "Front Behav Neurosci",
+"year": 2020,
+"date": "2020-01-31",
+"doi": "10.1523/jneurosci.0439-05.2005",
+"pmid": "32116589",
+"pmcid": "PMC6725254",
+"openalex_id": null,
+"abstract": "BACKGROUND: The dorsolateral prefrontal cortex (dlPFC) has become a cornerstone of pain neuroscience, believed critically involved in processing acute and chronic pain, as well as in pain modulation. The dlPFC is thought to balance sensory perception with the cognitive appraisal of noxious stimuli. In humans however, the dlPFC spans several cortical nodes, and little attention has been given to precisely which subareas are tethered to these delineable processes. The primary goal of this review and co-ordinate based meta-analysis was to precisely map dlPFC areas engaged under varied effects on overall pain perception. METHODS: Here, we combined a stringent meta-analytic approach of neuroimaging studies reporting dlPFC activation as a core finding (i.e., within title, abstract, or keywords of each manuscript), with activation likelihood estimation to determine dlPFC engagement across experimental acute pain (combined n = 814), chronic pain (combined n = 2467), and the pain modulatory phenomenon of placebo analgesia (combined n = 791), conditioned pain modulation (combined n = 184), and offset analgesia (combined n = 47). Through activation likelihood estimate and foci analysis, we produced schema of the similar and disparate locations of dlPFC activity within and between pain perceptual and modulatory effects. RESULTS: During both acute and chronic pain and in placebo analgesia, we identified remarkably similar activation patterns predominantly within Brodmann areas 8, 9, and 46-with no clear laterality effect and the left and right cortical hemispheres engaged regardless of the site of experimentally applied or conditionally-present pain. Offset analgesia and conditioned pain modulation appeared to preferentially engage Brodmann areas 8 and 45, and 9 and 46, respectively. CONCLUSIONS: Despite the dlPFC large cortical surface area, these findings suggest that both the percept and inhibition of pain by placebo engage a similar focussed area of this region. Better understanding of exactly which cortical components of the extensive cortical pain system are involved in pain perception and modulation is critical for refining novel treatments such as non-invasive brain stimulation which seek to target and modulate specific sites of cortical processing to alleviate pain. SIGNIFICANCE STATEMENT: This meta-analysis precisely maps the dorsolateral prefrontal cortex (dlPFC) subregions engaged across acute pain, chronic pain and major endogenous pain-modulation paradigms. By integrating data from more than 4000 participants, it provides the most anatomically resolved evidence to date that dlPFC engagement is a shared feature of pain perception and modulation. These findings refine the cortical targets most relevant for therapeutic neuromodulation and strengthen the rationale for dlPFC-focused interventions in pain treatment.",
+"keywords": [
+"empathy for pain",
+"picture-based paradigm",
+"placebo effect",
+"posterior insula",
+"sensory area"
+],
+"mesh": [
+"Adult",
+"Algorithms",
+"Analgesia",
+"Bayes Theorem",
+"Brain Mapping",
+"Double-Blind Method",
+"Humans",
+"Magnetic Resonance Imaging",
+"Male",
+"Medulla Oblongata",
+"Models, Neurological",
+"Pain",
+"Pain Perception",
+"Periaqueductal Gray",
+"Placebo Effect",
+"Young Adult"
+],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "1.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-02T19:13:02Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Human molecular-imaging experiment testing placebo analgesia and measuring endogenous mu-opioid activity, directly addressing mechanisms of the placebo effect.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"pet_neurochemical"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"neurobiology_opioid",
+"neural_systems_circuits",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
+},
+"summary": "Measured placebo-induced reductions in sustained pain and concurrent activation of mu-opioid receptor neurotransmission in brain using PET, showing expectation-related endogenous opioid release.",
+"key_finding": "Placebo administration produced significant reductions in pain ratings and localized increases in mu-opioid receptor-mediated neurotransmission in ACC, DLPFC, insula, and nucleus accumbens.",
+"sample_size": null,
+"free_keywords": [
+"carfentanil",
+"PET",
+"rostral anterior cingulate",
+"nucleus accumbens",
+"endogenous opioid",
+"placebo analgesia"
+],
+"usage": {
+"input_tokens": 458,
+"cache_read_input_tokens": 5760,
+"cache_creation_input_tokens": 0,
+"output_tokens": 734,
+"cost_usd": 0.00173
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2020-01-31",
+"private_pdf": null
+},
+{
 "id": "doi:10.1007/s41465-020-00164-6",
 "title": "Quantifying the Difference between Active and Passive Control Groups in Cognitive Interventions Using two Meta-Analytical Approaches.",
 "authors": [
@@ -37979,82 +39232,74 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "1.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T18:01:33Z",
+"classified_at": "2026-09-02T16:24:56Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Narrative review whose main aim was to discuss how placebo effects can be applied in clinical practice and the ethical/communication strategies to harness them, meeting 'placebo science' inclusion criteria.",
+"confidence": 0.9,
+"rationale": "Randomized double-blind trial explicitly quantified change in the placebo arm (placebo response) in carpal tunnel syndrome.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "narrative_review",
-"species": "not_applicable",
+"article_type": "empirical_primary",
+"species": "human",
 "population": [
-"not_applicable"
+"other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"global_health_qol"
+"pain",
+"motor_function"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"spinal_peripheral_electrophysiology"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct",
+"single_group_pre_post"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction",
-"therapeutic_ritual_context",
-"clinical_use_ethics_attitudes",
-"treatment_cues_dose_route",
-"prior_treatment_experience"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"provider_characteristics",
-"expectation_level",
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"open_label_placebo",
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Narrative review that discussed how clinicians can ethically harness placebo effects in practice, emphasizing communication, expectancy, and patient-centered care to activate self-healing mechanisms.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Randomized double-blind trial compared palmitoylethanolamide vs placebo in 68 mild-moderate carpal tunnel patients and reported up to ~20% improvement in placebo-arm symptom and function scores, with mixed statistical significance across measures.",
+"key_finding": "Placebo-arm improvements reached ~17–20% on symptom and function scales; functional status score change was statistically significant while symptom severity and VAS were not.",
+"sample_size": 68,
 "free_keywords": [
-"clinical communication",
-"ethics",
-"doctor-patient relationship",
-"expectancy",
-"patient-centered care",
-"therapeutic ritual",
-"placebo harnessing"
+"carpal tunnel syndrome",
+"palmitoylethanolamide",
+"levine questionnaire",
+"visual analogue scale",
+"electromyography"
 ],
 "usage": {
-"input_tokens": 1294,
+"input_tokens": 1636,
 "cache_read_input_tokens": 4864,
 "cache_creation_input_tokens": 0,
-"output_tokens": 877,
-"cost_usd": 0.0022
+"output_tokens": 851,
+"cost_usd": 0.00223
 }
 },
 "sources": [
