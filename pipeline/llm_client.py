@@ -24,10 +24,10 @@ from typing import Any, Optional
 
 PIPELINE_DIR = Path(__file__).resolve().parent
 TAXONOMY_PATH = PIPELINE_DIR / "taxonomy.json"
-PROMPT_PATH = PIPELINE_DIR / "prompts" / "classify_v1.md"
+PROMPT_PATH = PIPELINE_DIR / "prompts" / "classify_v2.md"
 OUTPUT_SCHEMA_PATH = PIPELINE_DIR / "schemas" / "llm_output.schema.json"
 
-PROMPT_VERSION = "1.0.0"
+PROMPT_VERSION = "2.0.0"
 
 # Verified 2026-09-02 (platform.claude.com/docs/en/about-claude/pricing; developers.openai.com/api/docs/pricing).
 # USD per 1M tokens: (input, cached_input, output). Batch = 50% of these on both providers.

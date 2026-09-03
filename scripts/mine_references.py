@@ -111,6 +111,11 @@ def main():
             json.dump(mined, open(OUT, "w")); print(f"scanned {n}/{len(pdfs)}, refs {len(mined['refs'])}", flush=True)
     json.dump(mined, open(OUT, "w"))
     print(f"placebo-related references extracted: {len(mined['refs'])}", flush=True)
+    if "--extract-only" in args:
+        n_doi = sum(1 for e in mined["refs"].values() if e["doi"]); n_title = sum(1 for e in mined["refs"].values() if not e["doi"] and e["title"])
+        old = sum(1 for e in mined["refs"].values() if e["year"] and int(e["year"]) < 1990)
+        print(f"with DOI {n_doi}, title-only {n_title}, pre-1990 {old}", flush=True)
+        return
     # ---- resolve + screen
     candidates = sorted(mined["refs"].items(), key=lambda kv: -len(kv[1]["cited_by"]))
     n_llm = 0; stats = {"resolved": 0, "already": 0, "new": 0, "core": 0, "adjacent": 0, "review": 0, "exclude": 0}
