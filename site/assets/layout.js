@@ -8,12 +8,11 @@
       <a href="database.html">Database</a>
       <a href="bibliometrics.html">Bibliometrics</a>
       <a href="network.html">Researchers</a>
-      <a href="news.html">In the news</a>
-      <a href="events.html">Events</a>
+      <a href="newsevents.html">News &amp; events</a>
       <a href="resources.html">Resources</a>
       <a href="discuss.html">Discussion</a>
-      <a href="mylist.html">My list</a>
-      <a href="join.html">Join</a>
+      <div class="menu"><a href="join.html" class="menu-btn" aria-haspopup="true" aria-expanded="false">Members ▾</a>
+        <div class="menu-list"><a href="join.html">Join or sign in</a><a href="mylist.html">My list</a><a href="picks.html">Community picks</a></div></div>
       <a href="about.html">About</a>
     </nav></div></header>`;
   const footer = `<footer class="site-footer"><div class="wrap">
@@ -39,6 +38,7 @@
     nav.addEventListener("click", e => { if (e.target.tagName === "A") nav.classList.remove("open"); });
   }
 
+  document.querySelectorAll(".menu-btn").forEach(b => b.addEventListener("click", e => { const m = b.parentElement; if (!m.classList.contains("open") && window.matchMedia("(hover: none)").matches) { e.preventDefault(); m.classList.add("open"); b.setAttribute("aria-expanded", "true"); } }));
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const rvs = document.querySelectorAll(".rv");
   if (reduce || !("IntersectionObserver" in window)) { rvs.forEach(el => el.classList.add("in")); return; }
