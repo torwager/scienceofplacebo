@@ -19,37 +19,49 @@ QUERIES = {
 }
 BIG = {"placebo_vs_no_treatment", "expectancy_titles", "conditioning_titles", "suggestion_titles", "context_meaning", "brain_placebo", "placebo_mesh_all"}
 PRESCREEN_SCHEMA = {"type": "object", "additionalProperties": False, "required": ["keep"], "properties": {"keep": {"type": "array", "items": {"type": "boolean"}}}}
-PRESCREEN_SYS = ("You triage PubMed records for a bibliography of studies OF placebo and nocebo effects and responses (the causal effect of "
-    "treatment context, expectation, suggestion or conditioning on health outcomes; the response in placebo/sham arms as an object of study; "
-    "their mechanisms and moderators; reviews of these). From TITLE and JOURNAL only, answer true if the paper could plausibly be such a study "
-    "and deserves a full-abstract screen; answer false for ordinary drug/device efficacy trials that merely use a placebo comparator, and for "
-    "papers on unrelated topics. Return JSON {keep: [bool,...]} with exactly one boolean per numbered line, in order.")
+PRESCREEN_SYS = ("You triage PubMed records for a bibliography of studies OF placebo and nocebo effects and responses. Judge from TITLE and JOURNAL only. "
+    "Answer true ONLY when the title itself indicates that the placebo/nocebo effect or response, treatment expectancy, verbal suggestion, "
+    "conditioning of a treatment response, sham/context effects, or their mechanisms is the object of study (e.g. 'placebo analgesia', "
+    "'expectation and pain', 'conditioned immunosuppression', 'nocebo', 'open-label placebo', 'predictors of placebo response'). "
+    "Answer false for everything else, including efficacy trials that merely mention placebo or sham, and unrelated uses of expectation, "
+    "conditioning or suggestion. When unsure, answer false. Return JSON {keep: [bool,...]}, one boolean per numbered line, in order.")
+PRESCREEN_FAILS = [0]
 
 
 def title_prescreen(recs):
     """Cheap LLM pass on titles, 40 per call, threaded. Returns the subset worth a full screen."""
     from concurrent.futures import ThreadPoolExecutor
     clf = classify.get_classifier(); keep = []
-    def one(chunk):
+    UNJUDGED = []
+    def ask(chunk):
         user = "\n".join(f"{i + 1}. {r['title']} ({r.get('journal_abbrev') or r.get('journal') or ''}, {r.get('year') or ''})" for i, r in enumerate(chunk))
-        for attempt in range(6):
+        for attempt in range(4):
             try:
                 if clf.provider == "anthropic":
-                    resp = clf._client.messages.create(model=clf.model, max_tokens=300, system=PRESCREEN_SYS, messages=[{"role": "user", "content": user}], output_config={"effort": "low", "format": {"type": "json_schema", "schema": PRESCREEN_SCHEMA}})
+                    resp = clf._client.messages.create(model=clf.model, max_tokens=1500, system=PRESCREEN_SYS, messages=[{"role": "user", "content": user}], output_config={"effort": "low", "format": {"type": "json_schema", "schema": PRESCREEN_SCHEMA}})
                     ks = json.loads(next(b.text for b in resp.content if b.type == "text"))["keep"]
                 else:
-                    resp = clf._client.responses.create(model=clf.model, input=[{"role": "system", "content": PRESCREEN_SYS}, {"role": "user", "content": user}], text={"format": {"type": "json_schema", "name": "keep", "schema": PRESCREEN_SCHEMA, "strict": True}}, max_output_tokens=300, **({"reasoning": {"effort": "low"}} if clf.model.startswith("gpt-5") else {}))
+                    resp = clf._client.responses.create(model=clf.model, input=[{"role": "system", "content": PRESCREEN_SYS}, {"role": "user", "content": user}], text={"format": {"type": "json_schema", "name": "keep", "schema": PRESCREEN_SCHEMA, "strict": True}}, max_output_tokens=1500, **({"reasoning": {"effort": "low"}} if clf.model.startswith("gpt-5") else {}))
                     ks = json.loads(resp.output_text)["keep"]
                 if len(ks) == len(chunk):
                     return [r for r, k in zip(chunk, ks) if k]
-                return chunk
             except Exception as e:  # noqa: BLE001
                 time.sleep((20 if "429" in str(e) else 5) * (attempt + 1))
-        return chunk
+        return None
+    def one(chunk):
+        res = ask(chunk)
+        if res is not None:
+            return res
+        if len(chunk) > 5:  # split and retry rather than keep everything
+            return one(chunk[:len(chunk) // 2]) + one(chunk[len(chunk) // 2:])
+        PRESCREEN_FAILS[0] += 1; UNJUDGED.extend(chunk); return []
     chunks = [recs[i:i + 40] for i in range(0, len(recs), 40)]
     with ThreadPoolExecutor(12) as ex:
         for res in ex.map(one, chunks):
             keep.extend(res)
+    if UNJUDGED:
+        json.dump([r["pmid"] for r in UNJUDGED], open("work/audit_pubmed_unjudged.json", "w"))
+        print(f"unjudged titles (kept out, saved for a later pass): {len(UNJUDGED)}", flush=True)
     return keep
 
 
@@ -81,8 +93,10 @@ print(f"direct full screen: {len(direct)}; title pre-screen: {len(big)}", flush=
 kept = title_prescreen(big)
 print(f"title pre-screen kept {len(kept)} of {len(big)}", flush=True)
 dropped = {r["pmid"] for r in big} - {r["pmid"] for r in kept}
+try: unj = set(json.load(open("work/audit_pubmed_unjudged.json")))
+except FileNotFoundError: unj = set()
 for r in big:
-    if r["pmid"] in dropped:
+    if r["pmid"] in dropped and r["pmid"] not in unj:
         screened[db.record_id(r)] = {"scope": "exclude", "pmid": r["pmid"], "date": time.strftime("%Y-%m-%d"), "reason": "title_prescreen", "via": "pubmed_audit"}
 recs = direct + kept
 for rec in recs:
