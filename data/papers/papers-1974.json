@@ -34,51 +34,74 @@
 "Journal Article",
 "Research Support, U.S. Gov't, Non-P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:27Z",
+"classified_at": "2026-09-03T04:45:13Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates placebo responses were correlated with personality in MPD patients but methods and results are not available to confirm inclusion criteria.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title indicates the paper focused on placebo responses and their correlation with personality characteristics in myofascial pain patients, making placebo response the analytic object.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
+"moderators": [
+"personality_traits"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient abstract/full text to determine methods or outcomes; title indicated the study examined correlations between placebo responses and personality in myofascial pain-dysfunction patients.",
+"summary": "Studied correlations between placebo responses and personality characteristics in patients with myofascial pain-dysfunction (MPD).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"mmpi",
 "temporomandibular",
 "myofascial pain",
-"MMPI",
 "meprobamate",
-"personality"
+"personality",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 1125,
-"cache_read_input_tokens": 4864,
+"input_tokens": 434,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 856,
-"cost_usd": 0.00211
+"output_tokens": 696,
+"cost_usd": 0.00165
 }
 },
 "sources": [
@@ -121,15 +144,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:56Z",
+"classified_at": "2026-09-03T04:45:14Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title and MeSH terms indicate the article's primary subject is the ethics of prescribing placebos, a substantive placebo-science topic (ethical/clinical use) even though no abstract is available.",
+"confidence": 0.75,
+"rationale": "Paper's explicit subject is the ethics of giving placebos, which fits 'placebo_science_other' inclusion for placebo-focused ethical discussion.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -140,7 +163,8 @@
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [
-"not_applicable"
+"general_public",
+"clinicians_providers"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -168,22 +192,21 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses the ethical issues surrounding prescribing placebos, including deception and informed consent, in clinical practice.",
+"summary": "Discussed ethical considerations of giving placebos in clinical practice, including disclosure and informed consent.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "informed consent",
 "deception",
 "clinical ethics",
-"physician practice",
-"placebo prescribing"
+"physician-patient relationship"
 ],
 "usage": {
-"input_tokens": 161,
-"cache_read_input_tokens": 5760,
+"input_tokens": 366,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 654,
-"cost_usd": 0.00149
+"output_tokens": 719,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -231,15 +254,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:35Z",
+"classified_at": "2026-09-03T04:45:17Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH suggest a letter about placebo composition in an asthma/child context but insufficient information to judge whether placebo/nocebo is the study object.",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title suggests a commentary on placebo inertness but it's unclear whether placebo/nocebo phenomena are the paper's explicit focus or merely a passing remark.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -257,23 +280,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; a 1974 JAMA letter titled 'The \"inert\" placebo' likely discussed placebo composition or non-inert effects in an asthma/child context but the content is unavailable to confirm study focus.",
+"summary": "No abstract available; a 1974 JAMA letter titled \"The 'inert' placebo\" that likely discussed the nature or composition of placebo controls but could not be assessed for focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"inert placebo",
-"asthma",
-"sulfates",
-"children",
+"placebo inert",
+"placebo composition",
+"contamination",
 "JAMA 1974",
-"placebo composition"
+"letter"
 ],
 "usage": {
-"input_tokens": 176,
-"cache_read_input_tokens": 5760,
+"input_tokens": 381,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00139
+"output_tokens": 614,
+"cost_usd": 0.00147
 }
 },
 "sources": [
@@ -287,97 +309,6 @@
 "landing_url": "https://doi.org/10.1001/jama.230.4.539b",
 "cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4443845",
-"title": "A comparative study of amphetamine, ephedrine-atropine mixture, placebo and behavioral conditioning in the treatment of nocturnal enuresis.",
-"authors": [
-"Wright L",
-"Craig SC"
-],
-"journal": "The Journal of the Oklahoma State Medical Association",
-"journal_abbrev": "J Okla State Med Assoc",
-"year": 1974,
-"date": "1974-10-01",
-"doi": null,
-"pmid": "4443845",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Amphetamine",
-"Atropine",
-"Behavior Therapy",
-"Child",
-"Child, Preschool",
-"Drug Therapy, Combination",
-"Enuresis",
-"Ephedrine",
-"Female",
-"Humans",
-"Male",
-"Placebos"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:34Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and the record lists a placebo arm, but it is unclear whether the paper analyzed placebo/placebo response as an object of study versus using placebo only as a control for drug efficacy.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reported a controlled clinical trial in children comparing amphetamine, an ephedrine‑atropine mixture, placebo, and behavioral conditioning for nocturnal enuresis; abstract was not available to assess placebo-focused analyses.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"nocturnal enuresis",
-"children",
-"amphetamine",
-"ephedrine-atropine",
-"behavioral conditioning",
-"placebo-controlled",
-"1974"
-],
-"usage": {
-"input_tokens": 224,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 578,
-"cost_usd": 0.00136
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-10-01",
-"private_pdf": null
 },
 {
 "id": "pmid:4430903",
@@ -420,22 +351,22 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:58Z",
+"classified_at": "2026-09-03T04:45:22Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Empirical controlled trial explicitly compared alcohol and placebo effects on reaction time and distance judgment, making placebo/expectancy an object of study.",
+"rationale": "Title explicitly contrasted alcohol and placebo effects on reaction time and distance judgment, indicating placebo was an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_response",
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -467,27 +398,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"active_drug_context_manipulation"
+"placebo_food_drink"
 ]
 },
-"summary": "Tested the effects of alcohol versus a placebo beverage on reaction time and distance judgment in adult participants.",
+"summary": "Compared alcohol and placebo beverages on reaction time and distance judgment in adult participants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol",
-"ethanol",
+"alcohol placebo",
 "reaction time",
 "distance judgment",
 "expectancy",
-"placebo beverage"
+"beverage",
+"psychomotor"
 ],
 "usage": {
-"input_tokens": 212,
-"cache_read_input_tokens": 5760,
+"input_tokens": 417,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 853,
-"cost_usd": 0.0019
+"output_tokens": 847,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -530,76 +460,54 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:31Z",
+"classified_at": "2026-09-03T04:45:20Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title and MeSH terms explicitly reference placebos, suggestion, and caffeine effects on cognition indicating the paper examined placebo/context effects rather than using placebo only as an efficacy comparator.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title mentions both drugs and placebos but does not make clear whether placebo/placebo response was an explicit focus or only a control for caffeine efficacy.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "cognition"
 ],
-"outcome_measures": [
-"behavioral_performance",
-"self_report"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated effects of caffeine and placebo/suggestion on cognitive performance in adults; abstract not available so outcomes and sample size were not reported.",
+"summary": "Reported effects of caffeine and placebos on cognitive performance in adults, but abstract/full text were unavailable to determine whether placebo phenomena were a primary focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "caffeine",
+"placebo",
 "cognitive performance",
-"attention",
-"suggestion",
-"oral administration",
-"1974",
-"placebo"
+"mental recall",
+"psychological reports",
+"1974"
 ],
 "usage": {
-"input_tokens": 1090,
-"cache_read_input_tokens": 4864,
+"input_tokens": 399,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 701,
-"cost_usd": 0.0018
+"output_tokens": 642,
+"cost_usd": 0.00153
 }
 },
 "sources": [
@@ -662,12 +570,12 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T19:26:19Z",
+"classified_at": "2026-09-04T00:15:41Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.3,
-"rationale": "Title indicates an experimental hypnosis manipulation of pain anticipation/control with physiological outcomes, but no abstract or methods/results are available to confirm whether placebo/nocebo phenomena or expectation/placebo mechanisms were an explicit focus.",
-"exclusion_reason": null,
+"rationale": "No abstract or methods available to determine whether the study explicitly manipulated or analyzed placebo/nocebo/expectation effects versus focusing on hypnosis as an intervention.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
@@ -684,22 +592,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; 1974 empirical study examined hypnosis (anticipation and pain control) and cardiovascular responses during the cold pressor test in humans.",
+"summary": "Examined heart rate and blood pressure during cold pressor pain while participants anticipated pain and attempted pain control under hypnosis; abstract and methods were unavailable to judge placebo/nocebo focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cold pressor",
 "hypnosis",
+"anticipation",
+"analgesia",
 "heart rate",
-"blood pressure",
-"pain control"
+"blood pressure"
 ],
 "usage": {
 "input_tokens": 466,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 801,
-"cost_usd": 0.00187
+"output_tokens": 632,
+"cost_usd": 0.00153
 }
 },
 "sources": [
@@ -735,281 +644,54 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:43Z",
+"classified_at": "2026-09-03T04:45:41Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.3,
-"rationale": "No abstract or full text available and the title alone is insufficient to determine whether the paper reports empirical placebo/nocebo data or is a commentary/review.",
+"rationale": "No abstract or full text available; title and MeSH suggest a paper about placebos but insufficient information to judge whether placebo effects/responses were an explicit study focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
+"study_focus": [],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether this 1974 Nursing Mirror and Midwives Journal article presented empirical placebo research or a commentary on placebos.",
+"summary": "No abstract available; likely a short commentary about placebos in a nursing journal but full text was unavailable to confirm aims or methods.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
+"placebos",
 "nursing",
 "suggestion",
-"midwifery",
 "1974",
-"united kingdom",
-"historical"
+"commentary"
 ],
 "usage": {
-"input_tokens": 1057,
-"cache_read_input_tokens": 4864,
+"input_tokens": 366,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 604,
-"cost_usd": 0.00159
+"output_tokens": 617,
+"cost_usd": 0.00147
 }
 },
 "sources": [
 "pubmed_query"
 ],
 "date_added": "1974-09-26",
-"private_pdf": null
-},
-{
-"id": "doi:10.5694/j.1326-5377.1974.tb70861.x",
-"title": "A multicentre trial of perhexiline maleate, beta-blocker and placebo in angina pectoris.",
-"authors": [
-"Armstrong ML",
-"Brand D",
-"Emmett AJ",
-"Hodge JL",
-"Kellaway GS",
-"Mestitz P",
-"Reefman M",
-"Wallace DC"
-],
-"journal": "The Medical journal of Australia",
-"journal_abbrev": "Med J Aust",
-"year": 1974,
-"date": "1974-09-14",
-"doi": "10.5694/j.1326-5377.1974.tb70861.x",
-"pmid": "4154390",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adrenergic beta-Antagonists",
-"Adult",
-"Aged",
-"Alanine Transaminase",
-"Angina Pectoris",
-"Aspartate Aminotransferases",
-"Clinical Trials as Topic",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Nitroglycerin",
-"Perhexiline",
-"Placebos",
-"Practolol",
-"Propranolol",
-"Vasodilator Agents"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:24Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract/full text provided; appears to be an efficacy RCT with placebo as comparator but insufficient information to judge whether placebo/nocebo effects or responses were analyzed.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; reported a multicentre randomized trial comparing perhexiline, a beta-blocker, and placebo in angina pectoris.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"angina pectoris",
-"perhexiline",
-"propranolol",
-"practolol",
-"placebo-controlled",
-"nitroglycerin",
-"1974"
-],
-"usage": {
-"input_tokens": 255,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 573,
-"cost_usd": 0.00135
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-09-14",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2410846570",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.5694/j.1326-5377.1974.tb70861.x",
-"cited_by_count": 15,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4619446",
-"title": "A comparison of betamethasone valerate, beclomethasone dipropionate and placebo by inhalation for the treatment of chronic asthma.",
-"authors": [
-"Riordan JF",
-"Dash CH",
-"Sillett RW",
-"McNicol MW"
-],
-"journal": "Postgraduate medical journal",
-"journal_abbrev": "Postgrad Med J",
-"year": 1974,
-"date": "1974-09-01",
-"doi": null,
-"pmid": "4619446",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Aerosols",
-"Aged",
-"Asthma",
-"Beclomethasone",
-"Betamethasone Valerate",
-"Child",
-"Clinical Trials as Topic",
-"Female",
-"Humans",
-"Male",
-"Methylprednisolone",
-"Middle Aged",
-"Placebos",
-"Substance Withdrawal Syndrome"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:57Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract/full text provided; title indicates a standard RCT comparing active inhaled steroids versus placebo likely as efficacy comparator rather than studying placebo effects.",
-"exclusion_reason": "placebo_control_only",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; randomized controlled trial compared two inhaled corticosteroids with placebo for chronic asthma treatment, with placebo used as the control.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"asthma",
-"inhaled corticosteroid",
-"beclomethasone",
-"betamethasone valerate",
-"randomized controlled trial",
-"inhalation",
-"1974"
-],
-"usage": {
-"input_tokens": 251,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 583,
-"cost_usd": 0.00137
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-09-01",
 "private_pdf": null
 },
 {
@@ -1041,20 +723,20 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:34Z",
+"classified_at": "2026-09-03T04:45:27Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates an empirical study of placebo response in schizophrenia and its relation to personality factors, meeting inclusion for placebo_response research.",
+"confidence": 0.4,
+"rationale": "Title indicates the paper explicitly studied placebo response in schizophrenia and its relation to Cattell personality factors, making placebo response the study focus despite missing abstract.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -1076,13 +758,13 @@
 "self_report"
 ],
 "design": [
-"single_group_pre_post"
+"parallel_groups_rct"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"attention_cognitive_appraisal"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "personality_traits"
@@ -1095,19 +777,20 @@
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"cattell 16pf",
 "schizophrenia",
+"cattell",
 "personality",
 "placebo response",
+"psychosis",
 "clinical trial",
 "1974"
 ],
 "usage": {
-"input_tokens": 1088,
-"cache_read_input_tokens": 4864,
+"input_tokens": 397,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 814,
-"cost_usd": 0.00202
+"output_tokens": 898,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1158,19 +841,19 @@
 "Clinical Trial",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:51Z",
+"classified_at": "2026-09-03T04:45:21Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Paper appears to empirically address validity of identical matching placebos (blinding/discrimination/taste), which is a methodological topic about placebo research and trial design.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title suggests a methodological question about placebo matching, so insufficient information to determine if it reports empirical placebo/nocebo effects or is a methods paper.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
@@ -1179,55 +862,33 @@
 ],
 "article_type": "methods_measurement",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"sensory_perception"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined the validity of supposedly identical matching oral placebos (taste/discrimination and blinding) in adults, focusing on trial design and placebo comparators.",
+"summary": "Examined the validity of identically matched placebos (whether placebos are indistinguishable from active drugs); abstract not available to confirm methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
+"drug-blinding",
+"placebo-matching",
+"pill appearance",
 "taste discrimination",
-"matching placebo",
-"capsules",
-"drug packaging",
-"clinical trials",
-"research design",
-"placebo validity"
+"packaging"
 ],
 "usage": {
-"input_tokens": 1129,
-"cache_read_input_tokens": 4864,
+"input_tokens": 438,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 660,
-"cost_usd": 0.00172
+"output_tokens": 746,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -1240,105 +901,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1001/archpsyc.1974.01760140066011",
 "cited_by_count": 15,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1056/nejm197407112910203",
-"title": "Effect of marihuana and placebo-marihuana smoking on angina pectoris.",
-"authors": [
-"Aronow WS",
-"Cassidy J"
-],
-"journal": "The New England journal of medicine",
-"journal_abbrev": "N Engl J Med",
-"year": 1974,
-"date": "1974-07-11",
-"doi": "10.1056/nejm197407112910203",
-"pmid": "4599385",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Angina Pectoris",
-"Blood Pressure",
-"Cannabis",
-"Carboxyhemoglobin",
-"Clinical Trials as Topic",
-"Exercise Test",
-"Heart Rate",
-"Humans",
-"Informed Consent",
-"Male",
-"Myocardium",
-"Oxygen Consumption",
-"Phytotherapy",
-"Placebos",
-"Veins"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:45Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates an RCT comparing marijuana and placebo-marijuana but it is unclear whether the paper analyzed placebo/nocebo effects or treated placebo only as a control.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reported a randomized trial comparing marihuana and placebo-marihuana for angina, but no abstract/full text available to determine whether placebo effects were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"marijuana",
-"cannabis",
-"angina pectoris",
-"placebo-smoking",
-"exercise test",
-"blood pressure",
-"heart rate"
-],
-"usage": {
-"input_tokens": 225,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 591,
-"cost_usd": 0.00138
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-07-11",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2340332802",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1056/nejm197407112910203",
-"cited_by_count": 169,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -1377,16 +939,16 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:30:01Z",
+"classified_at": "2026-09-03T04:45:32Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates an empirical investigation of how drug-name familiarity influences placebo effects, but no abstract or full text was available to confirm aims, design, or outcomes.",
-"exclusion_reason": null,
+"confidence": 0.4,
+"rationale": "No abstract or full text available to confirm whether placebo/nocebo phenomena were the explicit focus or primary analysis, though the title implies a study of placebo effects.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
@@ -1419,34 +981,35 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "treatment_cues_dose_route",
-"prior_treatment_experience"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "prior_experience",
-"treatment_characteristics"
+"expectation_level"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"inert_pill_capsule",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Title suggested an empirical study testing whether familiarity with drug names altered placebo effects, but no abstract was available to confirm methods or findings.",
+"summary": "Insufficient abstract available; title indicated the study examined whether familiarity with drug names influenced placebo effects on memory, motor skills, or perception.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"drug-name-familiarity",
-"brand-recognition",
-"dextroamphetamine",
+"drug-name",
+"brand-familiarity",
 "placebo",
+"dextroamphetamine",
 "memory",
 "motor-skills",
 "visual-perception"
 ],
 "usage": {
-"input_tokens": 192,
-"cache_read_input_tokens": 5760,
+"input_tokens": 397,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 861,
-"cost_usd": 0.00191
+"output_tokens": 1087,
+"cost_usd": 0.00242
 }
 },
 "sources": [
@@ -1502,131 +1065,16 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:49Z",
+"classified_at": "2026-09-03T04:45:28Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract available and title suggests a placebo substitution trial but insufficient information to determine whether placebo/nocebo effects or placebo responses were the study's primary focus or merely a control/comparator.",
+"confidence": 0.3,
+"rationale": "No abstract available and the title implies placebo was used as a comparator in a drug trial of chlorpropamide, so there is insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
 "exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [],
-"condition_domain": [
-"endocrine_hormonal"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "No abstract available; title indicated a trial involving placebo in long-term chlorpropamide-treated diabetic patients, but aims, design, and findings were not reported in the record.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"chlorpropamide",
-"sulfonylurea",
-"diabetes mellitus",
-"placebo substitution",
-"withdrawal"
-],
-"usage": {
-"input_tokens": 223,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 596,
-"cost_usd": 0.00139
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-06-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2065952684",
-"oa_status": "bronze",
-"oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/BF00423034.pdf",
-"landing_url": "https://doi.org/10.1007/bf00423034",
-"cited_by_count": 14,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4599160",
-"title": "Double-blind evaluation of diazepam, sodium pentobarbital, and placebo as adjunctive premedicants prior to discography.",
-"authors": [
-"Feffer HL"
-],
-"journal": "Clinical orthopaedics and related research",
-"journal_abbrev": "Clin Orthop Relat Res",
-"year": 1974,
-"date": "1974-05-01",
-"doi": null,
-"pmid": "4599160",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adjuvants, Anesthesia",
-"Adult",
-"Aged",
-"Anxiety",
-"Blood Pressure",
-"Clinical Trials as Topic",
-"Cognition Disorders",
-"Consciousness",
-"Cooperative Behavior",
-"Diazepam",
-"Drug Evaluation",
-"Female",
-"Humans",
-"Infusions, Parenteral",
-"Intervertebral Disc Displacement",
-"Male",
-"Memory",
-"Middle Aged",
-"Pentobarbital",
-"Placebos",
-"Preanesthetic Medication",
-"Pulse",
-"Radiography",
-"Relaxation",
-"Respiration"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:47Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Paper is a double-blind RCT comparing two active premedicants with placebo likely as a comparator for drug efficacy, but the abstract is unavailable so it's unclear whether the placebo/placebo response was analyzed as an object of study.",
-"exclusion_reason": "placebo_control_only",
 "peer_reviewed": true
 },
 "tags": {
@@ -1643,30 +1091,36 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Randomized double-blind trial compared diazepam, pentobarbital, and placebo as premedication before discography; abstract/results not available.",
+"summary": "No abstract available; title indicated a placebo trial in long-term chlorpropamide-treated diabetic patients, but it is unclear whether placebo/nocebo effects or placebo responses were the study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"discography",
-"premedication",
-"diazepam",
-"pentobarbital",
-"preanesthetic",
-"placebo-controlled"
+"chlorpropamide",
+"diabetes",
+"sulfonylurea",
+"placebo",
+"clinical trial",
+"1974"
 ],
 "usage": {
-"input_tokens": 274,
-"cache_read_input_tokens": 5760,
+"input_tokens": 428,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 634,
-"cost_usd": 0.00148
+"output_tokens": 771,
+"cost_usd": 0.0018
 }
 },
 "sources": [
 "pubmed_query"
 ],
-"date_added": "1974-05-01",
-"private_pdf": null
+"date_added": "1974-06-01",
+"private_pdf": null,
+"openalex_id": "https://openalex.org/W2065952684",
+"oa_status": "bronze",
+"oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/BF00423034.pdf",
+"landing_url": "https://doi.org/10.1007/bf00423034",
+"cited_by_count": 14,
+"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "pmid:4523882",
@@ -1693,191 +1147,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:40Z",
+"classified_at": "2026-09-03T04:45:51Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH term indicate the paper's main topic is the placebo effect in dental pain, meeting inclusion criterion for placebo science even though abstract is unavailable.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title implies discussion of placebo in dental pain but insufficient information to determine whether placebo effects were empirically studied or merely discussed.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses the placebo effect as an aid to pain control in dentistry.",
+"summary": "No abstract available; title suggested a discussion of using the placebo effect to aid pain control in dentistry, but methods and results were not available to judge.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dentistry",
 "dental pain",
-"analgesia",
 "placebo",
-"pain control",
+"anxiety",
 "1974"
 ],
 "usage": {
-"input_tokens": 163,
-"cache_read_input_tokens": 5760,
+"input_tokens": 368,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 621,
-"cost_usd": 0.00143
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-05-01",
-"private_pdf": null
-},
-{
-"id": "pmid:4209521",
-"title": "Galvanic skin responses (GSR) and plethysmographic changes induced by chlorimipramine, imipramine and placebo.",
-"authors": [
-"Lapierre YD"
-],
-"journal": "Current therapeutic research, clinical and experimental",
-"journal_abbrev": "Curr Ther Res Clin Exp",
-"year": 1974,
-"date": "1974-05-01",
-"doi": null,
-"pmid": "4209521",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adjustment Disorders",
-"Analysis of Variance",
-"Anxiety Disorders",
-"Arousal",
-"Blood Circulation",
-"Clinical Trials as Topic",
-"Dibenzazepines",
-"Female",
-"Fingers",
-"Galvanic Skin Response",
-"Humans",
-"Imipramine",
-"Male",
-"Placebos",
-"Plethysmography",
-"Psychiatric Status Rating Scales",
-"Regional Blood Flow",
-"Time Factors"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:30Z",
-"screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title and publication types indicate a controlled clinical trial that measured autonomic (GSR, plethysmography) responses to placebo as well as active drugs, so placebo responses were an object of measurement.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"anxiety_disorders"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress",
-"cardiovascular_bp",
-"other"
-],
-"outcome_measures": [
-"autonomic"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"other"
-]
-},
-"summary": "Measured galvanic skin response and plethysmographic (regional blood flow) changes after chlorimipramine, imipramine, and placebo in humans in a controlled clinical trial.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"galvanic skin response",
-"plethysmography",
-"imipramine",
-"chlorimipramine",
-"placebo",
-"autonomic",
-"1974",
-"clinical trial"
-],
-"usage": {
-"input_tokens": 254,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 964,
-"cost_usd": 0.00214
+"output_tokens": 557,
+"cost_usd": 0.00135
 }
 },
 "sources": [
@@ -1920,15 +1234,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:30:01Z",
+"classified_at": "2026-09-03T04:46:39Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Title indicates the study specifically manipulated instructions/demand characteristics to compare active and placebo treatment effects for insomnia, so placebo effects are an object of study.",
+"rationale": "Title indicates an experimental comparison of active and placebo treatments with manipulated demand (expectation) instructions, making placebo effects/context a stated focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1949,44 +1263,48 @@
 ],
 "outcome_measures": [
 "self_report",
-"clinician_rated"
+"behavioral_performance"
 ],
 "design": [
-"balanced_placebo",
-"parallel_groups_rct"
+"parallel_groups_rct",
+"balanced_placebo"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"treatment_cues_dose_route",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"expectation_level"
+"expectation_level",
+"none_reported"
 ],
 "intervention_type": [
-"sham_psychological"
+"inert_pill_capsule",
+"other"
 ]
 },
-"summary": "Tested active and placebo treatments for moderate insomnia under counterdemand versus positive demand instructional sets, manipulating expectation/demand characteristics.",
+"summary": "Tested active versus placebo treatments for moderate insomnia while manipulating demand (counterdemand vs positive demand) instructions to examine treatment and expectancy effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "insomnia",
 "demand characteristics",
+"expectancy",
 "relaxation",
 "behavior therapy",
-"sleep initiation",
-"counterdemand",
+"Steinmark",
+"Borkovec",
 "1974"
 ],
 "usage": {
-"input_tokens": 197,
-"cache_read_input_tokens": 5760,
+"input_tokens": 402,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 904,
-"cost_usd": 0.002
+"output_tokens": 932,
+"cost_usd": 0.00211
 }
 },
 "sources": [
@@ -2000,206 +1318,6 @@
 "landing_url": "https://doi.org/10.1037/h0036489",
 "cited_by_count": 144,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1002/j.1552-4604.1974.tb01393.x",
-"title": "A comparative study of Excedrin P.M. and placebo.",
-"authors": [
-"Sunshine A"
-],
-"journal": "Journal of clinical pharmacology",
-"journal_abbrev": "J Clin Pharmacol",
-"year": 1974,
-"date": "1974-04-01",
-"doi": "10.1002/j.1552-4604.1974.tb01393.x",
-"pmid": "4150895",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acetaminophen",
-"Adult",
-"Aged",
-"Analgesics",
-"Aspirin",
-"Clinical Trials as Topic",
-"Female",
-"Histamine H1 Antagonists",
-"Humans",
-"Hypnotics and Sedatives",
-"Male",
-"Middle Aged",
-"Nonprescription Drugs",
-"Placebos",
-"Pyridines",
-"Salicylamides",
-"Sleep",
-"Statistics as Topic",
-"Surveys and Questionnaires",
-"Time Factors"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:18Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title indicates a placebo-controlled trial of Excedrin P.M. but no abstract or full text was available to judge whether the paper studied placebo/nocebo effects versus treating the active drug's efficacy.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Compared Excedrin P.M. with placebo in a 1974 clinical trial, but no abstract was available to determine whether placebo effects/responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"excedrin pm",
-"diphenhydramine",
-"acetaminophen",
-"analgesic",
-"sleep",
-"placebo-controlled",
-"1974",
-"clinical trial"
-],
-"usage": {
-"input_tokens": 1141,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 581,
-"cost_usd": 0.00157
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-04-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2107114229",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/j.1552-4604.1974.tb01393.x",
-"cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4206723",
-"title": "A comparison of lorazepam, diazepam and placebo in the treatment of anxiety states.",
-"authors": [
-"Singh AN",
-"Saxena B"
-],
-"journal": "Current therapeutic research, clinical and experimental",
-"journal_abbrev": "Curr Ther Res Clin Exp",
-"year": 1974,
-"date": "1974-03-01",
-"doi": null,
-"pmid": "4206723",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Anxiety Disorders",
-"Benzodiazepinones",
-"Blood Pressure",
-"Body Weight",
-"Chlorobenzenes",
-"Clinical Trials as Topic",
-"Diazepam",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Placebos",
-"Psychiatric Status Rating Scales",
-"Pulse",
-"Time Factors"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:27Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and the trial title suggests a drug efficacy RCT with placebo as comparator, so it's unclear whether the paper analyzed placebo/nocebo effects or responses.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Trial compared lorazepam, diazepam, and placebo for anxiety in humans, but no abstract/full text available to determine whether placebo/nocebo effects or responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"anxiety",
-"lorazepam",
-"diazepam",
-"placebo-controlled",
-"benzodiazepine",
-"1974"
-],
-"usage": {
-"input_tokens": 1131,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 701,
-"cost_usd": 0.00181
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-03-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1111/j.1365-2133.1974.tb06393.x",
@@ -2228,36 +1346,54 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:30:22Z",
+"classified_at": "2026-09-03T04:45:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; the title indicates a reported 'placebo response' in topical paraffin/propylene glycol but there is insufficient information to judge study design or whether placebo/nocebo was the object of study.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names a 'placebo response' to a topical preparation, indicating placebo phenomena were the paper's subject despite no abstract being available.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "editorial_letter",
 "species": "human",
 "population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"other"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"topical_cream"
+]
 },
-"summary": "No abstract available; the letter title reported a 'placebo response' to white soft paraffin–propylene glycol in humans but methods and results were not provided.",
+"summary": "No abstract available; title reported a placebo response to white soft paraffin-propylene glycol in a dermatology context.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -2265,17 +1401,14 @@
 "white soft paraffin",
 "propylene glycol",
 "placebo response",
-"skin tests",
-"topical",
-"1974",
-"letter"
+"skin test"
 ],
 "usage": {
-"input_tokens": 1077,
-"cache_read_input_tokens": 4864,
+"input_tokens": 386,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 670,
-"cost_usd": 0.00173
+"output_tokens": 757,
+"cost_usd": 0.00176
 }
 },
 "sources": [
@@ -2289,133 +1422,6 @@
 "landing_url": "https://doi.org/10.1111/j.1365-2133.1974.tb06393.x",
 "cited_by_count": 3,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4593126",
-"title": "The comparative anxiolytic effects of placebo, imipramine and chlorimipramine using psychiatric and psychophysiological measurements.",
-"authors": [
-"Lapierre YD"
-],
-"journal": "International journal of clinical pharmacology, therapy and toxicology",
-"journal_abbrev": "Int J Clin Pharmacol",
-"year": 1974,
-"date": "1974-01-01",
-"doi": null,
-"pmid": "4593126",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Alanine Transaminase",
-"Analysis of Variance",
-"Anxiety",
-"Aspartate Aminotransferases",
-"Blood Glucose",
-"Blood Pressure",
-"Blood Urea Nitrogen",
-"Clinical Trials as Topic",
-"Dibenzazepines",
-"Female",
-"Galvanic Skin Response",
-"Humans",
-"Imipramine",
-"Light",
-"Male",
-"Middle Aged",
-"Placebos",
-"Psychiatric Status Rating Scales",
-"Pulse",
-"Sound",
-"Time Factors"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:46Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title and indexing indicate a controlled clinical trial that compared placebo with active drugs on anxiolytic outcomes, so placebo effects/responses are an object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult",
-"healthy_pediatric",
-"anxiety_disorders"
-],
-"age_group": [
-"children_adolescents",
-"adults"
-],
-"condition_domain": [
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated",
-"autonomic"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Compared anxiolytic effects of placebo versus imipramine and chlorimipramine using psychiatric rating scales and psychophysiological measures (e.g., galvanic skin response).",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"imipramine",
-"chlorimipramine",
-"galvanic skin response",
-"tricyclic",
-"anxiety",
-"1974",
-"placebo-controlled",
-"psychophysiology"
-],
-"usage": {
-"input_tokens": 1173,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1039,
-"cost_usd": 0.00249
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-01-01",
-"private_pdf": null
 },
 {
 "id": "pmid:4536566",
@@ -2441,15 +1447,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:36Z",
+"classified_at": "2026-09-03T04:45:34Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract or full text available and title alone is insufficient to determine whether the article studied placebo/nocebo phenomena or was a general commentary on aspirin.",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided and the title alone does not establish whether placebo/nocebo phenomena were the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -2467,22 +1473,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper investigated placebo phenomena; title questioned whether aspirin's effects reflected specific drug action or placebo.",
+"summary": "Insufficient information to determine whether the article addressed placebo or nocebo effects; no abstract available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "aspirin",
 "placebo",
-"history",
+"wonder drug",
 "1974",
-"analgesic"
+"di palma",
+"editorial"
 ],
 "usage": {
-"input_tokens": 1048,
-"cache_read_input_tokens": 4864,
+"input_tokens": 357,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 625,
-"cost_usd": 0.00163
+"output_tokens": 650,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -2490,209 +1497,5 @@
 ],
 "date_added": "1974-01-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1111/j.1600-0447.1974.tb08896.x",
-"title": "A comparison between lithium, placebo and a diuretic in premenstrual tension.",
-"authors": [
-"Mattsson B",
-"von Schoultz B"
-],
-"journal": "Acta psychiatrica Scandinavica. Supplementum",
-"journal_abbrev": "Acta Psychiatr Scand Suppl",
-"year": 1974,
-"date": "1974-01-01",
-"doi": "10.1111/j.1600-0447.1974.tb08896.x",
-"pmid": "4618721",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Chlorthalidone",
-"Clinical Trials as Topic",
-"Drug Evaluation",
-"Female",
-"Humans",
-"Lithium",
-"Placebos",
-"Premenstrual Syndrome"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:56Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates a randomized controlled comparison including a placebo but no abstract or full text to confirm whether the paper analyzed placebo/placebo-response as an object of study rather than serving only as a comparator for drug efficacy.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Compared lithium, placebo, and a diuretic for premenstrual tension in a 1974 controlled clinical trial; abstract not available to determine focus on placebo effects.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"premenstrual tension",
-"premenstrual syndrome",
-"lithium",
-"chlorthalidone",
-"1974",
-"controlled trial"
-],
-"usage": {
-"input_tokens": 1100,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 425,
-"cost_usd": 0.00125
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2053604732",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.1600-0447.1974.tb08896.x",
-"cited_by_count": 77,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/archpsyc.1974.01760070050008",
-"title": "Depression subtypes and response to phenelzine, diazepam, and a placebo. Results of a nine hospital collaborative study.",
-"authors": [
-"Raskin A",
-"Schulterbrandt JG",
-"Reatig N",
-"Crook TH",
-"Odle D"
-],
-"journal": "Archives of general psychiatry",
-"journal_abbrev": "Arch Gen Psychiatry",
-"year": 1974,
-"date": "1974-01-01",
-"doi": "10.1001/archpsyc.1974.01760070050008",
-"pmid": "4587069",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Anxiety",
-"Bipolar Disorder",
-"Clinical Trials as Topic",
-"Depression",
-"Diazepam",
-"Drug Evaluation",
-"Female",
-"Hospitalization",
-"Hostility",
-"Humans",
-"Male",
-"Middle Aged",
-"Phenelzine",
-"Placebos",
-"Psychiatric Status Rating Scales",
-"Remission, Spontaneous",
-"Schizophrenia",
-"Sleep Wake Disorders"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:29:37Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Insufficient information (no abstract) to determine whether the paper analyzed placebo/nocebo effects or only used placebo as a control in an efficacy RCT.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"mood_depression"
-],
-"outcome_measures": [],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "No abstract available; randomized trial across nine hospitals comparing phenelzine, diazepam, and placebo in depressed patients, stratified by depression subtype.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"phenelzine",
-"diazepam",
-"depression subtypes",
-"antidepressant",
-"randomized controlled trial",
-"1974"
-],
-"usage": {
-"input_tokens": 258,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 507,
-"cost_usd": 0.00122
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1974-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2018609775",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/archpsyc.1974.01760070050008",
-"cited_by_count": 96,
-"openalex_checked": "2026-09-02v2"
 }
 ]

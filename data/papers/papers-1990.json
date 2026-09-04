@@ -44,15 +44,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:45Z",
+"classified_at": "2026-09-03T04:35:21Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized crossover trial explicitly randomized untreated hypertensives to placebo versus no therapy and tested for a placebo effect on ambulatory blood pressure.",
+"rationale": "Randomized crossover comparison of placebo versus no treatment directly tested for a placebo effect on ambulatory blood pressure (placebo vs no-treatment design).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -72,43 +72,46 @@
 "cardiovascular_bp"
 ],
 "outcome_measures": [
-"autonomic",
-"clinical_endpoint"
+"autonomic"
 ],
 "design": [
-"crossover_rct"
+"crossover_rct",
+"placebo_vs_no_treatment_arm"
 ],
 "effects": [
 "null_objective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
+"emotion_anxiety_regulation",
+"attention_cognitive_appraisal",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"disease_severity_duration"
+"disease_severity_duration",
+"mood_anxiety_state"
 ],
 "intervention_type": [
 "inert_pill_capsule"
 ]
 },
-"summary": "Found adaptive decreases in 24 h ambulatory blood pressure across repeated monitorings but no significant placebo effect of placebo administration versus no therapy.",
-"key_finding": "No significant BP effects of placebo; repeated monitoring produced mean 24 h SBP/DBP decreases of ~3–5 and ~2–3 mmHg respectively (n=21).",
+"summary": "Randomized crossover trial in 21 untreated hypertensives compared placebo versus no therapy and found no significant effect of placebo on 24 h ambulatory blood pressure, with adaptation and white-coat effects explaining repeat-monitoring decreases.",
+"key_finding": "No significant BP-lowering effect of placebo compared with no treatment; repeated-monitoring BP decreases were related to initial BP and white-coat/physician alarm reactions.",
 "sample_size": 21,
 "free_keywords": [
 "ambulatory blood pressure",
 "white coat",
 "24-h monitoring",
-"hypertension",
+"adaptation",
 "crossover",
-"adaptation"
+"hypertension",
+"alarm reaction"
 ],
 "usage": {
-"input_tokens": 662,
-"cache_read_input_tokens": 5760,
+"input_tokens": 867,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 812,
-"cost_usd": 0.00193
+"output_tokens": 898,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -158,15 +161,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:48Z",
+"classified_at": "2026-09-03T04:35:22Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical randomized study that directly tested the causal effect of placebo on blood pressure measures and analyzed placebo-related measurement differences.",
+"rationale": "Paper experimentally tested whether placebo administration altered blood pressure readings and reported differential effects by measurement method, making placebo phenomena the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -177,7 +180,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult"
+"other_clinical"
 ],
 "age_group": [
 "adults"
@@ -186,15 +189,14 @@
 "cardiovascular_bp"
 ],
 "outcome_measures": [
-"autonomic",
 "clinical_endpoint"
 ],
 "design": [
-"parallel_groups_rct"
+"parallel_groups_rct",
+"within_subject_experimental"
 ],
 "effects": [
-"significant_objective",
-"null_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "attention_cognitive_appraisal"
@@ -206,130 +208,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Conducted randomized experiments and found placebo did not alter intra-arterial ambulatory blood pressure but produced an apparent fall in indirect (Korotkoff) measurements, attributed to abolition of the orienting reflex.",
-"key_finding": "Placebo produced no change in direct intra-arterial BP but reduced indirect Korotkoff BP, likely reflecting reduced orienting reflex rather than true BP change.",
+"summary": "Conducted experiments showing placebo administration did not alter intra-arterial ambulatory blood pressure but produced an apparent fall in indirectly measured (Korotkoff) pressure, attributed to abolition of the orienting reflex.",
+"key_finding": "Found no placebo effect on intra-arterial BP but an apparent placebo-associated fall on indirect Korotkoff measures, likely due to reduced orienting reflex.",
 "sample_size": null,
 "free_keywords": [
-"korotkoff",
+"indoramin",
 "intra-arterial",
+"Korotkoff",
 "ambulatory blood pressure",
-"indirect blood pressure",
-"orienting reflex"
+"orienting reflex",
+"hypertension"
 ],
 "usage": {
-"input_tokens": 1242,
-"cache_read_input_tokens": 4864,
+"input_tokens": 551,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 899,
-"cost_usd": 0.00223
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-12-01",
-"private_pdf": null
-},
-{
-"id": "pmid:2081990",
-"title": "Evaluation of pharmacotherapy by indirect ambulatory blood pressure monitoring in short- and long-term studies: review of the literature.",
-"authors": [
-"Schulte KL",
-"Meyer-Sabellek W"
-],
-"journal": "Journal of hypertension. Supplement : official journal of the International Society of Hypertension",
-"journal_abbrev": "J Hypertens Suppl",
-"year": 1990,
-"date": "1990-12-01",
-"doi": null,
-"pmid": "2081990",
-"pmcid": null,
-"abstract": "Over a period of 24 h, blood pressure and the heart rate vary according to a circadian rhythm of waking, sleeping and work periods and also according to stress factors. Thus, in clinical trials, blood pressure measurements that are taken only casually in the office may be inadequate to assess the potency and duration of antihypertensive drug effects. A number of studies have demonstrated that non-invasive 24-h ambulatory blood pressure measurement is generally free of any placebo effect. This method can simplify the design of trials to determine the efficacy of antihypertensive agents. Furthermore, a smaller number of patients is required for drug trials that use this type of monitoring, since the intrasubject variability in blood pressure is reduced compared with clinic measurements. Thus, indirect ambulatory 24-h blood pressure measurement is useful in assessing acute and long-term drug efficacy, and also the efficacy over 24 h after a single drug dose or a new form of drug application.",
-"keywords": [],
-"mesh": [
-"Antihypertensive Agents",
-"Blood Pressure",
-"Blood Pressure Determination",
-"Blood Pressure Monitors",
-"Circadian Rhythm",
-"Clinical Trials as Topic",
-"Drug Evaluation",
-"Humans",
-"Hypertension",
-"Placebo Effect",
-"Research Design"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:42Z",
-"screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Review focused on trial methodology noting that 24-h ambulatory blood pressure monitoring is generally free of placebo effects, addressing placebo-related measurement issues relevant to placebo science.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [
-"cardiovascular"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"cardiovascular_bp"
-],
-"outcome_measures": [
-"clinical_endpoint"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Reviewed literature on 24-h ambulatory blood pressure monitoring and concluded it is generally free of placebo effects and useful for antihypertensive drug trials.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"ambulatory blood pressure monitoring",
-"ABPM",
-"office blood pressure",
-"antihypertensive trials",
-"circadian rhythm",
-"blood pressure variability",
-"placebo effect measurement"
-],
-"usage": {
-"input_tokens": 1313,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 789,
-"cost_usd": 0.00203
+"output_tokens": 952,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -376,15 +271,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:00:42Z",
+"classified_at": "2026-09-03T04:35:22Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Title and MeSH terms indicate the paper discusses ethical/clinical aspects of placebo use (placebo_science_other) though no abstract is available.",
+"rationale": "Title explicitly addresses use and abuse of placebos suggesting the paper's primary focus is on placebo ethics/clinical practice rather than serving as a comparator in a trial despite no abstract being available.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -393,17 +288,11 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [
-"clinicians_providers"
-],
+"species": "not_applicable",
+"population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -411,8 +300,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -421,24 +309,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses ethical, clinical, and conceptual issues surrounding the use and misuse of placebos in medical practice.",
+"summary": "Discussed ethical and clinical issues around the use and misuse of placebos in medical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ethics",
 "deception",
-"family practice",
-"randomized controlled trials",
-"therapeutic experimentation",
-"autonomy",
-"beneficence"
+"clinical_practice",
+"placebo_prescribing",
+"doctor-patient_relation"
 ],
 "usage": {
-"input_tokens": 1092,
-"cache_read_input_tokens": 4864,
+"input_tokens": 401,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 769,
-"cost_usd": 0.00193
+"output_tokens": 589,
+"cost_usd": 0.00143
 }
 },
 "sources": [
@@ -493,21 +379,20 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:45Z",
+"classified_at": "2026-09-03T04:35:26Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized double-blind trial that tested whether continuing versus discontinuing placebo affected maintenance of placebo response in patients with chronic mild depression.",
+"rationale": "Randomized double-blind trial explicitly tested maintenance of a prior placebo response by continuing versus discontinuing placebo, so placebo response was the study focus (experimental contrast of pill-taking).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
 "placebo_response"
 ],
 "article_type": "empirical_primary",
@@ -534,7 +419,7 @@
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
-"therapeutic_ritual_context"
+"prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
@@ -543,24 +428,22 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Randomized double-blind trial tested whether continuing versus discontinuing placebo affected maintenance of placebo response in 50 outpatients with chronic mild depression and found no difference in 6-week relapse rates.",
-"key_finding": "About half of patients in both continued-placebo and discontinued-placebo groups relapsed within 6 weeks, indicating no maintenance benefit of continued pill-taking.",
+"summary": "Randomized trial tested whether continuing versus stopping placebo pills affected maintenance of an initial placebo response in patients with chronic mild depression and found no difference in relapse at 6 weeks.",
+"key_finding": "Found ~50% relapse in both continued-placebo and discontinuation groups, indicating pill-taking did not maintain placebo response.",
 "sample_size": 50,
 "free_keywords": [
-"chronic mild depression",
 "placebo washout",
+"antidepressant trials",
 "relapse",
-"maintenance",
-"pill-taking",
-"single-blind lead-in",
-"antidepressant trial design"
+"single-blind placebo",
+"chronic mild depression"
 ],
 "usage": {
-"input_tokens": 1280,
-"cache_read_input_tokens": 4864,
+"input_tokens": 589,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 962,
-"cost_usd": 0.00237
+"output_tokens": 955,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -611,15 +494,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:44Z",
+"classified_at": "2026-09-03T04:35:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Observed treatment-independent conception (improvement) after clinic attendance examined as a placebo/contextual (placebo) response in subfertile couples.",
+"confidence": 0.9,
+"rationale": "Study explicitly examined a treatment-independent (placebo) response to clinic attendance and reported conception rates attributable to attendance rather than medical interventions, meeting inclusion criterion 2.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -648,32 +531,32 @@
 "significant_objective"
 ],
 "mechanisms": [
-"therapeutic_ritual_context",
-"provider_patient_interaction"
+"therapeutic_ritual_context"
 ],
 "moderators": [
-"disease_severity_duration"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Observed that a subgroup of couples with prolonged subfertility experienced a treatment-independent cumulative conception rate following attendance at a tertiary referral clinic.",
-"key_finding": "Found a 22% cumulative conception rate independent of investigations or therapy.",
+"summary": "Reported that a subgroup of subfertile couples conceived after clinic attendance independent of investigations or therapy, showing a treatment-independent cumulative conception rate of 22%.",
+"key_finding": "Found a 22% cumulative conception rate attributed to clinic attendance (treatment-independent) across 4–18 years of subfertility.",
 "sample_size": null,
 "free_keywords": [
 "subfertility",
 "infertility",
 "clinic attendance",
 "conception rate",
-"tertiary referral"
+"tertiary referral",
+"natural conception"
 ],
 "usage": {
-"input_tokens": 1263,
-"cache_read_input_tokens": 4864,
+"input_tokens": 572,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 655,
-"cost_usd": 0.00175
+"output_tokens": 838,
+"cost_usd": 0.00197
 }
 },
 "sources": [
@@ -714,79 +597,79 @@
 "Research Support, U.S. Gov't, P.H.S.",
 "Review"
 ],
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:53Z",
+"classified_at": "2026-09-03T04:35:30Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review whose main focus was the placebo effect in heart failure and discussed magnitude, hemodynamic and symptomatic responses and trial implications.",
+"confidence": 0.8,
+"rationale": "Narrative review explicitly focused on the magnitude, mechanisms and trial implications of placebo responses in heart failure patients (placebo as the main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"cardiovascular"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"cardiovascular_bp",
-"global_health_qol",
-"pain",
-"other"
+"cardiovascular_bp"
 ],
 "outcome_measures": [
 "self_report",
+"behavioral_performance",
 "clinical_endpoint",
-"autonomic",
-"behavioral_performance"
+"autonomic"
 ],
 "design": [
 "not_applicable"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective",
+"significant_objective"
 ],
 "mechanisms": [
 "therapeutic_ritual_context",
+"provider_patient_interaction",
 "trial_methodology_placebo_response",
 "prior_treatment_experience"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Reviews evidence that many heart-failure trial participants show symptomatic and hemodynamic improvements with placebo, discusses magnitude (~25–35% symptom reduction) and implications for clinical care and research.",
-"key_finding": "Reported that three months of placebo produced symptom reduction in 25–35% of patients, increased cardiac output, decreased pulmonary wedge pressure, and improved exercise tolerance by ~90–120 seconds.",
+"summary": "Reviewed evidence that placebo treatment in heart failure trials produced measurable symptom, hemodynamic, and exercise-capacity improvements and discussed mechanisms and trial implications.",
+"key_finding": "Reported that ~25–35% of patients had symptom reduction after three months of placebo, with improvements in cardiac output, pulmonary wedge pressure, and exercise tolerance.",
 "sample_size": null,
 "free_keywords": [
 "heart failure",
-"pulmonary wedge pressure",
-"cardiac output",
+"hemodynamics",
 "exercise tolerance",
-"clinical trials"
+"placebo magnitude",
+"clinical trials",
+"spontaneous improvement"
 ],
 "usage": {
-"input_tokens": 1256,
-"cache_read_input_tokens": 4864,
+"input_tokens": 565,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 775,
-"cost_usd": 0.00199
+"output_tokens": 771,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -837,15 +720,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:54Z",
+"classified_at": "2026-09-03T04:35:32Z",
 "screening": {
 "decision": "include",
-"confidence": 0.82,
-"rationale": "Experimental human study that orthogonally manipulated alcohol consumption and expectancy (balanced-placebo style) to test placebo/expectancy effects on subjective intoxication.",
+"confidence": 0.9,
+"rationale": "Experimental manipulation of beverage (alcohol vs. placebo beverage) with expectancy instructions explicitly tested placebo-equivalence of subjective intoxication, addressing boundary conditions for alcohol placebos.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -869,7 +752,7 @@
 "pharmacokinetic"
 ],
 "design": [
-"balanced_placebo"
+"parallel_groups_rct"
 ],
 "effects": [
 "mixed_inconsistent"
@@ -879,33 +762,31 @@
 "treatment_cues_dose_route"
 ],
 "moderators": [
-"treatment_characteristics",
-"expectation_level"
+"treatment_characteristics"
 ],
 "intervention_type": [
 "placebo_food_drink",
-"verbal_suggestion_only"
+"other"
 ]
 },
-"summary": "Tested how alcohol consumption and expectancy jointly affected subjective intoxication and found that expectancy-produced equivalence held only when actual BAC remained below .04% and diverged at/above .04%.",
-"key_finding": "Placebo (told-alcohol nonalcoholic drink) produced similar intoxication reports to true alcohol only when alcohol subjects' BACs were below .04%; above .04% subjective ratings were higher in alcohol recipients.",
+"summary": "Tested when participants who believed they drank alcohol but received a placebo showed equivalent subjective intoxication to those who actually consumed alcohol; equivalence held only when BAC in alcohol group remained below .04%",
+"key_finding": "Placebo drinkers who believed they had alcohol reported intoxication similar to alcohol drinkers only when alcohol drinkers' BAC remained <0.04%; above .04% subjective intoxication was higher in alcohol recipients.",
 "sample_size": null,
 "free_keywords": [
-"beer",
-"vodka",
-"breathalyzer",
-"BAC",
-"intoxication",
-"expectancy",
 "alcohol placebo",
-"set"
+"blood alcohol concentration",
+"subjective intoxication",
+"expectancy",
+"placebo beverage",
+"breath alcohol",
+"manipulation check"
 ],
 "usage": {
-"input_tokens": 1280,
-"cache_read_input_tokens": 4864,
+"input_tokens": 589,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 821,
-"cost_usd": 0.00208
+"output_tokens": 937,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -918,130 +799,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.15288/jsa.1990.51.500",
 "cited_by_count": 58,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/j.1600-0447.1990.tb01401.x",
-"title": "Drug treatment of panic disorder: early response to treatment as a predictor of final outcome.",
-"authors": [
-"Albus M",
-"Lecrubier Y",
-"Maier W",
-"Buller R",
-"Rosenberg R",
-"Hippius H"
-],
-"journal": "Acta psychiatrica Scandinavica",
-"journal_abbrev": "Acta Psychiatr Scand",
-"year": 1990,
-"date": "1990-11-01",
-"doi": "10.1111/j.1600-0447.1990.tb01401.x",
-"pmid": "2281806",
-"pmcid": null,
-"abstract": "One of the core problems in clinical research is the detection of early changes in target symptoms that predict future therapeutic outcome. To analyze potential predictors of outcome, data of a multicenter study on patients with panic disorder were used. A total of 1010 patients were randomly allocated either to alprazolam, imipramine or placebo treatment. Early improvement in the number of spontaneous panic attacks within the first week of treatment predicted outcome exclusively in the alprazolam group. In contrast, placebo responders and nonresponders were differentiated by early changes in anticipatory anxiety intensity. For tricyclic antidepressants such as imipramine an evaluation period of more than one week is required to allow conclusions about outcome.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Agoraphobia",
-"Alprazolam",
-"Anxiety Disorders",
-"Arousal",
-"Double-Blind Method",
-"Female",
-"Humans",
-"Imipramine",
-"Male",
-"Panic",
-"Psychiatric Status Rating Scales"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Multicenter Study",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:03Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Secondary analysis of an RCT explicitly analyzed predictors of placebo-arm response (placebo responders vs nonresponders), meeting inclusion for placebo_response/placebo_arm analysis.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "secondary_analysis",
-"species": "human",
-"population": [
-"anxiety_disorders"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"placebo_arm_secondary_analysis",
-"parallel_groups_rct"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Analyzed multicenter RCT data (alprazolam, imipramine, placebo; N=1010) and found early symptom changes predicted later outcome, with placebo responders distinguished by early reductions in anticipatory anxiety.",
-"key_finding": "Early reductions in anticipatory anxiety differentiated placebo responders from nonresponders; early reduction in spontaneous panic predicted outcome for alprazolam but not imipramine.",
-"sample_size": 1010,
-"free_keywords": [
-"panic disorder",
-"alprazolam",
-"imipramine",
-"anticipatory anxiety",
-"early response",
-"multicenter rct",
-"psychiatric status scales"
-],
-"usage": {
-"input_tokens": 1272,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 936,
-"cost_usd": 0.00231
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-11-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2043211915",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.1600-0447.1990.tb01401.x",
-"cited_by_count": 27,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -1082,15 +839,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:37Z",
+"classified_at": "2026-09-03T04:35:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Empirical analysis focused on predictors of outcome and dropout within a placebo group from a panic-disorder treatment study (placebo response / placebo-arm analysis).",
+"confidence": 0.88,
+"rationale": "Analysed outcomes and completion specifically within the placebo arm to test how personality predicted placebo-group response and dropout (placebo-arm analytic focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1098,7 +855,7 @@
 "study_focus": [
 "placebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
 "anxiety_disorders"
@@ -1114,14 +871,14 @@
 "clinician_rated"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
-"single_group_pre_post"
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "mixed_inconsistent"
 ],
 "mechanisms": [
-"other"
+"prior_treatment_experience",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "personality_traits"
@@ -1130,24 +887,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed 28 panic-disorder patients in a placebo arm and found that higher borderline and paranoid personality traits predicted worse global outcomes and early dropout, while spontaneous panic attacks were unaffected by personality.",
-"key_finding": "Higher borderline and paranoid personality traits correlated with poorer global outcome and increased early dropout in the placebo group.",
+"summary": "Analyzed 28 panic-disorder patients from a trial placebo group and found personality traits predicted study dropout and poorer global outcome, while spontaneous panic attacks were unaffected.",
+"key_finding": "Higher borderline and paranoid personality traits were associated with worse global outcome and greater early dropout in the placebo group (N=28).",
 "sample_size": 28,
 "free_keywords": [
 "panic disorder",
 "placebo arm",
+"personality inventory",
 "dropout",
-"borderline personality",
-"paranoid personality",
-"psychiatric status rating",
-"predictors"
+"global outcome",
+"psychiatric status scales"
 ],
 "usage": {
-"input_tokens": 1196,
-"cache_read_input_tokens": 4864,
+"input_tokens": 505,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 795,
-"cost_usd": 0.00201
+"output_tokens": 590,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -1161,236 +917,6 @@
 "landing_url": "https://doi.org/10.1097/00005053-199011000-00005",
 "cited_by_count": 20,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/0304-3959(90)91070-y",
-"title": "Low power laser biostimulation of chronic oro-facial pain. A double-blind placebo controlled cross-over study in 40 patients.",
-"authors": [
-"Hansen HJ",
-"Thorøe U"
-],
-"journal": "Pain",
-"journal_abbrev": "Pain",
-"year": 1990,
-"date": "1990-11-01",
-"doi": "10.1016/0304-3959(90)91070-y",
-"pmid": "1708118",
-"pmcid": null,
-"abstract": "The efficacy of low power laser stimulation in the treatment of chronic oro-facial pain conditions was investigated in a double-blind placebo controlled modified cross-over study in 40 patients. The laser was an invisible infrared (IR) diode laser with an emission at 904 nanometer (nm). Treatment effect was evaluated by means of VAS-scales and global assessment of pain. Outcome of treatment was correlated to changes in urinary excretion of 5-hydroxyindoleacetic acid (5-HIAA). The clinical impression was that placebo was superior to laser stimulation. No statistically significant difference between the analgesic effect of the laser and placebo irradiation was found on VAS-scales. A significant (P = 0.05) increase in 5-HIAA excretion was found in the placebo group. It is concluded that the possibility of a substantial placebo response should be taken into consideration using 904 nm (IR) lasers for pain treatment in patients with this type of chronic oro-facial pain.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Chronic Disease",
-"Double-Blind Method",
-"Facial Pain",
-"Female",
-"Humans",
-"Hydroxyindoleacetic Acid",
-"Laser Therapy",
-"Male",
-"Middle Aged",
-"Mouth Diseases",
-"Pain",
-"Pain Management",
-"Pain Measurement"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:34Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Double-blind placebo-controlled cross-over trial that reported and analyzed placebo (sham irradiation) responses including a significant change in urinary 5-HIAA, so placebo response was a substantive object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"chronic_pain"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report",
-"neuroendocrine"
-],
-"design": [
-"crossover_rct"
-],
-"effects": [
-"null_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"therapeutic_ritual_context",
-"neurobiology_other_neurochemical",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"sham_device"
-]
-},
-"summary": "Tested low-power IR laser versus placebo in a double-blind cross-over in 40 patients with chronic oro-facial pain and found no VAS difference but a significant increase in urinary 5-HIAA in the placebo condition.",
-"key_finding": "No statistically significant difference on VAS (laser vs placebo); placebo group showed a significant increase in 5-HIAA (P = 0.05).",
-"sample_size": 40,
-"free_keywords": [
-"oro-facial pain",
-"infrared 904 nm",
-"laser therapy",
-"5-hydroxyindoleacetic acid",
-"VAS",
-"sham irradiation",
-"crossover"
-],
-"usage": {
-"input_tokens": 432,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1239,
-"cost_usd": 0.00273
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-11-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1963725377",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/0304-3959(90)91070-y",
-"cited_by_count": 125,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:2136527",
-"title": "Irlen lenses: a critical appraisal.",
-"authors": [
-"Solan HA",
-"Richman J"
-],
-"journal": "Journal of the American Optometric Association",
-"journal_abbrev": "J Am Optom Assoc",
-"year": 1990,
-"date": "1990-10-01",
-"doi": null,
-"pmid": "2136527",
-"pmcid": null,
-"abstract": "The purpose of this paper is to assess the credibility of the Irlen lenses, Irlen's hypotheses, and the scotopic sensitivity syndrome. The analysis includes a review of 13 pro and con research papers. Of special interest is the dichotomy which developed between researchers who were Irlen participants and the professional and scientific community who required less disputable evidence. Even the former, however, failed to find scientific support for Irlen's concept of dysfunction in the discharge rate of the retinal receptor cells. Furthermore, in the absence of any evidence that it is a separate and distinct entity, it appears that the scotopic sensitivity syndrome is, in fact, a symptom complex which results primarily from various refractive, binocular, and accommodative disorders. Some of the papers which support Irlen's hypotheses provide reason to believe that there is a strong placebo effect.",
-"keywords": [],
-"mesh": [
-"Dyslexia",
-"Eyeglasses",
-"Humans",
-"Syndrome",
-"Vision Disorders",
-"Visual Perception"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:03:03Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Narrative review that centrally evaluated Irlen lenses and concluded effects were likely placebo-driven, making placebo science the main subject.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"sensory_perception",
-"other"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"treatment_cues_dose_route",
-"therapeutic_ritual_context",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
-},
-"summary": "Critically reviewed 13 studies of Irlen lenses and scotopic sensitivity syndrome and concluded there was no convincing physiological basis and that positive findings likely reflected placebo effects and refractive/binocular problems.",
-"key_finding": "Found lack of scientific support for Irlen's syndrome and suggested a strong placebo effect in studies reporting benefit.",
-"sample_size": null,
-"free_keywords": [
-"irlen lenses",
-"scotopic sensitivity syndrome",
-"colored overlays",
-"dyslexia",
-"visual perception",
-"eyeglasses",
-"placebo"
-],
-"usage": {
-"input_tokens": 1240,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 697,
-"cost_usd": 0.00183
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-10-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1016/0304-3959(90)90057-k",
@@ -1434,15 +960,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:58Z",
+"classified_at": "2026-09-04T00:15:12Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Experimental human study that manipulated conditioning and verbal expectancy to produce placebo analgesia and compared responses with/without a placebo cream, addressing mechanisms of the placebo response.",
+"confidence": 0.95,
+"rationale": "Experimental manipulation contrasted conditioning and verbal expectancy with control using a placebo cream and iontophoretic pain, explicitly testing mechanisms of the placebo response.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1465,8 +991,8 @@
 "self_report"
 ],
 "design": [
-"within_subject_experimental",
-"parallel_groups_rct"
+"parallel_groups_rct",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_subjective"
@@ -1477,32 +1003,32 @@
 "treatment_cues_dose_route"
 ],
 "moderators": [
-"prior_experience",
-"expectation_level"
+"expectation_level",
+"prior_experience"
 ],
 "intervention_type": [
 "topical_cream"
 ]
 },
-"summary": "Compared conditioning, verbal expectancy, their combination, and control in healthy adults using a placebo cream with iontophoretic pain; found conditioning produced stronger placebo analgesia than verbal expectancy.",
-"key_finding": "Conditioning produced a more powerful placebo analgesic response than verbal expectancy.",
+"summary": "Compared conditioning, verbal expectancy, combined, and control groups using a placebo cream and iontophoretic pain; found conditioning produced a stronger placebo analgesic response than verbal expectancy.",
+"key_finding": "Conditioning produced larger placebo analgesia than expectancy alone.",
 "sample_size": null,
 "free_keywords": [
 "iontophoresis",
-"placebo cream",
+"placebo analgesia",
 "conditioning",
-"verbal expectancy",
-"analgesia",
-"placebo response",
-"experimental pain",
-"Voudouris"
+"expectancy",
+"placebo cream",
+"Voudouris",
+"1990",
+"analgesia"
 ],
 "usage": {
-"input_tokens": 1207,
-"cache_read_input_tokens": 4864,
+"input_tokens": 566,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 762,
-"cost_usd": 0.00195
+"output_tokens": 842,
+"cost_usd": 0.00197
 }
 },
 "sources": [
@@ -1533,39 +1059,31 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:02:27Z",
+"classified_at": "2026-09-03T04:35:29Z",
 "screening": {
-"decision": "include",
-"confidence": 0.62,
-"rationale": "Journal article with MeSH terms 'Placebo Effect' and 'Physician-Patient Relations' and an editorial-style title suggests a substantive commentary on placebo use in clinical practice.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text provided; title and MeSH suggest a commentary about placebo effects and physician–patient relations but insufficient information to confirm whether placebo is the study focus.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -1575,30 +1093,26 @@
 "mechanisms": [
 "clinical_use_ethics_attitudes"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Was an editorial advising clinicians about placebo effects and physician–patient interactions, urging caution in clinical interpretation of placebo phenomena.",
+"summary": "Appeared to discuss placebo effects and physician–patient relations, but no abstract or full text was available to determine whether it reported original data or empirical placebo/nocebo findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"postgraduate medicine",
-"physician advice",
-"clinical practice",
+"placebo effect",
+"physician-patient relations",
 "editorial",
-"placebo",
-"1990"
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 1054,
-"cache_read_input_tokens": 4864,
+"input_tokens": 363,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 810,
-"cost_usd": 0.00201
+"output_tokens": 770,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -1642,15 +1156,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:01:46Z",
+"classified_at": "2026-09-03T04:35:53Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Title and MeSH terms indicate the paper is a methodological/theoretical discussion about the use of placebos in psychotropic drug trials, meeting inclusion as placebo science/methodology.",
+"rationale": "Paper's title indicates a methodological/theoretical focus on the role of placebo in psychotropic drug trials, meeting inclusion for placebo_science_other (placebo methodology/ethics/history).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1688,24 +1202,21 @@
 "not_applicable"
 ]
 },
-"summary": "Argued for the necessity of applying placebos in psychotropic drug trials, focusing on trial methodology and rationale for placebo use.",
+"summary": "Argued for the necessity of including placebo arms in psychotropic drug trials to properly evaluate efficacy and control biases.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"psychotropic_drugs",
-"clinical_trials",
-"randomized_controlled_trials",
-"placebo_use",
-"blinding",
-"trial_design",
-"ethics"
+"psychotropic",
+"clinical trials",
+"placebo ethics",
+"methodology"
 ],
 "usage": {
-"input_tokens": 179,
-"cache_read_input_tokens": 5760,
+"input_tokens": 384,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 584,
-"cost_usd": 0.00136
+"output_tokens": 697,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -1718,235 +1229,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1055/s-2007-1014508",
 "cited_by_count": 16,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1002/mus.880130910",
-"title": "Critical review of gangliosides and thyrotropin-releasing hormone in peripheral neuromuscular diseases.",
-"authors": [
-"Bradley WG"
-],
-"journal": "Muscle & nerve",
-"journal_abbrev": "Muscle Nerve",
-"year": 1990,
-"date": "1990-09-01",
-"doi": "10.1002/mus.880130910",
-"pmid": "2233870",
-"pmcid": null,
-"abstract": "The lack of effective therapy for many of the chronic neuromuscular diseases such as amyotrophic lateral sclerosis, hereditary motor sensory neuropathy (Charcot-Marie-Tooth disease), spinocerebellar degenerations and idiopathic polyneuropathy has led to a search for substances that may stimulate peripheral nerve regeneration. Two such agents that have been proposed are gangliosides (mixed purified bovine brain gangliosides, Cronassial) and thyrotropin releasing factor (TRH). Studies on both of these agents were initially reported with enthusiasm to be successful, but later double-blind controlled studies have failed to confirm these findings. This review provides critical analysis of the designs of studies of potentially effective agents in chronic neuromuscular diseases, and emphasizes the power of the placebo response, and the importance of designing placebos which are indistinguishable from the trial medication other than in the active effect.",
-"keywords": [],
-"mesh": [
-"Chronic Disease",
-"Dose-Response Relationship, Drug",
-"Gangliosides",
-"Humans",
-"Neuromuscular Diseases",
-"Thyrotropin"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:40Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review critically analyzed trial designs and emphasized placebo response and the need for indistinguishable placebos, making placebo science the paper's substantive focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"treatment_cues_dose_route",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Reviewed trials of gangliosides and TRH in chronic neuromuscular diseases, critiqued study designs, and emphasized the power of the placebo response and the need for indistinguishable placebos.",
-"key_finding": "Found that early uncontrolled positive reports were not confirmed by later double-blind trials and highlighted strong placebo effects in these studies.",
-"sample_size": null,
-"free_keywords": [
-"amyotrophic lateral sclerosis",
-"charcot-marie-tooth",
-"gangliosides",
-"thyrotropin-releasing hormone",
-"TRH",
-"Cronassial",
-"neuromuscular disease"
-],
-"usage": {
-"input_tokens": 1270,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 946,
-"cost_usd": 0.00233
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-09-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2075003905",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/mus.880130910",
-"cited_by_count": 36,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.5694/j.1326-5377.1990.tb136857.x",
-"title": "Evening primrose oil and treatment of premenstrual syndrome.",
-"authors": [
-"Khoo SK",
-"Munro C",
-"Battistutta D"
-],
-"journal": "The Medical journal of Australia",
-"journal_abbrev": "Med J Aust",
-"year": 1990,
-"date": "1990-08-20",
-"doi": "10.5694/j.1326-5377.1990.tb136857.x",
-"pmid": "2201888",
-"pmcid": null,
-"abstract": "The therapeutic effectiveness of evening primrose oil (Efamol, Vita-Glow) in the relief of 10 symptoms associated with premenstrual syndrome (PMS) as well as menstrual symptoms was studied in 38 women. The prospective trial was randomised, double-blind and placebo-controlled and was crossed-over after three cycles. Although the results showed an improvement in symptoms of PMS during the trial, no significant differences in the scoring between the active and placebo groups were found over six cycles. No \"carry-over\" effect of active medication was observed; the beneficial effect on all symptoms (psychological, fluid retention, breast) was rapid, the scores decreasing in the first cycle but increasing slightly at the change-over period after the third cycle, irrespective of whether the active or placebo medication was next given. These findings indicate that the improvement experienced by these women with moderate PMS was solely a placebo effect.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Double-Blind Method",
-"Fatty Acids, Essential",
-"Female",
-"Follow-Up Studies",
-"Humans",
-"Linoleic Acids",
-"Oenothera biennis",
-"Placebo Effect",
-"Plant Oils",
-"Premenstrual Syndrome",
-"Randomized Controlled Trials as Topic",
-"Statistics as Topic",
-"gamma-Linolenic Acid"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:53Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized, double-blind, placebo-controlled crossover trial that analyzed symptom improvement and concluded improvements were due to placebo, so placebo response/effect was a main subject.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"crossover_rct"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Randomized double-blind crossover trial in 38 women with moderate PMS found symptom improvement in both arms but no difference between evening primrose oil and placebo, attributing benefits to a placebo response.",
-"key_finding": "No significant difference between active and placebo across six cycles; improvement was attributed to placebo.",
-"sample_size": 38,
-"free_keywords": [
-"evening primrose oil",
-"efamol",
-"premenstrual syndrome",
-"gamma-linolenic acid",
-"double-blind crossover",
-"symptom scores"
-],
-"usage": {
-"input_tokens": 1308,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1036,
-"cost_usd": 0.00252
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-08-20",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1510924211",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.5694/j.1326-5377.1990.tb136857.x",
-"cited_by_count": 93,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -1996,17 +1278,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T18:07:33Z",
+"classified_at": "2026-09-04T00:15:20Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study experimentally compared intradermal 'active' extracts versus saline in a double-blind within-subject provocation paradigm and explicitly tested whether symptom reports were specific to the extracts (i.e., placebo/nocebo-type responses and suggestion).",
+"rationale": "The study's stated aim was to test symptom provocation by intradermal extracts versus saline under double-blind conditions, directly addressing placebo/nocebo (suggestion-driven) symptom responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_response"
+"nocebo_response",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -2017,7 +1300,8 @@
 "adults"
 ],
 "condition_domain": [
-"adverse_events"
+"adverse_events",
+"other"
 ],
 "outcome_measures": [
 "self_report"
@@ -2026,36 +1310,39 @@
 "within_subject_experimental"
 ],
 "effects": [
-"significant_subjective"
+"null_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
+"treatment_cues_dose_route",
 "attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"saline_injection_infusion",
+"other"
 ]
 },
-"summary": "Tested whether intradermal injections of suspected food extracts produced symptoms under double-blind conditions and found symptom reports to active extracts and saline diluent were indistinguishable, implicating suggestion.",
-"key_finding": "Responses to active extracts (27% judged active) and to control saline (24% judged active) were indistinguishable, and 'neutralizing' injections were equally effective when saline was given.",
+"summary": "Found that symptom reports after intradermal allergen injections did not differ from saline controls in double-blind testing, suggesting provoked symptoms were due to suggestion and chance.",
+"key_finding": "Positive responses occurred equally to allergen and saline injections (27% vs 24%), indicating no specific provocation by extracts.",
 "sample_size": 18,
 "free_keywords": [
-"intradermal",
-"food sensitivity",
+"intradermal skin testing",
+"food hypersensitivity",
 "symptom provocation",
 "neutralization",
-"skin testing",
-"suggestion"
+"suggestion",
+"double-blind",
+"false positive reactions"
 ],
 "usage": {
 "input_tokens": 858,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1073,
-"cost_usd": 0.00251
+"output_tokens": 1189,
+"cost_usd": 0.00274
 }
 },
 "sources": [
@@ -2090,18 +1377,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:02:21Z",
+"classified_at": "2026-09-03T04:35:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract available and title suggests a statistical/methods discussion; MeSH includes Placebo Effect but it's unclear whether placebo is the main subject or only mentioned.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "MeSH terms list Placebo Effect and Research Design and the title indicates a methodological discussion of regression to the mean relevant to interpreting placebo effects and trial results.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2110,7 +1397,7 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
@@ -2131,22 +1418,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely a statistical/methods discussion of regression to the mean with implications for placebo research based on MeSH indexing.",
+"summary": "Discussed regression to the mean as a methodological/statistical threat to interpreting placebo effects and clinical trial outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "regression to the mean",
-"statistics",
+"statistical artifact",
 "research design",
-"measurement error",
-"placebo bias"
+"trial bias",
+"placebo confounding"
 ],
 "usage": {
-"input_tokens": 171,
-"cache_read_input_tokens": 5760,
+"input_tokens": 376,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 699,
-"cost_usd": 0.00158
+"output_tokens": 681,
+"cost_usd": 0.0016
 }
 },
 "sources": [
@@ -2160,121 +1447,6 @@
 "landing_url": "https://doi.org/10.5694/j.1326-5377.1990.tb136839.x",
 "cited_by_count": 27,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:2196520",
-"title": "Side effects of methylphenidate in children with attention deficit hyperactivity disorder: a systemic, placebo-controlled evaluation.",
-"authors": [
-"Barkley RA",
-"McMurray MB",
-"Edelbrock CS",
-"Robbins K"
-],
-"journal": "Pediatrics",
-"journal_abbrev": "Pediatrics",
-"year": 1990,
-"date": "1990-08-01",
-"doi": null,
-"pmid": "2196520",
-"pmcid": null,
-"abstract": "The frequency and severity of 17 side effects presumably associated with stimulant medication were assessed during a rigorous, triple-blind, placebo-controlled, crossover evaluation of methylphenidate, 0.3 and 0.5 mg/kg twice a day, in 83 children with attention deficit hyperactivity disorder. Side effects were rated by parents and teachers at the end of each weekly drug condition. Three children (3.6%) had side effects that were sufficiently serious to warrant immediate discontinuation of medication. Parent ratings indicated that only the side effects of decreased appetite, insomnia, stomachaches, and headaches increased significantly in frequency and severity during the two active medication doses as compared with the placebo condition. Fewer than half of the children experienced these side effects and among those who did, ratings of mean severity remained in the mild range. Teacher ratings showed little change over drug conditions, except on ratings of staring, sadness, and anxiety, which declined with increasing dose of medication. Parent ratings indicated that only the side effects of decreased appetite, insomnia, stomachaches, and headaches increased significantly in frequency and severity during the two active medication doses as compared with the placebo condition. Fewer than half of the children experienced these side effects and among those who did, ratings of mean severity remained in the mild range. Teacher ratings showed little change over drug conditions, except on ratings of staring, sadness, and anxiety, which declined with increasing dose of medication. Surprisingly, a high frequency of these behavior side effects were reported during the placebo condition. Stimulant medication within this therapeutic range, therefore, results in few, generally mild side effects.(ABSTRACT TRUNCATED AT 250 WORDS)",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Attention Deficit Disorder with Hyperactivity",
-"Child",
-"Dose-Response Relationship, Drug",
-"Emotions",
-"Feeding and Eating Disorders",
-"Female",
-"Headache",
-"Humans",
-"Male",
-"Methylphenidate",
-"Randomized Controlled Trials as Topic",
-"Sleep Initiation and Maintenance Disorders",
-"Stomach"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:22Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Crossover, triple-blind placebo-controlled trial reported and analyzed side effects during placebo and active conditions, providing usable information about placebo-arm adverse event rates (nocebo/placebo response).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"crossover_rct"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"nocebo_communication_disclosure"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Found that some side effects (decreased appetite, insomnia, stomachaches, headaches) increased with methylphenidate, but many behavioral side effects were frequently reported during the placebo condition in children with ADHD.",
-"key_finding": "High frequency of behavioral side effects was reported during placebo; only appetite, insomnia, stomachaches, and headaches were significantly greater on active methylphenidate.",
-"sample_size": 83,
-"free_keywords": [
-"methylphenidate",
-"ADHD",
-"stimulant",
-"side-effects",
-"parents",
-"teachers",
-"triple-blind",
-"crossover"
-],
-"usage": {
-"input_tokens": 1466,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 957,
-"cost_usd": 0.0024
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-08-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1111/j.1365-2125.1990.tb03761.x",
@@ -2305,15 +1477,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:01:30Z",
+"classified_at": "2026-09-03T04:35:36Z",
 "screening": {
 "decision": "include",
-"confidence": 0.78,
-"rationale": "Review article explicitly asking whether homeopathy effects are placebo, so placebo/nocebo is the main subject (MeSH: Placebo Effect).",
+"confidence": 0.7,
+"rationale": "Title and publication type indicate a review focused on whether homeopathy effects are placebo, meeting inclusion criterion for placebo-science reviews.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2342,8 +1514,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -2352,22 +1523,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews the evidence and arguments on whether homeopathy effects are attributable to placebo mechanisms and trial methodology issues.",
+"summary": "Reviewed evidence and arguments about whether homeopathy's clinical effects can be explained by placebo mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "homeopathy",
-"alternative_medicine",
 "placebo effect",
+"alternative medicine",
 "double-blind",
-"clinical trials"
+"clinical trials",
+"Ernst",
+"placebo_science"
 ],
 "usage": {
-"input_tokens": 1069,
-"cache_read_input_tokens": 4864,
+"input_tokens": 378,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00172
+"output_tokens": 617,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -2418,15 +1591,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:33Z",
+"classified_at": "2026-09-03T04:35:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review whose main aim was to evaluate whether hypnosis effects are specific or reflect placebo mechanisms (placebo science topic).",
+"confidence": 0.8,
+"rationale": "Narrative review explicitly focused on whether hypnosis is a placebo or nonplacebo, so placebo is the main subject (placebo science/theory).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2445,9 +1618,12 @@
 "condition_domain": [
 "pain",
 "anxiety_stress",
-"addiction_craving"
+"addiction_craving",
+"other"
 ],
 "outcome_measures": [
+"self_report",
+"clinician_rated",
 "not_applicable"
 ],
 "design": [
@@ -2458,35 +1634,39 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
 "therapeutic_ritual_context",
+"provider_patient_interaction",
+"clinical_use_ethics_attitudes",
 "history_conceptual"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"none_reported"
 ],
 "intervention_type": [
+"sham_psychological",
 "not_applicable"
 ]
 },
-"summary": "Reviewed experimental and clinical literature on whether hypnosis effects are specific to hypnotizability or are placebo effects, finding mixed evidence across disorders and noting hypnosis can be used for placebo value.",
-"key_finding": null,
+"summary": "Reviewed evidence on whether hypnosis functions as a placebo or nonplacebo, noting hypnotizability predicted outcomes for pain and anxiety but not for addiction, and that hypnosis can be used for its placebo value.",
+"key_finding": "Found hypnotizability related to clinical outcome in pain and anxiety but experimental studies showed placebo effects were not related to hypnotizability; hypnosis may serve placebo-generating expectancies.",
 "sample_size": null,
 "free_keywords": [
-"hypnotherapy",
+"hypnosis",
 "hypnotizability",
-"grünbaum",
+"grunbaum",
+"placebo theory",
 "suggestion",
 "smoking",
-"habit disorder",
-"placebo value"
+"addiction",
+"therapeutic ritual"
 ],
 "usage": {
-"input_tokens": 1224,
-"cache_read_input_tokens": 4864,
+"input_tokens": 533,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 663,
-"cost_usd": 0.00175
+"output_tokens": 999,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -2548,21 +1728,22 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:22Z",
+"classified_at": "2026-09-03T04:35:42Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized controlled trial that experimentally manipulated caregiver expectations to test their causal effects on resident clinical outcomes, so placebo/context effect was the primary object of study.",
+"confidence": 0.95,
+"rationale": "Randomized manipulation of caregiver expectations with primary analyses testing effects on resident outcomes (an interpersonal expectancy/placebo-like context effect).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -2574,14 +1755,14 @@
 ],
 "condition_domain": [
 "mood_depression",
-"motor_function",
 "cognition",
+"global_health_qol",
 "other"
 ],
 "outcome_measures": [
+"self_report",
 "clinician_rated",
-"clinical_endpoint",
-"healthcare_utilization"
+"clinical_endpoint"
 ],
 "design": [
 "parallel_groups_rct"
@@ -2590,35 +1771,36 @@
 "mixed_inconsistent"
 ],
 "mechanisms": [
+"provider_patient_interaction",
 "verbal_suggestion_expectation",
-"provider_patient_interaction"
+"therapeutic_ritual_context"
 ],
 "moderators": [
-"none_reported"
+"provider_characteristics",
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial manipulated nursing staff expectations about new residents and found mixed effects: reduced depressive symptoms and fewer hospital admissions but greater decline in functional independence and a trend toward improved mental status.",
-"key_finding": "High-expectancy residents showed greater relief of depressive symptoms and fewer hospital admissions but larger decrements in functional independence.",
+"summary": "Randomized nursing-home residents to high- versus average-expectancy caregiver conditions and found greater relief of depressive symptoms and fewer hospital admissions but worse functional independence in the high-expectancy group.",
+"key_finding": "High-expectancy instruction to caregivers produced reduced depressive symptoms and fewer hospital admissions but unexpectedly greater declines in functional independence.",
 "sample_size": 63,
 "free_keywords": [
 "nursing home",
-"caregiver expectations",
-"interpersonal expectancy",
 "activities of daily living",
+"caregiver expectations",
 "hospitalization",
 "geriatric",
-"randomized trial",
-"blinded assessment"
+"interpersonal expectancy",
+"randomized trial"
 ],
 "usage": {
-"input_tokens": 1480,
-"cache_read_input_tokens": 4864,
+"input_tokens": 789,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1149,
-"cost_usd": 0.00279
+"output_tokens": 1090,
+"cost_usd": 0.00252
 }
 },
 "sources": [
@@ -2631,140 +1813,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1532-5415.1990.tb01472.x",
 "cited_by_count": 62,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/j.1365-2125.1990.tb03738.x",
-"title": "Determinants of gait in the elderly parkinsonian on maintenance levodopa/carbidopa therapy.",
-"authors": [
-"Bowes SG",
-"Clark PK",
-"Leeman AL",
-"O'Neill CJ",
-"Weller C",
-"Nicholson PW",
-"Deshmukh AA",
-"Dobbs SM",
-"Dobbs RJ"
-],
-"journal": "British journal of clinical pharmacology",
-"journal_abbrev": "Br J Clin Pharmacol",
-"year": 1990,
-"date": "1990-07-01",
-"doi": "10.1111/j.1365-2125.1990.tb03738.x",
-"pmid": "2202385",
-"pmcid": "PMC1368270",
-"abstract": "1. We have used gait analysis to investigate the efficacy of maintenance therapy with a levodopa/carbidopa combination in patients with idiopathic Parkinsonism, who do not have overt fluctuations in control in relation to administration of medication. 2. Fourteen patients (aged 64 to 88 years) receiving maintenance therapy with levodopa and carbidopa (Sinemet Plus) entered a placebo-controlled, randomised cross-over study of the effect of omission of a morning dose of active treatment on distance/time parameters of gait. Measurements made 2, 4 and 6 h after the morning treatment were standardised by taking the pre-treatment measurement on that day as baseline. 3. The mean increase in stride length (7%) and decrease in double support time (20%) on active treatment were small but statistically significant (P less than 0.0001, in each case), there being no significant placebo effect on either gait parameter (P = 0.69 and 0.08 respectively). Neither active nor placebo treatments had any significant (P greater than 0.45 in each case) effect on the lying, standing or postural fall in mean arterial pressure, measurements being made in the same temporal relation to the treatments as was gait. 4. In a generalised linear model, after allowing for the effect (P less than 0.0001) of intrinsic variability in pre-treatment speed as well as for structure of the study, nature of treatment had an effect on stride length over the whole walk, significant at P = 0.002. 5. Pre-treatment postural fall in mean arterial pressure was nearly as significant (P = 0.003) as the nature of treatment in the context of such a model: the greater the fall, the greater the increment in stride length seen following active or placebo treatment. This was probably explained by an acquired tolerance to the fall as the day progressed. 6. The major determinant (P less than 0.0001) of the change in double support time over the whole walk, after allowing for the structure of the study, appeared to be the post treatment mean arterial standing blood pressure. The lower the pressure, the shorter the double support time, and hence, the greater the tendency to a hurried gait. 7. Nature of treatment, when added into the models described in summary points 5 and 6, had no significant effect (P greater than 0.25, in each case).(ABSTRACT TRUNCATED AT 400 WORDS)",
-"keywords": [],
-"mesh": [
-"Aged",
-"Aged, 80 and over",
-"Blood Pressure",
-"Carbidopa",
-"Double-Blind Method",
-"Female",
-"Gait",
-"Humans",
-"Levodopa",
-"Male",
-"Middle Aged",
-"Models, Biological",
-"Parkinson Disease",
-"Randomized Controlled Trials as Topic"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:28Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Randomized placebo-controlled crossover trial explicitly tested for a placebo effect on gait and reported no significant placebo effect, so placebo/nocebo was an object of analysis.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"parkinson_movement",
-"healthy_older_adult"
-],
-"age_group": [
-"older_adults"
-],
-"condition_domain": [
-"motor_function"
-],
-"outcome_measures": [
-"motor_kinematic",
-"autonomic"
-],
-"design": [
-"crossover_rct"
-],
-"effects": [
-"null_objective"
-],
-"mechanisms": [
-"treatment_cues_dose_route",
-"prior_treatment_experience"
-],
-"moderators": [
-"prior_experience",
-"trial_characteristics",
-"age"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Randomized placebo-controlled crossover study in 14 older Parkinson’s patients tested omission of a morning levodopa/carbidopa dose and found active drug improved stride length and double-support time while placebo produced no significant gait effect.",
-"key_finding": "Found no significant placebo effect on gait parameters; active levodopa/carbidopa produced small but significant improvements in stride length (+7%) and double support time (−20%).",
-"sample_size": 14,
-"free_keywords": [
-"sinemet",
-"levodopa",
-"gait analysis",
-"stride length",
-"double support time",
-"postural blood pressure"
-],
-"usage": {
-"input_tokens": 1638,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 989,
-"cost_usd": 0.00251
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-07-01",
-"private_pdf": {
-"available": true,
-"store_key": "bowes_1990_determinants_of_gait_in_the.pdf",
-"source": "already_present",
-"sha256": "9f597bd0cdb619eb"
-},
-"openalex_id": "https://openalex.org/W1965097522",
-"oa_status": "green",
-"oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/1368270",
-"landing_url": "https://doi.org/10.1111/j.1365-2125.1990.tb03738.x",
-"cited_by_count": 51,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -2800,15 +1848,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:16Z",
+"classified_at": "2026-09-03T04:35:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "The paper's stated aim is a conceptual analysis of the placebo effect and its implications for alternative and conventional medicine, making placebo science the main subject (meets inclusion criterion 5).",
+"confidence": 0.8,
+"rationale": "Paper's primary aim is conceptual analysis of the placebo effect and its implications, making placebo the main subject (theory/commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2848,25 +1896,24 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses whether effects of alternative medical treatments are reducible to placebo, analyzes what determines the placebo effect, and considers consequences for conventional medicine and research methods.",
+"summary": "Argued that the placebo effect should be reconceptualized as a specific phenomenon and explored consequences for conventional medicine and alternative therapies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alternative medicine",
-"complementary therapies",
-"placebo conceptualization",
-"physician-patient relations",
-"social support",
+"complementary_therapies",
+"placebo_concept",
+"physician_patient_relation",
+"medical_epistemology",
+"social_support",
 "attitudes",
-"clinical trials",
-"rehabilitate placebo"
+"placebo_rehabilitation"
 ],
 "usage": {
-"input_tokens": 1201,
-"cache_read_input_tokens": 4864,
+"input_tokens": 510,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 824,
-"cost_usd": 0.00207
+"output_tokens": 782,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -2879,138 +1926,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1177/140349489001800210",
 "cited_by_count": 19,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/archpsyc.1990.01810180041007",
-"title": "Naloxone-reversible analgesic response to combat-related stimuli in posttraumatic stress disorder. A pilot study.",
-"authors": [
-"Pitman RK",
-"van der Kolk BA",
-"Orr SP",
-"Greenberg MS"
-],
-"journal": "Archives of general psychiatry",
-"journal_abbrev": "Arch Gen Psychiatry",
-"year": 1990,
-"date": "1990-06-01",
-"doi": "10.1001/archpsyc.1990.01810180041007",
-"pmid": "2350206",
-"pmcid": null,
-"abstract": "We tested the hypothesis that exposure to a stimulus resembling the original traumatic event would induce naloxone-reversible analgesia in patients with posttraumatic stress disorder (PTSD). Eight medication-free Vietnam veterans with PTSD and eight veterans without PTSD, matched for age and combat severity, viewed a 15-minute videotape of dramatized combat under naloxone hydrochloride and placebo conditions in a randomized double-blind crossover design. In the placebo condition, the subjects with PTSD showed a 30% decrease in reported pain intensity ratings of standardized heat stimuli after the combat videotape. No decrease in pain ratings occurred in the subjects with PTSD in the naloxone condition. The subjects without PTSD did not show a decrease in pain ratings in either condition. The results are consistent with the induction of opioid-mediated stress-induced analgesia in the patients with PTSD.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Analgesia",
-"Combat Disorders",
-"Double-Blind Method",
-"Endorphins",
-"Galvanic Skin Response",
-"Heart Rate",
-"Humans",
-"Male",
-"Naloxone",
-"Pain Measurement",
-"Pilot Projects",
-"Placebos",
-"Random Allocation",
-"Stress Disorders, Post-Traumatic",
-"Stress, Psychological",
-"Videotape Recording"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, U.S. Gov't, Non-P.H.S.",
-"Research Support, U.S. Gov't, P.H.S."
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:19Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Experimental crossover study tested context-induced analgesia to combat stimuli and its naloxone-reversal, addressing mechanisms of context-mediated analgesia relevant to placebo science.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other",
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"ptsd_stress",
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain",
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report",
-"autonomic"
-],
-"design": [
-"crossover_rct",
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"neurobiology_opioid",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"saline_injection_infusion"
-]
-},
-"summary": "Tested whether combat-related videotape induced naloxone-reversible analgesia in PTSD patients using a randomized double-blind crossover; found PTSD patients showed a 30% reduction in heat pain after the tape that was blocked by naloxone.",
-"key_finding": "PTSD subjects showed a 30% decrease in heat pain ratings after combat cues in the placebo condition, and this analgesia was absent after naloxone administration.",
-"sample_size": 16,
-"free_keywords": [
-"ptsd",
-"vietnam veterans",
-"naloxone",
-"stress-induced analgesia",
-"heat pain",
-"galvanic skin response",
-"heart rate",
-"crossover"
-],
-"usage": {
-"input_tokens": 434,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1079,
-"cost_usd": 0.00241
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-06-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2054228615",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/archpsyc.1990.01810180041007",
-"cited_by_count": 299,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -3041,15 +1956,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:11Z",
+"classified_at": "2026-09-03T04:36:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Historical analysis attributed apparent treatment benefits largely to placebo effects and biased reporting, making placebo science/history a substantial focus.",
+"confidence": 0.6,
+"rationale": "Historical analysis explicitly attributed the apparent treatment benefits to placebo effects and biased observation, fitting 'placebo science' (history/conceptual) inclusion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3058,7 +1973,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -3087,23 +2002,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed the rise and fall of suspension therapy for tabes dorsalis and argued that early apparent benefits reflected placebo effects, misdiagnosis, biased reporting, and the natural history of disease.",
-"key_finding": "Concluded that placebo effects and reporting biases explained much of the early apparent therapeutic success.",
+"summary": "Reviewed the 19th-century rise and fall of suspension therapy for tabes dorsalis and argued early successes were due to placebo effects, natural history, misdiagnosis, and biased reporting.",
+"key_finding": "Concluded that apparent early benefits were largely explained by placebo effects and biased observation rather than true efficacy.",
 "sample_size": null,
 "free_keywords": [
 "tabes dorsalis",
 "suspension therapy",
-"charcot",
 "therapeutic fad",
+"charcot",
 "19th century",
 "medical history"
 ],
 "usage": {
-"input_tokens": 352,
-"cache_read_input_tokens": 5760,
+"input_tokens": 557,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 659,
-"cost_usd": 0.00155
+"output_tokens": 890,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -3154,22 +2069,21 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:09Z",
+"classified_at": "2026-09-03T04:36:09Z",
 "screening": {
 "decision": "include",
-"confidence": 0.84,
-"rationale": "Randomized four-way crossover compared active TENS with placebo (sham) TENS and reported differential pain relief and rescue medication use, so the sham/placebo comparison and placebo response are analyzed.",
+"confidence": 0.9,
+"rationale": "Randomized crossover trial directly compared active TENS with sham (placebo) TENS and reported placebo-controlled differences, isolating a placebo/context effect for TENS.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3204,24 +2118,23 @@
 "sham_device"
 ]
 },
-"summary": "Randomized four-way crossover in 32 women found active TENS reduced pain and need for rescue ibuprofen compared with sham TENS and ibuprofen cycles.",
-"key_finding": "TENS produced greater subjective pain relief and delayed need for ibuprofen (mean delay 5.9 vs 0.7 hours) and 42.4% reported good–excellent relief vs 3.2% with sham TENS.",
+"summary": "Randomized four-way crossover trial in 32 women found active TENS provided greater pain relief and delayed/ reduced need for rescue ibuprofen compared with sham TENS and ibuprofen cycles.",
+"key_finding": "TENS delayed time to rescue ibuprofen by 5.9 versus 0.7 hours and produced good-to-excellent relief in 42.4% versus 3.2% with sham TENS.",
 "sample_size": 32,
 "free_keywords": [
-"dysmenorrhea",
+"primary dysmenorrhea",
 "tens",
-"sham-tens",
+"sham tens",
 "ibuprofen",
 "rescue medication",
-"crossover",
-"analgesia"
+"menstrual pain"
 ],
 "usage": {
-"input_tokens": 1501,
-"cache_read_input_tokens": 4864,
+"input_tokens": 810,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 990,
-"cost_usd": 0.00248
+"output_tokens": 919,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -3269,15 +2182,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:14Z",
+"classified_at": "2026-09-03T04:35:42Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Paper analyzed and compared placebo-arm response patterns from a multicenter randomized trial of panic disorder, making placebo response the object of study.",
+"confidence": 0.85,
+"rationale": "The paper explicitly analyzed response patterns during placebo treatment and compared placebo patients to active-drug groups, making placebo response the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3285,7 +2198,7 @@
 "study_focus": [
 "placebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
 "anxiety_disorders"
@@ -3305,8 +2218,7 @@
 "placebo_arm_secondary_analysis"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response"
@@ -3318,8 +2230,8 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed response patterns across alprazolam, imipramine, and placebo arms in a multicenter RCT of panic disorder and found no specific placebo pattern, though many placebo patients showed early transient remission and predictive validity was low.",
-"key_finding": "Many placebo-treated patients exhibited early, temporary remission on panic outcomes compared with later or persistent responses.",
+"summary": "Analyzed response patterns from a multicenter panic-disorder trial and found no unique placebo pattern, though many placebo patients showed early temporary remission.",
+"key_finding": "Found that placebo patients often showed early, transient remission of panic symptoms but no specific placebo response pattern was identified.",
 "sample_size": null,
 "free_keywords": [
 "panic disorder",
@@ -3328,14 +2240,14 @@
 "hamilton anxiety scale",
 "physician global",
 "multicenter",
-"double-blind"
+"response patterns"
 ],
 "usage": {
-"input_tokens": 1279,
-"cache_read_input_tokens": 4864,
+"input_tokens": 588,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1044,
-"cost_usd": 0.00253
+"output_tokens": 884,
+"cost_usd": 0.00206
 }
 },
 "sources": [
@@ -3393,15 +2305,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:09Z",
+"classified_at": "2026-09-03T04:35:45Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Empirical study whose primary analysis examined placebo-only treatment responses in OCD (single-blind then double-blind placebo), so placebo response was the object of study.",
+"confidence": 0.85,
+"rationale": "The study administered placebo (single-blind then double-blind) and directly analyzed placebo-arm change in OCD, making placebo response the paper's explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3441,25 +2353,25 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Found virtual absence of placebo-related improvement in 30 patients with obsessive-compulsive disorder on clinician and self-report scales across single-blind and subsequent double-blind placebo phases.",
-"key_finding": "Minimal or no symptom improvement with placebo on clinician-rated and self-reported obsession/compulsion and anxiety/depression scales.",
+"summary": "Tested placebo given single-blind (2 weeks) and double-blind (additional 10 weeks) in OCD patients and found virtually no improvement on clinician and self-rating scales.",
+"key_finding": "Found negligible placebo response in obsessive-compulsive disorder across clinician-rated and self-report measures (N=30; 12 continued to double-blind phase).",
 "sample_size": 30,
 "free_keywords": [
 "obsessive-compulsive disorder",
-"OCD",
-"obsessive-compulsive symptoms",
+"ocd",
 "clomipramine",
-"single-blind placebo",
-"double-blind placebo",
-"placebo nonresponse",
-"anxiety"
+"single-blind",
+"double-blind",
+"placebo response",
+"clinician-rated",
+"self-report"
 ],
 "usage": {
-"input_tokens": 378,
-"cache_read_input_tokens": 5760,
+"input_tokens": 583,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 853,
-"cost_usd": 0.00194
+"output_tokens": 844,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -3519,15 +2431,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:57Z",
+"classified_at": "2026-09-03T04:35:49Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Paper performed a secondary analysis of placebo-treated RA participants to estimate placebo-arm improvement rates and develop a composite index, making placebo response the object of study.",
+"rationale": "Paper analyzed responses of 130 placebo-treated RA participants to develop a composite index and quantify placebo-arm improvement, making the placebo response the analytic focus (placebo-arm analysis).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3549,7 +2461,8 @@
 "outcome_measures": [
 "self_report",
 "clinician_rated",
-"clinical_endpoint"
+"clinical_endpoint",
+"immune_inflammatory"
 ],
 "design": [
 "placebo_arm_secondary_analysis"
@@ -3565,26 +2478,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"inert_pill_capsule"
 ]
 },
-"summary": "Analyzed 130 placebo-treated RA patients from DMARD trials to develop a 4-of-6 composite index and estimated the probability of improvement on placebo during DMARD trials.",
-"key_finding": "Found that few placebo-treated patients met the proposed 4-of-6 improvement criteria, whereas significantly more DMARD-treated patients did.",
+"summary": "Analyzed 130 placebo-treated RA trial participants and developed a composite index to estimate the probability of improvement on placebo, finding few placebo patients met the improvement criteria.",
+"key_finding": "Found that few placebo-treated RA patients (n=130) met a proposed composite improvement threshold, while more DMARD-treated patients did, indicating a low placebo-response rate by the index.",
 "sample_size": 130,
 "free_keywords": [
 "rheumatoid arthritis",
 "dmard",
-"placebo rate",
 "composite responder index",
-"westergren esr",
-"morning stiffness"
+"esr",
+"morning stiffness",
+"joint swelling"
 ],
 "usage": {
-"input_tokens": 493,
-"cache_read_input_tokens": 5760,
+"input_tokens": 698,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1148,
-"cost_usd": 0.00256
+"output_tokens": 1016,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -3598,6 +2511,83 @@
 "landing_url": "https://doi.org/10.1002/art.1780330403",
 "cited_by_count": 287,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "title:94ed72e4d25d426f",
+"title": "Changing expectations: A key to effective psychotherapy.",
+"authors": [
+"I. Kirsch"
+],
+"journal": "",
+"journal_abbrev": "",
+"year": 1990,
+"date": "1990-01-01",
+"doi": null,
+"pmid": null,
+"pmcid": null,
+"openalex_id": null,
+"abstract": "",
+"keywords": [],
+"mesh": [],
+"pub_types": [],
+"oa_status": null,
+"oa_pdf_url": "",
+"landing_url": null,
+"cited_by_count": 187,
+"scope": "review",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_only",
+"classified_at": "2026-09-04T00:15:15Z",
+"screening": {
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text available and the title suggests a theoretical piece about expectation in psychotherapy, so it's unclear whether placebo/nocebo phenomena are the explicit focus.",
+"exclusion_reason": null,
+"peer_reviewed": false
+},
+"tags": {
+"study_focus": [],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"history_conceptual"
+],
+"moderators": [],
+"intervention_type": []
+},
+"summary": "Insufficient information to determine whether the paper empirically studied placebo/nocebo effects; title suggests a theoretical discussion of expectations in psychotherapy.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"expectation",
+"expectancy effects",
+"psychotherapy",
+"placebo-related theory"
+],
+"usage": {
+"input_tokens": 146,
+"cache_read_input_tokens": 6144,
+"cache_creation_input_tokens": 0,
+"output_tokens": 595,
+"cost_usd": 0.00138
+}
+},
+"sources": [
+"recall_audit_s2"
+],
+"date_added": "1990-01-01",
+"private_pdf": null
 },
 {
 "id": "pmid:2333233",
@@ -3626,69 +2616,47 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:02:16Z",
+"classified_at": "2026-09-03T04:35:51Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title and MeSH indicate the paper is about the placebo effect but no abstract or full text was available to confirm article type, methods, or whether it presents original data.",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title indicates discussion of the placebo effect but insufficient information to determine whether it is an empirical study, systematic review, or narrative/commentary focused on placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Appears to discuss the placebo effect and its clinical implications for nursing, but no abstract was available to determine study design or results.",
+"summary": "No abstract available; title indicated a discussion of the placebo effect in a nursing journal but methods and focus (empirical vs. commentary) were not reported.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
-"clinical practice",
-"placebo history",
+"placebo effect",
 "magic pills",
-"education"
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 1054,
-"cache_read_input_tokens": 4864,
+"input_tokens": 363,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 781,
-"cost_usd": 0.00195
+"output_tokens": 528,
+"cost_usd": 0.00129
 }
 },
 "sources": [
@@ -3744,15 +2712,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:57Z",
+"classified_at": "2026-09-03T04:35:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Empirical randomized trial paper performed substantive analyses characterizing placebo responders during long-term treatment of panic disorder (placebo response is the object of study).",
+"confidence": 0.85,
+"rationale": "Paper explicitly analyzed and characterized placebo responders during a randomized long-term trial of panic disorder (placebo response as the analytic focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3777,7 +2745,7 @@
 ],
 "design": [
 "parallel_groups_rct",
-"placebo_arm_secondary_analysis"
+"single_group_pre_post"
 ],
 "effects": [
 "significant_subjective"
@@ -3792,24 +2760,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Characterized placebo responders (16/60, 27%) in a 40-week randomized trial for panic disorder and found early improvement within the first week that progressed and largely persisted through taper and one-month follow-up.",
-"key_finding": "Found that 27% of placebo-treated panic disorder patients met stringent responder criteria, showing rapid (week 1) and sustained subjective improvement.",
+"summary": "Analyzed placebo-arm participants in a 40-week randomized trial of panic disorder and found ~27% met criteria for placebo responders who improved early and maintained gains at taper and 1-month follow-up.",
+"key_finding": "Found that 27% of patients met stringent criteria for placebo response, showing early improvement within the first week that persisted through taper and 1-month follow-up.",
 "sample_size": 60,
 "free_keywords": [
 "panic disorder",
-"alprazolam",
 "hamilton anxiety scale",
-"clinical global impression",
+"clinical global impressions",
+"placebo responder",
 "long-term treatment",
 "taper",
 "follow-up"
 ],
 "usage": {
-"input_tokens": 1300,
-"cache_read_input_tokens": 4864,
+"input_tokens": 609,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 887,
-"cost_usd": 0.00222
+"output_tokens": 1000,
+"cost_usd": 0.0023
 }
 },
 "sources": [
@@ -3855,15 +2823,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:43Z",
+"classified_at": "2026-09-03T04:35:53Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Randomized trial data were analyzed to compare placebo-arm response rates across subgroups (concomitant disorders), making placebo response a substantive object of study.",
+"rationale": "Randomized drug-versus-placebo trial that reported and analyzed differing placebo-arm response rates by presence of concomitant disorders, making placebo response a focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3874,8 +2842,8 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"pediatric_clinical",
-"depression"
+"depression",
+"pediatric_clinical"
 ],
 "age_group": [
 "children_adolescents"
@@ -3890,9 +2858,10 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective"
+"significant_objective"
 ],
 "mechanisms": [
+"prior_treatment_experience",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
@@ -3902,23 +2871,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed pediatric depression RCT data and found differing placebo response rates by presence of conduct/oppositional disorders versus pure depression or depression+anxiety.",
-"key_finding": "Placebo response was 67% in children with depression plus conduct/oppositional disorder versus 20% in children with pure depression or depression plus anxiety.",
+"summary": "Found that children with depression plus conduct/oppositional disorders showed higher placebo-arm response (67%) than children with pure depression or depression plus anxiety (20%), while drug response was higher in the latter group.",
+"key_finding": "Placebo response rate 67% in depression with conduct/oppositional disorder versus 20% in pure depression/anxiety; drug response 33% vs 57%, respectively.",
 "sample_size": 31,
 "free_keywords": [
 "childhood depression",
-"concomitant conduct disorder",
-"oppositional defiant disorder",
-"childrens depression rating scale",
 "conners scale",
-"placebo response rate"
+"CDRS",
+"conduct disorder",
+"oppositional defiant",
+"placebo response",
+"antidepressant trial"
 ],
 "usage": {
-"input_tokens": 403,
-"cache_read_input_tokens": 5760,
+"input_tokens": 608,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 927,
-"cost_usd": 0.0021
+"output_tokens": 1085,
+"cost_usd": 0.00247
 }
 },
 "sources": [
@@ -3961,190 +2931,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:01:33Z",
+"classified_at": "2026-09-03T04:35:47Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly examines placebo and melatonin effects in an experimental murine breast cancer study, indicating placebo/placebo-response is an object of study despite absent abstract.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Title mentions placebo but no abstract or full text available to confirm whether placebo/nocebo phenomena were an explicit focus or method in this animal study.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"clinical_endpoint"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined placebo and melatonin effects on murine mammary neoplasms with attention to secular/circannual variation; abstract not available.",
+"summary": "No abstract available; title suggested an investigation of placebo and melatonin effects on murine breast cancer but available information was insufficient to judge focus on placebo/nocebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "melatonin",
-"mice",
-"mammary tumor",
+"mouse",
 "breast cancer",
 "circannual",
 "seasonality",
-"placebo"
+"placebo (unclear)"
 ],
 "usage": {
-"input_tokens": 1090,
-"cache_read_input_tokens": 4864,
+"input_tokens": 399,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 678,
-"cost_usd": 0.00175
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:2201654",
-"title": "Methodology of a controlled clinical study for cerebral aging evaluation.",
-"authors": [
-"Vecchi GP",
-"Neri M",
-"Cortelloni C",
-"De Vreese L",
-"Sirotti C",
-"Cipolli C",
-"Fabbri L",
-"Zerbini O"
-],
-"journal": "International journal of clinical pharmacology research",
-"journal_abbrev": "Int J Clin Pharmacol Res",
-"year": 1990,
-"date": "1990-01-01",
-"doi": null,
-"pmid": "2201654",
-"pmcid": null,
-"abstract": "A multicentre study was planned and executed to evaluate the effect of acetyl-L-carnitine in the treatment of cerebral aging. Using 42 health centres, whose comparability of methodology was ensured through a training seminar and an instructional booklet on the psychometric battery of tests employed, some 400 elderly patients aged 60-80 years were enrolled using strict selection criteria. Treatment was run in four phases over 150 days. The first phase, serving as the baseline evaluation, defined through a battery of tests, consisted of 30-day placebo treatment. In the second phase of 45 days, daily treatment with 1500 mg acetyl-L-carnitine was given followed by a psychometric evaluation. For the next 45 days the same drug therapy was employed with a complete psychometric evaluation on the final day. In the last phase of 30 days the placebo was again administered and a final assessment made of the residual benefits of the 90-day treatment with acetyl-L-carnitine. Using this plan made it possible to evaluate the placebo effects, perform cross-study comparisons and demonstrate the effectiveness of the drug treatment.",
-"keywords": [],
-"mesh": [
-"Acetylcarnitine",
-"Aging",
-"Brain Ischemia",
-"Clinical Trials as Topic",
-"Humans",
-"Multicenter Studies as Topic",
-"Psychiatric Status Rating Scales",
-"Research Design"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Multicenter Study"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:52Z",
-"screening": {
-"decision": "include",
-"confidence": 0.78,
-"rationale": "The paper described a multicenter clinical trial design that explicitly included placebo run-in and withdrawal phases to evaluate placebo effects and treatment efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect",
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_older_adult"
-],
-"age_group": [
-"older_adults"
-],
-"condition_domain": [
-"cognition"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated",
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental",
-"single_group_pre_post"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
-},
-"summary": "Described a multicenter within-subject trial of acetyl-L-carnitine in ~400 older adults including placebo run-in, active treatment, and placebo withdrawal phases to assess drug effects and placebo responses.",
-"key_finding": null,
-"sample_size": 400,
-"free_keywords": [
-"acetyl-l-carnitine",
-"run-in",
-"withdrawal",
-"multicenter",
-"psychometric battery",
-"cerebral aging",
-"elderly"
-],
-"usage": {
-"input_tokens": 1332,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1181,
-"cost_usd": 0.00282
+"output_tokens": 590,
+"cost_usd": 0.00143
 }
 },
 "sources": [
@@ -4189,17 +3021,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:01:06Z",
+"classified_at": "2026-09-03T04:35:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title indicates the paper addresses the placebo effect and drug trial considerations, meeting inclusion as placebo science/methodology despite no abstract.",
+"confidence": 0.67,
+"rationale": "Title explicitly addresses 'The placebo effect' and drug trial considerations, indicating placebo science as the main subject despite no abstract.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -4235,23 +3067,24 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed the placebo effect and considerations for drug trials, including ethical and methodological issues relevant to clinical research.",
+"summary": "Discussed placebo effects and methodological and ethical considerations for drug trials, with implications for informed consent and trial design.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"clinical_trials",
-"informed_consent",
-"nimodipine",
+"clinical trials",
 "ethics",
-"randomization",
-"elderly"
+"informed consent",
+"nimodipine",
+"cerebrovascular",
+"placebo-controlled",
+"nursing"
 ],
 "usage": {
-"input_tokens": 197,
-"cache_read_input_tokens": 5760,
+"input_tokens": 402,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 639,
-"cost_usd": 0.00147
+"output_tokens": 814,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -4289,15 +3122,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:00:43Z",
+"classified_at": "2026-09-03T04:35:52Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Review article explicitly asks whether phototherapy effects reflect placebo mechanisms, so placebo science is the main subject despite no abstract.",
+"confidence": 0.6,
+"rationale": "Title and publication type indicate a review focused on whether phototherapy effects are placebo-related, so the paper treats placebo as its main subject (placebo science review).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4308,15 +3141,13 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"depression",
-"general_public"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"mood_depression",
-"other"
+"mood_depression"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -4328,35 +3159,31 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"history_conceptual",
-"treatment_cues_dose_route",
-"clinical_use_ethics_attitudes"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reviewed whether phototherapy (light treatment) effects in mood disorders could reflect placebo/contextual mechanisms rather than specific physiological action.",
+"summary": "Reviews whether observed benefits of light (phototherapy) for mood disorders might be attributable to placebo mechanisms rather than specific biological effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "phototherapy",
-"bright light therapy",
+"light treatment",
 "seasonal affective disorder",
-"placebo-controlled",
-"psychopharmacology bulletin",
-"1990"
+"placebo-controlled trials",
+"lightbox"
 ],
 "usage": {
-"input_tokens": 1061,
-"cache_read_input_tokens": 4864,
+"input_tokens": 370,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 643,
-"cost_usd": 0.00167
+"output_tokens": 721,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -4394,17 +3221,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:00:42Z",
+"classified_at": "2026-09-03T04:35:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.72,
-"rationale": "Title and publication type indicate a review focused on the role of placebos in evaluating light therapy for seasonal affective disorder, making placebo methodology the main subject.",
+"confidence": 0.62,
+"rationale": "Title and publication type indicate the paper is a review focused on the use of placebos in evaluating light (phototherapy) for seasonal affective disorder, making placebo methodology the main subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -4413,16 +3240,16 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"depression"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "mood_depression"
 ],
 "outcome_measures": [
-"self_report"
+"not_applicable"
 ],
 "design": [
 "not_applicable"
@@ -4437,26 +3264,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reviewed methodological issues concerning the use of placebo controls when evaluating light (phototherapy) for seasonal affective disorder.",
+"summary": "Reviews the use and role of placebos in evaluating light (phototherapy) treatment for seasonal affective disorder.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "seasonal affective disorder",
 "light therapy",
 "phototherapy",
+"placebo control",
 "sham light",
-"blinding",
-"placebo controls"
+"methodology"
 ],
 "usage": {
-"input_tokens": 1068,
-"cache_read_input_tokens": 4864,
+"input_tokens": 377,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 606,
-"cost_usd": 0.0016
+"output_tokens": 524,
+"cost_usd": 0.00129
 }
 },
 "sources": [
@@ -4495,17 +3322,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:00:46Z",
+"classified_at": "2026-09-03T04:35:55Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Title indicates a review focused on what placebo literature implies for light therapy in seasonal affective disorder, making placebo science the main subject despite missing abstract.",
+"rationale": "Title indicates a review of the placebo literature applied to light therapy for seasonal affective disorder, making placebo the paper's main subject despite no abstract.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -4533,7 +3360,7 @@
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"treatment_cues_dose_route"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -4542,101 +3369,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews placebo literature to draw implications for light therapy research and placebo effects in seasonal affective disorder.",
+"summary": "Reviewed placebo literature to draw implications for light therapy treatment and trials in seasonal affective disorder.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "seasonal affective disorder",
 "light therapy",
 "phototherapy",
-"placebo-controlled trials",
-"SAD"
+"placebo",
+"review"
 ],
 "usage": {
-"input_tokens": 1082,
-"cache_read_input_tokens": 4864,
+"input_tokens": 391,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 719,
-"cost_usd": 0.00183
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:1876104",
-"title": "Clinical trail of multiple treatment agents for cocaine dependence: a placebo-control; elimination study.",
-"authors": [
-"Tennant F"
-],
-"journal": "NIDA research monograph",
-"journal_abbrev": "NIDA Res Monogr",
-"year": 1990,
-"date": "1990-01-01",
-"doi": null,
-"pmid": "1876104",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Cocaine",
-"Drug Therapy, Combination",
-"Humans",
-"Substance-Related Disorders"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:00:26Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a placebo-controlled efficacy trial for cocaine dependence; unclear whether placebo/nocebo effects or placebo-arm analyses were an objective.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated a placebo-controlled clinical trial of multiple treatments for cocaine dependence, but it was unclear whether placebo/nocebo effects or placebo-arm analyses were studied.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"cocaine dependence",
-"placebo-controlled",
-"combination therapy",
-"elimination study",
-"substance use",
-"clinical trial",
-"NIDA"
-],
-"usage": {
-"input_tokens": 174,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 637,
-"cost_usd": 0.00146
+"output_tokens": 543,
+"cost_usd": 0.00133
 }
 },
 "sources": [
@@ -4683,15 +3431,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:28Z",
+"classified_at": "2026-09-03T04:35:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Analyzed outcomes and BP change specifically within the placebo-treated arm of a randomized trial, addressing placebo-arm response and its relation to events (placebo_arm_secondary_analysis).",
+"confidence": 0.85,
+"rationale": "Paper analyzed change in blood pressure and cardiovascular events specifically within the placebo-treated arm (placebo-arm response trajectories and predictors), making placebo response the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4727,28 +3475,31 @@
 "moderators": [
 "sex_gender",
 "age",
-"prior_experience"
+"disease_severity_duration",
+"trial_characteristics"
 ],
 "intervention_type": [
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed 8,654 placebo-treated patients in the MRC trial and found entry blood pressure fell after randomization to placebo, while failure of BP to fall predicted higher long-term stroke and coronary event rates.",
-"key_finding": "Found that BP fell significantly after randomization to placebo, and patients whose BP remained high after entry had the highest 5.5-year cardiovascular event rates.",
+"summary": "Analyzed 8,654 placebo-treated patients and found entry blood pressure fell after randomization but lesser BP decline predicted higher long-term cardiovascular event rates, especially stroke.",
+"key_finding": "Found that higher entry BP that remained elevated (smaller fall after screening) in placebo-treated patients predicted greater stroke and coronary event rates over 5.5 years.",
 "sample_size": 8654,
 "free_keywords": [
+"blood pressure",
 "hypertension",
-"mrc trial",
 "stroke",
 "coronary events",
-"blood pressure change"
+"MRC trial",
+"screening effect",
+"placebo arm"
 ],
 "usage": {
-"input_tokens": 1327,
-"cache_read_input_tokens": 4864,
+"input_tokens": 508,
+"cache_read_input_tokens": 6016,
 "cache_creation_input_tokens": 0,
-"output_tokens": 778,
-"cost_usd": 0.00201
+"output_tokens": 1099,
+"cost_usd": 0.00248
 }
 },
 "sources": [
@@ -4794,21 +3545,21 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:15Z",
+"classified_at": "2026-09-03T04:35:58Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized experimental manipulation of expectancy with an inert capsule assessing symptom reports, so it studies causal expectancy/nocebo effects.",
+"rationale": "Randomized manipulation of expectancy with ingestion of an inert (cellulose) capsule and measurement of symptom change makes placebo expectancy the experimental focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4819,7 +3570,8 @@
 "adults"
 ],
 "condition_domain": [
-"adverse_events"
+"anxiety_stress",
+"other"
 ],
 "outcome_measures": [
 "self_report"
@@ -4831,7 +3583,8 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -4841,22 +3594,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized adults to expectancy versus nonexpectancy, gave an inert capsule described as caffeine, and found significant expectancy-induced symptoms on five questionnaire items.",
-"key_finding": "Expectancy produced significant increases on five symptom questionnaire items.",
+"summary": "Randomized subjects to expectancy versus non-expectancy instructions and gave an inert cellulose capsule; found significant expectancy effects on five self-reported symptom items.",
+"key_finding": "Expectancy instructions produced significant increases in five symptom questionnaire items after ingestion of an inert capsule.",
 "sample_size": null,
 "free_keywords": [
 "caffeine placebo",
 "expectancy manipulation",
 "state-trait anxiety inventory",
+"symptom questionnaire",
 "cellulose capsule",
-"symptom questionnaire"
+"placebo analgesia analogue"
 ],
 "usage": {
-"input_tokens": 1171,
-"cache_read_input_tokens": 4864,
+"input_tokens": 480,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 726,
-"cost_usd": 0.00187
+"output_tokens": 825,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -4869,122 +3623,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.3109/10826089009056197",
 "cited_by_count": 7,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.3109/07420529009056966",
-"title": "Circadian variation in human performance evaluated by the Walter Reed performance assessment battery.",
-"authors": [
-"Gillooly PB",
-"Smolensky MH",
-"Albright DL",
-"Hsi B",
-"Thorne DR"
-],
-"journal": "Chronobiology international",
-"journal_abbrev": "Chronobiol Int",
-"year": 1990,
-"date": "1990-01-01",
-"doi": "10.3109/07420529009056966",
-"pmid": "2242508",
-"pmcid": null,
-"abstract": "As part of a two clock-time (0830 versus 2030) evaluation of administration-time dependent effects of dexedrine (5 mg) and triazolam (0.25 mg) on human cognitive performance, placebo (control) studies were conducted on 12 diurnally active (0700-2300) male adults (23-38 yrs) using a double-blind, randomized crossover design. Testing was conducted hourly during a series of sleepless 13-hr spans commencing in the morning or evening, using the Walter Reed computer controlled and scored multi-task cognitive performance assessment battery. For the placebo condition, Single and Group Cosinor analyses documented circadian rhythms in performance for most tasks (reaction time, logical reasoning, serial add/subtract and spatial orientation) both for individuals and the group. Overall, performance was worse overnight, when sleepiness was greatest, and best between 1830 and 2030. It was most variable around 0600-0700. The day-night variation in performance over all cognitive tests amounted to 21% of the 24-hr mean.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Circadian Rhythm",
-"Cognition",
-"Humans",
-"Male",
-"Psychomotor Performance",
-"Sleep Stages"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:52Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "The study conducted and analyzed the placebo condition (control) to document circadian variation in performance, making placebo response the object of analysis.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"cognition"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"crossover_rct",
-"within_subject_experimental"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"trial_characteristics"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Analyzed placebo-condition performance across 13-hr sleepless spans in 12 healthy male adults and found robust circadian rhythms, with worst overnight performance and a 21% day-night variation in cognitive test scores.",
-"key_finding": "Found circadian rhythms in placebo-condition cognitive performance with overall day-night variation amounting to 21% of the 24-hour mean; performance poorest overnight and best around 1830–2030.",
-"sample_size": 12,
-"free_keywords": [
-"circadian",
-"dexedrine",
-"triazolam",
-"walter reed performance battery",
-"reaction time",
-"psychomotor performance",
-"cosinor",
-"sleepiness"
-],
-"usage": {
-"input_tokens": 1311,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 785,
-"cost_usd": 0.00202
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2018800541",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.3109/07420529009056966",
-"cited_by_count": 48,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -5021,15 +3659,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:06Z",
+"classified_at": "2026-09-03T04:35:59Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Narrative review whose main subject was the placebo effect in chronic pain, covering mechanisms, ethics, and therapeutic methods (placebo science broader than a passing mention).",
+"confidence": 0.9,
+"rationale": "Narrative review whose primary topic was the placebo effect, its theories, ethics, and therapeutic use in chronic pain (placebo is the main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5061,9 +3699,8 @@
 "therapeutic_ritual_context",
 "provider_patient_interaction",
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"clinical_use_ethics_attitudes",
-"history_conceptual"
+"history_conceptual",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -5072,22 +3709,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews theories, ethics, effects, and nursing methods for therapeutically stimulating the placebo effect in chronic pain management.",
+"summary": "Reviewed theories, ethics, and methods for harnessing the placebo effect in nonpharmacological chronic pain therapies and outlined practice and research challenges.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
 "chronic pain",
-"placebo ethics",
+"psychophysiologic self-regulation",
 "therapeutic ritual",
-"patient empowerment"
+"ethics",
+"nonpharmacological therapy",
+"placebo mechanisms"
 ],
 "usage": {
-"input_tokens": 1190,
-"cache_read_input_tokens": 4864,
+"input_tokens": 499,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 693,
-"cost_usd": 0.00181
+"output_tokens": 861,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -5145,15 +3784,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:01:31Z",
+"classified_at": "2026-09-03T04:35:59Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Double-blind randomized trial that explicitly aimed to measure the effect of growth hormone versus placebo, so placebo effect/response was a stated object of study.",
+"confidence": 0.8,
+"rationale": "The trial explicitly aimed to measure the placebo effect/response by comparing GH treatment to placebo in a double-blind randomized design, making placebo phenomena a stated study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5183,7 +3822,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"treatment_cues_dose_route"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -5192,22 +3831,23 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Conducted a 12-month double-blind randomized trial comparing growth hormone to placebo in short, slowly growing children, measuring height velocity and IGF-I relative to pretreatment.",
+"summary": "Randomized double-blind trial compared growth hormone versus placebo for 12 months in short, slowly growing children and measured height velocity and IGF‑I to assess the placebo effect.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"short stature",
-"height velocity",
-"insulin-like growth factor I",
 "growth hormone",
-"pediatrics"
+"height velocity",
+"igf-i",
+"pediatrics",
+"randomized",
+"double-blind"
 ],
 "usage": {
-"input_tokens": 1205,
-"cache_read_input_tokens": 4864,
+"input_tokens": 514,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1016,
-"cost_usd": 0.00245
+"output_tokens": 913,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -5220,120 +3860,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1651-2227.1990.tb11593.x",
 "cited_by_count": 25,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/j.1365-2230.1990.tb02015.x",
-"title": "Natural history of androgenetic alopecia.",
-"authors": [
-"Olsen EA",
-"Buller TA",
-"Weiner S",
-"Delong ER"
-],
-"journal": "Clinical and experimental dermatology",
-"journal_abbrev": "Clin Exp Dermatol",
-"year": 1990,
-"date": "1990-01-01",
-"doi": "10.1111/j.1365-2230.1990.tb02015.x",
-"pmid": "2311277",
-"pmcid": null,
-"abstract": "Twenty-two men with patterns III-Va androgenetic alopecia were entered into a 10-month study aimed at establishing information on the natural progression of hair loss over a period of time typical of studies of hair growth promoters. The methodology employed was the same as that in published clinical trials of topical minoxidil, but the men refrained from application of either active drug or vehicle to their scalps. As one of the potential explanations for the observed 'placebo-effect' seen in non-vellus hair counts in the topical minoxidil trials was a learning curve of novice hair counters, we were particularly interested in evaluating this in our 'no-treatment' trial. To that end, both a novice (Observer I) and an experienced (Observer II) hair counter independently performed the hair counts. There was a mean decline in the number of vertex target area non-vellus hairs (-17.2 +/- 80.3 for Observer I and -26.6 +/- 63.5 for Observer II) at the end of 10 months; this was not significant. The novice's hair counts were lower than the experienced observer's counts at baseline, and the difference remained relatively constant during the study. Without the application of a placebo, there was no increase in hair growth, making it unlikely that the methods of hair counting led to the 'placebo-effect' seen in prior topical minoxidil studies.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Alopecia Areata",
-"Hair",
-"Humans",
-"Male",
-"Middle Aged",
-"Observer Variation",
-"Time Factors"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:10Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Empirical no-treatment longitudinal study that tested whether measurement/observer effects could explain prior placebo effects in topical minoxidil trials, addressing placebo-related trial methodology.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult",
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other",
-"global_health_qol"
-],
-"outcome_measures": [
-"clinical_endpoint",
-"clinician_rated"
-],
-"design": [
-"single_group_pre_post",
-"observational"
-],
-"effects": [
-"null_objective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"provider_characteristics"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Followed 22 men with androgenetic alopecia without applying drug or vehicle for 10 months and found no increase in non-vellus hair counts, arguing against a measurement-driven placebo effect in prior minoxidil trials.",
-"key_finding": "Found mean declines in vertex non-vellus hair counts (Observer I: -17.2; Observer II: -26.6) with no significant increase over 10 months.",
-"sample_size": 22,
-"free_keywords": [
-"androgenetic alopecia",
-"vertex hair count",
-"observer variation",
-"natural history",
-"minoxidil trials"
-],
-"usage": {
-"input_tokens": 1353,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1013,
-"cost_usd": 0.00249
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1984567598",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.1365-2230.1990.tb02015.x",
-"cited_by_count": 9,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -5376,29 +3902,26 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:15Z",
+"classified_at": "2026-09-03T04:36:01Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized trial included placebo and no-treatment arms and examined treatment/context effects (placebo vs no treatment), meeting inclusion criteria for placebo effect/response research.",
+"rationale": "Randomized trial included both a placebo arm and a no-treatment control, allowing experimental isolation of placebo/context effects (placebo vs. no treatment).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"dermatology",
-"healthy_adult",
-"healthy_pediatric"
+"dermatology"
 ],
 "age_group": [
 "children_adolescents",
@@ -5408,48 +3931,43 @@
 "other"
 ],
 "outcome_measures": [
-"clinical_endpoint",
-"clinician_rated",
-"self_report"
+"clinical_endpoint"
 ],
 "design": [
 "parallel_groups_rct",
 "placebo_vs_no_treatment_arm"
 ],
 "effects": [
-"null_objective",
-"significant_objective"
+"null_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "therapeutic_ritual_context"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
 "topical_cream",
-"verbal_suggestion_only",
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial compared hypnotic suggestion, topical salicylic acid, placebo topical, and no treatment for wart regression and found only hypnosis produced significantly greater wart loss versus no treatment at six weeks.",
-"key_finding": "Hypnotic suggestion led to significantly more wart regression than no treatment, while the topical placebo did not differ from no treatment.",
+"summary": "Randomized trial compared hypnotic suggestion, topical salicylic acid, placebo, and no-treatment for warts and found only hypnosis produced significantly greater wart regression than no treatment.",
+"key_finding": "Only the hypnotic suggestion group showed significantly more wart loss versus no-treatment; the placebo topical did not differ from no treatment.",
 "sample_size": null,
 "free_keywords": [
-"warts",
-"wart regression",
+"cutaneous warts",
 "salicylic acid",
 "hypnosis",
-"psychosomatic medicine",
-"randomized trial"
+"placebo topical",
+"randomized controlled trial"
 ],
 "usage": {
-"input_tokens": 1191,
-"cache_read_input_tokens": 4864,
+"input_tokens": 500,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1129,
-"cost_usd": 0.00268
+"output_tokens": 1256,
+"cost_usd": 0.00278
 }
 },
 "sources": [
@@ -5462,126 +3980,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1097/00006842-199001000-00009",
 "cited_by_count": 90,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1089/jop.1990.6.85",
-"title": "The effect of timolol, betaxolol, and placebo on corneal sensitivity in healthy volunteers.",
-"authors": [
-"Vogel R",
-"Clineschmidt CM",
-"Hoeh H",
-"Kulaga SF",
-"Tipping RW"
-],
-"journal": "Journal of ocular pharmacology",
-"journal_abbrev": "J Ocul Pharmacol",
-"year": 1990,
-"date": "1990-01-01",
-"doi": "10.1089/jop.1990.6.85",
-"pmid": "2394934",
-"pmcid": null,
-"abstract": "This study in sixty healthy volunteers investigated the effect of a single drop of either 0.5% timolol ophthalmic solution, 0.5% betaxolol ophthalmic solution, or placebo on corneal sensitivity as measured by the Cochet-Bonnet anesthesiometer. Corneal sensitivity was measured immediately prior to the drop and then 1, 3, 6, 10, 15 and 30 minutes after drop instillation. The timolol treated eyes showed a significant decrease at one minute after instillation. An increase in sensitivity occurred in the placebo group at 15 and 30 minutes. In the eyes treated with betaxolol, a significant reduction in corneal sensitivity was seen at every time point through the 10-minute measurement.",
-"keywords": [],
-"mesh": [
-"Administration, Topical",
-"Adolescent",
-"Adult",
-"Betaxolol",
-"Cornea",
-"Double-Blind Method",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Random Allocation",
-"Sensory Thresholds",
-"Timolol"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:26Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Placebo arm was measured and reported (increase in corneal sensitivity), so the paper analyzed placebo/sham response rather than using placebo only as an incidental comparator.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"sensory_perception"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"topical_cream"
-]
-},
-"summary": "Tested timolol, betaxolol, and placebo eye drops in 60 healthy volunteers and found drug-induced decreases in corneal sensitivity while the placebo group showed increased sensitivity at 15 and 30 minutes.",
-"key_finding": "Placebo-treated eyes showed a significant increase in corneal sensitivity at 15 and 30 minutes; timolol and betaxolol produced early reductions in sensitivity.",
-"sample_size": 60,
-"free_keywords": [
-"timolol",
-"betaxolol",
-"corneal sensitivity",
-"cochet-bonnet anesthesiometer",
-"ophthalmic drop"
-],
-"usage": {
-"input_tokens": 393,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 933,
-"cost_usd": 0.00211
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1990-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2032579889",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1089/jop.1990.6.85",
-"cited_by_count": 14,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -5618,15 +4016,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:07Z",
+"classified_at": "2026-09-03T04:36:04Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly tested conditioned (placebo-like) apomorphine effect by comparing saline responses in mice exposed previously to drug-paired vs non-paired environments.",
+"confidence": 0.9,
+"rationale": "Animal classical-conditioning experiment showed conditioned apomorphine-like response to saline in the drug-paired environment, directly studying conditioned placebo-like effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5639,7 +4037,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "motor_function"
 ],
@@ -5653,7 +4053,8 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -5662,24 +4063,23 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Found that mice given apomorphine repeatedly in the test environment later showed apomorphine-like climbing after saline injection, attributed to classical conditioning of drug effects.",
-"key_finding": "Mice previously exposed to apomorphine in the experimental room showed enhanced climbing after saline, indicating a conditioned apomorphine-like response.",
+"summary": "Found that mice previously given apomorphine in a testing room showed apomorphine-like climbing after saline in that room, attributed to classical conditioning to environmental cues.",
+"key_finding": "Conditioned environmental cues produced a significant increase in climbing behavior after saline, resembling the drug-induced effect.",
 "sample_size": null,
 "free_keywords": [
 "apomorphine",
-"classical conditioning",
 "climbing behavior",
+"conditioned response",
 "mice",
-"dopamine",
-"intraperitoneal injection",
-"environmental cues"
+"classical conditioning",
+"saline test"
 ],
 "usage": {
-"input_tokens": 1274,
-"cache_read_input_tokens": 4864,
+"input_tokens": 583,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 864,
-"cost_usd": 0.00217
+"output_tokens": 797,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -5728,15 +4128,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:19Z",
+"classified_at": "2026-09-03T04:36:04Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical animal experiment that compared saline (placebo) injection to no-injection and analyzed the physiological placebo/handling effect on core temperature.",
+"rationale": "Animal experiment directly compared saline (inert) injection versus no-injection to quantify the physiological placebo/handling effect on core temperature, so placebo phenomena were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5767,7 +4167,8 @@
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
-"therapeutic_ritual_context"
+"therapeutic_ritual_context",
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "none_reported"
@@ -5776,22 +4177,23 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Measured telemetric core temperature in rats and found saline injections produced a significant rise in core temperature compared with no injection, indicating handling/injection stress effects.",
-"key_finding": "Saline injection increased core temperature by ~0.60°C versus ~0.13°C after no injection (p<0.001).",
-"sample_size": 15,
+"summary": "Found that intraperitoneal saline injection produced a significant rise in core temperature compared with no-injection in rats.",
+"key_finding": "Mean temperature increase ~0.60°C after saline versus ~0.13°C after no injection (p<0.001).",
+"sample_size": 61,
 "free_keywords": [
-"telemetry",
-"core temperature",
+"thermoregulation",
+"saline injection",
 "handling stress",
-"intraperitoneal injection",
-"rat"
+"telemetry",
+"rat",
+"core temperature"
 ],
 "usage": {
-"input_tokens": 400,
-"cache_read_input_tokens": 5760,
+"input_tokens": 605,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 837,
-"cost_usd": 0.00192
+"output_tokens": 972,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -5837,15 +4239,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:02:27Z",
+"classified_at": "2026-09-03T04:36:26Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "This paper conducted a secondary analysis of subjects randomly assigned to the placebo condition and examined placebo-arm symptom trajectories and their relation to cessation outcome, meeting the 'placebo_response/placebo_arm_secondary_analysis' inclusion rule.",
+"confidence": 0.8,
+"rationale": "The paper analyzed post-cessation data specifically from subjects randomized to the placebo condition, making the placebo arm the analytic focus (placebo-arm analysis of predictors of response/outcome).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5856,13 +4258,12 @@
 "article_type": "secondary_analysis",
 "species": "human",
 "population": [
-"substance_use"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"mood_depression",
 "addiction_craving"
 ],
 "outcome_measures": [
@@ -5877,33 +4278,35 @@
 "significant_objective"
 ],
 "mechanisms": [
-"emotion_anxiety_regulation",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"media_social_contagion",
+"emotion_anxiety_regulation"
 ],
 "moderators": [
-"prior_experience"
+"prior_experience",
+"mood_anxiety_state"
 ],
 "intervention_type": [
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed placebo-arm smokers and found those with past major depression had greater depressive symptoms during the first week after cessation, and that this dysphoria was related to lower smoking cessation success.",
-"key_finding": "Found that early post-cessation depressive symptoms in placebo-arm participants with a history of major depression predicted poorer cessation outcome.",
+"summary": "Analyzed placebo-arm data from a smoking cessation trial and found that smokers with prior major depression had greater depressive symptoms during the first postcessation week, which were related to poorer cessation outcome.",
+"key_finding": "Found that smokers with a history of major depression randomized to placebo experienced higher early dysphoria that predicted lower smoking cessation success.",
 "sample_size": null,
 "free_keywords": [
 "smoking cessation",
-"nicotine withdrawal",
-"relapse",
 "major depression",
+"withdrawal",
 "behavioral treatment",
-"placebo arm"
+"placebo arm",
+"postcessation"
 ],
 "usage": {
-"input_tokens": 304,
-"cache_read_input_tokens": 5760,
+"input_tokens": 509,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 986,
-"cost_usd": 0.00219
+"output_tokens": 749,
+"cost_usd": 0.00177
 }
 },
 "sources": [
@@ -5952,15 +4355,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-02T20:00:59Z",
+"classified_at": "2026-09-03T04:36:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical human study that measured placebo (intrathecal saline) response and correlated it with CSF beta-endorphin levels, directly addressing placebo mechanisms in chronic pain.",
+"rationale": "Empirical study administered intrathecal saline and directly measured placebo responders vs non-responders, with CSF beta-endorphin changes as the primary biological correlate of the placebo response.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5971,8 +4374,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"chronic_pain",
-"healthy_adult"
+"chronic_pain"
 ],
 "age_group": [
 "adults"
@@ -5982,10 +4384,9 @@
 ],
 "outcome_measures": [
 "self_report",
-"genetic_molecular"
+"neuroendocrine"
 ],
 "design": [
-"within_subject_experimental",
 "single_group_pre_post"
 ],
 "effects": [
@@ -5993,7 +4394,8 @@
 "significant_objective"
 ],
 "mechanisms": [
-"neurobiology_opioid"
+"neurobiology_opioid",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -6002,23 +4404,23 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Measured CSF peak B-endorphin before and after intrathecal saline in chronic pain patients and found increased CSF endorphin alongside reported placebo analgesia in responders.",
-"key_finding": "Placebo responders (n=14) showed a 2.3-fold increase in CSF peak B-endorphin after intrathecal saline, while non-responders (n=6) showed no change.",
+"summary": "Measured CSF beta-endorphin before and after intrathecal saline in chronic pain patients and found pain relief in some patients accompanied by a 2.3-fold increase in CSF peak beta-endorphin in placebo responders.",
+"key_finding": "Placebo responders (n=14) showed a 2.3-fold increase in CSF peak beta-endorphin, while non-responders (n=6) showed no change.",
 "sample_size": 20,
 "free_keywords": [
 "beta-endorphin",
-"csf",
+"cerebrospinal fluid",
 "intrathecal saline",
-"placebo analgesia",
-"chronic pain",
-"placebo responder"
+"analgesia",
+"placebo responder",
+"chronic pain"
 ],
 "usage": {
-"input_tokens": 1374,
-"cache_read_input_tokens": 4864,
+"input_tokens": 683,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 941,
-"cost_usd": 0.00235
+"output_tokens": 866,
+"cost_usd": 0.00205
 }
 },
 "sources": [
@@ -6083,11 +4485,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T20:37:02Z",
+"classified_at": "2026-09-04T00:15:23Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal conditioning study explicitly tested conditioned analgesic (and aversive) responses to a morphine-paired taste CS and opioid mediation, meeting inclusion for mechanism-focused placebo-like conditioned effects.",
+"confidence": 0.85,
+"rationale": "Animal experiments explicitly tested classical conditioning of morphine-paired cues producing a conditioned analgesic response and its opioid mediation, making placebo-like conditioned effects the primary focus (mechanisms of conditioned analgesia/aversion).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6130,25 +4532,23 @@
 "other"
 ]
 },
-"summary": "Found that a morphine-paired taste CS produced conditioned taste aversion and a naloxone-reversible conditioned analgesic response in rats, and that chronic naltrexone enhanced the conditioned analgesia.",
-"key_finding": "Conditioned analgesia was opioid-mediated (blocked by naloxone) and was potentiated by chronic naltrexone treatment.",
+"summary": "Found that re-exposure to a morphine-paired taste cue produced conditioned analgesia in rats, that naloxone blocked this analgesic CR, and that chronic naltrexone altered its magnitude while not affecting taste aversion strength.",
+"key_finding": "Conditioned analgesic response to a morphine-associated CS was opioid mediated (blocked by naloxone) and was enhanced after chronic naltrexone treatment.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "naloxone",
-"naltrexone",
 "conditioned analgesia",
 "taste aversion",
 "rats",
-"opioid receptor",
-"classical conditioning"
+"opiate receptors"
 ],
 "usage": {
 "input_tokens": 698,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1143,
-"cost_usd": 0.00261
+"output_tokens": 1161,
+"cost_usd": 0.00264
 }
 },
 "sources": [

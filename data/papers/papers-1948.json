@@ -29,78 +29,53 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:55Z",
+"classified_at": "2026-09-03T04:51:21Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly states observations on the effect of placebo therapy in a clinical evaluation of dermatologic treatments, indicating placebo was an object of study though abstract is unavailable.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title mentions 'observations on the effect of placebo therapy' suggesting placebo was considered but insufficient detail to confirm that placebo/nocebo phenomena were an explicit primary focus or experimentally isolated.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"dermatology"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"clinician_rated",
-"clinical_endpoint",
-"self_report"
-],
-"design": [
-"single_group_pre_post",
-"observational"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"therapeutic_ritual_context",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"other"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reported a clinical evaluation of hydryllin for various dermatoses and made observations on the effects of placebo therapy in skin disease.",
+"summary": "Reported a clinical evaluation of hydryllin for various dermatoses and made observations about the effects of placebo therapy; abstract not available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hydryllin",
-"diphenhydramine",
 "dermatoses",
-"skin disease",
+"hydryllin",
 "placebo therapy",
-"1948",
-"clinical evaluation"
+"diphenhydramine",
+"skin"
 ],
 "usage": {
-"input_tokens": 198,
-"cache_read_input_tokens": 5760,
+"input_tokens": 403,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 885,
-"cost_usd": 0.00196
+"output_tokens": 532,
+"cost_usd": 0.00131
 }
 },
 "sources": [
@@ -138,17 +113,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:55Z",
+"classified_at": "2026-09-03T04:51:21Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Title explicitly addresses the use of placebos in local therapy of skin diseases, making placebo use the paper's main subject despite missing abstract.",
+"rationale": "Title explicitly names use of placebos in local therapy of skin diseases, indicating placebo is the paper's main subject though no abstract is available; treated as placebo science (historical/clinical discussion).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -175,34 +150,35 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"therapeutic_ritual_context",
-"treatment_cues_dose_route"
+"history_conceptual",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"topical_cream"
+"not_applicable"
 ]
 },
-"summary": "Discusses the use of placebos in local (topical) therapies for skin diseases, focusing on clinical practice implications and context of use.",
+"summary": "Discussed the use of placebos in topical/local treatment of skin diseases in clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dermatology",
-"topical placebo",
-"local therapy",
-"clinical practice",
+"topical therapy",
+"placebo_use",
+"local_therapy",
+"clinical_practice",
+"therapeutic_ritual",
 "history",
 "1948"
 ],
 "usage": {
-"input_tokens": 169,
-"cache_read_input_tokens": 5760,
+"input_tokens": 374,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 752,
-"cost_usd": 0.00169
+"output_tokens": 609,
+"cost_usd": 0.00146
 }
 },
 "sources": [

@@ -31,15 +31,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:29Z",
+"classified_at": "2026-09-03T04:46:20Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH terms suggest a placebo-related experimental topic but aims and whether placebo/nocebo effects or responses were the object of study are unclear.",
+"rationale": "No abstract or methods available; title indicates placebo administration/timing is the topic but insufficient information to confirm whether placebo/nocebo effects were the explicit object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -57,24 +57,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title and MeSH terms suggested an experimental study of temporal contiguity of placebo administration and misattribution of arousal/fear, but aims and results were not provided.",
+"summary": "No abstract available; title indicated an experimental study relating timing (contiguity) of placebo administration to misattribution of effects in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "contiguity",
 "misattribution",
-"arousal",
-"electroshock",
-"fear",
-"placebo",
-"perceptual-motor skills"
+"placebo administration",
+"1971",
+"Perceptual and Motor Skills"
 ],
 "usage": {
-"input_tokens": 181,
-"cache_read_input_tokens": 5760,
+"input_tokens": 386,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 797,
-"cost_usd": 0.00178
+"output_tokens": 541,
+"cost_usd": 0.00133
 }
 },
 "sources": [
@@ -116,17 +114,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:26Z",
+"classified_at": "2026-09-03T04:46:21Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH term 'Placebos' indicate the paper's main subject is the placebo as a therapeutic agent, meeting inclusion for placebo science although the abstract is unavailable.",
+"confidence": 0.75,
+"rationale": "Title and MeSH terms indicate the paper's main subject is the placebo and its clinical/psychosomatic role, consistent with a narrative review/theory on placebo science.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -154,8 +152,7 @@
 ],
 "mechanisms": [
 "history_conceptual",
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -164,22 +161,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses the placebo as a neglected therapeutic agent and reviewed conceptual, clinical, and trial-methodology issues related to placebo use.",
+"summary": "Reviewed the placebo as a neglected therapeutic agent and discussed its clinical, psychosomatic, and physician–patient implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "physician-patient relation",
-"psychosomatic",
+"psychosomatic medicine",
 "therapeutic ritual",
-"deception",
-"clinical ethics"
+"history of placebo",
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 1065,
-"cache_read_input_tokens": 4864,
+"input_tokens": 374,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 695,
-"cost_usd": 0.00178
+"output_tokens": 665,
+"cost_usd": 0.00157
 }
 },
 "sources": [
@@ -231,25 +228,31 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:19Z",
+"classified_at": "2026-09-03T04:46:22Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and MeSH terms only indicate placebos were used; insufficient information to determine whether placebo/nocebo effects or responses were a study focus.",
-"exclusion_reason": "insufficient_information",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title/MeSH terms mention placebo and gastric measures but do not reveal whether placebo/nocebo phenomena were the explicit focus or merely a control; insufficient information to judge inclusion.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"nausea_gi"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -257,23 +260,24 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient abstract to judge whether placebo/nocebo effects were studied; the 1971 clinical trial appeared to involve gastric measures and placebos in adult humans.",
+"summary": "Insufficient information in the record to determine whether placebo/nocebo phenomena were the study's focus; the paper involved gastric measures in humans and mentioned placebos in MeSH.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "gastric acidity",
-"gastric juice",
+"placebo",
 "histamine",
-"barium sulfate",
 "lactose",
-"placebo"
+"barium sulfate",
+"gastric juice",
+"intramuscular injection"
 ],
 "usage": {
-"input_tokens": 227,
-"cache_read_input_tokens": 5760,
+"input_tokens": 432,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 519,
-"cost_usd": 0.00124
+"output_tokens": 523,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -311,18 +315,18 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:26Z",
+"classified_at": "2026-09-03T04:46:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; title implies a study of placebo ointment response but insufficient information in record to determine design, outcomes, or results.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'Placebo ointment response' indicating the placebo response was the study focus despite no abstract.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -333,20 +337,21 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"dermatology"
+"healthy_adult"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
+"other",
 "other"
 ],
 "outcome_measures": [
 "clinician_rated",
-"immune_inflammatory"
+"other"
 ],
 "design": [
-"single_group_pre_post"
+"within_subject_experimental"
 ],
 "effects": [
 "not_applicable"
@@ -361,22 +366,22 @@
 "topical_cream"
 ]
 },
-"summary": "No abstract available; title indicated an empirical study of placebo ointment response using a skin blanching test but methods and results were not reported in the record.",
+"summary": "Studied the response to an inert ointment in the skin blanching test; abstract not available to report results.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blanching test",
-"topical placebo",
+"skin blanching",
 "ointment",
-"paraffin",
-"mineral oil"
+"mineral oil",
+"paraffin"
 ],
 "usage": {
-"input_tokens": 183,
-"cache_read_input_tokens": 5760,
+"input_tokens": 388,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 828,
-"cost_usd": 0.00185
+"output_tokens": 782,
+"cost_usd": 0.00181
 }
 },
 "sources": [
@@ -431,38 +436,28 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:23Z",
+"classified_at": "2026-09-03T04:46:52Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH terms indicate the paper's primary focus is on the usefulness of placebo and double-blind methodology in psychotropic drug evaluation, meeting 'placebo science' inclusion criteria despite no abstract.",
+"confidence": 0.7,
+"rationale": "Title indicates the paper discusses the role and usefulness of placebo and double-blind methodology in psychotropic drug evaluation, meeting 'placebo science' inclusion as a methodological/theoretical piece despite no abstract.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other",
-"mood_depression",
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -471,8 +466,7 @@
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"clinical_use_ethics_attitudes",
-"provider_patient_interaction"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -481,22 +475,25 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses the usefulness of the placebo and double-blind technique for evaluating psychotropic drugs, focusing on methodological and ethical considerations.",
+"summary": "Discusses the usefulness of the placebo and double-blind technique for evaluating psychotropic drugs, focusing on methodological and conceptual issues in clinical trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "double-blind",
-"psychotropic drugs",
-"placebo ethics",
-"schizophrenia",
-"methodology"
+"psychotropic",
+"clinical-trials",
+"methodology",
+"placebo-controlled",
+"ethics",
+"suggestion",
+"schizophrenia"
 ],
 "usage": {
-"input_tokens": 1135,
-"cache_read_input_tokens": 4864,
+"input_tokens": 444,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 628,
-"cost_usd": 0.00166
+"output_tokens": 678,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -504,111 +501,6 @@
 ],
 "date_added": "1971-07-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1016/0041-008x(71)90010-x",
-"title": "A comparative analgesia study of propoxyphene hydrochloride, propoxyphene napsylate, and placebo.",
-"authors": [
-"Sunshine A",
-"Laska E",
-"Slafta J",
-"Fleischman E"
-],
-"journal": "Toxicology and applied pharmacology",
-"journal_abbrev": "Toxicol Appl Pharmacol",
-"year": 1971,
-"date": "1971-07-01",
-"doi": "10.1016/0041-008x(71)90010-x",
-"pmid": "4936999",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Analgesia",
-"Chlorides",
-"Clinical Trials as Topic",
-"Dextropropoxyphene",
-"Female",
-"Fractures, Bone",
-"Humans",
-"Male",
-"Naphthalenes",
-"Pain",
-"Placebos",
-"Postoperative Complications",
-"Salts",
-"Sulfonic Acids"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:43Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.7,
-"rationale": "Title and indexing indicate a drug RCT with a placebo arm but no abstract or full text was available to determine whether the paper analyzed placebo/nocebo effects or responses rather than only testing active drug efficacy.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "No abstract available; title and indexing indicated a randomized comparative analgesia trial of two propoxyphene formulations versus placebo, but it was unclear whether placebo/nocebo effects or responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"dextropropoxyphene",
-"propoxyphene",
-"analgesia",
-"placebo-controlled",
-"1971"
-],
-"usage": {
-"input_tokens": 1138,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 547,
-"cost_usd": 0.0015
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-07-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2061128083",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/0041-008x(71)90010-x",
-"cited_by_count": 22,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1136/bmj.2.5761.585",
@@ -638,17 +530,17 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:19Z",
+"classified_at": "2026-09-03T04:46:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title and MeSH indicate a historical article focused on placebos, so the paper addresses placebo history rather than using placebo as a mere comparator.",
+"confidence": 0.6,
+"rationale": "Historical/biographical article explicitly about placebo (MeSH term 'Placebos' and 'History') so it addresses placebo science as its main subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -684,23 +576,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews historical accounts linking the Duke of Wellington and 19th-century practices to the concept and use of placebos.",
+"summary": "Discussed historical and biographical accounts relating to placebo use in the era of the Duke of Wellington, placing placebo practice in 19th-century context.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"arthur wellington",
-"medical history",
+"duke of wellington",
 "19th century",
-"british army",
-"placebo history",
-"biographical vignette"
+"history of medicine",
+"biographical article",
+"british medical journal"
 ],
 "usage": {
-"input_tokens": 1060,
-"cache_read_input_tokens": 4864,
+"input_tokens": 369,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 663,
-"cost_usd": 0.00171
+"output_tokens": 539,
+"cost_usd": 0.00132
 }
 },
 "sources": [
@@ -719,135 +610,6 @@
 "landing_url": "https://doi.org/10.1136/bmj.2.5761.585",
 "cited_by_count": 1,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:4255649",
-"title": "The comparative effects of the administration of cortisone, estrogen-progestin, and placebo on the clinical manifestations of the polycystic ovary (Stein-Leventhal) syndrome.",
-"authors": [
-"Benjamin F",
-"Kolodny HD",
-"Schwartz ED"
-],
-"journal": "The Journal of reproductive medicine",
-"journal_abbrev": "J Reprod Med",
-"year": 1971,
-"date": "1971-06-01",
-"doi": null,
-"pmid": "4255649",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"Americas",
-"Biology",
-"Clinical Research",
-"Corpus Luteum Hormones",
-"Developed Countries",
-"Developing Countries",
-"Diseases",
-"Drugs--administraction and dosage",
-"Endocrine System",
-"Estrogens",
-"Family Planning",
-"Genital Effects, Female",
-"Genitalia",
-"Genitalia, Female",
-"Hormones",
-"New York",
-"North America",
-"Northern America",
-"Ovarian Effects",
-"Ovary",
-"Physiology",
-"Progestational Hormones",
-"Progesterone",
-"Reproductive Control Agents",
-"Research Methodology",
-"Treatment",
-"United States",
-"Urogenital Effects",
-"Urogenital System"
-],
-"mesh": [
-"Acne Vulgaris",
-"Clinical Trials as Topic",
-"Cortisone",
-"Estrogens",
-"Female",
-"Hirsutism",
-"Humans",
-"Menstruation Disturbances",
-"Ovulation",
-"Placebos",
-"Polycystic Ovary Syndrome",
-"Progestins"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:12Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract available; it's a 1971 controlled clinical trial with a placebo arm but the record doesn't indicate whether placebo/nocebo effects or placebo-arm responses were analyzed as an object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Controlled clinical trial compared cortisone, estrogen-progestin, and placebo for clinical manifestations of polycystic ovary syndrome; abstract not available to judge placebo-focused analyses.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"polycystic ovary syndrome",
-"PCOS",
-"cortisone",
-"estrogen-progestin",
-"hirsutism",
-"acne",
-"1971 trial"
-],
-"usage": {
-"input_tokens": 1142,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 514,
-"cost_usd": 0.00144
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-06-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.2466/pms.1971.32.1.235",
@@ -884,15 +646,15 @@
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:53Z",
+"classified_at": "2026-09-03T04:46:25Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Title indicates an experimental test of an 'anesthetic placebo' on two-point thresholds, meeting inclusion as a study of placebo/context effects on sensory perception.",
+"rationale": "Title explicitly investigates the effect of an anesthetic placebo on two-point thresholds, indicating placebo phenomena were the study focus despite no abstract.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -932,24 +694,23 @@
 "topical_cream"
 ]
 },
-"summary": "Tested whether an anesthetic placebo altered two-point discrimination thresholds on skin and tongue; abstract was not available.",
+"summary": "Tested the effect of an anesthetic placebo on two-point discrimination thresholds in human participants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "two-point discrimination",
-"two-point threshold",
 "lidocaine",
-"tongue",
-"skin",
-"psychophysics",
-"galvanic skin response"
+"touch",
+"tactile_threshold",
+"somatosensation",
+"galvanic_skin_response"
 ],
 "usage": {
-"input_tokens": 192,
-"cache_read_input_tokens": 5760,
+"input_tokens": 397,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 785,
-"cost_usd": 0.00176
+"output_tokens": 746,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -990,15 +751,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:14Z",
+"classified_at": "2026-09-03T04:46:52Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a discussion of possible placebo reactions but the paper type and whether it empirically studied placebo/nocebo cannot be determined.",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title implies discussion of placebo reactions but available text is insufficient to judge whether placebo/nocebo was the paper's primary focus or an incidental comment.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1016,22 +777,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper empirically studied placebo/nocebo effects or merely discussed possible placebo reactions to folic acid.",
+"summary": "No abstract available; title asked whether folic acid effects reflected toxicity or placebo reactions, but available text did not reveal whether placebo/nocebo phenomena were empirically analyzed or discussed conceptually.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "folic acid",
+"toxicity",
 "placebo reactions",
-"adverse effects",
+"nocebo",
 "salter",
 "lancet 1971"
 ],
 "usage": {
-"input_tokens": 1059,
-"cache_read_input_tokens": 4864,
+"input_tokens": 368,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 695,
-"cost_usd": 0.00178
+"output_tokens": 655,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -1077,15 +839,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:31Z",
+"classified_at": "2026-09-03T04:46:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Title and publication type indicate a case report focused on placebo dependence, meeting inclusion as placebo science (clinical case report) despite no abstract.",
+"rationale": "Title identifies a case report whose explicit focus is placebo dependence (placebo as main subject) despite no abstract available, so it meets inclusion as placebo science/case report.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1114,211 +876,31 @@
 "not_applicable"
 ],
 "mechanisms": [
-"prior_treatment_experience",
-"therapeutic_ritual_context"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"not_applicable"
 ]
 },
-"summary": "Reported a single clinical case of placebo dependence and discussed problems arising from habitual placebo use.",
+"summary": "Reported a single clinical case concerning placebo dependence and its problems.",
 "key_finding": null,
 "sample_size": 1,
 "free_keywords": [
 "placebo dependence",
 "case report",
-"gastrointestinal",
 "phenothiazine",
-"habituation",
-"1971"
+"gastrointestinal",
+"habituation"
 ],
 "usage": {
-"input_tokens": 1084,
-"cache_read_input_tokens": 4864,
+"input_tokens": 393,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 795,
-"cost_usd": 0.00198
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:4992560",
-"title": "Comparative effects of flurazepam hydrochloride (dalmane) and placebo in patients with insomnia.",
-"authors": [
-"Zimmerman AM"
-],
-"journal": "Current therapeutic research, clinical and experimental",
-"journal_abbrev": "Curr Ther Res Clin Exp",
-"year": 1971,
-"date": "1971-01-01",
-"doi": null,
-"pmid": "4992560",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Benzazepines",
-"Clinical Trials as Topic",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Sleep",
-"Sleep Initiation and Maintenance Disorders"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:46Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract and only bibliographic metadata indicating a drug versus placebo clinical trial for insomnia, so unclear whether the paper analyzed placebo/nocebo effects or responses.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; randomized trial compared flurazepam versus placebo in adults with insomnia, but it is unclear whether placebo/nocebo effects or responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"insomnia",
-"flurazepam",
-"dalmane",
-"benzodiazepine",
-"sleep",
-"clinical trial",
-"1971"
-],
-"usage": {
-"input_tokens": 209,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 565,
-"cost_usd": 0.00133
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:4945122",
-"title": "A double-blind comparison of alclofenac, pentazocine, and codeine with placebo control in pathologic pain.",
-"authors": [
-"Staquet M",
-"Luyckx A",
-"Van Cauwenberge H"
-],
-"journal": "The Journal of clinical pharmacology and new drugs",
-"journal_abbrev": "J Clin Pharmacol New Drugs",
-"year": 1971,
-"date": "1971-01-01",
-"doi": null,
-"pmid": "4945122",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Allyl Compounds",
-"Analgesics",
-"Clinical Trials as Topic",
-"Codeine",
-"Ethers",
-"Humans",
-"Pain",
-"Pentazocine",
-"Phenylacetates",
-"Placebos",
-"Time Factors"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:22Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Randomized double‑blind trial with a placebo arm is listed but no abstract or full text is available to determine whether the paper analyzed placebo/nocebo effects or placebo‑arm responses as an object of study.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; reported a double‑blind randomized comparison of alclofenac, pentazocine, and codeine versus placebo in pathologic pain patients.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"alclofenac",
-"pentazocine",
-"codeine",
-"pathologic pain",
-"double-blind",
-"placebo-controlled",
-"1971"
-],
-"usage": {
-"input_tokens": 231,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 549,
-"cost_usd": 0.0013
+"output_tokens": 674,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -1360,54 +942,51 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:28Z",
+"classified_at": "2026-09-03T04:46:52Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.35,
-"rationale": "No abstract or full text available; title and MeSH terms imply experimental placebo/conditioning work in humans and rats but insufficient detail to confirm that placebo/nocebo was the main studied outcome or the design used.",
+"rationale": "Title and MeSH terms indicate an experimental study of placebo and conditioning in humans and rats, but no abstract or full text was available to confirm that placebo/nocebo phenomena were an explicit analytic focus or the design met inclusion criteria.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [],
 "article_type": "empirical_primary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"classical_conditioning"
-],
-"moderators": [
-"none_reported"
-],
+"mechanisms": [],
+"moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient abstract; title and MeSH terms indicated an experimental conditioning analysis of placebo involving chlorpromazine and d-amphetamine in humans and rats.",
+"summary": "Reported an experimental analysis of the placebo effect (no abstract available); MeSH lists humans, rats, conditioning, chlorpromazine and dextroamphetamine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo",
 "conditioning",
 "chlorpromazine",
 "dextroamphetamine",
 "rats",
 "humans",
-"placebo",
-"1971"
+"1971",
+"Pihl"
 ],
 "usage": {
-"input_tokens": 184,
-"cache_read_input_tokens": 5760,
+"input_tokens": 389,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 903,
-"cost_usd": 0.002
+"output_tokens": 804,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -1449,53 +1028,79 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:26Z",
+"classified_at": "2026-09-03T04:46:53Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates study of epinephrine and placebo effects but available information is insufficient to determine whether placebo/nocebo was an object of study or merely a comparator.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states the paper investigated epinephrine and placebo effects and moderators (body attitudes, acquiescence), indicating placebo phenomena were an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress",
+"endocrine_hormonal"
+],
+"outcome_measures": [
+"self_report",
+"autonomic"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal",
+"prior_treatment_experience"
+],
+"moderators": [
+"personality_traits",
+"none_reported"
+],
+"intervention_type": [
+"saline_injection_infusion",
+"other"
+]
 },
-"summary": "Insufficient abstract information to judge eligibility; title indicated an investigation of epinephrine and placebo effects and the roles of body attitudes and acquiescence.",
+"summary": "Studied how body attitudes and acquiescence related to responses to epinephrine and placebo, testing psychological moderators of placebo/epinephrine effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "epinephrine",
-"body attitudes",
+"placebo",
 "acquiescence",
-"placebo effects",
-"psychosomatic medicine",
+"body attitudes",
+"arousal",
 "1971",
-"Fast Fisher"
+"psychosomatic"
 ],
 "usage": {
-"input_tokens": 177,
-"cache_read_input_tokens": 5760,
+"input_tokens": 382,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 698,
-"cost_usd": 0.00158
+"output_tokens": 720,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -1548,25 +1153,23 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:31:17Z",
+"classified_at": "2026-09-03T04:46:35Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title indicates the paper directly studied effects of placebo versus flurazepam on sleep in insomniac subjects, making placebo an object of study rather than a mere comparator.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or methods available; title contrasts placebo and flurazepam suggesting a trial but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus versus serving as a control for drug efficacy.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -1580,16 +1183,16 @@
 ],
 "outcome_measures": [
 "eeg",
-"self_report"
+"other"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"other"
 ],
 "moderators": [
 "none_reported"
@@ -1598,25 +1201,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Compared the effects of placebo and flurazepam on sleep patterns in insomniac adults using electrophysiological sleep measures.",
+"summary": "Compared placebo and flurazepam effects on sleep-stage patterns in adults with insomnia; abstract not available to determine focus on placebo phenomena.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "flurazepam",
 "insomnia",
 "polysomnography",
-"electroencephalography",
-"benzodiazepine",
+"electrooculography",
+"electromyography",
 "sleep stages",
-"REM",
 "1971"
 ],
 "usage": {
-"input_tokens": 1121,
-"cache_read_input_tokens": 4864,
+"input_tokens": 430,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 917,
-"cost_usd": 0.00224
+"output_tokens": 940,
+"cost_usd": 0.00213
 }
 },
 "sources": [

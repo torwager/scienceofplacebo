@@ -29,15 +29,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:11Z",
+"classified_at": "2026-09-03T04:50:58Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates a panel discussion focusing on theoretical and practical implications of placebos, making placebo science the main subject despite lack of abstract.",
+"confidence": 0.6,
+"rationale": "Title indicates a panel discussion focusing on theoretical and practical implications of placebo use, making placebo the paper's main subject despite no abstract.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -46,13 +46,19 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -61,7 +67,8 @@
 ],
 "mechanisms": [
 "history_conceptual",
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -70,23 +77,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed theoretical and practical implications of placebo use in experimental and clinical medicine in a panel format.",
+"summary": "Discusses theoretical and practical implications of placebo use in experimental and clinical medicine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"panel",
 "placebo history",
 "clinical ethics",
-"experimental medicine",
-"1957",
-"discussion"
+"informed consent",
+"placebo use",
+"medical panel",
+"1957"
 ],
 "usage": {
-"input_tokens": 179,
-"cache_read_input_tokens": 5760,
+"input_tokens": 384,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 943,
-"cost_usd": 0.00207
+"output_tokens": 577,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -94,190 +101,6 @@
 ],
 "date_added": "1957-11-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1176/ajp.114.4.364",
-"title": "A comparison of phenaglycodol (ultran), meprobamate and a placebo in abstinent alcoholics.",
-"authors": [
-"SMITH JA",
-"RUTHERFORD A",
-"FANNING R"
-],
-"journal": "The American journal of psychiatry",
-"journal_abbrev": "Am J Psychiatry",
-"year": 1957,
-"date": "1957-10-01",
-"doi": "10.1176/ajp.114.4.364",
-"pmid": "13458502",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ALCOHOLISM/therapy",
-"MEPROBAMATE/therapeutic use",
-"TRANQUILIZING AGENTS/therapeutic use"
-],
-"mesh": [
-"Alcoholics",
-"Alcoholism",
-"Butylene Glycols",
-"Humans",
-"Meprobamate",
-"Tranquilizing Agents"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:02Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; paper is a 1957 drug trial with a placebo arm but it's unclear whether the placebo/placebo response was analyzed as an object of study versus serving only as a comparator for active drugs.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; 1957 randomized trial compared phenaglycodol, meprobamate, and placebo in abstinent alcoholics, but placebo-focused analyses were not ascertainable from the record.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"alcoholism",
-"abstinent alcoholics",
-"meprobamate",
-"phenaglycodol",
-"ultran",
-"1957"
-],
-"usage": {
-"input_tokens": 199,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 485,
-"cost_usd": 0.00116
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1957-10-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2026687544",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1176/ajp.114.4.364",
-"cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1097/00007611-195708000-00020",
-"title": "A controlled study of prednisone, aspirin and a placebo in degenerative joint disease.",
-"authors": [
-"WILLIAMS GT",
-"WELCH GE"
-],
-"journal": "Southern medical journal",
-"journal_abbrev": "South Med J",
-"year": 1957,
-"date": "1957-08-01",
-"doi": "10.1097/00007611-195708000-00020",
-"pmid": "13455093",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ACETYLSALICYLIC ACID/therapeutic use",
-"OSTEOARTHRITIS/therapy",
-"PLACEBOS",
-"PREDNISONE/therapeutic use"
-],
-"mesh": [
-"Aspirin",
-"Humans",
-"Osteoarthritis",
-"Placebos",
-"Prednisone",
-"Research Design"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:25Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.7,
-"rationale": "Title indicates an RCT comparing prednisone, aspirin, and placebo for degenerative joint disease, but no abstract or full text is available to determine whether the placebo/placebo response was analyzed as an object of study.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; appears to report a randomized controlled comparison of prednisone, aspirin, and placebo in degenerative joint disease (osteoarthritis), but it is unclear whether placebo effects or responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"osteoarthritis",
-"degenerative joint disease",
-"prednisone",
-"aspirin",
-"placebo-controlled trial",
-"1957"
-],
-"usage": {
-"input_tokens": 179,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 604,
-"cost_usd": 0.0014
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1957-08-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2416674121",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1097/00007611-195708000-00020",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1001/archneurpsyc.1957.02330370071011",
@@ -311,68 +134,49 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:02Z",
+"classified_at": "2026-09-03T04:50:40Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title and MeSH indicate the paper addressed placebo response in psychiatric contexts, but no abstract or full text was available to confirm whether it reported empirical analyses of placebo effects/responses.",
+"confidence": 0.35,
+"rationale": "No abstract or full text available and the title alone ('Placebo response.') does not provide enough detail to determine whether it reports empirical data or is a review/commentary focused on placebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "human",
-"population": [
-"psychosis"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "No abstract available; the 1957 paper titled \"Placebo response.\" appeared to address placebo responses in psychiatric (psychotic) contexts, but available metadata were insufficient to determine study design or findings.",
+"summary": "Insufficient bibliographic information to determine whether the 1957 paper reported empirical data or reviewed placebo responses; the title indicates the topic was placebo response.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo response",
-"psychosis",
-"phenothiazines",
-"psychiatry",
 "1957",
+"placebo response",
+"psychiatry",
+"phenothiazines",
 "baker",
 "thorpe"
 ],
 "usage": {
-"input_tokens": 1068,
-"cache_read_input_tokens": 4864,
+"input_tokens": 377,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 810,
-"cost_usd": 0.00201
+"output_tokens": 725,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -420,15 +224,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:00Z",
+"classified_at": "2026-09-03T04:51:03Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.3,
-"rationale": "Citation provides only title and no abstract or methods, so it's unclear whether the paper analyzed placebo effects/responses or merely used placebo as a control in a drug efficacy trial.",
+"rationale": "No abstract or full text provided; title implies a drug-versus-placebo comparison but it is unclear whether placebo effects/responses were an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -438,7 +242,9 @@
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -446,22 +252,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title reported a comparison of codeine, propoxyphene, and placebo but provided no information on whether placebo effects/responses were analyzed.",
+"summary": "Record lacked abstract/full text; title listed two opioids and placebo, but it was unclear whether placebo/nocebo phenomena were the paper's focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "codeine",
 "propoxyphene",
 "analgesia",
-"clinical trial",
-"JAMA 1957"
+"placebo",
+"JAMA 1957",
+"drug vs placebo"
 ],
 "usage": {
-"input_tokens": 1087,
-"cache_read_input_tokens": 4864,
+"input_tokens": 396,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 611,
-"cost_usd": 0.00162
+"output_tokens": 577,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -475,89 +282,6 @@
 "landing_url": "https://doi.org/10.1001/jama.1957.02980090020006",
 "cited_by_count": 37,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:13434782",
-"title": "Hypotensive effect of reserpine compared with phenobarbital and placebo.",
-"authors": [
-"KFOGSGAARD AR"
-],
-"journal": "Acta medica Scandinavica",
-"journal_abbrev": "Acta Med Scand",
-"year": 1957,
-"date": "1957-06-05",
-"doi": null,
-"pmid": "13434782",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"HYPERTENSION/therapy",
-"PHENOBARBITAL/therapeutic use",
-"RESERPINE/therapeutic use"
-],
-"mesh": [
-"Humans",
-"Hypertension",
-"Hypotension",
-"Phenobarbital",
-"Reserpine"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:02Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available to determine whether the trial analyzed placebo/placebo-response as an object of study rather than using placebo as a comparator in a drug efficacy comparison.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; clinical trial from 1957 that compared hypotensive effects of reserpine, phenobarbital, and placebo.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"reserpine",
-"phenobarbital",
-"hypertension",
-"placebo",
-"clinical trial",
-"1957"
-],
-"usage": {
-"input_tokens": 184,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 605,
-"cost_usd": 0.0014
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1957-06-05",
-"private_pdf": null
 },
 {
 "id": "pmid:13429202",
@@ -590,15 +314,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:05Z",
+"classified_at": "2026-09-03T04:50:43Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text was available and the brief bibliographic record does not reveal whether placebo/reactor was the object of empirical study.",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the explicit focus or merely mentioned; MeSH lists Placebos but details are missing.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -616,24 +340,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper empirically examined placebo effects or placebo reactors.",
+"summary": "Insufficient information to determine focus: 1957 journal article titled 'Chance distribution and placebo reactor' listed with MeSH term Placebos but no abstract was available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo reactor",
 "chance distribution",
-"probability",
+"placebos",
 "1957",
-"wolf",
-"doering",
-"clark"
+"WOLF et al"
 ],
 "usage": {
-"input_tokens": 1061,
-"cache_read_input_tokens": 4864,
+"input_tokens": 370,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 765,
-"cost_usd": 0.00192
+"output_tokens": 557,
+"cost_usd": 0.00135
 }
 },
 "sources": [
@@ -675,15 +397,15 @@
 "scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:58Z",
+"classified_at": "2026-09-03T04:50:41Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Paper explicitly addresses implications of classical (conditional) reflex/conditioning studies for placebo research, making placebo the main subject despite missing abstract.",
+"confidence": 0.7,
+"rationale": "Paper explicitly addressed implications of classical conditioning for placebo research and is a conceptual/theoretical contribution about placebo mechanisms (placebo science), so it meets inclusion criterion 4/5 for placebo-focused theory.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -692,10 +414,8 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [
-"not_applicable"
-],
+"species": "not_applicable",
+"population": [],
 "age_group": [
 "mixed_unspecified"
 ],
@@ -722,25 +442,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses implications of classical conditioning (conditional reflex) studies for understanding placebo mechanisms and research design.",
+"summary": "Discussed implications of classical conditioning and reflex studies for understanding placebo phenomena and mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pavlov",
-"conditioning",
-"conditional reflex",
-"placebo mechanism",
-"history",
-"1957",
-"gantt",
-"teitelbaum"
+"classical conditioning",
+"pavlovian",
+"placebo mechanisms",
+"learning theory",
+"placebo history",
+"1957"
 ],
 "usage": {
-"input_tokens": 1075,
-"cache_read_input_tokens": 4864,
+"input_tokens": 384,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 730,
-"cost_usd": 0.00185
+"output_tokens": 538,
+"cost_usd": 0.00132
 }
 },
 "sources": [
@@ -753,98 +471,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1176/ajp.113.12.1103",
 "cited_by_count": 122,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1056/nejm195705232562102",
-"title": "Technic of controlled drug assay illustrated by a comparative study of Rauwolfia serpentina, phenobarbital and placebo in the hypertensive patient.",
-"authors": [
-"SHAPIRO AP",
-"TENG HC"
-],
-"journal": "The New England journal of medicine",
-"journal_abbrev": "N Engl J Med",
-"year": 1957,
-"date": "1957-05-23",
-"doi": "10.1056/nejm195705232562102",
-"pmid": "13451978",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"DRUGS",
-"HYPERTENSION/therapy",
-"PHENOBARBITAL/therapeutic use",
-"RAUWOLFIA ALKALOIDS/therapeutic use"
-],
-"mesh": [
-"Antihypertensive Agents",
-"Hypertension",
-"Pharmaceutical Preparations",
-"Phenobarbital",
-"Rauwolfia",
-"Secologanin Tryptamine Alkaloids"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:04Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a drug-comparison trial using placebo; insufficient information to determine whether placebo/nocebo effects or placebo-arm analyses were an object of study versus placebo merely serving as a control.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title described a comparative controlled trial of Rauwolfia serpentina, phenobarbital, and placebo in hypertensive patients, but provided insufficient detail to know whether placebo effects were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"rauwolfia serpentina",
-"phenobarbital",
-"hypertension",
-"controlled drug assay",
-"placebo-controlled trial",
-"1957"
-],
-"usage": {
-"input_tokens": 1107,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 808,
-"cost_usd": 0.00201
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1957-05-23",
-"private_pdf": null,
-"openalex_mismatch": true,
-"cited_by_count": null,
-"oa_pdf_url": null,
-"oa_status": null,
-"openalex_id": null,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -875,48 +501,68 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:02Z",
+"classified_at": "2026-09-03T04:50:44Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided; title indicates placebo psychology but available text is insufficient to determine whether it is empirical or a conceptual/review piece meeting inclusion criteria.",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates the topic is placebo psychology but available information is insufficient to judge whether it presented empirical data or was a review/commentary.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggests a discussion of psychological effects of placebos but methods and findings are not reported.",
+"summary": "Insufficient information to determine methods or results; the 1957 paper addressed placebos and their psychological effects based on its title.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo",
-"psychological effects",
-"mental health",
-"1957",
-"placebo history"
+"psychology",
+"mental disorders",
+"history",
+"1957"
 ],
 "usage": {
-"input_tokens": 1056,
-"cache_read_input_tokens": 4864,
+"input_tokens": 365,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 771,
-"cost_usd": 0.00193
+"output_tokens": 619,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -963,15 +609,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:56Z",
+"classified_at": "2026-09-03T04:50:46Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title implies a trial comparing placebo and two drugs on psychological test performance but insufficient information to confirm whether placebo/nocebo effects or responses were an object of study.",
+"confidence": 0.4,
+"rationale": "Title indicates a comparison including a placebo arm but no abstract or methods are available to confirm whether placebo/nocebo phenomena were an explicit focus or merely a comparator in a drug efficacy study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -989,24 +635,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated a 1957 trial comparing placebo, ultran, and meprobamate on psychological test performance.",
+"summary": "No abstract available; 1957 empirical study that compared placebo, ultran, and meprobamate on psychological test performance.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"ultran",
 "meprobamate",
+"ultran",
 "psychological tests",
-"psychometrics",
-"tranquilizers",
-"placebo",
+"tranquilizer",
+"placebo arm",
 "1957"
 ],
 "usage": {
-"input_tokens": 1086,
-"cache_read_input_tokens": 4864,
+"input_tokens": 395,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 611,
-"cost_usd": 0.00162
+"output_tokens": 595,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -1047,49 +692,69 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:59Z",
+"classified_at": "2026-09-03T04:50:49Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates placebo use in rheumatic disease but insufficient information to confirm empirical aims or analyses about placebo effects/responses.",
+"confidence": 0.35,
+"rationale": "No abstract available; title and MeSH indicate the paper addresses placebos in rheumatoid arthritis but the available text is insufficient to determine whether it reports empirical placebo-effect studies or is a review/commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract was available; the 1957 paper's title indicated it addressed placebo use in rheumatoid arthritis and other rheumatic conditions, but methods and results could not be ascertained.",
+"summary": "No abstract available; the 1957 paper addressed the use of placebos in treating rheumatoid arthritis and other rheumatic conditions but the available record is insufficient to determine methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"rheumatoid_arthritis",
-"rheumatic_diseases",
+"rheumatoid arthritis",
+"rheumatic diseases",
 "placebo",
-"1957",
-"traut",
-"passarelli"
+"historical",
+"1957"
 ],
 "usage": {
-"input_tokens": 183,
-"cache_read_input_tokens": 5760,
+"input_tokens": 388,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 734,
-"cost_usd": 0.00166
+"output_tokens": 789,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -1102,99 +767,6 @@
 "oa_pdf_url": "https://ard.bmj.com/content/annrheumdis/16/1/18.full.pdf",
 "landing_url": "https://doi.org/10.1136/ard.16.1.18",
 "cited_by_count": 63,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/0021-9681(57)90137-6",
-"title": "The effects of an analeptic (ritalin), an ataraxic (reserpine), and a placebo in senile states.",
-"authors": [
-"DUBE AH",
-"OSGOOD CK",
-"NOTKIN H"
-],
-"journal": "Journal of chronic diseases",
-"journal_abbrev": "J Chronic Dis",
-"year": 1957,
-"date": "1957-02-01",
-"doi": "10.1016/0021-9681(57)90137-6",
-"pmid": "13405982",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"AGED/diseases",
-"MENTAL DISORDERS/in aged",
-"METHYLPHENIDYLACETATE/therapeutic use",
-"RESERPINE/therapeutic use"
-],
-"mesh": [
-"Aged",
-"Aging",
-"Central Nervous System Stimulants",
-"Disease",
-"Mental Disorders",
-"Methylphenidate",
-"Reserpine"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:53Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates a drug trial including a placebo comparator but it's unclear whether the paper analyzed placebo/nocebo effects or only used placebo as a control for drug efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; the 1957 paper compared methylphenidate, reserpine, and placebo in elderly 'senile' states but provided insufficient information to judge whether placebo effects/responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"methylphenidate",
-"reserpine",
-"senile dementia",
-"ritalin",
-"1957"
-],
-"usage": {
-"input_tokens": 1100,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 509,
-"cost_usd": 0.00141
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1957-02-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1994981948",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/0021-9681(57)90137-6",
-"cited_by_count": 10,
 "openalex_checked": "2026-09-02v2"
 }
 ]

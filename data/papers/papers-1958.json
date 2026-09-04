@@ -31,15 +31,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:00Z",
+"classified_at": "2026-09-03T04:51:34Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH suggest a study of placebo response prognostic value in schizophrenia but available record is insufficient to confirm study aims, design, and analyses.",
+"rationale": "No abstract or full text provided; title and MeSH indicate the paper studied placebo response prognostic value in schizophrenia but details of design, measures, and results are unavailable.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -58,15 +58,9 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
@@ -77,23 +71,24 @@
 "not_applicable"
 ]
 },
-"summary": "Record lacked an abstract; the paper's title and MeSH suggested it examined the prognostic value of placebo response in schizophrenia but details were unavailable.",
+"summary": "No abstract available; title and MeSH indicate the paper examined placebo response as a prognostic marker in schizophrenia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "schizophrenia",
 "prognosis",
-"placebo response",
-"psychiatry",
+"placebo_response",
 "1958",
-"placebos"
+"Hankoff",
+"Freedman",
+"Engelhardt"
 ],
 "usage": {
-"input_tokens": 176,
-"cache_read_input_tokens": 5760,
+"input_tokens": 381,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 817,
-"cost_usd": 0.00182
+"output_tokens": 773,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -146,16 +141,16 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:53Z",
+"classified_at": "2026-09-03T04:50:27Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.6,
-"rationale": "Title reports a placebo arm but no abstract or full text is available to determine whether the paper analyzed the placebo/placebo-response itself rather than using placebo only as a comparator.",
-"exclusion_reason": "insufficient_information",
+"rationale": "Title indicates a placebo was used as a comparator in a 1958 drug study but no abstract/full text is available to show whether placebo effects/responses were a stated focus.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
@@ -172,7 +167,7 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Title indicated an experimental comparison of three drugs and a placebo on a behavioral task under stress, but no abstract or full text was available to determine study aims or findings.",
+"summary": "Insufficient information in the record to determine whether placebo/nocebo phenomena were an explicit focus; the paper compared several drugs and a placebo on a behavioral task under stress.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -186,11 +181,11 @@
 "Holliday"
 ],
 "usage": {
-"input_tokens": 207,
-"cache_read_input_tokens": 5760,
+"input_tokens": 412,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 586,
-"cost_usd": 0.00137
+"output_tokens": 632,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -203,100 +198,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0039245",
 "cited_by_count": 12,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/j.2044-8295.1958.tb00671.x",
-"title": "Effect of quinal barbitone, dextro-amphetamine, and placebo on apparent time.",
-"authors": [
-"GOLDSTONE S",
-"BOARDMAN WK",
-"LHAMON WT"
-],
-"journal": "British journal of psychology (London, England : 1953)",
-"journal_abbrev": "Br J Psychol",
-"year": 1958,
-"date": "1958-11-01",
-"doi": "10.1111/j.2044-8295.1958.tb00671.x",
-"pmid": "13596575",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"AMPHETAMINE/effects",
-"BARBITURATES/effects",
-"TIME SENSE/effect of drugs on"
-],
-"mesh": [
-"Amphetamine",
-"Amphetamines",
-"Barbital",
-"Barbiturates",
-"Dextroamphetamine",
-"Humans",
-"Sensation",
-"Time Perception"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:55Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates a drug vs placebo comparison of time perception but it's unclear whether placebo/nocebo effects or placebo responses were an object of study rather than a control condition.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated an experimental comparison of quinal barbitone, dextro-amphetamine, and placebo on time perception, but aims and analyses regarding placebo effects/responses were not discernible.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"time perception",
-"quinal barbitone",
-"dextro-amphetamine",
-"1958",
-"psychopharmacology",
-"psychology"
-],
-"usage": {
-"input_tokens": 1104,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 479,
-"cost_usd": 0.00136
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1958-11-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2074970709",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.2044-8295.1958.tb00671.x",
-"cited_by_count": 53,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -327,17 +228,17 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:51Z",
+"classified_at": "2026-09-03T04:50:30Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates a placebo-controlled antihypertensive trial but it is unclear whether the paper analyzed placebo/nocebo effects or merely used placebo as a comparator.",
+"confidence": 0.3,
+"rationale": "No abstract or full text available and the title is ambiguous about whether placebo phenomena were the study focus or merely a control for drug efficacy.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [],
@@ -355,23 +256,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the study analyzed placebo/nocebo effects versus using placebo only as a comparator; title reported a placebo study of an antihypertensive and side effects.",
+"summary": "Abstract unavailable; title indicated a placebo study of antihypertensive potency and side effects but provided insufficient information to judge whether placebo/nocebo phenomena were the explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "reserpine",
 "antihypertensive",
 "SU-3118",
-"placebo-controlled",
-"side-effects",
+"carbethoxysyringoyl methylreserpate",
+"side effects",
 "1958"
 ],
 "usage": {
-"input_tokens": 197,
-"cache_read_input_tokens": 5760,
+"input_tokens": 402,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 741,
-"cost_usd": 0.00168
+"output_tokens": 694,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -417,15 +318,15 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:50Z",
+"classified_at": "2026-09-03T04:51:32Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.55,
-"rationale": "Record lacks an abstract or methods/results so it's unclear whether the placebo arm was analyzed as an object of study rather than serving only as a comparator in a drug trial.",
+"rationale": "Only title and metadata available; paper appears to be a drug-comparison including a placebo control but the abstract is missing so it's unclear whether placebo/nocebo phenomena were an explicit focus.",
 "exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
@@ -443,23 +344,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether placebo/nocebo effects were analyzed; paper compared phenyltoloxamine, reserpine, and placebo in humans.",
+"summary": "Abstract unavailable; reported a comparative human study of phenyltoloxamine versus reserpine and placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "phenyltoloxamine",
 "reserpine",
-"placebo-controlled",
-"psychotropic",
-"1958",
-"american journal of psychiatry"
+"placebo",
+"psychopharmacology",
+"1958"
 ],
 "usage": {
-"input_tokens": 1112,
-"cache_read_input_tokens": 4864,
+"input_tokens": 421,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 588,
-"cost_usd": 0.00158
+"output_tokens": 576,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -472,98 +372,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1176/ajp.115.4.301",
 "cited_by_count": 11,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1176/ajp.115.3.253",
-"title": "A comparison of triflupromazine (vesprin), chlorpromazine and placebo in 85 chronic patients.",
-"authors": [
-"SMITH JA",
-"CHRISTIAN D",
-"RUTHERFORD A",
-"MANSFIELD E"
-],
-"journal": "The American journal of psychiatry",
-"journal_abbrev": "Am J Psychiatry",
-"year": 1958,
-"date": "1958-09-01",
-"doi": "10.1176/ajp.115.3.253",
-"pmid": "13571449",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"CHLORPROMAZINE/therapeutic use",
-"PHENOTHIAZINE/related compounds",
-"PSYCHOSES/therapy"
-],
-"mesh": [
-"Chlorpromazine",
-"Electroconvulsive Therapy",
-"Phenothiazines",
-"Psychotic Disorders",
-"Triflupromazine"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:51Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract available and the title suggests a drug efficacy RCT with placebo as comparator, so it is unclear whether placebo/nocebo effects or responses were analyzed as an object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract; reported a randomized comparison of triflupromazine, chlorpromazine, and placebo in 85 chronic psychiatric patients, but it is unclear whether placebo effects/responses were analyzed.",
-"key_finding": null,
-"sample_size": 85,
-"free_keywords": [
-"chlorpromazine",
-"triflupromazine",
-"antipsychotic",
-"psychosis",
-"randomized trial",
-"1958"
-],
-"usage": {
-"input_tokens": 199,
-"cache_read_input_tokens": 5760,
-"cache_creation_input_tokens": 0,
-"output_tokens": 608,
-"cost_usd": 0.00141
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1958-09-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2045023412",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1176/ajp.115.3.253",
-"cited_by_count": 12,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -593,26 +401,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:48Z",
+"classified_at": "2026-09-03T04:50:55Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title indicates the paper's main topic is the use of 'impure placebos' (tranquilizing drugs) in general practice, addressing placebo-related prescribing and thus meets the 'placebo science' inclusion criterion.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates discussion of tranquilizers as 'impure placebo' in general practice but insufficient information to confirm whether placebo is the explicit focus or merely mentioned.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "human",
 "population": [
 "clinicians_providers"
@@ -642,24 +450,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed the use of tranquilizing drugs as 'impure placebos' in general practice and critiqued prescribing practices.",
+"summary": "No abstract available; title suggested a discussion of use of tranquilizing drugs as 'impure placebos' in general practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"tranquilizers",
 "general practice",
 "impure placebo",
-"tranquilizers",
 "prescribing",
-"clinical ethics",
-"physician behavior",
-"1950s"
+"1958"
 ],
 "usage": {
-"input_tokens": 1077,
-"cache_read_input_tokens": 4864,
+"input_tokens": 386,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 559,
-"cost_usd": 0.00151
+"output_tokens": 724,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -703,73 +509,54 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:51Z",
+"classified_at": "2026-09-03T04:50:29Z",
 "screening": {
-"decision": "include",
-"confidence": 0.62,
-"rationale": "Title indicates an empirical clinical trial that explicitly evaluated the efficacy of a placebo alongside oral analgesics for dry socket pain, making placebo response/effect a study object.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Only the title is available and it likely reports a drug efficacy trial with a placebo comparator, but the abstract/full text is unavailable to determine whether placebo/nocebo phenomena were an explicit focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "No abstract was available; the paper reported a clinical trial comparing a placebo oral pill and several oral analgesics for pain from alveolar osteitis (dry socket).",
+"summary": "No abstract available; the 1958 paper reported a trial comparing a placebo and several oral analgesics for pain from alveolar osteitis (dry socket).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dry socket",
 "alveolar osteitis",
-"dental pain",
-"analgesics",
-"oral analgesic",
-"1958",
-"tooth extraction"
+"oral analgesics",
+"tooth extraction",
+"analgesia",
+"1958"
 ],
 "usage": {
-"input_tokens": 207,
-"cache_read_input_tokens": 5760,
+"input_tokens": 412,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 844,
-"cost_usd": 0.00188
+"output_tokens": 575,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -782,96 +569,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0030-4220(58)90253-6",
 "cited_by_count": 19,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1093/bja/30.5.226",
-"title": "Pre-anesthetic medication with new drugs: a comparative study of the clinical effects of N-methylpiperidyl-3-methylphenthiazin, chlorpromazin, morphinescopolamine, resrpine and placebo.",
-"authors": [
-"HAXHOLDT BF"
-],
-"journal": "British journal of anaesthesia",
-"journal_abbrev": "Br J Anaesth",
-"year": 1958,
-"date": "1958-05-01",
-"doi": "10.1093/bja/30.5.226",
-"pmid": "13536202",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ANESTHESIA",
-"TRANQUILIZING AGENTS/therapeutic use"
-],
-"mesh": [
-"Anesthesia",
-"Anesthesiology",
-"Anesthetics",
-"Humans",
-"Tranquilizing Agents"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:06Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title indicates a drug trial including a placebo comparator but it is unclear whether the paper studied placebo/nocebo effects or merely used placebo as a control for drug efficacy.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; paper compared multiple pre-anesthetic drugs including a placebo, but it is unclear whether placebo effects or responses were analyzed.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"anesthesia",
-"pre-anesthetic",
-"chlorpromazine",
-"reserpine",
-"1958",
-"clinical trial",
-"analgesia",
-"preoperative"
-],
-"usage": {
-"input_tokens": 1110,
-"cache_read_input_tokens": 4864,
-"cache_creation_input_tokens": 0,
-"output_tokens": 509,
-"cost_usd": 0.00142
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1958-05-01",
-"private_pdf": null,
-"openalex_mismatch": true,
-"cited_by_count": null,
-"oa_pdf_url": null,
-"oa_status": null,
-"openalex_id": null,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -900,73 +597,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:46Z",
+"classified_at": "2026-09-03T04:50:33Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates the paper's primary aim concerned the pharmacology of placebo administration in humans, making placebo the main subject despite missing abstract.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text provided; title and MeSH indicate human placebo pharmacology but the paper's aims and whether placebo/nocebo was the explicit analytic focus cannot be confirmed.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"neurobiology_other_neurochemical",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated pharmacological aspects of placebo administration in humans; full abstract and methods were not available in the record.",
+"summary": "Title and MeSH suggested human studies of the pharmacology of placebo administration, but no abstract was available to confirm aims or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo pharmacology",
-"classic study",
-"1958",
 "lasagna",
 "laties",
-"dohan"
+"dohan",
+"1958",
+"journal of clinical investigation"
 ],
 "usage": {
-"input_tokens": 166,
-"cache_read_input_tokens": 5760,
+"input_tokens": 371,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 639,
-"cost_usd": 0.00146
+"output_tokens": 566,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -1018,17 +694,17 @@
 "scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:48Z",
+"classified_at": "2026-09-03T04:50:33Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Older journal article reports a trial including an inert placebo but provides no abstract or methods to determine whether placebo/nocebo effects or placebo-arm responses were analyzed.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"confidence": 0.35,
+"rationale": "No abstract or methods available and the title indicates a multi-arm drug trial including an inert placebo, so it is unclear whether placebo/nocebo phenomena were an explicit focus or merely a control.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [],
@@ -1044,7 +720,7 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Reported a comparative clinical trial of four tranquilizers, phenobarbital, and an inert placebo in a 1958 geriatrics article; no abstract or methods were available to assess placebo analyses.",
+"summary": "Insufficient abstract information to determine whether placebo/nocebo phenomena were an explicit focus; the title reported a comparative trial of tranquilizers, phenobarbital, and an inert placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -1052,14 +728,15 @@
 "tranquilizers",
 "placebo-controlled",
 "geriatrics",
-"1958"
+"1958",
+"clinical trial"
 ],
 "usage": {
-"input_tokens": 180,
-"cache_read_input_tokens": 5760,
+"input_tokens": 385,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 563,
-"cost_usd": 0.00131
+"output_tokens": 667,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -1092,72 +769,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:36:46Z",
+"classified_at": "2026-09-03T04:50:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses clinical use of placebos in medical practice, indicating the paper's main subject is placebo use/attitudes despite no abstract.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and title suggests a historical/observational piece about placebo use in practice, so it is unclear whether the paper empirically studied placebo effects/responses or was a commentary.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses historical and clinical aspects of placebo use in medical practice.",
+"summary": "No abstract available; title suggested an observational or commentary piece about placebo use in medical practice but full content was unavailable to determine whether it empirically studied placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo",
 "medical practice",
-"physician attitudes",
-"deception",
 "placebo prescribing",
-"history of medicine"
+"clinical use",
+"1958",
+"observations"
 ],
 "usage": {
-"input_tokens": 1060,
-"cache_read_input_tokens": 4864,
+"input_tokens": 369,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 667,
-"cost_usd": 0.00172
+"output_tokens": 596,
+"cost_usd": 0.00143
 }
 },
 "sources": [

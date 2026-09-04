@@ -24,19 +24,19 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:57Z",
+"classified_at": "2026-09-03T04:51:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title indicates a discussion of placebo use in therapy but no abstract or full text was available to confirm that placebo/nocebo is the main subject or the article type.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title indicates the paper's primary topic is the use of placebos in therapy, fitting 'placebo science' historical/clinical discussion despite absent abstract.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
@@ -64,7 +64,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"history_conceptual",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -73,22 +74,23 @@
 "not_applicable"
 ]
 },
-"summary": "Likely discussed the historical and clinical use of placebos in therapy, but no abstract or full text was available to confirm content.",
+"summary": "Discussed the historical and clinical use of placebos in therapy and related ethical/practical issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "history",
-"clinical_use",
-"medical_ethics",
-"physician_practice",
-"1940s"
+"placebo-prescribing",
+"clinical-practice",
+"ethics",
+"deception",
+"therapeutic-ritual"
 ],
 "usage": {
-"input_tokens": 164,
-"cache_read_input_tokens": 5760,
+"input_tokens": 369,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 771,
-"cost_usd": 0.00173
+"output_tokens": 520,
+"cost_usd": 0.00128
 }
 },
 "sources": [
@@ -123,74 +125,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:55Z",
+"classified_at": "2026-09-03T04:51:44Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly states the study examined the influence of a placebo on motion sickness, indicating placebo effects were an object of empirical study despite no abstract.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; the title names a placebo as a factor but the design and whether placebo/nocebo was the explicit object of study cannot be confirmed from the available information.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"general_public"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"nausea_gi"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"treatment_characteristics"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Studied the effects of a placebo, body position, and medication on motion sickness in humans; abstract not available.",
+"summary": "Title indicated the study examined the influence of a placebo, body position and medication on motion sickness, but no abstract or details were available to confirm methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"motion_sickness",
-"posture",
+"motion sickness",
 "seasickness",
-"antiemetic",
-"body_position",
-"placebo_pill",
-"1946"
+"posture",
+"placebo",
+"1946",
+"Tyler"
 ],
 "usage": {
-"input_tokens": 168,
-"cache_read_input_tokens": 5760,
+"input_tokens": 373,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 770,
+"output_tokens": 746,
 "cost_usd": 0.00173
 }
 },
@@ -234,71 +213,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
-"prompt_version": "1.0.0",
+"prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-02T20:37:55Z",
+"classified_at": "2026-09-03T04:51:23Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH terms indicate the paper's primary focus was the role of placebo in drug-discrimination testing (a methodological/placebo-science topic).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title suggests placebo methodology in drug-discrimination tests but not enough information to confirm placebo/nocebo was an explicit object of study.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "methods_measurement",
+"study_focus": [],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discussed the methodological role of placebo controls in drug-discrimination tests in human psychopharmacology research.",
+"summary": "No abstract available; title suggested the paper addressed the role of placebo in drug-discrimination tests, but available text was insufficient to determine whether placebo/nocebo effects were the study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "drug discrimination",
+"placebo",
 "psychopharmacology",
-"placebo controls",
-"behavioral assay",
-"experimental design"
+"methodology",
+"1946"
 ],
 "usage": {
-"input_tokens": 1070,
-"cache_read_input_tokens": 4864,
+"input_tokens": 379,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 748,
-"cost_usd": 0.00189
+"output_tokens": 505,
+"cost_usd": 0.00125
 }
 },
 "sources": [
