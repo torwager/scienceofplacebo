@@ -17,8 +17,10 @@ for line in open("work/classified.jsonl"):
     if not cand:
         continue
     scope = r["scope"]
-    counts[scope] = counts.get(scope, 0) + 1
     rid = db.record_id(cand)
+    if screened.get(rid, {}).get("prompt_version", "1") >= "2":
+        continue  # already judged by a newer prompt; never overwrite that decision with the old one
+    counts[scope] = counts.get(scope, 0) + 1
     screened[rid] = {"scope": scope, "pmid": r["pmid"], "date": DATE_ADDED,
                      "reason": r.get("prefilter") or (r.get("classification") or {}).get("screening", {}).get("exclusion_reason")}
     if scope in ("core", "adjacent", "review"):

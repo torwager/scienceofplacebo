@@ -1370,7 +1370,6 @@
 "doi": "10.3758/s13415-022-01039-3",
 "pmid": "36517733",
 "pmcid": null,
-"openalex_id": "https://openalex.org/W4311441978",
 "abstract": "Harnessing the placebo effects would prompt critical ramifications for research and clinical practice. Noninvasive brain stimulation (NIBS) techniques, such as transcranial magnetic stimulation and multifocal transcranial electric stimulation, could manipulate the placebo response by modulating the activity and excitability of its neural correlates. To identify potential stimulation targets, we conducted a meta-analysis to investigate placebo-associated regions in healthy volunteers, including studies with emotional components and painful stimuli. Using biophysical modeling, we identified NIBS solutions to manipulate placebo effects by targeting either a single key region or multiple connected areas. Moving to a network-oriented approach, we then ran a quantitative network mapping analysis on the functional connectivity profile of clusters emerging from the meta-analysis. As a result, we suggest a multielectrode optimized montage engaging the connectivity patterns of placebo-associated functional brain networks. These NIBS solutions hope to provide a starting point to actively control, modulate or enhance placebo effects in future clinical studies and cognitive enhancement studies.",
 "keywords": [
 "ALE maps",
@@ -1394,10 +1393,6 @@
 "Research Support, N.I.H., Extramural",
 "Research Support, Non-U.S. Gov't"
 ],
-"oa_status": "green",
-"oa_pdf_url": "https://link.springer.com/content/pdf/10.3758/s13415-022-01039-3.pdf",
-"landing_url": "https://doi.org/10.3758/s13415-022-01039-3",
-"cited_by_count": 11,
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
@@ -1405,16 +1400,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:09:01Z",
+"classified_at": "2026-09-04T00:08:39Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Meta-analysis of placebo-associated brain regions and network modeling to target placebo effects constitutes a direct study of placebo mechanisms and how to modulate placebo effects (mechanisms/meta-analysis).",
+"rationale": "Meta-analysis explicitly focused on neural correlates of experimentally induced treatment expectations (verbal instruction) across neuroimaging studies, so placebo/nocebo expectancy effects are the paper's primary object.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_and_nocebo",
 "placebo_effect"
 ],
 "article_type": "meta_analysis",
@@ -1426,11 +1422,13 @@
 "adults"
 ],
 "condition_domain": [
-"pain",
-"mood_depression"
+"pain"
 ],
 "outcome_measures": [
-"fmri"
+"fmri",
+"pet_metabolism",
+"pet_neurochemical",
+"eeg"
 ],
 "design": [
 "meta_analytic"
@@ -1439,41 +1437,45 @@
 "significant_objective"
 ],
 "mechanisms": [
+"verbal_suggestion_expectation",
 "neural_systems_circuits",
-"harnessing_placebo_clinical"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Meta-analyzed placebo-associated brain regions in healthy volunteers and used network mapping and biophysical modeling to propose NIBS montages to modulate placebo effects.",
-"key_finding": "Identified placebo-related functional brain networks and suggested multielectrode NIBS montages to target those networks for modulating placebo effects.",
-"sample_size": null,
+"summary": "Performed an ALE meta-analysis of 21 neuroimaging studies (855 subjects) of explicit outcome expectations in pain, finding distributed activations including striatum, caudate/lentiform nucleus and red nucleus supporting positive and negative expectancy effects.",
+"key_finding": "Identified significant activation clusters in the caudate/lentiform nucleus and red nucleus and consistent striatal engagement across expectancy paradigms.",
+"sample_size": 21,
 "free_keywords": [
-"noninvasive brain stimulation",
-"tms",
-"tdcs",
-"functional connectivity",
-"placebo analgesia",
-"biophysical modeling",
-"network mapping"
+"activation likelihood estimation",
+"striatum",
+"caudate",
+"expectation",
+"anticipation",
+"pain fMRI",
+"reward"
 ],
 "usage": {
-"input_tokens": 414,
-"cache_read_input_tokens": 6144,
+"input_tokens": 947,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1231,
-"cost_usd": 0.00272
+"output_tokens": 1340,
+"cost_usd": 0.00306
 }
 },
 "sources": [
+"jips",
+"pubmed_query",
 "reference_mining"
 ],
 "date_added": "2022-12-14",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1016/j.jaip.2022.11.033",
@@ -8185,142 +8187,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.14309/ajg.0000000000002042",
-"title": "Placebo Adverse Events in Non-alcoholic Steatohepatitis Clinical Trials: A Pooled Analysis of 2,944 Participants.",
-"authors": [
-"Tay PWL",
-"Ng CH",
-"Lin SY",
-"Chin YH",
-"Xiao J",
-"Lim WH",
-"Lim SY",
-"Fu CE",
-"Chan KE",
-"Quek J",
-"Tan DJH",
-"Chew N",
-"Syn N",
-"Keitoku T",
-"Tamaki N",
-"Siddiqui MS",
-"Noureddin M",
-"Muthiah M",
-"Huang DQ",
-"Loomba R"
-],
-"journal": "The American journal of gastroenterology",
-"journal_abbrev": "Am J Gastroenterol",
-"year": 2022,
-"date": "2022-09-30",
-"doi": "10.14309/ajg.0000000000002042",
-"pmid": "36191268",
-"pmcid": "PMC10792533",
-"abstract": "INTRODUCTION: In the absence of an effective treatment for non-alcoholic steatohepatitis (NASH), a randomized, placebo-controlled trial (RCT) remains the current gold standard study design in NASH. As NASH is a largely asymptomatic disease, the side effects of potential therapies require careful evaluation, therefore a pooled rate of the adverse events (AEs) in placebo-treated patients serves as a useful comparator for safety. Therefore, we performed a systematic review and meta-analysis to estimate the rate of AEs among participants in the placebo arm of NASH RCTs. METHODS: Medline, Embase and Cochrane Central Register of Controlled Trials were searched to include clinical trials in phase 2-4 NASH RCTs with placebo treatment arms. A pooled proportions of AEs were analyzed using a generalized linear mixed model with Clopper-Pearson intervals. RESULTS: A total of 41 RCTs (2,944 participants on placebo) were included in this meta-analysis. A total of 68% (confidence interval [CI] 55%-77%) of participants on placebo experienced an AE, 7.8% (5.7%-10%) experienced serious AEs and 3.1% (CI: 1.9%-5.1%) experienced AEs leading to discontinuation. A significantly higher proportion of participants experienced serious AEs in phase 3 studies compared to in phase 2 studies ( P < 0.01) and in pharmaceutical funded studies as compared to studies which were federal-funded studies ( P < 0.01). An analysis of clinical trials evaluating bile acid modulating agents determined that 10% (CI: 5.5%-18%) of participants receiving placebo developed pruritus. DISCUSSION: The present study summarizes the AEs with NASH placebo. Among participants in the placebo arm in NASH, two-third experienced an AE, and nearly 10% experienced a serious AE.",
-"keywords": [],
-"mesh": [
-"Humans",
-"Non-alcoholic Fatty Liver Disease",
-"Bile Acids and Salts",
-"Randomized Controlled Trials as Topic"
-],
-"pub_types": [
-"Systematic Review",
-"Meta-Analysis",
-"Journal Article",
-"Research Support, N.I.H., Extramural",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:11:55Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Meta-analysis explicitly pooled adverse event rates in placebo arms of NASH RCTs, making placebo/nocebo responses the study focus (placebo-arm adverse events).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_response"
-],
-"article_type": "meta_analysis",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"adverse_events",
-"other"
-],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"meta_analytic"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"trial_characteristics"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Pooled adverse event rates in placebo arms of 41 NASH RCTs were estimated, finding high rates of AEs including serious events and discontinuations.",
-"key_finding": "Found 68% of placebo recipients reported any AE, 7.8% had serious AEs, 3.1% discontinued for AEs, and 10% developed pruritus in bile-acid agent trials.",
-"sample_size": 41,
-"free_keywords": [
-"nash",
-"non-alcoholic steatohepatitis",
-"pruritus",
-"serious adverse events",
-"placebo-arm",
-"bile acid modulator",
-"meta-analysis",
-"clinical trials"
-],
-"usage": {
-"input_tokens": 832,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1054,
-"cost_usd": 0.00246
-}
-},
-"sources": [
-"jips"
-],
-"date_added": "2022-09-30",
-"private_pdf": {
-"available": true,
-"store_key": "tay_2022_placebo_adverse_events_in_nonalcoholic.pdf",
-"source": "downloaded",
-"sha256": "90e97dab60e591d5"
-},
-"openalex_id": "https://openalex.org/W4300817262",
-"oa_status": "green",
-"oa_pdf_url": "https://escholarship.org/content/qt1f35v74f/qt1f35v74f.pdf",
-"landing_url": "https://doi.org/10.14309/ajg.0000000000002042",
-"cited_by_count": 12,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1016/j.eclinm.2022.101685",
 "title": "The placebo response rate and nocebo events in obesity pharmacological trials. A systematic review and meta-analysis.",
 "authors": [
@@ -12221,132 +12087,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.bbi.2005.08.006",
-"title": "The reward for placebos: mechanisms underpinning placebo-induced effects on motor performance.",
-"authors": [
-"Brietzke C",
-"Cesario JCS",
-"Hettinga FJ",
-"Pires FO"
-],
-"journal": "European journal of applied physiology",
-"journal_abbrev": "Eur J Appl Physiol",
-"year": 2022,
-"date": "2022-08-25",
-"doi": "10.1016/j.bbi.2005.08.006",
-"pmid": "36006479",
-"pmcid": "6757760",
-"openalex_id": null,
-"abstract": "Several studies have explored the predictability of placebo and nocebo individual responses by investigating personality factors and expectations of pain decreases and increases. Psychological factors such as optimism, suggestibility, empathy and neuroticism have been linked to placebo effects, while pessimism, anxiety and catastrophizing have been associated to nocebo effects. We aimed to investigate the interplay between psychological factors, expectations of low and high pain and placebo hypoalgesia and nocebo hyperalgesia. We studied 46 healthy participants using a well-validated conditioning paradigm with contact heat thermal stimulations. Visual cues were presented to alert participants about the level of intensity of an upcoming thermal pain. We delivered high, medium and low levels of pain associated with red, yellow and green cues, respectively, during the conditioning phase. During the testing phase, the level of painful stimulations was surreptitiously set at the medium control level with all the three cues to measure placebo and nocebo effects. We found both robust placebo hypolagesic and nocebo hyperalgesic responses that were highly correlated with expectancy of low and high pain. Simple linear regression analyses showed that placebo responses were negatively correlated with anxiety severity and different aspects of fear of pain (e.g., medical pain, severe pain). Nocebo responses were positively correlated with anxiety sensitivity and physiological suggestibility with a trend toward catastrophizing. Step-wise regression analyses indicated that an aggregate score of motivation (value/utility and pressure/tense subscales) and suggestibility (physiological reactivity and persuadability subscales), accounted for the 51% of the variance in the placebo responsiveness. When considered together, anxiety severity, NEO openness-extraversion and depression accounted for the 49.1% of the variance of the nocebo responses. Psychological factors per se did not influence expectations. In fact, mediation analyses including expectations, personality factors and placebo and nocebo responses, revealed that expectations were not influenced by personality factors. These findings highlight the potential advantage of considering batteries of personality factors and measurements of expectation in predicting placebo and nocebo effects related to experimental acute pain.",
-"keywords": [
-"Exercise performance",
-"Fatigue",
-"Neuroimaging",
-"Neurotransmitter",
-"Nocebo effect"
-],
-"mesh": [
-"Analgesics, Opioid",
-"Dopamine",
-"Female",
-"Glutamates",
-"Humans",
-"Male",
-"Placebo Effect",
-"Reward"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:57Z",
-"screening": {
-"decision": "include",
-"confidence": 0.95,
-"rationale": "Experimental within-subject conditioning paradigm explicitly measured placebo hypoalgesia and nocebo hyperalgesia as primary outcomes and tested psychological predictors of these responses (rule 1 & 3).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_and_nocebo"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"classical_conditioning",
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"prior_treatment_experience",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"personality_traits",
-"mood_anxiety_state",
-"expectation_level",
-"prior_experience"
-],
-"intervention_type": [
-"verbal_suggestion_only",
-"other"
-]
-},
-"summary": "Used a conditioning cue paradigm in 46 healthy adults and found robust placebo hypoalgesia and nocebo hyperalgesia that correlated with expectancies and were predicted by personality and anxiety measures.",
-"key_finding": "Placebo and nocebo cue effects on pain were robust and expectancy-correlated; combined motivation and suggestibility scores explained ~51% of placebo variance, and anxiety/openness/depression explained ~49% of nocebo variance.",
-"sample_size": 46,
-"free_keywords": [
-"heat pain",
-"conditioning paradigm",
-"expectancy",
-"suggestibility",
-"anxiety",
-"visual cues"
-],
-"usage": {
-"input_tokens": 882,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 857,
-"cost_usd": 0.00208
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2022-08-25",
-"private_pdf": null
-},
-{
 "id": "doi:10.1007/s11883-022-01059-x",
 "title": "A Review of Statin Intolerance: a Focus on Statin-Attributed Muscle Symptoms.",
 "authors": [
@@ -12974,7 +12714,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1001/jamahealthforum.2021.0804",
+"id": "doi:10.1007/s40264-022-01220-0",
 "title": "Impact of Vaccine Hesitancy on Onset, Severity and Type of Self-reported Adverse Events: A French Cross-Sectional Survey.",
 "authors": [
 "Khouri C",
@@ -12988,10 +12728,9 @@
 "journal_abbrev": "Drug Saf",
 "year": 2022,
 "date": "2022-08-16",
-"doi": "10.1001/jamahealthforum.2021.0804",
+"doi": "10.1007/s40264-022-01220-0",
 "pmid": "35972651",
-"pmcid": "PMC6511320",
-"openalex_id": null,
+"pmcid": "PMC9379877",
 "abstract": "INTRODUCTION: Little is known about the impact of mandatory vaccination on people who are reluctant to be vaccinated, despite the potential importance in terms of public health policy. OBJECTIVE: We aimed to explore the relationship between vaccine hesitancy and onset, severity and characteristics of self-reported adverse events. METHODS: We used a cross-sectional online survey conducted in 2021 among a representative sample of the French population aged 18 years and older (n = 1593). All reported adverse events were analyzed and categorized by trained experts in drug safety and pharmacovigilance. Multivariate binomial regressions on the onset of self-reported adverse events, vaccine hesitancy categories and predefined responders' characteristics were performed. RESULTS: Overall, 590 (37.0%) participants reported at least one adverse event, with 121 (20.5%) considered it to be severe. Proportions of reported adverse events, ranging from 18% (in non-reluctant responders) to 65% (in very reluctant responders), and their severity, ranging from 5% (non-reluctant responders) to 41% (very reluctant responders), depended highly on attitudes toward vaccination. The adverse events profile remained similar between groups. In the multivariate regression model, beyond attitude toward vaccination, younger age and female gender were significantly associated with higher reporting of vaccine adverse events. CONCLUSIONS: Our results suggest that vaccine hesitancy could be a major driver of patient-reported vaccine-related adverse events and their perceived severity. In this context, vaccinators must pay special attention to reluctant patients and inform them on the possible nocebo nature of these adverse events so as to prevent them.",
 "keywords": [],
 "mesh": [
@@ -13007,10 +12746,6 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
@@ -13089,7 +12824,8 @@
 "pubmed_query"
 ],
 "date_added": "2022-08-16",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1111/opo.13036",
@@ -13821,136 +13557,6 @@
 "language": "eng"
 },
 {
-"id": "doi:10.1186/s12874-022-01704-8",
-"title": "Differences between experimental and placebo arms in manual therapy trials: a methodological review.",
-"authors": [
-"D'Alessandro G",
-"Ruffini N",
-"Aquino A",
-"Galli M",
-"Innocenti M",
-"Tramontano M",
-"Cerritelli F"
-],
-"journal": "BMC medical research methodology",
-"journal_abbrev": "BMC Med Res Methodol",
-"year": 2022,
-"date": "2022-08-08",
-"doi": "10.1186/s12874-022-01704-8",
-"pmid": "35941533",
-"pmcid": "PMC9358888",
-"abstract": "BACKGROUND: To measure the specific effectiveness of a given treatment in a randomised controlled trial, the intervention and control groups have to be similar in all factors not distinctive to the experimental treatment. The similarity of these non-specific factors can be defined as an equality assumption. The purpose of this review was to evaluate the equality assumptions in manual therapy trials. METHODS: Relevant studies were identified through the following databases: EMBASE, MEDLINE, SCOPUS, WEB OF SCIENCE, Scholar Google, clinicaltrial.gov, the Cochrane Library, chiloras/MANTIS, PubMed Europe, Allied and Complementary Medicine (AMED), Physiotherapy Evidence Database (PEDro) and Sciencedirect. Studies investigating the effect of any manual intervention compared to at least one type of manual control were included. Data extraction and qualitative assessment were carried out independently by four reviewers, and the summary of results was reported following the PRISMA statement. RESULT: Out of 108,903 retrieved studies, 311, enrolling a total of 17,308 patients, were included and divided into eight manual therapy trials categories. Equality assumption elements were grouped in three macro areas: patient-related, context-related and practitioner-related items. Results showed good quality in the reporting of context-related equality assumption items, potentially because largely included in pre-existent guidelines. There was a general lack of attention to the patient- and practitioner-related equality assumption items. CONCLUSION: Our results showed that the similarity between experimental and sham interventions is limited, affecting, therefore, the strength of the evidence. Based on the results, methodological aspects for planning future trials were discussed and recommendations to control for equality assumption were provided.",
-"keywords": [
-"Manual placebo",
-"Manual therapies",
-"Placebo, similarity",
-"Sham therapy",
-"Systematic review"
-],
-"mesh": [
-"Europe",
-"Humans",
-"Musculoskeletal Manipulations",
-"Physical Therapy Modalities",
-"Randomized Controlled Trials as Topic"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:12:47Z",
-"screening": {
-"decision": "include",
-"confidence": 0.88,
-"rationale": "Systematic review explicitly examined equality (placebo/sham) assumptions and reporting in manual therapy trials, making placebo control methodology the primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "systematic_review",
-"species": "human",
-"population": [
-"mixed_clinical"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"trial_characteristics",
-"provider_characteristics",
-"none_reported"
-],
-"intervention_type": [
-"sham_exercise_physical"
-]
-},
-"summary": "Systematically reviewed 311 manual therapy trials and assessed equality assumptions between experimental and sham interventions, finding limited similarity in patient- and practitioner-related factors and better reporting of context-related items.",
-"key_finding": null,
-"sample_size": 311,
-"free_keywords": [
-"manual therapy",
-"sham control",
-"equality assumption",
-"reporting quality",
-"musculoskeletal",
-"PRISMA",
-"placebo control",
-"methodology"
-],
-"usage": {
-"input_tokens": 724,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 806,
-"cost_usd": 0.00194
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2022-08-08",
-"private_pdf": {
-"available": true,
-"store_key": "dalessandro_2022_differences_between_experimental_and_placebo.pdf",
-"source": "downloaded",
-"sha256": "a022ccd0c8145426"
-},
-"openalex_id": "https://openalex.org/W4290702099",
-"oa_status": "gold",
-"oa_pdf_url": "https://bmcmedresmethodol.biomedcentral.com/counter/pdf/10.1186/s12874-022-01704-8",
-"landing_url": "https://doi.org/10.1186/s12874-022-01704-8",
-"cited_by_count": 16,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1007/s11096-022-01439-y",
 "title": "Placebo administration for dry eye disease: a level I evidence based systematic review and meta-analysis.",
 "authors": [
@@ -14077,7 +13683,7 @@
 "language": "eng"
 },
 {
-"id": "doi:10.3389/fnhum.2015.00057",
+"id": "doi:10.3389/fpsyt.2022.838578",
 "title": "Do individual psychological characteristics predict induction and generalization of nocebo and placebo effects on pain and itch?",
 "authors": [
 "Weng L",
@@ -14089,10 +13695,9 @@
 "journal_abbrev": "Front Psychiatry",
 "year": 2022,
 "date": "2022-08-04",
-"doi": "10.3389/fnhum.2015.00057",
+"doi": "10.3389/fpsyt.2022.838578",
 "pmid": "35990075",
-"pmcid": "PMC4324061",
-"openalex_id": null,
+"pmcid": "PMC9386339",
 "abstract": "BACKGROUND: Nocebo and placebo effects, i.e., adverse or beneficial treatment effects, respectively, putatively due to expectancies can modulate pain and itch. These effects can generalize within the pain or itch modality. Predicting the induction and generalization of these effects can be helpful in clinical practice. This study aims to investigate whether psychological characteristics related to the fear-avoidance model predict the induction and generalization of nocebo and placebo effects on pain and itch in young healthy participants. METHODS: Data from two previous experiments were analyzed. In Experiment 1, we induced nocebo and placebo effects on heat pain and tested generalization to pressure pain and to cowhage-evoked itch (n = 33 in a nocebo group, n = 32 in a placebo group). In Experiment 2, we induced nocebo effects on cowhage-evoked itch and tested generalization to mechanical itch and to mechanical touch (n = 44). Potential predictors were anxiety- and stress symptoms, attention to pain/itch, and pain/itch catastrophizing. Multiple regression analyses were performed. RESULTS: For nocebo effects, none of the individual psychological characteristics significantly predicted induction of nocebo effects nor their generalization. For placebo effects, only less stress symptoms, lower attention to pain, and higher pain catastrophizing weakly predicted a stronger generalization of placebo effects from heat pain to pressure pain. CONCLUSION: The tested psychological characteristics may not play an important role in the induction and generalization of nocebo and placebo effects in healthy individuals. However, firm conclusions cannot be drawn with the current sample. Future studies should validate findings in larger and more diverse samples.",
 "keywords": [
 "generalization",
@@ -14107,10 +13712,6 @@
 "pub_types": [
 "Journal Article"
 ],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
@@ -14191,7 +13792,8 @@
 "pubmed_query"
 ],
 "date_added": "2022-08-04",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1136/jme-2022-108413",
@@ -20049,131 +19651,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1111/j.1600-0447.1983.tb09716.x",
-"title": "Baseline depressive symptoms, personal control, and concern moderate the effects of preoperative psychological interventions: the randomized controlled PSY-HEART trial.",
-"authors": [
-"Horn N",
-"Laferton JAC",
-"Shedden-Mora MC",
-"Moosdorf R",
-"Rief W",
-"Salzmann S"
-],
-"journal": "Journal of behavioral medicine",
-"journal_abbrev": "J Behav Med",
-"year": 2022,
-"date": "2022-05-06",
-"doi": "10.1111/j.1600-0447.1983.tb09716.x",
-"pmid": "35522399",
-"pmcid": "PMC7547964",
-"openalex_id": null,
-"abstract": "Introduction: Placebo and nocebo effects are positive and negative health outcomes that can be elicited by the psychosocial context. They can be mediated by expectations, and may emerge in somatic symptoms even when people are aware of these effects. Interindividual differences (e.g., in personality, affective states) could impact placebo and nocebo responding, but findings are inconsistent. Methods: The current work examined expectation as a mediator of the association between verbal placebo and nocebo suggestions (VSs) and histamine-induced itch across three experimental studies. Moreover, we examined whether interindividual differences (e.g., in optimism, neuroticism, behavioral activation system (BAS), body ignorance) modulated: (1) the direct association between VSs and itch (direct moderation), and (2) the indirect, expectation-mediated association between VSs and itch (moderated mediation). Positive VSs were compared to neutral instructions (Study 1; n = 92) or negative VSs (Studies 2+3; n = 203) in an open-label (i.e., explaining placebo and nocebo effects) or closed-label (concealed) context using PROCESS. First, mediation of VSs effects on itch by expectations was tested. Next, moderation by individual traits was explored using conditional process analyses. Results: The effects of VSs on itch were significantly mediated by expectation in Study 1 and in the open-label (but not closed-label) contexts of Studies 2 and 3. Ignorance of bodily signals marginally moderated the direct effects of VSs on itch when closed-label suggestions were given: at low levels of body ignorance, effects of positive and negative VSs were stronger. Moreover, moderated mediation was observed in the open-label groups of Studies 2 and 3: The expectation-mediated effects of VSs on itch were stronger when BAS drive was lower. Conclusion: Overall, the effects of VSs on itch were mediated by expectations in the open-label, but not the closed-label context. Moreover, the current work suggests that placebo and nocebo effects may be moderated by ignorance of bodily signals and the BAS. There was limited evidence that other interindividual differences modulated placebo and nocebo responding in itch.",
-"keywords": [
-"CABG",
-"Concern",
-"Depression",
-"Expectation",
-"PSY-HEART",
-"Personal control",
-"Placebo",
-"Preoperative psychological intervention"
-],
-"mesh": [
-"Anxiety",
-"Coronary Artery Bypass",
-"Depression",
-"Humans",
-"Preoperative Care"
-],
-"pub_types": [
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:57Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Experimental manipulation of verbal placebo and nocebo suggestions with mediation and moderation analyses targeted placebo/nocebo mechanisms and responses (expectation-mediated effects on histamine-induced itch), matching inclusion criterion for mechanisms/moderators of placebo/nocebo.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_and_nocebo"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"itch"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"parallel_groups_rct",
-"within_subject_experimental"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"open_label_placebo"
-],
-"moderators": [
-"personality_traits"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Conducted three experimental studies testing verbal placebo and nocebo suggestions on histamine-induced itch, found expectation-mediated effects in open-label but not closed-label contexts and moderation by BAS drive and body-ignorance.",
-"key_finding": "Expectation mediated VS effects on itch in open-label but not closed-label contexts; lower BAS drive and lower body-ignorance strengthened expectation-mediated effects.",
-"sample_size": 295,
-"free_keywords": [
-"histamine-induced itch",
-"behavioral activation system",
-"body ignorance",
-"open-label placebo",
-"closed-label",
-"mediation",
-"PROCESS"
-],
-"usage": {
-"input_tokens": 6804,
-"cache_read_input_tokens": 0,
-"cache_creation_input_tokens": 0,
-"output_tokens": 721,
-"cost_usd": 0.00314
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2022-05-06",
-"private_pdf": null
-},
-{
-"id": "doi:10.1097/j.pain.0000000000002162",
+"id": "doi:10.3389/fpsyt.2022.853497",
 "title": "Open-Label Placebo Administration Decreases Pain in Elderly Patients With Symptomatic Knee Osteoarthritis - A Randomized Controlled Trial.",
 "authors": [
 "Olliges E",
@@ -20188,10 +19666,9 @@
 "journal_abbrev": "Front Psychiatry",
 "year": 2022,
 "date": "2022-05-06",
-"doi": "10.1097/j.pain.0000000000002162",
+"doi": "10.3389/fpsyt.2022.853497",
 "pmid": "35599777",
-"pmcid": "PMC6746734",
-"openalex_id": null,
+"pmcid": "PMC9122028",
 "abstract": "BACKGROUND: Recent studies indicate that the administration of open-label placebos (OLP) can improve symptoms in various medical conditions. The primary aim of this 3-week randomized controlled trial was to examine the effects of OLP treatments on pain, functional disability, and mobility in patients with arthritic knee pain. METHODS: Sixty patients (55% females; mean age, 66.9 ± 9.7 SD years) were randomized to one of two OLP treatments (n = 41) or no treatment (NT; n = 19). OLP treatments were accompanied by the verbal suggestion \"to decrease pain\" (OLP-pain, n = 20) or \"to improve mood\" (OLP-mood, n = 21). Pain and mood levels were monitored on 11-point Numeric Rating Scales (NRSs) in a patient diary, and global clinical improvement (CGI-I) was assessed at the end of the study. At baseline and after 21 days, patients filled in validated questionnaires to assess symptoms and functional disability of the knee (WOMAC), mental and physical quality of life (SF-36), state anxiety (STAI-state), perceived stress (PSQ-20), and self-efficacy (GSE). In addition, knee mobility (neutral zero-method), heart rate variability (HRV), and diurnal cortisol levels were evaluated before and after treatment. RESULTS: Evaluation of daily pain ratings indicated significant pain decrease in the OLP groups compared to NT (p = 0.013, d = 0.64), with no difference between the OLP-pain and the OLP-mood groups (p = 0.856, d = 0.05). OLP treatment also improved WOMAC pain (p = 0.036, d = 0.55), again with no difference between the two OLP groups (p = 0.65, d = 0.17). WOMAC function and stiffness, knee mobility, stress, state anxiety, quality of life, and self-efficacy did not change differently between groups. CONCLUSION: OLP treatment improved knee pain in elderly patients with symptomatic knee osteoarthritis (OA), while functional disability and mobility of the knee did not change. The content of the verbal suggestion was of minor importance. OLP administration may be considered as supportive analgesic treatment in elderly patients with symptomatic knee OA. TRIAL REGISTRATION: German Clinical Trials Register (https://www.drks.de/), DRKS00015191 (retrospectively registered).",
 "keywords": [
 "chronic pain",
@@ -20201,22 +19678,10 @@
 "placebo effect",
 "verbal instruction"
 ],
-"mesh": [
-"Analgesics",
-"Chronic Pain",
-"Follow-Up Studies",
-"Humans",
-"Low Back Pain",
-"Research",
-"Treatment Outcome"
-],
+"mesh": [],
 "pub_types": [
 "Journal Article"
 ],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
 "scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
@@ -20300,7 +19765,8 @@
 "pubmed_query"
 ],
 "date_added": "2022-05-06",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1183/13993003.00777-2021",
@@ -21265,125 +20731,6 @@
 "landing_url": "https://doi.org/10.1038/s41598-022-10986-3",
 "cited_by_count": 27,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1038/s41598-022-10567-4",
-"title": "Changes in neural processing and evaluation of negative facial expressions after administration of an open-label placebo.",
-"authors": [
-"Schienle A",
-"Unger I",
-"Schwab D"
-],
-"journal": "Scientific reports",
-"journal_abbrev": "Sci Rep",
-"year": 2022,
-"date": "2022-04-21",
-"doi": "10.1038/s41598-022-10567-4",
-"pmid": "35449194",
-"pmcid": "PMC9023441",
-"openalex_id": "https://openalex.org/W4224210382",
-"abstract": "A recent event-related potential (ERP) study found that an open-label placebo (OLP) reduced emotional distress during the viewing of unpleasant scenes and the amplitude of the late positive potential (LPP). The present ERP experiment aimed at a conceptual replication of this finding and investigated OLP effects during affective face processing. The participants (109 females) were presented with images depicting angry and neutral facial expressions after the administration of a saline nasal spray. The spray was either introduced as a placebo that could help reduce the emotional reactions to viewing angry faces (OLP group) or to improve the electrophysiological recordings (Control group). The OLP was associated with reduced LPP amplitudes (1000-6000 ms) to anger expressions across a frontal cluster. Additionally, the OLP reduced LPP amplitudes (400-1000 ms) to both anger and neutral faces across a centroparietal cluster. Compared to the Control group, the OLP group reported less arousal when confronted with angry faces, and rated the anger expressions as less intense. This study demonstrates that an OLP can alter both subjective and neural responses to anger cues. Future research should directly compare OLP treatment with other strategies for emotion regulation (e.g., cognitive reappraisal) to demonstrate the specificity of this approach.",
-"keywords": [],
-"mesh": [
-"Anger",
-"DiGeorge Syndrome",
-"Electroencephalography",
-"Emotions",
-"Evoked Potentials",
-"Facial Expression",
-"Facial Recognition",
-"Female",
-"Humans",
-"Male"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://www.nature.com/articles/s41598-022-10567-4.pdf",
-"landing_url": "https://doi.org/10.1038/s41598-022-10567-4",
-"cited_by_count": 30,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:09:03Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Open-label placebo was the explicit intervention and the study tested its effects on subjective and neural responses to angry faces (placebo response/effect as primary focus).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response",
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress",
-"sensory_perception"
-],
-"outcome_measures": [
-"self_report",
-"eeg"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"open_label_placebo",
-"verbal_suggestion_expectation",
-"neural_systems_circuits"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"open_label_placebo",
-"other"
-]
-},
-"summary": "Gave an open-label saline nasal spray to healthy female participants and found reduced late positive potential amplitudes and lower self-reported arousal/intensity to angry faces compared with control.",
-"key_finding": "Open-label placebo reduced LPP amplitude (400–6000 ms clusters) and decreased self-reported arousal and perceived intensity of anger expressions.",
-"sample_size": 109,
-"free_keywords": [
-"late positive potential",
-"erp",
-"anger faces",
-"nasal spray",
-"affective face processing",
-"open-label placebo",
-"emotion regulation"
-],
-"usage": {
-"input_tokens": 711,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 719,
-"cost_usd": 0.00176
-}
-},
-"sources": [
-"reference_mining"
-],
-"date_added": "2022-04-21",
-"private_pdf": null
 },
 {
 "id": "doi:10.1523/jneurosci.2544-21.2022",
@@ -23351,134 +22698,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1007/s00213-022-06123-7",
-"title": "Great Expectations: recommendations for improving the methodological rigor of psychedelic clinical trials.",
-"authors": [
-"Aday JS",
-"Heifets BD",
-"Pratscher SD",
-"Bradley E",
-"Rosen R",
-"Woolley JD"
-],
-"journal": "Psychopharmacology",
-"journal_abbrev": "Psychopharmacology (Berl)",
-"year": 2022,
-"date": "2022-04-01",
-"doi": "10.1007/s00213-022-06123-7",
-"pmid": "35359159",
-"pmcid": "PMC10184717",
-"openalex_id": "https://openalex.org/W4226207502",
-"abstract": "RATIONALE: Psychedelic research continues to garner significant public and scientific interest with a growing number of clinical studies examining a wide range of conditions and disorders. However, expectancy effects and effective condition masking have been raised as critical limitations to the interpretability of the research. OBJECTIVE: In this article, we review the many methodological challenges of conducting psychedelic clinical trials and provide recommendations for improving the rigor of future research. RESULTS: Although some challenges are shared with psychotherapy and pharmacology trials more broadly, psychedelic clinical trials have to contend with several unique sources of potential bias. The subjective effects of a high-dose psychedelic are often so pronounced that it is difficult to mask participants to their treatment condition; the significant hype from positive media coverage on the clinical potential of psychedelics influences participants' expectations for treatment benefit; and participant unmasking and treatment expectations can interact in such a way that makes psychedelic therapy highly susceptible to large placebo and nocebo effects. Specific recommendations to increase the success of masking procedures and reduce the influence of participant expectancies are discussed in the context of study development, participant recruitment and selection, incomplete disclosure of the study design, choice of active placebo condition, as well as the measurement of participant expectations and masking efficacy. CONCLUSION: Incorporating the recommended design elements is intended to reduce the risk of bias in psychedelic clinical trials and thereby increases the ability to discern treatment-specific effects of psychedelic therapy.",
-"keywords": [
-"Clinical trials",
-"Expectancies",
-"Masking",
-"Placebo effect",
-"Psychedelic therapy",
-"Psychedelics",
-"Recommendations",
-"Treatment expectations"
-],
-"mesh": [
-"Hallucinogens",
-"Humans",
-"Motivation",
-"Psychotherapy",
-"Research Design"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184717/pdf/nihms-1897324.pdf",
-"landing_url": "https://doi.org/10.1007/s00213-022-06123-7",
-"cited_by_count": 225,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:09:04Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review explicitly focused on expectancy, masking, and the risk of placebo/nocebo effects in psychedelic clinical trials (placebo science as the main subject).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"nocebo_communication_disclosure",
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"provider_patient_interaction"
-],
-"moderators": [
-"expectation_level",
-"trial_characteristics",
-"prior_experience",
-"provider_characteristics"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Reviewed methodological challenges in psychedelic clinical trials, described how participant expectations and masking failures can produce placebo/nocebo effects, and recommended design elements to reduce bias and improve masking.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"psychedelic",
-"masking",
-"expectancy",
-"blinding",
-"active placebo",
-"set and setting",
-"media hype",
-"clinical trial design"
-],
-"usage": {
-"input_tokens": 711,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 768,
-"cost_usd": 0.00186
-}
-},
-"sources": [
-"reference_mining"
-],
-"date_added": "2022-04-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1001/jamapsychiatry.2022.0048",
 "title": "Do Not Rule Out Double-blind Placebo Run-in Periods for Randomized Clinical Trials.",
 "authors": [
@@ -24664,6 +23883,120 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.3389/fpsyt.2022.824468",
+"title": "Positive Treatment Expectations Shape Perceived Medication Efficacy in a Translational Placebo Paradigm for the Gut-Brain Axis.",
+"authors": [
+"Benson S",
+"Theysohn N",
+"Kleine-Borgmann J",
+"Rebernik L",
+"Icenhour A",
+"Elsenbruch S"
+],
+"journal": "Frontiers in psychiatry",
+"journal_abbrev": "Front Psychiatry",
+"year": 2022,
+"date": "2022-03-24",
+"doi": "10.3389/fpsyt.2022.824468",
+"pmid": "35401247",
+"pmcid": "PMC8987023",
+"abstract": "Placebo research has established the pivotal role of treatment expectations in shaping symptom experience and patient-reported treatment outcomes. Perceived treatment efficacy constitutes a relevant yet understudied aspect, especially in the context of the gut-brain axis with visceral pain as key symptom. Using a clinically relevant experimental model of visceral pain, we elucidated effects of pre-treatment expectations on post-treatment perceived treatment efficacy as an indicator of treatment satisfaction in a translational placebo intervention. We implemented positive suggestions regarding intravenous treatment with a spasmolytic drug (in reality saline), herein applied in combination with two series of individually calibrated rectal distensions in healthy volunteers. The first series used distension pressures inducing pain (pain phase). In the second series, pressures were surreptitiously reduced, modeling pain relief (pain relief phase). Using visual analog scales (VAS), expected and perceived treatment efficacy were assessed, along with perceived pain intensity. Manipulation checks supported that the induction of positive pre-treatment expectations and the modeling of pain relief were successful. Generalized Linear Models (GLM) were implemented to assess the role of inter-individual variability in positive pre-treatment expectations in perceived treatment efficacy and pain perception. GLM indicated no association between pre-treatment expectations and perceived treatment efficacy or perceived pain for the pain phase. For the relief phase, pre-treatment expectations (p = 0.024) as well as efficacy ratings assessed after the preceding pain phase (p < 0.001) were significantly associated with treatment efficacy assessed after the relief phase, together explaining 54% of the variance in perceived treatment efficacy. The association between pre-treatment expectations and perceived pain approached significance (p = 0.057) in the relief phase. Our data from an experimental translational placebo intervention in visceral pain support that reported post-treatment medication efficacy is shaped by pre-treatment expectations. The observation that individuals with higher positive expectations reported less pain and higher treatment satisfaction after pain relief may provide first evidence that perceived symptom improvement may facilitate treatment satisfaction. The immediate experience of symptoms within a given psychosocial treatment context may dynamically change perceptions about treatment, with implications for treatment satisfaction, compliance and adherence of patients with conditions of the gut-brain axis.",
+"keywords": [
+"gut-brain axis",
+"pain perception",
+"patient-reported outcomes",
+"placebo",
+"suggestions",
+"treatment expectations",
+"treatment satisfaction",
+"visceral pain"
+],
+"mesh": [],
+"pub_types": [
+"Journal Article"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-04T00:09:06Z",
+"screening": {
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Secondary analysis of an RCT focused on expectancies as predictors of symptom improvement (placebo response) rather than using placebo only as a comparator.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"global_health_qol"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis",
+"observational"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"active_drug_context_manipulation"
+]
+},
+"summary": "Found that pre-treatment and post-treatment expectancies about improvement and having received antibiotics predicted greater physical and mental HRQoL improvement in patients with persistent symptoms attributed to Lyme disease.",
+"key_finding": "Pre-treatment expectancies consistently predicted stronger HRQoL improvements at end-of-treatment and follow-up (95% CI ranges reported; p-values <.01 to <.001).",
+"sample_size": 231,
+"free_keywords": [
+"lyme disease",
+"PLEASE trial",
+"expectancy",
+"doxycycline",
+"clarithromycin",
+"ceftriaxone",
+"health-related quality of life",
+"antimicrobial"
+],
+"usage": {
+"input_tokens": 1022,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 1017,
+"cost_usd": 0.00244
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2022-03-24",
+"private_pdf": null,
+"language": "eng"
+},
+{
 "id": "doi:10.3389/fpsyt.2022.820357",
 "title": "Attitudes Toward a Pre-authorized Concealed Opioid Taper: A Qualitative Analysis of Patient and Clinician Perspectives.",
 "authors": [
@@ -24917,131 +24250,6 @@
 "landing_url": "https://doi.org/10.1186/s12906-022-03543-y",
 "cited_by_count": 45,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1038/nrd3923",
-"title": "Positive Treatment Expectations Shape Perceived Medication Efficacy in a Translational Placebo Paradigm for the Gut-Brain Axis.",
-"authors": [
-"Benson S",
-"Theysohn N",
-"Kleine-Borgmann J",
-"Rebernik L",
-"Icenhour A",
-"Elsenbruch S"
-],
-"journal": "Frontiers in psychiatry",
-"journal_abbrev": "Front Psychiatry",
-"year": 2022,
-"date": "2022-03-24",
-"doi": "10.1038/nrd3923",
-"pmid": "35401247",
-"pmcid": "PMC7440833",
-"openalex_id": null,
-"abstract": "INTRODUCTION/OBJECTIVE: Expectancies about symptom improvement or deterioration are reliable predictors of symptom progression and treatment outcomes (symptom resolution or symptomatic improvement) in many (non-)pharmacological studies and treatments. This study examined predictors of symptom improvement after antimicrobial therapy for persistent symptoms attributed to Lyme disease, hypothesizing particularly pre-treatment expectancies regarding symptom improvement to be predictive. METHODS: A predictive study was performed on pre-treatment and post-treatment individual characteristics, including expectancies, and physical and mental health-related quality of life (HRQoL) from the PLEASE-trial comparing randomized 12-weeks of doxycycline, clarithromycin-hydroxychloroquine, or placebo following 2 weeks of intravenous ceftriaxone. At end-of-treatment (14 weeks after trial start) and follow-up (52 weeks), complete data of 231 and 170 (of initial 280) patients with persistent symptoms temporally related to a history of erythema migrans or otherwise confirmed symptomatic Lyme disease, or accompanied by B. burgdorferi IgG or IgM antibodies, were examined through hierarchical regression analyses. RESULTS: In addition to pre-treatment HRQoL, pre-treatment expectancies regarding symptom improvement were consistently associated with stronger physical and mental HRQoL improvements at both end-of-treatment and follow-up (95% CI range: .09;.54, p < .01 to .27;.92, p < .001). Post-treatment expectancies regarding having received antibiotics vs. placebo was associated with more HRQoL improvement at end-of-treatment, but not at follow-up (95% CI-range 1.00;4.75, p = .003 to -7.34; -2.22, p < .001). CONCLUSIONS: The present study shows that, next to pre-treatment functioning, patients' pre-treatment and post-treatment expectancies regarding improvement of persistent symptoms attributed to Lyme disease relate to a more beneficial symptom course. Expectancies of patients may be relevant to explain and potentially improve patient outcomes (e.g., by optimized communication about treatment success). TRIAL REGISTRATION: ClinicalTrials.gov, NCT01207739 (Registration date: 23-09-2010) Key Points • As there is currently no sufficient symptom resolution or symptomatic improvement for many patients with persistent symptoms attributed to Lyme disease, it is relevant to know which factors determine symptom progression and predict heterogeneity in treatment response. • Next to pre-treatment functioning, expectancies regarding symptom improvement and having received antimicrobial study medication are associated with a more beneficial symptom course after both shorter-term and longer-term antimicrobial treatment. • Expectancies are relevant to consider in treatment studies and may be useful in clinical settings to improve symptom course and treatment outcome (e.g., by optimized communication about treatment success).",
-"keywords": [
-"gut-brain axis",
-"pain perception",
-"patient-reported outcomes",
-"placebo",
-"suggestions",
-"treatment expectations",
-"treatment satisfaction",
-"visceral pain"
-],
-"mesh": [
-"Anti-Bacterial Agents",
-"Ceftriaxone",
-"Doxycycline",
-"Humans",
-"Lyme Disease",
-"Quality of Life"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:09:06Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Secondary analysis of an RCT focused on expectancies as predictors of symptom improvement (placebo response) rather than using placebo only as a comparator.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "secondary_analysis",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"placebo_arm_secondary_analysis",
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"expectation_level"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
-},
-"summary": "Found that pre-treatment and post-treatment expectancies about improvement and having received antibiotics predicted greater physical and mental HRQoL improvement in patients with persistent symptoms attributed to Lyme disease.",
-"key_finding": "Pre-treatment expectancies consistently predicted stronger HRQoL improvements at end-of-treatment and follow-up (95% CI ranges reported; p-values <.01 to <.001).",
-"sample_size": 231,
-"free_keywords": [
-"lyme disease",
-"PLEASE trial",
-"expectancy",
-"doxycycline",
-"clarithromycin",
-"ceftriaxone",
-"health-related quality of life",
-"antimicrobial"
-],
-"usage": {
-"input_tokens": 1022,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1017,
-"cost_usd": 0.00244
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2022-03-24",
-"private_pdf": null
 },
 {
 "id": "doi:10.3389/fpsyt.2022.807138",
