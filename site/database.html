@@ -26,7 +26,7 @@
   <div class="page-head">
     <p class="eyebrow">Database</p>
     <h1>Placebo research database</h1>
-    <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND.</p>
+    <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND. Export sends the current results (up to 2,000) to a reference manager as BibTeX, RIS, a DOI list or CSV.</p>
   </div>
   <div class="stat-row" id="stats"></div>
   <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. naloxone conditioning, open-label placebo IBS" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Benedetti or Benedetti F" autocomplete="off" aria-label="Author" style="flex:0 1 260px"><button class="btn primary" id="go">Search</button></div>
@@ -40,6 +40,7 @@
         <div class="sortbar" style="margin-left:auto">
           <label>Sort <select id="sort"><option value="rel">relevance</option><option value="new">newest</option><option value="old">oldest</option><option value="cited">most cited</option></select></label>
           <label>Year <select id="yfrom"><option value="">any</option></select> – <select id="yto"><option value="">any</option></select></label>
+          <span id="exportwrap"></span>
           <label><input type="checkbox" id="onlyList"> my list</label>
           <label><input type="checkbox" id="showAdjacent"> adjacent</label>
         </div>
@@ -115,6 +116,7 @@
     else if (sort === "cited") shown.sort((a, b) => ((b.cit ?? -1) - (a.cit ?? -1)) || (b.d || "").localeCompare(a.d || ""));
     else if (sort === "rel" && !hits) shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
     else shown.sort((a, b) => (b.d || "").localeCompare(a.d || ""));
+    lastShown = shown;
     const pages = Math.max(1, Math.ceil(shown.length / PAGE));
     page = Math.min(Math.max(1, page), pages);
     els.count.textContent = `${shown.length.toLocaleString()} paper${shown.length === 1 ? "" : "s"}` + (q ? ` for “${q}”` : "") + (qa ? ` by ${els.qa.value.trim()}` : "");
@@ -136,6 +138,9 @@
     if (prev) prev.onclick = () => { page--; run(); window.scrollTo({ top: 0 }); };
     if (next) next.onclick = () => { page++; run(); window.scrollTo({ top: 0 }); };
   }
+  let lastShown = [];
+  document.getElementById("exportwrap").innerHTML = SOP.exportMenu("exp");
+  SOP.bindExport(document.getElementById("exportwrap"), () => lastShown.slice(0, 2000), "database-search");
   els.go.onclick = () => { page = 1; els.sort.value = els.q.value.trim() ? "rel" : "new"; run(); };
   els.q.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });
   els.qa.addEventListener("keydown", e => { if (e.key === "Enter") els.go.onclick(); });

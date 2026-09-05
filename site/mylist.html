@@ -31,7 +31,7 @@
   <div class="page-head">
     <p class="eyebrow">My list</p>
     <h1>Papers you have starred</h1>
-    <p>Star any paper (☆) on the feed, in the database or on its page to keep it here. On the feed and database pages, tick "only my list" to filter to these papers.</p>
+    <p>Star any paper (☆) on the feed, in the database or on its page to keep it here. On the feed and database pages, tick "only my list" to filter to these papers. Export sends the list to your reference manager: BibTeX or RIS for Zotero, Mendeley, EndNote and Paperpile, or a DOI list to paste into an identifier importer.</p>
   </div>
   <div class="notice" id="notice"><div data-account="full" style="margin-bottom:.4rem"></div>Without an account the list is stored in this browser only: use <b>Export</b> to save it or move it to another device, and <b>Import</b> to load one. See <a href="join.html">Join the community</a> and the <a href="picks.html">community picks</a>.</div>
   <div class="tools">
@@ -41,6 +41,7 @@
     <button class="btn" id="export">Export</button>
     <button class="btn" id="import">Import</button>
     <button class="btn" id="copy">Copy citations</button>
+    <span id="exportwrap"></span>
     <button class="btn link" id="clear">Clear list</button>
   </div>
   <div id="io" hidden style="margin-bottom:1rem"><textarea id="iotext" placeholder="Paste an exported list here, then click Load"></textarea><div class="tools" style="margin-top:.4rem"><button class="btn primary" id="load">Load</button><button class="btn" id="ioclose">Close</button><span class="small muted" id="iomsg"></span></div></div>
@@ -71,6 +72,8 @@
   }
   sortEl.onchange = render;
   SOP.bindStars(listEl);
+  document.getElementById("exportwrap").innerHTML = SOP.exportMenu("exp");
+  SOP.bindExport(document.getElementById("exportwrap"), () => [...SOP.list.ids()].map(id => byId.get(id)).filter(Boolean), "my-list");
   document.addEventListener("sop:list", () => { /* keep the card until the page re-renders, so an accidental un-star can be undone */ });
   document.getElementById("export").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = SOP.list.export(); document.getElementById("iomsg").textContent = "Copy this text and keep it, or paste it on another device with Import."; document.getElementById("iotext").select(); };
   document.getElementById("import").onclick = () => { const io = document.getElementById("io"); io.hidden = false; document.getElementById("iotext").value = ""; document.getElementById("iomsg").textContent = "Paste an exported list, then click Load. Papers are added to your current list."; document.getElementById("iotext").focus(); };

@@ -17,7 +17,7 @@ for i in range(0, len(todo), 50):
     for attempt in range(4):
         try:
             r = requests.get("https://api.openalex.org/works", headers=H, timeout=90, params={
-                "filter": "doi:" + "|".join(chunk), "per-page": 50, "select": SEL, "mailto": config.CONTACT_EMAIL})
+                "filter": "doi:" + "|".join(chunk), "per-page": 50, "select": SEL, "mailto": config.CONTACT_EMAIL, **({"api_key": config.OPENALEX_API_KEY} if config.OPENALEX_API_KEY else {})})
             if r.status_code == 429:
                 time.sleep(10 * (attempt + 1)); continue
             r.raise_for_status(); break

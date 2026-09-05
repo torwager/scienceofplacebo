@@ -8,12 +8,20 @@ UNPAYWALL = "https://api.unpaywall.org/v2"
 H = {"User-Agent": f"{config.TOOL_NAME} (mailto:{config.CONTACT_EMAIL})"}
 
 
+def _p(extra):
+    p = {"mailto": config.CONTACT_EMAIL}
+    if config.OPENALEX_API_KEY:
+        p["api_key"] = config.OPENALEX_API_KEY
+    p.update(extra)
+    return p
+
+
 def by_doi(doi):
     if not doi:
         return None
     try:
         r = requests.get(f"{OA}/https://doi.org/{doi}", headers=H, timeout=60,
-                         params={"mailto": config.CONTACT_EMAIL, "select": "id,doi,title,open_access,best_oa_location,primary_location,cited_by_count,publication_date,type"})
+                         params=_p({"select": "id,doi,title,open_access,best_oa_location,primary_location,cited_by_count,publication_date,type"}))
         if r.status_code == 404:
             return None
         r.raise_for_status()
@@ -25,7 +33,7 @@ def by_doi(doi):
 def by_pmid(pmid):
     try:
         r = requests.get(f"{OA}/pmid:{pmid}", headers=H, timeout=60,
-                         params={"mailto": config.CONTACT_EMAIL, "select": "id,doi,title,open_access,best_oa_location,primary_location,cited_by_count,publication_date,type"})
+                         params=_p({"select": "id,doi,title,open_access,best_oa_location,primary_location,cited_by_count,publication_date,type"}))
         if r.status_code == 404:
             return None
         r.raise_for_status()
@@ -76,7 +84,7 @@ def search_recent(from_date, per_page=200, max_pages=5):
     for _ in range(max_pages):
         r = requests.get(OA, headers=H, timeout=60, params={
             "filter": f"title_and_abstract.search:{SEARCH_TERMS},type:article|preprint,from_publication_date:{from_date}",
-            "per-page": per_page, "cursor": cursor, "mailto": config.CONTACT_EMAIL,
+            "per-page": per_page, "cursor": cursor, **_p({}),
             "select": "id,doi,title,authorships,publication_date,publication_year,type,primary_location,open_access,best_oa_location,ids,abstract_inverted_index,keywords,cited_by_count,language"})
         r.raise_for_status()
         j = r.json()
