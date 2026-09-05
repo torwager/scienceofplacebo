@@ -1386,18 +1386,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:59:35Z",
+"classified_at": "2026-09-05T20:54:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates focus on placebo in IBS but available record is insufficient to confirm whether this is a review, empirical study, or placebo-focused analysis.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly names placebo as the topic in the context of irritable bowel syndrome, indicating placebo effects/responses are the paper's subject (review/summary likely).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1408,13 +1408,11 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"not_applicable"
+"gi_ibs"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
-"nausea_gi"
+"other"
 ],
 "outcome_measures": [],
 "design": [
@@ -1424,7 +1422,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"other"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -1433,22 +1431,23 @@
 "not_applicable"
 ]
 },
-"summary": "Insufficient information to determine study type; the title suggested a paper about the role of placebo in irritable bowel syndrome but no abstract was available.",
+"summary": "Reviews the role of placebo in irritable bowel syndrome, discussing placebo effects and implications for IBS research and treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
-"IBS",
-"placebo",
-"pediatric gastroenterology",
-"placebo mechanisms"
+"ibs",
+"placebo response",
+"placebo effect",
+"gastroenterology",
+"clinical trials"
 ],
 "usage": {
-"input_tokens": 380,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 852,
-"cost_usd": 0.00195
+"output_tokens": 496,
+"cost_usd": 0.00128
 }
 },
 "sources": [
@@ -3246,97 +3245,6 @@
 ],
 "date_added": "2011-10-20",
 "private_pdf": null
-},
-{
-"id": "doi:10.1136/archdischild-2011-300837",
-"title": "Metformin and placebo therapy in adjunct with lifestyle intervention both improve weight loss and insulin resistance in obese adolescents.",
-"authors": [
-"Hawkins FP"
-],
-"journal": "Archives of disease in childhood. Education and practice edition",
-"journal_abbrev": "Arch Dis Child Educ Pract Ed",
-"year": 2011,
-"date": "2011-10-18",
-"doi": "10.1136/archdischild-2011-300837",
-"pmid": "22009336",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Comment",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:59:53Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title suggests a placebo-controlled trial but it's unclear whether placebo response/effect was an explicit focus versus a drug efficacy comparison.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
-"condition_domain": [
-"endocrine_hormonal"
-],
-"outcome_measures": [],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
-},
-"summary": "Title reported that both metformin and placebo adjunct to lifestyle intervention improved weight loss and insulin resistance in obese adolescents.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"metformin",
-"obesity",
-"adolescents",
-"insulin resistance",
-"placebo-controlled",
-"lifestyle intervention"
-],
-"usage": {
-"input_tokens": 380,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 742,
-"cost_usd": 0.00173
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-10-18",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2412955841",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1136/archdischild-2011-300837",
-"cited_by_count": 3,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1016/j.bbr.2011.10.018",
@@ -5505,99 +5413,6 @@
 "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/art.30467?download=true",
 "landing_url": "https://doi.org/10.1002/art.30467",
 "cited_by_count": 139,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.jphysparis.2011.09.010",
-"title": "Does experimental research support psychoanalysis?",
-"authors": [
-"Cohen D"
-],
-"journal": "Journal of physiology, Paris",
-"journal_abbrev": "J Physiol Paris",
-"year": 2011,
-"date": "2011-09-29",
-"doi": "10.1016/j.jphysparis.2011.09.010",
-"pmid": "21963530",
-"pmcid": null,
-"abstract": "The question of whether a psychodynamic view is compatible with experimental research is still a challenging issue-especially for child and adolescent psychopathology-despite the influence of psychoanalytic theory in this field until the 1980s. In this article, is explored the relationship between psychodynamic theory and experimental research using examples of evidence-based studies in the fields of (i) psychotherapeutic intervention assessment, (ii) placebo response in children and adolescents, (iii) unconscious lasting traumatic effects in children and adolescents, (iv) psychodynamic-oriented psychological testing. There are now a sufficient number of evidence-based studies to support the use of psychodynamic therapy in mental disorders, particularly in personality disorder and anxious/depressive disorder. In addition, placebo responses in children and adolescents with internalizing disorders are significantly higher in major depression compared to obsessive-compulsive disorder or other anxiety disorders, which highlights differential psychopathologies regarding the experience of loss. Also, using an experimental task, psychoanalysts are able to identify, without explicit knowledge and above the level of chance, healthy adults whose siblings had experienced cancer during childhood. This experiment suggests that implicit information regarding a participant's history is conveyed in interpersonal exchanges that can be intuitively perceived by judges experienced in listening to free associations from a psychodynamic perspective. Finally, psychodynamic-oriented psychological testing may predict the transition to schizophrenia in adolescents with a history of manic/mixed episodes. It can be concluded that there are no discrepancies between psychodynamic views and experimental data, whether one tests psychotherapeutic approaches, discusses data from other fields such as psychopharmacology, or designs experiments based on psychodynamic theory.",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Child",
-"Humans",
-"Mental Disorders",
-"Neoplasms",
-"Neurology",
-"Neuropsychological Tests",
-"Psychoanalytic Theory",
-"Psychotherapy",
-"Research",
-"Siblings",
-"Unconscious, Psychology"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T04:00:07Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "This is a broad narrative review of psychodynamic research that includes a section summarizing placebo responses in children/adolescents but placebo phenomena are not the paper's primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reviewed compatibility of psychodynamic theory with experimental research and included an example section summarizing placebo responses in children and adolescents across internalizing disorders.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"psychodynamic",
-"children and adolescents",
-"placebo response",
-"internalizing disorders",
-"major depression",
-"obsessive-compulsive disorder"
-],
-"usage": {
-"input_tokens": 716,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 688,
-"cost_usd": 0.0017
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-09-29",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2110809966",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.jphysparis.2011.09.010",
-"cited_by_count": 5,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -9099,94 +8914,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1007/s11910-011-0206-y",
-"title": "Of monkeys and men: analysis of the phase 2 double-blind, sham-surgery controlled, randomized trial of AAV2-neurturin gene therapy for Parkinson's disease.",
-"authors": [
-"Huddleston DE",
-"Factor SA"
-],
-"journal": "Current neurology and neuroscience reports",
-"journal_abbrev": "Curr Neurol Neurosci Rep",
-"year": 2011,
-"date": "2011-08-01",
-"doi": "10.1007/s11910-011-0206-y",
-"pmid": "21505812",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Comment",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:00:31Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates an analysis of a sham-surgery controlled gene-therapy trial but does not make clear whether placebo/sham effects are the explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": [
-"sham_surgery"
-]
-},
-"summary": "No abstract available; title indicated an analysis of a double-blind, sham-surgery–controlled randomized trial of AAV2-neurturin for Parkinson's disease, but it is unclear whether placebo/sham effects were a primary focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"sham surgery",
-"aav2-neurturin",
-"gene therapy",
-"parkinson's disease",
-"double-blind trial",
-"phase 2"
-],
-"usage": {
-"input_tokens": 403,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 510,
-"cost_usd": 0.00127
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-08-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2081823848",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1007/s11910-011-0206-y",
-"cited_by_count": 7,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1007/s11017-011-9179-8",
 "title": "The placebo phenomenon and medical ethics: rethinking the relationship between informed consent and risk-benefit assessment.",
 "authors": [
@@ -10483,50 +10210,62 @@
 "oa_pdf_url": "https://doi.org/10.1016/j.jhep.2011.06.011",
 "landing_url": "https://doi.org/10.1016/j.jhep.2011.06.011",
 "cited_by_count": 9,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T18:56:32Z",
+"classified_at": "2026-09-05T20:54:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract and the item is a short journal comment about 'expectancies' in HCV treatment so it is unclear whether placebo/nocebo phenomena are the focus or merely discussed.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly references expectancies as influencing response to HCV treatment, indicating placebo/expectation phenomena are the paper's subject (commentary).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "Was a short journal comment about expectancies and caution in hepatitis C treatment; abstract unavailable so focus on placebo/nocebo is unclear.",
+"summary": "Commentary discussed the role of expectancies in boosting hepatitis C treatment response and advised caution.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hepatitis c",
-"expectancy",
-"commentary",
-"treatment response"
+"hcv",
+"expectation",
+"treatment response",
+"commentary"
 ],
 "usage": {
-"input_tokens": 426,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 688,
-"cost_usd": 0.00163
+"output_tokens": 689,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -10785,90 +10524,6 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3130411",
 "landing_url": "https://doi.org/10.1098/rstb.2010.0414",
 "cited_by_count": 84,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1098/rstb.2010.0410",
-"title": "Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences. Preface.",
-"authors": [
-"Kirsch I"
-],
-"journal": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences",
-"journal_abbrev": "Philos Trans R Soc Lond B Biol Sci",
-"year": 2011,
-"date": "2011-06-27",
-"doi": "10.1098/rstb.2010.0410",
-"pmid": "21576134",
-"pmcid": "PMC3130410",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Artifacts",
-"Clinical Trials as Topic",
-"Humans",
-"Placebo Effect"
-],
-"pub_types": [
-"Introductory Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:00:42Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and the item is a short preface; MeSH lists 'Placebo Effect' but it's unclear whether placebo is the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Preface to a journal issue; no abstract available and it is unclear whether placebo effects were the primary subject.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"preface",
-"introductory",
-"special_issue",
-"kirsch",
-"philosophical_transactions",
-"placebo"
-],
-"usage": {
-"input_tokens": 398,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 618,
-"cost_usd": 0.00148
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-06-27",
-"private_pdf": null,
-"openalex_mismatch": true,
-"cited_by_count": null,
-"oa_pdf_url": null,
-"oa_status": null,
-"openalex_id": null,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -17949,102 +17604,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1002/jbmr.384",
-"title": "Healthy users, healthy adherers, and healthy behaviors?",
-"authors": [
-"Silverman SL",
-"Gold DT"
-],
-"journal": "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research",
-"journal_abbrev": "J Bone Miner Res",
-"year": 2011,
-"date": "2011-04-01",
-"doi": "10.1002/jbmr.384",
-"pmid": "21433070",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Bias",
-"Confounding Factors, Epidemiologic",
-"Diphosphonates",
-"Female",
-"Fractures, Bone",
-"Health Behavior",
-"Hip Fractures",
-"Humans",
-"Osteoporosis, Postmenopausal",
-"Placebo Effect",
-"Randomized Controlled Trials as Topic",
-"Risk Assessment",
-"Drug Monitoring"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:01:36Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the item is a journal comment, so it's unclear whether placebo/nocebo phenomena are the paper's primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract was available; item is a journal comment on adherence and healthy-user bias in osteoporosis trials.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"healthy adherer",
-"adherence",
-"osteoporosis",
-"bisphosphonates",
-"hip fracture",
-"healthy behaviors",
-"bias"
-],
-"usage": {
-"input_tokens": 435,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 516,
-"cost_usd": 0.00129
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-04-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1984430326",
-"oa_status": "bronze",
-"oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jbmr.384",
-"landing_url": "https://doi.org/10.1002/jbmr.384",
-"cited_by_count": 19,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1002/jbmr.274",
 "title": "The relationship between bisphosphonate adherence and fracture: is it the behavior or the medication? Results from the placebo arm of the fracture intervention trial.",
 "authors": [
@@ -21207,51 +20766,79 @@
 "oa_pdf_url": "https://europepmc.org/articles/pmc3057208?pdf=render",
 "landing_url": null,
 "cited_by_count": 293,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:12:10Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T20:55:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous about whether the paper empirically studies placebo/sham effects or is a conceptual/commentary on sham craniotomy controls.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Animal experiment explicitly tested effects of craniotomy ‘sham’ versus anesthesia-only controls and analyzed morphological, behavioral, and inflammatory responses attributable to the sham procedure (experimental isolation of sham effect).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "nonhuman_animal",
+"population": [
+"not_applicable"
+],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"other",
+"motor_function",
+"immune_inflammation"
+],
+"outcome_measures": [
+"behavioral_performance",
+"smri",
+"immune_inflammatory"
+],
+"design": [
+"animal_experiment",
+"parallel_groups_rct"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"neurobiology_other_neurochemical",
+"neural_systems_circuits"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_surgery"
+]
 },
-"summary": "Discusses whether craniotomy functions as an appropriate sham control in traumatic brain injury research.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Compared craniotomy sham (drill or trephine) versus anesthesia-only in rats and found persistent MRI lesions, motor deficits, and elevated cortical cytokines after craniotomy, with drill producing larger lesions than trephine.",
+"key_finding": "Craniotomy alone produced measurable MRI lesions, impaired rotarod/NSS-R performance, and increased cortical KC-GRO and IFN-γ (n=38); drill-induced lesions were larger than trephine.",
+"sample_size": 38,
 "free_keywords": [
-"sham surgery",
 "craniotomy",
-"traumatic brain injury",
-"surgical control",
-"animal models"
+"Wistar rat",
+"rotarod",
+"KC-GRO",
+"IFN-gamma",
+"MRI lesion",
+"controlled cortical impact",
+"fluid percussion"
 ],
 "usage": {
-"input_tokens": 424,
+"input_tokens": 16629,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 620,
-"cost_usd": 0.00149
+"output_tokens": 1306,
+"cost_usd": 0.00692
 }
 },
 "sources": [
@@ -22886,52 +22473,66 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/21539145",
 "cited_by_count": 0,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:01:04Z",
+"classified_at": "2026-09-05T20:55:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title indicates a historical article on hypnotism and suggestion which may relate to placebo history, but insufficient information to confirm placebo/nocebo is the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states treatment by hypnotism and suggestion, indicating suggestion/expectation mechanisms are the paper's subject (historical report of suggestion effects).",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine whether placebo/nocebo is the paper's focus; title indicated a historical account of treating neurasthenia with hypnotism and suggestion.",
+"summary": "Reported the treatment of neurasthenia using hypnotism and suggestion, emphasizing suggestion as the therapeutic mechanism.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "neurasthenia",
 "hypnotism",
 "suggestion",
-"history of medicine",
+"historical",
 "1911",
-"historical article"
+"psychotherapy"
 ],
 "usage": {
-"input_tokens": 435,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 672,
-"cost_usd": 0.0016
+"output_tokens": 903,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -24411,85 +24012,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1136/ebm1181",
-"title": "Chinese acupuncture for chronic shoulder pain: 65% response rate at 6 weeks compared with 24% with sham acupuncture and 37% with standard conservative orthopaedic treatment.",
-"authors": [
-"Ernst E"
-],
-"journal": "Evidence-based medicine",
-"journal_abbrev": "Evid Based Med",
-"year": 2011,
-"date": "2011-01-12",
-"doi": "10.1136/ebm1181",
-"pmid": "21228053",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Comment",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:02:21Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and the title reports sham-controlled results but does not make clear whether the paper's primary focus was placebo/nocebo effects versus an efficacy comparison, so inclusion cannot be confidently determined from available information.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title reported response rates for acupuncture, sham acupuncture, and standard treatment for chronic shoulder pain, but the paper's focus on placebo/nocebo phenomena was unclear from available information.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"sham acupuncture",
-"chronic shoulder pain",
-"acupuncture",
-"response rate",
-"evidence-based medicine"
-],
-"usage": {
-"input_tokens": 387,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 516,
-"cost_usd": 0.00128
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-01-12",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1986752505",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1136/ebm1181",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1093/jmp/jhq061",
 "title": "Understanding and harnessing placebo effects: clearing away the underbrush.",
 "authors": [
@@ -25527,108 +25049,6 @@
 "oa_pdf_url": "https://doi.org/10.4103/0970-9290.87062",
 "landing_url": "https://doi.org/10.4103/0970-9290.87062",
 "cited_by_count": 24,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.4088/jcp.10035colc",
-"title": "The current crisis of confidence in antidepressants.",
-"authors": [
-"Nierenberg AA",
-"Leon A",
-"Price LH",
-"Shelton RC",
-"Trivedi MH"
-],
-"journal": "The Journal of clinical psychiatry",
-"journal_abbrev": "J Clin Psychiatry",
-"year": 2011,
-"date": "2011-01-01",
-"doi": "10.4088/jcp.10035colc",
-"pmid": "21272514",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Antidepressive Agents",
-"Child",
-"Depressive Disorder",
-"Drug-Related Side Effects and Adverse Reactions",
-"Humans",
-"Meta-Analysis as Topic",
-"Placebo Effect",
-"Psychiatric Status Rating Scales",
-"Psychotherapy",
-"Randomized Controlled Trials as Topic",
-"Severity of Illness Index",
-"Suicidal Ideation",
-"Suicide",
-"Suicide, Attempted",
-"Telecommunications",
-"Treatment Outcome",
-"Young Adult"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:02:33Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a commentary on antidepressant efficacy that may mention placebo, so it's unclear whether placebo/nocebo effects are the paper's primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Discusses concerns about antidepressant efficacy and the potential influence of placebo effects in antidepressant trials.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"antidepressants",
-"depression",
-"efficacy",
-"placebo effect",
-"meta-analysis",
-"clinical trials"
-],
-"usage": {
-"input_tokens": 442,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 669,
-"cost_usd": 0.0016
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2011-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2443964859",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/21272514",
-"cited_by_count": 11,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -27245,23 +26665,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:02:48Z",
+"classified_at": "2026-09-05T20:56:05Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/placebo-response was an explicit focus or merely a control.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames erectile dysfunction improvement as due to pistachio versus a placebo effect, indicating placebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -27271,27 +26693,29 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title implied a comparison of pistachio versus placebo for erectile dysfunction but details were insufficient to judge whether placebo effects were a study focus.",
+"summary": "Investigated whether reported erectile dysfunction improvement following pistachio consumption reflected a true effect or a placebo effect.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "erectile dysfunction",
 "pistachio",
-"pistacia",
-"placebo effect",
-"sexual dysfunction"
+"dietary intervention",
+"plant preparation",
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 652,
-"cost_usd": 0.00155
+"output_tokens": 761,
+"cost_usd": 0.00181
 }
 },
 "sources": [

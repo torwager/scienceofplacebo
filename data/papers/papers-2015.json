@@ -6374,27 +6374,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:45:18Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:02:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest a commentary on alternative therapies and mention placebo, but it's unclear whether placebo/nocebo effects are the explicit focus or only discussed.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Opinion piece whose main topic is placebo mechanisms, clinical implications and evidence on alternative therapies (placebo science), so it fits inclusion as theory/commentary on placebo science.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "human",
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -6414,34 +6414,45 @@
 "not_applicable"
 ],
 "mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"provider_patient_interaction",
+"treatment_cues_dose_route",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"neural_systems_circuits",
+"harnessing_placebo_clinical",
 "history_conceptual",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"provider_characteristics",
+"treatment_characteristics",
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "No abstract was available; likely a Nature commentary urging consideration of all evidence, including placebo effects, when evaluating alternative therapies.",
+"summary": "Argues that evidence on alternative therapies and placebo mechanisms should be investigated and incorporated into medicine, highlighting expectation, ritual, and clinician interaction as therapeutic ingredients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alternative therapies",
-"complementary medicine",
-"placebo_effect",
-"evidence_synthesis",
-"hope",
-"quackery",
-"reproducibility"
+"reiki",
+"integrative_medicine",
+"placebo_response",
+"expectation",
+"empathy",
+"kaptchuk",
+"irritable_bowel",
+"dopamine"
 ],
 "usage": {
-"input_tokens": 384,
+"input_tokens": 1878,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 758,
-"cost_usd": 0.00176
+"output_tokens": 816,
+"cost_usd": 0.00225
 }
 },
 "sources": [
@@ -8244,50 +8255,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:45:36Z",
+"classified_at": "2026-09-05T21:02:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title could indicate either a commentary on antidepressant efficacy versus placebo or an empirical analysis, so inclusion cannot be determined from available information.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly contrasts antidepressant effect with placebo effect, indicating placebo phenomena in depression trials are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
+"article_type": "narrative_review",
+"species": "human",
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient information (no abstract) to determine whether the paper empirically studied placebo or nocebo effects or responses.",
+"summary": "Discussed whether apparent antidepressant benefits reflect drug action or include a substantial placebo response in depression trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"antidepressant",
-"placebo effect",
-"depression",
-"trial methodology"
+"major depressive disorder",
+"antidepressant trials",
+"placebo response",
+"clinical trial methodology"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 581,
-"cost_usd": 0.0014
+"output_tokens": 601,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -10445,23 +10479,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:45:48Z",
+"classified_at": "2026-09-05T21:03:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided so it is unclear whether placebo phenomena were an explicit object of empirical study, review, or commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly names 'placebo response', indicating placebo phenomena are the paper's subject (cultural/colour influences).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
@@ -10471,30 +10507,35 @@
 "design": [
 "not_applicable"
 ],
-"effects": [],
-"mechanisms": [
-"treatment_cues_dose_route"
+"effects": [
+"not_applicable"
 ],
-"moderators": [],
+"mechanisms": [
+"social_observational_learning",
+"other"
+],
+"moderators": [
+"culture_ethnicity"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Insufficient abstract available; title suggested discussion of how colour and culture relate to placebo response but methods and focus were unclear.",
+"summary": "Reviewed how colour and cultural factors relate to the placebo response.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "colour",
 "culture",
 "placebo response",
-"international psychiatry"
+"social psychiatry"
 ],
 "usage": {
-"input_tokens": 379,
+"input_tokens": 557,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 456,
-"cost_usd": 0.00115
+"output_tokens": 756,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -11542,93 +11583,6 @@
 ],
 "date_added": "2015-08-17",
 "private_pdf": null
-},
-{
-"id": "doi:10.1111/jep.12435",
-"title": "Evidence-based medicine and acupuncture: old bias for new perspectives in clinical context.",
-"authors": [
-"Tassinari M",
-"Roberti di Sarsina P"
-],
-"journal": "Journal of evaluation in clinical practice",
-"journal_abbrev": "J Eval Clin Pract",
-"year": 2015,
-"date": "2015-08-16",
-"doi": "10.1111/jep.12435",
-"pmid": "26277999",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acupuncture Therapy",
-"Bias",
-"Biomedical Research",
-"Evidence-Based Medicine",
-"Humans",
-"Placebo Effect",
-"Randomized Controlled Trials as Topic"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:46:59Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; MeSH lists 'Placebo Effect' but the title suggests a perspective on evidence-based medicine and acupuncture, so it's unclear whether placebo/nocebo phenomena are the paper's primary focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; likely discussed evidence-based medicine, bias, and acupuncture with mention of placebo effects in a clinical-context perspective.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"acupuncture",
-"evidence-based medicine",
-"bias",
-"placebo effect",
-"randomized controlled trials"
-],
-"usage": {
-"input_tokens": 394,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 547,
-"cost_usd": 0.00134
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2015-08-16",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2110098973",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/jep.12435",
-"cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1016/j.addbeh.2015.08.004",
@@ -20106,20 +20060,20 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:47:12Z",
+"classified_at": "2026-09-05T21:03:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies a demonstration of placebo effect but available information is insufficient to confirm study design, population, or whether placebo/nocebo was an explicit analytic focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states a demonstration of a placebo effect for a cough medicine, making placebo effect the paper's focus.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -20127,23 +20081,17 @@
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "respiratory"
 ],
 "outcome_measures": [
 "self_report"
 ],
-"design": [
-"single_group_pre_post"
-],
+"design": [],
 "effects": [
-"not_applicable"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation"
@@ -20152,26 +20100,24 @@
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"not_applicable"
 ]
 },
-"summary": "Title indicated a demonstration of a placebo effect for nonspecific cough medicine in pediatrics, but no abstract was available so methods and results were unclear.",
+"summary": "Demonstrated that a nonspecific cough medicine produced a placebo effect on cough symptoms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cough",
 "antitussive",
-"placebo",
-"pediatrics",
-"syrup",
-"symptomatic treatment"
+"placebo effect",
+"pediatrics"
 ],
 "usage": {
-"input_tokens": 252,
-"cache_read_input_tokens": 6016,
+"input_tokens": 558,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00206
+"output_tokens": 807,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -23934,24 +23880,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:47:37Z",
+"classified_at": "2026-09-05T21:03:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and title alone is insufficient to determine whether placebo/nocebo phenomena are the paper's primary focus (could be a methodological commentary).",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses control or placebo groups in clinical trials, indicating placebo-related methodology as the paper's main subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -23959,26 +23907,27 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title suggested a discussion of using control versus placebo groups in clinical trials, but the paper's focus on placebo/nocebo phenomena could not be determined from the available record.",
+"summary": "Discusses the role and design of control or placebo groups in clinical trials, focusing on methodological issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"trial design",
-"control group",
-"placebo group",
-"methodology",
-"clinical trials"
+"clinical_trial_methods",
+"placebo_group",
+"control_group",
+"trial_design"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 544,
-"cost_usd": 0.00133
+"output_tokens": 422,
+"cost_usd": 0.00113
 }
 },
 "sources": [
@@ -24263,108 +24212,6 @@
 "oa_pdf_url": "https://akjournals.com/downloadpdf/journals/036/102/1/article-p77.pdf",
 "landing_url": "https://doi.org/10.1556/aphysiol.101.2014.012",
 "cited_by_count": 33,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/add.12811",
-"title": "Where is the forest?",
-"authors": [
-"Bergmark A"
-],
-"journal": "Addiction (Abingdon, England)",
-"journal_abbrev": "Addiction",
-"year": 2015,
-"date": "2015-03-01",
-"doi": "10.1111/add.12811",
-"pmid": "25678290",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"Common factors",
-"Dodo bird",
-"future research",
-"specific factors",
-"treatment outcome",
-"treatment theory"
-],
-"mesh": [
-"Behavior, Addictive",
-"Humans",
-"Outcome and Process Assessment, Health Care",
-"Placebo Effect",
-"Substance-Related Disorders"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:47:47Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract available and only MeSH terms list 'Placebo Effect' and 'Substance-Related Disorders', so it's unclear whether placebo/nocebo is the paper's focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"addiction_craving"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Abstract unavailable; MeSH listed 'Placebo Effect' and substance-related disorders, but the paper's focus on placebo/nocebo could not be determined from available metadata.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"addiction",
-"substance use",
-"placebo effect",
-"bergmark",
-"2015",
-"addiction journal"
-],
-"usage": {
-"input_tokens": 380,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 787,
-"cost_usd": 0.00182
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2015-03-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2029068369",
-"oa_status": "bronze",
-"oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/add.12811",
-"landing_url": "https://doi.org/10.1111/add.12811",
-"cited_by_count": 1,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -25230,53 +25077,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1073/pnas.1500552112",
 "cited_by_count": 8,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:57Z",
+"classified_at": "2026-09-05T21:04:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies expectation/belief modulation of drug effects but it's unclear whether placebo/nocebo phenomena were the explicit focus or merely discussed.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that beliefs (expectation) modulate drug effects on the human brain, making expectancy/placebo mechanisms the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"neural_systems_circuits"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "Record lacked an abstract; title indicated that beliefs altered drug effects on the human brain but available information was insufficient to determine whether placebo/nocebo effects were the primary focus.",
+"summary": "Argues that beliefs and expectations modulate how drugs affect the human brain, linking expectancy mechanisms to drug responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectation",
+"expectancy",
 "beliefs",
-"drug effects",
-"reward",
+"drug modulation",
 "nicotine",
-"brain imaging",
-"volkow"
+"reward",
+"smoking"
 ],
 "usage": {
-"input_tokens": 185,
-"cache_read_input_tokens": 6144,
+"input_tokens": 569,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 684,
-"cost_usd": 0.00157
+"output_tokens": 790,
+"cost_usd": 0.00187
 }
 },
 "sources": [
@@ -27289,52 +27156,64 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:48:12Z",
+"classified_at": "2026-09-05T21:04:15Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title mentions placebo but available information is insufficient to determine whether placebo/nocebo phenomena were the paper's primary focus.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly names placebo effects, indicating placebo phenomena are the paper's subject (a review/commentary-level treatment of placebo effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; the title referenced treatment and placebo effects but the paper's focus could not be determined from the provided record.",
+"summary": "Discusses treatment effects and placebo effects in a general clinical/research context.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo",
-"treatment effects",
-"BMJ",
-"randomized controlled trials",
-"varenicline",
-"smoking cessation"
+"nocebo",
+"treatment-effect",
+"clinical trials"
 ],
 "usage": {
-"input_tokens": 410,
+"input_tokens": 588,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 549,
-"cost_usd": 0.00135
+"output_tokens": 697,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -28194,20 +28073,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:48:19Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:04:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title implies methodological discussion of placebo arms but insufficient information to determine whether placebo/nocebo effects or responses were the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Editorial/commentary focused on placebo science, discussing differential placebo effects and implications for trial design, so placebo is the main subject (placebo_science_other).",
+"exclusion_reason": null,
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -28215,32 +28094,63 @@
 ],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"classical_conditioning",
+"neurobiology_opioid",
+"neural_systems_circuits",
+"therapeutic_ritual_context",
+"trial_methodology_placebo_response",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"saline_injection_infusion",
+"topical_cream",
+"sham_acupuncture",
+"sham_surgery"
+]
 },
-"summary": "Discussed alternative placebo treatment arms in trials and their implications; full text/abstract not available to confirm focus or findings.",
-"key_finding": null,
+"summary": "Discussed evidence that different placebo modalities produce varying placebo responses and argued this variability can affect trial inference and should inform trial design and interpretation.",
+"key_finding": "Cited meta‑analytic evidence that sham acupuncture and sham surgery yielded larger placebo responses than oral placebos, potentially altering comparative efficacy estimates.",
 "sample_size": null,
 "free_keywords": [
-"placebo arms",
-"trial methodology",
-"clinical trials",
-"placebo control",
-"methodology"
+"placebo modalities",
+"sham acupuncture",
+"sham surgery",
+"oral placebo",
+"trial design",
+"efficacy paradox",
+"beecher",
+"naloxone"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 1608,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 563,
-"cost_usd": 0.00137
+"output_tokens": 821,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -28993,24 +28903,24 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:48:29Z",
+"classified_at": "2026-09-05T21:04:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided, so it's unclear whether placebo/nocebo phenomena are the explicit focus rather than a topical mention in a sports commentary.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly names placebo power and deception in sports performance, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_and_nocebo"
 ],
 "article_type": "narrative_review",
 "species": "human",
@@ -29024,7 +28934,7 @@
 "sport_exercise_performance"
 ],
 "outcome_measures": [
-"behavioral_performance"
+"not_applicable"
 ],
 "design": [
 "not_applicable"
@@ -29034,7 +28944,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
+"attention_cognitive_appraisal",
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [
@@ -29044,22 +28954,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Insufficient information (no abstract) to determine if this paper empirically studied placebo/nocebo effects; title suggests a narrative discussion of self-talk, deception, and placebo influences on sports performance.",
+"summary": "Reviews evidence on how self-talk, deception, and expectancy produce placebo and nocebo effects on sports performance.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sports",
 "self-talk",
-"deception",
 "athletic performance",
-"placebo power"
+"deception",
+"expectancy",
+"performance enhancement"
 ],
 "usage": {
-"input_tokens": 381,
+"input_tokens": 559,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 994,
-"cost_usd": 0.00223
+"output_tokens": 955,
+"cost_usd": 0.0022
 }
 },
 "sources": [

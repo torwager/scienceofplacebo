@@ -132,53 +132,79 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:40:57Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T20:16:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest an experimental test of endorphin involvement in placebo-related fear reduction (naloxone listed) but insufficient information to confirm placebo/nocebo is the explicit object of study.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Experimental study tested placebo (nonspecific analogue psychological treatment) versus no-treatment and used naloxone blockade to test opioid mediation, so placebo mechanisms were the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect",
+"placebo_and_nocebo"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"behavioral_performance"
+],
+"design": [
+"parallel_groups_rct",
+"placebo_vs_no_treatment_arm"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"neurobiology_opioid",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"pharmacological_manipulation"
+],
+"intervention_type": [
+"sham_psychological",
+"saline_injection_infusion"
+]
 },
-"summary": "No abstract available; title and MeSH terms implied a study of endorphin (naloxone) involvement in placebo-related reduction of fear but methods and outcomes were not reported.",
-"key_finding": null,
+"summary": "Found that naloxone did not block fear reduction from a nonspecific analogue psychological treatment: both drug and saline groups improved versus no-treatment controls, implying a non-endorphin mechanism.",
+"key_finding": "Both naloxone and saline groups showed greater self-efficacy, lower self-rated fear, and more approach behavior than no-treatment controls, indicating placebo fear reduction was opioid-independent.",
 "sample_size": null,
 "free_keywords": [
-"endorphin",
+"snake fear",
 "naloxone",
-"fear reduction",
-"placebo",
-"placebo mechanism",
-"psychological reports",
-"1982"
+"placebo fear reduction",
+"self-efficacy",
+"approach behavior",
+"female undergraduates",
+"analogue treatment"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 577,
-"cost_usd": 0.0014
+"output_tokens": 1143,
+"cost_usd": 0.00257
 }
 },
 "sources": [
@@ -191,7 +217,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.2466/pr0.1982.51.3f.1175",
 "cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1007/bf00998885",
@@ -219,52 +246,55 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:40:57Z",
+"classified_at": "2026-09-05T20:16:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title suggests a discussion of biofeedback and placebo but insufficient information to determine whether it reports original placebo/nocebo research or is a review/commentary.",
+"decision": "include",
+"confidence": 0.72,
+"rationale": "Title explicitly names the placebo effect as the topic, indicating placebo phenomena are the paper's subject (review/discussion of biofeedback and placebo).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper presented empirical placebo research or was a narrative discussion of biofeedback and placebo phenomena.",
+"summary": "Discussed the relationship between biofeedback and the placebo effect, exploring placebo-related mechanisms in biofeedback research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "biofeedback",
 "placebo effect",
-"mental healing",
 "psychotherapy",
-"set",
-"Frank 1982"
+"expectation",
+"mental healing"
 ],
 "usage": {
-"input_tokens": 375,
+"input_tokens": 553,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 629,
-"cost_usd": 0.0015
+"output_tokens": 390,
+"cost_usd": 0.00107
 }
 },
 "sources": [
@@ -303,24 +333,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:40:56Z",
+"classified_at": "2026-09-05T20:16:39Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title is generic; could be an editorial/commentary about placebos and informed consent rather than an empirical study, so inclusion is unclear.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names 'Placebos', indicating the paper's subject is placebo phenomena (likely discussion of placebo issues/ethics), so it meets inclusion as placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -328,27 +360,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether this 1982 Annals paper reported empirical placebo/nocebo research; title and MeSH suggest a discussion of placebos and informed consent.",
+"summary": "Discussed placebos and related issues (including informed consent/ethics) in a 1982 Annals of Internal Medicine piece.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
 "informed consent",
-"editorial",
-"Wallace",
-"Annals of Internal Medicine",
+"ethics",
+"placebo history",
+"annals of internal medicine",
 "1982"
 ],
 "usage": {
-"input_tokens": 359,
+"input_tokens": 537,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 486,
-"cost_usd": 0.00121
+"output_tokens": 556,
+"cost_usd": 0.00139
 }
 },
 "sources": [
@@ -1640,64 +1673,80 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:07Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T20:16:53Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or methods available; title indicates experimenter-expectancy was studied in an EMG conditioning paradigm but insufficient detail to confirm whether placebo/nocebo phenomena were the explicit focus or how effects were tested.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The paper experimentally manipulated experimenter expectancy and measured its causal impact on EMG conditioning, making expectation effects the study focus (mechanism of placebo-like/context effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult",
+"healthy_pediatric"
+],
+"age_group": [
+"children_adolescents",
+"adults"
+],
 "condition_domain": [
-"other"
+"motor_function"
 ],
 "outcome_measures": [
-"other"
+"spinal_peripheral_electrophysiology",
+"self_report"
 ],
-"design": [],
-"effects": [],
+"design": [
+"parallel_groups_rct",
+"within_subject_experimental"
+],
+"effects": [
+"significant_objective",
+"mixed_inconsistent"
+],
 "mechanisms": [
-"social_observational_learning",
+"verbal_suggestion_expectation",
 "provider_patient_interaction",
 "classical_conditioning"
 ],
-"moderators": [],
+"moderators": [
+"provider_characteristics",
+"expectation_level"
+],
 "intervention_type": [
-"not_applicable"
+"verbal_suggestion_only",
+"sham_psychological"
 ]
 },
-"summary": "No abstract available; title indicated the study tested experimenter-expectancy effects on frontal EMG conditioning in humans.",
-"key_finding": null,
+"summary": "Manipulated experimenter expectancies altered frontal EMG conditioning: contingent reinforcement produced lower EMG only when experimenters had no induced expectancies, suggesting covert experimenter communication interfered with differential learning.",
+"key_finding": "Found that contingent reinforcement lowered frontal EMG relative to noncontingent only when experimenters had no prior expectancies; experimenter expectancies eliminated differential conditioning.",
 "sample_size": null,
 "free_keywords": [
-"experimenter_expectancy",
-"observer_expectancy",
-"frontal_emg",
+"frontal emg",
 "biofeedback",
-"conditioning",
-"psychophysiology"
+"experimenter expectancy",
+"Rosenthal effect",
+"contingent reinforcement"
 ],
 "usage": {
-"input_tokens": 395,
+"input_tokens": 689,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 808,
-"cost_usd": 0.00186
+"output_tokens": 1070,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -1710,7 +1759,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1469-8986.1982.tb02508.x",
 "cited_by_count": 13,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1016/0031-9384(82)90384-5",
@@ -2206,52 +2256,61 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:08Z",
+"classified_at": "2026-09-05T20:17:05Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title/MeSH suggest a drug dose-response study mentioning placebos but do not indicate whether placebo/placebo-response was an explicit focus rather than a comparator.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly focuses on 'positive/negative placebo responders', indicating placebo response as an object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"cognition"
+],
+"outcome_measures": [
+"behavioral_performance"
+],
 "design": [],
 "effects": [],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated a methylphenidate dose-response study of paired-associate learning in children and mentioned placebo responders, but the role of placebo as a primary focus was unclear from the record.",
+"summary": "Identified positive and negative placebo responders in a study of methylphenidate dose effects on paired-associate learning in children.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "methylphenidate",
 "paired-associate learning",
-"dose-response",
-"adhd",
-"placebo responders",
+"ADHD",
+"placebo responder",
 "children"
 ],
 "usage": {
-"input_tokens": 428,
+"input_tokens": 606,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 420,
-"cost_usd": 0.00109
+"output_tokens": 791,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -2265,97 +2324,6 @@
 "landing_url": "https://doi.org/10.1016/s0002-7138(09)60876-1",
 "cited_by_count": 46,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:6811924",
-"title": "A comparison of some subjective effects of prazepam, diazepam, and placebo.",
-"authors": [
-"Orzack MH",
-"Cole JO",
-"Ionescu-Pioggia M",
-"Beake BJ",
-"Bird MP",
-"Lobel M"
-],
-"journal": "NIDA research monograph",
-"journal_abbrev": "NIDA Res Monogr",
-"year": 1982,
-"date": "1982-04-01",
-"doi": null,
-"pmid": "6811924",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Diazepam",
-"Female",
-"Humans",
-"Male",
-"Placebos",
-"Prazepam",
-"Risk",
-"Substance-Related Disorders"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:11Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title indicates a drug versus placebo clinical trial but no abstract/full text to determine whether placebo response/effect was an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; reported a controlled trial comparing subjective effects of prazepam, diazepam, and placebo, but it is unclear whether placebo/placebo-response was a study focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"prazepam",
-"diazepam",
-"placebo-controlled",
-"subjective effects",
-"benzodiazepine"
-],
-"usage": {
-"input_tokens": 413,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00155
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1982-04-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1002/ana.410110413",
@@ -2609,18 +2577,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:14Z",
+"classified_at": "2026-09-05T20:17:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract available; title and MeSH terms indicate a focus on placebo ethics and trial design but the paper type/content cannot be confirmed from available text.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names placebos and comparative treatments, indicating the paper's primary subject is placebo-related science (likely on research design/ethics).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2649,7 +2617,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -2658,22 +2627,21 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed ethical and methodological issues of placebo use and comparative trial design in clinical research.",
+"summary": "Discussed placebos and comparative treatments in the clinical research context, focusing on methodological and ethical issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"ethics",
-"research design",
 "clinical trials",
-"placebo use",
-"comparative treatments"
+"research design",
+"ethics",
+"comparative effectiveness"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00154
+"output_tokens": 621,
+"cost_usd": 0.00153
 }
 },
 "sources": [
@@ -2718,51 +2686,67 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:15Z",
+"classified_at": "2026-09-05T20:17:28Z",
 "screening": {
-"decision": "uncertain",
+"decision": "include",
 "confidence": 0.6,
-"rationale": "No abstract or full text available and the title alone ('Placebo misuse.') does not make clear whether placebo phenomena were the explicit object of study versus anecdotal/ethical cases.",
-"exclusion_reason": "insufficient_information",
+"rationale": "Title explicitly addresses 'Placebo misuse', indicating the paper's primary topic is placebo use/ethics in clinical practice (placebo science), so it meets inclusion as placebo_science_other.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "case_report",
 "species": "human",
-"population": [],
+"population": [
+"clinicians_providers"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to determine whether the paper empirically studied placebo or nocebo phenomena; title suggested cases of placebo misuse in nursing.",
+"summary": "Discussed misuse of placebo use in clinical nursing practice and related ethical/attitudinal issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo misuse",
 "nursing",
 "ethics",
-"case report",
-"clinical practice"
+"placebo_prescribing",
+"attitudes",
+"case_report"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 623,
-"cost_usd": 0.00149
+"output_tokens": 580,
+"cost_usd": 0.00145
 }
 },
 "sources": [

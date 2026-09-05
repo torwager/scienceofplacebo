@@ -23,18 +23,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:32Z",
+"classified_at": "2026-09-05T20:23:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether the paper empirically studied placebo effects/responses or was a methodological/commentary piece.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses 'the placebo issue' in clinical research, indicating placebo science/methodology is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -43,27 +43,18 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -72,22 +63,21 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title suggested discussion of the placebo issue in clinical research, but insufficient information was present to determine empirical focus.",
+"summary": "Discusses the placebo issue in relation to clinical research, reviewing conceptual and methodological concerns about placebo effects and trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
 "clinical research",
 "methodology",
 "chiropractic",
-"placebo ethics"
+"placebo"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 734,
-"cost_usd": 0.00171
+"output_tokens": 774,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -683,92 +673,6 @@
 "oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/BF02330589.pdf",
 "landing_url": "https://doi.org/10.1007/bf02330589",
 "cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1097/00000542-198711000-00042",
-"title": "Stellate ganglion block: normal saline as placebo.",
-"authors": [
-"Haddox JD",
-"Kettler RE"
-],
-"journal": "Anesthesiology",
-"journal_abbrev": "Anesthesiology",
-"year": 1987,
-"date": "1987-11-01",
-"doi": "10.1097/00000542-198711000-00042",
-"pmid": "3674494",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Autonomic Nerve Block",
-"Humans",
-"Pain",
-"Placebos",
-"Sodium Chloride",
-"Stellate Ganglion"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:56Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates saline was used as a placebo for stellate ganglion block but it is unclear whether the paper studied placebo/nocebo effects or simply used a placebo control.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated normal saline was used as a placebo for stellate ganglion block, but aims, design, and findings regarding placebo effects were not reported in the available record.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"stellate ganglion block",
-"saline placebo",
-"regional anesthesia",
-"sympathetic block"
-],
-"usage": {
-"input_tokens": 388,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 565,
-"cost_usd": 0.00137
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1987-11-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1987903499",
-"oa_status": "bronze",
-"oa_pdf_url": "https://pubs.asahq.org/anesthesiology/article-pdf/67/5/832/632099/0000542-198711000-00042.pdf",
-"landing_url": "https://doi.org/10.1097/00000542-198711000-00042",
-"cited_by_count": 11,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -2057,73 +1961,54 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:46Z",
+"classified_at": "2026-09-05T20:24:12Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates placebo was considered alongside narcotics and brain stimulation for analgesia but insufficient information to determine whether placebo/nocebo was an explicit study focus or how it was studied.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that placebo analgesia and its mechanisms were a subject of the paper (mechanisms of analgesia due to ... placebo).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"neural_systems_circuits",
-"neurobiology_opioid"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "No abstract available; title indicated the paper compared mechanisms of analgesia across narcotics, brain stimulation, and placebo using verbal pain descriptors.",
+"summary": "Examined verbal descriptor pain measures to clarify mechanisms of analgesia attributable to narcotics, brain stimulation, and placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"verbal descriptor scale",
-"analgesia",
-"narcotics",
-"brain stimulation",
-"pain descriptors"
+"placebo analgesia",
+"verbal descriptor",
+"pain measurement",
+"analgesia"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 810,
-"cost_usd": 0.00186
+"output_tokens": 567,
+"cost_usd": 0.00142
 }
 },
 "sources": [
@@ -3081,61 +2966,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1987.10402705",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:31:55Z",
+"classified_at": "2026-09-05T20:24:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Only bibliographic metadata available for a single case-report of hypnotic suggestion in coma; abstract/full text not available to determine whether placebo/nocebo phenomena were the explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names suggestion/hypnotic imagery as an adjunctive treatment, indicating suggestion/expectation effects are the paper's focus (case report).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [],
 "article_type": "case_report",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
+"effects": [],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; a 1987 single-case report described use of hypnotic imagery and suggestion as adjunctive treatment in a female adult in coma, but it is unclear whether placebo/nocebo phenomena were the study focus.",
+"summary": "Reported a single case in which hypnotic imagery and suggestion were used adjunctively to treat a patient in coma.",
 "key_finding": null,
-"sample_size": null,
+"sample_size": 1,
 "free_keywords": [
-"coma",
 "hypnosis",
-"suggestion",
-"case report",
-"adjunctive treatment",
-"female",
-"1987"
+"hypnotic suggestion",
+"imagery",
+"coma",
+"case report"
 ],
 "usage": {
-"input_tokens": 436,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 756,
-"cost_usd": 0.00177
+"output_tokens": 1030,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -4698,18 +4573,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:00Z",
+"classified_at": "2026-09-05T20:24:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text available; title explicitly references 'placebo response in depression' suggesting the paper studied placebo response, but methods and results cannot be confirmed from available metadata.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly states placebo response in depression, making placebo response the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4729,11 +4604,11 @@
 "mood_depression"
 ],
 "outcome_measures": [
-"self_report",
-"neuroendocrine"
+"neuroendocrine",
+"self_report"
 ],
 "design": [
-"observational"
+"single_group_pre_post"
 ],
 "effects": [
 "not_applicable"
@@ -4749,23 +4624,22 @@
 "not_applicable"
 ]
 },
-"summary": "Insufficient information to judge from the record; title indicated the study examined pre-treatment pituitary-adrenocortical status and placebo response in depressed patients.",
+"summary": "Examined the relationship between pre-treatment pituitary-adrenocortical (HPA) status and placebo response in depressed patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pituitary-adrenal",
-"hpa",
-"dexamethasone",
-"cortisol",
+"dexamethasone suppression test",
+"hpa axis",
 "major depression",
-"placebo response"
+"placebo response",
+"pituitary-adrenal"
 ],
 "usage": {
-"input_tokens": 400,
+"input_tokens": 578,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 867,
-"cost_usd": 0.00198
+"output_tokens": 922,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -6550,52 +6424,66 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:09Z",
+"classified_at": "2026-09-05T20:24:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a conceptual/discussion piece, so there is insufficient information to determine whether placebo effects were an explicit empirical focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses the placebo effect as the paper's subject (conceptual/clinical discussion), fitting inclusion of placebo-science reviews/commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_older_adult"
+],
+"age_group": [
+"older_adults"
+],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggests a discussion of the placebo effect in a geriatric nursing context but the paper's empirical focus could not be determined from the record.",
+"summary": "Discusses whether the placebo effect is real and its implications for geriatric nursing practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"geriatric nursing",
+"geriatrics",
+"nursing",
 "placebo effect",
-"aged",
-"placebos",
-"1987",
-"Todd et al."
+"conceptual review"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 494,
-"cost_usd": 0.00123
+"output_tokens": 790,
+"cost_usd": 0.00186
 }
 },
 "sources": [

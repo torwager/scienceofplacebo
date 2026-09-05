@@ -975,51 +975,69 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:05:53Z",
+"classified_at": "2026-09-05T21:19:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "Only the title is available indicating open-label placebo effectiveness but the abstract/text are missing, so design and whether placebo/nocebo is the analytic focus cannot be confirmed.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly states the paper explored the effectiveness of open-label placebos, making placebo responses/effects the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"open_label_placebo"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo"
+]
 },
-"summary": "Full text unavailable; title indicated an empirical investigation of open-label placebo effectiveness but design, sample, and outcomes were not provided.",
+"summary": "Explored the effectiveness of open-label placebos, focusing on whether openly administered inert treatments produce clinical benefit.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "open-label placebo",
-"placebo",
-"pain",
-"olp",
-"placebo_effectiveness"
+"open label",
+"OLP",
+"effectiveness",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 380,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 642,
-"cost_usd": 0.00153
+"output_tokens": 731,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -6284,6 +6302,91 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.jogc.2023.102264",
+"title": "WITHDRAWN: The Effect of Preoperative Intravenous Tranexamic Acid Versus Rectal Misoprostol in Reducing Blood Loss During and After Elective Cesarean Delivery in Primigravida: A Double-Blinded, Randomized, Comparative-Placebo Trial.",
+"authors": [
+"Afifi AN",
+"Taymour MA",
+"Mahmoud SI",
+"Zolfokar DS",
+"Moghazy Salman MS",
+"El-Hafeez Abd El-Latif AA",
+"El-Khayat WM"
+],
+"journal": "Journal of obstetrics and gynaecology Canada : JOGC = Journal d'obstetrique et gynecologie du Canada : JOGC",
+"journal_abbrev": "J Obstet Gynaecol Can",
+"year": 2023,
+"date": "2023-11-07",
+"doi": "10.1016/j.jogc.2023.102264",
+"pmid": "37940041",
+"pmcid": null,
+"abstract": "The publisher regrets that this article has been temporarily removed. A replacement will appear as soon as possible in which the reason for the removal of the article will be specified, or the article will be reinstated. The full Elsevier Policy on Article Withdrawal can be found at: https://www.elsevier.com/about/policies/article-withdrawal.",
+"keywords": [],
+"mesh": [],
+"pub_types": [
+"Journal Article"
+],
+"scope": "review",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T21:19:44Z",
+"screening": {
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "Article has been withdrawn/removed and the abstract provides no study details, so it's impossible to determine whether placebo/nocebo phenomena were an object of study.",
+"exclusion_reason": null,
+"peer_reviewed": false
+},
+"tags": {
+"study_focus": [],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
+},
+"summary": "Article was withdrawn and removed by the publisher; no study details were available to assess focus or findings.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"withdrawn",
+"cesarean",
+"tranexamic acid",
+"misoprostol",
+"blood loss",
+"obstetrics"
+],
+"usage": {
+"input_tokens": 556,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 565,
+"cost_usd": 0.00142
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2023-11-07",
+"private_pdf": null,
+"openalex_id": "https://openalex.org/W4388460528",
+"oa_status": "bronze",
+"oa_pdf_url": "https://doi.org/10.1016/j.jogc.2023.102264",
+"landing_url": "https://doi.org/10.1016/j.jogc.2023.102264",
+"cited_by_count": 0,
+"openalex_checked": "2026-09-02v2"
+},
+{
 "id": "doi:10.1007/s13555-023-01052-5",
 "title": "A Mini Review of the Impact of Baseline Disease Severity on Clinical Outcomes: Should We Compare Atopic Dermatitis Clinical Trials?",
 "authors": [
@@ -6579,68 +6682,75 @@
 "Research Support, U.S. Gov't, Non-P.H.S.",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:06:58Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:19:55Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title indicates a conceptual/methods piece about placebos and synthetic control arms but it's unclear whether placebo phenomena (effects/responses) are the primary subject or whether this is a trial-design commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The paper pooled and analyzed placebo arms across multiple RCTs to characterize placebo-treated natural history and argued for replacing placebo with synthetic/external controls, making placebo response and trial methodology the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_response",
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
-"not_applicable"
+"cancer"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"clinical_endpoint"
+],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
-"not_applicable"
+"significant_objective"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Argued for replacing traditional placebo arms with synthetic control arms in rare-tumor clinical trials and reconsidered the role of placebos in trial design.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Commentary that pooled placebo arms from five RCTs in imatinib‑resistant GIST to characterize placebo-treated natural history and advocated for synthetic/external control arms instead of placebo in rare tumors.",
+"key_finding": "Pooled analysis of 283 placebo‑treated patients showed a consistent median PFS of ~1.2 months and median OS of ~9.8 months, supporting use of external/synthetic controls.",
+"sample_size": 283,
 "free_keywords": [
-"synthetic_control",
-"rare_tumors",
-"clinical_trial_design",
-"placebo_arms"
+"gastrointestinal stromal tumor",
+"GIST",
+"progression-free survival",
+"overall survival",
+"synthetic control arm",
+"external comparator",
+"placebo arm"
 ],
 "usage": {
-"input_tokens": 406,
+"input_tokens": 5857,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 699,
-"cost_usd": 0.00165
+"output_tokens": 1028,
+"cost_usd": 0.00367
 }
 },
 "sources": [
@@ -9781,94 +9891,6 @@
 "pubmed_audit"
 ],
 "date_added": "2023-10-04",
-"private_pdf": null
-},
-{
-"id": "doi:10.3389/fpsyt.2023.1287879",
-"title": "Tempering expectations: considerations on the current state of stem cells therapy for autism treatment.",
-"authors": [
-"Narzisi A",
-"Halladay A",
-"Masi G",
-"Novarino G",
-"Lord C"
-],
-"journal": "Frontiers in psychiatry",
-"journal_abbrev": "Front Psychiatry",
-"year": 2023,
-"date": "2023-10-03",
-"doi": "10.3389/fpsyt.2023.1287879",
-"pmid": "37854442",
-"pmcid": "PMC10579796",
-"openalex_id": "https://openalex.org/W4387306767",
-"abstract": "",
-"keywords": [
-"autism",
-"children",
-"evidence-based",
-"intervention",
-"stem cells",
-"treatment"
-],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://public-pages-files-2025.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1287879/pdf",
-"landing_url": "http://dx.doi.org/10.3389/fpsyt.2023.1287879",
-"cited_by_count": 3,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T15:18:19Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title refers to expectations about stem cell therapy for autism but does not make placebo/nocebo an explicit focus, so it's unclear whether placebo science is a primary subject.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information (no abstract) to judge whether placebo/nocebo phenomena were studied; title discussed tempering expectations about stem cell therapy for autism.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"stem cells",
-"autism",
-"expectations",
-"therapeutic_hype",
-"treatment_promises"
-],
-"usage": {
-"input_tokens": 424,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 625,
-"cost_usd": 0.0015
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2023-10-03",
 "private_pdf": null
 },
 {
@@ -18323,51 +18345,69 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:08:10Z",
+"classified_at": "2026-09-05T21:20:12Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests analyses of COVID-19 vaccine placebo groups but available text is insufficient to judge whether placebo/nocebo phenomena were the paper's primary focus.",
+"decision": "include",
+"confidence": 0.86,
+"rationale": "Title explicitly states analyses of the COVID-19 vaccine placebo group, indicating the placebo response/arm was the analytic focus (placebo-arm analyses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis"
+],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"saline_injection_infusion"
+]
 },
-"summary": "Insufficient information to determine whether the paper analyzed placebo-group responses; title indicated analyses of placebo groups in COVID-19 vaccine studies.",
+"summary": "Analyzed data from the placebo arms of COVID-19 vaccine trials, focusing on placebo-group outcomes (e.g., adverse events) across studies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "covid-19",
 "vaccine",
-"placebo_group",
-"vaccine_trials",
-"jamanetworkopen"
+"placebo arm",
+"adverse events",
+"nocebo"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 552,
-"cost_usd": 0.00135
+"output_tokens": 609,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -20643,52 +20683,92 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:08:30Z",
+"classified_at": "2026-09-05T21:20:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.52,
-"rationale": "Title and journal metadata indicate a state-of-the-art review of placebo/nocebo in pain, but the provided abstract describes an analysis of antidepressant RCTs, creating ambiguity about whether placebo/nocebo in pain is the paper's focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "State-of-the-art review whose explicit aim was to provide an updated overview of placebo and nocebo effects on experimental and chronic pain (review of placebo/nocebo phenomena).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"healthy_adult",
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri",
+"pet_neurochemical",
+"genetic_molecular",
+"neuroendocrine",
+"autonomic"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"neural_systems_circuits",
+"genetics_placebome",
+"emotion_anxiety_regulation",
+"provider_patient_interaction",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"prior_experience",
+"disease_severity_duration",
+"trial_characteristics"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"sham_device",
+"open_label_placebo",
+"verbal_suggestion_only",
+"sham_acupuncture"
+]
 },
-"summary": "Title indicated a state-of-the-art review of placebo and nocebo effects in experimental and chronic pain, but the abstract described an analysis of antidepressant RCTs comparing placebo-controlled versus comparator trials, so the paper's true focus was unclear from available text.",
-"key_finding": null,
+"summary": "Reviews evidence on placebo and nocebo effects in experimental and chronic pain, discussing study designs, psychological and neurobiological mechanisms, genetic determinants, and clinical implications.",
+"key_finding": "Found that experimental studies in healthy volunteers show consistent neurobiological patterns, while evidence in chronic pain patients is heterogeneous and inconclusive regarding magnitude of placebo/nocebo effects.",
 "sample_size": null,
 "free_keywords": [
-"mismatch_abstract",
-"antidepressant_rcts",
-"placebo_control_vs_comparator",
-"pain_placebo_review_title"
+"experimental pain",
+"chronic pain",
+"neuroimaging",
+"placebome",
+"nocebo",
+"conditioning",
+"expectation",
+"clinical implications"
 ],
 "usage": {
-"input_tokens": 858,
+"input_tokens": 677,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 630,
-"cost_usd": 0.00162
+"output_tokens": 943,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -20704,90 +20784,6 @@
 "cited_by_count": 67,
 "openalex_checked": "2026-09-02v2",
 "language": "eng"
-},
-{
-"id": "doi:10.1164/rccm.202304-0709le",
-"title": "Reply to Weinberger.",
-"authors": [
-"Birring SS",
-"Morice AH",
-"Dicpinigaitis PV",
-"McGarvey LP",
-"Pavord ID",
-"Green SA",
-"Philip G",
-"Smith JA"
-],
-"journal": "American journal of respiratory and critical care medicine",
-"journal_abbrev": "Am J Respir Crit Care Med",
-"year": 2023,
-"date": "2023-06-15",
-"doi": "10.1164/rccm.202304-0709le",
-"pmid": "37104844",
-"pmcid": "PMC10273115",
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:08:29Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.5,
-"rationale": "No abstract or full text available and title indicates a brief reply/letter, so it's unclear whether placebo/nocebo is the paper's focus.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; appears to be a brief reply/letter to the editor, insufficient information to determine whether it addressed placebo or nocebo topics.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"reply",
-"letter",
-"editorial",
-"correspondence"
-],
-"usage": {
-"input_tokens": 240,
-"cache_read_input_tokens": 6016,
-"cache_creation_input_tokens": 0,
-"output_tokens": 496,
-"cost_usd": 0.0012
-}
-},
-"sources": [
-"jips"
-],
-"date_added": "2023-06-15",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W4367172860",
-"oa_status": "hybrid",
-"oa_pdf_url": "https://doi.org/10.1164/rccm.202304-0709le",
-"landing_url": "https://doi.org/10.1164/rccm.202304-0709le",
-"cited_by_count": 1,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1111/iju.15226",
@@ -26256,30 +26252,30 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:24Z",
+"classified_at": "2026-09-05T21:20:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; the title mentions placebo but there is insufficient information to determine whether placebo/nocebo phenomena were an explicit focus or merely an observation.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly reports rebound symptoms occurring after placebo treatment, making placebo/nocebo responses the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -26287,22 +26283,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; the title reported that rebound symptoms after COVID-19 occurred even among those who received placebo, but methods and focus on placebo/nocebo were not provided.",
+"summary": "Reported that rebound symptoms were common in COVID-19 even after patients received placebo treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "covid-19",
-"rebound symptoms",
+"rebound",
 "placebo",
-"placebo arm",
-"nocebo (uncertain)"
+"nocebo",
+"symptom_rebound"
 ],
 "usage": {
-"input_tokens": 251,
-"cache_read_input_tokens": 6016,
+"input_tokens": 557,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 818,
-"cost_usd": 0.00185
+"output_tokens": 757,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -26834,52 +26830,73 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:28Z",
+"classified_at": "2026-09-05T21:21:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or details were available to determine whether the paper empirically studied placebo/nocebo phenomena or merely used 'placebo' metaphorically.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'placebo' and implies the study used placebo to reveal perceived risk of COVID-19 vaccination, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"general_public"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"saline_injection_infusion",
+"other"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study empirically tested placebo/nocebo effects or responses; only the title and bibliographic details were available.",
+"summary": "Title indicated the paper used placebo to examine perceived high risk of COVID-19 vaccination, implying investigation of expectation-driven adverse effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "covid-19",
 "vaccination",
-"perceived risk",
-"placebo",
+"vaccine side effects",
 "nocebo",
-"vaccine hesitancy"
+"placebo"
 ],
 "usage": {
-"input_tokens": 401,
+"input_tokens": 579,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 678,
-"cost_usd": 0.0016
+"output_tokens": 783,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -27939,26 +27956,26 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:41Z",
+"classified_at": "2026-09-05T21:21:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a commentary on placebo labeling, so it's unclear whether empirical placebo/nocebo effects were studied or if this is a methodological/theoretical piece.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly concerns 'placebo interventions' and suggests a critique of how placebo controls are characterized, making placebo the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [
 "not_applicable"
@@ -27979,8 +27996,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -27989,23 +28005,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed problems with how interventions are labeled as placebos and the methodological or ethical implications for placebo research.",
+"summary": "Discusses concerns about interventions labeled as placebo and critiques methodological or conceptual issues with so-called placebo controls.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo_definition",
+"placebo_controls",
 "methodology",
-"ethics",
-"mislabelled_placebo",
-"placebo_intervention",
-"medical_journal_of_australia"
+"research_design",
+"deception",
+"control_conditions"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 765,
-"cost_usd": 0.00177
+"output_tokens": 505,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -30028,55 +30043,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:55Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:21:18Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title suggests a brief letter about placebo response rates, so it's unclear whether placebo phenomena are the paper's primary focus or just a commentary.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Correspondence discusses and clarifies findings from a meta-research analysis of placebo response rates in cancer trials (placebo response is the paper’s subject), qualifying as placebo-science/commentary relevant to the bibliography.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"species": "human",
+"population": [
+"mixed_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"significant_objective"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"trial_characteristics",
+"disease_severity_duration"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; published letter responding about placebo response rates in clinical trials.",
-"key_finding": null,
+"summary": "Responded to critiques of a meta-research study reporting placebo-arm objective response rates in cancer trials, noting overall 1% placebo response and higher rates in some sarcoma subgroups.",
+"key_finding": "Reported overall placebo objective response rate of ~1% across cancer trials, with higher (~4%) rates in sarcoma/desmoid subgroups.",
 "sample_size": null,
 "free_keywords": [
-"placebo response",
-"placebo rates",
-"letter",
-"response",
-"trial methodology"
+"desmoid tumor",
+"liposarcoma",
+"objective response rate",
+"meta-research",
+"SARC024",
+"cancer clinical trials"
 ],
 "usage": {
-"input_tokens": 358,
+"input_tokens": 1639,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 591,
-"cost_usd": 0.00142
+"output_tokens": 921,
+"cost_usd": 0.0024
 }
 },
 "sources": [

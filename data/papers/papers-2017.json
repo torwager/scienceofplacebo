@@ -1,109 +1,5 @@
 [
 {
-"id": "doi:10.1016/j.atherosclerosis.2017.12.032",
-"title": "Update on SAMS: Statin-associated muscle symptoms.",
-"authors": [
-"Stock JK"
-],
-"journal": "Atherosclerosis",
-"journal_abbrev": "Atherosclerosis",
-"year": 2017,
-"date": "2017-12-30",
-"doi": "10.1016/j.atherosclerosis.2017.12.032",
-"pmid": "29361270",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ASCOT LLA group",
-"Anion-transporting polypeptide 1B1 (OATP1B1)",
-"Atorvastatin",
-"Cardiovascular risk factor",
-"Clinicians",
-"Genetic",
-"Genetics of diabetes and audit research tayside study (GoDARTS)",
-"Real or nocebo effect",
-"SLCO1B1",
-"Statin associated muscle symptoms (SAMS)",
-"The statin associated muscle symptom clinical index (SAMS-CI)"
-],
-"mesh": [
-"Age Factors",
-"Cardiovascular Diseases",
-"Dyslipidemias",
-"Genetic Predisposition to Disease",
-"Humans",
-"Hydroxymethylglutaryl-CoA Reductase Inhibitors",
-"Medication Adherence",
-"Muscular Diseases",
-"Prognosis",
-"Risk Factors"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:36:25Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title suggests a clinical update on statin-associated muscle symptoms rather than an explicit placebo/nocebo focus, so inclusion cannot be determined from available information.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether the paper focused on placebo/nocebo; appears to be a clinical update on statin-associated muscle symptoms (SAMS).",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"statin-associated muscle symptoms",
-"SAMS",
-"statin",
-"myalgia",
-"nocebo"
-],
-"usage": {
-"input_tokens": 407,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00155
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2017-12-30",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2777161737",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.atherosclerosis.2017.12.032",
-"cited_by_count": 8,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1002/brb3.897",
 "title": "Acupuncture in the treatment of fatigue in Parkinson's disease: A pilot, randomized, controlled, study.",
 "authors": [
@@ -742,52 +638,59 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:36:31Z",
+"classified_at": "2026-09-05T21:07:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Publication is labeled as a comment with no abstract or full text provided, so it is unclear whether placebo/sham acupuncture effects were the object of study or merely discussed.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly reports benefits of both acupuncture and sham acupuncture and questions whether these exceed pharmacologic treatment, indicating placebo/sham response is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "editorial_letter",
 "species": "human",
-"population": [],
+"population": [
+"chronic_pain"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
 "mechanisms": [],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"sham_acupuncture"
+]
 },
-"summary": "Was a journal comment noting that both acupuncture and sham acupuncture appeared to benefit patients with idiopathic trigeminal neuralgia but uncertainty remained about effects beyond pharmacologic treatment.",
+"summary": "Commented that both acupuncture and sham acupuncture appeared to benefit patients with idiopathic trigeminal neuralgia, but it was unclear whether these benefits exceeded those from pharmacologic treatment alone.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "trigeminal neuralgia",
 "acupuncture",
 "sham acupuncture",
-"placebo",
-"pharmacologic treatment",
-"comment"
+"placebo response",
+"pharmacologic treatment"
 ],
 "usage": {
-"input_tokens": 417,
+"input_tokens": 595,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.00131
+"output_tokens": 1028,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -2066,52 +1969,70 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:36:41Z",
+"classified_at": "2026-09-05T21:07:35Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only metadata and a link were provided; MeSH terms include 'Placebo Effect' but no abstract or methods are available to judge whether placebo/nocebo is the paper's primary focus or an incidental mention.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "MeSH terms name 'Placebo Effect' and 'Attitude of Health Personnel', indicating the paper's main subject is physician attitudes and placebo-related ethics rather than an empirical placebo-effect experiment.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Full text was not provided; the article appeared to be a commentary on physician attitudes that mentioned placebo effect but lacked information to determine if placebo phenomena were the paper's primary subject.",
+"summary": "Discussed physicians' attitudes, rationalizations, and implications of placebo use and medical errors in clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "physician_attitudes",
-"physician-patient_relations",
+"placebo_prescribing",
 "medical_errors",
-"placebo_effect",
-"rationalization",
-"rhode island medical journal"
+"rationalization"
 ],
 "usage": {
-"input_tokens": 409,
+"input_tokens": 459,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 730,
-"cost_usd": 0.00171
+"output_tokens": 859,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -3154,50 +3075,74 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:11Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:07:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests discussion of drug–placebo differences but insufficient information to determine whether placebo/placebo-response was the explicit focus or merely comparative context.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Commentary focuses on the clinical significance and interpretation of drug–placebo differences and placebo response in antidepressant trials, making placebo phenomena its main subject (theory/commentary on placebo response magnitude).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"clinician_rated"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Only the title and bibliographic details were available; the paper appeared to address the clinical significance of drug versus placebo differences but the focus on placebo/nocebo phenomena could not be confirmed.",
-"key_finding": null,
+"summary": "Commentary argued that antidepressant drug–placebo differences are clinically trivial when judged against empirically derived HAMD thresholds and highlighted adverse events risks.",
+"key_finding": "Argued that typical drug–placebo SMDs for antidepressants (~0.32) correspond to minimal or non-clinically meaningful HAMD differences.",
 "sample_size": null,
 "free_keywords": [
 "antidepressant",
-"depression",
-"drug-placebo differences",
-"kirsch"
+"major depressive disorder",
+"HAMD",
+"standardized mean difference",
+"clinical significance",
+"Leucht",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 2642,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 553,
-"cost_usd": 0.00135
+"output_tokens": 825,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -7221,52 +7166,73 @@
 "Research Support, N.I.H., Extramural",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:19Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T21:07:55Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and publication types include 'Comment', so it's unclear whether this is an empirical study isolating nocebo-induced pain or a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title and abstract explicitly report experimental nocebo effects on pain driven by negative expectancies, making nocebo the study focus (mechanisms via expectancies/cues).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"nocebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine study type; the title states that nocebo effects can produce pain, but no abstract or methods/results were available to confirm empirical findings.",
+"summary": "Found that negative expectancies derived from features of commercial drugs elicited nocebo-induced increases in pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nocebo",
-"pain",
-"placebo-effect",
-"colloca",
-"science2017",
-"commentary"
+"expectation",
+"drug branding",
+"commercial packaging",
+"pain increase"
 ],
 "usage": {
-"input_tokens": 393,
+"input_tokens": 455,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.0016
+"output_tokens": 728,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -7280,7 +7246,8 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5754642",
 "landing_url": "https://doi.org/10.1126/science.aap8488",
 "cited_by_count": 65,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "doi:10.1126/science.aan1221",
@@ -7678,60 +7645,73 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:24Z",
+"classified_at": "2026-09-05T21:08:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates focus on expectancy and antidepressant response but insufficient information to confirm placebo/nocebo is the explicit object of study.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names response expectancy and its relation to antidepressant response, indicating placebo/expectancy mechanisms are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "theory_commentary",
 "species": "human",
 "population": [
-"depression"
+"not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "mood_depression"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"outcome_measures": [
+"not_applicable"
 ],
-"moderators": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"expectation_level"
+],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Discusses the role of response expectancy in antidepressant treatment and its influence on clinical outcomes.",
+"summary": "Discusses the role of response expectancies in determining patient response to antidepressant medication and trial outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "antidepressant",
 "expectancy",
-"major depressive disorder",
+"depression",
 "citalopram",
-"kirsch",
-"placebo response"
+"placebo response",
+"response expectancy"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 792,
-"cost_usd": 0.00183
+"output_tokens": 588,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -8929,54 +8909,73 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:32Z",
+"classified_at": "2026-09-05T21:08:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract/full text provided and the record is a published comment/reply referencing a meta-analysis about placebo effects, so it's unclear whether the comment reports original data or substantive placebo-focused analysis.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly identifies a meta-analysis of the placebo effect on lower urinary tract symptoms and maximum flow rate, making placebo effects the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "meta_analysis",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Was a published comment/reply concerning a meta-analysis about a 12-month placebo effect on lower urinary tract symptoms and maximum flow rate in men with BPH, but no abstract or data were provided in the record.",
+"summary": "Meta-analysis examined placebo effects on lower urinary tract symptoms and maximum urinary flow rate in men with BPH.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"lower urinary tract symptoms",
 "benign prostatic hyperplasia",
-"placebo effect",
+"lower urinary tract symptoms",
 "maximum flow rate",
-"meta-analysis",
-"tadalafil",
-"comment",
-"urology"
+"urodynamics",
+"placebo effect",
+"meta-analysis"
 ],
 "usage": {
-"input_tokens": 296,
-"cache_read_input_tokens": 6016,
+"input_tokens": 602,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 621,
-"cost_usd": 0.00147
+"output_tokens": 909,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -16507,51 +16506,72 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:38:26Z",
+"classified_at": "2026-09-05T21:08:27Z",
 "screening": {
-"decision": "uncertain",
+"decision": "include",
 "confidence": 0.6,
-"rationale": "No abstract or full text provided and publication is labelled as a comment, so it's unclear whether placebo/nocebo phenomena were the study focus or merely an opinion about delirium treatment.",
+"rationale": "Title explicitly places placebo (versus antipsychotics) as the topic in delirium management, indicating placebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract was available; presented as a comment about placebo possibly outperforming antipsychotics for delirium in palliative care, insufficient information to judge empirical focus.",
+"summary": "Commented that placebo might be superior to antipsychotics for managing delirium in palliative care and discussed the implications for practice and research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "delirium",
 "palliative care",
 "antipsychotics",
-"placebo",
-"commentary"
+"placebo effect",
+"management",
+"clinical commentary"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 742,
-"cost_usd": 0.00173
+"output_tokens": 995,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -16725,53 +16745,72 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:38:30Z",
+"classified_at": "2026-09-05T21:08:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title indicates an open-label placebo synopsis/comment about chronic low back pain but the article type is a comment and it's unclear whether placebo effects were the primary focus or merely summarized.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly states open-label (without deception) placebo pills reduced pain and disability in chronic low back pain, making placebo response/effect the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"open_label_placebo",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo"
+]
 },
-"summary": "No abstract available; title suggested a comment/synopsis that open-label placebo pills may reduce pain and disability in people with chronic low back pain.",
+"summary": "Found that open-label placebo pills provided without deception reduced pain and disability in people with chronic low back pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"low back pain",
 "chronic low back pain",
 "open-label placebo",
-"placebo pills",
-"synopsis",
-"commentary"
+"disability",
+"pain reduction"
 ],
 "usage": {
-"input_tokens": 266,
-"cache_read_input_tokens": 6016,
+"input_tokens": 572,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00176
+"output_tokens": 862,
+"cost_usd": 0.00201
 }
 },
 "sources": [
@@ -16784,102 +16823,6 @@
 "oa_pdf_url": "https://www.sciencedirect.com/science/article/pii/S1836955317300516/pdf",
 "landing_url": "https://doi.org/10.1016/j.jphys.2017.05.002",
 "cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/jama.2017.4884",
-"title": "Management of Chronic Pain in the Aftermath of the Opioid Backlash.",
-"authors": [
-"Kroenke K",
-"Cheville A"
-],
-"journal": "JAMA",
-"journal_abbrev": "JAMA",
-"year": 2017,
-"date": "2017-06-20",
-"doi": "10.1001/jama.2017.4884",
-"pmid": "28494058",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Analgesics, Opioid",
-"Anti-Inflammatory Agents, Non-Steroidal",
-"Chronic Pain",
-"Cognitive Behavioral Therapy",
-"Humans",
-"Medical Marijuana",
-"Opioid-Related Disorders",
-"Placebo Effect",
-"United States"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:38:31Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and MeSH lists 'Placebo Effect' but title focuses on chronic pain management after opioid backlash, so insufficient information to judge whether placebo/nocebo is a focal subject.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; paper addressed management of chronic pain after the opioid backlash, but it is unclear whether placebo/nocebo effects were a primary focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"opioid backlash",
-"chronic pain",
-"management",
-"clinical review",
-"JAMA",
-"opioid-related disorders"
-],
-"usage": {
-"input_tokens": 411,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 584,
-"cost_usd": 0.00142
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-06-20",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2612819518",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/jama.2017.4884",
-"cited_by_count": 57,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -19418,52 +19361,75 @@
 "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/wps.20427",
 "landing_url": "https://doi.org/10.1002/wps.20427",
 "cited_by_count": 69,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T17:22:48Z",
+"classified_at": "2026-09-05T21:08:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates a focus on expectations in mental disorders but it is unclear whether placebo/nocebo phenomena are an explicit focus per inclusion criteria.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly makes expectations (a core placebo/nocebo mechanism) the subject in relation to mental disorders and their treatment, consistent with inclusion criterion for mechanisms/reviews of expectancy effects.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression",
+"anxiety_stress"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"nocebo_communication_disclosure",
+"trial_methodology_placebo_response",
+"emotion_anxiety_regulation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to determine whether the paper specifically studied placebo/nocebo effects; title indicated a review of expectations in mental disorders and treatment.",
+"summary": "Reviews the role of expectations in mental disorders and how expectations influence treatment outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectation",
-"mental disorders",
-"treatment",
+"expectancy",
+"placebo",
+"nocebo",
 "psychotherapy",
-"placebo (uncertain)",
-"nocebo (uncertain)"
+"antidepressant",
+"treatment_expectation"
 ],
 "usage": {
-"input_tokens": 423,
+"input_tokens": 551,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 573,
-"cost_usd": 0.0014
+"output_tokens": 786,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -20709,59 +20675,83 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7608684",
 "landing_url": "https://doi.org/10.1001/jama.2017.4545",
 "cited_by_count": 109,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:21Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T21:09:04Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous about whether placebo/nocebo phenomena are an explicit focus, so inclusion cannot be determined.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Viewpoint/theory piece focusing on mindsets and patient-clinician communication as mechanisms that can drive expectancy/context effects and enhance treatment outcomes (placebo-science topic).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"verbal_suggestion_expectation",
+"harnessing_placebo_clinical",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discusses how patients' mindsets can influence treatment outcomes and proposes approaches to harness mindsets to improve effectiveness.",
+"summary": "Discusses research on mindsets and clinician–patient communication as mechanisms that can alter motivation and physiology to improve treatment outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"mindset",
+"mindsets",
+"patient-clinician communication",
+"therapeutic relationship",
 "expectation",
-"placebo",
-"treatment-context",
-"physician-patient communication",
-"healthcare delivery"
+"placebo mechanisms"
 ],
 "usage": {
-"input_tokens": 423,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 536,
-"cost_usd": 0.00132
+"output_tokens": 626,
+"cost_usd": 0.00154
 }
 },
 "sources": [
 "reference_mining"
 ],
 "date_added": "2017-05-23",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1177/2156587217708523",
@@ -24521,50 +24511,69 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:39:35Z",
+"classified_at": "2026-09-05T21:09:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to confirm whether placebo/nocebo phenomena were the explicit object of study or if this was a commentary or clinical report.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states a placebo combined with a message of benefit decreased chronic low back pain, indicating placebo/expectancy effects were the study focus (placebo effect).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"chronic_pain"
+],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine methods or outcomes; title implied that a placebo plus a positive benefit message decreased chronic low back pain.",
-"key_finding": null,
+"summary": "Found that a placebo combined with a message of benefit decreased chronic low back pain.",
+"key_finding": "Placebo plus positive messaging produced reduced chronic low back pain (subjective reports).",
 "sample_size": null,
 "free_keywords": [
 "low back pain",
 "chronic low back pain",
-"placebo",
-"message of benefit"
+"expectancy",
+"message of benefit",
+"analgesia"
 ],
 "usage": {
-"input_tokens": 364,
+"input_tokens": 542,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00144
+"output_tokens": 800,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -27892,173 +27901,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "pmid:30387933",
-"title": "[Not Available].",
-"authors": [
-"Flemmer A"
-],
-"journal": "Kinderkrankenschwester : Organ der Sektion Kinderkrankenpflege",
-"journal_abbrev": "Kinderkrankenschwester",
-"year": 2017,
-"date": "2017-03-01",
-"doi": null,
-"pmid": "30387933",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Child",
-"Child, Preschool",
-"Humans",
-"Infant",
-"Materia Medica",
-"Mental Healing",
-"Mother-Child Relations",
-"Nurse-Patient Relations",
-"Pain",
-"Patient Comfort",
-"Physician-Patient Relations",
-"Placebo Effect"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:39:59Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and only MeSH terms (including 'Placebo Effect') are present, so it is unclear whether placebo phenomena were an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether placebo effects were a primary focus; only bibliographic entry and MeSH terms (including 'Placebo Effect') were available.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"pediatrics",
-"nursing",
-"pain",
-"placebo",
-"mother-child",
-"patient comfort"
-],
-"usage": {
-"input_tokens": 407,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 654,
-"cost_usd": 0.00156
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-03-01",
-"private_pdf": null
-},
-{
-"id": "pmid:28346627",
-"title": "Just Another Drug Seeker.",
-"authors": [
-"Lindsay DR"
-],
-"journal": "Family medicine",
-"journal_abbrev": "Fam Med",
-"year": 2017,
-"date": "2017-03-01",
-"doi": null,
-"pmid": "28346627",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Analgesics, Opioid",
-"Drug-Seeking Behavior",
-"Family Practice",
-"Humans",
-"Hydromorphone",
-"Pain Management",
-"Placebo Effect"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:40:01Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available and MeSH terms list 'Placebo Effect' but the title and journal suggest a clinical/case focus on drug-seeking; insufficient information to determine whether placebo/nocebo phenomena were an object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "case_report",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; appeared to discuss opioid drug-seeking in family-practice context and listed placebo effect as a MeSH term, but the role of placebo/nocebo was unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"drug-seeking",
-"opioid",
-"hydromorphone",
-"family practice",
-"placebo effect (unclear)"
-],
-"usage": {
-"input_tokens": 381,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 544,
-"cost_usd": 0.00133
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-03-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1097/j.pain.0000000000000794",
 "title": "Placebo and chronic low back pain: too much in way of expectations, too little in terms of data.",
 "authors": [
@@ -29537,98 +29379,6 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/5263077",
 "landing_url": "https://doi.org/10.5664/jcsm.6450",
 "cited_by_count": 20,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1136/bmj.j674",
-"title": "Making mindset matter.",
-"authors": [
-"Crum AJ",
-"Leibowitz KA",
-"Verghese A"
-],
-"journal": "BMJ (Clinical research ed.)",
-"journal_abbrev": "BMJ",
-"year": 2017,
-"date": "2017-02-15",
-"doi": "10.1136/bmj.j674",
-"pmid": "28202443",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Attitude to Health",
-"Behavioral Medicine",
-"Culture",
-"Health Care Reform",
-"Humans",
-"Placebo Effect",
-"Professional-Patient Relations",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:40:47Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract available and title/MeSH mention placebo and mindset, but the paper type and whether placebo is the primary focus cannot be determined from the provided record.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title and indexing suggested the paper discussed how mindset and context influence health outcomes, potentially touching on placebo mechanisms, but the primary focus was indeterminate from the record.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"mindset",
-"placebo",
-"context",
-"expectation",
-"bmj",
-"leibowitz",
-"crum",
-"verghese"
-],
-"usage": {
-"input_tokens": 389,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 707,
-"cost_usd": 0.00166
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-02-15",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2588095583",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1136/bmj.j674",
-"cited_by_count": 66,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -32257,102 +32007,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.1080/0092623x.2017.1280865",
-"title": "Is Flibanserin Meaningfully Superior to Placebo?",
-"authors": [
-"Clayton AH",
-"Pyke RE"
-],
-"journal": "Journal of sex & marital therapy",
-"journal_abbrev": "J Sex Marital Ther",
-"year": 2017,
-"date": "2017-01-11",
-"doi": "10.1080/0092623x.2017.1280865",
-"pmid": "28075707",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Benzimidazoles",
-"Dose-Response Relationship, Drug",
-"Female",
-"Humans",
-"Libido",
-"Male",
-"Serotonin Agents",
-"Sexual Behavior",
-"Sexual Dysfunction, Physiological",
-"Sexual Dysfunctions, Psychological"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:40:50Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or methods available; title implies a drug-versus-placebo comparison but it is unclear whether placebo/placebo-response was a primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"sexual_function"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record; title suggested a comparison of flibanserin versus placebo for sexual dysfunction but the role of placebo as a study focus was unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"flibanserin",
-"hypoactive sexual desire disorder",
-"HSDD",
-"libido",
-"placebo-controlled",
-"female sexual dysfunction",
-"serotonin"
-],
-"usage": {
-"input_tokens": 405,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 696,
-"cost_usd": 0.00164
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-01-11",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2579183274",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1080/0092623x.2017.1280865",
-"cited_by_count": 4,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1016/j.physbeh.2017.01.013",
 "title": "Pain modulation as a function of hypnotizability: Diffuse noxious inhibitory control induced by cold pressor test vs explicit suggestions of analgesia.",
 "authors": [
@@ -32894,98 +32548,6 @@
 "landing_url": "https://doi.org/10.1016/j.jclinepi.2016.12.010",
 "cited_by_count": 47,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "title:00a3466812895452",
-"title": "60 years of placebo-controlled antipsychotic drug trials in acute schizophrenia: systematic review, Bayesian meta-analysis and meta-regression of efficacy predictors",
-"authors": [
-"S. Leucht",
-"C. Leucht",
-"M. Huhn",
-"A. Chaimani",
-"Dimitris",
-"Mavridis",
-"B. Helfer",
-"M. Samara",
-"Matteo Rabaioli",
-"Susanne Bächer",
-"Andréa",
-"Cipriani",
-"J. Geddes",
-"G. Salanti",
-"John M. Davis"
-],
-"journal": "",
-"journal_abbrev": "",
-"year": 2017,
-"date": "2017-01-01",
-"doi": null,
-"pmid": null,
-"pmcid": null,
-"openalex_id": null,
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Review"
-],
-"oa_status": null,
-"oa_pdf_url": "",
-"landing_url": null,
-"cited_by_count": 498,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:28Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "Title indicates a meta-analysis of placebo-controlled antipsychotic trials but the abstract is unavailable, so it's unclear whether placebo response/effect was an explicit analytic focus versus drug efficacy predictors.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "meta_analysis",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Conducted a 60-year systematic review and Bayesian meta-analysis with meta-regression of placebo-controlled antipsychotic trials in acute schizophrenia; abstract was not available to determine whether placebo response was a primary focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"schizophrenia",
-"antipsychotic",
-"placebo-controlled",
-"meta-regression",
-"efficacy",
-"randomized_trials"
-],
-"usage": {
-"input_tokens": 426,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 713,
-"cost_usd": 0.00168
-}
-},
-"sources": [
-"recall_audit_s2"
-],
-"date_added": "2017-01-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.4103/ajm.ajm_59_17",

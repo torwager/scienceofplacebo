@@ -152,23 +152,25 @@
 "oa_pdf_url": null,
 "landing_url": null,
 "cited_by_count": null,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:25:09Z",
+"classified_at": "2026-09-05T19:23:58Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only the title is available; it suggests an experimental study of hypnotic suggestion on pain and GSR (a manipulation of suggestion/expectation) but no abstract or methods/results are provided to confirm placebo/nocebo is an explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly reports hypnotic suggestion as the manipulated influence on pain perception and galvanic skin responses, making suggestion/expectation effects the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -180,33 +182,38 @@
 "self_report",
 "autonomic"
 ],
-"design": [],
+"design": [
+"within_subject_experimental"
+],
 "effects": [],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "No abstract available; title indicated an experimental study of hypnotic suggestion on pain perception and galvanic skin response, but methods and outcomes were not reported.",
+"summary": "Investigated effects of hypnotic suggestion on pain perception and galvanic skin responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
 "galvanic skin response",
 "GSR",
-"pain perception",
 "suggestion",
-"1952"
+"pain perception",
+"hypnotic suggestion"
 ],
 "usage": {
-"input_tokens": 445,
+"input_tokens": 573,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 655,
-"cost_usd": 0.00157
+"output_tokens": 700,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -365,36 +372,57 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:09Z",
+"classified_at": "2026-09-05T19:24:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title mentions 'observations on the effects of placebos' but it's unclear whether placebo phenomena were a primary focus or merely an incidental control.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states the paper included observations on the effects of placebos, making placebo responses an object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"nausea_gi"
+],
+"outcome_measures": [
+"clinical_endpoint",
+"other"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract available; the 1952 paper reported pharmacologic effects of banthine on stomach and duodenum and included observations about placebos, but available metadata do not show whether placebo effects were a primary study focus.",
+"summary": "Reported on banthine's gastric effects and included observations on placebo effects in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -402,15 +430,16 @@
 "methantheline",
 "stomach",
 "duodenum",
+"placebo",
 "gastroenterology",
 "1952"
 ],
 "usage": {
-"input_tokens": 408,
+"input_tokens": 586,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 575,
-"cost_usd": 0.0014
+"output_tokens": 860,
+"cost_usd": 0.00201
 }
 },
 "sources": [
@@ -456,52 +485,65 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/13051392",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:37:46Z",
+"classified_at": "2026-09-05T19:24:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available to determine whether the 1952 paper on conditioned hemolysis explicitly studied placebo/nocebo phenomena or classical conditioning of immune responses.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names 'conditioned hemolysis', indicating a study of classical conditioning of physiological (immune/hematologic) responses, which falls under mechanisms of placebo/nocebo via conditioning.",
+"exclusion_reason": null,
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"immune_inflammation"
+],
+"outcome_measures": [
+"immune_inflammatory"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"classical_conditioning"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the 1952 paper on conditioned hemolysis explicitly studied placebo/nocebo phenomena; title suggests classical conditioning of hemolytic/hemagglutination responses but no abstract is available.",
+"summary": "Studied hemagglutination reactions and conditioned hemolysis, reporting conditioned hematologic/immune responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conditioned hemolysis",
 "hemagglutination",
+"hemolysis",
 "classical conditioning",
-"tuberculosis",
-"1952",
-"immune conditioning"
+"conditioned immune response",
+"tuberculosis"
 ],
 "usage": {
-"input_tokens": 195,
-"cache_read_input_tokens": 6144,
+"input_tokens": 579,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 705,
-"cost_usd": 0.00161
+"output_tokens": 998,
+"cost_usd": 0.00229
 }
 },
 "sources": [

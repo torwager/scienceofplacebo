@@ -16,23 +16,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:48:54Z",
+"classified_at": "2026-09-05T19:40:47Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the paper's focus, so inclusion cannot be judged.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'Placebo', indicating the paper's primary subject is the placebo concept rather than using placebo as a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -40,26 +42,34 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the paper addressed placebo or nocebo phenomena; no abstract available.",
+"summary": "Discusses the placebo concept and its implications for medicine and clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"peripatetic placebo",
-"1963",
-"cmaj",
-"unknown author"
+"placebo",
+"concept",
+"history",
+"medical-ethics"
 ],
 "usage": {
-"input_tokens": 355,
+"input_tokens": 533,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 532,
-"cost_usd": 0.0013
+"output_tokens": 656,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -212,57 +222,76 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1963.10402332",
 "cited_by_count": 3,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:33:13Z",
+"classified_at": "2026-09-05T19:41:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or methods available; the title indicates posthypnotic suggestion was used to reduce postoperative pain (an expectancy/suggestion intervention), but the design and whether placebo/nocebo was an explicit experimental focus cannot be determined from the available text.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states that posthypnotic suggestions (an expectancy/suggestion manipulation) were used to reduce postoperative pain, making placebo/expectation mechanisms the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"surgical_patients"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"outcome_measures": [
+"self_report",
+"healthcare_utilization"
 ],
-"moderators": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"verbal_suggestion_only"
+"verbal_suggestion_only",
+"open_label_placebo"
 ]
 },
-"summary": "No abstract available; title indicated use of posthypnotic suggestions to reduce postoperative pain following hemorrhoidectomy, but study design and results were not reported in the available record.",
+"summary": "Studied the use of posthypnotic suggestions to reduce postoperative pain following hemorrhoidectomy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "posthypnotic suggestion",
+"hypnosis",
 "hemorrhoidectomy",
 "postoperative pain",
-"hypnosis",
+"analgesia",
 "suggestion"
 ],
 "usage": {
-"input_tokens": 476,
+"input_tokens": 604,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 732,
-"cost_usd": 0.00173
+"output_tokens": 1060,
+"cost_usd": 0.00242
 }
 },
 "sources": [
@@ -405,71 +434,56 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:24Z",
+"classified_at": "2026-09-05T19:41:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or available text; the title suggests a conceptual/commentary piece about placebo but there is insufficient information to determine whether it reports empirical placebo/nocebo data or is a theoretical/clinical opinion.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "The title explicitly refers to a 'toxic placebo', indicating the paper is about harmful placebo/nocebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"nocebo_effect"
 ],
-"article_type": "theory_commentary",
+"article_type": "case_report",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"history_conceptual"
-],
+"mechanisms": [],
 "moderators": [
 "none_reported"
 ],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "No abstract available; title implied a conceptual or clinical commentary on placebo/nocebo phenomena in patients, but content and empirical status were not available.",
+"summary": "Reported a clinical case describing harmful effects attributed to a placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"toxic placebo",
-"partial patient",
-"1963",
-"medical times",
-"placebo commentary"
+"nocebo",
+"toxicity",
+"case report",
+"placebo"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 762,
-"cost_usd": 0.00176
+"output_tokens": 638,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -856,53 +870,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:07Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T19:41:23Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the study focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Paper is a conceptual/commentary focused on the phenomenon of 'placebo reactors' and trial design implications, making placebo the main subject (placebo_science_other).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response",
+"history_conceptual"
+],
+"moderators": [
+"personality_traits",
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to judge whether the paper empirically studied placebo or nocebo phenomena; no abstract available.",
+"summary": "Commentary discussed the concept of 'placebo reactors', illustrated with postoperative pain observations, and considered how trial design and individual suggestibility influence apparent placebo responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"postoperative",
+"postoperative pain",
 "morphine",
-"suggestion",
-"1963",
-"nature",
-"placebo reactor"
+"saline",
+"placebo reactors",
+"suggestibility"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 2503,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00147
+"output_tokens": 813,
+"cost_usd": 0.0024
 }
 },
 "sources": [
@@ -947,23 +983,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:03Z",
+"classified_at": "2026-09-05T19:41:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available and the title is generic, so it is unclear whether placebo/nocebo phenomena were the paper's explicit focus or merely discussed.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'THE PLACEBO PROBLEM', indicating placebo is the primary subject of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -972,27 +1010,27 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; the 1963 bulletin titled 'The Placebo Problem' likely discussed conceptual or clinical issues about placebo in pain/analgesia but full content is unavailable to confirm.",
+"summary": "Discusses conceptual and practical issues surrounding the placebo phenomenon and its implications for psychopharmacology.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo problem",
-"psychopharmacology bulletin",
-"analgesia",
-"drug tolerance",
-"pain management",
-"1963"
+"placebo",
+"psychopharmacology",
+"history",
+"placebo concept"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 508,
-"cost_usd": 0.00126
+"output_tokens": 584,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -1250,23 +1288,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:07Z",
+"classified_at": "2026-09-05T19:41:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest placebo response is discussed but insufficient information to determine if placebo/nocebo was the explicit object of study or a comparator.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names 'Placebo Response' indicating placebo responses are the subject; acquiescence suggests investigation of response bias in that context.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -1275,27 +1315,30 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
+"mechanisms": [
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine study focus; title and MeSH terms suggested an empirical paper relating placebo response to acquiescence in humans.",
+"summary": "Examined the placebo response and the role of acquiescence (response bias) in human participants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "acquiescence",
 "response_bias",
-"placebo response",
-"suggestion",
+"placebo_response",
 "psychopharmacologia",
 "1963"
 ],
 "usage": {
-"input_tokens": 373,
+"input_tokens": 551,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 537,
-"cost_usd": 0.00131
+"output_tokens": 555,
+"cost_usd": 0.00139
 }
 },
 "sources": [
@@ -1552,24 +1595,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:32Z",
+"classified_at": "2026-09-05T19:41:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided to determine whether placebo phenomena were an explicit object of study; title suggests commentary but insufficient information to include or exclude.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names placebos as a subject in relation to homeopathy, indicating placebo phenomena are the paper's focus (review/discussion).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -1581,23 +1626,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; likely a 1963 commentary linking homeopathy and placebo, but text is insufficient to judge whether it studied placebo effects or responses.",
+"summary": "Discussed the relationship between homeopathy and placebo phenomena, arguing about placebo mechanisms or implications for homeopathic practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "homeopathy",
 "placebo",
-"hahn﻿emannian",
-"1963",
-"historical",
-"commentary"
+"alternative medicine",
+"historical"
 ],
 "usage": {
-"input_tokens": 361,
+"input_tokens": 539,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 595,
-"cost_usd": 0.00143
+"output_tokens": 504,
+"cost_usd": 0.00129
 }
 },
 "sources": [
@@ -1706,102 +1749,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.1002/j.1552-4604.1963.tb00318.x",
-"title": "COMPARISON OF DIAZEPAM, CHLORPROMAZINE AND A PLACEBO IN PSYCHIATRIC PRACTICE.",
-"authors": [
-"HARE HP"
-],
-"journal": "The Journal of new drugs",
-"journal_abbrev": "J New Drugs",
-"year": 1963,
-"date": "1963-01-01",
-"doi": "10.1002/j.1552-4604.1963.tb00318.x",
-"pmid": "14063360",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ANXIETY",
-"CHLORPROMAZINE",
-"DIAZEPAM",
-"MENTAL DISORDERS",
-"PLACEBOS",
-"PSYCHOSES, MANIC-DEPRESSIVE",
-"TRANQUILIZING AGENTS"
-],
-"mesh": [
-"Anxiety",
-"Bipolar Disorder",
-"Chlorpromazine",
-"Diazepam",
-"Humans",
-"Mental Disorders",
-"Placebos",
-"Psychotic Disorders",
-"Tranquilizing Agents"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:13Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Insufficient information (no abstract) to determine whether the trial's stated aim or analyses focused on placebo/placebo-response rather than using placebo as a comparator.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reported a clinical comparison of diazepam, chlorpromazine and a placebo in psychiatric patients (no abstract available), so focus on placebo effects versus placebo-as-control could not be determined.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"diazepam",
-"chlorpromazine",
-"psychiatry",
-"placebo",
-"anxiety"
-],
-"usage": {
-"input_tokens": 408,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00152
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1963-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2068377394",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/j.1552-4604.1963.tb00318.x",
-"cited_by_count": 16,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1001/archotol.1963.00750010010003",
 "title": "Placebo effect in relation to drug evaluation.",
 "authors": [
@@ -1906,98 +1853,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1001/archotol.1963.00750010010003",
 "cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/archderm.1963.01590130095015",
-"title": "Effect of chlorquine and placebo on warts.",
-"authors": [
-"JACOBS PH",
-"TROMOVITCH TA",
-"LUCASG",
-"PUZAK HP"
-],
-"journal": "Archives of dermatology",
-"journal_abbrev": "Arch Dermatol",
-"year": 1963,
-"date": "1963-01-01",
-"doi": "10.1001/archderm.1963.01590130095015",
-"pmid": "13964327",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"CHLOROQUINE",
-"LACTOSE",
-"PLACEBOS",
-"WARTS"
-],
-"mesh": [
-"Chloroquine",
-"Humans",
-"Lactose",
-"Placebos",
-"Warts"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:15Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract available; title reports a chloroquine versus placebo comparison for warts, but it's unclear if placebo/nocebo effects or placebo-arm responses were an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated a comparison of chloroquine and placebo for warts, but the study's emphasis on placebo effects or placebo-arm responses was not discernible.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"warts",
-"chloroquine",
-"placebo-controlled",
-"dermatology",
-"1963"
-],
-"usage": {
-"input_tokens": 384,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 707,
-"cost_usd": 0.00166
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1963-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2028669912",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/archderm.1963.01590130095015",
-"cited_by_count": 5,
 "openalex_checked": "2026-09-02v2"
 }
 ]

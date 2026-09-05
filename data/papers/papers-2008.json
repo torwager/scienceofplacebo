@@ -1275,18 +1275,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:28Z",
+"classified_at": "2026-09-05T20:48:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies focus on placebo response in antidepressant trials but insufficient information to confirm whether placebo/nocebo phenomena are the study's explicit object or whether this is a systematic/meta-analytic treatment versus a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly asks about a high placebo response in antidepressant trials, making placebo/placebo-response the paper's subject (placebo response as object of study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1324,22 +1324,22 @@
 "not_applicable"
 ]
 },
-"summary": "Abstract unavailable; title suggested the paper discussed whether high placebo response rates are unique to antidepressant trials.",
+"summary": "Asked whether high placebo responses seen in antidepressant trials are unique to that field, discussing placebo-response issues in depression trials and trial methodology.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"major depressive disorder",
 "antidepressant",
 "placebo response",
 "clinical trials",
-"response rates"
+"response rate",
+"major depressive disorder"
 ],
 "usage": {
-"input_tokens": 389,
+"input_tokens": 567,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 548,
-"cost_usd": 0.00134
+"output_tokens": 648,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -1595,52 +1595,66 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:33Z",
+"classified_at": "2026-09-05T20:48:35Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and publication type lists 'Comment', so it's unclear whether this reports original placebo-acupuncture trial data or is a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states that placebo acupuncture produced symptom and quality-of-life improvements in IBS, making placebo response the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"gi_ibs"
+],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"nausea_gi"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
 },
-"summary": "Insufficient information in the record to determine whether this was original research or a commentary; the title suggested placebo acupuncture improved IBS symptoms and quality of life.",
-"key_finding": null,
+"summary": "Reported that placebo acupuncture improved symptoms and quality of life in patients with irritable bowel syndrome.",
+"key_finding": "Found that placebo acupuncture produced symptom and quality-of-life improvements in IBS patients.",
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
 "placebo acupuncture",
 "quality of life",
-"symptoms",
-"evidence-based medicine",
-"comment"
+"symptom improvement"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 665,
-"cost_usd": 0.00157
+"output_tokens": 780,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -2012,98 +2026,6 @@
 "landing_url": "https://doi.org/10.1136/aim.26.4.224",
 "cited_by_count": 57,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:19099015",
-"title": "How to make screening mammography less uncomfortable.",
-"authors": [
-"Lundberg GD"
-],
-"journal": "Medscape journal of medicine",
-"journal_abbrev": "Medscape J Med",
-"year": 2008,
-"date": "2008-11-20",
-"doi": null,
-"pmid": "19099015",
-"pmcid": "PMC2605125",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acetaminophen",
-"Adult",
-"Aged",
-"Analgesics, Non-Narcotic",
-"Double-Blind Method",
-"Female",
-"Humans",
-"Ibuprofen",
-"Lidocaine",
-"Mammography",
-"Mass Screening",
-"Middle Aged",
-"Pain",
-"Placebo Effect",
-"Premedication",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:40Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and MeSH terms list 'Placebo Effect' but the study aim and whether placebo/nocebo was an explicit focus cannot be determined from available information.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; study likely evaluated premedication analgesics to reduce discomfort during screening mammography but it is unclear whether placebo/nocebo effects were an explicit focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"mammography",
-"screening",
-"breast",
-"premedication",
-"analgesic",
-"lidocaine",
-"ibuprofen",
-"acetaminophen"
-],
-"usage": {
-"input_tokens": 415,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 564,
-"cost_usd": 0.00138
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-11-20",
-"private_pdf": null
 },
 {
 "id": "doi:10.1159/000170401",
@@ -3091,181 +3013,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.3399/bjgp08x342606",
-"title": "An idiot's guide to medicine.",
-"authors": [
-"Gravell E"
-],
-"journal": "The British journal of general practice : the journal of the Royal College of General Practitioners",
-"journal_abbrev": "Br J Gen Pract",
-"year": 2008,
-"date": "2008-10-01",
-"doi": "10.3399/bjgp08x342606",
-"pmid": "18826799",
-"pmcid": "PMC2553552",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Evidence-Based Medicine",
-"Humans",
-"Placebo Effect"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:43Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is non-specific; MeSH includes 'Placebo Effect' but available information is insufficient to judge whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information (no abstract) to determine whether placebo or nocebo phenomena were the paper's focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"placebo",
-"evidence-based medicine",
-"general practice",
-"clinical guide",
-"primary care"
-],
-"usage": {
-"input_tokens": 378,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 606,
-"cost_usd": 0.00145
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-10-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W1976412055",
-"oa_status": "bronze",
-"oa_pdf_url": "https://bjgp.org/content/bjgp/58/555/744.full.pdf",
-"landing_url": "https://doi.org/10.3399/bjgp08x342606",
-"cited_by_count": 1,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1080/09540260802515997",
-"title": "Ethnopsychopharmacology.",
-"authors": [
-"Chen CH",
-"Chen CY",
-"Lin KM"
-],
-"journal": "International review of psychiatry (Abingdon, England)",
-"journal_abbrev": "Int Rev Psychiatry",
-"year": 2008,
-"date": "2008-10-01",
-"doi": "10.1080/09540260802515997",
-"pmid": "19012131",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Cytochrome P-450 Enzyme System",
-"Drug Therapy",
-"Ethnopharmacology",
-"Humans",
-"Mental Disorders",
-"Patient Compliance",
-"Placebo Effect",
-"Polymorphism, Genetic",
-"Psychopharmacology",
-"Psychotic Disorders",
-"Psychotropic Drugs"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:06Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the MeSH includes 'Placebo Effect' but the title and available metadata indicate a broad review of ethnopsychopharmacology without clear focus on placebo/nocebo phenomena.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to determine whether the review focused on placebo/nocebo phenomena within ethnopsychopharmacology.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"ethnopharmacology",
-"cytochrome p450",
-"polymorphism",
-"psychopharmacology",
-"placebo effect (mesh listed)"
-],
-"usage": {
-"input_tokens": 290,
-"cache_read_input_tokens": 6016,
-"cache_creation_input_tokens": 0,
-"output_tokens": 518,
-"cost_usd": 0.00126
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-10-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W4237028456",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1080/09540260802515997",
-"cited_by_count": 17,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1038/jhh.2008.53",
 "title": "Using placebo in hypertension clinical trials: new information and new opportunities.",
 "authors": [
@@ -3476,96 +3223,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1002/ibd.20656",
-"title": "Is it always necessary to treat CD patients?",
-"authors": [
-"Calabrese E",
-"Pallone F"
-],
-"journal": "Inflammatory bowel diseases",
-"journal_abbrev": "Inflamm Bowel Dis",
-"year": 2008,
-"date": "2008-10-01",
-"doi": "10.1002/ibd.20656",
-"pmid": "18816680",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Crohn Disease",
-"Evidence-Based Medicine",
-"Humans",
-"Patient Selection",
-"Placebo Effect",
-"Postoperative Complications",
-"Quality of Life",
-"Secondary Prevention",
-"Severity of Illness Index",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:47Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and although MeSH lists 'Placebo Effect', the paper's aim and whether placebo/nocebo is a focus cannot be determined from the metadata alone.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to judge whether the paper studied placebo/nocebo effects, though MeSH lists 'Placebo Effect'.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"crohn disease",
-"inflammatory bowel disease",
-"placebo effect",
-"treatment necessity",
-"calabrese"
-],
-"usage": {
-"input_tokens": 400,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 602,
-"cost_usd": 0.00145
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-10-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2128389075",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/ibd.20656",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1016/j.euroneuro.2008.08.009",
 "title": "Does the probability of receiving placebo influence clinical trial outcome? A meta-regression of double-blind, randomized clinical trials in MDD.",
 "authors": [
@@ -3720,23 +3377,25 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:50Z",
+"classified_at": "2026-09-05T20:49:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a relation between motivation and expectancy but does not confirm placebo/nocebo was the study's explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses 'response expectancy', indicating placebo/expectancy mechanisms are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -3744,28 +3403,33 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study explicitly examined placebo or nocebo effects; examined links between motivational concordance and response expectancy.",
+"summary": "Studied the relation between motivational concordance and response expectancy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "response expectancy",
 "motivational concordance",
-"set",
-"placebo effect",
-"expectation",
-"psychosomatic research"
+"expectation"
 ],
 "usage": {
-"input_tokens": 409,
+"input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 617,
-"cost_usd": 0.00148
+"output_tokens": 674,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -6181,104 +5845,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.1016/j.joca.2008.06.014",
-"title": "Autologous conditioned serum (Orthokine) is an effective treatment for knee osteoarthritis.",
-"authors": [
-"Baltzer AW",
-"Moser C",
-"Jansen SA",
-"Krauspe R"
-],
-"journal": "Osteoarthritis and cartilage",
-"journal_abbrev": "Osteoarthritis Cartilage",
-"year": 2008,
-"date": "2008-07-31",
-"doi": "10.1016/j.joca.2008.06.014",
-"pmid": "18674932",
-"pmcid": null,
-"openalex_id": null,
-"abstract": "OBJECTIVE: Osteoarthritis (OA) is prevalent and difficult to treat. Autologous conditioned serum (ACS), marketed under the trade name Orthokine, is a novel, injectable antiarthritic derived from the patient's own blood. The present study is the first time ACS has undergone a controlled clinical trial. METHOD: We investigated 376 patients with knee OA in a prospective, randomized, patient- and observer-blinded, placebo-controlled trial using an intention-to-treat analysis (ITT). The clinical effects of ACS were compared to hyaluronan (HA) and saline (placebo) as assessed by patient-administered outcome instruments (Western Ontario and McMaster Universities osteoarthritis index, global patient assessment, visual analog scale, Short-Form 8) after 7, 13 and 26 weeks. After 104 weeks an observer-blinded follow-up was carried out. Frequency and severity of adverse events were used as safety parameters. RESULTS: In all treatment groups, intra-articular injections produced a reduction in symptoms as well as an improvement in quality of life. However, the effects of ACS were significantly superior to those of HA and saline for all outcome measures and time points, and improvements were clinically relevant; there were no differences between the effects of HA and saline. The frequency of adverse events was comparable in the ACS and saline groups, but higher in the HA group. CONCLUSION: The data demonstrate that ACS injection considerably improves clinical signs and symptoms of OA. It remains to be determined whether ACS is disease-modifying, chondroprotective, or chondroregenerative.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Blood Transfusion, Autologous",
-"Epidemiologic Methods",
-"Female",
-"Humans",
-"Hyaluronic Acid",
-"Injections, Intra-Articular",
-"Male",
-"Middle Aged",
-"Osteoarthritis, Knee",
-"Serum",
-"Treatment Outcome",
-"Viscosupplements"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Multicenter Study",
-"Randomized Controlled Trial"
-],
-"oa_status": null,
-"oa_pdf_url": "http://www.oarsijournal.com/article/S1063458408002094/pdf",
-"landing_url": null,
-"cited_by_count": 312,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:12:43Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or methods available to determine whether placebo/nocebo effects or responses were an explicit focus of the study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information (no abstract available) to judge whether the paper treated placebo/nocebo phenomena as an object of study.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"knee osteoarthritis",
-"orthokine",
-"autologous conditioned serum",
-"2009"
-],
-"usage": {
-"input_tokens": 41,
-"cache_read_input_tokens": 6272,
-"cache_creation_input_tokens": 0,
-"output_tokens": 630,
-"cost_usd": 0.00143
-}
-},
-"sources": [
-"recall_audit_s2"
-],
-"date_added": "2009-02-01",
-"private_pdf": null,
-"language": "eng"
-},
-{
 "id": "doi:10.1016/j.cgh.2008.07.013",
 "title": "Placebo in nonalcoholic steatohepatitis: insight into natural history and implications for future clinical trials.",
 "authors": [
@@ -6787,18 +6353,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:05Z",
+"classified_at": "2026-09-05T20:49:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates placebos in medical education but available information is insufficient to determine whether placebo effects/responses were the paper's explicit focus or if it was a commentary/review.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names placebos as the topic in the context of medical education, indicating placebo science (attitudes/education/ethics) is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6808,36 +6374,46 @@
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
+"population": [
+"clinicians_providers"
+],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "clinical_use_ethics_attitudes"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Insufficient information to determine whether it studied placebo effects; title addressed placebos in the context of medical education.",
+"summary": "Discusses placebos in the context of medical education, likely covering ethics, attitudes, and teaching about placebo use.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"medical education",
-"placebo",
-"curriculum",
-"teaching",
-"ethics"
+"medical students",
+"education",
+"ethics",
+"prescribing",
+"attitudes"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.0013
+"output_tokens": 648,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -6865,18 +6441,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:29Z",
+"classified_at": "2026-09-05T20:49:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests a clinical/practice discussion of placebo but insufficient information to confirm whether placebo effects/responses were empirically studied or if this is a review/commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly addresses the placebo's role in clinical practice, indicating placebo science (use/ethics/implementation) is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6885,19 +6461,13 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
-"not_applicable"
+"clinicians_providers"
 ],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -6905,7 +6475,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"provider_patient_interaction",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -6914,21 +6486,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed the role, ethics, and clinical use of placebo in practice but full content was unavailable to confirm scope.",
+"summary": "Discussed the role of the placebo in clinical practice, focusing on its use, ethics, and implications for clinician–patient care.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"clinical use",
+"clinical practice",
 "ethics",
-"placebo prescribing",
-"physician attitudes"
+"physician-patient",
+"deception",
+"placebo prescribing"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 491,
-"cost_usd": 0.00122
+"output_tokens": 600,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -12251,23 +11824,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:58Z",
+"classified_at": "2026-09-05T20:49:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Only title and metadata available with no abstract or full text to determine whether placebo response/effect was an explicit focus or the study was a standard drug-versus-placebo efficacy trial.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states that placebo was as effective as paroxetine for acute moderate-to-severe major depression, making the placebo response the apparent subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -12281,9 +11856,7 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
+"effects": [],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
@@ -12294,22 +11867,21 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Insufficient information in the record to determine whether the paper tested placebo/placebo-response as a primary focus; title suggests a trial comparing paroxetine with placebo for major depression.",
-"key_finding": null,
+"summary": "Reported that placebo was as effective as paroxetine for treating acute moderate-to-severe major depression.",
+"key_finding": "Found no superior benefit of paroxetine over placebo in acute moderate-to-severe major depression (title claim).",
 "sample_size": null,
 "free_keywords": [
 "paroxetine",
 "major depression",
-"antidepressant trial",
-"placebo response",
-"medscape journal of medicine"
+"antidepressant",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 778,
-"cost_usd": 0.0018
+"output_tokens": 816,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -12349,27 +11921,29 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:56Z",
+"classified_at": "2026-09-05T20:50:06Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.5,
-"rationale": "No abstract or full text available; title implies a focus on placebo effects in pediatric migraine but insufficient information to confirm study design, outcomes, or whether placebo/nocebo was the explicit object of study.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly asks why placebos work in some children with migraine, indicating placebo responses/mechanisms in pediatric migraine are the paper's focus (placebo as the subject).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"healthy_pediatric"
 ],
 "age_group": [
 "children_adolescents"
@@ -12377,29 +11951,43 @@
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested investigation of placebo effects in children with migraine but details of methods and findings were unavailable.",
+"summary": "Investigated why placebo treatments produce benefit in some children with migraine, focusing on variability and possible mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
-"pediatric",
+"pediatrics",
+"placebo_response",
 "children",
-"placebo",
-"pain"
+"expectation",
+"treatment history"
 ],
 "usage": {
-"input_tokens": 401,
+"input_tokens": 579,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 612,
-"cost_usd": 0.00147
+"output_tokens": 702,
+"cost_usd": 0.0017
 }
 },
 "sources": [
@@ -14340,96 +13928,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.1111/j.1540-8167.2007.01075.x",
-"title": "Placebo CRT.",
-"authors": [
-"Varma N",
-"Jia P",
-"Rudy Y"
-],
-"journal": "Journal of cardiovascular electrophysiology",
-"journal_abbrev": "J Cardiovasc Electrophysiol",
-"year": 2008,
-"date": "2008-02-13",
-"doi": "10.1111/j.1540-8167.2007.01075.x",
-"pmid": "18284505",
-"pmcid": "PMC2957367",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Cardiac Pacing, Artificial",
-"Heart Failure",
-"Humans",
-"Medical Errors",
-"Myocardial Infarction",
-"Treatment Outcome",
-"Ventricular Dysfunction, Left"
-],
-"pub_types": [
-"Case Reports",
-"Journal Article",
-"Research Support, N.I.H., Extramural"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:10:15Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and the title alone ('Placebo CRT.') does not make it clear whether placebo/nocebo phenomena were the paper's focus, so inclusion cannot be judged.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "case_report",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract or full text was available; the title 'Placebo CRT.' was insufficient to determine whether the report studied placebo or nocebo phenomena.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"cardiac resynchronization therapy",
-"CRT",
-"heart failure",
-"case report",
-"cardiac pacing"
-],
-"usage": {
-"input_tokens": 404,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 519,
-"cost_usd": 0.00129
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-02-13",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W4237835063",
-"oa_status": "green",
-"oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2957367",
-"landing_url": "https://doi.org/10.1111/j.1540-8167.2007.01075.x",
-"cited_by_count": 7,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "pmid:18411608",
 "title": "Extracorporeal shock-wave therapy (ESWT) with a new-generation pneumatic device in the treatment of heel pain. A double blind randomised controlled trial.",
 "authors": [
@@ -14544,169 +14042,6 @@
 "private_pdf": null
 },
 {
-"id": "pmid:18383651",
-"title": "Antidepressants: suicide among young adults: more frequent than with placebo.",
-"authors": [],
-"journal": "Prescrire international",
-"journal_abbrev": "Prescrire Int",
-"year": 2008,
-"date": "2008-02-01",
-"doi": null,
-"pmid": "18383651",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Antidepressive Agents",
-"Child",
-"Humans",
-"Suicide",
-"United States"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:10:18Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the article's primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title reported that suicide among young adults was more frequent with antidepressants than with placebo, but the paper's focus on placebo/nocebo phenomena is unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"antidepressants",
-"suicide",
-"young adults",
-"placebo",
-"prescrire"
-],
-"usage": {
-"input_tokens": 380,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00144
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-02-01",
-"private_pdf": null
-},
-{
-"id": "doi:10.7861/clinmedicine.8-1-83",
-"title": "Complementary and alternative medicine.",
-"authors": [
-"Sir Richard Thompson"
-],
-"journal": "Clinical medicine (London, England)",
-"journal_abbrev": "Clin Med (Lond)",
-"year": 2008,
-"date": "2008-02-01",
-"doi": "10.7861/clinmedicine.8-1-83",
-"pmid": "18335677",
-"pmcid": "PMC4953719",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Complementary Therapies",
-"Homeopathy",
-"Humans",
-"Pain",
-"Placebo Effect",
-"State Medicine",
-"United Kingdom"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:10:19Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title is broad; unable to determine whether placebo/nocebo was an explicit focus of the paper.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; likely discussed complementary and alternative medicine and mentioned placebo effects, but insufficient information to determine whether placebo was a primary focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"complementary_and_alternative_medicine",
-"homeopathy",
-"placebo_effect",
-"uk"
-],
-"usage": {
-"input_tokens": 377,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 536,
-"cost_usd": 0.00131
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-02-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2171325982",
-"oa_status": "bronze",
-"oa_pdf_url": "http://www.clinmed.rcpjournal.org/content/8/1/83.full.pdf",
-"landing_url": "https://doi.org/10.7861/clinmedicine.8-1-83",
-"cited_by_count": 3,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1258/jrsm.2007.071005",
 "title": "William Cullen and a missing mind-body link in the early history of placebos.",
 "authors": [
@@ -14817,89 +14152,6 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2254457",
 "landing_url": "https://doi.org/10.1258/jrsm.2007.071005",
 "cited_by_count": 43,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/j.1464-410x.2007.07415.x",
-"title": "Snake oil for all?",
-"authors": [
-"Wyllie MG"
-],
-"journal": "BJU international",
-"journal_abbrev": "BJU Int",
-"year": 2008,
-"date": "2008-02-01",
-"doi": "10.1111/j.1464-410x.2007.07415.x",
-"pmid": "18184330",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Humans",
-"Male",
-"Male Urogenital Diseases",
-"Placebo Effect",
-"Placebos"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:10:22Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous, so it's unclear whether placebo phenomena were the paper's primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether placebo/nocebo was the paper's primary focus because no abstract is available.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"urology",
-"placebo",
-"editorial",
-"snake oil"
-],
-"usage": {
-"input_tokens": 370,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 615,
-"cost_usd": 0.00147
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-02-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2051667424",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.1464-410x.2007.07415.x",
-"cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
 },
 {

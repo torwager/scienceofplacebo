@@ -1985,52 +1985,76 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:17:02Z",
+"classified_at": "2026-09-05T21:16:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests nocebo after COVID-19 vaccination but it's unclear whether the paper empirically studied nocebo effects, was a review, or a commentary.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states nocebo effects/affects after COVID-19 vaccination, indicating nocebo phenomena are the paper's subject (no abstract available).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational",
+"survey_interview"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"attention_cognitive_appraisal",
+"media_social_contagion"
+],
+"moderators": [
+"expectation_level",
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine study type or findings because no abstract was available; title indicates focus on nocebo after COVID-19 vaccination.",
-"key_finding": null,
+"summary": "Described nocebo-related adverse effects occurring after COVID-19 vaccination in humans, based on the title.",
+"key_finding": "Reported that nocebo phenomena contributed to post-vaccination adverse effects (subjective side-effects).",
 "sample_size": null,
 "free_keywords": [
 "covid-19",
 "vaccination",
-"nocebo",
+"side-effects",
 "adverse events",
-"sever et al",
-"lancet regional health europe"
+"nocebo",
+"vaccine hesitancy"
 ],
 "usage": {
-"input_tokens": 361,
+"input_tokens": 539,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 668,
-"cost_usd": 0.00157
+"output_tokens": 796,
+"cost_usd": 0.00187
 }
 },
 "sources": [
@@ -5322,107 +5346,6 @@
 "oa_pdf_url": "https://vbn.aau.dk/da/publications/4a32265a-ccf2-4ac5-baab-5d2e1718b84b",
 "landing_url": "https://doi.org/10.1515/sjpain-2021-0115",
 "cited_by_count": 1,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.amjmed.2021.09.014",
-"title": "Statin Intolerance and Noncompliance: An Empiric Approach.",
-"authors": [
-"Grundy SM",
-"Vega GL"
-],
-"journal": "The American journal of medicine",
-"journal_abbrev": "Am J Med",
-"year": 2021,
-"date": "2021-10-28",
-"doi": "10.1016/j.amjmed.2021.09.014",
-"pmid": "34717898",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"Nocebo effect",
-"Noncompliance",
-"Statin intolerance"
-],
-"mesh": [
-"Cardiovascular Diseases",
-"Humans",
-"Hydroxymethylglutaryl-CoA Reductase Inhibitors",
-"Nocebo Effect",
-"Patient Compliance"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:16:19Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and title/MeSH suggest nocebo may be discussed but it's unclear whether nocebo effects are an explicit focus or merely mentioned in context of statin intolerance and adherence.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"cardiovascular_bp",
-"adverse_events"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"nocebo_communication_disclosure",
-"clinical_use_ethics_attitudes"
-],
-"moderators": [],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Insufficient abstract to determine whether the nocebo effect was a primary focus; likely discussed in relation to statin intolerance and noncompliance.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"statin",
-"intolerance",
-"nocebo",
-"noncompliance",
-"adherence",
-"HMG-CoA reductase inhibitors"
-],
-"usage": {
-"input_tokens": 396,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 662,
-"cost_usd": 0.00157
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2021-10-28",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W3210784236",
-"oa_status": "hybrid",
-"oa_pdf_url": "http://www.amjmed.com/article/S0002934321006446/pdf",
-"landing_url": "https://doi.org/10.1016/j.amjmed.2021.09.014",
-"cited_by_count": 11,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -10524,33 +10447,39 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:17:02Z",
+"classified_at": "2026-09-05T21:16:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and the publication is a brief Comment; title addresses placebo resistance but available information is insufficient to confirm placebo/nocebo is the paper's explicit focus or primary analysis.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses whether treatment‑resistant depression is also resistant to placebos, indicating placebo response is the paper's subject (commentary).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
+"species": "human",
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "mood_depression"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -10558,26 +10487,31 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Commented on whether treatment-resistant depression may also be resistant to placebo effects.",
+"summary": "Commentary questioned whether treatment‑resistant depression also shows reduced placebo response, discussing placebo response in depression trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "treatment-resistant depression",
-"placebo resistance",
-"depression",
-"commentary"
+"TRD",
+"placebo response",
+"depression trials",
+"expectancy"
 ],
 "usage": {
-"input_tokens": 252,
-"cache_read_input_tokens": 6016,
+"input_tokens": 558,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 677,
-"cost_usd": 0.00157
+"output_tokens": 542,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -23551,36 +23485,55 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8051962",
 "landing_url": "https://doi.org/10.1097/corr.0000000000001676",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T16:06:19Z",
+"classified_at": "2026-09-05T21:16:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract/full text provided and the item is a short commentary; unclear whether placebo/nocebo effects or placebo response were an explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly tested associations between patient expectations/illness perceptions and postoperative patient-reported outcomes, making expectation effects a measured predictor of outcomes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"surgical_patients"
+],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Commentary on associations between patient expectations/illness perception and patient-reported outcomes after surgical decompression for de Quervain's tenosynovitis; insufficient information to judge whether placebo/nocebo phenomena were studied.",
+"summary": "Examined whether baseline patient expectations and illness perceptions were associated with patient-reported outcomes after surgical decompression for de Quervain's tenosynovitis.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -23588,15 +23541,14 @@
 "tenosynovitis",
 "surgical decompression",
 "patient expectations",
-"illness perception",
-"patient-reported outcomes"
+"illness perception"
 ],
 "usage": {
-"input_tokens": 461,
+"input_tokens": 589,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 606,
-"cost_usd": 0.00147
+"output_tokens": 1166,
+"cost_usd": 0.00263
 }
 },
 "sources": [
@@ -23630,53 +23582,62 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:18:47Z",
+"classified_at": "2026-09-05T21:16:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests a commentary on placebo in trials but insufficient information to confirm whether placebo/nocebo is the paper's primary focus or an empirical study.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames placebo as the (unknown) variable in controlled trials, indicating placebo science/methodology is the paper's subject (placebo-focused commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested a commentary about the role of placebo as an uncontrolled variable in clinical trials.",
+"summary": "Argued that placebo is an overlooked variable complicating interpretation of controlled trials and research design.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"trial methodology",
-"research design",
-"placebo effect",
-"editorial"
+"clinical_trials",
+"research_design",
+"placebo_bias",
+"methodology"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 568,
-"cost_usd": 0.00138
+"output_tokens": 518,
+"cost_usd": 0.00132
 }
 },
 "sources": [
@@ -28275,73 +28236,59 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:19:22Z",
+"classified_at": "2026-09-05T21:17:04Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title names placebo effect and TMS but insufficient information to determine whether the paper reports empirical placebo/nocebo effects or is a review/commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the placebo effect and its interactions with transcranial magnetic stimulation, making placebo phenomena the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
-"neural_systems_circuits",
 "treatment_cues_dose_route",
-"provider_patient_interaction"
+"neural_systems_circuits"
 ],
-"moderators": [
-"neurostimulation"
-],
+"moderators": [],
 "intervention_type": [
 "sham_neurostimulation",
 "sham_device"
 ]
 },
-"summary": "No abstract was available; the title indicated the paper addressed interactions between placebo effects and transcranial magnetic stimulation, but the article type and empirical focus were not determinable from the citation alone.",
+"summary": "Discussed interactions between placebo effects and transcranial magnetic stimulation, focusing on how expectancy and TMS-related factors influence placebo responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"tms",
 "transcranial magnetic stimulation",
-"placebo",
-"sham tms"
+"tms",
+"placebo effect",
+"sham stimulation",
+"expectation"
 ],
 "usage": {
-"input_tokens": 384,
+"input_tokens": 562,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 741,
-"cost_usd": 0.00173
+"output_tokens": 458,
+"cost_usd": 0.0012
 }
 },
 "sources": [
@@ -31295,24 +31242,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:19:54Z",
+"classified_at": "2026-09-05T21:17:12Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and title suggests a discussion of nocebo effects (SAMSON/statin intolerance) but it's unclear whether nocebo is the paper's primary focus or a passing comment.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly names 'nocebo effects', indicating nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"nocebo_effect"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -31324,22 +31273,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title implied a discussion linking the SAMSON trial and statin-associated muscle symptoms (SAMS) to nocebo effects, but content could not be judged.",
+"summary": "Title indicated the paper addressed nocebo effects, but no abstract or full text was available to extract details.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nocebo",
 "SAMSON",
 "SAMS",
-"statin-associated muscle symptoms",
-"statin intolerance"
+"atherosclerosis"
 ],
 "usage": {
-"input_tokens": 232,
-"cache_read_input_tokens": 6016,
+"input_tokens": 538,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 677,
-"cost_usd": 0.00156
+"output_tokens": 589,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -34153,53 +34101,64 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:20:16Z",
+"classified_at": "2026-09-05T21:17:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/nocebo phenomena were the study's explicit focus.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "The title explicitly states placebo produced short-term low back pain relief, indicating placebo response was the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"chronic_pain"
+],
 "age_group": [],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "No abstract available; title suggested short-term low back pain relief with placebo but insufficient information was provided to determine whether placebo effects were the paper's explicit focus.",
+"summary": "Found that placebo produced short-term relief of low back pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "low back pain",
 "placebo",
 "short-term",
-"primary care",
-"american family physician"
+"analgesia"
 ],
 "usage": {
-"input_tokens": 372,
+"input_tokens": 550,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 737,
-"cost_usd": 0.00171
+"output_tokens": 864,
+"cost_usd": 0.00201
 }
 },
 "sources": [
@@ -34611,57 +34570,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:20:21Z",
+"classified_at": "2026-09-05T21:17:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text was available and the title suggests a conceptual/theoretical proposal about genomics and placebo rather than an empirical study, so inclusion cannot be determined.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names a placebo-focused concept ('Placebogenomics'), indicating the paper's subject is genetic mechanisms/personalized-medicine implications of placebo responses (theory/conceptual piece).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "genetics_placebome"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"genetics"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title proposed a conceptual framework linking genomics and placebo (\"placebogenomics\") for personalized medicine and public health, but methods and scope were not provided.",
+"summary": "Proposes the 'placebogenomics' concept linking genetic variation to placebo responses and discusses implications for personalized medicine and public health.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebogenomics",
 "placebome",
+"placebogenomics",
 "genomics",
-"precision_medicine",
-"personalized_medicine",
-"public_health",
-"placebo_genetics"
+"precision medicine",
+"personalized medicine"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 646,
-"cost_usd": 0.00154
+"output_tokens": 767,
+"cost_usd": 0.00182
 }
 },
 "sources": [

@@ -616,92 +616,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.1016/j.explore.2016.12.015",
-"title": "Acupuncture May Be Effective for Prevention of Tension-Type Headache, but Magnitude of Improvement May Be Small Compared to Sham.",
-"authors": [
-"Glickman-Simon R"
-],
-"journal": "Explore (New York, N.Y.)",
-"journal_abbrev": "Explore (NY)",
-"year": 2016,
-"date": "2016-12-21",
-"doi": "10.1016/j.explore.2016.12.015",
-"pmid": "28117223",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2565968829",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acupuncture Therapy",
-"Humans",
-"Placebos",
-"Tension-Type Headache",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.explore.2016.12.015",
-"cited_by_count": 3,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T17:27:18Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title implies an acupuncture versus sham comparison but it's unclear whether placebo/nocebo phenomena were an explicit focus or merely a control for efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": [
-"sham_acupuncture"
-]
-},
-"summary": "Insufficient information in the record; title indicated a comparison of acupuncture versus sham for tension-type headache but no abstract was available to confirm focus or findings.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"tension-type headache",
-"acupuncture",
-"sham acupuncture",
-"placebo-controlled"
-],
-"usage": {
-"input_tokens": 449,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 590,
-"cost_usd": 0.00144
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2016-12-21",
-"private_pdf": null
-},
-{
 "id": "doi:10.1007/s00408-016-9971-3",
 "title": "The Effect of Aerosol Saline on Laboratory-Induced Dyspnea.",
 "authors": [
@@ -1133,52 +1047,75 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:41:10Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:05:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title and MeSH indicate an RCT comparing non-penetrating (sham) acupuncture devices versus real acupuncture in healthy subjects, but the provided abstract describes a different corticosteroid vs saline injection trial, so the available text is insufficient to judge whether placebo/nocebo phenomena were the explicit focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Study’s primary aim was to evaluate and compare placebo (sham) acupuncture methods and their effectiveness for blinding, making placebo methodology the main focus (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"sensory_perception"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"trial_methodology_placebo_response",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
 },
-"summary": "Title indicated a randomized trial comparing non-penetrating (sham) acupuncture devices and real acupuncture in healthy subjects, but the abstract provided was for an unrelated injection trial, so study focus and results could not be determined.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Tested three non-penetrating sham acupuncture methods versus real acupuncture in 321 healthy volunteers and found all placebo methods were similarly effective for participant blinding at two acupoints.",
+"key_finding": "Found that all tested sham acupuncture devices (Park Sham, needle+foam, insertion/removal) were indistinguishable from real acupuncture for participant blinding.",
+"sample_size": 321,
 "free_keywords": [
-"acupuncture",
-"non-penetrating",
-"sham acupuncture",
-"placebo",
+"park sham",
+"st25",
+"bl52",
+"non-penetrating sham",
+"blinding",
 "healthy volunteers",
-"randomized trial"
+"needle+foam"
 ],
 "usage": {
-"input_tokens": 870,
+"input_tokens": 9632,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 626,
-"cost_usd": 0.00162
+"output_tokens": 744,
+"cost_usd": 0.00404
 }
 },
 "sources": [
@@ -1826,51 +1763,67 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:41:16Z",
+"classified_at": "2026-09-05T21:05:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/nocebo phenomena were the study's focus.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly refers to side effects for placebo poppers, indicating the paper focused on adverse (nocebo) responses to a placebo inhalant.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "not_applicable",
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "empirical_primary",
+"species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"nocebo_communication_disclosure"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "Insufficient information was available (no abstract) to determine whether the paper studied placebo or nocebo effects or responses.",
+"summary": "Reported side effects experienced after administration of placebo 'poppers', consistent with nocebo responses to an inhaled placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
 "poppers",
-"side effects",
+"amyl nitrite",
 "nocebo",
-"science 2016"
+"side effects",
+"inhalant"
 ],
 "usage": {
-"input_tokens": 360,
+"input_tokens": 538,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 510,
-"cost_usd": 0.00126
+"output_tokens": 837,
+"cost_usd": 0.00196
 }
 },
 "sources": [
@@ -2155,52 +2108,79 @@
 "Research Support, N.I.H., Extramural",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:42:38Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:05:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title describes an open-label placebo RCT in chronic low back pain but the provided abstract reports a different placebo-controlled dexamethasone trial in cancer, so it is unclear which study this record represents.",
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Randomized trial whose stated aim and primary analysis tested open-label placebo (OLP) added to treatment-as-usual versus TAU, isolating a placebo/context effect.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct",
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"open_label_placebo",
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo",
+"inert_pill_capsule"
+]
 },
-"summary": "Record title indicated an open-label placebo RCT for chronic low back pain, but the abstract described a placebo-controlled dexamethasone trial in cancer, so the study focus on placebo cannot be determined from the provided text.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Found that adding open-label placebo pills to treatment-as-usual produced greater reductions in pain and disability than treatment-as-usual alone in adults with chronic low back pain.",
+"key_finding": "OLP reduced composite pain by ~1.5 points (95% CI 1.0–2.0) versus 0.2 (−0.3–0.8) in TAU, and reduced Roland–Morris disability by 2.9 (1.7–4.0) versus 0.0 (−1.1–1.2).",
+"sample_size": 83,
 "free_keywords": [
+"roland–morris",
+"numeric rating scale",
 "open-label placebo",
 "chronic low back pain",
-"dexamethasone",
-"cancer",
-"cytokines",
-"placebo response"
+"microcrystalline cellulose",
+"placebo analgesia",
+"positive rationale"
 ],
 "usage": {
-"input_tokens": 888,
+"input_tokens": 10949,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 709,
-"cost_usd": 0.00179
+"output_tokens": 838,
+"cost_usd": 0.00456
 }
 },
 "sources": [
@@ -4404,51 +4384,65 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:41:40Z",
+"classified_at": "2026-09-05T21:05:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text was provided and the publication is listed as a comment, so it is unclear whether placebo/nocebo phenomena were the paper's primary focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly questions whether observed benefits of yoga therapy reflect a placebo effect, making placebo the paper's subject (commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"nausea_gi"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the paper's primary focus was on placebo/nocebo effects in yoga therapy for children with functional abdominal pain.",
+"summary": "Comment debated whether improvements from yoga therapy in children with functional abdominal pain were due to placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"functional abdominal pain",
 "yoga",
-"children",
-"pediatric gastroenterology",
-"placebo effect (mentioned)"
+"functional abdominal pain",
+"pediatrics"
 ],
 "usage": {
-"input_tokens": 260,
-"cache_read_input_tokens": 6016,
+"input_tokens": 566,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 507,
-"cost_usd": 0.00123
+"output_tokens": 775,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -10461,53 +10455,99 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:42:41Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:05:47Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a commentary on placebo practice (likely not primary data), so unable to determine if placebo/nocebo effects were an explicit empirical focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative/news review whose main subject is the science, mechanisms, and clinical potential of placebos and open-label placebo trials (placebo science focus).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"article_type": "narrative_review",
+"species": "human",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"fmri",
+"pet_neurochemical",
+"other"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"open_label_placebo",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"neurobiology_other_neurochemical",
+"neural_systems_circuits",
+"trial_methodology_placebo_response",
+"harnessing_placebo_clinical",
+"history_conceptual"
+],
+"moderators": [
+"prior_experience",
+"expectation_level",
+"provider_characteristics",
+"treatment_characteristics"
+],
+"intervention_type": [
+"open_label_placebo",
+"inert_pill_capsule",
+"topical_cream",
+"placebo_food_drink",
+"sham_psychological",
+"sham_device",
+"not_applicable"
+]
 },
-"summary": "Appeared to be a short commentary on placebo practice and mechanisms (open-label/placebo effects), but abstract/full text were not available to confirm scope or data.",
+"summary": "A narrative feature reviewed evidence on placebo and nocebo mechanisms, open-label placebo trials, conditioning, neurobiology, and the potential to harness honest placebos in clinical care.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "open-label placebo",
-"placebo mechanisms",
-"honest fakery",
-"commentary",
-"nature"
+"kaptchuk",
+"benedetti",
+"conditioning",
+"ibS",
+"parkinson",
+"endorphins",
+"naloxone"
 ],
 "usage": {
-"input_tokens": 413,
+"input_tokens": 3868,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 692,
-"cost_usd": 0.00163
+"output_tokens": 941,
+"cost_usd": 0.003
 }
 },
 "sources": [
@@ -18407,18 +18447,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:43:35Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:05:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.4,
-"rationale": "Title indicates a review/comparative paper focused on placebo effects and mechanisms (prefrontal cortex and suggestion), so placebo is the main subject though abstract unavailable.",
+"confidence": 0.85,
+"rationale": "Opinion/theoretical article whose main subject is placebo and suggestion (comparison of hypnosis and placebo mechanisms and PFC involvement), meeting inclusion as placebo science commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -18426,53 +18466,35 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"neural_systems_circuits",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviewed evidence on prefrontal cortex involvement in suggestion, contrasting hypnosis and placebo effects.",
+"summary": "Discusses neural and cognitive similarities and differences between hypnosis and placebo effects, emphasizing prefrontal cortex roles and implications for suggestion research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
 "prefrontal cortex",
 "suggestion",
-"placebo mechanisms",
-"top-down control"
+"rTMS",
+"expectation",
+"placebo_analgesia"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 3688,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 538,
-"cost_usd": 0.00131
+"output_tokens": 678,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -19487,97 +19509,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1353/ken.2016.0004",
 "cited_by_count": 43,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1353/ken.2016.0000",
-"title": "Editorial Note.",
-"authors": [
-"Kukla R"
-],
-"journal": "Kennedy Institute of Ethics journal",
-"journal_abbrev": "Kennedy Inst Ethics J",
-"year": 2016,
-"date": "2016-03-01",
-"doi": "10.1353/ken.2016.0000",
-"pmid": "27157114",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Asian People",
-"Bioethics",
-"Cross-Cultural Comparison",
-"Cultural Characteristics",
-"Dissent and Disputes",
-"Humans",
-"Informed Consent",
-"Moral Obligations",
-"Morals",
-"Personal Autonomy",
-"Placebo Effect",
-"Western World"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:44:11Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is an editorial note, so it's unclear whether placebo was the main focus despite MeSH tagging.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to determine whether the editorial focused on placebo science or ethics.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"editorial",
-"bioethics",
-"informed consent",
-"placebo effect",
-"cross-cultural"
-],
-"usage": {
-"input_tokens": 399,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00157
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2016-03-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W4251485067",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1353/ken.2016.0000",
-"cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -22374,51 +22305,67 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:44:11Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:06:17Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and title is non-informative; MeSH includes 'Placebo Effect' but the paper's focus cannot be confirmed from available metadata.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Opinion commentary whose explicit subject is the placebo effect, discussing placebo mechanisms, genetics (placebome), trial methodology and ethics, meeting inclusion as a theoretical/commentary piece on placebo science.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual",
+"trial_methodology_placebo_response",
+"genetics_placebome",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract or full text was available; MeSH listed 'Placebo Effect' but available metadata were insufficient to determine whether placebo/nocebo phenomena were the paper's focus.",
+"summary": "Commentary discussed rising placebo effects, ethical and methodological implications (placebo run-ins, prescreening, patents), and genetics ('placebome') and clinical implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"please please me",
-"hong kong medical journal",
-"Choi",
-"Lam",
-"placebo effect (MeSH)"
+"placebome",
+"COMT val158met",
+"placebo run-in",
+"prescreening",
+"informed consent",
+"irritable bowel syndrome",
+"patent",
+"trial methodology"
 ],
 "usage": {
-"input_tokens": 251,
-"cache_read_input_tokens": 6016,
+"input_tokens": 2336,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 677,
-"cost_usd": 0.00157
+"output_tokens": 864,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -22433,112 +22380,6 @@
 "landing_url": "https://doi.org/10.12809/hkmj154738",
 "cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1177/0363546515624678",
-"title": "Intra-articular Autologous Conditioned Plasma Injections Provide Safe and Efficacious Treatment for Knee Osteoarthritis: An FDA-Sanctioned, Randomized, Double-blind, Placebo-controlled Clinical Trial.",
-"authors": [
-"Smith PA"
-],
-"journal": "The American journal of sports medicine",
-"journal_abbrev": "Am J Sports Med",
-"year": 2016,
-"date": "2016-02-01",
-"doi": "10.1177/0363546515624678",
-"pmid": "26831629",
-"pmcid": null,
-"openalex_id": null,
-"abstract": "BACKGROUND: Platelet-rich plasma (PRP) injections have become an intriguing treatment option for osteoarthritis (OA), particularly OA of the knee. Despite the plethora of PRP-related citations, there is a paucity of high-level evidence that is comparable, cohort specific, dose controlled, injection protocol controlled, and double-blinded. PURPOSE: To determine the safety and efficacy of leukocyte-poor PRP autologous conditioned plasma (ACP) for knee OA treatment through a feasibility trial regulated by the US Food and Drug Administration (FDA). STUDY DESIGN: Randomized controlled trial; Level of evidence, 1. METHODS: In accordance with FDA protocol, patient selection was based on strict inclusion/exclusion criteria; 114 patients were screened, and 30 were ultimately included in the study. These patients were randomized to receive either ACP (n = 15) or saline placebo (n = 15) for a series of 3 weekly injections. Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC) scores served as the primary efficacy outcome measure. Patients were followed for 1 year. RESULTS: No adverse events were reported for ACP administration. Furthermore, the results demonstrated no statistically significant difference in baseline WOMAC scores between the 2 groups. However, in the ACP group, WOMAC scores at 1 week were significantly decreased compared with baseline scores, and the scores for this group remained significantly lower throughout the study duration. At the study conclusion (12 months), subjects in the ACP group had improved their overall WOMAC scores by 78% from their baseline score, compared with 7% for the placebo group. CONCLUSION: ACP is safe and provides quantifiable benefits for pain relief and functional improvement with regard to knee OA. No adverse events were reported for ACP administration. After 1 year, WOMAC scores for the ACP subjects had improved by 78% from their baseline score, whereas scores for the placebo control group had improved by only 7%. Other joints affected with OA may also benefit from this treatment.",
-"keywords": [
-"FDA",
-"WOMAC",
-"autologous conditioned plasma",
-"leukocyte-poor platelet-rich plasma",
-"level 1",
-"osteoarthritis",
-"placebo",
-"saline control"
-],
-"mesh": [
-"Double-Blind Method",
-"Female",
-"Humans",
-"Injections, Intra-Articular",
-"Male",
-"Middle Aged",
-"Osteoarthritis, Knee",
-"Platelet-Rich Plasma",
-"Prospective Studies",
-"United States",
-"United States Food and Drug Administration"
-],
-"pub_types": [
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"oa_status": null,
-"oa_pdf_url": "",
-"landing_url": null,
-"cited_by_count": 280,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:40Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text was provided and the title indicates an efficacy trial of autologous conditioned plasma for knee osteoarthritis rather than an explicit focus on placebo/nocebo, so I cannot determine inclusion.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract or full text was available; title indicated an efficacy study of autologous conditioned plasma for knee osteoarthritis, insufficient to judge whether placebo/nocebo was studied.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"knee osteoarthritis",
-"autologous conditioned plasma",
-"platelet-rich plasma",
-"ACP",
-"intra-articular injection"
-],
-"usage": {
-"input_tokens": 424,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 728,
-"cost_usd": 0.00171
-}
-},
-"sources": [
-"recall_audit_s2"
-],
-"date_added": "2016-02-01",
-"private_pdf": null,
-"language": "eng"
 },
 {
 "id": "doi:10.1097/j.pain.0000000000000445",
@@ -22935,23 +22776,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/j.aorn.2015.12.019",
 "cited_by_count": 4,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T17:38:35Z",
+"classified_at": "2026-09-05T21:06:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Publication is an evidence appraisal/comment on a systematic review of patient expectations in surgery but abstract and metadata do not indicate whether placebo/nocebo phenomena are an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly concerns patient expectations and patient-reported outcomes in surgery, so placebo/expectation phenomena are the paper's subject (an evidence appraisal/comment of a systematic review).",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "editorial_letter",
 "species": "human",
 "population": [],
@@ -22960,11 +22803,13 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Commentary/evidence appraisal of a 2014 systematic review on patient expectations and patient-reported surgical outcomes; abstract unavailable so focus on placebo/nocebo phenomena was not determinable.",
+"summary": "Appraised a 2014 systematic review on how patient expectations related to patient-reported outcomes after surgery, focusing on the evidence base for expectation–outcome associations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -22972,15 +22817,14 @@
 "surgery",
 "patient-reported outcomes",
 "evidence appraisal",
-"systematic review",
-"commentary"
+"systematic review"
 ],
 "usage": {
-"input_tokens": 464,
+"input_tokens": 592,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00153
+"output_tokens": 845,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -23377,27 +23221,27 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:44:16Z",
+"classified_at": "2026-09-05T21:06:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies a narrative review questioning whether herbal treatments for liver disease exceed placebo but available information is insufficient to confirm placebo/nocebo is the explicit focus.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly questions whether herbal treatments' effects are 'more than placebo', indicating placebo/placebo-response is the paper's focus (a review).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [
@@ -23411,26 +23255,32 @@
 "not_applicable"
 ],
 "mechanisms": [
-"other"
+"trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "Discusses whether herbal treatments for liver disease produce effects beyond placebo and examined related evidence and arguments.",
+"summary": "Reviewed evidence on whether herbal treatments for liver disease produce clinical effects beyond placebo, discussing placebo-related explanations and trial evidence.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "herbal medicine",
 "phytotherapy",
-"hepatology",
+"liver disease",
+"placebo response",
+"efficacy",
 "complementary medicine"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 671,
-"cost_usd": 0.00158
+"output_tokens": 775,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -24023,95 +23873,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1530/eje-15-1119",
 "cited_by_count": 15,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1007/s10354-015-0415-0",
-"title": "Invited commentary: Evidence-based practise and physical therapy.",
-"authors": [
-"Wolzt M"
-],
-"journal": "Wiener medizinische Wochenschrift (1946)",
-"journal_abbrev": "Wien Med Wochenschr",
-"year": 2016,
-"date": "2016-01-12",
-"doi": "10.1007/s10354-015-0415-0",
-"pmid": "26758978",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Austria",
-"Evidence-Based Practice",
-"Humans",
-"Outcome Assessment, Health Care",
-"Physical Therapy Modalities",
-"Placebo Effect",
-"Precision Medicine",
-"Standard of Care"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:44:21Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract available and the title identifies an invited commentary on evidence-based physical therapy; MeSH lists 'Placebo Effect' but the paper's focus on placebo is unclear from provided text.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; invited commentary on evidence-based practice in physical therapy that referenced placebo in indexing, but the paper's substantive focus on placebo could not be determined from provided information.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"physical therapy",
-"evidence-based practice",
-"invited commentary",
-"placebo effect",
-"Austria",
-"health care",
-"standard of care"
-],
-"usage": {
-"input_tokens": 399,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 675,
-"cost_usd": 0.0016
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2016-01-12",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2239031546",
-"oa_status": "bronze",
-"oa_pdf_url": "https://link.springer.com/content/pdf/10.1007/s10354-015-0415-0.pdf",
-"landing_url": "https://doi.org/10.1007/s10354-015-0415-0",
-"cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -25885,45 +25646,62 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 89,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:38Z",
+"classified_at": "2026-09-05T21:07:06Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract, journal, or methods information were provided so it is impossible to determine whether placebo/nocebo phenomena were the paper's focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebo and nocebo effects, indicating the paper's subject is placebo/nocebo phenomena (likely a review).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract or metadata were available, so it was not possible to determine whether the paper empirically studied placebo or nocebo effects.",
+"summary": "Reviews placebo and nocebo effects.",
 "key_finding": null,
 "sample_size": null,
-"free_keywords": [],
+"free_keywords": [
+"placebo",
+"nocebo",
+"review",
+"overview"
+],
 "usage": {
-"input_tokens": 403,
+"input_tokens": 531,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 669,
-"cost_usd": 0.00159
+"output_tokens": 658,
+"cost_usd": 0.0016
 }
 },
 "sources": [

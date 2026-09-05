@@ -4178,52 +4178,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:03:40Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T20:52:15Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and title suggests a commentary on physician–patient relations; insufficient information to judge whether placebo/nocebo phenomena were an explicit study focus.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Essay/commentary focused on the concept of the doctor as a therapeutic agent and the history/role of Balint work, fitting placebo science (history/ethics/clinical role) inclusion criterion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes",
+"history_conceptual",
+"therapeutic_ritual_context",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information (no abstract) to determine whether the paper empirically studied placebo/nocebo effects; title suggests a commentary on Balint work and physician–patient relations.",
+"summary": "Provided a historical and conceptual commentary on Balint’s idea of the doctor as a therapeutic agent and the importance of doctor–patient relationship in clinical outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "balint",
-"physician-patient relations",
-"placebo effect (meSH term present)",
-"clinical competence",
+"doctor-as-drug",
 "general practice",
-"psychodynamic"
+"therapeutic relationship",
+"consultation",
+"empathy"
 ],
 "usage": {
-"input_tokens": 413,
+"input_tokens": 2615,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 575,
-"cost_usd": 0.0014
+"output_tokens": 731,
+"cost_usd": 0.00226
 }
 },
 "sources": [
@@ -10296,18 +10319,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T04:04:06Z",
+"classified_at": "2026-09-05T20:52:24Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Review focused on neural correlates of mindfulness and compared them with psychotherapy, pharmacotherapy and placebo; placebo is discussed but not clearly the main subject or the explicit focus of the review.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Narrative review compared neural correlates of mindfulness, psychotherapy, pharmacotherapy and explicitly discussed placebo effect mechanisms, so placebo science is a substantive topic of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10316,14 +10339,19 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
+"species": "human",
+"population": [
+"mixed_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
-"mood_depression"
+"mood_depression",
+"cognition"
 ],
 "outcome_measures": [
-"not_applicable"
+"fmri"
 ],
 "design": [
 "not_applicable"
@@ -10340,26 +10368,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reviewed studies of mindfulness meditation neural correlates and compared neural patterns with psychotherapy, pharmacotherapy and placebo, noting overlapping brain regions and top-down regulation mechanisms.",
+"summary": "Reviews functional neuroimaging studies of mindfulness, psychotherapy, pharmacotherapy and placebo, and noted overlapping brain regions and top-down emotional regulation mechanisms associated with placebo-like effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "mindfulness",
-"meditation",
 "amygdala",
 "frontal cortex",
-"antidepressants",
-"top-down regulation"
+"emotional regulation",
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 644,
+"input_tokens": 694,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 563,
-"cost_usd": 0.00143
+"output_tokens": 912,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -10766,50 +10793,70 @@
 "Evaluation Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:08Z",
+"classified_at": "2026-09-05T20:52:33Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided so it is unclear whether the paper empirically studied placebo/nocebo effects or was a commentary/review on placebo terminology or ethics.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses placebos as the main subject (conceptual/clinical discussion), so it meets inclusion as placebo science/theory.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract was available; the title indicates the paper discussed placebos and terminology/ethics in optometry, but the specific focus and whether it reported empirical data were not provided.",
+"summary": "Discusses conceptual and clinical issues about placebos, framing them as 'trick or treatment' for clinical practice and ethics.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "optometry",
-"placebo",
-"terminology",
-"ethics"
+"placebo ethics",
+"clinical use",
+"patient communication"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 633,
-"cost_usd": 0.00151
+"output_tokens": 556,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -11546,174 +11593,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1136/ebmh.13.2.49",
-"title": "Review: benefits of antidepressants over placebo limited except in very severe depression.",
-"authors": [
-"Kirsch I"
-],
-"journal": "Evidence-based mental health",
-"journal_abbrev": "Evid Based Ment Health",
-"year": 2010,
-"date": "2010-05-01",
-"doi": "10.1136/ebmh.13.2.49",
-"pmid": "21856612",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Comment",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:15Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests a commentary on antidepressant versus placebo efficacy but it's unclear whether placebo response/effects were the paper's explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Argued that antidepressant benefits over placebo were limited except in very severe depression.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"antidepressant",
-"major depression",
-"placebo response",
-"drug versus placebo",
-"kirsch",
-"efficacy"
-],
-"usage": {
-"input_tokens": 367,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 645,
-"cost_usd": 0.00153
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-05-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2048000612",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1136/ebmh.13.2.49",
-"cited_by_count": 9,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/jama.2010.507",
-"title": "Depression severity and effect of antidepressant medications.",
-"authors": [
-"Suzuki T",
-"Uchida H",
-"Nakajima S"
-],
-"journal": "JAMA",
-"journal_abbrev": "JAMA",
-"year": 2010,
-"date": "2010-04-28",
-"doi": "10.1001/jama.2010.507",
-"pmid": "20424244",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Antidepressive Agents",
-"Depression",
-"Humans",
-"Meta-Analysis as Topic",
-"Placebo Effect"
-],
-"pub_types": [
-"Comment",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:38Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text was available and the article is labeled as a Comment, so it's unclear whether placebo/nocebo phenomena were an explicit study focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Comment discussed the relation between depression severity and antidepressant effects and mentioned placebo effects; full text was unavailable to determine focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"depression",
-"antidepressant",
-"severity",
-"placebo effect",
-"comment",
-"JAMA"
-],
-"usage": {
-"input_tokens": 256,
-"cache_read_input_tokens": 6016,
-"cache_creation_input_tokens": 0,
-"output_tokens": 647,
-"cost_usd": 0.00151
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-04-28",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2511705714",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/jama.2010.507",
-"cited_by_count": 3,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1177/1740774510367916",
 "title": "Participant expectancies in double-blind randomized placebo-controlled trials: potential limitations to trial validity.",
 "authors": [
@@ -12437,28 +12316,32 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:19Z",
+"classified_at": "2026-09-05T20:53:04Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title suggests placebo-related ventilation weaning but insufficient information to determine whether placebo/nocebo phenomena were an explicit study focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'Placebo support' and refers to a weaning trial in ventilator dependency, indicating placebo is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "case_report",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -12466,22 +12349,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title suggested a discussion or proposal about using placebo support in ventilator weaning but details and aims were not provided.",
+"summary": "Reported a trial of placebo support to aid weaning in ventilator-dependent patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ventilator",
 "weaning",
-"placebo support",
-"critical care",
-"mechanical ventilation"
+"mechanical ventilation",
+"icu",
+"placebo support"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 555,
-"cost_usd": 0.00135
+"output_tokens": 758,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -15383,51 +15266,76 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:42Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T20:53:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title suggests a commentary about alternative medicine and placebo but insufficient information to judge whether placebo/nocebo phenomena were an explicit study focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "This peer-reviewed commentary focused on the placebo effect in alternative medicine and hot flashes, discussing clinical implications and trial methodology rather than reporting new efficacy data.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response",
+"therapeutic_ritual_context",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information available; title appears to be a commentary questioning whether alternative medicine outperforms placebo and its relevance.",
+"summary": "Commentary argued that placebo effects are important in alternative medicine and hot flashes, reviewed trial evidence and discussed clinical and ethical implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"hot flashes",
+"androgen deprivation therapy",
+"dong quai",
 "alternative medicine",
-"placebo",
-"commentary",
-"clinical relevance",
-"urology"
+"flaxseed",
+"placebo effect",
+"clinical ethics"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 3332,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00151
+"output_tokens": 803,
+"cost_usd": 0.00259
 }
 },
 "sources": [
@@ -17172,100 +17080,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1177/0956797609357750",
-"title": "Randomness, attributions of arousal, and belief in god.",
-"authors": [
-"Kay AC",
-"Moscovitch DA",
-"Laurin K"
-],
-"journal": "Psychological science",
-"journal_abbrev": "Psychol Sci",
-"year": 2010,
-"date": "2010-01-08",
-"doi": "10.1177/0956797609357750",
-"pmid": "20424048",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Anxiety",
-"Arousal",
-"Culture",
-"Female",
-"Humans",
-"Internal-External Control",
-"Male",
-"Placebo Effect",
-"Religion and Psychology",
-"Spirituality",
-"Young Adult"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:54Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title concerns religiosity and arousal attribution; MeSH includes 'Placebo Effect' but there is insufficient information to determine whether placebo/nocebo phenomena are an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; paper examined randomness, attributions of arousal, and belief in God, but it is unclear whether placebo/nocebo phenomena were an explicit focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"religion",
-"belief in god",
-"arousal attribution",
-"randomness",
-"psychological science",
-"placebo (uncertain)"
-],
-"usage": {
-"input_tokens": 403,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00145
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-01-08",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2109252709",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1177/0956797609357750",
-"cited_by_count": 169,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1111/j.1533-2500.2009.00337.x",
 "title": "Acupuncture for chronic pain: is acupuncture more than an effective placebo? A systematic review of pooled data from meta-analyses.",
 "authors": [
@@ -17613,90 +17427,6 @@
 "cache_creation_input_tokens": 0,
 "output_tokens": 790,
 "cost_usd": 0.00192
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:21224947",
-"title": "Ethical issues in surgical trials and in the diffusion of innovative therapies.",
-"authors": [
-"Brody BA"
-],
-"journal": "Texas Heart Institute journal",
-"journal_abbrev": "Tex Heart Inst J",
-"year": 2010,
-"date": "2010-01-01",
-"doi": null,
-"pmid": "21224947",
-"pmcid": "PMC3014114",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Comprehension",
-"Diffusion of Innovation",
-"Evidence-Based Medicine",
-"Humans",
-"Informed Consent",
-"Placebo Effect",
-"Randomized Controlled Trials as Topic",
-"Research Design",
-"Surgical Procedures, Operative",
-"Therapies, Investigational",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:04:57Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title and MeSH terms indicate ethical discussion of surgical trials and mention 'Placebo Effect', but no abstract or full text available to confirm whether placebo/nocebo phenomena are a main focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Discussed ethical issues in surgical trials and diffusion of innovative therapies; available record lacked an abstract, so whether placebo-controlled designs or placebo/nocebo phenomena were a primary focus was unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"surgical ethics",
-"innovation diffusion",
-"placebo-controlled trials",
-"informed consent",
-"operative therapies"
-],
-"usage": {
-"input_tokens": 410,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 621,
-"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -18201,51 +17931,76 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:05:04Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T20:53:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Abstract unavailable and title suggests a commentary on vertebroplasty and evidence-based medicine mentioning placebo, insufficient information to judge whether placebo/nocebo is the paper's primary focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Opinion piece focused on interpreting RCTs that found sham (placebo) effects in vertebroplasty and discussed placebo mechanisms and trial methodology, so placebo science is a main subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; discussed vertebroplasty, cognitive dissonance, and the implications of placebo-related evidence for evidence-based medicine.",
+"summary": "Commentary discussed two RCTs showing no clear benefit of vertebroplasty over sham, considered powerful placebo effects and cognitive dissonance in clinical practice, and reflected on implications for evidence-based medicine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "vertebroplasty",
-"evidence-based medicine",
+"kyphoplasty",
+"sham surgery",
 "cognitive dissonance",
-"placebo effect",
-"spinal fractures"
+"evidence-based medicine",
+"knee arthroscopy",
+"Buchbinder",
+"Kallmes"
 ],
 "usage": {
-"input_tokens": 423,
+"input_tokens": 4831,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 495,
-"cost_usd": 0.00124
+"output_tokens": 732,
+"cost_usd": 0.00282
 }
 },
 "sources": [
@@ -19596,188 +19351,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1360-0443.2009.02835.x",
 "cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1097/yco.0b013e328334bce0",
-"title": "Forum: the use of selective serotonin reuptake inhibitors in depressed children and adolescents: commentary on the meta-analysis by Hetrick et al.",
-"authors": [
-"Goodyer IM",
-"Wilkinson P",
-"Dubicka B",
-"Kelvin R"
-],
-"journal": "Current opinion in psychiatry",
-"journal_abbrev": "Curr Opin Psychiatry",
-"year": 2010,
-"date": "2010-01-01",
-"doi": "10.1097/yco.0b013e328334bce0",
-"pmid": "19934759",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Child",
-"Depressive Disorder",
-"Humans",
-"Meta-Analysis as Topic",
-"Placebo Effect",
-"Selective Serotonin Reuptake Inhibitors"
-],
-"pub_types": [
-"Comment",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:05:34Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Article is a forum/commentary on an SSRI meta-analysis with no abstract; insufficient information to determine whether placebo/nocebo was an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Forum commentary on Hetrick et al.'s SSRI meta-analysis in depressed children and adolescents; no abstract available to determine whether placebo effects were discussed as the primary focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"ssri",
-"depression",
-"children",
-"adolescents",
-"meta-analysis",
-"hetrick"
-],
-"usage": {
-"input_tokens": 429,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 530,
-"cost_usd": 0.00131
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2083513985",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1097/yco.0b013e328334bce0",
-"cited_by_count": 15,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1080/00029157.2010.10401716",
-"title": "Follow-up review of the success rates of hypnosis. Commentary.",
-"authors": [
-"Handel DL"
-],
-"journal": "The American journal of clinical hypnosis",
-"journal_abbrev": "Am J Clin Hypn",
-"year": 2010,
-"date": "2010-01-01",
-"doi": "10.1080/00029157.2010.10401716",
-"pmid": "20187335",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Bias",
-"Follow-Up Studies",
-"Humans",
-"Hypnosis",
-"Hypnosis, Anesthetic",
-"Outcome Assessment, Health Care",
-"Placebo Effect",
-"Research Design",
-"Smoking Cessation",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:05:18Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract and only a commentary title/MeSH terms available, so it's unclear whether placebo/placebo effects are a primary focus or merely mentioned.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Commentary reviewed follow-up success rates of hypnosis and was indexed with placebo effect MeSH, but the abstract is unavailable so the paper's focus on placebo/nocebo is unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"hypnosis",
-"hypnotic anesthesia",
-"smoking cessation",
-"placebo effect",
-"follow-up review"
-],
-"usage": {
-"input_tokens": 401,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 638,
-"cost_usd": 0.00152
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-01-01",
-"private_pdf": null,
-"openalex_mismatch": true,
-"cited_by_count": null,
-"oa_pdf_url": null,
-"oa_status": null,
-"openalex_id": null,
 "openalex_checked": "2026-09-02v2"
 },
 {

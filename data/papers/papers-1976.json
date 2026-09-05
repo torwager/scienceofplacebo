@@ -1008,121 +1008,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1111/j.1469-8986.1976.tb00855.x",
-"title": "Evoked potentials in hyperkinetic and normal children under certainty and uncertainty: a placebo and methylphenidate study.",
-"authors": [
-"Prichep LS",
-"Sutton S",
-"Hakerem G"
-],
-"journal": "Psychophysiology",
-"journal_abbrev": "Psychophysiology",
-"year": 1976,
-"date": "1976-09-01",
-"doi": "10.1111/j.1469-8986.1976.tb00855.x",
-"pmid": "972965",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acoustic Stimulation",
-"Attention",
-"Child",
-"Evoked Potentials",
-"Humans",
-"Hyperkinesis",
-"Male",
-"Methylphenidate",
-"Placebos"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article",
-"Research Support, U.S. Gov't, Non-P.H.S."
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:44:34Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title indicates a placebo and methylphenidate comparison with certainty/uncertainty manipulations but no abstract or methods available to confirm whether placebo/nocebo effects were an explicit focus or merely a control.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"eeg",
-"self_report"
-],
-"design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
-},
-"summary": "Reported evoked potentials in hyperkinetic and control children under certainty versus uncertainty during placebo and methylphenidate conditions; abstract and methods were unavailable to determine focus on placebo effects.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"methylphenidate",
-"evoked potentials",
-"hyperkinesis",
-"children",
-"uncertainty",
-"placebo"
-],
-"usage": {
-"input_tokens": 433,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 871,
-"cost_usd": 0.002
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1976-09-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2062816357",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/j.1469-8986.1976.tb00855.x",
-"cited_by_count": 82,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1097/00005053-197609000-00001",
 "title": "Issues at the clinical-research interface: placebo effect control groups.",
 "authors": [
@@ -1383,60 +1268,84 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.2466/pr0.1976.38.3c.1235",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T23:13:28Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T20:06:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates therapist expectancies relate to treatment outcome but it is unclear whether placebo/nocebo phenomena or experimental placebo designs were the paper's focus.",
+"decision": "include",
+"confidence": 0.72,
+"rationale": "Study measured therapists' expectancies and correlated them with patient treatment outcomes, testing expectation as a predictor of clinical response (an expectancy/context mechanism relevant to placebo research).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"clinicians_providers",
+"psychosis"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated",
+"other"
+],
+"design": [
+"observational"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested the study examined therapists' expectancies and psychotherapy outcomes, but it was unclear whether placebo/nocebo effects were an explicit focus.",
-"key_finding": null,
+"summary": "Analyzed correlations between therapists' expectancy measures and multiple objective treatment outcomes in hospitalized psychiatric patients, finding expectancy measures strongly related to outcomes.",
+"key_finding": "Therapists' expectancies were significantly correlated with most treatment outcome measures (14 of 15 in a subsequent sample).",
 "sample_size": null,
 "free_keywords": [
 "therapist expectancy",
 "psychotherapy outcome",
 "schizophrenia",
-"BPRS",
-"MMPI",
-"therapist expectations",
-"treatment prognosis"
+"brief psychiatric rating scale",
+"mmpi"
 ],
 "usage": {
-"input_tokens": 464,
+"input_tokens": 576,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 653,
-"cost_usd": 0.00157
+"output_tokens": 1021,
+"cost_usd": 0.00233
 }
 },
 "sources": [
 "pubmed_audit"
 ],
 "date_added": "1976-06-01",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1192/bjp.128.5.510b",
@@ -1813,58 +1722,67 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/786380",
 "cited_by_count": 6,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:07:29Z",
+"classified_at": "2026-09-05T20:06:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available to determine whether placebo/sham or expectancy/placebo response was the explicit focus; insufficient information to judge inclusion.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly examines effects by suggestibility levels, indicating suggestion/expectation moderation of treatment response (placebo-related mechanism).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "anxiety_stress"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
 "effects": [],
 "mechanisms": [
 "verbal_suggestion_expectation"
 ],
 "moderators": [
-"none_reported"
+"personality_traits"
 ],
-"intervention_type": []
+"intervention_type": [
+"other"
+]
 },
-"summary": "Reported a clinical trial of transcrerebral electrotherapy (electrosleep) examining state anxiety by suggestibility levels, but the abstract and methods were unavailable to show whether placebo/nocebo phenomena were the study focus.",
+"summary": "Examined effects of transcranial electrotherapy (electrosleep) on state anxiety across levels of suggestibility.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "electrosleep",
-"transcrerebral electrotherapy",
+"transcranial electrotherapy",
 "suggestibility",
 "state anxiety",
-"1976",
-"biological psychiatry"
+"1976"
 ],
 "usage": {
-"input_tokens": 462,
+"input_tokens": 590,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 595,
-"cost_usd": 0.00145
+"output_tokens": 971,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -2913,106 +2831,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "pmid:177968",
-"title": "Sociotherapy and the prevention of relapse among schizophrenic patients: an artifact of drug?",
-"authors": [
-"Hogarty GE",
-"Ulrich R",
-"Goldberg S",
-"Schooler N"
-],
-"journal": "Proceedings of the annual meeting of the American Psychopathological Association",
-"journal_abbrev": "Proc Annu Meet Am Psychopathol Assoc",
-"year": 1976,
-"date": "1976-01-01",
-"doi": null,
-"pmid": "177968",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2395972188",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Aftercare",
-"Chlorpromazine",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Patient Compliance",
-"Placebos",
-"Recurrence",
-"Rehabilitation, Vocational",
-"Schizophrenia",
-"Social Work, Psychiatric"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Research Support, U.S. Gov't, Non-P.H.S."
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/177968",
-"cited_by_count": 17,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T23:11:08Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title/MESH terms do not make it clear whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information available to determine whether the study explicitly investigated placebo or nocebo phenomena in sociotherapy for schizophrenia.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"schizophrenia",
-"sociotherapy",
-"relapse",
-"chlorpromazine",
-"placebos",
-"patient compliance"
-],
-"usage": {
-"input_tokens": 496,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 574,
-"cost_usd": 0.00142
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1976-01-01",
-"private_pdf": null
-},
-{
 "id": "pmid:1029472",
 "title": "Panel III: Psychological aspects, placebo effect and rehabilitation methodology. Discussion.",
 "authors": [],
@@ -3575,36 +3393,48 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0005-7967(76)90008-5",
 "cited_by_count": 22,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:13:19Z",
+"classified_at": "2026-09-05T20:07:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title/MeSH terms do not make placebo/nocebo an explicit focus (suggestion might be therapeutic technique or placebo-like), so inclusion cannot be determined from available information.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly lists 'suggestion' as a treatment alongside desensitization and relaxation, indicating suggestion/expectancy effects were a focus.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"anxiety_disorders"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"anxiety_stress"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; paper compared systematic desensitization, relaxation training, and suggestion for test anxiety, but it is unclear whether suggestion was studied as a placebo/expectancy effect.",
+"summary": "Compared systematic desensitization, relaxation training, and suggestion as treatments for test anxiety.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -3612,14 +3442,15 @@
 "systematic desensitization",
 "relaxation training",
 "suggestion",
-"behaviour therapy"
+"behaviour therapy",
+"1976"
 ],
 "usage": {
-"input_tokens": 443,
+"input_tokens": 571,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 534,
-"cost_usd": 0.00133
+"output_tokens": 895,
+"cost_usd": 0.00208
 }
 },
 "sources": [

@@ -34,52 +34,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:53Z",
+"classified_at": "2026-09-05T19:26:13Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates drug bio-assay with only a brief mention of 'placebo reactions', so it's unclear whether placebo/nocebo phenomena were a primary focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly mentions 'observations on placebo reactions', indicating placebo responses were an object of study (placebo arm/observations) in this clinical bio-assay.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract available; paper reported clinical bio-assay of several analgesics and made observations about placebo reactions.",
+"summary": "Reported a clinical bio-assay of oral analgesics and included observations on placebo reactions.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "propoxyphene",
 "aspirin",
 "codeine",
-"analgesic",
+"analgesia",
 "placebo reactions",
+"bio-assay",
 "1955"
 ],
 "usage": {
-"input_tokens": 420,
+"input_tokens": 598,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 525,
-"cost_usd": 0.0013
+"output_tokens": 1003,
+"cost_usd": 0.0023
 }
 },
 "sources": [
@@ -208,96 +229,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1111/imj.1955.4.3.195",
-"title": "A comparison of placebo and heparin treatment in intermittent claudication.",
-"authors": [
-"NEWMAN HC",
-"BARNETT AJ"
-],
-"journal": "Australasian annals of medicine",
-"journal_abbrev": "Australas Ann Med",
-"year": 1955,
-"date": "1955-08-01",
-"doi": "10.1111/imj.1955.4.3.195",
-"pmid": "13269338",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"CLAUDICATION, INTERMITTENT/therapy",
-"HEPARIN/therapeutic use",
-"PLACEBOS/therapeutic use"
-],
-"mesh": [
-"Gait",
-"Heparin",
-"Humans",
-"Intermittent Claudication",
-"Movement Disorders",
-"Placebos"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:57Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates a placebo-controlled comparison of heparin versus placebo for intermittent claudication but no abstract or full text is available to determine whether the paper studied placebo effects/responses or focused on drug efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; reported a comparison of heparin versus placebo for intermittent claudication, with insufficient information to judge whether placebo effects/responses were a study focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"intermittent claudication",
-"heparin",
-"placebo-controlled",
-"gait",
-"1955"
-],
-"usage": {
-"input_tokens": 393,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 620,
-"cost_usd": 0.00149
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1955-08-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2410355076",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/imj.1955.4.3.195",
-"cited_by_count": 3,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "pmid:14380570",
 "title": "The place of placebos in medical practice.",
 "authors": [
@@ -321,18 +252,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:55Z",
+"classified_at": "2026-09-05T19:26:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available to determine whether the paper empirically studied placebo/nocebo effects or was a review/commentary; insufficient information.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebos and their role in medical practice, indicating placebo science is the paper's main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -345,45 +276,35 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
+"clinical_use_ethics_attitudes",
 "history_conceptual"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient abstract text to determine aims or data; likely a 1955 discussion of the role of placebos in medical practice.",
+"summary": "Discusses the role of placebos in medical practice and their implications for clinicians and patient care.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"history",
 "medical practice",
-"placebo use",
-"1955"
+"clinical use",
+"ethics",
+"physician prescribing",
+"deception"
 ],
 "usage": {
-"input_tokens": 360,
+"input_tokens": 538,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 564,
+"output_tokens": 544,
 "cost_usd": 0.00137
 }
 },
@@ -488,103 +409,5 @@
 ],
 "date_added": "1955-06-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1001/jama.1955.02950310020005",
-"title": "Drugs used in treatment of patients with petit mal epilepsy; a serial evaluation of new and standard drugs with alternate placebo baselines in identical cases.",
-"authors": [
-"ZIMMERMAN FT",
-"BURGEMEISTER BB"
-],
-"journal": "Journal of the American Medical Association",
-"journal_abbrev": "J Am Med Assoc",
-"year": 1955,
-"date": "1955-04-02",
-"doi": "10.1001/jama.1955.02950310020005",
-"pmid": "14353658",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"ANTICONVULSANTS/therapeutic use",
-"EPILEPSY/therapy"
-],
-"mesh": [
-"Anticonvulsants",
-"Epilepsy",
-"Epilepsy, Absence"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:20Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title indicates a drug trial using 'alternate placebo baselines' but no abstract or full text to determine whether placebo/placebo response was an explicit focus or merely a control for drug efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [],
-"design": [
-"crossover_rct"
-],
-"effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Reported a serial evaluation of anticonvulsant drugs in petit mal (absence) epilepsy using alternate placebo baselines in the same cases; abstract not available to determine focus on placebo effects.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"petit mal",
-"absence epilepsy",
-"anticonvulsants",
-"alternate placebo baseline",
-"serial evaluation",
-"1955",
-"JAMA"
-],
-"usage": {
-"input_tokens": 403,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 487,
-"cost_usd": 0.00122
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1955-04-02",
-"private_pdf": null,
-"openalex_mismatch": true,
-"cited_by_count": null,
-"oa_pdf_url": null,
-"oa_status": null,
-"openalex_id": null,
-"openalex_checked": "2026-09-02v2"
 }
 ]

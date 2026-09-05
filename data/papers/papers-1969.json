@@ -387,52 +387,68 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:50Z",
+"classified_at": "2026-09-05T19:53:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided to determine whether placebo/nocebo phenomena were an explicit focus despite MeSH term 'Placebos' and a controlled clinical trial label.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the placebo response in angina pectoris, making placebo response the paper's subject (inclusion rule: placebo/nocebo response as object of study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"cardiovascular"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cardiovascular_bp"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"single_group_pre_post"
+],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "No abstract available; the 1969 controlled clinical trial mentioned placebos and angina pectoris but the focus on placebo/nocebo phenomena could not be determined from the citation alone.",
+"summary": "Examined aspects of the placebo response in patients with angina pectoris; full text unavailable for details.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "angina pectoris",
-"placebo",
-"controlled clinical trial",
-"physician-patient relations",
+"placebo response",
+"cardiology",
 "1969",
-"am j cardiol"
+"clinical trial"
 ],
 "usage": {
-"input_tokens": 394,
+"input_tokens": 572,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 555,
-"cost_usd": 0.00136
+"output_tokens": 890,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -446,101 +462,6 @@
 "landing_url": "https://doi.org/10.1016/0002-9149(69)90422-6",
 "cited_by_count": 32,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.5694/j.1326-5377.1969.tb114670.x",
-"title": "A controlled trial of imipramine, amphetamine, pad-and-bell conditioning and random awakening in the treatment of nocturnal enuresis.",
-"authors": [
-"McConaghy N"
-],
-"journal": "The Medical journal of Australia",
-"journal_abbrev": "Med J Aust",
-"year": 1969,
-"date": "1969-08-02",
-"doi": "10.5694/j.1326-5377.1969.tb114670.x",
-"pmid": "4898146",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2417829737",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Amphetamine",
-"Arousal",
-"Child",
-"Child, Preschool",
-"Clinical Trials as Topic",
-"Conditioning, Psychological",
-"Enuresis",
-"Follow-Up Studies",
-"Humans",
-"Imipramine",
-"Placebos",
-"Psychotherapy"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.5694/j.1326-5377.1969.tb114670.x",
-"cited_by_count": 52,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T22:18:09Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Insufficient information in the record/abstract to determine whether placebo/nocebo effects or placebo arms were an explicit focus versus placebo used only as a comparator in a drug/behavioral efficacy trial.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reported a randomized controlled trial comparing imipramine, amphetamine, pad-and-bell conditioning, and random awakening for nocturnal enuresis; abstract not available to judge placebo focus or results.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"nocturnal enuresis",
-"bedwetting",
-"pad-and-bell",
-"conditioning",
-"imipramine",
-"amphetamine",
-"randomized trial"
-],
-"usage": {
-"input_tokens": 483,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 472,
-"cost_usd": 0.00121
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1969-08-02",
-"private_pdf": null
 },
 {
 "id": "doi:10.1126/science.165.3889.204-a",
@@ -578,141 +499,68 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1126/science.165.3889.204-a",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:18:17Z",
+"classified_at": "2026-09-05T19:54:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; MeSH terms (Placebos, Set, Cues, Discrimination) suggest expectancy/placebo phenomena but the available information is insufficient to confirm whether placebo/nocebo effects were the explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly refers to expectations shaping marijuana effects, indicating placebo/expectancy phenomena are the paper's subject (expectation effects on drug response).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper explicitly studied placebo/nocebo effects; MeSH terms suggest it involved marijuana, expectancy ('set'), cues and placebos.",
+"summary": "Examined marijuana effects in the context of participants' expectations, focusing on how expectancy influenced drug responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cannabis",
 "marijuana",
-"expectation",
+"expectancy",
+"placebo",
 "set",
-"cues"
+"1969"
 ],
 "usage": {
-"input_tokens": 447,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 514,
-"cost_usd": 0.00129
+"output_tokens": 628,
+"cost_usd": 0.00155
 }
 },
 "sources": [
 "pubmed_audit"
 ],
 "date_added": "1969-07-11",
-"private_pdf": null
-},
-{
-"id": "doi:10.2466/pr0.1969.24.3.973",
-"title": "Focussing on the client's expectations of treatment: brief report.",
-"authors": [
-"Krause MS",
-"Fitzsimmons M",
-"Wolf N"
-],
-"journal": "Psychological reports",
-"journal_abbrev": "Psychol Rep",
-"year": 1969,
-"date": "1969-06-01",
-"doi": "10.2466/pr0.1969.24.3.973",
-"pmid": "5809086",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2323209957",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Humans",
-"Interview, Psychological",
-"Motivation",
-"Psychotherapy",
-"Set, Psychology"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.2466/pr0.1969.24.3.973",
-"cited_by_count": 17,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T22:14:18Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests expectations in psychotherapy but does not make clear whether placebo/nocebo phenomena or experimental manipulation of expectations were the explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information (no abstract) to judge whether the report experimentally studied placebo/nocebo effects; title indicates a focus on client treatment expectations in psychotherapy.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"psychotherapy",
-"expectation",
-"treatment set",
-"client expectations"
-],
-"usage": {
-"input_tokens": 432,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 631,
-"cost_usd": 0.00152
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1969-06-01",
 "private_pdf": null
 },
 {
@@ -1099,51 +947,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0027059",
 "cited_by_count": 24,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:14:32Z",
+"classified_at": "2026-09-05T19:54:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title refers broadly to psychotherapy expectancies without clear indication that placebo/nocebo phenomena were the explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly studies psychotherapy expectancies in relation to patient symptomatology, indicating expectancy/placebo-related phenomena are the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"observational"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"provider_patient_interaction"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the study specifically examined placebo or nocebo phenomena; focused on the A-B variable, patient symptomatology, and psychotherapy expectancies.",
+"summary": "Examined the relationship between an A-B variable, patient symptom levels, and psychotherapy expectancies, focusing on expectancy effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"psychotherapy expectancy",
+"psychotherapy expectancies",
 "A-B variable",
-"psychotherapy",
-"patient symptomatology",
-"1969"
+"neurotic disorders",
+"psychiatric status rating"
 ],
 "usage": {
-"input_tokens": 452,
+"input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 598,
-"cost_usd": 0.00146
+"output_tokens": 830,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -1420,51 +1290,67 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0033-3182(69)71737-6",
 "cited_by_count": 22,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:14:25Z",
+"classified_at": "2026-09-05T19:54:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods/results provided—title suggests hypnosis/suggestion for warts but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly evaluates hypnosis and suggestion as a treatment, indicating suggestion/expectation effects on symptoms are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"dermatology"
+],
+"age_group": [
+"children_adolescents",
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint",
+"clinician_rated"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"sham_psychological"
+]
 },
-"summary": "Title indicated an empirical evaluation of hypnosis and suggestion to treat warts, but no abstract or details were available to judge whether placebo/nocebo effects were an explicit focus.",
+"summary": "Evaluated hypnosis and suggestion as treatments for warts, testing whether suggestion-based interventions produced clinical improvement.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"warts",
 "hypnosis",
 "suggestion",
-"warts",
 "psychosomatic",
-"1969"
+"dermatology"
 ],
 "usage": {
-"input_tokens": 430,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 536,
-"cost_usd": 0.00133
+"output_tokens": 905,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -1511,23 +1397,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf00401533",
 "cited_by_count": 25,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:18:02Z",
+"classified_at": "2026-09-05T19:55:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH indicate a controlled trial of chlordiazepoxide and expectation but insufficient information to determine whether placebo/nocebo phenomena were the study focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The title explicitly names 'expectation' together with chlordiazepoxide and hostility, indicating expectancy effects of drug/context were the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -1535,29 +1423,37 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "No abstract available; title and indexing suggested the trial examined chlordiazepoxide, expectation and hostility, but available information was insufficient to determine whether placebo/nocebo effects were the primary focus.",
+"summary": "Investigated how expectation about chlordiazepoxide influenced hostility.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chlordiazepoxide",
 "expectation",
 "hostility",
-"anxiety",
-"benzodiazepine",
-"controlled clinical trial",
-"set"
+"anxiolytic",
+"drug-expectancy",
+"1969",
+"salzman"
 ],
 "usage": {
-"input_tokens": 449,
+"input_tokens": 577,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 524,
-"cost_usd": 0.00131
+"output_tokens": 876,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1565,116 +1461,6 @@
 ],
 "date_added": "1969-01-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1002/cpt1969102217",
-"title": "Response of experimental pain to analgesic drugs. 3. Codeine, aspirin, secobarbital, and placebo.",
-"authors": [
-"Wolff BB",
-"Kantor TG",
-"Jarvik ME",
-"Laska E"
-],
-"journal": "Clinical pharmacology and therapeutics",
-"journal_abbrev": "Clin Pharmacol Ther",
-"year": 1969,
-"date": "1969-01-01",
-"doi": "10.1002/cpt1969102217",
-"pmid": "5775989",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Analgesia",
-"Analysis of Variance",
-"Aspirin",
-"Codeine",
-"Cold Temperature",
-"Electric Stimulation",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Pain",
-"Placebos",
-"Secobarbital"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:00Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates a drug comparison including a placebo control but does not make placebo/nocebo the stated focus, so inclusion cannot be determined.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Unclear from available record; compared codeine, aspirin, secobarbital and placebo on experimental pain using cold and electrical stimulation.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"experimental pain",
-"cold pain",
-"electric stimulation",
-"analgesics",
-"codeine",
-"aspirin",
-"secobarbital",
-"1969"
-],
-"usage": {
-"input_tokens": 436,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 472,
-"cost_usd": 0.0012
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1969-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2413883392",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/cpt1969102217",
-"cited_by_count": 39,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1001/archpsyc.1969.01740130086008",

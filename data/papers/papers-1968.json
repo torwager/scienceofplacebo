@@ -21,18 +21,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:58Z",
+"classified_at": "2026-09-05T19:51:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available to determine whether the article empirically studied placebo/nocebo effects or was a conceptual/commentary piece focused on placebo science.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly frames the placebo as the main topic ('The placebo: friend or foe'), indicating a discussion of placebo phenomena or their implications.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -48,27 +48,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Likely discussed conceptual, historical, and ethical aspects of the placebo in nursing, but the abstract and full text were not available to confirm scope or methods.",
+"summary": "Discusses the role and implications of the placebo in clinical care, framing it as potentially beneficial or harmful.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
-"history",
 "ethics",
-"placebo",
-"1968",
-"clinical practice"
+"clinical use",
+"placebo history",
+"1968"
 ],
 "usage": {
-"input_tokens": 358,
+"input_tokens": 536,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 702,
-"cost_usd": 0.00164
+"output_tokens": 564,
+"cost_usd": 0.00141
 }
 },
 "sources": [
@@ -121,23 +122,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.2044-8341.1968.tb02043.x",
 "cited_by_count": 86,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:17:29Z",
+"classified_at": "2026-09-05T19:51:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/nocebo effects or responses were an explicit focus of the study.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states expectations of patients and therapists influence psychotherapy outcomes, making expectancy effects the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -146,27 +149,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Examined the influence of patients' and therapists' expectations on psychotherapy outcomes, but no abstract or details were available to judge focus on placebo/nocebo.",
+"summary": "Examined how patients' and therapists' expectations affected psychotherapy outcomes, focusing on expectancy as an influence.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"expectancy",
 "psychotherapy",
-"expectation",
-"therapist-expectation",
-"patient-expectation",
-"therapeutic-alliance",
-"1968"
+"therapeutic alliance",
+"treatment expectations",
+"outcome prediction"
 ],
 "usage": {
-"input_tokens": 476,
+"input_tokens": 604,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 626,
-"cost_usd": 0.00152
+"output_tokens": 854,
+"cost_usd": 0.00201
 }
 },
 "sources": [
@@ -211,23 +215,25 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:59Z",
+"classified_at": "2026-09-05T19:51:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were an explicit focus of the trial.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The title explicitly states the paper concerned \"the critical role of a placebo,\" indicating placebo was a main subject rather than merely a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -240,22 +246,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; a 1968 cooperative clinical trial of 5-fluorouracil in bladder carcinoma referenced a placebo in the title but methods and aims regarding placebo effects were not provided.",
+"summary": "Reported a cooperative-group trial of 5-fluorouracil in bladder carcinoma and emphasized the critical role of a placebo in the study.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "5-fluorouracil",
-"bladder carcinoma",
-"placebo",
+"bladder cancer",
+"placebo-controlled trial",
 "cooperative group",
 "1968"
 ],
 "usage": {
-"input_tokens": 433,
+"input_tokens": 611,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00148
+"output_tokens": 656,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -269,108 +275,6 @@
 "landing_url": "https://doi.org/10.1002/1097-0142(196811)22:5<926::aid-cncr2820220505>3.0.co;2-u",
 "cited_by_count": 33,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1001/archpsyc.1968.01740110107014",
-"title": "Predicting the relief of anxiety with meprobamate. Nondrug factors in the response of psychoneurotic outpatients.",
-"authors": [
-"Uhlenhuth EH",
-"Lipman RS",
-"Rickels K",
-"Fisher S",
-"Covi L",
-"Park LC"
-],
-"journal": "Archives of general psychiatry",
-"journal_abbrev": "Arch Gen Psychiatry",
-"year": 1968,
-"date": "1968-11-01",
-"doi": "10.1001/archpsyc.1968.01740110107014",
-"pmid": "5680975",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2036766241",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Analysis of Variance",
-"Anxiety",
-"Anxiety Disorders",
-"Attitude of Health Personnel",
-"Body Weight",
-"Ethnicity",
-"Family Characteristics",
-"Female",
-"Humans",
-"Male",
-"Meprobamate",
-"Motivation",
-"Physician-Patient Relations",
-"Placebos"
-],
-"pub_types": [
-"Clinical Trial",
-"Comparative Study",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1001/archpsyc.1968.01740110107014",
-"cited_by_count": 10,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T22:14:38Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title mentions nondrug factors and MeSH lists Placebos, but it is unclear whether placebo/nocebo phenomena or placebo arms were an explicit focus or whether nondrug predictors of drug response were studied.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"anxiety_stress"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Reported on predictors of anxiety relief with meprobamate in psychoneurotic outpatients, focusing on nondrug factors; abstract and methods were not available to confirm placebo focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"meprobamate",
-"anxiety",
-"psychoneurotic",
-"physician-patient relations",
-"nondrug predictors"
-],
-"usage": {
-"input_tokens": 488,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 491,
-"cost_usd": 0.00125
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1968-11-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1002/bs.3830130402",
@@ -402,18 +306,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:08Z",
+"classified_at": "2026-09-05T19:51:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title explicitly addresses placebo effect of machines but no abstract or full text available to confirm empirical focus, design, or outcomes.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly names 'the placebo effect of machines', indicating placebo effects are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -421,112 +325,6 @@
 "study_focus": [
 "placebo_effect"
 ],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"children_adolescents",
-"adults"
-],
-"condition_domain": [
-"motor_function"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"sham_device"
-]
-},
-"summary": "Title indicated an early report on placebo effects produced by machines in human participants, but no abstract was available to detail methods or findings.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"electric stimulation",
-"motor skills",
-"sham machine",
-"1968",
-"behavioral science",
-"Traugott Schwitzgebel"
-],
-"usage": {
-"input_tokens": 259,
-"cache_read_input_tokens": 6016,
-"cache_creation_input_tokens": 0,
-"output_tokens": 597,
-"cost_usd": 0.00141
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1968-07-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2137359614",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/bs.3830130402",
-"cited_by_count": 24,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.2466/pms.1968.26.3.911",
-"title": "Experimenter expectancy effects in psychomotor performance.",
-"authors": [
-"Wessler RL"
-],
-"journal": "Perceptual and motor skills",
-"journal_abbrev": "Percept Mot Skills",
-"year": 1968,
-"date": "1968-06-01",
-"doi": "10.2466/pms.1968.26.3.911",
-"pmid": "5657748",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Feedback",
-"Female",
-"Humans",
-"Male",
-"Reaction Time",
-"Set, Psychology",
-"Time Factors"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:05Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.5,
-"rationale": "Title indicates study of experimenter expectancy on psychomotor performance but no abstract/full text available to confirm that placebo/nocebo phenomena or context-expectancy mechanisms were the explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -539,34 +337,34 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Investigated experimenter expectancy effects on participants' psychomotor performance; abstract not available to confirm methods or findings.",
+"summary": "Reported on placebo effects associated with machines.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"experimenter expectancy",
-"psychomotor performance",
-"observer-expectancy",
-"rosenthal effect",
-"reaction time"
+"machine",
+"placebo",
+"electric stimulation",
+"behavioral science",
+"1968"
 ],
 "usage": {
-"input_tokens": 379,
+"input_tokens": 565,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 913,
-"cost_usd": 0.00207
+"output_tokens": 682,
+"cost_usd": 0.00165
 }
 },
 "sources": [
 "pubmed_query"
 ],
-"date_added": "1968-06-01",
+"date_added": "1968-07-01",
 "private_pdf": null,
-"openalex_id": "https://openalex.org/W1979530947",
+"openalex_id": "https://openalex.org/W2137359614",
 "oa_status": "closed",
 "oa_pdf_url": null,
-"landing_url": "https://doi.org/10.2466/pms.1968.26.3.911",
-"cited_by_count": 15,
+"landing_url": "https://doi.org/10.1002/bs.3830130402",
+"cited_by_count": 24,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -594,18 +392,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:04Z",
+"classified_at": "2026-09-05T19:52:09Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text was available and the title alone does not establish whether placebo/nocebo phenomena were an explicit empirical focus.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly names 'expectancy effects' in psychotherapeutic practice, indicating placebo/expectation mechanisms are the paper's subject (mechanisms and harnessing expectancy).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -613,36 +411,49 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
+"population": [
+"clinicians_providers"
+],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"design": [
+"not_applicable"
 ],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"harnessing_placebo_clinical"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested a discussion of maximizing expectancy effects in psychotherapy but methods and results were not accessible.",
+"summary": "Discussed strategies to maximize expectancy effects in psychotherapeutic practice and how expectancy and suggestion can influence therapeutic outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "expectancy",
 "psychotherapy",
-"therapeutic-expectation",
-"placebo",
-"clinical-psychology"
+"suggestion",
+"therapeutic alliance",
+"placebo mechanisms"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 718,
-"cost_usd": 0.00168
+"output_tokens": 603,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -685,72 +496,70 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:48:12Z",
+"classified_at": "2026-09-05T19:52:23Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available to confirm whether placebo response/effect was an explicit focus versus being a comparator in a drug trial; title suggests placebo response may be central but information is insufficient.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states subtypes were defined by response to drugs and placebo, indicating placebo response was an object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"psychosis"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
 ],
 "outcome_measures": [
-"not_applicable"
+"clinician_rated"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct"
 ],
-"effects": [
-"not_applicable"
-],
+"effects": [],
 "mechanisms": [
-"other"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "No abstract available; title suggested the paper classified schizophrenic subtypes by response to drugs and placebo, but insufficient information was present to determine if placebo effects/responses were the study focus.",
+"summary": "Analyzed schizophrenic subtypes defined by differential responses to antipsychotic drugs and placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "schizophrenia",
-"placebo-response",
+"antipsychotic",
 "chlorpromazine",
 "fluphenazine",
-"thioridazine",
-"phenothiazines",
-"clinical trial",
-"1968"
+"placebo_response",
+"subtypes"
 ],
 "usage": {
-"input_tokens": 424,
+"input_tokens": 602,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 652,
-"cost_usd": 0.00156
+"output_tokens": 872,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -910,53 +719,66 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:04Z",
+"classified_at": "2026-09-05T19:52:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods provided; title implies a drug versus placebo trial but available text is insufficient to judge whether placebo/nocebo phenomena were a primary focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly focuses on both drugs and placebos and their evaluation in a research ward, indicating placebo phenomena are a subject of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient abstract available to determine whether placebo/nocebo was the study focus; listed as a clinical trial comparing drugs and placebos in a research ward setting.",
+"summary": "Reported evaluation of drugs and placebos in a research ward setting.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "research ward",
-"depression",
 "psychiatry",
-"drug vs placebo",
-"1968"
+"1968",
+"clinical trial"
 ],
 "usage": {
-"input_tokens": 418,
+"input_tokens": 596,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 538,
-"cost_usd": 0.00133
+"output_tokens": 655,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -993,52 +815,71 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:06Z",
+"classified_at": "2026-09-05T19:52:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone does not reveal whether placebo/nocebo phenomena were the explicit focus of the study.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses placebos in the management of diabetes, indicating placebo phenomena were the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"endocrine_hormonal"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract or full text was available; the title indicates placebos were used in diabetes management but it is unclear whether placebo effects/responses were the study focus.",
+"summary": "Examined the use of placebos in the management of diabetes, with placebos presented as the central topic of the study.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"diabetes mellitus",
-"hypoglycemic agents",
-"diet therapy",
-"placebo",
-"1968",
-"new england journal of medicine"
+"diabetes",
+"blood glucose",
+"hypoglycemia",
+"management",
+"1968"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 580,
-"cost_usd": 0.0014
+"output_tokens": 999,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -1085,50 +926,69 @@
 "Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:07Z",
+"classified_at": "2026-09-05T19:52:58Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available; title suggests placebo responsiveness and prior therapy were studied, but insufficient information to confirm that placebo/nocebo phenomena were the explicit analytic focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names placebo responsiveness and examines influence of previous therapy, making placebo response the study focus (meets inclusion rule 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"healthy_adult",
+"healthy_older_adult"
+],
+"age_group": [
+"adults",
+"older_adults"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"prior_treatment_experience"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information available; title indicated the study examined how previous therapy influenced placebo responsiveness, but no abstract or full text was provided to confirm methods or findings.",
+"summary": "Examined how previous therapy influenced individuals' responsiveness to placebo treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo responsiveness",
 "previous therapy",
+"placebo response",
 "clinical trial",
 "1968"
 ],
 "usage": {
-"input_tokens": 396,
+"input_tokens": 574,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 550,
-"cost_usd": 0.00135
+"output_tokens": 607,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -1179,53 +1039,66 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:11Z",
+"classified_at": "2026-09-05T19:53:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided and the title alone does not confirm whether placebo/nocebo phenomena were an explicit focus versus serving as a comparator in a drug trial.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly states 'placebo responses' in chronic alcoholics, making placebo response the stated subject (meets inclusion criterion 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"substance_use"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"addiction_craving"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "No abstract available; title suggested a comparison of drug and placebo responses in chronic alcoholics, but the record lacks detail to judge whether placebo response was an explicit study focus.",
+"summary": "Examined drug and placebo responses in chronic alcoholics.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "alcoholism",
 "chronic alcoholism",
-"placebo",
-"antidepressive agents",
-"chlordiazepoxide",
+"placebo response",
 "imipramine",
+"chlordiazepoxide",
 "1968"
 ],
 "usage": {
-"input_tokens": 443,
+"input_tokens": 621,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 604,
-"cost_usd": 0.00147
+"output_tokens": 786,
+"cost_usd": 0.00187
 }
 },
 "sources": [
@@ -1265,58 +1138,58 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:10Z",
+"classified_at": "2026-09-05T19:53:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title indicates placebo was studied but insufficient information to confirm that placebo/nocebo phenomena were the explicit analytic focus or the design used.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states the paper studied the placebo effect and a placebo test, indicating placebo phenomena were the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to judge methods or findings; the title indicated a study of the placebo effect but no abstract was available.",
+"summary": "Studied the placebo effect using a placebo test; no abstract or full text available for further details.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo test",
-"shapiro",
-"struening",
-"1968",
-"comprehensive psychiatry",
-"rorschach",
-"thematic apperception test",
-"suggestion"
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 577,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 774,
-"cost_usd": 0.00179
+"output_tokens": 671,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -1363,51 +1236,60 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:35Z",
+"classified_at": "2026-09-05T19:53:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates a 'placebo challenge' condition but it's unclear whether placebo/nocebo phenomena were an explicit focus or merely a control in an allergy challenge trial.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The title states the paper examined the effect of a 'placebo challenge' on the nasal membrane alongside pollen exposures, indicating placebo response/effect was an explicit object of study.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"allergy_respiratory"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"respiratory"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
 "mechanisms": [],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in abstract; reported comparisons of daily pollen challenge, environmental pollen exposure, and a placebo challenge on the human nasal membrane.",
+"summary": "Investigated effects of daily intranasal pollen challenge, environmental pollen exposure, and a placebo challenge on the nasal membrane in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "pollen challenge",
-"rhinitis",
 "nasal mucosa",
+"rhinitis",
 "placebo challenge",
-"seasonal allergy"
+"seasonal allergy",
+"1968"
 ],
 "usage": {
-"input_tokens": 420,
+"input_tokens": 598,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 530,
-"cost_usd": 0.00131
+"output_tokens": 706,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -1462,53 +1344,66 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/4866514",
 "cited_by_count": 13,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:18:51Z",
+"classified_at": "2026-09-05T19:53:43Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title and MeSH suggest set/setting effects of hallucinogens but it's unclear whether placebo/nocebo phenomena were an explicit focus or measured.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses how mental set and setting (expectation/context) influenced responses to hallucinogenic drugs, making placebo/expectation effects the paper's focus.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"healthy_adult"
+],
 "age_group": [
 "adults"
 ],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"sensory_perception",
+"cognition"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "Insufficient information to determine focus; paper investigated the influence of mental set and setting on hallucinogenic drug effects.",
+"summary": "Studied how mental set and setting influenced responses to hallucinogenic drugs.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hallucinogens",
 "set and setting",
-"tryptamines",
-"psychedelic",
-"mental-set"
+"hallucinogens",
+"psychedelics",
+"expectancy"
 ],
 "usage": {
-"input_tokens": 462,
+"input_tokens": 590,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00146
+"output_tokens": 729,
+"cost_usd": 0.00175
 }
 },
 "sources": [

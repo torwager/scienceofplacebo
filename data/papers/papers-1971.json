@@ -28,51 +28,76 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:20Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-05T19:56:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or methods available; title indicates placebo administration/timing is the topic but insufficient information to confirm whether placebo/nocebo effects were the explicit object of study.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Experimental manipulation of the temporal contiguity of placebo administration and attribution was the stated focus and linked to fear reduction, meeting criteria for studying placebo effects/mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"autonomic"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicated an experimental study relating timing (contiguity) of placebo administration to misattribution of effects in humans.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Tested whether timing (contiguity) of placebo administration relative to arousal affected fear reduction; overall sequence had no effect, but participants who misattributed both physiological and psychological symptoms to the placebo showed fear reduction.",
+"key_finding": "Only participants who misattributed both physiological and psychological symptoms to the placebo showed reduced fear; overall placebo-before-arousal sequence produced no main effect.",
+"sample_size": 96,
 "free_keywords": [
-"contiguity",
+"schachter theory",
 "misattribution",
-"placebo administration",
-"1971",
-"Perceptual and Motor Skills"
+"electric shock",
+"fear reduction",
+"young women",
+"arousal",
+"placebo timing"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 581,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 541,
-"cost_usd": 0.00133
+"output_tokens": 925,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -85,7 +110,8 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.2466/pms.1971.33.3f.1271",
 "cited_by_count": 7,
-"openalex_checked": "2026-09-02v2"
+"openalex_checked": "2026-09-02v2",
+"language": "eng"
 },
 {
 "id": "pmid:5111095",
@@ -183,107 +209,6 @@
 "pubmed_query"
 ],
 "date_added": "1971-11-01",
-"private_pdf": null
-},
-{
-"id": "pmid:4940586",
-"title": "Placebo gastric analysis.",
-"authors": [
-"Rider JA"
-],
-"journal": "The American journal of gastroenterology",
-"journal_abbrev": "Am J Gastroenterol",
-"year": 1971,
-"date": "1971-10-01",
-"doi": null,
-"pmid": "4940586",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Administration, Oral",
-"Adult",
-"Barium Sulfate",
-"Fasting",
-"Gastric Acidity Determination",
-"Gastric Juice",
-"Gastric Mucosa",
-"Glucose",
-"Histamine",
-"Humans",
-"Injections, Intramuscular",
-"Lactose",
-"Male",
-"Middle Aged",
-"Pepsin A",
-"Placebos",
-"Stomach",
-"Tropanes"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:22Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title/MeSH terms mention placebo and gastric measures but do not reveal whether placebo/nocebo phenomena were the explicit focus or merely a control; insufficient information to judge inclusion.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"nausea_gi"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to determine whether placebo/nocebo phenomena were the study's focus; the paper involved gastric measures in humans and mentioned placebos in MeSH.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"gastric acidity",
-"placebo",
-"histamine",
-"lactose",
-"barium sulfate",
-"gastric juice",
-"intramuscular injection"
-],
-"usage": {
-"input_tokens": 432,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 523,
-"cost_usd": 0.0013
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-10-01",
 "private_pdf": null
 },
 {
@@ -395,102 +320,6 @@
 "landing_url": "https://doi.org/10.1111/j.1365-2133.1971.tb14038.x",
 "cited_by_count": 12,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/0005-7967(71)90013-1",
-"title": "Systematic desensitization of an anger response.",
-"authors": [
-"Rimm DC",
-"DeGroot JC",
-"Boord P",
-"Heiman J",
-"Dillow PV"
-],
-"journal": "Behaviour research and therapy",
-"journal_abbrev": "Behav Res Ther",
-"year": 1971,
-"date": "1971-08-01",
-"doi": "10.1016/0005-7967(71)90013-1",
-"pmid": "5095083",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W1964652558",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Anger",
-"Behavior Therapy",
-"Conditioning, Psychological",
-"Galvanic Skin Response",
-"Heart Rate",
-"Humans",
-"Inhibition, Psychological",
-"Male",
-"Muscles",
-"Placebos",
-"Relaxation"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/0005-7967(71)90013-1",
-"cited_by_count": 46,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T22:16:54Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and MeSH terms list 'Placebos' but the title and terms suggest a behavioral desensitization trial without clear focus on placebo/nocebo phenomena.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to determine whether the study explicitly investigated placebo or nocebo effects; reported as a 1971 clinical trial of systematic desensitization for anger.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"systematic desensitization",
-"anger",
-"behavior therapy",
-"galvanic skin response",
-"heart rate"
-],
-"usage": {
-"input_tokens": 465,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 509,
-"cost_usd": 0.00128
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1971-08-01",
-"private_pdf": null
 },
 {
 "id": "pmid:4940648",
@@ -844,52 +673,62 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:52Z",
+"classified_at": "2026-09-05T19:57:24Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title implies discussion of placebo reactions but available text is insufficient to judge whether placebo/nocebo was the paper's primary focus or an incidental comment.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly questions whether adverse reactions are placebo reactions, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"adverse_events"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"nocebo_communication_disclosure"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title asked whether folic acid effects reflected toxicity or placebo reactions, but available text did not reveal whether placebo/nocebo phenomena were empirically analyzed or discussed conceptually.",
+"summary": "Discussed whether adverse reactions attributed to folic acid represented true toxicity or placebo/nocebo-related reactions.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "folic acid",
-"toxicity",
-"placebo reactions",
+"adverse reactions",
 "nocebo",
-"salter",
-"lancet 1971"
+"placebo reactions"
 ],
 "usage": {
-"input_tokens": 368,
+"input_tokens": 546,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 655,
-"cost_usd": 0.00155
+"output_tokens": 555,
+"cost_usd": 0.00139
 }
 },
 "sources": [
@@ -1035,25 +874,27 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:52Z",
+"classified_at": "2026-09-05T19:57:33Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title and MeSH terms indicate an experimental study of placebo and conditioning in humans and rats, but no abstract or full text was available to confirm that placebo/nocebo phenomena were an explicit analytic focus or the design met inclusion criteria.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states an experimental analysis of the placebo effect, indicating placebo phenomena are the paper's focus (meets inclusion rule 1/2).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
@@ -1064,25 +905,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Reported an experimental analysis of the placebo effect (no abstract available); MeSH lists humans, rats, conditioning, chlorpromazine and dextroamphetamine.",
+"summary": "Reported an experimental analysis focused on the placebo effect.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
 "conditioning",
+"placebo",
 "chlorpromazine",
 "dextroamphetamine",
 "rats",
-"humans",
-"1971",
-"Pihl"
+"humans"
 ],
 "usage": {
-"input_tokens": 389,
+"input_tokens": 567,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 804,
-"cost_usd": 0.00185
+"output_tokens": 545,
+"cost_usd": 0.00138
 }
 },
 "sources": [
@@ -1096,98 +935,6 @@
 "landing_url": "https://doi.org/10.1177/009127007101100203",
 "cited_by_count": 51,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1159/000391158",
-"title": "Research in hypnotherapy: studies in behavior organization.",
-"authors": [
-"Kline MV"
-],
-"journal": "Bibliotheca psychiatrica",
-"journal_abbrev": "Bibl Psychiatr",
-"year": 1971,
-"date": "1971-01-01",
-"doi": "10.1159/000391158",
-"pmid": "5554612",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W163245291",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Behavior",
-"Female",
-"Humans",
-"Hypnosis",
-"Mental Disorders",
-"Personality",
-"Placebos",
-"Psychoanalytic Theory",
-"Research",
-"Transference, Psychology"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"oa_status": "diamond",
-"oa_pdf_url": "https://doi.org/10.1159/000391158",
-"landing_url": "https://doi.org/10.1159/000391158",
-"cited_by_count": 1,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T22:15:27Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and title/MeSH mention placebos only; insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated hypnotherapy research and MeSH terms included placebos, but the paper could not be assessed for placebo/nocebo focus from the available information.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"hypnotherapy",
-"behavior organization",
-"placebos (MeSH)",
-"bibliotheca psychiatrica",
-"1971",
-"kline"
-],
-"usage": {
-"input_tokens": 446,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 628,
-"cost_usd": 0.00151
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1971-01-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1097/00006842-197101000-00005",
@@ -1427,123 +1174,5 @@
 ],
 "date_added": "1971-01-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.1002/cpt1971124691",
-"title": "Effects of placebo and flurazepam on sleep patterns in insomniac subjects.",
-"authors": [
-"Kales J",
-"Kales A",
-"Bixler EO",
-"Slye ES"
-],
-"journal": "Clinical pharmacology and therapeutics",
-"journal_abbrev": "Clin Pharmacol Ther",
-"year": 1971,
-"date": "1971-01-01",
-"doi": "10.1002/cpt1971124691",
-"pmid": "4327923",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Benzazepines",
-"Clinical Trials as Topic",
-"Electroencephalography",
-"Electromyography",
-"Electrooculography",
-"Humans",
-"Male",
-"Middle Aged",
-"Placebos",
-"Sleep Stages",
-"Sleep Wake Disorders",
-"Sleep, REM"
-],
-"pub_types": [
-"Clinical Trial",
-"Controlled Clinical Trial",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:35Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title contrasts placebo and flurazepam suggesting a trial but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus versus serving as a control for drug efficacy.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"sleep"
-],
-"outcome_measures": [
-"eeg",
-"other"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
-},
-"summary": "Compared placebo and flurazepam effects on sleep-stage patterns in adults with insomnia; abstract not available to determine focus on placebo phenomena.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"flurazepam",
-"insomnia",
-"polysomnography",
-"electrooculography",
-"electromyography",
-"sleep stages",
-"1971"
-],
-"usage": {
-"input_tokens": 430,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 940,
-"cost_usd": 0.00213
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1971-01-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2414851613",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/cpt1971124691",
-"cited_by_count": 49,
-"openalex_checked": "2026-09-02v2"
 }
 ]

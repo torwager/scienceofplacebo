@@ -251,18 +251,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:18Z",
+"classified_at": "2026-09-05T19:38:54Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title indicates discussion of placebos in clinical pain but insufficient information to determine whether empirical data or a commentary/review.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebos and pain in relation to physicians, indicating placebo phenomena and their clinical/ethical implications are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -271,25 +271,22 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
-"not_applicable"
+"clinicians_providers"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -298,21 +295,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed placebos, pain and physicians clinically or historically but insufficient detail to classify as empirical.",
+"summary": "Discussed the role of placebos in pain management and the relation between placebos and physicians.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "beecher",
-"placebo history",
-"analgesia",
-"physician attitudes"
+"1962",
+"clinical use",
+"physician attitudes",
+"pain management"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 736,
-"cost_usd": 0.00171
+"output_tokens": 576,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -428,101 +426,6 @@
 "landing_url": "https://doi.org/10.1016/0021-9681(62)90048-6",
 "cited_by_count": 70,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/0013-4694(62)90052-4",
-"title": "Electroencephalographic and behavioural correlates of an instrumental reward conditioned response in rabbits. A physiological and pharmacological study.",
-"authors": [
-"SADOWSKI B",
-"LONGO VG"
-],
-"journal": "Electroencephalography and clinical neurophysiology",
-"journal_abbrev": "Electroencephalogr Clin Neurophysiol",
-"year": 1962,
-"date": "1962-08-01",
-"doi": "10.1016/0013-4694(62)90052-4",
-"pmid": "14495936",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2033078289",
-"abstract": "",
-"keywords": [
-"BEHAVIOR",
-"ELECTROENCEPHALOGRAPHY",
-"LEARNING",
-"PSYCHOPHARMACOLOGY"
-],
-"mesh": [
-"Animals",
-"Behavior",
-"Conditioning, Operant",
-"Electroencephalography",
-"Learning",
-"Psychopharmacology",
-"Rabbits",
-"Reward"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/0013-4694(62)90052-4",
-"cited_by_count": 57,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T20:28:40Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided and title/MeSH indicate conditioning in rabbits but do not state that placebo/nocebo or conditioned placebo responses were the explicit focus, so inclusion cannot be determined from available information.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract; reported EEG and behavioral study of instrumental reward conditioning in rabbits with pharmacological manipulations.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"rabbits",
-"instrumental conditioning",
-"reward",
-"electroencephalography",
-"psychopharmacology",
-"operant learning"
-],
-"usage": {
-"input_tokens": 459,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 468,
-"cost_usd": 0.0012
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1962-08-01",
-"private_pdf": null
 },
 {
 "id": "pmid:21735876",
@@ -769,27 +672,29 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:25Z",
+"classified_at": "2026-09-05T19:39:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates a trial comparing perphenazine and placebo but it's unclear whether placebo/nocebo phenomena were an explicit focus or merely a control.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names the impact of 'placebo', indicating the placebo response/effect was an object of study rather than merely a control.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"pediatric_clinical"
 ],
 "age_group": [
 "children_adolescents"
@@ -798,15 +703,11 @@
 "other"
 ],
 "outcome_measures": [],
-"design": [
-"parallel_groups_rct"
-],
+"design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"other"
-],
+"mechanisms": [],
 "moderators": [
 "none_reported"
 ],
@@ -814,23 +715,22 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "No abstract available; reported a comparison of perphenazine and placebo in committed delinquent boys, but insufficient information to determine whether placebo effects were an explicit focus.",
+"summary": "Compared perphenazine and placebo in committed delinquent boys and reported effects associated with placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "perphenazine",
 "juvenile delinquency",
-"antipsychotic",
-"placebo",
-"1962",
-"male adolescents"
+"delinquent boys",
+"psychiatry",
+"1962"
 ],
 "usage": {
-"input_tokens": 389,
+"input_tokens": 567,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 772,
-"cost_usd": 0.00179
+"output_tokens": 693,
+"cost_usd": 0.00167
 }
 },
 "sources": [
@@ -974,39 +874,31 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:28Z",
+"classified_at": "2026-09-05T19:39:27Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title explicitly concerns placebo reactions in psychotherapy but no abstract or full text provided to determine whether this was empirical, a review, or a conceptual discussion, so inclusion cannot be judged.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names placebo reactions in psychotherapy, indicating placebo phenomena are the paper's subject (placebo responses in a psychotherapy context).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -1014,7 +906,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
@@ -1023,99 +917,29 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; paper's title indicated it discussed placebo reactions in psychotherapy, but methods and findings were not retrievable from the provided record.",
+"summary": "Discussed placebo reactions in psychotherapy, describing how suggestion, therapeutic context, and related factors influence patient responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychotherapy",
-"placebo reactions",
-"psychosurgery",
-"1962",
-"placebos"
+"placebo reaction",
+"placebo",
+"suggestion",
+"expectancy",
+"psychosurgery"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 751,
-"cost_usd": 0.00174
+"output_tokens": 679,
+"cost_usd": 0.00164
 }
 },
 "sources": [
 "pubmed_query"
 ],
 "date_added": "1962-06-01",
-"private_pdf": null
-},
-{
-"id": "pmid:20789412",
-"title": "Placebos for Comparison.",
-"authors": [],
-"journal": "British medical journal",
-"journal_abbrev": "Br Med J",
-"year": 1962,
-"date": "1962-05-05",
-"doi": null,
-"pmid": "20789412",
-"pmcid": "PMC1958500",
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:28Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available to determine whether placebo/nocebo phenomena were the study focus or merely discussed; insufficient information to judge inclusion.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether the paper empirically studied placebo or nocebo effects; no abstract available.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"placebo",
-"editorial",
-"bmj",
-"1962"
-],
-"usage": {
-"input_tokens": 353,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 486,
-"cost_usd": 0.00121
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1962-05-05",
 "private_pdf": null
 },
 {
@@ -1465,18 +1289,18 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 95,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:16:10Z",
+"classified_at": "2026-09-05T19:39:47Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; the title indicates a conceptual/model review of drugs and placebos but provides insufficient information to judge whether placebo/nocebo effects were an explicit empirical focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebos and suggests a model/theoretical design about drugs and placebos, meeting inclusion for placebo-focused scholarship (theory/model).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1484,41 +1308,43 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
+"trial_methodology_placebo_response",
 "history_conceptual"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Likely presented a conceptual or model-based review linking drug effects and placebo phenomena but no abstract or full text was available to confirm scope or findings.",
+"summary": "Proposes a model design relating drugs and placebos, discussing placebo-related concepts and methodology.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"drug-placebo model",
-"conceptual review",
-"1962",
-"psychological reports"
+"model design",
+"placebo theory",
+"drugs and placebos",
+"psychological reports",
+"1962"
 ],
 "usage": {
-"input_tokens": 158,
-"cache_read_input_tokens": 6144,
+"input_tokens": 542,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 656,
-"cost_usd": 0.00151
+"output_tokens": 603,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -1562,238 +1388,69 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1038/1931296a0",
 "cited_by_count": 47,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:28:50Z",
+"classified_at": "2026-09-05T19:40:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and MeSH terms mention humans and learning, so it's unclear whether placebo/nocebo or conditioned placebo-like responses were an explicit focus.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly addresses conditioning (a placebo/nocebo-relevant learning mechanism) producing adrenaline-induced anorexia, so placebo/nocebo mechanisms are the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"appetite_metabolism"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"classical_conditioning"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study explicitly examined placebo/nocebo phenomena or conditioned drug-related anorexia.",
+"summary": "Investigated conditioning of adrenaline-induced anorexia (learning effects of epinephrine on feeding) in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"adrenaline",
 "epinephrine",
 "anorexia",
+"feeding",
 "classical conditioning",
-"feeding"
+"learning",
+"1962",
+"russek"
 ],
 "usage": {
-"input_tokens": 425,
+"input_tokens": 553,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 718,
-"cost_usd": 0.00169
+"output_tokens": 1018,
+"cost_usd": 0.00232
 }
 },
 "sources": [
 "pubmed_audit"
 ],
 "date_added": "1962-03-31",
-"private_pdf": null
-},
-{
-"id": "doi:10.1038/1931188a0",
-"title": "Effects of vitamin B12, B6 and procaine on the conditioned escape response.",
-"authors": [
-"KIESEWETTER R",
-"ITTERHEIM R",
-"GEBHARD J"
-],
-"journal": "Nature",
-"journal_abbrev": "Nature",
-"year": 1962,
-"date": "1962-03-24",
-"doi": "10.1038/1931188a0",
-"pmid": "14455845",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2027506915",
-"abstract": "",
-"keywords": [
-"LEARNING/pharmacology",
-"PROCAINE/pharmacology",
-"VITAMIN B 12/pharmacology",
-"VITAMIN B 6/pharmacology"
-],
-"mesh": [
-"Corrinoids",
-"Humans",
-"Learning",
-"Procaine",
-"Vitamin B 12",
-"Vitamin B 6",
-"Vitamin B Complex"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "bronze",
-"oa_pdf_url": "https://www.nature.com/articles/1931188a0.pdf",
-"landing_url": "https://doi.org/10.1038/1931188a0",
-"cited_by_count": 3,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T20:29:13Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Only the title is available and mentions drugs and conditioned escape response but gives no information that placebo/nocebo phenomena were an explicit focus or that a placebo/control context was manipulated.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract was available; the 1962 paper appeared to test effects of vitamin B12, B6 and procaine on a conditioned escape response in humans, but did not indicate whether placebo/nocebo phenomena were studied.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"conditioned escape",
-"classical conditioning",
-"vitamin b12",
-"vitamin b6",
-"procaine",
-"1962"
-],
-"usage": {
-"input_tokens": 452,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 590,
-"cost_usd": 0.00144
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1962-03-24",
-"private_pdf": null
-},
-{
-"id": "pmid:14460737",
-"title": "The comparative effectiveness of six phenothiazine compounds, phenobarbital and inert placebo in the treatment of acutely ill patients: personality dimensions.",
-"authors": [
-"KURLAND AA",
-"MICHAUX MH",
-"HANLON TE",
-"OTA KY",
-"SIMOPOULOS AM"
-],
-"journal": "The Journal of nervous and mental disease",
-"journal_abbrev": "J Nerv Ment Dis",
-"year": 1962,
-"date": "1962-01-01",
-"doi": null,
-"pmid": "14460737",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"PLACEBOS",
-"TRANQUILIZING AGENTS/therapy"
-],
-"mesh": [
-"Humans",
-"Personality",
-"Phenobarbital",
-"Phenothiazines",
-"Placebos",
-"Tranquilizing Agents"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:30Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a drug-versus-placebo efficacy trial rather than a study explicitly focused on placebo/nocebo phenomena, so available information is insufficient to determine inclusion.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; 1962 clinical trial compared multiple phenothiazines, phenobarbital and inert placebo in acutely ill patients and mentioned personality dimensions.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"phenothiazine",
-"phenobarbital",
-"placebo",
-"personality",
-"antipsychotic",
-"acutely ill",
-"1962"
-],
-"usage": {
-"input_tokens": 411,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 493,
-"cost_usd": 0.00124
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1962-01-01",
 "private_pdf": null
 },
 {
@@ -2018,71 +1675,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:36Z",
+"classified_at": "2026-09-05T19:40:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title explicitly concerns the therapeutic significance of placebos but no abstract or full text was available to determine whether it presented original data, a review, or commentary, so inclusion cannot be judged.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states the paper is about the therapeutic effect of placebos, so placebo effects are the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient information was available; the paper's title addressed the therapeutic significance of placebos but no abstract was provided to determine whether it reported data or was a review/commentary.",
+"summary": "Discussed the therapeutic significance of placebo effects in clinical contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo effect",
-"therapeutic significance",
-"history",
+"placebo",
+"therapeutic effect",
 "1962",
-"oral surgery journal"
+"oral surgery"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 696,
-"cost_usd": 0.00163
+"output_tokens": 516,
+"cost_usd": 0.00132
 }
 },
 "sources": [
@@ -2348,52 +1986,68 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf01227009",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:29:23Z",
+"classified_at": "2026-09-05T19:40:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title describes classical conditioning of a vascular reaction to niacin in psychiatric patients, which could relate to placebo mechanisms but the paper's explicit focus on placebo/nocebo phenomena is unclear.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly reports a classical conditioning procedure (conditioned reflex) using nicotinic acid vascular reactions in mental patients, directly studying conditioning mechanisms relevant to placebo/nocebo research.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"classical_conditioning"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "Reported use of a conditioned reflex based on the vascular reaction to nicotinic acid to study nervous activity in psychiatric patients; abstract unavailable.",
+"summary": "Studied conditioned reflexes using the vascular reaction to nicotinic acid in psychiatric patients to investigate nervous system activity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"classical conditioning",
+"nicotinic acid",
 "niacin",
+"conditioned reflex",
 "vascular reaction",
 "psychiatric patients",
-"reflex",
-"1962"
+"classical conditioning"
 ],
 "usage": {
-"input_tokens": 466,
+"input_tokens": 594,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 781,
-"cost_usd": 0.00183
+"output_tokens": 820,
+"cost_usd": 0.00194
 }
 },
 "sources": [

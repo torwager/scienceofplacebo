@@ -3542,52 +3542,70 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:21:37Z",
+"classified_at": "2026-09-05T21:13:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title indicates measurement of treatment expectations for oral immunotherapy but does not reveal whether placebo/nocebo effects or responses were an explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly focuses on treatment expectations in patients referred for oral immunotherapy, which pertains to expectancy mechanisms relevant to placebo/nocebo science and qualifies as placebo_science_other (survey/measurement of expectations).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"immune_inflammation"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"survey_interview"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study focused on placebo/nocebo phenomena; title indicated measurement of treatment expectations among food-allergic patients referred for oral immunotherapy.",
+"summary": "Measured treatment expectations among food-allergic patients referred for oral immunotherapy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "oral immunotherapy",
 "food allergy",
 "treatment expectations",
-"desensitization",
-"allergens",
-"motivation"
+"desensitization"
 ],
 "usage": {
-"input_tokens": 409,
+"input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 435,
-"cost_usd": 0.00112
+"output_tokens": 848,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -6350,40 +6368,35 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:00Z",
+"classified_at": "2026-09-05T21:13:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates the paper addresses the nocebo effect in clinical practice but no abstract or full text was available to confirm whether it is an empirical study, systematic review, or a clinical narrative—insufficient information to be certain of inclusion.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the nocebo effect as the topic, so the paper is about nocebo phenomena (likely a clinical-practice review).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect",
-"placebo_science_other"
+"nocebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
 "clinicians_providers"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "adverse_events"
 ],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -6392,8 +6405,7 @@
 ],
 "mechanisms": [
 "nocebo_communication_disclosure",
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -6402,22 +6414,22 @@
 "not_applicable"
 ]
 },
-"summary": "Narrative article addressed the nocebo effect in current clinical practice and discussed implications for clinician communication and patient side-effect reporting.",
+"summary": "Reviewed the nocebo effect and its relevance to current clinical practice, focusing on how communication and clinical processes can produce adverse expectations and side effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nocebo",
-"communication",
 "informed consent",
 "side-effects",
-"clinician education"
+"communication",
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00209
+"output_tokens": 579,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -8031,92 +8043,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.ejvs.2020.09.011",
-"title": "The Choice of Sclerosant Is Clearly Important in the Treatment of C1 Disease, but Technique and Management of Patient Expectations Remain Keys to Success.",
-"authors": [
-"Gohel MS"
-],
-"journal": "European journal of vascular and endovascular surgery : the official journal of the European Society for Vascular Surgery",
-"journal_abbrev": "Eur J Vasc Endovasc Surg",
-"year": 2020,
-"date": "2020-10-09",
-"doi": "10.1016/j.ejvs.2020.09.011",
-"pmid": "33046390",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W3092062232",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Glucose",
-"Humans",
-"Motivation",
-"Polidocanol",
-"Sclerosing Solutions",
-"Telangiectasis"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.ejvs.2020.09.011",
-"cited_by_count": 0,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T16:15:14Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract and the item is a brief comment; title mentions expectations but provides insufficient information to determine whether placebo/nocebo effects were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Was a brief journal comment about sclerosant choice, technique, and managing patient expectations in C1 disease; full text unavailable to judge placebo focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"sclerotherapy",
-"polidocanol",
-"telangiectasia",
-"C1 disease",
-"patient expectations",
-"technique"
-],
-"usage": {
-"input_tokens": 468,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 509,
-"cost_usd": 0.00128
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2020-10-09",
-"private_pdf": null
-},
-{
 "id": "doi:10.1126/scitranslmed.aal2999",
 "title": "Why we need more research into the placebo response in psychiatry.",
 "authors": [
@@ -9116,91 +9042,6 @@
 "landing_url": "https://doi.org/10.1080/02699052.2020.1825807",
 "cited_by_count": 8,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.stem.2020.09.002",
-"title": "Balancing Expectations for Success in Stem Cell-Based Clinical Trials for Parkinson's Disease.",
-"authors": [
-"Lindvall O"
-],
-"journal": "Cell stem cell",
-"journal_abbrev": "Cell Stem Cell",
-"year": 2020,
-"date": "2020-10-01",
-"doi": "10.1016/j.stem.2020.09.002",
-"pmid": "33007236",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W3090806090",
-"abstract": "Upcoming clinical trials assessing transplantation of stem cell-derived dopaminergic neurons into the striatum in patients with Parkinson's disease could generate groundbreaking results on neuronal replacement in the human brain. However, as highlighted here, the road toward a clinically competitive treatment for this multisystem disorder will probably be long and winding.",
-"keywords": [],
-"mesh": [
-"Dopaminergic Neurons",
-"Embryonic Stem Cells",
-"Humans",
-"Motivation",
-"Parkinson Disease",
-"Stem Cell Transplantation"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "bronze",
-"oa_pdf_url": "http://www.cell.com/article/S1934590920304483/pdf",
-"landing_url": "https://doi.org/10.1016/j.stem.2020.09.002",
-"cited_by_count": 5,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T16:15:34Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Abstract discusses expectations for upcoming stem-cell trials but does not indicate that placebo/nocebo effects, responses, or related research are the explicit focus or that empirical data on placebo phenomena were collected.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Commented on expectations and challenges for upcoming stem cell-derived dopaminergic neuron transplantation trials in Parkinson's disease, urging balanced optimism.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"parkinson's disease",
-"stem cells",
-"dopaminergic neurons",
-"clinical trials",
-"expectations",
-"hype"
-],
-"usage": {
-"input_tokens": 495,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 632,
-"cost_usd": 0.00153
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2020-10-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.rbms.2020.08.004",
@@ -12935,23 +12776,25 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:31Z",
+"classified_at": "2026-09-05T21:14:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title implies expectations and placebo-related topic but insufficient information to determine whether placebo/nocebo effects or responses were the explicit focus or primary analyses.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names placebo and the impact of expectations on analgesic treatment outcomes, indicating placebo/expectation effects are the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
@@ -12959,31 +12802,43 @@
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"outcome_measures": [
+"not_applicable"
 ],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response",
+"harnessing_placebo_clinical"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title indicated a focus on how expectations influence analgesic treatment outcomes, but methods and results were not provided.",
+"summary": "Reviews the impact of expectations on placebo-related analgesic treatment outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "expectation",
 "analgesia",
-"placebo 2.0",
+"placebo",
 "treatment outcome",
-"bingel"
+"pain"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 737,
-"cost_usd": 0.00172
+"output_tokens": 615,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -14470,100 +14325,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1111/ced.14347",
-"title": "Treating cystic and conglobate acne with 13-cis-retinoic acid.",
-"authors": [
-"Yesudian PD"
-],
-"journal": "Clinical and experimental dermatology",
-"journal_abbrev": "Clin Exp Dermatol",
-"year": 2020,
-"date": "2020-08-13",
-"doi": "10.1111/ced.14347",
-"pmid": "32789894",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acne Conglobata",
-"Acne Vulgaris",
-"Animals",
-"Cysts",
-"Dermatologic Agents",
-"History, 20th Century",
-"Humans",
-"Isotretinoin",
-"Mice",
-"Models, Animal",
-"Papilloma",
-"Placebo Effect",
-"Skin Neoplasms",
-"Vitamin A"
-],
-"pub_types": [
-"Historical Article",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:42Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and MeSH includes 'Placebo Effect' but the title and metadata indicate a treatment/historical focus, so it's unclear whether placebo/nocebo phenomena are a primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; article title and indexing indicated historical treatment of severe acne with isotretinoin, and MeSH included 'Placebo Effect', but it is unclear whether placebo phenomena were an object of study.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"isotretinoin",
-"acne conglobata",
-"acne vulgaris",
-"history",
-"placebo effect (mesh)"
-],
-"usage": {
-"input_tokens": 429,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 577,
-"cost_usd": 0.00141
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2020-08-13",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W3049038946",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1111/ced.14347",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1016/j.maturitas.2020.07.011",
 "title": "Nocebo phenomena may be enhanced in aging: Implications for clinical practice.",
 "authors": [
@@ -15657,90 +15418,6 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/neu0000689",
 "cited_by_count": 8,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1002/jpen.1964",
-"title": "JPEN Journal Club 57. The Hawthorne Effect.",
-"authors": [
-"Koretz RL"
-],
-"journal": "JPEN. Journal of parenteral and enteral nutrition",
-"journal_abbrev": "JPEN J Parenter Enteral Nutr",
-"year": 2020,
-"date": "2020-07-30",
-"doi": "10.1002/jpen.1964",
-"pmid": "32696995",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Effect Modifier, Epidemiologic",
-"Humans",
-"Non-alcoholic Fatty Liver Disease",
-"Parenteral Nutrition",
-"Placebo Effect"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:51Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available and the item is a brief journal-club/comment about the Hawthorne effect with MeSH 'Placebo Effect', so insufficient information to confirm placebo/nocebo is the paper's primary subject.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Journal-club/commentary on the Hawthorne effect published in JPEN; no abstract available to determine focus on placebo/nocebo phenomena.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"hawthorne effect",
-"placebo effect",
-"observer effect",
-"trial participation"
-],
-"usage": {
-"input_tokens": 396,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00145
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2020-07-30",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W3044986649",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/jpen.1964",
-"cited_by_count": 1,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -21952,52 +21629,63 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:23:42Z",
+"classified_at": "2026-09-05T21:14:27Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title alone does not reveal whether placebo/nocebo phenomena were the paper's explicit focus or merely a discussion point.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly frames migraine prophylaxis effects as potentially due to placebo, indicating placebo effects are the paper's subject (discussion/analysis).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "narrative_review",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to judge; the title asked whether migraine prophylaxis effects are placebo, but no abstract was available to determine study focus or methods.",
+"summary": "Discusses whether the apparent benefits of migraine prophylaxis medications are attributable to placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
 "prophylaxis",
-"pediatrics",
 "placebo",
-"placebo effect",
-"clinical debate"
+"pediatrics",
+"treatment efficacy"
 ],
 "usage": {
-"input_tokens": 234,
-"cache_read_input_tokens": 6016,
+"input_tokens": 540,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00148
+"output_tokens": 621,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -26229,95 +25917,6 @@
 "oa_pdf_url": "https://doi.org/10.1016/j.neuroimage.2020.116811",
 "landing_url": "https://doi.org/10.1016/j.neuroimage.2020.116811",
 "cited_by_count": 10,
-"openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1590/1516-4446-2019-0772",
-"title": "Panacea, placebo or poison? Genetically guided treatment for depression.",
-"authors": [
-"Nurmi EL"
-],
-"journal": "Revista brasileira de psiquiatria (Sao Paulo, Brazil : 1999)",
-"journal_abbrev": "Braz J Psychiatry",
-"year": 2020,
-"date": "2020-04-06",
-"doi": "10.1590/1516-4446-2019-0772",
-"pmid": "32348435",
-"pmcid": "PMC7115457",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Antidepressive Agents",
-"Depressive Disorder",
-"Humans",
-"Pharmacogenomic Testing",
-"Placebo Effect",
-"Practice Guidelines as Topic",
-"United States",
-"United States Food and Drug Administration"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:24:21Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and MeSH terms include 'Placebo Effect' but it's unclear whether placebo/nocebo phenomena are a primary focus or a passing mention.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; likely discussed genetically guided antidepressant treatment and mentioned placebo effects, but focus on placebo/nocebo is unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"pharmacogenomics",
-"genetically-guided",
-"depression",
-"antidepressants",
-"placebo-effect",
-"practice-guidelines"
-],
-"usage": {
-"input_tokens": 411,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00158
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2020-04-06",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W3016175106",
-"oa_status": "diamond",
-"oa_pdf_url": "http://www.scielo.br/j/rbp/a/zVhcqWQ9y4tXRmQZyGrK3VB/?format=pdf&lang=en",
-"landing_url": "https://doi.org/10.1590/1516-4446-2019-0772",
-"cited_by_count": 1,
 "openalex_checked": "2026-09-02v2"
 },
 {
@@ -30634,50 +30233,69 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:24:56Z",
+"classified_at": "2026-09-05T21:14:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates placebo effect in cardioversion but available information is insufficient to determine whether placebo/nocebo phenomena were an explicit object of study (experimental or review).",
+"decision": "include",
+"confidence": 0.86,
+"rationale": "Title explicitly states the paper is about 'The placebo effect of direct current cardioversion', indicating placebo phenomena are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cardiovascular_bp"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Abstract was unavailable; the title suggested discussion of a placebo effect related to direct current cardioversion for atrial fibrillation, but there was insufficient information to determine study type or findings.",
+"summary": "Examined whether improvements after direct current cardioversion for atrial fibrillation could be attributed to a placebo effect rather than the intervention.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "atrial fibrillation",
-"cardioversion",
 "direct current cardioversion",
-"placebo effect"
+"DC cardioversion",
+"placebo effect",
+"recurrence"
 ],
 "usage": {
-"input_tokens": 387,
+"input_tokens": 565,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00154
+"output_tokens": 782,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -30717,51 +30335,65 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1213/ane.0000000000004643",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T16:25:58Z",
+"classified_at": "2026-09-05T21:14:58Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone does not confirm whether placebo/nocebo phenomena (expectation effects) were an explicit focus or merely background to a psychoeducation intervention.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly indicates influencing postoperative pain via patient psychoeducation (expectancy/suggestion manipulation), making placebo/expectation effects the paper's likely focus per inclusion rules.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"surgical_patients"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title implied a psychoeducation intervention aimed to influence postoperative pain, but it was unclear whether placebo/nocebo or expectation effects were the study's explicit focus.",
+"summary": "Studied whether patient psychoeducation to shape expectations influenced postoperative pain outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"postoperative pain",
 "psychoeducation",
+"preoperative counselling",
+"postoperative pain",
 "expectation",
-"anesthesia",
-"analgesia"
+"patient education"
 ],
 "usage": {
-"input_tokens": 412,
+"input_tokens": 540,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 593,
-"cost_usd": 0.00144
+"output_tokens": 845,
+"cost_usd": 0.00197
 }
 },
 "sources": [
@@ -30884,122 +30516,6 @@
 "landing_url": "https://doi.org/10.1123/ijspp.2019-0290",
 "cited_by_count": 24,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1097/md.0000000000019366",
-"title": "The efficacy and safety of acupuncture for perimenopause symptom compared with different sham acupuncture control groups: A protocol of systematic review and meta-analysis.",
-"authors": [
-"He Q",
-"Ren Y",
-"Wang Y",
-"Zhang F",
-"Zhang S"
-],
-"journal": "Medicine",
-"journal_abbrev": "Medicine (Baltimore)",
-"year": 2020,
-"date": "2020-03-01",
-"doi": "10.1097/md.0000000000019366",
-"pmid": "32150082",
-"pmcid": "PMC7478674",
-"openalex_id": null,
-"abstract": "BACKGROUND: Perimenopause is a period that every woman must go through, most people are more or less affected by perimenopausal symptoms, it to affect women's health, work, life, and economy. As acupuncture treatment is more and more increasing in perimenopausal symptoms, there have also been many clinical trials about it. But the results of the trials are inconsistent. Therefore, we will conduct a systematic review and meta-analysis of the safety and efficacy of perimenopausal symptoms treated with acupuncture. METHODS: The protocol followed Preferred Reporting Items for Systematic Reviews and Meta-Analyses Protocols. RCT study on different acupuncture interventions for perimenopausal symptoms will be searched in 8 databases (PubMed, EMBASE, the Cochrane Library, the web of science, CBM, CNKI, WAN FANG, and VIP). Besides, the search will also be performed on the clinical trial research platform if necessary. The primary outcome that will be extracted: the Flushes per 24 hours, the Frequency of hot flashes, the severity of hot flashes, the menopause-related symptom score, the treatment efficacy, the adverse event. Endnote software X8 will be used for study selection, STATA 13.0 and Review Manager software 5.3 will be used for analysis and synthesis. These studies selection, data extraction, and risk of bias assessment will be conducted by 2 independent reviewers. RESULTS: This study will provide the results: 1. the primary and secondary outcome indicators of different acupuncture intervention measures (traditional hand acupuncture, moxibustion, ear acupuncture, laser, acupressure points) for perimenopausal symptoms. 2. The effects of different control groups (medicine control, routine care, waiting, and sham acupuncture control) on the analysis results will be reported, especially the effects of different sham acupuncture control (invasive/noninvasive) on the analysis results. CONCLUSION: This systematic review and meta-analysis study hopes to provide useful evidence for better use of different types of acupuncture in treat perimenopausal symptoms and better design of control groups in related clinical trials. In addition, the research conclusion will be published in peer journals.OSF REGISTRATION NUMBER DOI 10.17605/OSF.IO/VZCKU Ethics and dissemination This conclusion of the study will be published in peer journals. The ethical approval is not required because there is no direct involvement of human.",
-"keywords": [],
-"mesh": [
-"Acupuncture Therapy",
-"Aged",
-"Control Groups",
-"Female",
-"Humans",
-"Meta-Analysis as Topic",
-"Middle Aged",
-"Perimenopause",
-"Systematic Reviews as Topic",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": null,
-"oa_pdf_url": null,
-"landing_url": null,
-"cited_by_count": null,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:25:21Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "This is a registered protocol for a systematic review of acupuncture efficacy that explicitly plans to compare different sham acupuncture control types, but placebo/sham effects are not the primary stated focus of the review.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "protocol",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report",
-"other"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"treatment_characteristics",
-"trial_characteristics"
-],
-"intervention_type": [
-"sham_acupuncture",
-"other"
-]
-},
-"summary": "Registered protocol for a systematic review and meta-analysis that planned to assess acupuncture efficacy for perimenopausal symptoms and to compare effects of different control groups, notably different sham acupuncture types.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"acupuncture",
-"sham acupuncture",
-"perimenopause",
-"hot flashes",
-"moxibustion",
-"systematic review protocol"
-],
-"usage": {
-"input_tokens": 901,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 832,
-"cost_usd": 0.00204
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2020-03-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1097/j.pain.0000000000001727",
@@ -35158,54 +34674,80 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:25:48Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-05T21:15:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a perspective on placebos in pediatric antidepressant use but does not reveal whether placebo/nocebo effects were the object of empirical study or a review, so inclusion cannot be determined.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Opinion/theory article specifically addresses placebo science (open-label placebo) in pediatric chronic pain and discusses mechanisms, ethics, and research needs, meeting inclusion rule 4.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"open_label_placebo",
+"provider_patient_interaction",
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"age",
+"prior_experience",
+"provider_characteristics",
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo",
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine focus; title suggested a perspective arguing that placebos can be beneficial in the context of antidepressant use for pediatric chronic pain.",
+"summary": "Argues that open-label placebos could be a promising adjunct or alternative to antidepressants for pediatric chronic pain but calls for controlled trials, attention to consent, parental involvement, and clinician placebo literacy before clinical implementation.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"open-label placebo",
 "pediatric chronic pain",
 "antidepressants",
-"placebo",
-"nocebo",
-"ethics",
-"clinical trials",
-"children",
-"youth"
+"placebo-by-proxy",
+"informed consent",
+"parental involvement"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 4747,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00178
+"output_tokens": 1094,
+"cost_usd": 0.00352
 }
 },
 "sources": [

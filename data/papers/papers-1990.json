@@ -1542,18 +1542,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:35:29Z",
+"classified_at": "2026-09-05T20:25:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided; title and MeSH suggest a commentary about placebo effects and physician–patient relations but insufficient information to confirm whether placebo is the study focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly references placebos and likely discusses placebo effects or their interpretation, so the paper's main subject is placebo science/commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1567,35 +1567,29 @@
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
+"design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
+"mechanisms": [],
 "moderators": [],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "Appeared to discuss placebo effects and physician–patient relations, but no abstract or full text was available to determine whether it reported original data or empirical placebo/nocebo findings.",
+"summary": "Commentary that discussed issues in interpreting placebo effects and cautioned clinicians about being misled by placebo-related findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo effect",
-"physician-patient relations",
-"editorial",
-"clinical practice"
+"placebo",
+"clinical interpretation",
+"physician-patient-relations",
+"bias"
 ],
 "usage": {
-"input_tokens": 363,
-"cache_read_input_tokens": 5888,
+"input_tokens": 6429,
+"cache_read_input_tokens": 0,
 "cache_creation_input_tokens": 0,
-"output_tokens": 770,
-"cost_usd": 0.00178
+"output_tokens": 738,
+"cost_usd": 0.00308
 }
 },
 "sources": [
@@ -3842,23 +3836,25 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 187,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:15Z",
+"classified_at": "2026-09-05T20:25:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available and the title suggests a theoretical piece about expectation in psychotherapy, so it's unclear whether placebo/nocebo phenomena are the explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names changing expectations as central to psychotherapy, indicating expectancy mechanisms (a placebo/nocebo-related topic) are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -3869,26 +3865,26 @@
 "effects": [],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"history_conceptual"
+"therapeutic_ritual_context"
 ],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether the paper empirically studied placebo/nocebo effects; title suggests a theoretical discussion of expectations in psychotherapy.",
+"summary": "Argued that changing patients' expectations is a central mechanism driving psychotherapy's effectiveness.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectation",
-"expectancy effects",
+"expectancy",
 "psychotherapy",
-"placebo-related theory"
+"expectation-change",
+"therapeutic-context"
 ],
 "usage": {
-"input_tokens": 146,
-"cache_read_input_tokens": 6144,
+"input_tokens": 530,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 595,
-"cost_usd": 0.00138
+"output_tokens": 1063,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -3921,50 +3917,56 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:35:51Z",
+"classified_at": "2026-09-05T20:25:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates discussion of the placebo effect but insufficient information to determine whether it is an empirical study, systematic review, or narrative/commentary focused on placebo science.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'The placebo effect', indicating the paper's primary subject is placebo phenomena (review/overview) per inclusion rule for reviews of placebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated a discussion of the placebo effect in a nursing journal but methods and focus (empirical vs. commentary) were not reported.",
+"summary": "Reviewed the placebo effect and its implications for clinical nursing practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
 "placebo effect",
 "magic pills",
-"clinical practice"
+"overview"
 ],
 "usage": {
-"input_tokens": 363,
+"input_tokens": 541,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.00129
+"output_tokens": 752,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -4239,52 +4241,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:35:47Z",
+"classified_at": "2026-09-05T20:26:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title mentions placebo but no abstract or full text available to confirm whether placebo/nocebo phenomena were an explicit focus or method in this animal study.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names placebo as an experimental factor affecting murine breast cancer, meeting inclusion for placebo/nocebo as the subject.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"cognition",
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"animal_experiment"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"other"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "No abstract available; title suggested an investigation of placebo and melatonin effects on murine breast cancer but available information was insufficient to judge focus on placebo/nocebo.",
+"summary": "Investigated placebo and melatonin effects on murine breast cancer across secular or circannual time frames.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "melatonin",
-"mouse",
+"murine",
 "breast cancer",
 "circannual",
 "seasonality",
-"placebo (unclear)"
+"secular"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 577,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 590,
-"cost_usd": 0.00143
+"output_tokens": 776,
+"cost_usd": 0.00184
 }
 },
 "sources": [

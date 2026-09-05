@@ -17,23 +17,25 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T16:55:11Z",
+"classified_at": "2026-09-05T19:20:44Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided for an 1843 review titled about 'expectancy and revulsion', so it's unclear whether placebo/nocebo phenomena were the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states treatment is deduced from 'methods of expectancy and revulsion', indicating the paper's focus is on expectancy/suggestion methods (placebo/nocebo-related) rather than using placebo as a mere comparator.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
@@ -41,28 +43,34 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "Insufficient available information to determine whether this 1843 review explicitly studied placebo or nocebo phenomena.",
+"summary": "Discusses treatment approaches based on expectancy and revulsion, presenting conceptual ideas about suggestion-based therapeutic methods.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "expectancy",
+"suggestion",
 "revulsion",
-"history",
-"1843",
-"british and foreign medical review",
-"medical history"
+"therapeutic ritual",
+"19th-century"
 ],
 "usage": {
-"input_tokens": 420,
-"cache_read_input_tokens": 5888,
+"input_tokens": 6436,
+"cache_read_input_tokens": 0,
 "cache_creation_input_tokens": 0,
-"output_tokens": 622,
-"cost_usd": 0.0015
+"output_tokens": 737,
+"cost_usd": 0.00308
 }
 },
 "sources": [
