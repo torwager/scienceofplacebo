@@ -1,6 +1,13 @@
 import os
 from pathlib import Path
 
+# local runs: pick up secrets from a gitignored .env (KEY=value lines); CI uses repository secrets
+_env = Path(__file__).resolve().parent.parent / ".env"
+if _env.exists():
+    for line in _env.read_text().splitlines():
+        if "=" in line and not line.startswith("#"):
+            k, v = line.split("=", 1); os.environ.setdefault(k.strip(), v.strip())
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 PAPERS_DIR = DATA / "papers"          # papers-YYYY.json shards (included records)
@@ -11,6 +18,7 @@ SITE_DATA = ROOT / "site" / "data"     # built artifacts served by the site
 CONTACT_EMAIL = os.environ.get("SOP_CONTACT_EMAIL", "torwager@gmail.com")
 TOOL_NAME = "scienceofplacebo"
 NCBI_API_KEY = os.environ.get("NCBI_API_KEY")  # optional, raises rate limit 3->10 req/s
+OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY")  # free key: 100k requests/day instead of the small anonymous allowance
 
 # PubMed query used for daily discovery and for historical backfill.
 # Tuned 2026-09-02: 90% recall against the 2,268 JIPS-curated PMIDs, ~22k hits all-time.

@@ -104,7 +104,7 @@ window.SOP = (function () {
     return `<article class="paper" data-id="${esc(r.id)}">
       <div class="title">${starBtn(r.id)}<a href="paper.html?id=${encodeURIComponent(r.id)}">${esc(r.t)}</a></div>
       <div class="meta"><span>${esc(r.a)}</span><span>${esc(r.j)}</span><span class="date">${fmtDate(r.d) || r.y || ""}</span>
-        ${isNew ? '<span class="badge new">new</span>' : ""}${r.sc === "adjacent" ? '<span class="badge adjacent" title="Placebo-related but not a study of placebo/nocebo effects or responses (e.g., attitudes, ethics, methodology)">adjacent</span>' : ""}${r.oa ? '<span class="badge oa" title="Open-access full text available">OA</span>' : ""}</div>
+        ${isNew ? '<span class="badge new">new</span>' : ""}${r.sc === "adjacent" ? '<span class="badge adjacent" title="Placebo-related but not a study of placebo/nocebo effects or responses (e.g., attitudes, ethics, methodology)">adjacent</span>' : ""}${r.oa ? '<span class="badge oa" title="Open-access full text available">OA</span>' : ""}${r.to ? '<span class="badge" title="No abstract exists for this record; included and tagged from the title alone">title only</span>' : ""}</div>
       ${r.s ? `<div class="summary">${esc(r.s)}</div>` : ""}
       <div class="chips">${chipsFor(r, true)}</div>
       <div class="links">${links.join("")}</div>
@@ -199,10 +199,38 @@ window.SOP = (function () {
     });
   }
 
+  // ---- export to reference managers (BibTeX, RIS, DOI list, CSV). Works from the slim index records.
+  function bibKey(r) { const sur = (r.au && r.au[0] ? r.au[0].split(" ")[0] : "anon").replace(/[^A-Za-z]/g, "").toLowerCase(); const w = (r.t || "").replace(/[^A-Za-z ]/g, "").split(" ").filter(x => x.length > 3)[0] || "paper"; return `${sur}${r.y || ""}${w.toLowerCase()}`; }
+  function authorsFull(r) { return (r.au || []).map(a => { const p = a.split(" "); return p.length > 1 ? `${p.slice(0, -1).join(" ")}, ${p[p.length - 1].split("").join(". ")}.` : a; }); }
+  function toBibtex(recs) {
+    const esc = t => String(t || "").replace(/[{}]/g, "");
+    return recs.map(r => `@article{${bibKey(r)},\n  title = {${esc(r.t)}},\n  author = {${authorsFull(r).join(" and ")}},\n  journal = {${esc(r.j)}},\n  year = {${r.y || ""}},${r.doi ? `\n  doi = {${r.doi}},` : ""}${r.pmid ? `\n  pmid = {${r.pmid}},` : ""}${r.u ? `\n  url = {${r.u}},` : ""}\n  note = {From Science of Placebo, scienceofplacebo.org}\n}`).join("\n\n");
+  }
+  function toRis(recs) {
+    return recs.map(r => ["TY  - JOUR", `TI  - ${r.t}`, ...authorsFull(r).map(a => `AU  - ${a}`), `JO  - ${r.j || ""}`, `PY  - ${r.y || ""}`, r.d ? `DA  - ${r.d.replace(/-/g, "/")}` : null, r.doi ? `DO  - ${r.doi}` : null, r.pmid ? `AN  - ${r.pmid}` : null, r.u ? `UR  - ${r.u}` : null, r.s ? `AB  - ${r.s}` : null, "DB  - Science of Placebo", "ER  - "].filter(Boolean).join("\n")).join("\n\n");
+  }
+  function toCsv(recs) {
+    const q = v => `"${String(v == null ? "" : v).replace(/"/g, '""')}"`;
+    return ["title,authors,journal,year,doi,pmid,url,summary,tags"].concat(recs.map(r => [r.t, (r.au || []).join("; "), r.j, r.y, r.doi, r.pmid, r.u, r.s, Object.entries(r.tags || {}).map(([ax, vs]) => vs.map(v => label(ax, v)).join("|")).join("; ")].map(q).join(","))).join("\n");
+  }
+  function toDois(recs) { return recs.map(r => r.doi ? "https://doi.org/" + r.doi : (r.pmid ? "PMID:" + r.pmid : r.t)).join("\n"); }
+  const EXPORTS = { bib: ["BibTeX (.bib): Zotero, Mendeley, Paperpile, JabRef", "text/x-bibtex", "bib", toBibtex], ris: ["RIS (.ris): EndNote, Zotero, Mendeley, Paperpile", "application/x-research-info-systems", "ris", toRis], doi: ["DOI list (.txt): paste into Zotero's identifier box or Paperpile's import", "text/plain", "txt", toDois], csv: ["CSV spreadsheet with tags", "text/csv", "csv", toCsv] };
+  function exportRefs(recs, fmt, name = "scienceofplacebo") {
+    const [, mime, ext, fn] = EXPORTS[fmt];
+    const blob = new Blob([fn(recs)], { type: mime + ";charset=utf-8" });
+    const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `${name}-${new Date().toISOString().slice(0, 10)}.${ext}`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  function exportMenu(id) {
+    return `<details class="exportmenu" id="${id}"><summary class="btn">Export ▾</summary><div class="menu-list" style="display:flex;position:absolute;right:0;min-width:330px">${Object.entries(EXPORTS).map(([k, v]) => `<a href="#" data-export="${k}">${esc(v[0])}</a>`).join("")}</div></details>`;
+  }
+  function bindExport(container, getRecs, name) {
+    container.addEventListener("click", e => { const a = e.target.closest("[data-export]"); if (!a) return; e.preventDefault(); const recs = getRecs(); if (!recs.length) return; exportRefs(recs, a.dataset.export, name); const d = a.closest("details"); if (d) d.open = false; });
+  }
+
   function nav() {
     const here = location.pathname.split("/").pop() || "index.html";
     document.querySelectorAll(".nav a").forEach(a => { if (a.getAttribute("href") === here) a.classList.add("active"); });
   }
 
-  return { state, loadCore, getJSON, chipsFor, paperCard, matches, list, starBtn, bindStars, updateListBadge, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, nav, chipColors, CARD_AXES, FILTER_AXES };
+  return { state, loadCore, getJSON, chipsFor, paperCard, matches, list, starBtn, bindStars, updateListBadge, exportRefs, exportMenu, bindExport, renderFilters, activeChips, toggle, filtersToQuery, filtersFromQuery, bindCardChips, label, esc, fmtDate, nav, chipColors, CARD_AXES, FILTER_AXES };
 })();
