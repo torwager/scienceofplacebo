@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Science of Placebo — paper</title>
+<title>Paper | Science of Placebo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <meta property="og:site_name" content="Science of Placebo">
-<meta property="og:title" content="Science of Placebo — paper">
+<meta property="og:title" content="Paper | Science of Placebo">
 <meta property="og:description" content="A living bibliography of placebo and nocebo research.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://scienceofplacebo.org/paper.html">
@@ -16,6 +16,7 @@
 <meta property="og:image:alt" content="A capsule half revealing a clinician and patient, with the title The science of placebo effects">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://scienceofplacebo.org/assets/og.jpg">
+<link rel="canonical" href="https://scienceofplacebo.org/paper.html">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="assets/app.css">
 </head>
@@ -44,7 +45,9 @@
   const shard = await SOP.getJSON(`data/papers/${slim.y || 0}.json`);
   const r = shard[id];
   const cls = r.classification || {}, tags = cls.tags || {}, scr = cls.screening || {};
-  document.title = r.title + " — Science of Placebo";
+  document.title = r.title + " | Science of Placebo";
+  const canon = document.querySelector('link[rel="canonical"]'); if (canon) canon.href = "https://scienceofplacebo.org/paper.html?id=" + encodeURIComponent(id);
+  const og = document.querySelector('meta[property="og:title"]'); if (og) og.content = r.title;
   const authors = (r.authors || []).map(a => typeof a === "string" ? a : (a.family + (a.given ? " " + a.given : ""))).join(", ");
   const links = [];
   if (r.doi) links.push(`<a class="btn" href="https://doi.org/${SOP.esc(r.doi)}" target="_blank" rel="noopener">Publisher ↗</a>`);

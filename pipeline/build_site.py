@@ -252,6 +252,16 @@ def main():
     core = [r for r in index if r["sc"] == "core"]
     core_recent = sorted(core, key=lambda r: (r["added"], r["d"]), reverse=True)[:config.FEED_CAP]
     (config.ROOT / "site" / "feed.xml").write_text(rss(core_recent))
+    # sitemap (section pages; paper pages are client-rendered and are added here once they are pre-rendered) + robots
+    today = time.strftime("%Y-%m-%d")
+    pages = [("", "daily", "1.0"), ("feed.html", "daily", "0.9"), ("database.html", "daily", "0.9"), ("bibliometrics.html", "weekly", "0.7"), ("network.html", "weekly", "0.7"),
+             ("newsevents.html", "daily", "0.6"), ("news.html", "daily", "0.6"), ("events.html", "weekly", "0.6"), ("resources.html", "monthly", "0.7"), ("discuss.html", "daily", "0.5"),
+             ("join.html", "monthly", "0.5"), ("picks.html", "daily", "0.5"), ("about.html", "monthly", "0.6")]
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm += [f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{today}</lastmod><changefreq>{f}</changefreq><priority>{pr}</priority></url>" for u, f, pr in pages]
+    sm.append("</urlset>")
+    (config.ROOT / "site" / "sitemap.xml").write_text("\n".join(sm))
+    (config.ROOT / "site" / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /data/\nSitemap: {SITE_URL}/sitemap.xml\n")
     print(f"site data: {len(index)} visible papers ({stats['n_core']} core), {len(by_year)} year shards, {len(review)} in review queue")
 
 
