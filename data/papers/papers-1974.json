@@ -251,51 +251,63 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:17Z",
+"classified_at": "2026-09-06T18:27:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title suggests a commentary on placebo inertness but it's unclear whether placebo/nocebo phenomena are the paper's explicit focus or merely a passing remark.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title directly addresses the placebo ('The \"inert\" placebo'), indicating placebo is the subject rather than a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "editorial_letter",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; a 1974 JAMA letter titled \"The 'inert' placebo\" that likely discussed the nature or composition of placebo controls but could not be assessed for focus.",
+"summary": "Commented on the concept and implications of the 'inert' placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo inert",
-"placebo composition",
-"contamination",
-"JAMA 1974",
-"letter"
+"placebo",
+"inert placebo",
+"ethics",
+"placebo_definition",
+"jama"
 ],
 "usage": {
-"input_tokens": 381,
+"input_tokens": 559,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00147
+"output_tokens": 677,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -460,54 +472,76 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:20Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:28:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title mentions both drugs and placebos but does not make clear whether placebo/placebo response was an explicit focus or only a control for caffeine efficacy.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Randomized four-group (drug/drug-disguised/placebo/no-drug) balanced-placebo design explicitly tested placebo (pill presence) effects on cognitive performance.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "cognition"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"behavioral_performance"
+],
+"design": [
+"parallel_groups_rct",
+"balanced_placebo"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"active_drug_context_manipulation"
+]
 },
-"summary": "Reported effects of caffeine and placebos on cognitive performance in adults, but abstract/full text were unavailable to determine whether placebo phenomena were a primary focus.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Randomized students to drug, disguised drug, placebo, or no-drug and found a significant interaction suggesting an active placebo (pill-presence) enhancement of paced sequential memory performance after re-analysis with outliers removed.",
+"key_finding": "Found a significant interaction between drug presence and pill presence, interpreted as an active placebo effect enhancing memory performance.",
+"sample_size": 60,
 "free_keywords": [
 "caffeine",
-"placebo",
-"cognitive performance",
-"mental recall",
-"psychological reports",
+"paced sequential memory",
+"balanced placebo",
+"Grubbs outlier",
+"capsule",
+"Howard University",
 "1974"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 714,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 642,
-"cost_usd": 0.00153
+"output_tokens": 866,
+"cost_usd": 0.00206
 }
 },
 "sources": [
@@ -564,52 +598,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0036940",
 "cited_by_count": 24,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:41Z",
+"classified_at": "2026-09-06T18:28:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available to determine whether the study explicitly manipulated or analyzed placebo/nocebo/expectation effects versus focusing on hypnosis as an intervention.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.62,
+"rationale": "Title indicates an experimental study of anticipation and pain control via hypnosis (expectation/suggestion) affecting physiological responses, making placebo/nocebo-related mechanisms (expectation/suggestion) the subject.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"autonomic"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Examined heart rate and blood pressure during cold pressor pain while participants anticipated pain and attempted pain control under hypnosis; abstract and methods were unavailable to judge placebo/nocebo focus.",
+"summary": "Tested how anticipation and hypnotic pain-control suggestions affected heart rate and blood pressure during a cold pressor task in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"cold pressor",
 "hypnosis",
+"cold pressor",
 "anticipation",
-"analgesia",
 "heart rate",
 "blood pressure"
 ],
 "usage": {
-"input_tokens": 466,
+"input_tokens": 594,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 632,
-"cost_usd": 0.00153
+"output_tokens": 922,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -642,51 +696,61 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:41Z",
+"classified_at": "2026-09-06T18:28:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title and MeSH suggest a paper about placebos but insufficient information to judge whether placebo effects/responses were an explicit study focus.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly names placebos, indicating the paper's primary subject is placebo phenomena (history/concept/clinical discussion) per inclusion rule 5.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; likely a short commentary about placebos in a nursing journal but full text was unavailable to confirm aims or methods.",
+"summary": "Discusses conceptual, historical, and clinical aspects of placebos in healthcare (nursing context).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebos",
+"placebo",
 "nursing",
 "suggestion",
-"1974",
-"commentary"
+"history",
+"1974"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 617,
-"cost_usd": 0.00147
+"output_tokens": 773,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -724,20 +788,20 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:27Z",
+"classified_at": "2026-09-06T18:28:41Z",
 "screening": {
 "decision": "include",
-"confidence": 0.4,
-"rationale": "Title indicates the paper explicitly studied placebo response in schizophrenia and its relation to Cattell personality factors, making placebo response the study focus despite missing abstract.",
+"confidence": 0.8,
+"rationale": "Title explicitly names the 'placebo response' in schizophrenic patients and relates it to Cattell personality factors, making placebo response the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -755,26 +819,21 @@
 "other"
 ],
 "outcome_measures": [
-"clinician_rated",
-"self_report"
+"self_report",
+"clinician_rated"
 ],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
+"design": [],
+"effects": [],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
 ],
 "moderators": [
 "personality_traits"
 ],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"intervention_type": []
 },
-"summary": "Examined placebo response in patients with schizophrenia and its association with Cattell personality factors.",
+"summary": "Studied the placebo response in patients with schizophrenia and its relationship to Cattell personality factors.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -782,16 +841,15 @@
 "cattell",
 "personality",
 "placebo response",
-"psychosis",
-"clinical trial",
+"placebo",
 "1974"
 ],
 "usage": {
-"input_tokens": 397,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 898,
-"cost_usd": 0.00204
+"output_tokens": 686,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -842,19 +900,19 @@
 "Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:21Z",
+"classified_at": "2026-09-06T18:28:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a methodological question about placebo matching, so insufficient information to determine if it reports empirical placebo/nocebo effects or is a methods paper.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses the validity of matched placebos, indicating placebo methodology/measurement is the paper's subject (placebo science).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
@@ -862,7 +920,7 @@
 "placebo_science_other"
 ],
 "article_type": "methods_measurement",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
@@ -873,23 +931,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Examined the validity of identically matched placebos (whether placebos are indistinguishable from active drugs); abstract not available to confirm methods or findings.",
+"summary": "Examines the validity and properties of identically matched placebos used in clinical trials, treating placebo matching as the paper's primary methodological focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
-"drug-blinding",
-"placebo-matching",
-"pill appearance",
-"taste discrimination",
-"packaging"
+"matching placebo",
+"placebo packaging",
+"drug taste"
 ],
 "usage": {
-"input_tokens": 438,
+"input_tokens": 616,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 746,
-"cost_usd": 0.00175
+"output_tokens": 581,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -937,19 +993,19 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:32Z",
+"classified_at": "2026-09-06T18:28:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available to confirm whether placebo/nocebo phenomena were the explicit focus or primary analysis, though the title implies a study of placebo effects.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly names 'the placebo effect' and links it to drug-name familiarity, indicating placebo phenomena are the paper's subject.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
@@ -959,58 +1015,46 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"cognition",
-"motor_function",
-"sensory_perception"
+"other"
 ],
-"outcome_measures": [
-"behavioral_performance",
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
 "treatment_cues_dose_route",
-"attention_cognitive_appraisal"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"prior_experience",
-"expectation_level"
+"treatment_characteristics"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"verbal_suggestion_only"
+"inert_pill_capsule"
 ]
 },
-"summary": "Insufficient abstract available; title indicated the study examined whether familiarity with drug names influenced placebo effects on memory, motor skills, or perception.",
+"summary": "Title indicated the paper examined whether drug-name familiarity influenced the placebo effect.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"drug-name",
-"brand-familiarity",
+"drug name",
+"brand familiarity",
+"suggestion",
 "placebo",
-"dextroamphetamine",
-"memory",
-"motor-skills",
-"visual-perception"
+"dextroamphetamine"
 ],
 "usage": {
-"input_tokens": 397,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1087,
-"cost_usd": 0.00242
+"output_tokens": 828,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -1050,51 +1094,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:51Z",
+"classified_at": "2026-09-06T18:29:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title implies discussion of placebo in dental pain but insufficient information to determine whether placebo effects were empirically studied or merely discussed.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly names the placebo effect as an aid to pain control in dentistry, making placebo effects the paper's subject (meets inclusion rule 4/1 depending on study type).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"acute_clinical_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested a discussion of using the placebo effect to aid pain control in dentistry, but methods and results were not available to judge.",
+"summary": "Addressed the placebo effect as an aid to controlling dental pain, focusing on placebo-related approaches in dentistry.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dentistry",
 "dental pain",
+"analgesia",
 "placebo",
-"anxiety",
 "1974"
 ],
 "usage": {
-"input_tokens": 368,
+"input_tokens": 546,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 557,
-"cost_usd": 0.00135
+"output_tokens": 669,
+"cost_usd": 0.00162
 }
 },
 "sources": [
@@ -1453,23 +1517,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:34Z",
+"classified_at": "2026-09-06T18:29:17Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone does not establish whether placebo/nocebo phenomena were the paper's focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly contrasts aspirin with placebo, indicating placebo phenomena are the paper's subject per inclusion rule for title clarity.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -1478,27 +1544,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"other"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether the article addressed placebo or nocebo effects; no abstract available.",
+"summary": "Discusses whether aspirin's reported benefits reflect true pharmacology or placebo-related effects and interpretations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "aspirin",
-"placebo",
+"analgesic",
+"placebo debate",
 "wonder drug",
-"1974",
-"di palma",
-"editorial"
+"1970s"
 ],
 "usage": {
-"input_tokens": 357,
+"input_tokens": 535,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 650,
-"cost_usd": 0.00154
+"output_tokens": 596,
+"cost_usd": 0.00147
 }
 },
 "sources": [
@@ -1907,51 +1974,62 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf01584686",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:02Z",
+"classified_at": "2026-09-06T18:29:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title/MeSH suggest discussion of suggestion/placebos but it's unclear whether placebo/nocebo effects are the paper's explicit focus or merely mentioned.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'suggestion', indicating the paper's subject is suggestion/expectancy mechanisms relevant to placebo phenomena.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Likely discussed the role of suggestion and placebos in psychiatry and psychotherapy, but the abstract is unavailable so specific aims and results are unclear.",
+"summary": "Discusses the resurgence and role of suggestion in psychiatry and psychology, framing suggestion/expectancy as an explanatory mechanism for clinical change.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "suggestion",
-"placebo",
-"psychiatry",
+"suggestibility",
+"expectation",
+"hypnosis",
 "psychotherapy",
-"1974"
+"placebo"
 ],
 "usage": {
-"input_tokens": 442,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 541,
-"cost_usd": 0.00134
+"output_tokens": 778,
+"cost_usd": 0.00185
 }
 },
 "sources": [

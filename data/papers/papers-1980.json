@@ -148,53 +148,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/6777992",
 "cited_by_count": 0,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:18Z",
+"classified_at": "2026-09-06T18:33:40Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were an explicit focus of the paper.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that nursing creates expectations for pain patients, indicating the paper focuses on expectation (placebo/nocebo) effects or mechanisms.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults",
+"older_adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information in the record to determine whether the paper empirically studied placebo or nocebo effects; title focused on nursing and patient expectations for pain.",
+"summary": "Discussed how nursing communication created patients' expectations about pain and its management, linking caregiver interaction to expectancy effects in pain patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
-"expectations",
+"expectation",
 "pain",
-"patient education",
-"clinical care"
+"patient_education",
+"caregiver_communication"
 ],
 "usage": {
-"input_tokens": 435,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 585,
-"cost_usd": 0.00143
+"output_tokens": 769,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -226,53 +246,69 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 75,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:34Z",
+"classified_at": "2026-09-06T18:33:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or methods available; title names placebo effects but insufficient information to confirm placebo/nocebo was the study's primary focus or the experimental design met inclusion criteria.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names positive and reverse placebo effects and links them to cue differences in self-perception, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cognition"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information in the record to confirm whether placebo/nocebo phenomena were the primary focus; title suggested an experimental study of positive and reverse placebo effects related to self-perception cues.",
+"summary": "Investigated how differences in cues used in self-perception produced positive and reverse placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "self-perception",
 "cues",
-"placebo effects",
-"reverse placebo",
 "social psychology",
-"JPSP",
-"1980"
+"expectancy",
+"placebo",
+"nocebo"
 ],
 "usage": {
-"input_tokens": 165,
-"cache_read_input_tokens": 6144,
+"input_tokens": 549,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 593,
-"cost_usd": 0.00138
+"output_tokens": 833,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -311,48 +347,47 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:15Z",
+"classified_at": "2026-09-06T18:34:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates focus on expectancy and hypnotic analgesia but insufficient information to determine whether placebo/nocebo phenomena were an explicit empirical focus or a conceptual review.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly focuses on expectancy effects and hypnotic analgesia, making placebo/expectation mechanisms the subject of the paper (meets inclusion rule on expectation/suggestion as mechanism).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"healthy_adult"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report"
 ],
 "design": [
-"not_applicable"
+"within_subject_experimental"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -361,23 +396,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "No abstract available; title suggested the paper addressed experimental designs and expectancy effects in hypnotic analgesia, but details were unavailable to judge focus on placebo/nocebo empirically.",
+"summary": "Studied experimental designs and expectancy effects in hypnotic analgesia, focusing on suggestion's role in producing analgesia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
 "analgesia",
 "expectancy",
-"experimental-design",
-"set",
-"hypnotic-analgesia"
+"suggestion",
+"experimental design"
 ],
 "usage": {
-"input_tokens": 397,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 708,
-"cost_usd": 0.00166
+"output_tokens": 877,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1292,91 +1326,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.2466/pr0.1980.46.3.973",
-"title": "Prognostic expectations and outcome of brief therapy.",
-"authors": [
-"Greer FL"
-],
-"journal": "Psychological reports",
-"journal_abbrev": "Psychol Rep",
-"year": 1980,
-"date": "1980-06-01",
-"doi": "10.2466/pr0.1980.46.3.973",
-"pmid": "7394114",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2057162484",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Community Mental Health Services",
-"Female",
-"Humans",
-"Male",
-"Mental Disorders",
-"Outcome and Process Assessment, Health Care",
-"Psychotherapy, Brief"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.2466/pr0.1980.46.3.973",
-"cited_by_count": 14,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:20Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title suggests study of prognostic expectations in brief psychotherapy but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated the paper examined prognostic expectations and brief psychotherapy outcomes, but it was unclear whether placebo/nocebo effects or responses were an explicit focus.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"psychotherapy",
-"expectations",
-"brief therapy",
-"prognosis"
-],
-"usage": {
-"input_tokens": 434,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 485,
-"cost_usd": 0.00123
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1980-06-01",
-"private_pdf": null,
-"language": "eng"
-},
-{
 "id": "doi:10.1192/bjp.136.6.562",
 "title": "Lateral response to suggestion in relation to handedness and the side of psychogenic symptoms.",
 "authors": [
@@ -1631,59 +1580,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:25Z",
+"classified_at": "2026-09-06T18:34:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and only title/MeSH terms indicate discussion of placebo, so insufficient information to judge whether it reported empirical placebo/nocebo effects or was a review/commentary.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "The title explicitly names placebo as the topic ('The potent placebo'), indicating placebo/placebo-response phenomena are the subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
 "other"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to determine methods or results; titled 'The potent placebo' (1980) and indexed with Placebos, Intractable Pain, and Nursing Care, suggesting a discussion of placebo in pain/nursing contexts.",
+"summary": "Title-focused record about placebo potency, likely discussed placebo responses in patients with intractable pain; no abstract available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "intractable pain",
 "nursing care",
 "placebo",
-"potent placebo",
+"potency",
 "1980"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 748,
-"cost_usd": 0.00174
+"output_tokens": 812,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -2824,157 +2785,64 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/7367740",
 "cited_by_count": 10,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:25Z",
+"classified_at": "2026-09-06T18:34:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest hypnosis and pain and mention placebos, but it's unclear whether placebo/nocebo phenomena were a primary focus or merely discussed.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses hypnotic suggestion/control of pain and psychological processes, which relates to expectation/suggestion mechanisms relevant to placebo/nocebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [
-"self_report",
-"other"
-],
-"design": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"other"
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper empirically examined placebo or nocebo effects; title indicated study of hypnotic control of pain and psychological processes.",
+"summary": "Discussed psychological processes by which hypnosis and suggestion controlled pain, clarifying mechanisms involved in hypnotic analgesia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
+"suggestion",
+"analgesia",
 "pain",
-"anesthesia",
-"placebo",
-"psychological processes",
-"Orne"
+"psychological processes"
 ],
 "usage": {
-"input_tokens": 458,
+"input_tokens": 586,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 812,
-"cost_usd": 0.00189
+"output_tokens": 895,
+"cost_usd": 0.00208
 }
 },
 "sources": [
 "pubmed_audit"
-],
-"date_added": "1980-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:6231811",
-"title": "On chronic effects of different drugs on the higher nervous activity in man. Placebo.",
-"authors": [
-"Hrbek J",
-"Macáková J",
-"Komenda S"
-],
-"journal": "Acta Universitatis Palackianae Olomucensis Facultatis Medicae",
-"journal_abbrev": "Acta Univ Palacki Olomuc Fac Med",
-"year": 1980,
-"date": "1980-01-01",
-"doi": null,
-"pmid": "6231811",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Adult",
-"Association",
-"Conditioning, Psychological",
-"Female",
-"Higher Nervous Activity",
-"Humans",
-"Male",
-"Placebos",
-"Time Factors",
-"Verbal Behavior"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:57Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title and MeSH terms mention placebo and conditioning in humans but no abstract or methods are available to determine whether placebo/nocebo phenomena were an explicit focus or experimentally isolated.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicated investigation of chronic drug effects and placebos on higher nervous activity in humans, but methods and whether placebo effects were a primary focus were unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"conditioning",
-"higher nervous activity",
-"placebos",
-"verbal behavior",
-"chronic drug effects"
-],
-"usage": {
-"input_tokens": 418,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 603,
-"cost_usd": 0.00146
-}
-},
-"sources": [
-"pubmed_query"
 ],
 "date_added": "1980-01-01",
 "private_pdf": null
@@ -3223,52 +3091,70 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:41Z",
+"classified_at": "2026-09-06T18:34:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates placebo beverages/expectancies but insufficient information to confirm placebo/nocebo was the explicit focus or the design.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states an empirical evaluation of expectancies for alcoholic beverages and their placebos, indicating placebo/expectancy effects are the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"placebo_food_drink"
+]
 },
-"summary": "No abstract available; title suggested an experimental investigation of alcohol expectancies and placebo alcoholic beverages but methods and findings were not reported here.",
+"summary": "Conducted an empirical evaluation of expectancy effects using alcoholic beverages and matched placebos to study subjective responses to alcohol.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol",
-"expectancy",
-"placebo_beverage",
 "alcohol placebo",
-"addictive behaviors",
-"1980"
+"expectancy",
+"beverage placebo",
+"subjective intoxication"
 ],
 "usage": {
-"input_tokens": 395,
+"input_tokens": 573,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 699,
-"cost_usd": 0.00164
+"output_tokens": 600,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -3564,23 +3450,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0022-3999(80)90020-3",
 "cited_by_count": 41,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:26Z",
+"classified_at": "2026-09-06T18:34:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or methods available; title indicates expectations and reported relief in low back pain but it's unclear whether placebo/nocebo phenomena or an experimental manipulation were the study's explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title indicates the study examined patient expectations and reported relief from low back pain, i.e., expectancy as a predictor of symptom response (placebo-response domain).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -3595,28 +3483,40 @@
 "outcome_measures": [
 "self_report"
 ],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"observational",
+"survey_interview"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title indicated the study examined patient expectations about treatment success and reported relief from low back pain, but methods and whether placebo/nocebo were the focus were not provided.",
+"summary": "Examined whether patients' expectations about treatment success predicted self-reported relief from low back pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "low back pain",
 "expectation",
 "treatment outcome",
-"MMPI",
-"patient attitudes"
+"self-reported relief",
+"patient beliefs",
+"psychosomatic"
 ],
 "usage": {
 "input_tokens": 193,
-"cache_read_input_tokens": 6144,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 843,
-"cost_usd": 0.00189
+"output_tokens": 598,
+"cost_usd": 0.0014
 }
 },
 "sources": [

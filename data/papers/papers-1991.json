@@ -518,51 +518,69 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:34:28Z",
+"classified_at": "2026-09-06T18:44:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title suggests a discussion about oat bran efficacy but insufficient information to judge whether placebo/placebo-response is an explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly asks whether oat bran's effects are a 'placebo', indicating the paper's focus is on placebo-related interpretation of oat bran effects.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"placebo_food_drink"
+]
 },
-"summary": "No abstract available; title implied a discussion of oat bran efficacy versus placebo but full text is needed to determine whether placebo phenomena were an explicit focus.",
+"summary": "Discusses whether reported benefits of oat bran reflect placebo effects rather than true biological efficacy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "oat bran",
 "dietary fiber",
 "cholesterol",
-"south african medical journal",
-"1991"
+"nutritional placebo",
+"efficacy skepticism"
 ],
 "usage": {
-"input_tokens": 380,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00144
+"output_tokens": 929,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -1888,18 +1906,18 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:34:42Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:44:39Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.42,
-"rationale": "No abstract or full text provided; title suggests a methods paper on single-subject controlled trials and MeSH lists 'Placebo Effect', but it's unclear whether placebo/nocebo is an explicit focus.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Paper is a methodological review about controlled single-subject (n-of-1) trials with explicit discussion of placebo effects and use of placebo controls, so placebo science is the main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1907,12 +1925,20 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "methods_measurement",
+"article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -1920,31 +1946,36 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"history_conceptual",
+"therapeutic_ritual_context"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "No abstract was available; likely discussed controlled single-subject (n-of-1) trial methodology and its value in clinical medicine, with possible mention of placebo effects.",
+"summary": "Discussed the value, methodology, and clinical use of randomised controlled single-subject (n-of-1) trials and their role in identifying placebo effects and individual treatment responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"single-subject",
 "n-of-1",
-"controlled trials",
-"methodology",
-"placebo effect",
-"BMJ 1991",
-"clinical medicine"
+"single-subject",
+"cimetidine",
+"dyspepsia",
+"fibrositis",
+"randomisation test",
+"placebo-controlled",
+"methodology"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 3447,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 696,
-"cost_usd": 0.00164
+"output_tokens": 609,
+"cost_usd": 0.00223
 }
 },
 "sources": [

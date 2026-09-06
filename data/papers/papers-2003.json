@@ -3248,18 +3248,18 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:20:02Z",
+"classified_at": "2026-09-06T18:49:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; title implies a discussion of placebo analgesia but insufficient information to confirm that placebo/nocebo phenomena were the paper's explicit focus or whether it reported empirical data.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses placebo analgesia as the subject, consistent with inclusion of reviews/theory on placebo effects (criterion 4).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3271,30 +3271,42 @@
 "species": "not_applicable",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discussed the potential role and considerations of placebo analgesia in clinical practice and research, but abstract/full text was unavailable to confirm specifics.",
+"summary": "Discussed the potential role and implications of placebo analgesia in clinical practice and pain management.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "analgesia",
-"placebo",
 "placebo analgesia",
 "pain",
-"new zealand medical journal"
+"clinical use",
+"placebo role"
 ],
 "usage": {
-"input_tokens": 401,
+"input_tokens": 579,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 597,
-"cost_usd": 0.00144
+"output_tokens": 1110,
+"cost_usd": 0.00251
 }
 },
 "sources": [
@@ -3334,51 +3346,75 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:20:05Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:50:05Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and the title alone does not confirm that placebo/nocebo effects or responses were the explicit focus.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Opinion/debate piece whose primary focus is on placebo responses, placebo effect interpretation, and trial methodology in antidepressant RCTs, meeting inclusion for placebo-science commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Paper argued that clinical trials of antidepressants produced meaningless results, but no abstract was available to judge whether placebo effects were a primary focus.",
+"summary": "Argues that antidepressant RCTs are producing misleading or uninformative results because placebo responses, publication bias, unrepresentative samples, and trial methodology undermine inferences about effectiveness.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"antidepressant",
-"clinical trials",
-"methodology",
-"placebo effect",
-"research design"
+"antidepressants",
+"randomized controlled trials",
+"placebo response",
+"publication bias",
+"Kirsch",
+"st john's wort",
+"hamilton rating scale"
 ],
 "usage": {
-"input_tokens": 410,
+"input_tokens": 5099,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 720,
-"cost_usd": 0.00169
+"output_tokens": 745,
+"cost_usd": 0.00291
 }
 },
 "sources": [
@@ -12037,20 +12073,20 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:21:13Z",
+"classified_at": "2026-09-06T18:50:18Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title and MeSH suggest focus on nocebo in headache but insufficient information to confirm empirical focus or study design.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the nocebo effect as the subject in relation to headaches, meeting inclusion (nocebo effects are the paper's topic).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -12059,7 +12095,7 @@
 "article_type": "case_report",
 "species": "human",
 "population": [
-"chronic_pain"
+"other_clinical"
 ],
 "age_group": [
 "adults"
@@ -12067,16 +12103,15 @@
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [
-"observational"
+"outcome_measures": [
+"self_report"
 ],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"nocebo_communication_disclosure",
-"social_observational_learning"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -12085,24 +12120,25 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; appears to present case reports and discussion of the nocebo effect in headache patients.",
+"summary": "Discussed nocebo effects in headaches and the possible role of suggestion and risk factors in producing adverse symptom reports.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "headache",
 "migraine",
 "nocebo",
-"case report",
 "suggestion",
 "adverse effects",
-"placebo effect"
+"risk factors",
+"female",
+"case report"
 ],
 "usage": {
-"input_tokens": 397,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 868,
-"cost_usd": 0.00198
+"output_tokens": 883,
+"cost_usd": 0.00206
 }
 },
 "sources": [

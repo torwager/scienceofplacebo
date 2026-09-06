@@ -364,55 +364,74 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0022-006x.53.6.839",
 "cited_by_count": 22,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:59:30Z",
+"classified_at": "2026-09-06T18:40:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or methods available and title alone (relaxation training and expectation) does not make clear whether placebo/placebo-effect processes were an explicit focus or merely part of a psychotherapy RCT.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly contrasts 'relaxation training and expectation', indicating expectancy effects were a focus in a treatment trial (expectation/suggestion mechanism under study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"depression",
+"other_clinical"
+],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
 "mood_depression"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Randomized trial of relaxation training and manipulated expectation for postpartum distress; abstract unavailable so the role of placebo/nocebo processes is unclear.",
+"summary": "Randomized trial that compared relaxation training with an expectation manipulation for postpartum distress (postnatal depressive symptoms).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "postpartum",
-"postnatal depression",
-"relaxation training",
-"expectation",
-"puerperal distress"
+"postnatal",
+"relaxation_training",
+"expectancy",
+"postpartum_distress",
+"perinatal",
+"randomized_trial"
 ],
 "usage": {
-"input_tokens": 452,
-"cache_read_input_tokens": 5888,
+"input_tokens": 196,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 716,
-"cost_usd": 0.00169
+"output_tokens": 753,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -684,52 +703,83 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:09Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:40:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title implies placebo-like effects of education but methods, design, and whether placebo/nocebo phenomena were the study focus cannot be determined from available information.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Study explicitly examined placebo-like effects of pedagogical procedures on self-selected behavioral problems and related improvements to expectations and social/instructional variables, making placebo phenomena the focus (placebo response in an educational context).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response",
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult",
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report",
+"behavioral_performance"
+],
+"design": [
+"single_group_pre_post",
+"observational"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"social_observational_learning",
+"provider_patient_interaction",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"expectation_level",
+"provider_characteristics",
+"none_reported"
+],
+"intervention_type": [
+"sham_psychological",
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicated an empirical study of placebo-like effects produced by education about behavior therapy, but methods and outcomes were not reported in the record provided.",
+"summary": "Observed that undergraduate students' self-selected behavioral problems improved following course-based behavior-therapy activities, with improvement linked to positive expectations and social/instructional factors, producing placebo-like effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"psychoeducation",
-"behavior_therapy",
-"placebo_like",
-"education_intervention",
-"psychotherapy",
-"expectation"
+"undergraduates",
+"behavior therapy education",
+"positive expectations",
+"help-seeking",
+"pedagogy",
+"placebo-like effects"
 ],
 "usage": {
-"input_tokens": 381,
+"input_tokens": 532,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 636,
-"cost_usd": 0.00151
+"output_tokens": 784,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -1335,51 +1385,68 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:14Z",
+"classified_at": "2026-09-06T18:40:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title suggests a conceptual/commentary treatment of biofeedback as a placebo, so content and whether placebo is the paper's explicit focus cannot be determined.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly frames biofeedback in terms of placebo mechanisms, making placebo the paper's central subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "not_applicable",
 "population": [],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"therapeutic_ritual_context",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; the 1985 article posed whether biofeedback might be considered a placebo, but full content and aims were not accessible.",
+"summary": "Discusses whether biofeedback operates via placebo mechanisms and the implications for clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "biofeedback",
 "placebo",
-"nursing_journal",
-"1985",
-"commentary"
+"nursing",
+"mechanism",
+"therapeutic ritual"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 683,
-"cost_usd": 0.00161
+"output_tokens": 889,
+"cost_usd": 0.00206
 }
 },
 "sources": [
@@ -1632,24 +1699,26 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:16Z",
+"classified_at": "2026-09-06T18:40:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and publication types list both case report and review, so it is unclear whether placebo phenomena were the paper's explicit focus or merely mentioned.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'placebo', indicating placebo phenomena are the subject rather than merely a comparator.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "case_report",
 "species": "human",
 "population": [],
 "age_group": [],
@@ -1661,23 +1730,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; likely discussed placebo use or ethics in a dental context (title suggests a commentary on placebo in dentistry).",
+"summary": "Discussed a 'solid gold' placebo in dental practice and its implications for placebo use and ethics.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dental",
-"placebo",
-"ethics",
 "temporomandibular",
-"denture",
+"ethics",
 "gold"
 ],
 "usage": {
-"input_tokens": 391,
+"input_tokens": 569,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 607,
-"cost_usd": 0.00146
+"output_tokens": 634,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -2403,52 +2470,63 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:19Z",
+"classified_at": "2026-09-06T18:41:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title/question is ambiguous, so insufficient information to judge whether placebo/nocebo phenomena were an explicit object of study.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly framed the therapeutic effects of megadose vitamin B6 as 'Effective therapy, placebo, or potentiator', making placebo the paper's subject.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "case_report",
 "species": "human",
-"population": [],
+"population": [
+"other_clinical"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Reported case observations about high-dose vitamin B6 and questioned whether benefits or harms reflected drug effects, placebo, or potentiation of neuropathy; abstract unavailable.",
+"summary": "Discussed whether clinical effects of megadoses of vitamin B6 represented true therapy, placebo response, or a cause of neuropathy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "pyridoxine",
 "vitamin b6",
-"megadose",
 "neuropathy",
-"case report",
+"megadose",
 "orthomolecular"
 ],
 "usage": {
-"input_tokens": 408,
+"input_tokens": 586,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 533,
-"cost_usd": 0.00132
+"output_tokens": 972,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -3148,27 +3226,33 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:22Z",
+"classified_at": "2026-09-06T18:41:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract available to determine whether the placebo control was an explicit focus (title mentions a 'placebo control' but unclear if placebo effects/responses were a primary aim).",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly compares behavioral, meditation, and placebo-control relaxation training procedures, making placebo control the subject of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
@@ -3177,22 +3261,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; compared behavioral, meditation, and a placebo-control relaxation training procedure in adults.",
+"summary": "Compared behavioral, meditation, and placebo-control relaxation training procedures in adults.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"relaxation training",
+"relaxation",
 "meditation",
 "placebo control",
-"comparative study",
-"relaxation therapy"
+"behavioral training",
+"relaxation therapy",
+"health education"
 ],
 "usage": {
-"input_tokens": 258,
-"cache_read_input_tokens": 6016,
+"input_tokens": 564,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 553,
-"cost_usd": 0.00132
+"output_tokens": 846,
+"cost_usd": 0.00198
 }
 },
 "sources": [

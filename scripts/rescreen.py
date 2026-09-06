@@ -17,7 +17,8 @@ try:
             done.add(j["id"])
 except FileNotFoundError:
     pass
-todo = [r for r in papers.values() if r["id"] not in done]
+todo = [r for r in papers.values() if r["id"] not in done
+        and not ((r.get("classification") or {}).get("input_mode") == "title_only" and (r.get("classification") or {}).get("prompt_version", "1") >= "2")]  # title-only decisions are made by resolve_review
 todo.sort(key=lambda r: -(r.get("year") or 0))
 print(f"{len(papers)} papers, {len(done)} done, {len(todo)} to re-screen with prompt {PROMPT_VERSION}", flush=True)
 lock = threading.Lock(); fh = open(OUT, "a"); stats = {"n": 0, "cost": 0.0, "t0": time.time(), "changed": 0}

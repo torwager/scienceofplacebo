@@ -975,23 +975,25 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:05:53Z",
+"classified_at": "2026-09-06T19:10:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "Only the title is available indicating open-label placebo effectiveness but the abstract/text are missing, so design and whether placebo/nocebo is the analytic focus cannot be confirmed.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states the paper explored the effectiveness of open-label placebos, making placebo phenomena the primary subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -1000,26 +1002,31 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"open_label_placebo"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"open_label_placebo"
+]
 },
-"summary": "Full text unavailable; title indicated an empirical investigation of open-label placebo effectiveness but design, sample, and outcomes were not provided.",
+"summary": "Investigated the effectiveness of open-label placebos.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "open-label placebo",
 "placebo",
-"pain",
-"olp",
-"placebo_effectiveness"
+"effectiveness",
+"rethinking placebo",
+"expectation",
+"ethical placebo"
 ],
 "usage": {
-"input_tokens": 380,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 642,
-"cost_usd": 0.00153
+"output_tokens": 655,
+"cost_usd": 0.0016
 }
 },
 "sources": [
@@ -5711,56 +5718,72 @@
 "oa_pdf_url": null,
 "landing_url": null,
 "cited_by_count": null,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:47:48Z",
+"classified_at": "2026-09-06T19:10:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests a review of open-label placebo hypoalgesia and moderators but content and study type are not verifiable from the available information.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly names open-label placebo hypoalgesia and asks what works for whom/which circumstances, indicating placebo effects/responses and moderators are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response",
+"placebo_science_other"
+],
 "article_type": "systematic_review",
 "species": "human",
 "population": [],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"open_label_placebo"
+"outcome_measures": [
+"self_report"
 ],
-"moderators": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"open_label_placebo",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"expectation_level",
+"provider_characteristics",
+"treatment_characteristics"
+],
 "intervention_type": [
 "open_label_placebo"
 ]
 },
-"summary": "Insufficient information in the record; title indicates a review of open-label placebo hypoalgesia examining what works for whom and in which circumstances.",
+"summary": "Reviews open-label placebo hypoalgesia and examined which contexts, moderators and mechanisms influence its effectiveness.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "open-label placebo",
 "hypoalgesia",
 "pain",
-"placebo moderators"
+"placebo mechanisms"
 ],
 "usage": {
-"input_tokens": 412,
+"input_tokens": 540,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 607,
-"cost_usd": 0.00146
+"output_tokens": 753,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -6805,18 +6828,18 @@
 "Research Support, U.S. Gov't, Non-P.H.S.",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:06:58Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:10:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title indicates a conceptual/methods piece about placebos and synthetic control arms but it's unclear whether placebo phenomena (effects/responses) are the primary subject or whether this is a trial-design commentary.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Commentary explicitly focuses on the role and ethics of placebo arms and proposes synthetic/external control arms as alternatives in trials of rare tumors, making placebo science the main subject (methodology and ethics).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6825,7 +6848,7 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -6835,7 +6858,9 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -6843,7 +6868,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -6852,21 +6879,25 @@
 "not_applicable"
 ]
 },
-"summary": "Argued for replacing traditional placebo arms with synthetic control arms in rare-tumor clinical trials and reconsidered the role of placebos in trial design.",
+"summary": "Argues that placebo arms in trials for rare metastatic tumors (exemplified by GIST) are often unethical or impractical and recommends using well-constructed synthetic/external control arms instead.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"synthetic_control",
-"rare_tumors",
-"clinical_trial_design",
-"placebo_arms"
+"synthetic control",
+"external comparator",
+"gastrointestinal stromal tumor",
+"GIST",
+"placebo arm",
+"rare tumors",
+"regulatory",
+"trial design"
 ],
 "usage": {
-"input_tokens": 406,
+"input_tokens": 5857,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 699,
-"cost_usd": 0.00165
+"output_tokens": 757,
+"cost_usd": 0.00313
 }
 },
 "sources": [
@@ -18804,51 +18835,63 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:08:10Z",
+"classified_at": "2026-09-06T19:10:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests analyses of COVID-19 vaccine placebo groups but available text is insufficient to judge whether placebo/nocebo phenomena were the paper's primary focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states the paper analyzed COVID-19 vaccine placebo groups, making placebo-group responses the subject of the paper (placebo-arm analyses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis"
+],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the paper analyzed placebo-group responses; title indicated analyses of placebo groups in COVID-19 vaccine studies.",
+"summary": "Analyzed placebo groups from COVID-19 vaccine studies to characterize responses in the placebo arms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "covid-19",
 "vaccine",
-"placebo_group",
-"vaccine_trials",
-"jamanetworkopen"
+"placebo group",
+"reactogenicity",
+"nocebo"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 552,
-"cost_usd": 0.00135
+"output_tokens": 606,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -21263,52 +21306,106 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:08:30Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:11:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.52,
-"rationale": "Title and journal metadata indicate a state-of-the-art review of placebo/nocebo in pain, but the provided abstract describes an analysis of antidepressant RCTs, creating ambiguity about whether placebo/nocebo in pain is the paper's focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative state-of-the-art review explicitly focused on placebo and nocebo effects/responses in experimental and chronic pain (meets inclusion rule 4/5), summarizing mechanisms, neurobiology, and clinical implications.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [
+"species": "not_applicable",
+"population": [
+"healthy_adult",
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"behavioral_performance",
+"fmri",
+"eeg",
+"pet_neurochemical",
+"pet_metabolism",
+"neuroendocrine",
+"immune_inflammatory",
+"genetic_molecular",
+"autonomic"
+],
+"design": [
 "not_applicable"
 ],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"open_label_placebo",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"neural_systems_circuits",
+"genetics_placebome",
+"provider_patient_interaction",
+"trial_methodology_placebo_response",
+"harnessing_placebo_clinical"
+],
+"moderators": [
+"prior_experience",
+"expectation_level",
+"provider_characteristics",
+"genetics",
+"sex_gender"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"saline_injection_infusion",
+"topical_cream",
+"sham_device",
+"sham_acupuncture",
+"sham_neurostimulation",
+"sham_surgery",
+"open_label_placebo",
+"verbal_suggestion_only",
+"active_drug_context_manipulation"
+]
 },
-"summary": "Title indicated a state-of-the-art review of placebo and nocebo effects in experimental and chronic pain, but the abstract described an analysis of antidepressant RCTs comparing placebo-controlled versus comparator trials, so the paper's true focus was unclear from available text.",
+"summary": "Provided a state-of-the-art narrative review of placebo and nocebo effects on experimental and chronic pain, summarizing study designs, psychological and neurobiological mechanisms, genetics, and clinical implications, finding consistent results in healthy volunteers but inconsistent evidence in chronic pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"mismatch_abstract",
-"antidepressant_rcts",
-"placebo_control_vs_comparator",
-"pain_placebo_review_title"
+"placebome",
+"open-hidden",
+"conditioning",
+"open-label placebo",
+"naloxone",
+"periaqueductal gray",
+"rostral anterior cingulate",
+"chronic low back pain"
 ],
 "usage": {
-"input_tokens": 858,
+"input_tokens": 17348,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 630,
-"cost_usd": 0.00162
+"output_tokens": 1152,
+"cost_usd": 0.00679
 }
 },
 "sources": [
@@ -26586,24 +26683,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:24Z",
+"classified_at": "2026-09-06T19:11:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; the title mentions placebo but there is insufficient information to determine whether placebo/nocebo phenomena were an explicit focus or merely an observation.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly reports on symptoms occurring after placebo treatment, so placebo/nocebo phenomena are the paper's subject (placebo-arm adverse/rebound symptoms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
@@ -26613,26 +26712,31 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; the title reported that rebound symptoms after COVID-19 occurred even among those who received placebo, but methods and focus on placebo/nocebo were not provided.",
+"summary": "Reported that rebound symptoms were common in COVID-19 even after placebo treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "covid-19",
 "rebound symptoms",
-"placebo",
 "placebo arm",
-"nocebo (uncertain)"
+"nocebo"
 ],
 "usage": {
-"input_tokens": 251,
-"cache_read_input_tokens": 6016,
+"input_tokens": 557,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 818,
-"cost_usd": 0.00185
+"output_tokens": 1048,
+"cost_usd": 0.00238
 }
 },
 "sources": [
@@ -27164,52 +27268,80 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:28Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:11:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or details were available to determine whether the paper empirically studied placebo/nocebo phenomena or merely used 'placebo' metaphorically.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Prospective cohort that administered placebo challenges as part of diagnostic provocation tests and reported rates of symptoms after placebo (nocebo), making placebo/nocebo the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"single_group_pre_post",
+"observational"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"emotion_anxiety_regulation",
+"prior_treatment_experience",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"prior_experience",
+"mood_anxiety_state"
+],
+"intervention_type": [
+"saline_injection_infusion"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study empirically tested placebo/nocebo effects or responses; only the title and bibliographic details were available.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Prospective cohort of 69 patients undergoing placebo-controlled drug provocation for suspected COVID-19 vaccine hypersensitivity found that 19/69 (27.5%) reported symptoms after placebo; most were later vaccinated uneventfully.",
+"key_finding": "19 of 69 patients (27.54%) experienced symptoms after placebo administration, and 67 of 69 were subsequently vaccinated without premedication.",
+"sample_size": 69,
 "free_keywords": [
-"covid-19",
-"vaccination",
-"perceived risk",
-"placebo",
+"drug provocation test",
+"COVID-19 vaccine",
 "nocebo",
-"vaccine hesitancy"
+"hypersensitivity",
+"polysorbate 80",
+"placebo-controlled challenge",
+"anxiety",
+"diagnostic provocation"
 ],
 "usage": {
-"input_tokens": 401,
+"input_tokens": 4711,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 678,
-"cost_usd": 0.0016
+"output_tokens": 936,
+"cost_usd": 0.0032
 }
 },
 "sources": [
@@ -28274,18 +28406,18 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:41Z",
+"classified_at": "2026-09-06T19:11:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a commentary on placebo labeling, so it's unclear whether empirical placebo/nocebo effects were studied or if this is a methodological/theoretical piece.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly discusses 'placebo interventions' and questions their nature, indicating placebo is the paper's main subject (placebo science/ethics/methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -28295,26 +28427,16 @@
 ],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes",
 "history_conceptual"
 ],
 "moderators": [
@@ -28324,23 +28446,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed problems with how interventions are labeled as placebos and the methodological or ethical implications for placebo research.",
+"summary": "Commented on how interventions labeled as placebos may be mischaracterized and examined implications for placebo research and practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo_definition",
-"methodology",
+"research_methods",
 "ethics",
-"mislabelled_placebo",
-"placebo_intervention",
+"deception",
 "medical_journal_of_australia"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 765,
-"cost_usd": 0.00177
+"output_tokens": 726,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -30363,55 +30484,72 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:09:55Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:11:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title suggests a brief letter about placebo response rates, so it's unclear whether placebo phenomena are the paper's primary focus or just a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Correspondence discusses and interprets findings from a meta-research study whose explicit focus was placebo response rates in cancer trials, making placebo response the topic of the piece.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "editorial_letter",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"species": "human",
+"population": [
+"cancer"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; published letter responding about placebo response rates in clinical trials.",
-"key_finding": null,
+"summary": "Letter responding to critique of a meta-research analysis of placebo response rates in cancer trials, noting overall 1% placebo response and higher rates in some sarcoma subgroups.",
+"key_finding": "Reported overall placebo objective response rate of 1% across included cancer trials, with higher (≈4%) rates in sarcoma trials driven partly by desmoid tumors.",
 "sample_size": null,
 "free_keywords": [
-"placebo response",
-"placebo rates",
-"letter",
-"response",
-"trial methodology"
+"placebo response rates",
+"desmoid tumor",
+"liposarcoma",
+"sarcoma",
+"meta-research",
+"oncology"
 ],
 "usage": {
-"input_tokens": 358,
+"input_tokens": 1639,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 591,
-"cost_usd": 0.00142
+"output_tokens": 943,
+"cost_usd": 0.00244
 }
 },
 "sources": [

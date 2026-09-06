@@ -25,51 +25,61 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:48Z",
+"classified_at": "2026-09-06T18:07:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Insufficient information (no abstract) to determine whether the paper experimentally studied placebo effects or only used placebo as a control; title suggests a focus but details are unavailable.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'placebo therapy' and states it is a clinical study, indicating placebo responses/effects were the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated a clinical study of placebo therapy dynamics but methods and outcomes were not reported in the provided record.",
+"summary": "Reported a clinical study that examined the dynamics of placebo therapy in patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo therapy",
 "clinical study",
 "1956",
-"dlin",
-"fischer"
+"dynamics",
+"history"
 ],
 "usage": {
-"input_tokens": 372,
+"input_tokens": 550,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 459,
-"cost_usd": 0.00116
+"output_tokens": 529,
+"cost_usd": 0.00134
 }
 },
 "sources": [
@@ -108,51 +118,70 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:14Z",
+"classified_at": "2026-09-06T18:07:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/nocebo phenomena were the paper's explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'placebos' indicating placebo is the paper's main subject (likely clinical use/ethics), so it meets inclusion as placebo science.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information available to determine whether the paper empirically studied placebo or nocebo effects; no abstract or full text provided.",
+"summary": "Discussed the use of placebos in clinical practice or research, focusing on placebo use rather than reporting empirical placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"placebo use",
-"1956",
-"burma medical journal",
-"lewis"
+"clinical use",
+"ethics",
+"history",
+"placebo practice"
 ],
 "usage": {
-"input_tokens": 360,
+"input_tokens": 538,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 616,
-"cost_usd": 0.00147
+"output_tokens": 613,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -188,51 +217,74 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:51Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:07:44Z",
 "screening": {
-"decision": "uncertain",
+"decision": "include",
 "confidence": 0.6,
-"rationale": "No abstract or full text provided; title and MeSH imply placebo-stress relationship but available text is insufficient to confirm whether placebo/nocebo was an explicit object of study or the design used.",
+"rationale": "The abstract explicitly makes placebo effectiveness the subject of the study, reporting that placebos varied with stress level, so placebo response/effect was a primary focus (empirical human study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"autonomic"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient information in the record to determine methods or results; the title suggested placebos might be more effective under higher stress.",
+"summary": "Reported that placebo treatments produced greater beneficial effects when subjects were under higher stress, suggesting placebo effectiveness scales with the significance of symptoms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
+"beechers",
+"1956",
 "stress",
-"beechER 1956",
 "placebo effectiveness",
-"classic placebo literature"
+"symptom significance"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 699,
-"cost_usd": 0.00164
+"output_tokens": 785,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -358,89 +410,6 @@
 "landing_url": "https://doi.org/10.1037/h0044068",
 "cited_by_count": 256,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:13365280",
-"title": "A case study of tetanus infection and the placebo.",
-"authors": [
-"SNELL P"
-],
-"journal": "Current researches in anesthesia & analgesia",
-"journal_abbrev": "Curr Res Anesth Analg",
-"year": 1956,
-"date": "1956-01-01",
-"doi": null,
-"pmid": "13365280",
-"pmcid": null,
-"abstract": "",
-"keywords": [
-"PLACEBOS",
-"TETANUS/case reports"
-],
-"mesh": [
-"Humans",
-"Medical Records",
-"Placebos",
-"Tetanus",
-"Tetanus Toxoid"
-],
-"pub_types": [
-"Case Reports",
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:53Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Insufficient information in the record (no abstract) to determine whether placebo phenomena were the primary focus or merely mentioned in a clinical case report.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "case_report",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; listed as a 1956 clinical case report linking a tetanus infection case with discussion of the placebo.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"tetanus",
-"case report",
-"placebo",
-"tetanus toxoid",
-"anesthesia analgesia",
-"1956"
-],
-"usage": {
-"input_tokens": 384,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 524,
-"cost_usd": 0.00129
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1956-01-01",
-"private_pdf": null
 },
 {
 "id": "pmid:13365276",

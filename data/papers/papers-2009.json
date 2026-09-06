@@ -11959,18 +11959,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:07:31Z",
+"classified_at": "2026-09-06T18:55:09Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest a commentary about physician use/attitudes toward placebos rather than an empirical placebo-effect study, so inclusion as empirical science is unclear.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "The title explicitly addresses placebo use, and MeSH includes 'Practice Patterns, Physicians', indicating the paper's main subject is placebo use in clinical practice (placebo science/attitudes).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -11989,12 +11989,8 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
@@ -12008,22 +12004,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; appears to be a commentary about physicians' use or attitudes toward placebos in clinical practice.",
+"summary": "Discussed the use of placebos in clinical practice and argued that sometimes prescribing or using placebos is appropriate.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo_prescribing",
-"physician_attitudes",
-"clinical_use",
-"medical_economics",
-"united_states"
+"placebo prescribing",
+"physician practice patterns",
+"clinical ethics",
+"medical economics",
+"opinion"
 ],
 "usage": {
-"input_tokens": 372,
+"input_tokens": 550,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 796,
-"cost_usd": 0.00183
+"output_tokens": 658,
+"cost_usd": 0.0016
 }
 },
 "sources": [
@@ -15286,24 +15282,24 @@
 "Journal Article",
 "Meta-Analysis"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:07:35Z",
+"classified_at": "2026-09-06T18:55:23Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract available and only bibliographic metadata (title and MeSH terms) suggest a meta-analytic focus on expectation/placebo in antidepressant trials, so inclusion is plausible but not verifiable from available text.",
+"decision": "include",
+"confidence": 0.73,
+"rationale": "Title explicitly states the paper examined how expectations influence antidepressant response (placebo/expectancy effects in depression), and publication type lists meta-analysis.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "meta_analysis",
 "species": "human",
@@ -15323,38 +15319,35 @@
 "meta_analytic"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics",
 "expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"verbal_suggestion_only"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "No abstract available; title and MeSH terms indicated a meta-analysis examining how expectations influenced antidepressant response and placebo effects in major depression trials.",
+"summary": "Meta-analytic paper examining how patient expectations influenced antidepressant response across trials, focusing on expectancy/placebo-related effects in depression.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "antidepressant",
 "expectancy",
-"placebo",
-"major depressive disorder",
-"randomized controlled trials",
+"depression trials",
+"placebo response",
 "meta-analysis"
 ],
 "usage": {
-"input_tokens": 414,
+"input_tokens": 592,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 897,
-"cost_usd": 0.00204
+"output_tokens": 614,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -21013,41 +21006,42 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:21Z",
+"classified_at": "2026-09-06T18:55:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.55,
-"rationale": "No abstract or full text provided and the title/questions suggest placebo is discussed but it's unclear whether placebo effects were the explicit focus or empirically studied.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly asks whether singing warm-ups effects are physiological, psychological, or placebo, making placebo mechanisms the paper's subject per instructions for title-only records.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"healthy_adult"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"behavioral_performance"
 ],
 "design": [
-"not_applicable"
+"within_subject_experimental"
 ],
 "effects": [
 "not_applicable"
@@ -21060,26 +21054,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"sham_psychological",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Examines whether benefits from singing warm-ups arise from physiological, psychological, or placebo mechanisms.",
+"summary": "Investigated whether benefits of singing warm-ups were due to physiological, psychological, or placebo mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"singing",
-"warm-ups",
 "voice",
-"voice quality",
+"singing warm-up",
+"vocal training",
 "placebo",
-"placebo effect"
+"expectation"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 803,
-"cost_usd": 0.00185
+"output_tokens": 750,
+"cost_usd": 0.00179
 }
 },
 "sources": [

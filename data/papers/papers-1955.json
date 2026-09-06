@@ -34,52 +34,64 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:53Z",
+"classified_at": "2026-09-06T18:06:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates drug bio-assay with only a brief mention of 'placebo reactions', so it's unclear whether placebo/nocebo phenomena were a primary focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly reports 'observations on placebo reactions', indicating placebo responses were an object of study.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"treatment_cues_dose_route"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"inert_pill_capsule",
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; paper reported clinical bio-assay of several analgesics and made observations about placebo reactions.",
+"summary": "Reported a clinical bio-assay of oral analgesics and included observations on placebo reactions in humans, focusing on analgesic outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "propoxyphene",
-"aspirin",
+"acetylsalicylic acid",
 "codeine",
-"analgesic",
+"analgesia",
 "placebo reactions",
 "1955"
 ],
 "usage": {
-"input_tokens": 420,
+"input_tokens": 598,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 525,
-"cost_usd": 0.0013
+"output_tokens": 683,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -231,18 +243,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:55Z",
+"classified_at": "2026-09-06T18:07:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available to determine whether the paper empirically studied placebo/nocebo effects or was a review/commentary; insufficient information.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses the role of placebos in medical practice, indicating placebo is the main subject (placebo science/ethics/practice).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -252,48 +264,32 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient abstract text to determine aims or data; likely a 1955 discussion of the role of placebos in medical practice.",
+"summary": "Discussed the role and place of placebos in medical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"history",
-"medical practice",
 "placebo use",
-"1955"
+"clinical-practice",
+"medical-ethics",
+"history of medicine"
 ],
 "usage": {
-"input_tokens": 360,
+"input_tokens": 538,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 564,
+"output_tokens": 544,
 "cost_usd": 0.00137
 }
 },

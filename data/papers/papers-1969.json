@@ -392,52 +392,73 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:50Z",
+"classified_at": "2026-09-06T18:24:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided to determine whether placebo/nocebo phenomena were an explicit focus despite MeSH term 'Placebos' and a controlled clinical trial label.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly names the placebo response in angina pectoris, indicating the placebo phenomenon was the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"cardiovascular"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cardiovascular_bp"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; the 1969 controlled clinical trial mentioned placebos and angina pectoris but the focus on placebo/nocebo phenomena could not be determined from the citation alone.",
+"summary": "Reported new observations about the placebo response in patients with angina pectoris.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"angina pectoris",
-"placebo",
-"controlled clinical trial",
-"physician-patient relations",
+"angina",
+"placebo response",
+"cardiology",
 "1969",
-"am j cardiol"
+"angiography",
+"chest pain"
 ],
 "usage": {
-"input_tokens": 394,
+"input_tokens": 572,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 555,
-"cost_usd": 0.00136
+"output_tokens": 902,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -488,24 +509,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1126/science.165.3889.204-a",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:13Z",
+"classified_at": "2026-09-06T18:24:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title/MeSH suggest expectancy/placebo themes but it's unclear whether placebo/nocebo was an explicit focus or merely a comparator in this clinical trial.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly refers to expectations shaping marihuana effects, indicating expectancy/placebo phenomena were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -514,29 +535,36 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"placebo_food_drink",
+"other"
+]
 },
-"summary": "Insufficient information in the record to determine whether placebo/nocebo was the study focus; title and MeSH hint at expectancy effects with marijuana but full text is needed.",
+"summary": "Examined how expectations influenced marijuana's effects, indicating expectancy shaped subjective responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cannabis",
-"marijuana",
+"set",
 "expectancy",
-"placebo",
-"set"
+"1969",
+"marijuana"
 ],
 "usage": {
-"input_tokens": 447,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 503,
-"cost_usd": 0.00126
+"output_tokens": 903,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -929,23 +957,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0027059",
 "cited_by_count": 24,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:16Z",
+"classified_at": "2026-09-06T18:24:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title mentions psychotherapy expectancies but it's unclear whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'psychotherapy expectancies' as a focus, indicating expectation/suggestion effects on symptoms are studied (meets inclusion rule on expectancy effects).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -954,27 +984,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated an empirical study relating an A–B variable to patient symptomatology and psychotherapy expectancies, but placebo/nocebo focus could not be determined.",
+"summary": "Examined the relationship between the A–B variable, patient symptomatology, and psychotherapy expectancies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychotherapy expectancies",
-"patient role",
-"A-B variable",
-"psychotherapy",
-"symptomatology",
+"a-b variable",
+"patient symptomatology",
+"expectation effects",
 "1969"
 ],
 "usage": {
-"input_tokens": 452,
+"input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 555,
-"cost_usd": 0.00137
+"output_tokens": 896,
+"cost_usd": 0.00208
 }
 },
 "sources": [
@@ -1251,52 +1282,68 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0033-3182(69)71737-6",
 "cited_by_count": 22,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:17Z",
+"classified_at": "2026-09-06T18:24:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided to determine whether placebo/nocebo effects or responses were an explicit focus versus clinical efficacy of hypnosis/suggestion for warts.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly evaluates hypnosis and suggestion as treatments, making suggestion/expectancy mechanisms the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"dermatology"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; reported on hypnosis and suggestion as treatments for warts but insufficient information to judge whether placebo/nocebo phenomena were the study focus.",
+"summary": "Evaluated hypnosis and suggestion as treatments for warts; no abstract or full text available to extract methods or results.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"warts",
 "hypnosis",
 "suggestion",
-"warts",
-"psychosomatics",
-"1969",
-"behavioral dermatology"
+"psychosomatic",
+"dermatology"
 ],
 "usage": {
-"input_tokens": 430,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 574,
-"cost_usd": 0.0014
+"output_tokens": 1112,
+"cost_usd": 0.00251
 }
 },
 "sources": [
@@ -1343,52 +1390,64 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf00401533",
 "cited_by_count": 25,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:40Z",
+"classified_at": "2026-09-06T18:24:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title and MeSH suggest expectancy/placebo topics but cannot determine if placebo/nocebo was an explicit study focus or merely a comparator.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names 'expectation' together with chlordiazepoxide and hostility, indicating the study focused on expectancy effects of a drug (placebo/expectation mechanisms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "No abstract available; the paper appeared to examine chlordiazepoxide, expectation, and hostility, but available information is insufficient to judge whether placebo/nocebo phenomena were the study focus.",
+"summary": "Investigated how expectation influenced hostility responses in people given chlordiazepoxide.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chlordiazepoxide",
-"expectation",
 "hostility",
-"placebo",
-"psychopharmacologia",
-"1969"
+"expectation",
+"benzodiazepine",
+"1969",
+"psychopharmacology"
 ],
 "usage": {
-"input_tokens": 193,
-"cache_read_input_tokens": 6144,
+"input_tokens": 577,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.0015
+"output_tokens": 642,
+"cost_usd": 0.00158
 }
 },
 "sources": [

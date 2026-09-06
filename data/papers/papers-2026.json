@@ -708,91 +708,6 @@
 "language": "eng"
 },
 {
-"id": "doi:10.1016/j.seizure.2026.09.002",
-"title": "Counterintuitive: reducing regression-to-the-mean worsens efficiency in simulated clinical trials",
-"authors": [
-"Daniel M. Goldenholz",
-"Shira R. Goldenholz",
-"Rohan Bhansali",
-"Ted J. Kaptchuk",
-"M. Brandon Westover"
-],
-"journal": "Seizure",
-"journal_abbrev": "",
-"year": 2026,
-"date": "2026-09-01",
-"doi": "10.1016/j.seizure.2026.09.002",
-"pmid": null,
-"pmcid": null,
-"openalex_id": "https://openalex.org/W7207831645",
-"abstract": "",
-"keywords": [
-"Clinical trial",
-"Disease",
-"MEDLINE",
-"Component (thermodynamics)",
-"Randomized controlled trial"
-],
-"mesh": [],
-"pub_types": [],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.seizure.2026.09.002",
-"cited_by_count": 0,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:46:01Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a simulation/methods paper about regression-to-the-mean without clear indication that placebo/nocebo phenomena are the focus, so inclusion cannot be determined from available information.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [],
-"article_type": "methods_measurement",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; title indicates a simulation study on regression-to-the-mean and trial efficiency, but it is unclear whether placebo/nocebo effects or responses were examined.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"regression-to-the-mean",
-"simulation",
-"clinical trial efficiency",
-"trial methodology",
-"Seizure"
-],
-"usage": {
-"input_tokens": 165,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 576,
-"cost_usd": 0.00135
-}
-},
-"sources": [
-"openalex"
-],
-"date_added": "2026-09-05",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/j.jpain.2026.106428",
 "title": "Rethinking sham controls in acupuncture trials for pain management: Random-point acupuncture as a strategy to evaluate efficacy and acupoint specificity.",
 "authors": [
@@ -2909,11 +2824,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T02:51:59Z",
+"classified_at": "2026-09-06T19:16:29Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title indicates a trial comparing wrist splinting with a placebo soft bandage for carpal tunnel syndrome, but the abstract is absent so it is unclear whether placebo/nocebo phenomena were the explicit focus or merely a control for efficacy.",
+"confidence": 0.3,
+"rationale": "Abstract text was unavailable/insufficient to determine whether placebo effects or responses were the explicit focus rather than a comparator in an efficacy trial.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2931,22 +2846,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Reported a trial comparing wrist splinting with a placebo soft bandage for carpal tunnel syndrome and found similar results, but the abstract provided no details on aims or analyses.",
+"summary": "Insufficient information in the abstract to determine whether placebo/nocebo effects or responses were the study's primary focus rather than a comparator in an efficacy comparison.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "carpal tunnel",
 "wrist splint",
+"soft bandage",
 "placebo bandage",
-"splinting",
-"soft bandage"
+"splinting"
 ],
 "usage": {
-"input_tokens": 254,
-"cache_read_input_tokens": 6016,
+"input_tokens": 432,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 746,
-"cost_usd": 0.00171
+"output_tokens": 716,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -7970,18 +7885,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T02:52:24Z",
+"classified_at": "2026-09-06T19:16:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title indicates both drug and placebo improved sleep but text is insufficient to determine whether placebo/nocebo was an explicit study focus.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states that placebo produced improvement in sleep, indicating placebo response is a subject of the paper (placebo response focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -8007,10 +7922,10 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_subjective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -8019,21 +7934,22 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "No abstract available; title reported that elinzanetant and placebo both improved sleep in postmenopausal women, but study focus on placebo effects was unclear from the available text.",
-"key_finding": null,
+"summary": "Reported that elinzanetant improved sleep in postmenopausal women and that placebo produced similar sleep improvement.",
+"key_finding": "Both elinzanetant and placebo improved subjective sleep in postmenopausal women (title-reported).",
 "sample_size": null,
 "free_keywords": [
-"postmenopausal",
 "elinzanetant",
-"sleep",
+"postmenopausal",
+"insomnia",
+"sleep outcomes",
 "placebo response"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 880,
-"cost_usd": 0.002
+"output_tokens": 737,
+"cost_usd": 0.00176
 }
 },
 "sources": [
@@ -20203,50 +20119,55 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T02:53:18Z",
+"classified_at": "2026-09-06T19:16:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone suggests a historical/commentary piece about placebo but does not confirm whether placebo/nocebo effects are the explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly references 'The earliest placebo', indicating the paper's focus is on the history/concept of placebo.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Title suggests a historical or conceptual discussion of the earliest placebo, but no abstract or text was available to confirm scope or findings.",
+"summary": "Discusses the historical origins and early conceptions of the placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo history",
-"etymology",
-"conceptual",
-"historical review"
+"history",
+"placebo_origin",
+"etymology"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 639,
-"cost_usd": 0.00152
+"output_tokens": 541,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -28035,18 +27956,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T02:54:16Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:16:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title directly names placebo effects on vaccine responses but no abstract or full text was available to confirm study aims, design, sample, or whether placebo/nocebo was the explicit object of study.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "News & Views commentary focuses on a randomized trial and the placebo effect on vaccine-induced antibody responses, making placebo phenomena the main subject (review/commentary of placebo effects in immunity).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -28054,36 +27975,58 @@
 "study_focus": [
 "placebo_effect"
 ],
-"article_type": "empirical_primary",
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"clinical_endpoint",
+"fmri"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"neural_systems_circuits",
+"neurobiology_dopamine"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Title indicated that placebo effects influence vaccine immune responses, but no abstract or full text was available to confirm objectives, design, or findings.",
+"summary": "Discusses a randomized human trial reporting that neurofeedback-driven positive expectation and reward-circuit (VTA) activity correlated with hepatitis B vaccine antibody production, highlighting placebo effects on humoral immunity and mechanistic implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"vaccine",
-"immune response",
-"placebo",
-"nocebo",
-"vaccination"
+"hepatitis b",
+"hbv vaccination",
+"neurofeedback",
+"ventral tegmental area",
+"reward circuit",
+"humoral immunity",
+"expectation",
+"placebo"
 ],
 "usage": {
-"input_tokens": 359,
+"input_tokens": 2487,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 805,
-"cost_usd": 0.00185
+"output_tokens": 876,
+"cost_usd": 0.00252
 }
 },
 "sources": [

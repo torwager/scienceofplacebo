@@ -1274,51 +1274,76 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.2466/pr0.1976.38.3c.1235",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:44Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:30:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available to determine whether therapists' expectancies were studied as placebo/nocebo mechanisms or merely as prognostic predictors, so inclusion cannot be judged from the available record.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Study empirically tested therapists' expectancies as predictors of patient treatment outcomes (an expectancy/provider effect relevant to placebo mechanisms), so placebo/nocebo-relevant mechanisms were a primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"psychosis"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinician_rated",
+"self_report"
+],
+"design": [
+"observational"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"provider_characteristics",
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information (no abstract) to determine whether therapists' expectancies were studied as placebo/nocebo effects; paper reported on therapists' expectancies and psychotherapy treatment outcome in a clinical sample.",
-"key_finding": null,
+"summary": "Reanalyzed therapist-expectancy data and found that sample characteristics and the adequacy of expectancy measures influenced the strength of expectancy–outcome correlations in hospitalized psychiatric patients.",
+"key_finding": "Therapists' expectancies showed variable correlations with multiple outcome measures, depending on measurement and sample characteristics.",
 "sample_size": null,
 "free_keywords": [
-"therapist_expectancy",
-"psychotherapy",
+"therapist expectancy",
+"psychotherapy outcome",
 "schizophrenia",
-"brief_psychiatric_rating_scale",
-"MMPI"
+"BPRS",
+"MMPI",
+"expectation effects"
 ],
 "usage": {
-"input_tokens": 464,
+"input_tokens": 576,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 598,
-"cost_usd": 0.00146
+"output_tokens": 1028,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -1703,53 +1728,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/786380",
 "cited_by_count": 6,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:46Z",
+"classified_at": "2026-09-06T18:30:44Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Abstract unavailable and title/MeSH terms mention placebos and suggestion but do not clearly indicate that placebo/nocebo effects or responses were the explicit focus or that a placebo condition was used.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title states anxiety effects were examined according to suggestibility levels, indicating suggestibility/expectation mechanisms were an explicit focus of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "anxiety_stress"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"personality_traits",
+"expectation_level"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "No abstract available; reported effects of transcranial electrotherapy (electrosleep) on state anxiety by suggestibility, but insufficient information to judge whether placebo/nocebo phenomena were a study focus.",
+"summary": "Examined effects of transcranial electrotherapy (electrosleep) on state anxiety as a function of participants' suggestibility levels.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"transcranial electrotherapy",
 "electrosleep",
+"transcranial electrotherapy",
 "state anxiety",
 "suggestibility",
-"1976"
+"suggestion",
+"1970s"
 ],
 "usage": {
-"input_tokens": 462,
+"input_tokens": 590,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 566,
-"cost_usd": 0.00139
+"output_tokens": 814,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -3364,23 +3409,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0005-7967(76)90008-5",
 "cited_by_count": 22,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:50Z",
+"classified_at": "2026-09-06T18:30:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available and the title lists behavioral treatments including 'suggestion', so it is unclear whether placebo/nocebo phenomena were an explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly lists 'suggestion' and 'systematic desensitization' (a conditioning technique), indicating the paper studied suggestion/conditioning interventions for test anxiety, which maps onto placebo/expectancy mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -3388,14 +3435,28 @@
 "condition_domain": [
 "anxiety_stress"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract was available; the 1976 study compared systematic desensitization, relaxation training, and suggestion for test anxiety, but it is unclear whether placebo/nocebo processes were studied.",
+"summary": "Compared systematic desensitization, relaxation training and suggestion for treating test anxiety, focusing on suggestion and conditioning as treatment components.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -3403,15 +3464,15 @@
 "systematic desensitization",
 "relaxation training",
 "suggestion",
-"behaviour therapy",
-"1976"
+"behavior therapy",
+"1960s-1970s"
 ],
 "usage": {
-"input_tokens": 443,
-"cache_read_input_tokens": 5888,
+"input_tokens": 187,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 675,
-"cost_usd": 0.00161
+"output_tokens": 1042,
+"cost_usd": 0.00229
 }
 },
 "sources": [

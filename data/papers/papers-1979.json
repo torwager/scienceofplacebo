@@ -378,18 +378,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:47Z",
+"classified_at": "2026-09-06T18:32:18Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Title and MeSH indicate placebo and methodological focus but no abstract or full text was available to confirm whether empirical data or methods were primary, so inclusion is uncertain.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly names the placebo effect and discusses changes in response set with retesting as a source of bias, indicating placebo phenomena and methodological implications are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -399,18 +399,10 @@
 ],
 "article_type": "methods_measurement",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -427,22 +419,21 @@
 "not_applicable"
 ]
 },
-"summary": "Addressed placebo effects and changes in response set on re-testing as a potential source of bias in research, but abstract/full text were not available to determine methods or findings.",
+"summary": "Discussed how placebo effects and changes in response set with retesting can introduce bias in research design and measurement.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"response-set",
+"research_design",
+"response_set",
 "re-testing",
-"bias",
-"psychiatric-status-ratings",
-"placebo"
+"bias"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 685,
-"cost_usd": 0.00161
+"output_tokens": 766,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -1926,52 +1917,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1979.10404004",
 "cited_by_count": 7,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:30Z",
+"classified_at": "2026-09-06T18:32:27Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Insufficient information (no abstract) to determine whether posthypnotic suggestion was studied as a placebo/expectancy effect or as a clinical hypnotic intervention; only case reports listed.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states that posthypnotic suggestion was used to modify depressive symptoms, indicating suggestion/expectation effects on clinical outcomes are the paper's focus.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "case_report",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; reported case reports of modifying depressive symptoms using posthypnotic suggestion, but text is insufficient to judge whether placebo/nocebo phenomena were the study focus.",
+"summary": "Reported use of posthypnotic suggestion to modify depressive symptoms in patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"posthypnotic suggestion",
 "hypnosis",
+"posthypnotic suggestion",
 "depression",
 "case report",
-"clinical hypnosis",
-"1979"
+"suggestion",
+"clinical hypnosis"
 ],
 "usage": {
-"input_tokens": 435,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 689,
-"cost_usd": 0.00163
+"output_tokens": 664,
+"cost_usd": 0.00162
 }
 },
 "sources": [
@@ -2469,52 +2481,58 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:43:02Z",
+"classified_at": "2026-09-06T18:32:35Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or text available; title suggests discussion of acupuncture-as-placebo but insufficient information to determine whether it reported empirical placebo/nocebo data or was a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames acupuncture in terms of placebo, indicating placebo is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information (no abstract) to determine whether the paper reported empirical data or was a commentary on acupuncture as a placebo.",
+"summary": "Discusses acupuncture in the context of placebo, arguing or reviewing how acupuncture effects may reflect placebo/ritual factors.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "acupuncture",
 "placebo",
-"placebo-aspect",
-"western journal of medicine",
-"1979",
-"havener"
+"ritual",
+"alternative medicine"
 ],
 "usage": {
-"input_tokens": 357,
+"input_tokens": 535,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 546,
-"cost_usd": 0.00133
+"output_tokens": 636,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -2560,51 +2578,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0021-843x.88.3.282",
 "cited_by_count": 229,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:30Z",
+"classified_at": "2026-09-06T18:32:44Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or methods available; the title suggests an experimental study of hypnosis/suggestion for analgesia (which could implicate expectation/placebo mechanisms) but the paper's explicit focus on placebo/nocebo phenomena cannot be confirmed from the available record.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states the study focused on hypnotic suggestion and cognitive strategies to reduce pain, making suggestion/expectation mechanisms the paper's object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"personality_traits"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicated an empirical study of hypnotic susceptibility, analgesic suggestions, and cognitive strategies for reducing pain in humans.",
+"summary": "Examined whether hypnotic susceptibility, suggestions for analgesia, and cognitive strategies reduced pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
-"analgesia",
 "suggestion",
-"cognitive strategies",
-"pain"
+"analgesia",
+"cognitive_strategies",
+"hypnotic_susceptibility",
+"1979",
+"journal of abnormal psychology"
 ],
 "usage": {
-"input_tokens": 452,
-"cache_read_input_tokens": 5888,
+"input_tokens": 196,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 666,
-"cost_usd": 0.00159
+"output_tokens": 676,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -2865,51 +2904,58 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:43:04Z",
+"classified_at": "2026-09-06T18:32:53Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and the title alone does not reveal whether the paper empirically studied placebo/nocebo phenomena.",
+"decision": "include",
+"confidence": 0.55,
+"rationale": "The title explicitly names 'placebo' and implies the paper's subject is the placebo phenomenon rather than using placebo merely as a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether the article empirically studied placebo or nocebo effects; no abstract was available.",
+"summary": "Discusses the placebo phenomenon and its appeal in the context of pharmacy practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pleasing placebo",
-"american pharmacy",
-"1979",
+"pharmacy",
 "placebo",
-"gerald"
+"attitudes",
+"1979"
 ],
 "usage": {
-"input_tokens": 227,
-"cache_read_input_tokens": 6016,
+"input_tokens": 533,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 615,
-"cost_usd": 0.00144
+"output_tokens": 688,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -2943,18 +2989,18 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 106,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:34Z",
+"classified_at": "2026-09-06T18:33:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title explicitly names 'placebo effect' but insufficient information to determine whether placebo/nocebo was the study's explicit focus or how it was studied.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names the placebo effect as the topic, indicating placebo phenomena were the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2964,49 +3010,36 @@
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"general_public"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
+"attention_cognitive_appraisal",
 "verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
 ],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"intervention_type": []
 },
-"summary": "No abstract available; title indicated the study examined self-focused attention in relation to the placebo effect, but study details were not provided.",
+"summary": "Studied how self-focused attention influenced the placebo effect in participants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "self-focused attention",
-"placebo effect",
+"expectancy",
 "social psychology",
-"1979"
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 167,
-"cache_read_input_tokens": 6144,
+"input_tokens": 551,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.0014
+"output_tokens": 499,
+"cost_usd": 0.00128
 }
 },
 "sources": [
@@ -3167,53 +3200,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0022-006x.47.1.179",
 "cited_by_count": 4,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:30Z",
+"classified_at": "2026-09-06T18:33:09Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text was provided and the title mentions expectancy and coping but does not make placebo/nocebo phenomena an explicit stated aim, so inclusion cannot be determined from available information.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'expectancy' and control of pain, indicating placebo/expectation mechanisms were a focus (meet inclusion rule for expectancy/mechanism studies).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"personality_traits"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine whether the study experimentally examined placebo or nocebo effects; title indicated a focus on expectancy and cognitive coping in pain control.",
+"summary": "Investigated how cognitive strategies, expectancy, and coping style influenced control of pain, focusing on expectancy-related mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"coping style",
+"cognitive strategies",
 "expectancy",
-"cognitive coping",
 "pain control",
-"1979",
-"Karoly"
+"clinical psychology",
+"1979"
 ],
 "usage": {
-"input_tokens": 439,
-"cache_read_input_tokens": 5888,
+"input_tokens": 183,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00155
+"output_tokens": 646,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -3492,51 +3545,65 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/286234",
 "cited_by_count": 5,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:35Z",
+"classified_at": "2026-09-06T18:33:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone (injection pain: memory, expectation and experienced pain) does not establish that placebo/nocebo phenomena were the explicit focus, so inclusion cannot be determined.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names expectation and memory as factors relating to experienced injection pain, indicating placebo/nocebo-related expectancy effects were the paper's subject.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational"
+],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract or full text available; title suggested a study of expectation and memory in injection pain but it is unclear whether placebo/nocebo effects were a focus.",
+"summary": "Studied how memory and expectation related to experienced injection pain in dental patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"dental injection",
 "injection pain",
 "expectation",
-"memory",
-"dental anesthesia",
-"analgesia"
+"memory"
 ],
 "usage": {
-"input_tokens": 437,
+"input_tokens": 565,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 660,
-"cost_usd": 0.00158
+"output_tokens": 771,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -4166,26 +4233,26 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:43:13Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:33:29Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; title implies a methods/measurement paper about a 'placebo test' in psychiatric samples but insufficient information to confirm that placebo/nocebo phenomena were the study focus.",
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Paper explicitly developed and validated a Placebo Test measuring placebo-induced symptom change and predictors in psychiatric outpatients (placebo response is the study object).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "methods_measurement",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
 "other_clinical"
@@ -4195,43 +4262,57 @@
 ],
 "condition_domain": [
 "mood_depression",
-"anxiety_stress"
+"anxiety_stress",
+"global_health_qol"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"clinician_rated"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct",
+"within_subject_experimental",
+"single_group_pre_post"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective"
 ],
 "mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"provider_patient_interaction",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"expectation_level",
+"prior_experience",
+"treatment_characteristics",
+"mood_anxiety_state"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Insufficient information to judge focus; title suggested assessment of the reliability and validity of a placebo test in psychiatric (depression/anxiety) samples.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Developed and validated a multi-item Placebo Test in 1,070 psychiatric outpatients, found reliable placebo-effect and side-effect scales, and showed that positive placebo responses predicted greater clinical improvement.",
+"key_finding": "Placebo Test scores (Overall Effect/Placebo Effect Factor) correlated with subsequent treatment improvement (PEF explained up to ~11% of improvement variance), and drug-placebo stimulus produced larger PEF than control.",
+"sample_size": 1070,
 "free_keywords": [
 "placebo test",
-"reliability",
-"validity",
-"psychiatric",
-"placebo_scale"
+"placebo-induced side effects",
+"drug-placebo",
+"control-placebo",
+"psychiatric outpatients",
+"HSCL-POMS",
+"predictive validity",
+"therapeutic ritual"
 ],
 "usage": {
-"input_tokens": 394,
+"input_tokens": 24082,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 686,
-"cost_usd": 0.00162
+"output_tokens": 1035,
+"cost_usd": 0.00824
 }
 },
 "sources": [

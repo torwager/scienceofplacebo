@@ -16,23 +16,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:48:54Z",
+"classified_at": "2026-09-06T18:14:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the paper's focus, so inclusion cannot be judged.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "The title explicitly names 'Placebo', indicating the paper's subject is the placebo phenomenon despite missing abstract/full text.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -45,21 +47,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine whether the paper addressed placebo or nocebo phenomena; no abstract available.",
+"summary": "Discusses the placebo phenomenon (title indicates focus on placebo), published as a 1963 CMAJ article; full text not available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"peripatetic placebo",
-"1963",
+"placebo",
+"history",
 "cmaj",
-"unknown author"
+"1963"
 ],
 "usage": {
-"input_tokens": 355,
+"input_tokens": 533,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 532,
-"cost_usd": 0.0013
+"output_tokens": 534,
+"cost_usd": 0.00135
 }
 },
 "sources": [
@@ -303,47 +305,39 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:24Z",
+"classified_at": "2026-09-06T18:14:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or available text; the title suggests a conceptual/commentary piece about placebo but there is insufficient information to determine whether it reports empirical placebo/nocebo data or is a theoretical/clinical opinion.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names a 'toxic placebo', implying a focus on harmful/nocebo effects of placebo in a patient case.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"nocebo_effect"
 ],
-"article_type": "theory_commentary",
+"article_type": "case_report",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
-"other"
+"adverse_events"
 ],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"nocebo_communication_disclosure"
 ],
 "moderators": [
 "none_reported"
@@ -352,22 +346,21 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title implied a conceptual or clinical commentary on placebo/nocebo phenomena in patients, but content and empirical status were not available.",
+"summary": "Reported a case concerning harmful (toxic) effects attributed to a placebo in a patient, discussing nocebo-related phenomena.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"nocebo",
 "toxic placebo",
-"partial patient",
-"1963",
-"medical times",
-"placebo commentary"
+"case study",
+"1963"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 762,
-"cost_usd": 0.00176
+"output_tokens": 937,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -754,53 +747,79 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:07Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:14:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were the study focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Paper presented original data and argument about placebo (saline) responses after surgery and quantified incidence of 'placebo reactors', making placebo response the analytic focus.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"surgical_patients"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint",
+"autonomic"
+],
+"design": [
+"single_group_pre_post",
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"saline_injection_infusion",
+"inert_pill_capsule",
+"other"
+]
 },
-"summary": "Insufficient information to judge whether the paper empirically studied placebo or nocebo phenomena; no abstract available.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Reported postoperative data and argued that many patients showed improvement after saline injections, illustrating variable incidence of 'placebo reactors' depending on criteria used.",
+"key_finding": "Found that depending on relief criteria, the proportion of patients showing pain improvement after saline ranged up to ~50% for ≥1-grade improvement, while stricter criteria reduced placebo responders to near 0%.",
+"sample_size": 39,
 "free_keywords": [
-"placebo",
-"postoperative",
+"postoperative analgesia",
 "morphine",
-"suggestion",
-"1963",
-"nature",
-"placebo reactor"
+"saline",
+"placebo reactors",
+"vital capacity",
+"peak expiratory flow"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 2503,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00147
+"output_tokens": 926,
+"cost_usd": 0.00262
 }
 },
 "sources": [
@@ -850,23 +869,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:03Z",
+"classified_at": "2026-09-06T18:14:54Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available and the title is generic, so it is unclear whether placebo/nocebo phenomena were the paper's explicit focus or merely discussed.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebo as the topic ('THE PLACEBO PROBLEM'), indicating placebo is the main subject of the paper.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -874,28 +895,28 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; the 1963 bulletin titled 'The Placebo Problem' likely discussed conceptual or clinical issues about placebo in pain/analgesia but full content is unavailable to confirm.",
+"summary": "Discusses the conceptual and/or methodological issues surrounding the placebo (titled 'The Placebo Problem').",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo problem",
-"psychopharmacology bulletin",
-"analgesia",
-"drug tolerance",
-"pain management",
-"1963"
+"placebo",
+"methodology",
+"psychopharmacology",
+"history"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 508,
-"cost_usd": 0.00126
+"output_tokens": 578,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -1153,23 +1174,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:07Z",
+"classified_at": "2026-09-06T18:15:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title and MeSH suggest placebo response is discussed but insufficient information to determine if placebo/nocebo was the explicit object of study or a comparator.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'Placebo Response' and 'Acquiescence', indicating the paper's focus on placebo responses and response bias methods.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -1177,28 +1200,36 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine study focus; title and MeSH terms suggested an empirical paper relating placebo response to acquiescence in humans.",
+"summary": "Studied placebo response and acquiescence (response bias), examining how acquiescent responding relates to placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "acquiescence",
-"response_bias",
+"response bias",
 "placebo response",
-"suggestion",
+"psychometrics",
 "psychopharmacologia",
 "1963"
 ],
 "usage": {
-"input_tokens": 373,
+"input_tokens": 551,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 537,
-"cost_usd": 0.00131
+"output_tokens": 606,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -1455,24 +1486,26 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:49:32Z",
+"classified_at": "2026-09-06T18:15:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided to determine whether placebo phenomena were an explicit object of study; title suggests commentary but insufficient information to include or exclude.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names placebos as a subject alongside homeopathy, so the paper is about placebo-related issues and meets inclusion based on title.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -1484,23 +1517,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; likely a 1963 commentary linking homeopathy and placebo, but text is insufficient to judge whether it studied placebo effects or responses.",
+"summary": "Discussed homeopathy in relation to placebos, examining placebo-related issues in the context of homeopathic practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "homeopathy",
 "placebo",
-"hahn﻿emannian",
-"1963",
-"historical",
-"commentary"
+"placebo-history",
+"alternative-medicine",
+"Hahnemannian"
 ],
 "usage": {
-"input_tokens": 361,
+"input_tokens": 539,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 595,
-"cost_usd": 0.00143
+"output_tokens": 729,
+"cost_usd": 0.00174
 }
 },
 "sources": [

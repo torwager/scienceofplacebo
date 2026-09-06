@@ -2697,53 +2697,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:13:48Z",
+"classified_at": "2026-09-06T18:53:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title explicitly addresses whether benefits are placebo, injection or anti-inflammatory, but no abstract or full text was available to confirm if placebo/nocebo was the explicit focus or a secondary discussion.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames whether clinical improvement after epidural corticosteroid injections is due to a placebo effect versus injection or anti-inflammatory actions, making placebo mechanisms the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"therapeutic_ritual_context",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"saline_injection_infusion",
+"other"
+]
 },
-"summary": "Title questioned whether epidural corticosteroid injection benefits for sciatica reflect placebo, injection-mechanical, or anti-inflammatory effects; abstract not available to determine study focus.",
+"summary": "Discussed whether symptomatic improvement after epidural corticosteroid injections for sciatica reflected a placebo/injection context effect or true anti-inflammatory action.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sciatica",
-"epidural corticosteroid injection",
 "epidural steroid",
-"placebo effect",
-"injection effect"
+"corticosteroid",
+"injection effect",
+"saline control"
 ],
 "usage": {
-"input_tokens": 403,
+"input_tokens": 581,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 729,
-"cost_usd": 0.00171
+"output_tokens": 1026,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -3030,24 +3052,25 @@
 "oa_pdf_url": "https://europepmc.org/articles/pmc2117652?pdf=render",
 "landing_url": null,
 "cited_by_count": 204,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:13:21Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:53:13Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Title indicates responses to active and sham DBS programming (suggesting placebo/sham effects) but no abstract or full text was available to confirm whether placebo/nocebo phenomena were an explicit focus or a primary analysis.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Sham versus active DBS was a stated focus to probe acute stimulation-elicited responses and placebo/0V responses were explicitly defined and analyzed.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3058,46 +3081,55 @@
 "adults"
 ],
 "condition_domain": [
-"other"
+"mood_depression",
+"anxiety_stress",
+"sensory_perception",
+"adverse_events"
 ],
 "outcome_measures": [
 "self_report",
-"clinician_rated",
-"motor_kinematic"
+"behavioral_performance",
+"autonomic",
+"clinician_rated"
 ],
 "design": [
-"within_subject_experimental"
+"within_subject_experimental",
+"crossover_rct"
 ],
 "effects": [
-"not_applicable"
+"significant_subjective",
+"significant_objective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_dopamine"
 ],
 "moderators": [
-"none_reported"
+"treatment_characteristics"
 ],
 "intervention_type": [
 "sham_neurostimulation"
 ]
 },
-"summary": "Reported responses during active and sham DBS programming in the internal capsule/nucleus accumbens region, but no abstract was available to confirm focus on placebo/nocebo effects.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Tested acute blinded active versus sham DBS in five treatment-refractory OCD patients and found active stimulation elicited mood, autonomic, sensory and motor responses while sham/0V produced few responses; higher voltages and pulse widths increased adverse responses.",
+"key_finding": "Active DBS produced significant mood and physiological responses clustered at ventral contacts; higher voltage (6–8V) and wider pulse widths increased autonomic and panic responses.",
+"sample_size": 5,
 "free_keywords": [
-"deep brain stimulation",
-"internal capsule",
+"obsessive-compulsive disorder",
+"anterior limb internal capsule",
 "nucleus accumbens",
-"sham programming",
-"neuromodulation"
+"deep brain stimulation",
+"pulse width",
+"stimulation voltage",
+"panic",
+"olfactory hallucination"
 ],
 "usage": {
-"input_tokens": 49,
-"cache_read_input_tokens": 6272,
+"input_tokens": 8334,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 775,
-"cost_usd": 0.00172
+"output_tokens": 1308,
+"cost_usd": 0.00485
 }
 },
 "sources": [
@@ -6283,23 +6315,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:14:20Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:53:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and the title suggests an ethics/commentary on prescribing placebos but content and focus on placebo science cannot be confirmed from the available record.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Ethics commentary whose explicit focus is the clinical use and ethics of placebos, so placebo is the main subject (placebo_science_other).",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -6307,26 +6341,36 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggests a commentary on the ethics or practice of prescribing placebos but the article's aims and methods are not discernible from the record.",
+"summary": "Discussed a clinical case and argued that deceptive use of placebos undermines informed consent and trust, urging honesty and caution in clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"prescribing",
-"ethics",
-"clinical_practice"
+"clinical-ethics",
+"deception",
+"informed consent",
+"vitamin b12",
+"case vignette",
+"physician-patient relationship"
 ],
 "usage": {
-"input_tokens": 354,
+"input_tokens": 2817,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 711,
-"cost_usd": 0.00166
+"output_tokens": 794,
+"cost_usd": 0.00244
 }
 },
 "sources": [
@@ -10378,50 +10422,62 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:14:53Z",
+"classified_at": "2026-09-06T18:53:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests an editorial/commentary about placebo but insufficient information to confirm it meets inclusion criteria.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names and centers 'placebo', indicating placebo is the main subject (conceptual/commentary) despite lack of abstract.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to judge; title suggests an editorial or commentary discussing placebo phenomena.",
+"summary": "Presents a conceptual/commentary discussion celebrating the role and significance of the placebo in medicine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "editorial",
-"commentary",
-"placebo",
-"complementary therapies"
+"placebo history",
+"placebo concept",
+"medical ethics"
 ],
 "usage": {
-"input_tokens": 372,
+"input_tokens": 550,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 581,
-"cost_usd": 0.0014
+"output_tokens": 664,
+"cost_usd": 0.00161
 }
 },
 "sources": [

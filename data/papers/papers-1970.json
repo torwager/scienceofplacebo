@@ -802,51 +802,63 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:06Z",
+"classified_at": "2026-09-06T18:24:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title suggests the paper addresses placebo effects but available information is insufficient to confirm that placebo/nocebo is the explicit focus or to classify article type confidently.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names 'Placebo effects', indicating the paper's subject is placebo phenomena (review or discussion) per inclusion rule 4/5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether the paper empirically studied placebo/nocebo effects; title indicates it discussed placebo effects but no abstract is available.",
+"summary": "Discusses placebo effects (concepts, mechanisms, and implications) in a general review or commentary.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo",
-"placebo effects",
-"bmj",
-"1970",
-"color"
+"placebo effect",
+"history",
+"definitions",
+"british medical journal"
 ],
 "usage": {
-"input_tokens": 357,
+"input_tokens": 535,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 720,
-"cost_usd": 0.00168
+"output_tokens": 401,
+"cost_usd": 0.00108
 }
 },
 "sources": [
@@ -994,73 +1006,60 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:46Z",
+"classified_at": "2026-09-06T18:24:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available; title explicitly names placebo and chronic urticaria but methods and results are not provided to confirm whether placebo/nocebo was the primary studied effect.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states study of the 'suggestive effect of placebo' on chronic urticaria intensity, indicating placebo effects were the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
 "dermatology"
 ],
-"age_group": [
-"adults"
-],
+"age_group": [],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"single_group_pre_post"
-],
-"effects": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"verbal_suggestion_expectation"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
-"verbal_suggestion_only"
+"not_applicable"
 ]
 },
-"summary": "No abstract available; title indicated the study examined the suggestive (placebo) effect on intensity of chronic urticaria in humans.",
+"summary": "Tested the suggestive (placebo) effect on symptom intensity in patients with chronic urticaria.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chronic urticaria",
 "hives",
-"placebo",
 "suggestion",
-"urticaria intensity"
+"placebo"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 705,
-"cost_usd": 0.00165
+"output_tokens": 689,
+"cost_usd": 0.00167
 }
 },
 "sources": [
@@ -1108,24 +1107,24 @@
 "oa_pdf_url": null,
 "landing_url": null,
 "cited_by_count": null,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:45Z",
+"classified_at": "2026-09-06T18:25:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title explicitly addresses placebo effects in psychotherapy, but no abstract or full text was available to determine whether empirical data or a review/theoretical discussion was the primary focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that placebo effects in psychotherapy and psychoanalysis are the subject, meeting inclusion criterion for reviews/works whose subject is placebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
@@ -1138,9 +1137,7 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -1148,8 +1145,10 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual",
-"clinical_use_ethics_attitudes"
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -1158,21 +1157,25 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses placebo effects in psychotherapy and psychoanalysis.",
+"summary": "Reviews placebo effects in psychotherapy and psychoanalysis.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"psychoanalysis",
 "psychotherapy",
-"placebo_effects",
-"clinical_trial_history"
+"psychoanalysis",
+"placebo",
+"expectation",
+"therapeutic alliance",
+"clinical trial",
+"placebo effect",
+"history"
 ],
 "usage": {
-"input_tokens": 440,
+"input_tokens": 568,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 768,
-"cost_usd": 0.00179
+"output_tokens": 878,
+"cost_usd": 0.00205
 }
 },
 "sources": [
@@ -1230,50 +1233,79 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf00401501",
 "cited_by_count": 25,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:16Z",
+"classified_at": "2026-09-06T18:25:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full-text provided to determine whether placebo/nocebo phenomena were an explicit focus despite MeSH terms including Placebos and title implying context effects.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly investigates setting, patient, and doctor effects on drug response, indicating focus on contextual (placebo-related) influences on symptoms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"anxiety_disorders"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"provider_characteristics",
+"prior_experience",
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "Insufficient information in the record; title indicated a clinical trial on setting, patient, and doctor effects on drug response in neurotic patients, but no details on placebo/nocebo focus were available.",
+"summary": "Examined how setting, patient, and doctor factors influenced drug response in neurotic patients, analysing differential improvement across contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "diazepam",
 "phenobarbital",
-"neurotic patients",
-"doctor-patient interaction"
+"neurotic",
+"doctor effects",
+"setting effects",
+"rickels",
+"hesbacher",
+"1970"
 ],
 "usage": {
-"input_tokens": 230,
-"cache_read_input_tokens": 6144,
+"input_tokens": 614,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 686,
-"cost_usd": 0.00158
+"output_tokens": 1108,
+"cost_usd": 0.00252
 }
 },
 "sources": [

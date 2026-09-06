@@ -498,52 +498,73 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:45Z",
+"classified_at": "2026-09-06T18:26:47Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title indicates a drug trial mentioning placebos but no abstract or methods are available to determine whether placebo effects/responses were an explicit focus versus a control for analgesic efficacy.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly mentions 'observations on the value of ... placebos', indicating placebo responses/evaluation were a stated subject rather than a mere comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"autoimmune_rheum"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Reported a clinical trial of pentazocine in rheumatoid arthritis and commented on the value of potent analgesics and placebos, but abstract and methods were unavailable to judge focus on placebo effects.",
+"summary": "Reported a clinical trial of pentazocine in rheumatoid arthritis and made observations on the value of potent analgesics and placebos.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"rheumatoid arthritis",
 "pentazocine",
+"rheumatoid arthritis",
 "analgesic",
-"placebo",
-"1973",
-"clinical trial"
+"placebo response",
+"clinical trial",
+"1973"
 ],
 "usage": {
-"input_tokens": 427,
+"input_tokens": 605,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 519,
-"cost_usd": 0.00129
+"output_tokens": 1008,
+"cost_usd": 0.00231
 }
 },
 "sources": [
@@ -800,51 +821,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:47Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:26:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title mentions \"placebos\" but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The study experimentally manipulated instructions/expectations about ambient noise and compared groups (noise vs control and differing instructions), making expectation/context effects the focus, so it examines placebo-like cognitive/contextual effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"sensory_perception",
+"cognition"
+],
+"outcome_measures": [
+"self_report",
+"behavioral_performance",
+"autonomic"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information in the record to determine whether placebo or nocebo phenomena were an explicit research focus.",
-"key_finding": null,
+"summary": "Manipulated instructions about ambient noise and found instruction-dependent differences in disturbance ratings and attention distribution, but no overall effect on perceptual accuracy.",
+"key_finding": "Instruction about the noise altered ratings and attention patterns (greater variance and interactions) but did not change overall perceptual accuracy.",
 "sample_size": null,
 "free_keywords": [
 "ambient noise",
-"attention",
-"heart rate",
-"motor skills",
-"auditory perception"
+"tachistoscopic patterns",
+"deceptive instructions",
+"attention distribution",
+"disturbance ratings"
 ],
 "usage": {
-"input_tokens": 410,
+"input_tokens": 648,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 608,
-"cost_usd": 0.00147
+"output_tokens": 807,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -1225,18 +1270,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:45:51Z",
+"classified_at": "2026-09-06T18:27:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates an analysis of the placebo effect and doctor–patient relationship but available text is insufficient to judge whether this is an empirical study, systematic review, or conceptual analysis.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states it is 'An analysis of the placebo effect', indicating placebo is the paper's subject (review/analysis).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1246,18 +1291,10 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -1266,33 +1303,35 @@
 ],
 "mechanisms": [
 "provider_patient_interaction",
-"history_conceptual",
-"clinical_use_ethics_attitudes"
+"therapeutic_ritual_context",
+"history_conceptual"
 ],
 "moderators": [
-"none_reported"
+"provider_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title indicated an analysis of the placebo effect in relation to the doctor–patient relationship.",
+"summary": "Reviewed and analyzed the placebo effect in the context of the doctor–patient relationship.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "doctor-patient relationship",
 "physician-patient",
-"placebo effect",
-"placebos",
-"annals of internal medicine",
-"1973"
+"placebo mechanisms",
+"clinical communication",
+"therapeutic ritual",
+"placebo history",
+"1973",
+"clinical context"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 577,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 642,
-"cost_usd": 0.00153
+"output_tokens": 803,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -2140,51 +2179,57 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/4808280",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:06Z",
+"classified_at": "2026-09-06T18:27:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods/results available and the title alone does not indicate that placebo/nocebo effects or responses were an explicit focus, so information is insufficient to judge inclusion.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names ‘Clinical expectations’ in the context of addiction treatment, indicating expectancy effects/mechanisms were the subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract or full text was available; insufficient information to determine whether the paper examined placebo or nocebo phenomena in addiction treatment.",
+"summary": "Appeared to address the role of clinical expectations in the treatment of addiction, likely within methadone programs.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"methadone",
 "addiction",
+"methadone",
+"expectation",
 "clinical expectations",
-"heroin dependence",
-"rehabilitation"
+"treatment outcomes"
 ],
 "usage": {
-"input_tokens": 452,
-"cache_read_input_tokens": 5888,
+"input_tokens": 196,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 663,
-"cost_usd": 0.00159
+"output_tokens": 960,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -2236,23 +2281,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/4784496",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:07Z",
+"classified_at": "2026-09-06T18:27:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title suggests an animal study of pharmacologic or surgical conditioning on arsenic intoxication, which might study conditioned (placebo-like) responses but cannot be confirmed from available information.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly studies pharmacologic or surgical conditioning (classical conditioning), a recognized mechanism of placebo/nocebo effects in an experimental context.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
@@ -2265,7 +2312,7 @@
 "other"
 ],
 "outcome_measures": [
-"other"
+"clinical_endpoint"
 ],
 "design": [
 "animal_experiment"
@@ -2276,30 +2323,30 @@
 "mechanisms": [
 "classical_conditioning"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Insufficient information to confirm whether the paper studied placebo/nocebo phenomena; title indicated an animal study of pharmacologic or surgical conditioning on arsenic intoxication.",
+"summary": "Examined whether pharmacologic or surgical conditioning altered intoxication with arsenical compounds, presumably in an animal model.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "arsenic",
+"arsenical",
 "conditioning",
-"toxicology",
-"hepatectomy",
-"nephrectomy",
-"phenobarbital",
-"phenytoin",
-"1973"
+"toxicity",
+"tolerance",
+"sensitization"
 ],
 "usage": {
-"input_tokens": 486,
-"cache_read_input_tokens": 5888,
+"input_tokens": 230,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 736,
-"cost_usd": 0.00174
+"output_tokens": 1030,
+"cost_usd": 0.00227
 }
 },
 "sources": [
@@ -2329,50 +2376,62 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:04Z",
+"classified_at": "2026-09-06T18:27:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title implies placebo topic but insufficient information to confirm that placebo/nocebo effects or responses were the study focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names placebo pharmacology, indicating placebo mechanisms/pharmacology are the paper's subject rather than serving as a mere comparator.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"neurobiology_other_neurochemical",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "No abstract or full text available; title suggests the paper addressed placebo pharmacology but methods and focus could not be determined.",
+"summary": "Discussed the pharmacology and theoretical basis of placebo effects, focusing on mechanisms and conceptual issues in placebo research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo pharmacology",
-"merin",
-"1973",
-"anesthesia progress"
+"placebo",
+"pharmacology",
+"anesthesia",
+"mechanisms",
+"1973"
 ],
 "usage": {
-"input_tokens": 354,
+"input_tokens": 532,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 510,
-"cost_usd": 0.00126
+"output_tokens": 619,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -2745,23 +2804,25 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:46:09Z",
+"classified_at": "2026-09-06T18:27:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title states 'methodology and the effects of placebo' on human sleep but no abstract or full text was provided to confirm that placebo/nocebo phenomena were an explicit focus or how they were studied.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states 'the effects of placebo' on human sleep, indicating placebo responses/effects were the subject of the study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -2769,36 +2830,32 @@
 "condition_domain": [
 "sleep"
 ],
-"outcome_measures": [
-"eeg",
-"self_report"
-],
+"outcome_measures": [],
 "design": [],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated the paper addressed methodology and the effects of placebo on human sleep in a clinical trial context.",
+"summary": "Studied the effects of placebo on human sleep as part of a methodological investigation of long-term psychotropic drug administration.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"sleep",
+"psychotropic",
+"placebo",
 "sleep stages",
-"REM",
-"psychotropic drugs",
-"electroencephalography",
-"placebo"
+"rem",
+"1973"
 ],
 "usage": {
-"input_tokens": 444,
+"input_tokens": 622,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 688,
-"cost_usd": 0.00163
+"output_tokens": 657,
+"cost_usd": 0.00162
 }
 },
 "sources": [

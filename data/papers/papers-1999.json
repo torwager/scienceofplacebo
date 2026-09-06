@@ -4843,29 +4843,29 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:27:08Z",
+"classified_at": "2026-09-06T18:46:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests a methodological/commentary focus on placebo arms reducing recruitment but insufficient information to determine if placebo/nocebo effects were the paper's explicit object of study.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses the impact of including a placebo arm on trial recruitment, making placebo trial methodology the paper's main subject (placebo_science_other).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "editorial_letter",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"general_public"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -4877,13 +4877,15 @@
 "not_applicable"
 ],
 "design": [
-"not_applicable"
+"observational",
+"survey_interview"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -4892,22 +4894,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title implied that including a placebo arm in a trial was argued to reduce participant recruitment.",
+"summary": "Reported that including a placebo arm in a trial was likely to reduce participant recruitment, focusing on trial methodology and participant attitudes toward placebos.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "recruitment",
-"trial_design",
-"placebo_arm",
-"clinical_trials",
-"patient_preferences"
+"trial design",
+"placebo arm",
+"informed consent",
+"participant attitudes"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 487,
-"cost_usd": 0.00121
+"output_tokens": 539,
+"cost_usd": 0.00136
 }
 },
 "sources": [
@@ -7481,51 +7483,72 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:27:29Z",
+"classified_at": "2026-09-06T18:46:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract available; title and MeSH terms suggest placebo/suggestion in contrast-media context but available text is insufficient to judge whether placebo/nocebo was the study's primary focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the placebo effect in relation to contrast media, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"nocebo_communication_disclosure"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the abstract to determine whether placebo or nocebo phenomena were the paper's primary focus.",
+"summary": "Discussed placebo and nocebo phenomena in relation to contrast media reactions in radiologic practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "contrast media",
 "radiology",
-"adverse reactions",
+"allergic-like reactions",
 "suggestion",
-"radiologic technology"
+"nocebo"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 627,
-"cost_usd": 0.0015
+"output_tokens": 846,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -8235,50 +8258,75 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 218,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:14:32Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:47:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided to determine whether alcohol expectancy/placebo was experimentally manipulated or whether placebo/nocebo phenomena were the study focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.86,
+"rationale": "Experimental alcohol vs. placebo vs. water design explicitly tested expectancy (placebo) versus pharmacological impairment explanations for sexual risk-taking, making placebo/expectancy the study focus (rule: expectancy manipulations of an active drug included).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult",
+"general_public"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"expectation_level"
+],
+"intervention_type": [
+"placebo_food_drink",
+"placebo_food_drink"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study manipulated alcohol expectancy/placebo or focused on placebo/nocebo effects in sexual risk taking.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Found that pharmacological intoxication reduced perceived personal risk and that alcohol-related expectancies predicted greater perceived benefits and likelihood of engaging in risky sexual behavior.",
+"key_finding": "Intoxicated participants reported lower risk perceptions and fewer listed negative consequences than placebo or water; those who expected disinhibition reported higher perceived benefits and likelihood of risky sex.",
+"sample_size": 296,
 "free_keywords": [
-"alcohol expectancies",
-"sexual risk taking",
-"intoxication",
-"balanced placebo"
+"alcohol placebo",
+"sexual risk-taking",
+"disinhibition expectancies",
+"young adults",
+"placebo beverage"
 ],
 "usage": {
-"input_tokens": 165,
-"cache_read_input_tokens": 6144,
+"input_tokens": 829,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 559,
-"cost_usd": 0.00131
+"output_tokens": 895,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -9625,52 +9673,60 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 578,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:14:34Z",
+"classified_at": "2026-09-06T18:47:15Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or metadata provided and the title is general about expectancies, so there is insufficient information to judge whether placebo/nocebo phenomena were the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly concerns expectancies as shaping experience, which names expectancy/placebo mechanisms as the subject.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information (no abstract or journal metadata) to determine whether the paper specifically studied placebo or nocebo expectancy effects.",
+"summary": "Discussed how expectancies influence subjective experience, focusing on expectancy/suggestion mechanisms rather than reporting new empirical data.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectancy",
 "expectation",
-"placebo",
-"nocebo",
-"experience",
-"prediction"
+"perception",
+"suggestion",
+"placebo_theory"
 ],
 "usage": {
-"input_tokens": 399,
+"input_tokens": 527,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 587,
-"cost_usd": 0.00142
+"output_tokens": 764,
+"cost_usd": 0.00181
 }
 },
 "sources": [

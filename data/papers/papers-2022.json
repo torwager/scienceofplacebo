@@ -7504,52 +7504,84 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:11:42Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:09:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract available and publication type lists 'Comment', so it is unclear from metadata whether this is empirical work isolating placebo/nocebo effects or a commentary/theory piece focused on placebo phenomena.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Commentary explicitly reviews and interprets placebo and nocebo (expectation) effects in working-memory training and places placebo/nocebo as the central topic.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cognition"
+],
+"outcome_measures": [
+"behavioral_performance"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"treatment_cues_dose_route",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"attention_cognitive_appraisal",
+"prior_treatment_experience"
+],
+"moderators": [
+"personality_traits",
+"expectation_level",
+"prior_experience",
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only",
+"other"
+]
 },
-"summary": "No abstract available; title indicates the paper addressed placebo and working-memory training effects on cognition but the study type and whether placebo was an explicit empirical focus could not be determined from metadata.",
+"summary": "Commentary discussed evidence that expectancy (placebo/nocebo) and working-memory training independently and interactively influence cognitive performance and proposed mechanisms linking mindset, motivation, and learning.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "working memory",
-"cognitive training",
-"placebo",
-"placebo effect",
-"PNAS",
-"Wager"
+"n-back",
+"fluid intelligence",
+"raven progressive matrices",
+"expectation manipulation",
+"growth mindset",
+"placebo analgesia",
+"performance mindset"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 5019,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00144
+"output_tokens": 927,
+"cost_usd": 0.00326
 }
 },
 "sources": [
@@ -13074,52 +13106,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:12:45Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T19:09:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title implies methodological commentary about context in RCTs that may relate to placebo/context effects but insufficient information to confirm placebo/nocebo is the paper's explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Conceptual/commentary piece that focused on how contextual and placebo-related factors influence what RCTs test, qualifying as placebo science rather than an efficacy trial.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"history_conceptual",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Appeared to discuss how contextual factors influence what randomized controlled trials test, but no abstract was available to confirm whether placebo/nocebo phenomena were the explicit focus.",
+"summary": "Discussed how contextual and placebo-related factors shape RCT outcomes and interpretation, tracing the history from Beecher and examining what RCTs actually test.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"context effects",
-"randomized controlled trial",
-"methodology",
-"trial design",
-"placebo",
-"external validity"
+"beecher",
+"randomized_controlled_trial",
+"contextual_effects",
+"rct interpretation",
+"placebo history"
 ],
 "usage": {
-"input_tokens": 363,
+"input_tokens": 673,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 583,
-"cost_usd": 0.0014
+"output_tokens": 740,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -16097,51 +16150,86 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:12:48Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:09:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title alone does not reveal whether placebo/nocebo phenomena are the paper's primary focus or an incidental topic.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative/opinion review whose explicit focus is on placebo and nocebo phenomena, mechanisms, and open-label placebos (fits inclusion rule 4/5).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"social_observational_learning",
+"open_label_placebo",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"neural_systems_circuits",
+"computational_predictive_processing",
+"emotion_anxiety_regulation",
+"prior_treatment_experience",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo",
+"verbal_suggestion_only",
+"other"
+]
 },
-"summary": "Unclear whether the paper reviewed or presented empirical data on placebo/nocebo effects because no abstract or full text was available.",
+"summary": "Reviews conceptual and empirical evidence on placebo and nocebo mechanisms, temporal dynamics, open-label placebos, and predictive/credition models linking beliefs to clinical outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"nocebo",
-"belief",
-"medicine",
-"placebo science"
+"predictive coding",
+"dorsolateral prefrontal cortex",
+"vasopressin",
+"hope",
+"open-label placebo"
 ],
 "usage": {
-"input_tokens": 373,
+"input_tokens": 4027,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 584,
-"cost_usd": 0.00141
+"output_tokens": 949,
+"cost_usd": 0.00305
 }
 },
 "sources": [
@@ -17926,101 +18014,6 @@
 "landing_url": "https://doi.org/10.1097/aog.0000000000004798",
 "cited_by_count": 12,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1111/add.15978",
-"title": "Commentary on Horn et al.: The outcome expectancy in the 'alcohol-gambling cocktail'.",
-"authors": [
-"Sagoe D"
-],
-"journal": "Addiction (Abingdon, England)",
-"journal_abbrev": "Addiction",
-"year": 2022,
-"date": "2022-07-03",
-"doi": "10.1111/add.15978",
-"pmid": "35781719",
-"pmcid": "PMC9796005",
-"openalex_id": "https://openalex.org/W4283816140",
-"abstract": "",
-"keywords": [
-"Alcohol",
-"alcohol outcome",
-"expectancy theory",
-"gambling",
-"meta-analysis",
-"risk-taking"
-],
-"mesh": [
-"Alcoholic Beverages",
-"Behavior, Addictive",
-"Ethanol",
-"Gambling",
-"Humans"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"oa_status": "hybrid",
-"oa_pdf_url": "https://doi.org/10.1111/add.15978",
-"landing_url": "https://doi.org/10.1111/add.15978",
-"cited_by_count": 3,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:48:16Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is a brief commentary about outcome expectancy, so it's unclear whether placebo/nocebo phenomena are the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Commentary discussed outcome expectancy in alcohol-and-gambling contexts; abstract unavailable so its focus on placebo/nocebo phenomena was not determinable.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"alcohol expectancy",
-"gambling",
-"outcome expectancy",
-"commentary"
-],
-"usage": {
-"input_tokens": 184,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 698,
-"cost_usd": 0.0016
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2022-07-03",
-"private_pdf": {
-"available": true,
-"store_key": "sagoe_2022_commentary_on_horn_et_al.pdf",
-"source": "downloaded",
-"sha256": "fa05b8a686ebaf59"
-}
 },
 {
 "id": "doi:10.1001/jamanetworkopen.2022.23903",
@@ -21564,50 +21557,74 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:13:32Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T19:09:43Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates expectations predicted outcome after lumbar injections but it's unclear whether the study explicitly targeted placebo/nocebo effects or merely treated expectation as a prognostic factor for an active treatment.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Prospective observational study that measured patients' treatment expectations and showed expectations predicted subsequent clinical pain outcomes, so placebo/expectation effects were an explicit analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal",
+"prior_treatment_experience"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title reported that individual treatment expectations predicted clinical outcome after lumbar injections for low back pain, but details on whether placebo/nocebo phenomena were the study focus were unavailable.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Prospective study of 252 patients found pre-treatment expectations predicted pain reduction two weeks after lumbar steroid injections, with expectations explaining outcome and enabling out-of-sample prediction.",
+"key_finding": "Expectations at baseline predicted 2-week pain outcome (model R2 = 0.31); median prediction error was 1.36 on a 0–10 NRS.",
+"sample_size": 252,
 "free_keywords": [
+"lumbar steroid injection",
+"epidural steroid",
 "low back pain",
-"lumbar injections",
-"treatment expectations",
-"prognostic predictor"
+"expectation for treatment scale",
+"NRS pain",
+"treatment expectancy"
 ],
 "usage": {
-"input_tokens": 408,
+"input_tokens": 907,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 552,
-"cost_usd": 0.00135
+"output_tokens": 892,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -24381,57 +24398,106 @@
 "Journal Article",
 "Review"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:13:54Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:09:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title and metadata indicate a mechanistic review of placebo effects, but the provided abstract describes a post hoc comparative analysis of matched vs nonmatched placebo arms in a COVID-19 platform trial, so the paper's true focus is unclear from available text.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative review whose explicit subject is the mechanisms and clinical applications of the placebo effect (meets inclusion criterion 4).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect",
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain",
+"immune_inflammation",
+"endocrine_hormonal",
+"mood_depression",
+"motor_function",
+"anxiety_stress",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"neuroendocrine",
+"immune_inflammatory",
+"fmri",
+"pet_neurochemical",
+"behavioral_performance"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "classical_conditioning",
-"neural_systems_circuits"
+"open_label_placebo",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"neurobiology_opioid",
+"neurobiology_dopamine",
+"neurobiology_other_neurochemical",
+"neural_systems_circuits",
+"prior_treatment_experience",
+"clinical_use_ethics_attitudes"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"prior_experience",
+"expectation_level",
+"genetics",
+"sex_gender",
+"provider_characteristics"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"open_label_placebo",
+"verbal_suggestion_only",
+"sham_device",
+"active_drug_context_manipulation",
+"topical_cream"
+]
 },
-"summary": "Title and metadata indicated a review of psycho-neuro-endocrine-immunological mechanisms of the placebo effect, but the abstract described a post hoc analysis comparing matched versus nonmatched placebo arms in a COVID-19 platform trial, leaving the paper's primary focus ambiguous.",
-"key_finding": null,
+"summary": "Reviews psycho-neuro-endocrine-immune mechanisms of placebo effects, evidence from neuroimaging and conditioning, and discusses clinical applications beyond pain including ethical/open-label approaches.",
+"key_finding": "Argues that expectation and conditioning engage opioid, endocannabinoid, and dopaminergic systems and can produce immunological and endocrine conditioned responses with clinical potential.",
 "sample_size": null,
 "free_keywords": [
-"placebo mechanisms",
-"matched placebo",
-"nonmatched placebo",
-"platform trial",
-"covid-19"
+"psychoneuroimmunology",
+"conditioning",
+"open-label placebo",
+"opioid system",
+"endocannabinoid",
+"Parkinson's disease",
+"neuroimaging",
+"hpa axis"
 ],
 "usage": {
-"input_tokens": 876,
-"cache_read_input_tokens": 6016,
+"input_tokens": 15241,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 933,
-"cost_usd": 0.00224
+"output_tokens": 1231,
+"cost_usd": 0.00642
 }
 },
 "sources": [
@@ -32969,100 +33035,6 @@
 "landing_url": "https://doi.org/10.1177/10870547221075845",
 "cited_by_count": 6,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1136/postgradmedj-2020-137957",
-"title": "Patient expectations for opioid analgesia following orthopaedic surgery.",
-"authors": [
-"Spears TM",
-"Harrison JM",
-"Spooner RB",
-"Douglas TJ",
-"Balazs GC"
-],
-"journal": "Postgraduate medical journal",
-"journal_abbrev": "Postgrad Med J",
-"year": 2022,
-"date": "2022-02-01",
-"doi": "10.1136/postgradmedj-2020-137957",
-"pmid": "35105780",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W3083743810",
-"abstract": "",
-"keywords": [
-"Orthopaedic & trauma surgery",
-"adult orthopaedics",
-"pain management"
-],
-"mesh": [
-"Humans",
-"Analgesics, Opioid",
-"Motivation",
-"Orthopedic Procedures",
-"Orthopedics",
-"Analgesia",
-"Postoperative Pain"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1136/postgradmedj-2020-137957",
-"cited_by_count": 1,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:48:28Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a survey of expectations about opioid analgesia, so it is unclear whether placebo/nocebo effects or responses were an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether placebo/nocebo phenomena were studied; paper appeared to assess patient expectations for opioid analgesia after orthopaedic surgery.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"orthopaedic surgery",
-"opioid expectations",
-"postoperative analgesia",
-"patient expectations",
-"postoperative pain",
-"opioid analgesia"
-],
-"usage": {
-"input_tokens": 444,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00159
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2022-02-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1111/psyp.14015",

@@ -745,59 +745,70 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T04:24:56Z",
+"classified_at": "2026-09-06T18:47:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Abstract presents a hypothesis and research suggestion about applying classical conditioning to psoriasis treatment but does not clearly report empirical methods or results, so inclusion is unclear.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Paper primarily discussed applying classical (Pavlovian) conditioning to therapeutic protocols and placebo mechanisms, making placebo science the main subject (theoretical/hypothesis piece).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
+"other",
 "other"
 ],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"design": [
+"not_applicable"
 ],
-"moderators": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"classical_conditioning"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"open_label_placebo",
-"other"
+"not_applicable"
 ]
 },
-"summary": "Proposed that classical (Pavlovian) conditioning could produce conditioned pharmacotherapeutic responses to reduce corticosteroid use in psoriasis and called for research to test this approach.",
+"summary": "Proposed that classical (Pavlovian) conditioning could be applied to pharmacotherapy to elicit conditioned therapeutic responses and potentially reduce corticosteroid use in psoriasis.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psoriasis",
-"classical conditioning",
-"conditioned pharmacotherapeutic response",
-"corticosteroid-sparing",
-"placebo theory"
+"corticosteroid",
+"conditioning",
+"drug-sparing",
+"placebo"
 ],
 "usage": {
-"input_tokens": 497,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00154
+"output_tokens": 754,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -8943,52 +8954,78 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 272,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:14:45Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:47:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title explicitly addresses whether sham TMS forms are active but available information is insufficient to confirm whether placebo/sham effects were the explicit object of study or a control question.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Empirical study directly evaluated sham TMS validity and blinding (placebo control methodology), making placebo/sham the primary focus (placebo science/methods).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"motor_function",
+"sensory_perception"
+],
+"outcome_measures": [
+"tms_physiology",
+"spinal_peripheral_electrophysiology",
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_objective",
+"significant_subjective"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"trial_methodology_placebo_response",
+"neural_systems_circuits"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_neurostimulation"
+]
 },
-"summary": "Title suggested the paper examined whether some sham TMS procedures produce active effects in controlled treatment studies; abstract was not available.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Tested various coil positions for TMS sham validity in nine healthy adults and found that positions producing scalp sensation also tended to evoke cortical motor responses, so no ideal inactive sham was identified.",
+"key_finding": "Found that none of the coil positions produced convincing scalp sensation without measurable cortical (motor-evoked potential) stimulation.",
+"sample_size": 9,
 "free_keywords": [
-"tms",
-"sham-tms",
-"placebo-control",
+"motor-evoked potential",
+"figure-of-eight coil",
+"sham tms",
 "blinding",
-"controlled treatment",
-"biological psychiatry"
+"coil position",
+"prefrontal stimulation"
 ],
 "usage": {
-"input_tokens": 172,
-"cache_read_input_tokens": 6144,
+"input_tokens": 743,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 765,
-"cost_usd": 0.00173
+"output_tokens": 850,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -10236,53 +10273,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:26:13Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:47:40Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous, so it's unclear whether placebo/nocebo effects were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Short news/capsule focused on the development and use of a placebo (sham) acupuncture needle and a sham-controlled trial, so placebo science is the main subject (placebo_science_other).",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
-"species": "human",
-"population": [],
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
 },
-"summary": "Insufficient information to determine whether the paper investigated placebo or nocebo phenomena; no abstract was available.",
+"summary": "Reported the development of a non-penetrating placebo acupuncture needle and noted a sham-controlled trial in rotator cuff tendinitis that found real acupuncture superior to sham.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pin-prick",
-"placebo",
-"analgesia",
-"western journal of medicine",
-"2000",
-"letter",
-"unknown authors"
+"placebo needle",
+"sham acupuncture",
+"rotator cuff tendinitis",
+"pain 1999",
+"Heidelberg",
+"acupuncture blinding"
 ],
 "usage": {
-"input_tokens": 356,
+"input_tokens": 2172,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 545,
-"cost_usd": 0.00133
+"output_tokens": 723,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -11332,51 +11387,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:26:17Z",
+"classified_at": "2026-09-06T18:47:52Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; MeSH lists 'Placebo Effect' but insufficient information to determine whether placebo/nocebo was the primary focus or merely mentioned.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly asks about the placebo effect, indicating the paper's subject is placebo phenomena (discussion/commentary), so it meets inclusion as placebo science/theory.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; insufficient information to judge whether placebo effects were the article's primary focus despite MeSH tagging for placebo.",
+"summary": "Discusses whether placebo effects are real and examines issues around the placebo concept in mind–body medicine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo effect",
 "mind-body",
-"somatoform disorders",
+"somatoform",
 "asthma",
-"arousal"
+"placebo debate"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 488,
-"cost_usd": 0.00122
+"output_tokens": 672,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -11523,39 +11598,31 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:26:18Z",
+"classified_at": "2026-09-06T18:48:05Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a critical/theoretical piece rather than an empirical study, so inclusion is unclear.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly addresses the evidence for physiologic placebo effects across drug studies, making placebo phenomena the paper's primary subject (placebo science/methodology).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"article_type": "narrative_review",
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -11563,32 +11630,29 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Argues that most drug trials provide little or no evidence supporting physiologic placebo effects.",
-"key_finding": null,
+"summary": "Argues that most drug trials provide little or no evidence supporting physiologic effects of placebo, critiquing the methodological basis for such claims.",
+"key_finding": "Concluded that evidence for physiological placebo effects in the reviewed drug studies was weak or absent.",
 "sample_size": null,
 "free_keywords": [
-"placebo effect",
-"placebo evidence",
-"double-blind",
+"placebo physiology",
+"drug trials",
 "methodology",
-"mind-body",
-"somatoform"
+"placebo effect evidence",
+"mind-body"
 ],
 "usage": {
-"input_tokens": 407,
+"input_tokens": 585,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 715,
-"cost_usd": 0.00168
+"output_tokens": 698,
+"cost_usd": 0.00169
 }
 },
 "sources": [

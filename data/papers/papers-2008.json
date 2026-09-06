@@ -1283,18 +1283,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:28Z",
+"classified_at": "2026-09-06T18:54:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies focus on placebo response in antidepressant trials but insufficient information to confirm whether placebo/nocebo phenomena are the study's explicit object or whether this is a systematic/meta-analytic treatment versus a commentary.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly asks whether high placebo response is unique to antidepressant trials, making placebo response the paper's subject (placebo response across trials).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1302,7 +1302,7 @@
 "study_focus": [
 "placebo_response"
 ],
-"article_type": "narrative_review",
+"article_type": "systematic_review",
 "species": "human",
 "population": [
 "depression"
@@ -1317,7 +1317,7 @@
 "self_report"
 ],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
 "not_applicable"
@@ -1329,25 +1329,25 @@
 "trial_characteristics"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Abstract unavailable; title suggested the paper discussed whether high placebo response rates are unique to antidepressant trials.",
+"summary": "Asked whether the high placebo response observed in antidepressant trials is unique to that field by examining placebo responses in such trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "major depressive disorder",
-"antidepressant",
+"antidepressant trials",
 "placebo response",
 "clinical trials",
-"response rates"
+"treatment outcome"
 ],
 "usage": {
-"input_tokens": 389,
+"input_tokens": 567,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 548,
-"cost_usd": 0.00134
+"output_tokens": 494,
+"cost_usd": 0.00128
 }
 },
 "sources": [
@@ -1603,52 +1603,69 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:33Z",
+"classified_at": "2026-09-06T18:54:13Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and publication type lists 'Comment', so it's unclear whether this reports original placebo-acupuncture trial data or is a commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states that placebo acupuncture produced improvements in IBS symptoms and quality of life, indicating placebo response/effect was the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"gi_ibs"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"nausea_gi"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"other"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
 },
-"summary": "Insufficient information in the record to determine whether this was original research or a commentary; the title suggested placebo acupuncture improved IBS symptoms and quality of life.",
-"key_finding": null,
+"summary": "Found that placebo acupuncture improved symptoms and quality of life in patients with irritable bowel syndrome.",
+"key_finding": "Placebo (sham) acupuncture produced symptomatic and quality-of-life improvements in IBS patients.",
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
+"ibs",
+"acupuncture",
 "placebo acupuncture",
-"quality of life",
-"symptoms",
-"evidence-based medicine",
-"comment"
+"quality of life"
 ],
 "usage": {
-"input_tokens": 366,
+"input_tokens": 544,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 665,
-"cost_usd": 0.00157
+"output_tokens": 731,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -3338,100 +3355,6 @@
 ],
 "date_added": "2008-09-26",
 "private_pdf": null
-},
-{
-"id": "doi:10.1016/j.jpsychores.2008.05.001",
-"title": "The relation between motivational concordance and response expectancy.",
-"authors": [
-"Kelley JM"
-],
-"journal": "Journal of psychosomatic research",
-"journal_abbrev": "J Psychosom Res",
-"year": 2008,
-"date": "2008-09-24",
-"doi": "10.1016/j.jpsychores.2008.05.001",
-"pmid": "18940370",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Ceremonial Behavior",
-"Combined Modality Therapy",
-"Complementary Therapies",
-"Flowers",
-"Humans",
-"Motivation",
-"Placebo Effect",
-"Plant Extracts",
-"Randomized Controlled Trials as Topic",
-"Self Care",
-"Set, Psychology",
-"Spirituality"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:08:50Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a relation between motivation and expectancy but does not confirm placebo/nocebo was the study's explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information in the record to determine whether the study explicitly examined placebo or nocebo effects; examined links between motivational concordance and response expectancy.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"response expectancy",
-"motivational concordance",
-"set",
-"placebo effect",
-"expectation",
-"psychosomatic research"
-],
-"usage": {
-"input_tokens": 409,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 617,
-"cost_usd": 0.00148
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2008-09-24",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2041518810",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.jpsychores.2008.05.001",
-"cited_by_count": 2,
-"openalex_checked": "2026-09-02v2"
 },
 {
 "id": "doi:10.1016/j.pain.2008.07.025",
@@ -6227,18 +6150,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:05Z",
+"classified_at": "2026-09-06T18:54:29Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates placebos in medical education but available information is insufficient to determine whether placebo effects/responses were the paper's explicit focus or if it was a commentary/review.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly makes placebo the main subject in the context of medical education, fitting 'placebo science' inclusion (ethics/education/attitudes).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6246,7 +6169,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -6258,26 +6181,23 @@
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "Insufficient information to determine whether it studied placebo effects; title addressed placebos in the context of medical education.",
+"summary": "Discusses the role, ethics and teaching of placebos in medical education.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "medical education",
-"placebo",
-"curriculum",
-"teaching",
-"ethics"
+"placebo ethics",
+"physician attitudes",
+"curriculum"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.0013
+"output_tokens": 529,
+"cost_usd": 0.00134
 }
 },
 "sources": [
@@ -6386,18 +6306,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:29Z",
+"classified_at": "2026-09-06T18:54:38Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests a clinical/practice discussion of placebo but insufficient information to confirm whether placebo effects/responses were empirically studied or if this is a review/commentary.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names the placebo and its role in clinical practice, indicating placebo is the paper's main subject (clinical use/ethics of placebo).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6406,19 +6326,11 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -6435,21 +6347,21 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; likely discussed the role, ethics, and clinical use of placebo in practice but full content was unavailable to confirm scope.",
+"summary": "Discusses the role of the placebo in clinical practice, including ethical and practical considerations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"clinical use",
-"ethics",
 "placebo prescribing",
-"physician attitudes"
+"clinical ethics",
+"physician-patient relationship",
+"therapeutic ritual"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 491,
-"cost_usd": 0.00122
+"output_tokens": 637,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -11672,65 +11584,54 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:58Z",
+"classified_at": "2026-09-06T18:54:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Only title and metadata available with no abstract or full text to determine whether placebo response/effect was an explicit focus or the study was a standard drug-versus-placebo efficacy trial.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "The title explicitly states that placebo was as effective as paroxetine for acute major depression, indicating the paper's focus is the placebo response/effect in depression.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
 "depression"
 ],
-"age_group": [
-"adults"
-],
+"age_group": [],
 "condition_domain": [
 "mood_depression"
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Insufficient information in the record to determine whether the paper tested placebo/placebo-response as a primary focus; title suggests a trial comparing paroxetine with placebo for major depression.",
+"summary": "Reported that placebo was as effective as paroxetine for treating acute moderate-to-severe major depression.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "paroxetine",
-"major depression",
-"antidepressant trial",
-"placebo response",
-"medscape journal of medicine"
+"major depressive disorder"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 778,
-"cost_usd": 0.0018
+"output_tokens": 690,
+"cost_usd": 0.00167
 }
 },
 "sources": [
@@ -11770,27 +11671,29 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:09:56Z",
+"classified_at": "2026-09-06T18:55:00Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.5,
-"rationale": "No abstract or full text available; title implies a focus on placebo effects in pediatric migraine but insufficient information to confirm study design, outcomes, or whether placebo/nocebo was the explicit object of study.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly asks why placebos work in some children with migraine, indicating placebo responses and their mechanisms/predictors are the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"pediatric_clinical"
 ],
 "age_group": [
 "children_adolescents"
@@ -11800,27 +11703,36 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested investigation of placebo effects in children with migraine but details of methods and findings were unavailable.",
+"summary": "Addressed why placebo treatments produce benefit in some children with migraine, focusing on factors explaining placebo responsiveness.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
 "pediatric",
 "children",
-"placebo",
-"pain"
+"placebo responders",
+"expectation"
 ],
 "usage": {
-"input_tokens": 401,
+"input_tokens": 579,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 612,
-"cost_usd": 0.00147
+"output_tokens": 934,
+"cost_usd": 0.00216
 }
 },
 "sources": [

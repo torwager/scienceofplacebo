@@ -33,51 +33,64 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1749-6632.1958.tb54898.x",
 "cited_by_count": 12,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:47Z",
+"classified_at": "2026-09-06T18:09:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were an explicit focus (insufficient information).",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly names 'conditioning' of host responses in experimental chemotherapy, indicating classical conditioning mechanisms of treatment-related responses (a recognized placebo/nocebo mechanism).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
-"species": "nonhuman_animal",
+"species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"classical_conditioning"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract or full text available; insufficient information to determine whether the paper studied placebo or nocebo phenomena, though the title suggests classical conditioning in experimental chemotherapy.",
+"summary": "Investigated classical (host) conditioning of physiological or symptomatic responses in experimental chemotherapy contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"host conditioning",
+"conditioning",
 "chemotherapy",
-"classical conditioning",
-"conditioning immunosuppression",
+"anticipatory nausea",
+"antineoplastic",
+"host conditioning",
 "1958"
 ],
 "usage": {
-"input_tokens": 171,
-"cache_read_input_tokens": 6144,
+"input_tokens": 555,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 678,
-"cost_usd": 0.00155
+"output_tokens": 802,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -115,18 +128,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:34Z",
+"classified_at": "2026-09-06T18:09:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH indicate the paper studied placebo response prognostic value in schizophrenia but details of design, measures, and results are unavailable.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly addresses the 'placebo response' as the object of study (its prognostic value), meeting inclusion criterion for placebo_response research.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -145,9 +158,15 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"outcome_measures": [
+"clinician_rated"
+],
+"design": [
+"observational"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
@@ -158,24 +177,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title and MeSH indicate the paper examined placebo response as a prognostic marker in schizophrenia.",
+"summary": "Examined whether placebo response predicted clinical prognosis (title indicates a study of prognostic value of placebo response in psychiatry).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"schizophrenia",
+"placebo response",
 "prognosis",
-"placebo_response",
-"1958",
-"Hankoff",
-"Freedman",
-"Engelhardt"
+"schizophrenia",
+"psychiatry",
+"prognostic marker"
 ],
 "usage": {
-"input_tokens": 381,
+"input_tokens": 559,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00179
+"output_tokens": 630,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -230,13 +247,13 @@
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T18:02:11Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:09:46Z",
 "screening": {
 "decision": "uncertain",
 "confidence": 0.45,
-"rationale": "No abstract or full text provided and the title alone (effects of suggestion on anxiety) suggests relevance but lacks detail to confirm placebo/nocebo is the study's explicit focus.",
-"exclusion_reason": null,
+"rationale": "Abstract discusses placebo response and suggestion as a topic but does not provide enough information to determine whether the paper reports original empirical data on placebo/nocebo effects or is a review/commentary.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
@@ -245,30 +262,35 @@
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"anxiety_stress"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title indicated an empirical study of the effects of suggestion on anxiety symptoms, but available information was insufficient to confirm whether placebo/nocebo phenomena were the explicit focus.",
+"summary": "Discussed the need to study placebo response and the effects of suggestion on anxiety symptoms and called for further research, but the abstract does not make clear whether original empirical data were reported.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "suggestion",
+"placebo response",
 "anxiety",
-"1958",
-"psychological_suggestion",
-"neurotic_disorders"
+"psychoneuroses",
+"1958"
 ],
 "usage": {
-"input_tokens": 435,
+"input_tokens": 533,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 759,
-"cost_usd": 0.00177
+"output_tokens": 700,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -307,51 +329,75 @@
 "oa_pdf_url": "https://www.bmj.com/content/bmj/2/5092/385.4.full.pdf",
 "landing_url": "https://doi.org/10.1136/bmj.2.5092.385-c",
 "cited_by_count": 0,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:47Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:09:58Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title and MeSH term indicate placebo tablets but the record lacks information to determine whether placebo/nocebo was the study focus or merely mentioned.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Correspondence focuses on the use, ethics and methodology of dummy tablets/placebo controls in clinical practice, making placebo the primary subject (placebo science/ethics).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "editorial_letter",
+"species": "not_applicable",
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Record provided no abstract; title and MeSH term suggest the paper concerned placebo ('dummy') tablets but insufficient information exists to judge whether it studied placebo effects or responses.",
+"summary": "Discussed ethical, legal and practical considerations of using dummy tablets and placebo controls in general practice and argued against including a 'dummy tablet' in the British National Formulary.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"dummy tablets",
-"placebo",
-"watson",
-"british medical journal",
-"1958"
+"bnf",
+"dummy tablet",
+"placebo control",
+"general practice",
+"ethics",
+"blind trials",
+"informed consent"
 ],
 "usage": {
-"input_tokens": 150,
-"cache_read_input_tokens": 6144,
+"input_tokens": 4497,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 758,
-"cost_usd": 0.00171
+"output_tokens": 921,
+"cost_usd": 0.00311
 }
 },
 "sources": [
@@ -387,20 +433,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:55Z",
+"classified_at": "2026-09-06T18:10:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates discussion of tranquilizers as 'impure placebo' in general practice but insufficient information to confirm whether placebo is the explicit focus or merely mentioned.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly makes 'impure placebo' the subject (placebo in general practice), meeting inclusion for placebo science/clinical use.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -411,15 +457,9 @@
 "population": [
 "clinicians_providers"
 ],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -436,22 +476,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title suggested a discussion of use of tranquilizing drugs as 'impure placebos' in general practice.",
+"summary": "Discusses the use and implications of 'impure placebos' (tranquilizing drugs) in general practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"tranquilizers",
-"general practice",
 "impure placebo",
+"general practice",
+"tranquilizers",
 "prescribing",
-"1958"
+"placebo prescribing"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 724,
-"cost_usd": 0.00169
+"output_tokens": 792,
+"cost_usd": 0.00187
 }
 },
 "sources": [
@@ -592,52 +632,85 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:33Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:10:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; title and MeSH indicate human placebo pharmacology but the paper's aims and whether placebo/nocebo was the explicit analytic focus cannot be confirmed.",
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Paper empirically examined placebo phenomena (time-course, cumulative effects, carry-over, and severity as moderator) as the primary object across multiple cohorts.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"mixed_clinical",
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain",
+"fatigue",
+"global_health_qol"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct",
+"single_group_pre_post",
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"prior_treatment_experience",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"prior_experience",
+"expectation_level",
+"disease_severity_duration"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"saline_injection_infusion",
+"verbal_suggestion_only"
+]
 },
-"summary": "Title and MeSH suggested human studies of the pharmacology of placebo administration, but no abstract was available to confirm aims or findings.",
-"key_finding": null,
+"summary": "Reported empirical data from multiple clinical cohorts showing placebo-associated subjective improvements with characteristic time-effect curves, cumulative build-up, carry-over after stopping, and reduced placebo efficacy in more severe cases.",
+"key_finding": "Found reliable subjective placebo responses (time-course, cumulative increase, some carry-over) and that placebo analgesia was smaller in patients with more severe pain.",
 "sample_size": null,
 "free_keywords": [
-"placebo pharmacology",
-"lasagna",
-"laties",
-"dohan",
-"1958",
-"journal of clinical investigation"
+"postpartum pain",
+"tuberculosis patients",
+"appetite",
+"pep energy",
+"aspirin comparison",
+"morphine comparison",
+"lactose tablets"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 5135,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 566,
-"cost_usd": 0.00137
+"output_tokens": 1163,
+"cost_usd": 0.00376
 }
 },
 "sources": [
@@ -793,52 +866,66 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:50:34Z",
+"classified_at": "2026-09-06T18:10:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title suggests a historical/observational piece about placebo use in practice, so it is unclear whether the paper empirically studied placebo effects/responses or was a commentary.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses the use of the placebo in medical practice, indicating placebo is the main subject (ethics/practice/observations).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggested an observational or commentary piece about placebo use in medical practice but full content was unavailable to determine whether it empirically studied placebo effects.",
+"summary": "Discussed observations about the use of placebos in medical practice, focusing on clinical/ethical aspects of placebo use.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"medical practice",
-"placebo prescribing",
-"clinical use",
-"1958",
-"observations"
+"placebo_prescribing",
+"medical_practice",
+"clinical_ethics",
+"physician_attitudes"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 596,
-"cost_usd": 0.00143
+"output_tokens": 704,
+"cost_usd": 0.00169
 }
 },
 "sources": [

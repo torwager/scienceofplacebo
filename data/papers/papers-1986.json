@@ -264,18 +264,18 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:18Z",
+"classified_at": "2026-09-06T18:41:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates a balanced-placebo design investigating alcohol expectancy and experimenter demands, but no abstract or full text was available to confirm whether placebo/nocebo phenomena were the explicit analytic focus or to extract outcomes.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title states use of the balanced-placebo design and examines expectancy/experimenter-demand, indicating placebo/expectancy effects are the study focus (placebo-effect design).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -285,20 +285,12 @@
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"self_report",
-"behavioral_performance",
-"autonomic"
-],
+"outcome_measures": [],
 "design": [
 "balanced_placebo"
 ],
@@ -307,34 +299,32 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"provider_patient_interaction",
-"treatment_cues_dose_route"
+"provider_patient_interaction"
 ],
 "moderators": [
-"expectation_level",
-"provider_characteristics"
+"none_reported"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Title indicated a balanced-placebo experiment testing alcohol expectancy and experimenter demand effects, but no abstract was available to confirm results or sample size.",
+"summary": "Studied alcohol expectancy using a balanced-placebo design and examined the role of experimenter demand on expectancy effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"balanced-placebo",
 "alcohol",
+"balanced-placebo",
 "expectancy",
 "experimenter demand",
 "intoxication",
-"arousal"
+"set"
 ],
 "usage": {
-"input_tokens": 402,
+"input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 790,
-"cost_usd": 0.00183
+"output_tokens": 726,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -629,18 +619,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:53Z",
+"classified_at": "2026-09-06T18:41:27Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and title suggests an opinion about labeling of drugs rather than reporting empirical placebo data, so insufficient information to judge inclusion.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses the concept of placebo and distinguishes ineffective drugs from placebos, indicating placebo science is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -649,51 +639,36 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "history_conceptual"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "No abstract available; title argued that ineffective drugs (flunarizine, cinnarizine) should not be considered placebos, likely a commentary.",
+"summary": "Discusses that ineffective drugs (flunarizine and cinnarizine) should not be equated with placebos and draws conceptual lessons for placebo science.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "flunarizine",
 "cinnarizine",
-"placebo terminology",
+"placebo concept",
+"drug efficacy",
 "lancet",
 "1986"
 ],
 "usage": {
-"input_tokens": 421,
+"input_tokens": 599,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 616,
-"cost_usd": 0.00148
+"output_tokens": 655,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -3795,53 +3770,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:44Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:41:40Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title implies placebo-like effects of education about REBT but available information is insufficient to confirm that placebo/nocebo phenomena were the study's explicit focus or that an experimental contrast was used.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Study experimentally compared an educational/therapy-simulation intervention versus untreated controls and explicitly framed benefits as nonclinical placebo effects (context/ritual producing mental-health improvement).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression",
+"global_health_qol"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"therapeutic_ritual_context",
+"provider_patient_interaction",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"disease_severity_duration"
+],
+"intervention_type": [
+"sham_psychological"
+]
 },
-"summary": "Insufficient information (no abstract) to determine whether the study experimentally tested placebo/nocebo effects; title suggested education about rational-emotive therapy produced placebo-like effects.",
-"key_finding": null,
+"summary": "Found that undergraduates who participated in rational-emotive therapy simulations reported improved mental health versus untreated controls, which authors described as nonclinical placebo-like effects.",
+"key_finding": "Improvement in treated students (self-reported mental health) but not in untreated controls; baseline emotional/social distress predicted magnitude of benefit.",
 "sample_size": null,
 "free_keywords": [
 "rational-emotive therapy",
-"psychoeducation",
-"placebo-like",
-"psychotherapy",
-"anger",
-"adaptation",
-"1986"
+"undergraduate",
+"pedagogy",
+"nonclinical",
+"demoralization",
+"therapeutic-simulation"
 ],
 "usage": {
-"input_tokens": 394,
+"input_tokens": 596,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00147
+"output_tokens": 1150,
+"cost_usd": 0.0026
 }
 },
 "sources": [
@@ -4575,52 +4572,69 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/3726962",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:59:20Z",
+"classified_at": "2026-09-06T18:41:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title mentions expectations in strabismus treatment but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'expectations in treatment of strabismus', indicating expectations/placebo-style factors were the subject of the paper.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine whether expectations about strabismus treatment were studied as placebo/nocebo phenomena; full text needed.",
+"summary": "Discussed the role of expectations in the treatment of strabismus and vision (monocular vs binocular) in children.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "strabismus",
-"monocular vision",
 "binocular vision",
-"expectations",
-"ophthalmology",
-"pediatric"
+"monocular vision",
+"pediatrics",
+"expectation"
 ],
 "usage": {
-"input_tokens": 435,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 522,
-"cost_usd": 0.0013
+"output_tokens": 786,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -5031,83 +5045,6 @@
 "cache_creation_input_tokens": 0,
 "output_tokens": 988,
 "cost_usd": 0.00224
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1986-01-01",
-"private_pdf": null
-},
-{
-"id": "pmid:3641663",
-"title": "Sexuality expectations and outcomes in women having hysterectomies.",
-"authors": [
-"Bernhard LA"
-],
-"journal": "Chart",
-"journal_abbrev": "Chart",
-"year": 1986,
-"date": "1986-01-01",
-"doi": null,
-"pmid": "3641663",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2412334839",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Female",
-"Humans",
-"Hysterectomy",
-"Longitudinal Studies",
-"Sex"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://figshare.com/articles/thesis/SEXUALITY_EXPECTATIONS_AND_OUTCOMES_IN_WOMEN_HAVING_HYSTERECTOMIES_/10946597",
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/3641663",
-"cited_by_count": 2,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:59:22Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text was provided and the title alone does not reveal whether placebo/nocebo phenomena were the explicit focus, so inclusion cannot be determined.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; insufficient information to determine whether the study examined placebo/nocebo effects related to sexuality expectations after hysterectomy.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [],
-"usage": {
-"input_tokens": 426,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 541,
-"cost_usd": 0.00134
 }
 },
 "sources": [
@@ -5744,24 +5681,26 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:04Z",
+"classified_at": "2026-09-06T18:42:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and insufficient information in the record to determine whether placebo/nocebo phenomena were the paper's primary empirical focus or a conceptual/commentary discussion.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states 'placebo effect' and discusses symptom anticipation, indicating placebo/nocebo phenomena are the paper's subject (conceptual/commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "case_report",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
@@ -5773,21 +5712,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title linked the placebo effect and symptom anticipation, and MeSH included 'Placebos' and Raynaud disease, but the record lacked details to judge whether placebo phenomena were a primary empirical focus.",
+"summary": "Discussed the relationship between the placebo effect and symptom anticipation, arguing they are closely related phenomena.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"montaigne",
 "symptom anticipation",
-"raynaud",
-"plethysmography"
+"montaigne",
+"placebo concept",
+"nocebo"
 ],
 "usage": {
-"input_tokens": 410,
+"input_tokens": 588,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 650,
-"cost_usd": 0.00155
+"output_tokens": 691,
+"cost_usd": 0.00168
 }
 },
 "sources": [

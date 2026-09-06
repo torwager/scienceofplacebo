@@ -1700,51 +1700,60 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:56:10Z",
+"classified_at": "2026-09-06T18:57:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; MeSH includes 'Placebo Effect' and 'Hyperthyroidism' but record lacks information to judge whether placebo/nocebo phenomena were the study focus.",
+"decision": "include",
+"confidence": 0.65,
+"rationale": "Title explicitly names 'Suggestion' in a clinical condition, indicating focus on suggestion/expectation effects relevant to placebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; MeSH terms list placebo effect and hyperthyroidism, but it is unclear whether placebo phenomena were the paper's primary focus.",
+"summary": "Examined the role of suggestion (expectation) in patients with hyperthyroidism.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hyperthyroidism",
 "suggestion",
-"placebo effect",
-"JAMA",
-"2012"
+"expectation",
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 683,
-"cost_usd": 0.0016
+"output_tokens": 680,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -4180,53 +4189,71 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:56:33Z",
+"classified_at": "2026-09-06T18:57:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided and publication is a case report/commentary, so it's unclear whether placebo/nocebo phenomena are the paper's primary focus or a passing ethical discussion.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly asks whether surgery can produce a placebo effect, indicating placebo is the paper's subject per instructions.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "case_report",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_surgery"
+]
 },
-"summary": "No abstract available; appears to be a case report or discussion about placebo effects in surgical treatment of knee osteoarthritis, but insufficient information to determine whether placebo/nocebo is the main subject.",
+"summary": "Discusses whether surgical interventions can operate via placebo effects and the implications for surgical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sham surgery",
-"knee osteoarthritis",
+"surgery",
 "arthroscopy",
-"placebo ethics",
-"surgical placebo"
+"knee",
+"osteoarthritis",
+"placebo"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 665,
-"cost_usd": 0.00157
+"output_tokens": 591,
+"cost_usd": 0.00147
 }
 },
 "sources": [
@@ -5617,51 +5644,82 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:57:00Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:58:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only the title is available and no abstract or full text was provided, so it's unclear whether placebo/nocebo phenomena were an explicit focus or just background to opioid analgesia research.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Journal-club commentary explicitly focused on placebo/expectation effects and their interaction with opioid analgesia (a conceptual/theoretical review of placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri",
+"autonomic"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"neurobiology_opioid",
+"trial_methodology_placebo_response",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"expectation_level",
+"mood_anxiety_state",
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation",
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicated manipulation of expectancy and anxiety in placebo research and effects on opioid analgesia, but methods and findings were not provided.",
-"key_finding": null,
+"summary": "Provided a critical commentary on Atlas et al., discussing evidence that expectancy and remifentanil analgesia appeared additive, while noting absent anxiety measures and implications for measurement of drug versus placebo effects in RCTs.",
+"key_finding": "Argued that expectancy and opioid analgesia were reported as additive but anxiety induced by hidden administration may confound dissociation of pure drug and placebo effects.",
 "sample_size": null,
 "free_keywords": [
-"expectancy",
+"remifentanil",
+"open-hidden",
+"balanced placebo",
+"amygdala",
+"placebo analgesia",
 "anxiety",
-"opioid",
-"analgesia",
-"placebo"
+"fMRI",
+"skin conductance"
 ],
 "usage": {
-"input_tokens": 269,
-"cache_read_input_tokens": 6016,
+"input_tokens": 3512,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 630,
-"cost_usd": 0.00148
+"output_tokens": 1050,
+"cost_usd": 0.00313
 }
 },
 "sources": [
@@ -6343,18 +6401,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:56:46Z",
+"classified_at": "2026-09-06T18:58:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies a conceptual/commentary piece about placebo-related improvement but the available information is insufficient to determine if it reports empirical placebo/nocebo effects or is a review/commentary.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states placebo-related improvement is the paper's subject (conceptual/critical discussion of placebo phenomena), meeting inclusion for placebo science/theory.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6372,28 +6430,20 @@
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"history_conceptual"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Discusses that placebo-related improvement cannot be attributed solely to the placebo effect and highlights other contributing factors.",
+"summary": "Discusses that improvements attributed to placebo encompass factors beyond the placebo effect itself and critiques/clarifies placebo-related improvements.",
 "key_finding": null,
 "sample_size": null,
-"free_keywords": [
-"placebo-related improvement",
-"non-specific effects",
-"regression_to_mean",
-"natural_history",
-"expectation"
-],
+"free_keywords": [],
 "usage": {
-"input_tokens": 373,
+"input_tokens": 551,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 650,
-"cost_usd": 0.00154
+"output_tokens": 546,
+"cost_usd": 0.00138
 }
 },
 "sources": [
@@ -6895,71 +6945,52 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:56:53Z",
+"classified_at": "2026-09-06T18:58:24Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and publication is a short comment; insufficient information to confirm whether placebo/nocebo is the paper's primary focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly frames rehabilitation therapy as a placebo, so placebo is the main subject of the paper (commentary on placebo nature of rehab).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "editorial_letter",
+"article_type": "theory_commentary",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Commentary suggested that short-term, costly rehabilitation in multiple sclerosis might act as a placebo rather than an active treatment.",
+"summary": "Argued that rehabilitation therapy in multiple sclerosis functions as a short-term, expensive placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "multiple sclerosis",
 "rehabilitation",
 "placebo",
-"therapy",
 "commentary"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 671,
-"cost_usd": 0.00158
+"output_tokens": 450,
+"cost_usd": 0.00119
 }
 },
 "sources": [
@@ -8841,51 +8872,73 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 59,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:11:46Z",
+"classified_at": "2026-09-06T18:58:33Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided and title alone is insufficient to determine whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names ‘placebo-racket effects’, indicating the paper focused on placebo/context effects on tennis serve performance (placebo in sport), meeting inclusion rule for placebo effects.",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"athletes"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"sport_exercise_performance"
+],
+"outcome_measures": [
+"behavioral_performance"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"topical_cream"
+]
 },
-"summary": "No abstract available; title implied study of motor imagery and 'placebo-racket' effects on tennis serve performance, but available text was insufficient to judge whether placebo/nocebo was the study focus.",
+"summary": "Examined whether placebo-racket and motor imagery manipulations influenced tennis serve performance.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "tennis",
+"serve",
 "motor imagery",
-"serve performance",
-"placebo-racket",
-"sports psychology"
+"sports placebo",
+"racket appearance"
 ],
 "usage": {
-"input_tokens": 418,
+"input_tokens": 546,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 608,
-"cost_usd": 0.00147
+"output_tokens": 648,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -16151,51 +16204,71 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:58:37Z",
+"classified_at": "2026-09-06T18:58:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only the title is available (no abstract); it mentions placebo versus no treatment but lacks details to determine whether placebo/nocebo phenomena were the paper's explicit focus or if this is a brief commentary on treatment efficacy.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states placebo was compared with no treatment and associated with increased cure, indicating placebo response/effect is the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"placebo_vs_no_treatment_arm"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "Title reported that antibiotics and placebo were associated with a small increase in the proportion cured of acute conjunctivitis by 7 days compared with no treatment; no abstract was available to assess focus or methods.",
+"summary": "Reported that both antibiotics and placebo were associated with a small increase in proportion cured of acute conjunctivitis at 7 days compared with no treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conjunctivitis",
 "primary care",
 "antibiotics",
-"placebo",
-"no treatment"
+"cure",
+"placebo"
 ],
 "usage": {
-"input_tokens": 384,
+"input_tokens": 562,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 698,
-"cost_usd": 0.00164
+"output_tokens": 781,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -19020,87 +19093,6 @@
 "landing_url": "https://doi.org/10.1007/s00228-012-1245-2",
 "cited_by_count": 14,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:22811978",
-"title": "The placebo effect revisited.",
-"authors": [
-"Andersen JH",
-"Mikkelsen S"
-],
-"journal": "Scandinavian journal of work, environment & health",
-"journal_abbrev": "Scand J Work Environ Health",
-"year": 2012,
-"date": "2012-03-01",
-"doi": null,
-"pmid": "22811978",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Exercise",
-"Female",
-"Headache",
-"Humans",
-"Male"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:58:57Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the article is labeled as a comment, so it is unclear whether placebo phenomena are the explicit focus or merely discussed; therefore inclusion is uncertain.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract was available; the paper was a comment titled 'The placebo effect revisited,' likely discussing conceptual or historical aspects of the placebo effect.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"commentary",
-"placebo",
-"review",
-"scandinavian journal"
-],
-"usage": {
-"input_tokens": 248,
-"cache_read_input_tokens": 6016,
-"cache_creation_input_tokens": 0,
-"output_tokens": 550,
-"cost_usd": 0.00131
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2012-03-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.5414/cp201650",

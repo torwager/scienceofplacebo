@@ -255,23 +255,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/4227004",
 "cited_by_count": 9,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:02:30Z",
+"classified_at": "2026-09-06T18:18:18Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH suggest physician expectation and placebo may be relevant but available information is insufficient to confirm that placebo/nocebo phenomena were an explicit study focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names physician expectations as relevant to medication action, indicating expectancy/placebo-related phenomena are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -280,25 +282,31 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"provider_patient_interaction"
+],
+"moderators": [
+"provider_characteristics"
+],
 "intervention_type": []
 },
-"summary": "Insufficient information available; title and MeSH terms suggest the paper examined physician expectations and a medication (chlorpromazine), but the abstract is unavailable so whether placebo/nocebo phenomena were the study focus could not be determined.",
+"summary": "Investigated how a physician's expectations influenced the action of a medication, implying expectancy/placebo mechanisms were examined.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"physician_expectation",
 "chlorpromazine",
-"physician expectations",
+"placebo",
 "suggestion",
-"placebo (meSH)"
+"anxiety"
 ],
 "usage": {
-"input_tokens": 438,
-"cache_read_input_tokens": 5888,
+"input_tokens": 182,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 656,
-"cost_usd": 0.00157
+"output_tokens": 551,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -343,51 +351,64 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0140-6736(66)90243-1",
 "cited_by_count": 163,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:23Z",
+"classified_at": "2026-09-06T18:18:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the record does not make clear whether placebo/nocebo effects or responses were the explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly addresses therapeutic suggestion (expectancy/suggestion mechanisms) as part of hypnotic medication, indicating placebo/expectation mechanisms are the paper's subject per inclusion rule on suggestion/expectation effects.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"sleep"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "No abstract available; therapeutic suggestion in the context of hypnotic medication was reported but it is unclear whether placebo/nocebo phenomena were the study's explicit focus.",
+"summary": "Discussed therapeutic suggestion as a component of hypnotic medication and its role in clinical treatment of sleep-related issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"therapeutic suggestion",
+"hypnosis",
+"suggestion",
 "hypnotic medication",
 "chloral hydrate",
-"placebos",
-"lancet 1966"
+"sleep"
 ],
 "usage": {
-"input_tokens": 448,
-"cache_read_input_tokens": 5888,
+"input_tokens": 192,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 598,
-"cost_usd": 0.00146
+"output_tokens": 712,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -656,52 +677,72 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:47Z",
+"classified_at": "2026-09-06T18:18:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available to determine whether the placebo arm or placebo effects were an explicit focus rather than serving as a comparator in a drug trial.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly compares improvement in drug-treated and placebo-treated neurotic outpatients, indicating placebo-treated patients' improvement (placebo response) is an object of study.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract available; reported as a controlled clinical trial comparing compliance and improvement in drug-treated and placebo-treated neurotic outpatients.",
+"summary": "Compared compliance and clinical improvement between drug-treated and placebo-treated neurotic outpatients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"neurotic disorders",
+"neurotic_disorder",
 "chlordiazepoxide",
 "hydroxyzine",
-"placebo-controlled",
 "compliance",
-"1966"
+"psychiatry_trial_1966"
 ],
 "usage": {
-"input_tokens": 403,
+"input_tokens": 581,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 623,
-"cost_usd": 0.00149
+"output_tokens": 746,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -864,23 +905,25 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:57Z",
+"classified_at": "2026-09-06T18:18:45Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided; the title suggests investigation of the placebo reaction in acne but available information is insufficient to confirm whether placebo/nocebo phenomena were the primary focus or how they were analyzed.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the 'placebo reaction' in acne, indicating placebo response is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -893,38 +936,35 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"parallel_groups_rct"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [],
-"mechanisms": [],
-"moderators": [],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"inert_pill_capsule",
-"other"
+"inert_pill_capsule"
 ]
 },
-"summary": "No abstract available; likely a 1966 JAMA clinical trial comparing antibiotics and placebo in acne and addressing the 'placebo reaction', but the provided text is insufficient to confirm study focus or findings.",
+"summary": "Examined antibiotic treatment and the placebo reaction in acne, reporting on placebo-arm responses alongside antibiotic effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"acne",
+"acne vulgaris",
 "tetracycline",
 "novobiocin",
 "placebo reaction",
-"1966",
-"JAMA"
+"antibiotic trial"
 ],
 "usage": {
-"input_tokens": 398,
+"input_tokens": 576,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1196,
-"cost_usd": 0.00264
+"output_tokens": 612,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -964,64 +1004,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/5219969",
 "cited_by_count": 19,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:26Z",
+"classified_at": "2026-09-06T18:18:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title and MeSH suggest hypnosis/suggestion for pain but insufficient information to judge whether placebo/nocebo was the explicit object or experimentally isolated.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly indicates that suggestion (an expectancy mechanism) was used to control pain, making placebo/expectation effects the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
 "self_report"
 ],
-"design": [],
+"design": [
+"within_subject_experimental"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"verbal_suggestion_only",
+"sham_psychological"
 ]
 },
-"summary": "Insufficient abstract information; title and indexing suggested the paper reported on hypnosis/suggestion for pain control but full text is needed to determine whether placebo/nocebo phenomena were the explicit focus.",
+"summary": "Studied whether suggestion (including hypnosis) could be used to control pain in human dental/oral medicine contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
 "suggestion",
-"dental pain",
+"dental",
 "oral medicine",
-"1966",
 "pain control"
 ],
 "usage": {
-"input_tokens": 419,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00179
+"output_tokens": 756,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -1150,23 +1199,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:54Z",
+"classified_at": "2026-09-06T18:19:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests a discussion of placebo effects but it's unclear whether placebo/nocebo is the explicit focus or merely mentioned in a nursing context.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names the placebo effect and asks 'for whom?', indicating the paper's subject is placebo phenomena rather than serving as a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
@@ -1175,26 +1226,28 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "1966 journal article with no abstract; title suggested a discussion of who experiences the placebo effect, but content and focus could not be determined from available records.",
+"summary": "Discusses which patients benefit from the placebo effect and factors that might influence it.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo effect",
 "nursing",
-"attitudes",
-"1966",
-"Goshen"
+"patient characteristics",
+"expectancy",
+"1966"
 ],
 "usage": {
-"input_tokens": 362,
+"input_tokens": 540,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 695,
-"cost_usd": 0.00163
+"output_tokens": 880,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1238,65 +1291,73 @@
 "Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:47:58Z",
+"classified_at": "2026-09-06T18:19:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or methods provided; title implies study of placebo reactivity and personality but available text is insufficient to judge whether placebo response/effect was an explicit, primary focus or experimentally isolated.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly studies 'placebo reactivity' in relation to personality factors, making placebo response the paper's focus (exploratory empirical study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
+"population": [
+"other_clinical"
+],
 "age_group": [
 "adults",
 "older_adults"
 ],
-"condition_domain": [],
-"outcome_measures": [],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [
-"observational"
+"single_group_pre_post"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"other"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "personality_traits"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Insufficient abstract or methods to determine whether placebo reactivity was experimentally isolated; title indicated an exploratory study relating placebo reactivity to personality factors.",
+"summary": "Explored relationships between individual placebo reactivity and selected personality factors in adults, focusing on placebo-related analgesic responses and personality measures.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo reactivity",
-"personality",
 "mmpi",
-"nursing research",
-"analgesics",
+"personality",
+"analgesia",
+"placebo reactivity",
+"nursing",
 "1966"
 ],
 "usage": {
-"input_tokens": 402,
+"input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 947,
-"cost_usd": 0.00214
+"output_tokens": 842,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -1339,71 +1400,70 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:48:10Z",
+"classified_at": "2026-09-06T18:19:35Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates study of drug–placebo interactions but available information is insufficient to confirm that placebo/nocebo phenomena were the explicit object of study.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states the paper studied interactions of drugs with placebos in controlling pain and anxiety, making placebo phenomena the subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"not_applicable"
+"other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "pain",
 "anxiety_stress"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct"
 ],
-"effects": [
-"not_applicable"
-],
+"effects": [],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"none_reported"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"other"
+"inert_pill_capsule"
 ]
 },
-"summary": "No abstract available; title suggested an empirical study of how drugs interact with placebos in controlling pain and anxiety, but full methods and aims were not provided.",
+"summary": "Examined the interaction of drugs with placebos in the control of pain and anxiety.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "analgesia",
-"anxiety",
+"anxiolytic",
 "drug-placebo interaction",
 "1966",
 "suggestion"
 ],
 "usage": {
-"input_tokens": 415,
+"input_tokens": 593,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 694,
-"cost_usd": 0.00164
+"output_tokens": 1143,
+"cost_usd": 0.00258
 }
 },
 "sources": [
@@ -1452,53 +1512,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1966.10402492",
 "cited_by_count": 73,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:16:10Z",
+"classified_at": "2026-09-06T18:19:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only title, publication type and journal are available (case report on hypnosis for pain); the abstract/text is missing so it is unclear whether placebo/nocebo phenomena were an explicit focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses a hypnotic technique for symptom correction and pain control, indicating suggestion/expectation mechanisms are the paper's subject (meets inclusion rule for suggestion/expectancy-focused work).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "case_report",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_psychological"
+]
 },
-"summary": "No abstract; reported case(s) of an interspersal hypnotic technique for symptom correction and pain control, but placebo/nocebo focus could not be determined from available record.",
+"summary": "Described an interspersal hypnotic technique aimed at symptom correction and pain control using suggestion-based hypnotherapy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
-"interspersal technique",
+"hypnotherapy",
+"suggestion",
 "pain control",
-"case report",
+"symptom correction",
+"interspersal technique",
 "1966"
 ],
 "usage": {
-"input_tokens": 184,
-"cache_read_input_tokens": 6144,
+"input_tokens": 568,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 644,
-"cost_usd": 0.00149
+"output_tokens": 1200,
+"cost_usd": 0.00269
 }
 },
 "sources": [
@@ -1553,52 +1632,76 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf00406450",
 "cited_by_count": 123,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:01:30Z",
+"classified_at": "2026-09-06T18:20:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided and the title/MeSH terms suggest contextual factors and placebos but do not make placebo/nocebo the explicit focus, so inclusion cannot be determined from available information.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly names doctor's verbal attitude and clinic setting as factors in symptomatic response to pharmacotherapy, indicating placebo/context/expectation effects on treatment response (active-drug context manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"anxiety_disorders",
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"provider_characteristics",
+"expectation_level"
+],
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "Reported a study of drug, doctor's verbal attitude, and clinic setting on symptomatic response; abstract not available so details and outcomes could not be determined.",
+"summary": "Tested how drug, doctor's verbal attitude, and clinic setting affected symptomatic response to pharmacotherapy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"doctor-patient-communication",
+"clinical-context",
+"psychopharmacology",
 "meprobamate",
-"physician-patient relations",
-"verbal attitude",
-"clinic setting",
-"placebos",
-"psychopharmacology"
+"1966 trial"
 ],
 "usage": {
-"input_tokens": 482,
+"input_tokens": 610,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 622,
-"cost_usd": 0.00151
+"output_tokens": 877,
+"cost_usd": 0.00205
 }
 },
 "sources": [

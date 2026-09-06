@@ -3546,52 +3546,67 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:21:37Z",
+"classified_at": "2026-09-06T19:06:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title indicates measurement of treatment expectations for oral immunotherapy but does not reveal whether placebo/nocebo effects or responses were an explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly studies treatment expectations in patients referred for oral immunotherapy, which addresses expectancy/placebo-related phenomena (attitudes/expectations) even though full details are unavailable.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"allergy_respiratory"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"immune_inflammation"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study focused on placebo/nocebo phenomena; title indicated measurement of treatment expectations among food-allergic patients referred for oral immunotherapy.",
+"summary": "Described treatment expectations among food-allergic patients referred for oral immunotherapy; focused on patients' expectations and motivation rather than measuring placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "oral immunotherapy",
 "food allergy",
 "treatment expectations",
-"desensitization",
-"allergens",
-"motivation"
+"motivation",
+"patient attitudes"
 ],
 "usage": {
-"input_tokens": 409,
+"input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 435,
-"cost_usd": 0.00112
+"output_tokens": 784,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -6365,36 +6380,35 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:00Z",
+"classified_at": "2026-09-06T19:06:43Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates the paper addresses the nocebo effect in clinical practice but no abstract or full text was available to confirm whether it is an empirical study, systematic review, or a clinical narrative—insufficient information to be certain of inclusion.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly states 'The nocebo effect in current practice', indicating nocebo is the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect",
-"placebo_science_other"
+"nocebo_effect"
 ],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"clinicians_providers"
+"not_applicable"
 ],
 "age_group": [
 "mixed_unspecified"
 ],
 "condition_domain": [
-"adverse_events"
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -6417,22 +6431,24 @@
 "not_applicable"
 ]
 },
-"summary": "Narrative article addressed the nocebo effect in current clinical practice and discussed implications for clinician communication and patient side-effect reporting.",
+"summary": "Reviews the nocebo effect and its relevance to current clinical practice, including communication, disclosure, and implications for primary care.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nocebo",
-"communication",
 "informed consent",
-"side-effects",
-"clinician education"
+"adverse effects",
+"communication",
+"primary care",
+"physician-patient",
+"side-effects"
 ],
 "usage": {
-"input_tokens": 382,
+"input_tokens": 560,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00209
+"output_tokens": 814,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -12922,24 +12938,26 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:22:31Z",
+"classified_at": "2026-09-06T19:06:54Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title implies expectations and placebo-related topic but insufficient information to determine whether placebo/nocebo effects or responses were the explicit focus or primary analyses.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names placebo and examines the impact of expectations on analgesic treatment outcomes, making placebo/expectation the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
@@ -12948,29 +12966,33 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "verbal_suggestion_expectation"
 ],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"active_drug_context_manipulation"
+]
 },
-"summary": "No abstract available; title indicated a focus on how expectations influence analgesic treatment outcomes, but methods and results were not provided.",
+"summary": "Examined how patient expectations about analgesic treatment influenced analgesic outcomes, focusing on placebo/contextual expectancy effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectation",
 "analgesia",
-"placebo 2.0",
-"treatment outcome",
-"bingel"
+"expectation",
+"placebo",
+"treatment context",
+"pain"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 563,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 737,
-"cost_usd": 0.00172
+"output_tokens": 831,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -21892,52 +21914,68 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:23:42Z",
+"classified_at": "2026-09-06T19:07:04Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title alone does not reveal whether placebo/nocebo phenomena were the paper's explicit focus or merely a discussion point.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly asks whether migraine prophylaxis medication effects are placebo, making placebo effects the paper's subject per inclusion rule 4/5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_effect",
+"placebo_science_other"
+],
+"article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"pain"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to judge; the title asked whether migraine prophylaxis effects are placebo, but no abstract was available to determine study focus or methods.",
+"summary": "Asked whether migraine prophylaxis medications' observed benefits in pediatric patients were attributable to placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
 "prophylaxis",
-"pediatrics",
-"placebo",
+"paediatric",
 "placebo effect",
-"clinical debate"
+"pediatric neurology"
 ],
 "usage": {
-"input_tokens": 234,
-"cache_read_input_tokens": 6016,
+"input_tokens": 540,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00148
+"output_tokens": 807,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -30848,96 +30886,6 @@
 "private_pdf": null
 },
 {
-"id": "doi:10.7861/clinmed.20-2-s61",
-"title": "The placebo effect of direct current cardioversion on atrial fibrillation: myth or fact.",
-"authors": [
-"Thu MK",
-"Gupta S"
-],
-"journal": "Clinical medicine (London, England)",
-"journal_abbrev": "Clin Med (Lond)",
-"year": 2020,
-"date": "2020-03-01",
-"doi": "10.7861/clinmed.20-2-s61",
-"pmid": "32409380",
-"pmcid": "PMC7243521",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Atrial Fibrillation",
-"Electric Countershock",
-"Humans",
-"Placebo Effect",
-"Recurrence"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:24:56Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates placebo effect in cardioversion but available information is insufficient to determine whether placebo/nocebo phenomena were an explicit object of study (experimental or review).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Abstract was unavailable; the title suggested discussion of a placebo effect related to direct current cardioversion for atrial fibrillation, but there was insufficient information to determine study type or findings.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"atrial fibrillation",
-"cardioversion",
-"direct current cardioversion",
-"placebo effect"
-],
-"usage": {
-"input_tokens": 387,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 649,
-"cost_usd": 0.00154
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2020-03-01",
-"private_pdf": {
-"available": true,
-"store_key": "thu_2020_the_placebo_effect_of_direct.pdf",
-"source": "downloaded",
-"sha256": "48737d61ac756b7e"
-},
-"openalex_id": "https://openalex.org/W3024197657",
-"oa_status": "gold",
-"oa_pdf_url": "https://www.rcpjournals.org/content/clinmedicine/20/Suppl_2/s61.full.pdf",
-"landing_url": "https://doi.org/10.7861/clinmed.20-2-s61",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1213/ane.0000000000004643",
 "title": "Great Expectations: Influencing Postoperative Pain With Patient Psychoeducation.",
 "authors": [
@@ -30961,51 +30909,68 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1213/ane.0000000000004643",
 "cited_by_count": 2,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:49:36Z",
+"classified_at": "2026-09-06T19:07:22Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title implies an expectation/psychoeducation intervention for postoperative pain but insufficient information to determine whether placebo/nocebo phenomena were an explicit study focus or whether there was an experimental isolation of expectation effects.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly refers to influencing postoperative pain via patient psychoeducation and 'Great Expectations' implies expectancy/suggestion effects are the focus (expectation manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"surgical_patients"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title suggested a psychoeducation intervention to influence postoperative pain expectations, but methods and results were not provided so placebo/nocebo focus could not be confirmed.",
+"summary": "Investigated whether patient psychoeducation (expectancy manipulation) influenced postoperative pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"postoperative pain",
 "psychoeducation",
-"expectation",
-"patient education",
-"anesthesia"
+"postoperative pain",
+"expectancy",
+"patient education"
 ],
 "usage": {
-"input_tokens": 412,
+"input_tokens": 540,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 563,
-"cost_usd": 0.00138
+"output_tokens": 735,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -35536,23 +35501,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:25:48Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:07:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a perspective on placebos in pediatric antidepressant use but does not reveal whether placebo/nocebo effects were the object of empirical study or a review, so inclusion cannot be determined.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Opinion paper focused on placebo mechanisms and open-label placebo use in pediatric chronic pain (placebo is the main subject), qualifying as placebo science/theory.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -35560,30 +35527,42 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"open_label_placebo",
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo",
+"active_drug_context_manipulation",
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine focus; title suggested a perspective arguing that placebos can be beneficial in the context of antidepressant use for pediatric chronic pain.",
+"summary": "Opinion article argued that open-label placebos and contextual mechanisms could be ethically harnessed to reduce antidepressant use and side effects in children and adolescents with chronic pain, but called for targeted research before clinical implementation.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pediatric chronic pain",
+"open-label placebo",
+"children and adolescents",
 "antidepressants",
-"placebo",
-"nocebo",
+"chronic pain",
+"placebo by proxy",
 "ethics",
-"clinical trials",
-"children",
-"youth"
+"informed consent"
 ],
 "usage": {
-"input_tokens": 385,
+"input_tokens": 4747,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00178
+"output_tokens": 678,
+"cost_usd": 0.00269
 }
 },
 "sources": [

@@ -377,23 +377,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:09Z",
+"classified_at": "2026-09-06T18:06:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title mentions 'observations on the effects of placebos' but it's unclear whether placebo phenomena were a primary focus or merely an incidental control.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states the paper included observations on the effects of placebos, making placebo response the stated subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -401,12 +403,16 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"other"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; the 1952 paper reported pharmacologic effects of banthine on stomach and duodenum and included observations about placebos, but available metadata do not show whether placebo effects were a primary study focus.",
+"summary": "Reported observations on the effects of placebos on the human stomach and duodenum alongside investigation of banthine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -418,11 +424,11 @@
 "1952"
 ],
 "usage": {
-"input_tokens": 408,
+"input_tokens": 586,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 575,
-"cost_usd": 0.0014
+"output_tokens": 714,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -468,23 +474,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/13051392",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:02:15Z",
+"classified_at": "2026-09-06T18:06:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title refers to 'conditioned hemolysis' (suggesting classical conditioning of immune/hematologic responses) but no abstract or methods are available to confirm whether placebo/nocebo phenomena or conditioned responses were the explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly reports conditioned hemolysis, indicating a classical conditioning study of physiological responses relevant to placebo mechanisms.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -493,33 +501,34 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"other"
+"immune_inflammatory"
 ],
 "design": [],
 "effects": [],
 "mechanisms": [
 "classical_conditioning"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": []
 },
-"summary": "Title indicated investigation of hemagglutination and conditioned hemolysis; abstract was unavailable so the study's focus on placebo/nocebo or conditioned immune responses could not be confirmed.",
+"summary": "Reported conditioned hemagglutination/hemolysis, implying classical conditioning of hematologic immune responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned hemolysis",
 "hemagglutination",
 "classical conditioning",
-"hematology",
-"tuberculosis",
-"1952"
+"conditioning",
+"hematology"
 ],
 "usage": {
 "input_tokens": 195,
-"cache_read_input_tokens": 6144,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 666,
-"cost_usd": 0.00153
+"output_tokens": 1009,
+"cost_usd": 0.00222
 }
 },
 "sources": [

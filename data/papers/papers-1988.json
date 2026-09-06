@@ -934,50 +934,58 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:36:53Z",
+"classified_at": "2026-09-06T18:43:19Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and title plus MeSH terms are insufficient to determine whether placebo phenomena were the paper's explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'the placebo', indicating the paper's main subject is the placebo concept rather than using placebo as a mere comparator.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract or full text available; insufficient information to judge whether placebo/nocebo phenomena were the paper's focus.",
+"summary": "Likely a commentary or perspective piece discussing the concept or role of the placebo (e.g., a physician as placebo).",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"physician-as-placebo",
+"commentary",
+"placebo-concept",
 "anecdote",
-"physician_practice",
-"placebo_prescribing",
-"clinical_vignette"
+"iowa medicine",
+"1988"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 563,
-"cost_usd": 0.00137
+"output_tokens": 538,
+"cost_usd": 0.00136
 }
 },
 "sources": [
@@ -3388,51 +3396,74 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:13Z",
+"classified_at": "2026-09-06T18:43:30Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full-text provided; title suggests a placebo-related question but available record is insufficient to judge whether placebo/nocebo effects were the study's explicit focus or merely a comparator.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly asks whether loss of antidepressant effect is related to the placebo effect, making placebo response the subject of the paper.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"clinician_rated",
+"clinical_endpoint",
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis",
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract available; title asked whether loss of antidepressant effect during continuation therapy was related to the placebo effect, but methods and results were not provided in the record.",
+"summary": "Investigated whether the loss of antidepressant effect during continuation therapy was related to the placebo response in depression trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"antidepressant",
 "continuation therapy",
+"antidepressant",
 "relapse",
-"withdrawal",
-"depression"
+"depression trials",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 410,
+"input_tokens": 588,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 554,
-"cost_usd": 0.00136
+"output_tokens": 765,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -3791,53 +3822,73 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:44Z",
+"classified_at": "2026-09-06T18:43:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title and MeSH imply a placebo/challenge experiment with alcohol but available information is insufficient to confirm that placebo/nocebo phenomena were the explicit primary focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names a placebo challenge contrasting alcohol versus placebo, indicating placebo/conditioning effects were the study focus (mechanisms of placebo following repeated alcohol/placebo administration).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"autonomic"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"classical_conditioning",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"placebo_food_drink"
+]
 },
-"summary": "Insufficient information to determine focus; title and MeSH suggest an experimental placebo-challenge comparing repeated alcohol versus placebo with conditioning and physiological measures.",
+"summary": "Studied physiological responses after repeated alcohol versus placebo administration to examine placebo/conditioning effects on autonomic measures.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol",
+"alcohol placebo",
 "placebo challenge",
 "conditioning",
 "galvanic skin response",
 "heart rate",
-"nida monograph",
-"placebos"
+"body temperature"
 ],
 "usage": {
-"input_tokens": 412,
+"input_tokens": 590,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 716,
-"cost_usd": 0.00168
+"output_tokens": 835,
+"cost_usd": 0.00196
 }
 },
 "sources": [

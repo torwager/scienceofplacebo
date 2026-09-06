@@ -2048,18 +2048,18 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:29:15Z",
+"classified_at": "2026-09-06T18:46:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.45,
-"rationale": "No abstract or full text provided; title explicitly addresses placebo response in chronic schizophrenia and investigator dependence, but insufficient information to confirm that placebo/nocebo phenomena were the explicit analytic focus or details of design.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states placebo response in chronic schizophrenia is the topic, asking whether it is investigator-dependent, so placebo response is the object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2079,40 +2079,43 @@
 "other"
 ],
 "outcome_measures": [
-"clinician_rated"
+"clinician_rated",
+"self_report"
 ],
 "design": [
 "parallel_groups_rct"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"provider_characteristics",
+"trial_characteristics"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"not_applicable"
 ]
 },
-"summary": "No abstract available; title indicated the study examined whether positive placebo response in chronic schizophrenia varied by investigator.",
+"summary": "Examined whether the magnitude of positive placebo response in chronic schizophrenia varied by investigator/rater, analyzing placebo responses across investigators in a clinical trial context.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "schizophrenia",
-"placebo response",
-"investigator effects",
-"psychiatric rating scales",
-"clinical trial"
+"investigator_effect",
+"rater_bias",
+"placebo_response",
+"psychiatric_rating_scales",
+"clinical_trial"
 ],
 "usage": {
-"input_tokens": 428,
+"input_tokens": 606,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 690,
-"cost_usd": 0.00163
+"output_tokens": 670,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -6636,70 +6639,59 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:29:48Z",
+"classified_at": "2026-09-06T18:46:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates a conceptual/review evaluation of the hypnosis/placebo theory in spiritual healing but insufficient information to confirm whether placebo phenomena were the primary empirical focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states the paper evaluates the hypnosis/placebo theory as an explanation for spiritual healing, making placebo mechanisms the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
 "history_conceptual"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviewed and evaluated the hypnosis/placebo theory as an explanation for spiritual healing and folklore research.",
+"summary": "Evaluated the hypnosis/placebo theory as an explanation for spiritual healing and folklore phenomena.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"spiritual_healing",
+"spiritual healing",
 "hypnosis",
 "folklore",
-"placebo_theory"
+"placebo theory",
+"alternative medicine"
 ],
 "usage": {
-"input_tokens": 383,
+"input_tokens": 561,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 683,
-"cost_usd": 0.00161
+"output_tokens": 730,
+"cost_usd": 0.00175
 }
 },
 "sources": [

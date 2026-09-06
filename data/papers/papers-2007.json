@@ -3327,54 +3327,70 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:11:15Z",
+"classified_at": "2026-09-06T18:53:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available and the title/question format makes it unclear whether placebo phenomena are the paper's explicit focus or a rhetorical device.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames serial casting benefits in cerebral palsy as possibly a placebo, indicating placebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"pediatric_clinical"
+],
+"age_group": [
+"children_adolescents"
+],
 "condition_domain": [
-"other"
+"motor_function"
 ],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Was a commentary questioning whether serial casting for cerebral palsy represents beneficial treatment, placebo, or risk, but abstract/full text were unavailable to confirm focus on placebo mechanisms or responses.",
+"summary": "Questioned whether clinical changes after serial casting in children with cerebral palsy represent true treatment effects, placebo effects, or harms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cerebral palsy",
 "serial casting",
-"orthotics",
-"spasticity",
-"pediatric rehabilitation",
-"casting complications"
+"pediatric orthopedics",
+"placebo debate",
+"motor impairment"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 531,
-"cost_usd": 0.00131
+"output_tokens": 778,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -14185,59 +14201,77 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 378,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:13:09Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:53:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates a sham-controlled RCT of biofeedback versus sham and standard therapy, but no abstract or full text was available to determine whether placebo/sham effects were an explicit focus or merely a control for efficacy.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "A randomized trial explicitly contrasted biofeedback with a sham-feedback control to test whether improvements reflect operant conditioning versus attention, making placebo/sham mechanisms an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
+"population": [
+"other_clinical"
 ],
-"outcome_measures": [],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"nausea_gi"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
 "design": [
 "parallel_groups_rct"
 ],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"classical_conditioning",
+"provider_patient_interaction",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"sham_psychological",
-"sham_device",
-"not_applicable"
+"sham_psychological"
 ]
 },
-"summary": "No abstract available; reported a randomized trial comparing biofeedback, sham feedback, and standard therapy for dyssynergic defecation.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Randomized trial compared biofeedback, sham feedback, and standard therapy in 77 patients with dyssynergic defecation and found biofeedback improved physiology and bowel symptoms more than sham or standard therapy.",
+"key_finding": "Biofeedback corrected dyssynergia, improved defecation index and balloon expulsion, and increased complete spontaneous bowel movements versus sham feedback.",
+"sample_size": 77,
 "free_keywords": [
 "dyssynergic defecation",
+"anorectal manometry",
+"balloon expulsion",
+"constipation",
 "biofeedback",
 "sham feedback",
-"pelvic floor",
-"constipation"
+"randomized trial"
 ],
 "usage": {
-"input_tokens": 59,
-"cache_read_input_tokens": 6272,
+"input_tokens": 950,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 641,
-"cost_usd": 0.00145
+"output_tokens": 1196,
+"cost_usd": 0.00278
 }
 },
 "sources": [

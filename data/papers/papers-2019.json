@@ -7147,74 +7147,60 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:26:54Z",
+"classified_at": "2026-09-06T19:05:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; the title suggests a JAMA commentary about open-label (honest) placebos and psychosocial health links but the paper type and whether it empirically studies placebo/nocebo phenomena are unclear.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names 'Honest Placebos', indicating placebo (open-label) is a central topic suitable for inclusion as placebo-science commentary.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "editorial_letter",
 "species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"open_label_placebo",
-"clinical_use_ethics_attitudes"
+"open_label_placebo"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "open_label_placebo"
 ]
 },
-"summary": "No abstract available; likely a JAMA commentary discussing honest (open-label) placebos and psychological factors such as hostility and sleep in relation to health.",
+"summary": "Comments on honest (open-label) placebos and other mind-related topics (hostility, heart disease risk, and sleep) were presented.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "open-label placebo",
 "honest placebo",
-"hostility",
+"editorial",
 "sleep",
-"cardiovascular",
-"commentary",
-"JAMA"
+"hostility",
+"cardiovascular risk"
 ],
 "usage": {
-"input_tokens": 370,
+"input_tokens": 548,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 931,
-"cost_usd": 0.0021
+"output_tokens": 620,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -8038,53 +8024,73 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:27:00Z",
+"classified_at": "2026-09-06T19:05:17Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the item is a journal comment referencing placebo response rates, so it's unclear whether placebo/nocebo phenomena are the paper's primary focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses 'Placebo Response Rates' in trials of antidepressants in youth, making placebo response the paper's subject (a comment on a meta-analysis of placebo responses).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "editorial_letter",
 "species": "human",
-"population": [],
+"population": [
+"depression"
+],
 "age_group": [
 "children_adolescents"
 ],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "A journal comment by Kirsch et al. responding to a meta-analysis of antidepressant placebo response in youth; full text not provided so its substantive focus on placebo phenomena is unclear.",
+"summary": "Commented on a systematic review/meta-analysis concerning placebo response rates in antidepressant trials for children and adolescents with major depressive disorder.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"comment",
 "antidepressant",
 "major depressive disorder",
+"children",
+"adolescents",
 "placebo response",
-"children and adolescents"
+"clinical trials",
+"meta-analysis"
 ],
 "usage": {
-"input_tokens": 465,
+"input_tokens": 643,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 606,
-"cost_usd": 0.00148
+"output_tokens": 763,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -17518,51 +17524,98 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:28:32Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:05:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates focus on placebo response in surgical contexts but available information is insufficient to confirm article type or whether placebo/nocebo is the paper's explicit object of study.",
+"decision": "include",
+"confidence": 0.92,
+"rationale": "Narrative review focused explicitly on placebo/placebo-response in surgery and clinical contexts, discussing mechanisms, examples, and implications (placebo is the main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response",
+"placebo_science_other"
+],
 "article_type": "narrative_review",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "human",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain",
+"adverse_events",
+"motor_function",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated",
+"clinical_endpoint",
+"autonomic",
+"pet_neurochemical",
+"other"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"social_observational_learning",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"neural_systems_circuits",
+"neurobiology_dopamine",
+"trial_methodology_placebo_response",
+"history_conceptual"
+],
+"moderators": [
+"provider_characteristics",
+"expectation_level",
+"prior_experience",
+"trial_characteristics"
+],
+"intervention_type": [
+"sham_surgery",
+"inert_pill_capsule",
+"sham_acupuncture",
+"sham_device",
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title suggests a discussion or review of the placebo response in surgical practice, possibly focused on spine surgery and placebo phenomena.",
+"summary": "Narrative review described the components, examples, and implications of the placebo response—especially in surgical contexts—and discussed mechanisms, moderators, and ethical/design considerations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"surgery",
-"spine",
-"placebo response",
-"placebo effect",
-"clinical trials"
+"vertebroplasty",
+"meniscectomy",
+"irritable bowel syndrome",
+"dopamine",
+"surgeon expectation",
+"placebo surgery",
+"natural history"
 ],
 "usage": {
-"input_tokens": 368,
+"input_tokens": 4088,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 519,
-"cost_usd": 0.00128
+"output_tokens": 1026,
+"cost_usd": 0.00322
 }
 },
 "sources": [
@@ -17611,35 +17664,36 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:28:31Z",
+"classified_at": "2026-09-06T19:05:36Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title indicates placebo analgesia as topic but insufficient information to tell whether this is an empirical study, review, or commentary focused on placebo effects/responses.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly addresses 'Harnessing Placebo Analgesia' and its use to reduce opioids in oral surgery, indicating placebo mechanisms/clinical application are the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "human",
 "population": [
-"surgical_patients"
+"not_applicable"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"global_health_qol"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -17651,7 +17705,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"harnessing_placebo_clinical"
+"harnessing_placebo_clinical",
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -17660,22 +17716,22 @@
 "not_applicable"
 ]
 },
-"summary": "Insufficient abstract information; title indicated a discussion of using placebo analgesia to reduce opioid use in oral surgery.",
+"summary": "Discussed using placebo analgesia to reduce opioid use in oral surgery and strategies to harness expectation/context for analgesia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "oral surgery",
-"postoperative pain",
 "opioid-sparing",
-"placebo analgesia",
-"clinical application"
+"analgesia",
+"expectation",
+"placebo analgesia"
 ],
 "usage": {
-"input_tokens": 423,
+"input_tokens": 601,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00161
+"output_tokens": 579,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -28839,51 +28895,67 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:30:15Z",
+"classified_at": "2026-09-06T19:05:47Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.2,
-"rationale": "No abstract or full text available and the title/MeSH mention placebo but do not show whether placebo/nocebo phenomena were the explicit focus or object of study.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'Placebo' indicating placebo phenomena are a primary subject (placebo in digital ASMR context).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"sensory_perception"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"media_social_contagion",
+"therapeutic_ritual_context",
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"digital_virtual"
+]
 },
-"summary": "Insufficient information to determine whether placebo/nocebo effects were the primary focus; no abstract available.",
+"summary": "Discusses placebo and performance aspects of ASMR role-play videos and their potential therapeutic and social‑contagion implications in the digital era.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "asmr",
 "role-play",
-"digital media",
-"placebo context",
-"internet videos"
+"digital placebo",
+"internet videos",
+"therapeutic ritual"
 ],
 "usage": {
-"input_tokens": 276,
-"cache_read_input_tokens": 6016,
+"input_tokens": 582,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.00128
+"output_tokens": 715,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -29306,20 +29378,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:29:53Z",
+"classified_at": "2026-09-06T19:05:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available to determine whether the article’s primary focus was placebo science versus a passing or clinical discussion; insufficient information to judge inclusion.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The title explicitly names placebo as the subject ('The power of placebo'), indicating placebo phenomena are the paper's focus.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -29332,26 +29404,28 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to determine content from the record; likely discussed placebo use or its implications in nursing practice.",
+"summary": "Discusses the role, impact, and implications of placebo phenomena for nursing practice and patient care.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"nursing",
-"placebo use",
-"clinical practice",
-"placebo ethics"
+"community nursing",
+"nursing practice",
+"placebo ethics",
+"clinical communication"
 ],
 "usage": {
-"input_tokens": 376,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 596,
-"cost_usd": 0.00143
+"output_tokens": 644,
+"cost_usd": 0.00157
 }
 },
 "sources": [
@@ -37048,51 +37122,70 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:30:46Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:06:04Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone does not reveal whether placebo/nocebo phenomena were an explicit focus or merely mentioned, so inclusion cannot be determined without full text.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Letter/commentary focused on placebo and nonspecific effects in psychotherapy and called for control/placebo groups, so it is a placebo-science commentary to include.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "editorial_letter",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"provider_patient_interaction",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information in the abstract to determine whether placebo/nocebo phenomena were the paper's primary focus; full text needed to judge inclusion.",
+"summary": "Argued that improvements reported in a small uncontrolled psychotherapy case series for childhood depression likely reflected placebo and nonspecific factors and recommended using control/placebo groups in such research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"childhood depression",
 "psychotherapy",
-"placebo",
-"nocebo",
-"pediatric psychiatry"
+"therapeutic alliance",
+"duchenne smile",
+"childhood depression",
+"placebo effects",
+"methodology"
 ],
 "usage": {
-"input_tokens": 359,
+"input_tokens": 1351,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00144
+"output_tokens": 776,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -37133,52 +37226,76 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:30:47Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:06:18Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and the title suggests a methodological/commentary topic about placebo-related measurement bias, so insufficient information to determine if placebo/nocebo effects are the study focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Paper performed a secondary analysis of placebo arms across RCTs and explicitly investigated placebo-generated changes in hair counts, making placebo response the analytic focus (rule 2).",
+"exclusion_reason": null,
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint"
+],
+"design": [
+"placebo_arm_secondary_analysis"
+],
+"effects": [
+"significant_objective",
+"mixed_inconsistent"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"treatment_characteristics"
+],
+"intervention_type": [
+"topical_cream",
+"inert_pill_capsule"
+]
 },
-"summary": "Likely discussed methods to avoid placebo-generated increases in hair counts and measurement artifacts in trichology, but full content was unavailable.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Analyzed placebo arms from 13 high-quality RCTs of hair loss treatments and found topical vehicle placebos (propylene glycol lotions) showed increased hair counts while oral placebos showed mean decreases, implicating measurement and vehicle confounds in reported efficacy.",
+"key_finding": "Topical propylene-glycol-containing placebo lotions showed mean increases (~+13 hair/cm2, ~+9%), whereas oral placebo arms showed mean decreases (~−5 hair/cm2, ~−3%), suggesting vehicle or measurement confounding.",
+"sample_size": 4743,
 "free_keywords": [
-"hair_loss",
-"alopecia",
-"hair_count",
-"measurement_bias",
-"placebo_response",
-"trichology"
+"androgenetic alopecia",
+"minoxidil",
+"propylene glycol",
+"hair counts",
+"photographic method",
+"unit area trichogram",
+"placebo arm analysis"
 ],
 "usage": {
-"input_tokens": 240,
-"cache_read_input_tokens": 6016,
+"input_tokens": 3683,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 769,
-"cost_usd": 0.00175
+"output_tokens": 1032,
+"cost_usd": 0.00313
 }
 },
 "sources": [

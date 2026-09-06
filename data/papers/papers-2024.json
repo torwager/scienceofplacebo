@@ -4547,18 +4547,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:01:18Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:12:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.62,
-"rationale": "No abstract or full text provided; title suggests a methodological review of sham acupuncture but the paper's focus on placebo/nocebo cannot be confirmed from available information.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Opinion/commentary focused on sham acupuncture and placebo control methodology, making placebo the main subject (placebo science/methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4566,7 +4566,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [
 "not_applicable"
@@ -4589,7 +4589,8 @@
 "mechanisms": [
 "trial_methodology_placebo_response",
 "treatment_cues_dose_route",
-"therapeutic_ritual_context"
+"therapeutic_ritual_context",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
@@ -4598,22 +4599,24 @@
 "sham_acupuncture"
 ]
 },
-"summary": "No abstract available; title indicated a reconsideration of sham acupuncture methods, likely discussing placebo/sham control methodology in acupuncture research.",
+"summary": "Argued that sham acupuncture controls need reconsideration and advocated for better-matched sham procedures (e.g., matched insertion depth and non-acupoint placement) to isolate acupoint specificity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sham acupuncture",
-"placebo acupuncture",
-"acupuncture controls",
-"methodology",
-"control interventions"
+"acupuncture",
+"sham needling",
+"superficial needling",
+"acupoint specificity",
+"needling depth",
+"trial blinding",
+"placebo control"
 ],
 "usage": {
-"input_tokens": 363,
+"input_tokens": 2591,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 786,
-"cost_usd": 0.00181
+"output_tokens": 742,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -6327,51 +6330,63 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:01:32Z",
+"classified_at": "2026-09-06T19:12:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title indicates a short reply/commentary, so it is unclear whether this paper reports original placebo/nocebo data or is an editorial comment on informant effects.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states 'Placebo Response in Mental Disorders' and addresses an 'Informant Effect', indicating the paper's focus is on placebo response phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "editorial_letter",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"other"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Could not determine content from the record; likely a brief reply/commentary about informant effects on placebo response in mental disorders.",
+"summary": "Was a reply discussing how informant-related factors influence the placebo response in studies of mental disorders.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "informant-report",
-"placebo_response",
-"mental_disorders",
-"reply",
-"jama psychiatry"
+"placebo response",
+"mental disorders",
+"psychiatry",
+"reply"
 ],
 "usage": {
-"input_tokens": 367,
+"input_tokens": 545,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 697,
-"cost_usd": 0.00163
+"output_tokens": 695,
+"cost_usd": 0.00167
 }
 },
 "sources": [
@@ -6407,18 +6422,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:01:32Z",
+"classified_at": "2026-09-06T19:12:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title clearly targets placebo response in mental disorders but insufficient information to determine study design or whether placebo/nocebo is the analytic focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names 'Placebo Response in Mental Disorders' indicating placebo response is the paper's subject (informant effects on that response).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6426,33 +6441,29 @@
 "study_focus": [
 "placebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
-"mixed_clinical",
-"other_clinical"
+"mixed_clinical"
 ],
 "age_group": [
 "mixed_unspecified"
 ],
 "condition_domain": [
-"mood_depression",
-"anxiety_stress",
 "other"
 ],
 "outcome_measures": [
 "self_report",
-"clinician_rated",
-"not_applicable"
+"clinician_rated"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
+"observational"
+],
+"effects": [
 "not_applicable"
 ],
-"effects": [],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"provider_patient_interaction"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -6461,22 +6472,21 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title indicated the paper examined informant effects on placebo response in mental disorders, but methods and findings were not provided.",
+"summary": "Investigated how informant reporting influenced placebo response measurements across mental disorders.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"informant",
-"placebo response",
-"mental disorders",
+"informant-report",
 "psychiatry",
-"treatment expectancy"
+"placebo_response",
+"outcome-assessment"
 ],
 "usage": {
-"input_tokens": 365,
+"input_tokens": 543,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 842,
-"cost_usd": 0.00192
+"output_tokens": 753,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -12125,53 +12135,80 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:02:14Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:12:42Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Title and metadata claim an open-label placebo RCT in obesity but the abstract describes expectancies in an antibiotic trial for persistent Lyme disease, creating insufficient information to judge whether placebo/nocebo phenomena were the paper's focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Randomized controlled trial explicitly tested open-label placebo versus treatment-as-usual with weight change and eating behavior as primary/secondary outcomes, making placebo effects the study focus (OLP causal test).",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"appetite_metabolism",
+"global_health_qol"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"parallel_groups_rct",
+"placebo_vs_no_treatment_arm"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"open_label_placebo",
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"open_label_placebo"
+]
 },
-"summary": "Title and metadata indicated an open-label placebo RCT in obesity, but the provided abstract instead described expectancy predictors in an antibiotic trial for persistent Lyme disease, preventing a clear assessment of placebo/nocebo focus.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Randomized trial in 57 adults with overweight/obesity found that open-label placebo plus diet/exercise led to greater weight loss and altered eating-behavior scores versus treatment-as-usual over 4 weeks.",
+"key_finding": "OLP group lost 2.22 ±1.59 kg versus 1.26 ±1.43 kg in TAU (ANCOVA p=0.011, partial η2=0.11).",
+"sample_size": 57,
 "free_keywords": [
-"title-abstract-mismatch",
-"open-label-placebo",
+"open-label placebo",
 "obesity",
-"lyme disease",
-"expectancy",
-"antibiotic trial",
-"placebo effect"
+"body mass index",
+"three-factor eating questionnaire",
+"weight loss",
+"cellulose capsule"
 ],
 "usage": {
-"input_tokens": 973,
+"input_tokens": 10412,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 730,
-"cost_usd": 0.00185
+"output_tokens": 866,
+"cost_usd": 0.00448
 }
 },
 "sources": [
@@ -12475,20 +12512,20 @@
 "oa_pdf_url": "http://dx.doi.org/10.1371/journal.pmen.0000115",
 "landing_url": "http://dx.doi.org/10.1371/journal.pmen.0000115",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:47:28Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:12:51Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a conceptual/theoretical stance about expectations rather than an empirical study of placebo/nocebo, so inclusion cannot be confidently determined.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Opinion/theoretical commentary whose primary subject is patient expectations and their role in treatment strategy/placebo science (fits inclusion rule 4/5 for placebo science and theory pieces).",
+"exclusion_reason": null,
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -12496,10 +12533,18 @@
 ],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -12507,8 +12552,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual",
-"clinical_use_ethics_attitudes"
+"verbal_suggestion_expectation",
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -12517,22 +12563,24 @@
 "not_applicable"
 ]
 },
-"summary": "Presented a conceptual argument that patient expectations are an element of treatment strategy rather than merely a source of bias; no abstract available to assess empirical content.",
-"key_finding": null,
+"summary": "Argued that patient expectations are an integral part of treatment strategy rather than merely a source of bias, using MDMA‑assisted psychotherapy trials and related examples to illustrate implications for trial design and interpretation.",
+"key_finding": "Contended that expectation and context contribute to therapeutic outcomes and that methodological convention should not override clinical reality.",
 "sample_size": null,
 "free_keywords": [
+"mdma-assisted-therapy",
+"ptsd",
 "expectation",
-"treatment_strategy",
-"bias",
-"placebo",
-"nocebo"
+"unblinding",
+"functional unblinding",
+"trial design",
+"treatment context"
 ],
 "usage": {
-"input_tokens": 162,
-"cache_read_input_tokens": 6144,
+"input_tokens": 2879,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 660,
-"cost_usd": 0.00151
+"output_tokens": 780,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -14827,61 +14875,83 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:02:37Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:13:02Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title implies expectation and tDCS effects on experimental pain but does not confirm whether placebo/nocebo phenomena or sham/placebo conditions were an explicit focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Paper is a peer-reviewed commentary focused on placebo/expectation effects in tDCS, discussing a balanced-placebo experiment, mechanisms, trial methodology and ethics—placing placebo science as the main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"neural_systems_circuits",
-"treatment_cues_dose_route"
+"social_observational_learning",
+"treatment_cues_dose_route",
+"therapeutic_ritual_context",
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
-"moderators": [],
+"moderators": [
+"sex_gender",
+"culture_ethnicity",
+"prior_experience",
+"trial_characteristics"
+],
 "intervention_type": [
 "sham_neurostimulation",
-"sham_device",
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "No abstract available; title suggested an experimental study of expectations and tDCS modulation on experimental pain, but it was unclear whether placebo/nocebo effects or sham controls were the explicit focus.",
-"key_finding": null,
+"summary": "Commentary discussed a 2x2 balanced-placebo tDCS experiment showing independent, additive effects of anodal tDCS and socially induced expectations on experimental pain and considered design, ethical, and clinical implications.",
+"key_finding": "Reported that anodal tDCS and analgesic expectations independently reduced experimental pain, with additive effects.",
 "sample_size": null,
 "free_keywords": [
 "tDCS",
-"transcranial direct current stimulation",
-"expectation",
-"experimental pain",
-"brain modulation"
+"balanced-placebo",
+"expectations",
+"social influence",
+"analgesia",
+"hyperalgesia",
+"deception",
+"ethics"
 ],
 "usage": {
-"input_tokens": 373,
+"input_tokens": 3283,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 701,
-"cost_usd": 0.00164
+"output_tokens": 889,
+"cost_usd": 0.00275
 }
 },
 "sources": [
@@ -19753,41 +19823,37 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:03:22Z",
+"classified_at": "2026-09-06T19:13:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Only the title is available and it could be a commentary calling for disclosure rather than a meta-analysis or empirical re-analysis, so it's unclear whether placebo response is the paper's analytic focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'Placebo Response in Drug Trials for Irritable Bowel Syndrome' and critiques meta-analyses, so placebo response is the paper's subject (meta-analytic focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "theory_commentary",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
 "gi_ibs"
 ],
-"age_group": [
-"adults"
-],
+"age_group": [],
 "condition_domain": [
 "nausea_gi"
 ],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
 "not_applicable"
@@ -19796,29 +19862,28 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed meta-analyses of placebo response in IBS drug trials and called for disclosure of excipients; abstract was not available so study details were unclear.",
+"summary": "Revisits meta-analyses of placebo response in IBS drug trials and called for disclosure of placebo excipients in trial reports.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
-"placebo response",
+"placebo arm",
 "excipients",
 "meta-analysis",
-"clinical trials",
-"gastroenterology"
+"trial methodology"
 ],
 "usage": {
-"input_tokens": 404,
+"input_tokens": 582,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 930,
-"cost_usd": 0.00211
+"output_tokens": 1094,
+"cost_usd": 0.00248
 }
 },
 "sources": [
@@ -22496,27 +22561,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:04:07Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:13:27Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available to determine whether the paper presents new data or is a commentary/theoretical piece focusing on placebo response in antidepressant RCTs.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Theory/commentary focused on placebo response in antidepressant RCTs and a mechanistic hypothesis about KOR antagonists modulating intrinsic placebo response, so placebo science is the paper's main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -22536,32 +22601,40 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"neurobiology_other_neurochemical"
+"verbal_suggestion_expectation",
+"neurobiology_dopamine",
+"neural_systems_circuits",
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"expectation_level",
+"prior_experience",
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed the possibility that kappa-opioid receptor (KOR) antagonists might influence intrinsic placebo responses observed in antidepressant randomized trials.",
+"summary": "Presented a commentary proposing that kappa-opioid receptor (KOR) antagonists may modulate intrinsic placebo response in antidepressant RCTs by acting on reward/aversion circuitry and interacting with lead-in enrichment effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"kappa-opioid receptor",
-"KOR antagonist",
-"antidepressant trials",
-"randomized controlled trials",
-"placebo response"
+"aticaprant",
+"kappa-opioid antagonist",
+"lead-in run-in",
+"enrichment",
+"anhedonia",
+"reward system",
+"placebo response",
+"antidepressant rct"
 ],
 "usage": {
-"input_tokens": 415,
+"input_tokens": 2824,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 757,
-"cost_usd": 0.00176
+"output_tokens": 876,
+"cost_usd": 0.00261
 }
 },
 "sources": [
@@ -24229,51 +24302,69 @@
 "oa_pdf_url": "https://hdl.handle.net/11380/1353746",
 "landing_url": "https://doi.org/10.1097/phm.0000000000002544",
 "cited_by_count": 27,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:47:34Z",
+"classified_at": "2026-09-06T19:13:37Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text available; title suggests a conceptual piece about the 'drucebo' and expectation management but it's unclear whether placebo/nocebo phenomena are the explicit focus or if the article is a review/commentary.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Title explicitly names a placebo/nocebo-related phenomenon ('Drucebo Effect') and focuses on expectation management to enhance PM&R outcomes, indicating placebo science is the paper's subject.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
+"species": "human",
+"population": [
+"clinicians_providers"
+],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"clinical_use_ethics_attitudes",
+"harnessing_placebo_clinical"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Unclear from available metadata; title indicated a conceptual discussion of the 'drucebo' and expectation management in physical medicine and rehabilitation.",
+"summary": "Discusses integrating the 'Drucebo' effect into physical medicine and rehabilitation and enhancing clinical outcomes by managing patient expectations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "drucebo",
 "expectation management",
-"physical medicine",
-"rehabilitation",
-"placebo_concept"
+"physical medicine and rehabilitation",
+"placebo_nocebo",
+"clinical communication"
 ],
 "usage": {
-"input_tokens": 174,
-"cache_read_input_tokens": 6144,
+"input_tokens": 558,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 624,
-"cost_usd": 0.00145
+"output_tokens": 685,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -31750,39 +31841,38 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:04:56Z",
+"classified_at": "2026-09-06T19:13:49Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or full text provided; title and MeSH suggest the paper addresses placebo/ placebo-response rates in hidradenitis suppurativa RCTs but content and article type are unclear.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly focuses on placebo response rates in randomized trials of hidradenitis suppurativa, so placebo response is the paper's subject (methodological/review focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "narrative_review",
+"article_type": "systematic_review",
 "species": "human",
 "population": [
+"dermatology",
 "other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -31793,28 +31883,28 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Title suggested the paper addressed high placebo-response rates in randomized trials for hidradenitis suppurativa, but no abstract was available to confirm scope or findings.",
+"summary": "Reviews strategies to address high placebo response rates in randomized clinical trials for hidradenitis suppurativa.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hidradenitis_suppurativa",
-"placebo_response",
+"hidradenitis suppurativa",
+"placebo response",
+"randomized controlled trials",
 "dermatology",
-"randomized_controlled_trials",
-"trial_methodology"
+"trial design"
 ],
 "usage": {
-"input_tokens": 397,
+"input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 708,
-"cost_usd": 0.00166
+"output_tokens": 806,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -36541,51 +36631,75 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:05:36Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T19:14:01Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests placebo may be discussed but it's unclear whether placebo/nocebo phenomena are the paper's focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Review specifically examined the use of placebo in IBD trials and proposed alternative trial designs, making placebo methodology/ethics the paper's focus (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"nausea_gi",
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information: no abstract available to determine whether the paper focused on placebo or nocebo phenomena in IBD trials.",
+"summary": "Reviews ethical concerns and alternative trial designs for placebo use in inflammatory bowel disease clinical trials, and proposed design solutions to balance ethics and clinical relevance.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "inflammatory bowel disease",
 "ulcerative colitis",
-"placebo",
+"trial ethics",
+"placebo control",
+"alternative designs",
 "clinical trials",
-"trial methodology"
+"methodology"
 ],
 "usage": {
-"input_tokens": 255,
-"cache_read_input_tokens": 6016,
+"input_tokens": 466,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 665,
-"cost_usd": 0.00154
+"output_tokens": 717,
+"cost_usd": 0.0017
 }
 },
 "sources": [
@@ -37654,89 +37768,6 @@
 "landing_url": "https://doi.org/10.1111/cts.13715",
 "cited_by_count": 2,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/s2665-9913(23)00319-3",
-"title": "Can contextual factors improve clarity of the results from clinical trials of low back pain?",
-"authors": [
-"Dougherty P"
-],
-"journal": "The Lancet. Rheumatology",
-"journal_abbrev": "Lancet Rheumatol",
-"year": 2024,
-"date": "2024-01-01",
-"doi": "10.1016/s2665-9913(23)00319-3",
-"pmid": "38258674",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W4389886067",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Humans",
-"Low Back Pain"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/s2665-9913(23)00319-3",
-"cited_by_count": 2,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:47:49Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text available and the title suggests a methodological comment about contextual factors but it's unclear whether placebo/nocebo phenomena are the explicit focus.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Commentary on how contextual factors might clarify results of low back pain trials; abstract unavailable so focus on placebo/nocebo effects is unclear.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"low back pain",
-"contextual factors",
-"trial methodology",
-"placebo response",
-"expectation"
-],
-"usage": {
-"input_tokens": 425,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 824,
-"cost_usd": 0.0019
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-01-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1007/978-3-031-45493-6_10",

@@ -1386,33 +1386,31 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:59:35Z",
+"classified_at": "2026-09-06T18:56:41Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title indicates focus on placebo in IBS but available record is insufficient to confirm whether this is a review, empirical study, or placebo-focused analysis.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly names the role of placebo in irritable bowel syndrome, indicating placebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"not_applicable"
+"other_clinical"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "nausea_gi"
 ],
@@ -1423,32 +1421,28 @@
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
+"mechanisms": [],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Insufficient information to determine study type; the title suggested a paper about the role of placebo in irritable bowel syndrome but no abstract was available.",
+"summary": "Reviews the role of placebo responses in irritable bowel syndrome.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
 "IBS",
-"placebo",
-"pediatric gastroenterology",
-"placebo mechanisms"
+"placebo response",
+"visceral pain",
+"gut-brain axis"
 ],
 "usage": {
-"input_tokens": 380,
+"input_tokens": 558,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 852,
-"cost_usd": 0.00195
+"output_tokens": 510,
+"cost_usd": 0.00131
 }
 },
 "sources": [
@@ -10064,105 +10058,6 @@
 "cache_creation_input_tokens": 0,
 "output_tokens": 1034,
 "cost_usd": 0.00233
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2011-07-01",
-"private_pdf": null
-},
-{
-"id": "doi:10.1016/j.jhep.2011.06.011",
-"title": "A sprint to increase response to HCV treatment: expectancies but caution.",
-"authors": [
-"Asselah T"
-],
-"journal": "Journal of hepatology",
-"journal_abbrev": "J Hepatol",
-"year": 2011,
-"date": "2011-07-01",
-"doi": "10.1016/j.jhep.2011.06.011",
-"pmid": "21723840",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2083583482",
-"abstract": "",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Comment",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "hybrid",
-"oa_pdf_url": "https://doi.org/10.1016/j.jhep.2011.06.011",
-"landing_url": "https://doi.org/10.1016/j.jhep.2011.06.011",
-"cited_by_count": 9,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:52:54Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available and the title suggests commentary about expectancies but does not confirm placebo/nocebo is the paper's primary focus, so inclusion cannot be determined.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "No abstract available; title indicated a commentary about expectancies in hepatitis C treatment and urged caution.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"hepatitis c",
-"hcv",
-"expectancy",
-"treatment response",
-"commentary"
-],
-"usage": {
-"input_tokens": 426,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 575,
-"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -20805,51 +20700,79 @@
 "oa_pdf_url": "https://europepmc.org/articles/pmc3057208?pdf=render",
 "landing_url": null,
 "cited_by_count": 293,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:12:10Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:57:13Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous about whether the paper empirically studies placebo/sham effects or is a conceptual/commentary on sham craniotomy controls.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "The paper’s explicit focus is on the biological and behavioral effects of a sham (craniotomy) control procedure and the methodological implications for TBI models, making sham/placebo science the main subject (empirical animal study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "empirical_primary",
+"species": "nonhuman_animal",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other",
+"immune_inflammation"
+],
+"outcome_measures": [
+"smri",
+"behavioral_performance",
+"immune_inflammatory"
+],
+"design": [
+"animal_experiment"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"neurobiology_other_neurochemical",
+"neural_systems_circuits",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_surgery"
+]
 },
-"summary": "Discusses whether craniotomy functions as an appropriate sham control in traumatic brain injury research.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Compared craniotomy-only shams (drill vs trephine) to anesthesia-only controls in rats and found that both sham procedures produced persistent MRI lesions, behavioral deficits, and increased cortical cytokines, with drill causing larger lesions.",
+"key_finding": "Found that craniotomy shams produced measurable brain lesions, elevated KC-GRO and IFN-γ, and motor/sensory impairments (N=38; drill > trephine).",
+"sample_size": 38,
 "free_keywords": [
-"sham surgery",
 "craniotomy",
-"traumatic brain injury",
-"surgical control",
-"animal models"
+"controlled cortical impact",
+"fluid percussion",
+"KC-GRO",
+"IFN-gamma",
+"Wistar rat",
+"MRI lesion",
+"NSS-R"
 ],
 "usage": {
-"input_tokens": 424,
+"input_tokens": 16629,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 620,
-"cost_usd": 0.00149
+"output_tokens": 943,
+"cost_usd": 0.00619
 }
 },
 "sources": [
@@ -22496,53 +22419,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/21539145",
 "cited_by_count": 0,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:53:02Z",
+"classified_at": "2026-09-06T18:57:23Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title/metadata indicate a historical article on hypnotism/suggestion but do not confirm whether placebo/nocebo phenomena were an explicit focus.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly states 'hypnotism and suggestion' as treatment, indicating a focus on suggestion/expectation mechanisms relevant to placebo science and history.",
+"exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only",
+"other"
+]
 },
-"summary": "Historical 1911 article on treating neurasthenia with hypnotism and suggestion; no abstract available to judge whether placebo/nocebo effects were a focus.",
+"summary": "Reviews early 20th-century use of hypnotism and suggestion to treat neurasthenia, highlighting suggestion/expectation as therapeutic mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"neurasthenia",
 "hypnotism",
 "suggestion",
-"neurasthenia",
 "history",
-"1911",
-"psychotherapy",
-"historical article"
+"placebo",
+"expectation"
 ],
 "usage": {
-"input_tokens": 179,
-"cache_read_input_tokens": 6144,
+"input_tokens": 563,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 560,
-"cost_usd": 0.00132
+"output_tokens": 803,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -26678,53 +26620,69 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:02:48Z",
+"classified_at": "2026-09-06T18:57:32Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether placebo/placebo-response was an explicit focus or merely a control.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly frames improvement as potentially a placebo effect, making placebo phenomena the paper's subject per instructions to include when the title names placebo effects/responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "sexual_function"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title implied a comparison of pistachio versus placebo for erectile dysfunction but details were insufficient to judge whether placebo effects were a study focus.",
+"summary": "Investigated whether erectile dysfunction improvement was due to pistachio consumption or a placebo effect.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "erectile dysfunction",
 "pistachio",
-"pistacia",
+"dietary intervention",
 "placebo effect",
-"sexual dysfunction"
+"sexual function"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 652,
-"cost_usd": 0.00155
+"output_tokens": 738,
+"cost_usd": 0.00176
 }
 },
 "sources": [

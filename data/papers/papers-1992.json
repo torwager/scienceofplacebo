@@ -159,18 +159,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:33:42Z",
+"classified_at": "2026-09-06T18:44:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title implies a conceptual/ethical discussion of CPR as a 'technologic placebo' rather than an empirical study of placebo effects, so inclusion is unclear.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly frames CPR as a 'technologic placebo', indicating placebo concepts are the paper's subject (placebo science/ethical conceptual discussion).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -182,12 +182,8 @@
 "species": "not_applicable",
 "population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -197,30 +193,27 @@
 "mechanisms": [
 "history_conceptual"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title suggested a conceptual/ethical discussion framing cardiopulmonary resuscitation as a 'technologic placebo' and debating futility and practice implications.",
+"summary": "Argued whether cardiopulmonary resuscitation functions as a technologic placebo and discussed implications for medical futility and practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cardiopulmonary resuscitation",
-"cpr",
+"CPR",
 "medical futility",
-"ethics",
-"technologic placebo",
-"resuscitation orders"
+"resuscitation orders",
+"medical ritual"
 ],
 "usage": {
-"input_tokens": 454,
+"input_tokens": 632,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 791,
-"cost_usd": 0.00184
+"output_tokens": 624,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -834,52 +827,60 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:33:46Z",
+"classified_at": "2026-09-06T18:44:57Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title and MeSH terms mention 'Placebo Effect' and rhinitis but insufficient detail to confirm placebo/nocebo is the study's explicit focus or its design.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names the placebo effect as the subject and the journal/topic (allergy/sneezing) implies focus on placebo effects in rhinitis.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"respiratory"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"treatment_cues_dose_route"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"topical_cream",
+"placebo_food_drink",
+"other"
+]
 },
-"summary": "Insufficient information in the abstract; title and MeSH terms indicate the paper concerned placebo effects related to sneezing/rhinitis but methods and outcomes were not available.",
+"summary": "Report addressed placebo effects on sneezing and rhinitis symptoms in an allergy clinical context.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "rhinitis",
 "sneezing",
-"nasal mucosa",
-"topical administration",
-"placebo effect",
-"fluocinolone"
+"allergy",
+"nasal"
 ],
 "usage": {
-"input_tokens": 407,
+"input_tokens": 585,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 526,
-"cost_usd": 0.0013
+"output_tokens": 679,
+"cost_usd": 0.00165
 }
 },
 "sources": [

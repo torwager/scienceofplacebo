@@ -143,51 +143,77 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:34Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:38:44Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or methods available to determine whether placebo/nocebo phenomena were the explicit focus (placebo may be only a comparator in a drug/alcohol study).",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Double-blind real-versus-placebo alcohol design explicitly tested perception/awareness and physiological responses to placebo alcohol, making placebo response the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"substance_use"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"addiction_craving"
+],
+"outcome_measures": [
+"autonomic",
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_objective",
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"prior_experience"
+],
+"intervention_type": [
+"placebo_food_drink",
+"not_applicable"
+]
 },
-"summary": "Insufficient available information; reported as a double-blind placebo design investigating physiological reactivity to alcohol cues and awareness of alcohol effects, but no abstract or methods were provided to assess focus on placebo phenomena.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Measured skin conductance and perceived alcohol ingestion in alcoholic patients given real beer or placebo; found cue-evoked autonomic reactivity predicted perceiving the drink as alcoholic irrespective of actual beverage.",
+"key_finding": "Cue-elicited SCL increases were highest among subjects who reported the drink as alcoholic, but perception was not associated with receiving real alcohol.",
+"sample_size": 16,
 "free_keywords": [
-"alcohol placebo",
-"galvanic skin response",
-"alcohol cues",
-"double-blind",
-"placebo beverage"
+"skin conductance",
+"SCL",
+"beer",
+"cue reactivity",
+"alcoholism",
+"double-blind"
 ],
 "usage": {
-"input_tokens": 425,
+"input_tokens": 629,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 526,
-"cost_usd": 0.00131
+"output_tokens": 942,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -573,18 +599,18 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0021-843x.93.4.418",
 "cited_by_count": 5,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:36Z",
+"classified_at": "2026-09-06T18:38:55Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only title is available; it mentions expectancies about alcohol which may indicate an expectancy/placebo-style manipulation, but the abstract is missing so it is unclear whether placebo/expectancy was the explicit focus or how it was operationalized.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly tests alcohol expectancies alongside alcohol, implying an expectancy/placebo-context manipulation (likely a balanced-placebo design) making placebo/expectation effects the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -594,38 +620,52 @@
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"outcome_measures": [
+"behavioral_performance",
+"self_report"
 ],
-"moderators": [],
+"design": [
+"balanced_placebo"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"sex_gender"
+],
 "intervention_type": [
-"verbal_suggestion_only"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "No abstract available; paper examined effects of alcohol and alcohol-related expectancies on verbal aggression in men and women.",
+"summary": "Tested effects of alcohol and alcohol-related expectancies on verbal aggression in men and women.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol expectancy",
+"alcohol",
+"balanced placebo",
+"aggression",
 "verbal aggression",
-"sex differences",
-"Rohsenow",
-"1984"
+"sex differences"
 ],
 "usage": {
-"input_tokens": 202,
-"cache_read_input_tokens": 6144,
+"input_tokens": 586,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 412,
-"cost_usd": 0.00103
+"output_tokens": 1010,
+"cost_usd": 0.00231
 }
 },
 "sources": [
@@ -995,50 +1035,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:39:44Z",
+"classified_at": "2026-09-06T18:39:05Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates a placebo was used for polymorphous light sensitivity but methods and whether placebo/nocebo effects were an explicit focus cannot be determined from available information.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states 'Placebo treatment' of polymorphous light sensitivity, indicating the paper focused on placebo as the intervention for a photosensitivity condition.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"dermatology"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "No abstract available; title indicated use of a placebo for polymorphous light sensitivity but study aims, design, and results were not accessible to determine if placebo/nocebo phenomena were the focus.",
+"summary": "Studied placebo treatment for polymorphous light sensitivity (a photodermatosis) without available abstract or results.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "polymorphous light eruption",
-"pmle",
 "photosensitivity",
-"photodermatosis"
+"photodermatoses",
+"placebo treatment",
+"dermatology"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 503,
-"cost_usd": 0.00125
+"output_tokens": 814,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -1413,23 +1474,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0021-843x.93.3.266",
 "cited_by_count": 73,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:59:43Z",
+"classified_at": "2026-09-06T18:39:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title implies an experimental test of suggestion versus distraction on pain but the text is insufficient to confirm whether placebo/nocebo phenomena were the explicit focus or how the design was implemented.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly tests effects of suggestion (an expectancy/placebo mechanism) and distraction on pain control, indicating placebo-related mechanisms were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -1442,14 +1505,13 @@
 "pain"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
@@ -1459,28 +1521,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"sham_psychological"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Insufficient abstract to judge; title indicated an experimental test of suggestion versus distraction on pain in human participants.",
+"summary": "Tested whether verbal suggestion and distraction influenced pain control in human participants using pain stimulus paradigms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"cold-pressor",
-"analgesia",
 "suggestion",
 "distraction",
-"attention",
-"pain modulation",
-"1960s-1980s psychology"
+"analgesia",
+"cold-pressor",
+"attention"
 ],
 "usage": {
-"input_tokens": 456,
+"input_tokens": 584,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 687,
-"cost_usd": 0.00164
+"output_tokens": 927,
+"cost_usd": 0.00215
 }
 },
 "sources": [
@@ -2630,88 +2689,6 @@
 "private_pdf": null
 },
 {
-"id": "pmid:6695720",
-"title": "Placebos: who's being fooled?",
-"authors": [
-"Knapp DA",
-"Knapp DA",
-"Michocki RJ"
-],
-"journal": "American pharmacy",
-"journal_abbrev": "Am Pharm",
-"year": 1984,
-"date": "1984-01-01",
-"doi": null,
-"pmid": "6695720",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Drug Prescriptions",
-"Ethics, Medical",
-"Humans",
-"Placebos",
-"Vitamin B 12"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:40:04Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title indicates a discussion of placebo use/ethics in pharmacy but insufficient information to confirm empirical focus on placebo effects or responses.",
-"exclusion_reason": null,
-"peer_reviewed": false
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "No abstract available; likely a commentary or discussion about placebo use and ethics in pharmacy practice.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"placebo prescribing",
-"ethics",
-"vitamin b12",
-"pharmacy",
-"placebo use"
-],
-"usage": {
-"input_tokens": 378,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 703,
-"cost_usd": 0.00165
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "1984-01-01",
-"private_pdf": null
-},
-{
 "id": "pmid:6606662",
 "title": "Acquisition and extinction of conditioned suppression of a graft-vs-host response in the rat.",
 "authors": [
@@ -3163,28 +3140,29 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/6519941",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:09Z",
+"classified_at": "2026-09-06T18:39:44Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone does not establish that placebo/nocebo phenomena were the explicit focus (insufficient information).",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "The title explicitly studies the role of suggestion (an expectancy mechanism) as a treatment for combat reactions, so placebo/nocebo mechanisms are the paper's subject.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"ptsd_stress",
-"other_clinical"
+"ptsd_stress"
 ],
 "age_group": [
 "adults"
@@ -3194,29 +3172,36 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"effects": [
+"not_applicable"
 ],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicated study of suggestion as treatment for combat reactions during the Lebanon war, but insufficient information to determine whether placebo/nocebo effects were an explicit study focus.",
+"summary": "Studied the use of suggestion as a treatment mechanism for combat-related reactions at a military installation during the Lebanon war.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"combat reactions",
+"combat reaction",
+"lebanon war",
 "suggestion",
-"lebanon",
 "military psychiatry",
-"post-traumatic stress"
+"battlefield stress"
 ],
 "usage": {
 "input_tokens": 189,
-"cache_read_input_tokens": 6144,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 744,
-"cost_usd": 0.00169
+"output_tokens": 984,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -4155,18 +4140,18 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:25Z",
+"classified_at": "2026-09-06T18:39:56Z",
 "screening": {
 "decision": "include",
-"confidence": 0.42,
-"rationale": "Title explicitly presents a placebo/expectancy procedure to measure non-specific factors in behavioral interventions, indicating placebo methodology as the paper's focus despite no abstract.",
+"confidence": 0.8,
+"rationale": "Title explicitly names an 'expectancy placebo procedure' as a measure of non-specific factors in behavioural interventions, indicating placebo/expectancy is the paper's subject (measurement methods).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4179,15 +4164,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -4195,7 +4174,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -4204,23 +4183,22 @@
 "not_applicable"
 ]
 },
-"summary": "Described the 'subtractive expectancy placebo' procedure as a method to measure nonspecific/placebo-related factors in behavioural interventions.",
+"summary": "Described a procedure to measure non-specific expectancy/placebo factors in behavioural interventions.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "expectancy",
-"nonspecific factors",
-"behavioural interventions",
-"placebo methodology",
-"research design",
-"measurement"
+"non-specific factors",
+"behaviour therapy",
+"measurement",
+"placebo procedure"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 745,
-"cost_usd": 0.00174
+"output_tokens": 961,
+"cost_usd": 0.00221
 }
 },
 "sources": [
@@ -4271,53 +4249,74 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0005-7967(84)90098-6",
 "cited_by_count": 31,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:59:49Z",
+"classified_at": "2026-09-06T18:40:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or methods available; title indicates study of expectations in dental treatment but does not specify that placebo/nocebo effects or responses were the explicit focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that expectations of sensations, discomfort and fear in dental treatment are the subject, indicating an expectancy/placebo-nocebo focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain",
+"anxiety_stress",
+"sensory_perception"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"survey_interview",
+"observational"
+],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information in the record to determine whether the study experimentally tested placebo/nocebo phenomena; title indicated it examined expectations of sensations, discomfort, and fear in dental treatment.",
+"summary": "Examined expectations about sensations, discomfort, and fear associated with dental treatment.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"dental anxiety",
 "dental pain",
 "expectation",
 "fear",
-"discomfort",
-"sensations"
+"sensory expectations"
 ],
 "usage": {
-"input_tokens": 436,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 633,
-"cost_usd": 0.00152
+"output_tokens": 878,
+"cost_usd": 0.00204
 }
 },
 "sources": [

@@ -18559,25 +18559,24 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:54:54Z",
+"classified_at": "2026-09-06T18:59:07Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or text available; title indicates focus on genetic biomarkers of placebo response and trial design but available information is insufficient to confirm it is a review or empirical study meeting inclusion criteria.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly addresses 'placebo response' and genetic biomarkers, making placebo response the paper's subject per inclusion rule 2/3.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response",
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "narrative_review",
 "species": "human",
@@ -18587,21 +18586,14 @@
 "age_group": [
 "mixed_unspecified"
 ],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"genetics_placebome",
-"trial_methodology_placebo_response"
+"genetics_placebome"
 ],
 "moderators": [
 "genetics"
@@ -18610,23 +18602,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title suggested a review of genetic biomarkers of placebo response and implications for future trial design.",
+"summary": "Reviewed genetic biomarkers associated with the placebo response and discussed implications for future clinical trial design.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebome",
-"placebo response",
 "biomarkers",
+"pharmacogenetics",
 "trial design",
-"genetics",
 "personalized medicine"
 ],
 "usage": {
-"input_tokens": 368,
+"input_tokens": 546,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 714,
-"cost_usd": 0.00167
+"output_tokens": 755,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -21476,18 +21467,18 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/j.pain.2013.02.011",
 "cited_by_count": 12,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:52:22Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:59:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "Only title and MeSH available; likely a commentary on mechanisms of context/placebo effects on pain but no abstract or full text to confirm that placebo/nocebo is the explicit focus or whether new data were presented.",
+"decision": "include",
+"confidence": 0.86,
+"rationale": "Theory/commentary explicitly focused on mechanisms of context-related pain modulation and placebo-like effects, matching inclusion rule 4 for reviews/theory about placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -21496,7 +21487,7 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -21520,7 +21511,8 @@
 "classical_conditioning",
 "neural_systems_circuits",
 "neurobiology_opioid",
-"neurobiology_dopamine",
+"attention_cognitive_appraisal",
+"emotion_anxiety_regulation",
 "treatment_cues_dose_route"
 ],
 "moderators": [
@@ -21530,22 +21522,25 @@
 "not_applicable"
 ]
 },
-"summary": "Commentary discussed multiple potential mechanisms by which contextual factors influence pain, including expectation, learning, reward and descending pain-modulatory circuits.",
+"summary": "Comments on mechanisms of context effects on pain, discussing reward/valuation, descending opioid control, habituation/adaptation, and alternative explanations for placebo-like analgesia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo analgesia",
-"context effects",
+"vmPFC",
 "periaqueductal gray",
 "reward",
-"expectation"
+"habituation",
+"placebo analgesia",
+"context effects",
+"Leknes 2013",
+"descending inhibition"
 ],
 "usage": {
-"input_tokens": 432,
+"input_tokens": 5368,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 732,
-"cost_usd": 0.00172
+"output_tokens": 798,
+"cost_usd": 0.00309
 }
 },
 "sources": [
@@ -25111,51 +25106,68 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:56:50Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:59:25Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title implies a discussion of using vitamin C as a placebo but text is insufficient to determine whether placebo phenomena were the study focus or if this is an editorial/methods note.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Letter critically discussed the appropriateness of using vitamin C as a placebo, addressing placebo methodology and potential active effects, so placebo science is the paper's main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "editorial_letter",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Title suggests a discussion of using vitamin C as a placebo in anesthesiology, but no abstract was available to determine scope or findings.",
+"summary": "Argued that vitamin C was an inappropriate placebo in an anesthesiology trial because it may have active analgesic effects and be distinguishable from clonidine, raising methodological concerns.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "vitamin c",
-"placebo use",
+"clonidine",
+"placebo methodology",
 "anesthesiology",
-"methodology",
-"ethics"
+"placebo tablet",
+"letter",
+"placebo selection"
 ],
 "usage": {
-"input_tokens": 364,
+"input_tokens": 1439,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 643,
-"cost_usd": 0.00152
+"output_tokens": 701,
+"cost_usd": 0.00191
 }
 },
 "sources": [

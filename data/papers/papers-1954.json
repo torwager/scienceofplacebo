@@ -24,23 +24,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:05Z",
+"classified_at": "2026-09-06T18:06:40Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.25,
-"rationale": "No abstract or methods available and the title alone is insufficient to confirm whether placebo phenomena were the explicit focus or just a comparator in an efficacy context.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states a study of injecting placebos, indicating placebo responses/effects were the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -51,24 +53,26 @@
 "effects": [],
 "mechanisms": [],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"saline_injection_infusion",
+"other"
+]
 },
-"summary": "No abstract available; title indicated a short study involving injected placebos but methods, aims, and outcomes were not reported in the available record.",
+"summary": "Reported a short study administering placebo injections and examined their effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo injection",
+"injection placebo",
 "liver tonic",
-"bmj",
-"1954",
-"o'brien"
+"placebo injections",
+"1954"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 736,
-"cost_usd": 0.00171
+"output_tokens": 609,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -323,52 +327,56 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:51:07Z",
+"classified_at": "2026-09-06T18:06:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.5,
-"rationale": "No abstract or full-text available; title suggests placebo and toxic reactions but insufficient information to judge whether placebo/nocebo phenomena were the study focus.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly reports effects of placebo administration and occurrence of toxic reactions, indicating placebo/nocebo phenomena are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"adverse_events"
+],
 "outcome_measures": [],
 "design": [],
 "effects": [],
 "mechanisms": [],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient information in the record to determine whether placebo/nocebo phenomena were the primary focus; title implied an investigation of placebo administration and toxic reactions.",
+"summary": "Reported on effects of placebo administration and the occurrence of toxic reactions, focusing on adverse events following placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"nocebo",
 "toxic reactions",
 "placebo administration",
-"mephenesin",
-"JAMA 1954",
-"Pinsky",
-"Wolf"
+"adverse events"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 552,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 542,
-"cost_usd": 0.00132
+"output_tokens": 439,
+"cost_usd": 0.00116
 }
 },
 "sources": [

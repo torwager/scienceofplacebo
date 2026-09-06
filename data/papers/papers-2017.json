@@ -613,92 +613,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.adaj.2017.11.022",
-"title": "Patients with idiopathic trigeminal neuralgia seem to benefit from acupuncture and sham acupuncture, but we are uncertain about whether these benefits are beyond those attained by pharmacologic treatment alone.",
-"authors": [
-"Brignardello-Petersen R"
-],
-"journal": "Journal of the American Dental Association (1939)",
-"journal_abbrev": "J Am Dent Assoc",
-"year": 2017,
-"date": "2017-12-26",
-"doi": "10.1016/j.adaj.2017.11.022",
-"pmid": "29287739",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Acupuncture Therapy",
-"Case-Control Studies",
-"Double-Blind Method",
-"Humans",
-"Trigeminal Neuralgia"
-],
-"pub_types": [
-"Journal Article",
-"Comment"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:36:31Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "Publication is labeled as a comment with no abstract or full text provided, so it is unclear whether placebo/sham acupuncture effects were the object of study or merely discussed.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Was a journal comment noting that both acupuncture and sham acupuncture appeared to benefit patients with idiopathic trigeminal neuralgia but uncertainty remained about effects beyond pharmacologic treatment.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"trigeminal neuralgia",
-"acupuncture",
-"sham acupuncture",
-"placebo",
-"pharmacologic treatment",
-"comment"
-],
-"usage": {
-"input_tokens": 417,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 528,
-"cost_usd": 0.00131
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2017-12-26",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2776312107",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.adaj.2017.11.022",
-"cited_by_count": 0,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1001/jama.2017.16216",
 "title": "The Iatrogenic Potential of the Physician's Words.",
 "authors": [
@@ -1970,52 +1884,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:36:41Z",
+"classified_at": "2026-09-06T19:02:48Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Only metadata and a link were provided; MeSH terms include 'Placebo Effect' but no abstract or methods are available to judge whether placebo/nocebo is the paper's primary focus or an incidental mention.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Article appears to address physician attitudes/behavior regarding placebo (placebo science/ethics topic) rather than reporting an experimental placebo effect study, so it meets inclusion as placebo_science_other commentary.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"clinicians_providers"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Full text was not provided; the article appeared to be a commentary on physician attitudes that mentioned placebo effect but lacked information to determine if placebo phenomena were the paper's primary subject.",
+"summary": "Discussed physicians' attitudes and behaviors relating to placebo use and doctor–patient interactions, focusing on clinical and ethical implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"physician_attitudes",
-"physician-patient_relations",
-"medical_errors",
-"placebo_effect",
-"rationalization",
-"rhode island medical journal"
+"physician-attitudes",
+"medical-errors",
+"doctor-patient-relationship",
+"placebo-prescribing",
+"clinical-ethics"
 ],
 "usage": {
-"input_tokens": 409,
+"input_tokens": 459,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 730,
-"cost_usd": 0.00171
+"output_tokens": 641,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -3063,50 +2996,74 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:11Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:02:56Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or full text provided; title suggests discussion of drug–placebo differences but insufficient information to determine whether placebo/placebo-response was the explicit focus or merely comparative context.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Commentary explicitly focused on the meaning and clinical significance of drug–placebo differences and placebo response in antidepressant trials (placebo science/theory).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Only the title and bibliographic details were available; the paper appeared to address the clinical significance of drug versus placebo differences but the focus on placebo/nocebo phenomena could not be confirmed.",
+"summary": "Commentary argued that antidepressant drug–placebo differences are clinically trivial when evaluated against empirically derived criteria and discussed implications and harms of antidepressants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"antidepressant",
+"antidepressants",
+"hamd",
+"clinical significance",
+"effect size",
+"leucht",
+"meta-analysis",
 "depression",
-"drug-placebo differences",
-"kirsch"
+"nnt"
 ],
 "usage": {
-"input_tokens": 374,
+"input_tokens": 2526,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 553,
-"cost_usd": 0.00135
+"output_tokens": 750,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -7396,52 +7353,73 @@
 "Research Support, N.I.H., Extramural",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:19Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T19:03:06Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and publication types include 'Comment', so it's unclear whether this is an empirical study isolating nocebo-induced pain or a commentary.",
+"decision": "include",
+"confidence": 0.62,
+"rationale": "Paper's stated focus (nocebo effects from negative expectancies) makes placebo/nocebo the main subject; likely a Science comment/research piece discussing nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_effect"
+],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to determine study type; the title states that nocebo effects can produce pain, but no abstract or methods/results were available to confirm empirical findings.",
+"summary": "Argues that negative expectancies tied to features of commercial drugs can elicit nocebo-induced pain and discusses underlying mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"nocebo",
-"pain",
-"placebo-effect",
-"colloca",
-"science2017",
-"commentary"
+"expectation",
+"drug labeling",
+"side-effect attribution",
+"commercial features",
+"colloca"
 ],
 "usage": {
-"input_tokens": 393,
+"input_tokens": 455,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.0016
+"output_tokens": 642,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -7859,60 +7837,76 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:24Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:03:14Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates focus on expectancy and antidepressant response but insufficient information to confirm placebo/nocebo is the explicit object of study.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Commentary explicitly focused on placebo/response expectancy mechanisms and implications for antidepressant effects (theory/commentary about placebo science), meeting inclusion rule for reviews/theory whose subject is placebo/nocebo.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
-"species": "human",
-"population": [
-"depression"
+"study_focus": [
+"placebo_science_other"
 ],
-"age_group": [],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "mood_depression"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
+"outcome_measures": [
+"not_applicable"
 ],
-"moderators": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response",
+"provider_patient_interaction",
+"treatment_cues_dose_route"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"active_drug_context_manipulation"
+"not_applicable"
 ]
 },
-"summary": "Discusses the role of response expectancy in antidepressant treatment and its influence on clinical outcomes.",
+"summary": "Commentary argued that response expectancies substantially influence antidepressant outcomes, discussed additivity and balanced-placebo designs, and urged clinician communication training to harness expectancy effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"escitalopram",
 "antidepressant",
+"balanced placebo",
 "expectancy",
-"major depressive disorder",
-"citalopram",
-"kirsch",
-"placebo response"
+"additivity",
+"social anxiety",
+"clinical communication"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 2207,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 792,
-"cost_usd": 0.00183
+"output_tokens": 697,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -9242,23 +9236,25 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:37:32Z",
+"classified_at": "2026-09-06T19:03:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract/full text provided and the record is a published comment/reply referencing a meta-analysis about placebo effects, so it's unclear whether the comment reports original data or substantive placebo-focused analysis.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names the 'placebo effect' in a meta-analysis of lower urinary tract symptoms, so placebo phenomena are the subject.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "editorial_letter",
 "species": "human",
 "population": [],
@@ -9266,30 +9262,31 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [],
-"mechanisms": [],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Was a published comment/reply concerning a meta-analysis about a 12-month placebo effect on lower urinary tract symptoms and maximum flow rate in men with BPH, but no abstract or data were provided in the record.",
+"summary": "Commented on a meta-analysis of placebo effects on lower urinary tract symptoms and maximum urinary flow rate in men.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "lower urinary tract symptoms",
 "benign prostatic hyperplasia",
-"placebo effect",
 "maximum flow rate",
-"meta-analysis",
-"tadalafil",
-"comment",
-"urology"
+"placebo effect",
+"meta-analysis"
 ],
 "usage": {
-"input_tokens": 296,
-"cache_read_input_tokens": 6016,
+"input_tokens": 602,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 621,
-"cost_usd": 0.00147
+"output_tokens": 930,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -16700,23 +16697,25 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:38:26Z",
+"classified_at": "2026-09-06T19:03:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and publication is labelled as a comment, so it's unclear whether placebo/nocebo phenomena were the study focus or merely an opinion about delirium treatment.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebo as potentially superior to antipsychotics in delirium management, making placebo the paper's primary subject despite being a comment.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
 "population": [],
@@ -16729,22 +16728,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract was available; presented as a comment about placebo possibly outperforming antipsychotics for delirium in palliative care, insufficient information to judge empirical focus.",
+"summary": "Discusses the claim that placebo might be superior to antipsychotics for managing delirium in palliative care, raising clinical and ethical considerations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "delirium",
 "palliative care",
 "antipsychotics",
-"placebo",
-"commentary"
+"placebo use",
+"clinical ethics"
 ],
 "usage": {
-"input_tokens": 392,
+"input_tokens": 570,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 742,
-"cost_usd": 0.00173
+"output_tokens": 567,
+"cost_usd": 0.00142
 }
 },
 "sources": [
@@ -16918,53 +16917,69 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:38:30Z",
+"classified_at": "2026-09-06T19:03:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title indicates an open-label placebo synopsis/comment about chronic low back pain but the article type is a comment and it's unclear whether placebo effects were the primary focus or merely summarized.",
+"decision": "include",
+"confidence": 0.78,
+"rationale": "Title explicitly states open-label (no deception) placebo reduced pain and disability in chronic low back pain, making placebo responses the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
-"article_type": "editorial_letter",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"open_label_placebo"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"open_label_placebo"
+]
 },
-"summary": "No abstract available; title suggested a comment/synopsis that open-label placebo pills may reduce pain and disability in people with chronic low back pain.",
+"summary": "Reported that providing open-label placebo pills may reduce pain and disability in people with chronic low back pain.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"chronic low back pain",
 "open-label placebo",
-"placebo pills",
-"synopsis",
-"commentary"
+"low back pain",
+"chronic low back pain",
+"disability",
+"placebo pills"
 ],
 "usage": {
-"input_tokens": 266,
-"cache_read_input_tokens": 6016,
+"input_tokens": 572,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00176
+"output_tokens": 928,
+"cost_usd": 0.00215
 }
 },
 "sources": [
@@ -20838,52 +20853,77 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7608684",
 "landing_url": "https://doi.org/10.1001/jama.2017.4545",
 "cited_by_count": 109,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-04T00:10:21Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:03:54Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title is ambiguous about whether placebo/nocebo phenomena are an explicit focus, so inclusion cannot be determined.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Viewpoint explicitly addresses mindsets, placebo mechanisms, and clinical harnessing of placebo effects (placebo science rather than an efficacy trial).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"harnessing_placebo_clinical"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discusses how patients' mindsets can influence treatment outcomes and proposes approaches to harness mindsets to improve effectiveness.",
+"summary": "Argues that clinicians can nondeceptively change patient mindsets to enhance treatment effectiveness by leveraging expectation, communication, and therapeutic context, drawing parallels to placebo mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "mindset",
+"patient-clinician communication",
+"framing",
 "expectation",
-"placebo",
-"treatment-context",
-"physician-patient communication",
-"healthcare delivery"
+"placebo effect",
+"therapeutic ritual",
+"open-label placebo",
+"clinical communication"
 ],
 "usage": {
-"input_tokens": 423,
+"input_tokens": 3075,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 536,
-"cost_usd": 0.00132
+"output_tokens": 745,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -24661,50 +24701,73 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:39:35Z",
+"classified_at": "2026-09-06T19:04:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title alone is insufficient to confirm whether placebo/nocebo phenomena were the explicit object of study or if this was a commentary or clinical report.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states that a placebo combined with a message of benefit decreased chronic low back pain, indicating placebo/contextual effects were the study focus.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Insufficient information to determine methods or outcomes; title implied that a placebo plus a positive benefit message decreased chronic low back pain.",
-"key_finding": null,
+"summary": "Found that giving a placebo together with a message of benefit reduced self-reported chronic low back pain.",
+"key_finding": "Placebo plus positive suggestion reduced pain ratings in chronic low back pain patients.",
 "sample_size": null,
 "free_keywords": [
 "low back pain",
-"chronic low back pain",
-"placebo",
-"message of benefit"
+"chronic LBP",
+"analgesia",
+"patient communication",
+"primary care"
 ],
 "usage": {
-"input_tokens": 364,
+"input_tokens": 542,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00144
+"output_tokens": 588,
+"cost_usd": 0.00146
 }
 },
 "sources": [

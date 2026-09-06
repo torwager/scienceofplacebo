@@ -30,54 +30,77 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:25Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T18:35:06Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and title alone does not establish whether placebo/nocebo phenomena were an explicit focus rather than a control procedure in case reports.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Single-case report explicitly compared authentic plasmapheresis with a sham (placebo) apheresis procedure and reported differential symptomatic improvement, making placebo/sham response an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "case_report",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [
-"other"
+"population": [
+"other_clinical"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other",
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"within_subject_experimental",
+"single_group_pre_post"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
 },
-"summary": "No abstract; case report described use of plasmapheresis and a sham/placebo procedure in patients with autoerythrocyte sensitisation, but insufficient information to judge whether placebo effects were a study focus.",
-"key_finding": null,
-"sample_size": null,
+"summary": "Reported a single patient with autoerythrocyte sensitisation who improved after authentic plasma exchange but not after a sham apheresis procedure.",
+"key_finding": "Authentic plasmapheresis produced marked symptomatic and lesion improvement while sham apheresis did not.",
+"sample_size": 1,
 "free_keywords": [
 "autoerythrocyte sensitisation",
 "plasmapheresis",
-"placebo procedure",
-"gardner-diamond syndrome",
-"case report",
-"1981"
+"plasma exchange",
+"sham apheresis",
+"psychogenic purpura",
+"haemonetics",
+"case report"
 ],
 "usage": {
-"input_tokens": 408,
+"input_tokens": 4545,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 729,
-"cost_usd": 0.00171
+"output_tokens": 962,
+"cost_usd": 0.00321
 }
 },
 "sources": [
@@ -230,51 +253,71 @@
 "Journal Article",
 "Research Support, U.S. Gov't, Non-P.H.S."
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:35Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:35:16Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; the title indicates placebo efficacy was the topic but there is insufficient information to determine the study design, population, or whether placebo response/effect was the primary analytic focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative review focused on placebo perceptual and physical characteristics and their implications for placebo efficacy and research, meeting inclusion for placebo-science reviews.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "narrative_review",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"treatment_cues_dose_route",
+"history_conceptual",
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other",
+"not_applicable"
+]
 },
-"summary": "Title indicated a study of how perceptual characteristics related to placebo efficacy, but no abstract was available to confirm methods or findings.",
+"summary": "Reviews how physical and perceptual characteristics of placebos (route, form, size, color, taste) relate to placebo efficacy and research implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"perception",
-"placebo efficacy",
-"psychological reports",
-"1981"
+"pill color",
+"route of administration",
+"placebo characteristics",
+"perceptual cues",
+"dose size",
+"taste",
+"pharmacological agentry"
 ],
 "usage": {
-"input_tokens": 393,
+"input_tokens": 592,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 616,
-"cost_usd": 0.00148
+"output_tokens": 752,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -323,52 +366,73 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:31Z",
+"classified_at": "2026-09-06T18:35:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title indicates both placebo and an active drug were tested on autonomic reactivity but no abstract or methods are available to determine whether placebo/nocebo phenomena were a primary focus or merely a control condition.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly states effects of placebo (alongside drug BHT 933) on autonomic reactivity, indicating placebo responses/effects are the study subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"cardiovascular_bp"
+],
+"outcome_measures": [
+"autonomic"
+],
+"design": [
+"parallel_groups_rct"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"other"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "No abstract available; title reported testing placebo and the drug BHT 933 on autonomic reactivity (blood pressure, heart rate, salivation) in humans, but methods and aims were not provided.",
+"summary": "Compared placebo and BHT 933 effects on autonomic reactivity (heart rate, blood pressure, salivation) in adult humans; no abstract available. ",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"autonomic reactivity",
 "BHT 933",
-"blood pressure",
+"azepines",
+"autonomic reactivity",
 "heart rate",
+"blood pressure",
 "salivation",
-"azepines"
+"1981"
 ],
 "usage": {
-"input_tokens": 405,
+"input_tokens": 583,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 644,
-"cost_usd": 0.00154
+"output_tokens": 781,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -535,52 +599,73 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0021-843x.90.6.554",
 "cited_by_count": 61,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:15Z",
+"classified_at": "2026-09-06T18:35:36Z",
 "screening": {
-"decision": "uncertain",
+"decision": "include",
 "confidence": 0.6,
-"rationale": "No abstract or methods available; title implies suggestions/hypnosis for analgesia but insufficient information to confirm placebo/nocebo are explicit study focus or experimental design.",
+"rationale": "Title explicitly tests suggestions for analgesia (expectancy/suggestion manipulation) affecting reported pain, which meets criterion for studies of suggestion/expectation effects on symptoms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"other"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "No abstract available; title indicates the study examined cognitive activity and analgesic suggestions (hypnosis) in reported pain reduction, but details are unavailable.",
+"summary": "Studied whether cognitive activity and suggestions for analgesia reduced self-reported pain using suggestion/expectancy manipulations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
 "suggestion",
 "analgesia",
-"pain",
-"sensory thresholds",
-"cognitive activity"
+"reported pain",
+"cognitive activity",
+"sensory thresholds"
 ],
 "usage": {
-"input_tokens": 459,
+"input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 551,
-"cost_usd": 0.00136
+"output_tokens": 820,
+"cost_usd": 0.00193
 }
 },
 "sources": [
@@ -1040,94 +1125,6 @@
 "pubmed_query"
 ],
 "date_added": "1981-11-01",
-"private_pdf": null
-},
-{
-"id": "pmid:7185809",
-"title": "A further study of described context effect and noise annoyance ratings.",
-"authors": [
-"Weiler EM",
-"Mortimer E",
-"Stuebing RC",
-"Pavlakos C"
-],
-"journal": "The Journal of auditory research",
-"journal_abbrev": "J Aud Res",
-"year": 1981,
-"date": "1981-10-01",
-"doi": null,
-"pmid": "7185809",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2409192018",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Adult",
-"Attitude",
-"Humans",
-"Imagination",
-"Mental Recall",
-"Noise",
-"Social Environment"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/7185809",
-"cited_by_count": 1,
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:14Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text was available and the title suggests context effects on noise annoyance but does not confirm that placebo/nocebo phenomena were the explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
-},
-"summary": "Insufficient information to determine whether the study explicitly examined placebo/nocebo effects; title indicated investigation of context effects on noise annoyance ratings.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"noise annoyance",
-"context effects",
-"auditory perception",
-"expectation",
-"social environment"
-],
-"usage": {
-"input_tokens": 434,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00146
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1981-10-01",
 "private_pdf": null
 },
 {
@@ -1726,52 +1723,60 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:35Z",
+"classified_at": "2026-09-06T18:35:55Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title suggests a managerial/commentary piece about placebo effects, so available information is insufficient to determine whether placebo/nocebo phenomena were an empirical focus.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "The title explicitly states 'Managing for placebo effects,' indicating placebo effects are the primary subject (practical/administrative focus).",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"provider_patient_interaction"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Insufficient information to judge; no abstract was available and the title suggests a commentary on managing placebo effects in hospitals.",
+"summary": "Discussed managing placebo effects in hospital practice, likely addressing clinician–patient interactions and administrative strategies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hospital management",
-"placebo effects",
-"professional-patient relations",
-"therapeutics",
-"administration",
-"1981"
+"hospital administration",
+"clinical practice",
+"provider communication",
+"placebo policy"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00147
+"output_tokens": 750,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -2944,51 +2949,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1097/00152193-198105000-00002",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:18Z",
+"classified_at": "2026-09-06T18:36:08Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title suggests verbal suggestion for pain but insufficient information to determine if placebo/nocebo effects or responses were an explicit research focus or empirical study.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly concerns conscious verbal suggestion to manage pain, indicating placebo/expectation/suggestion mechanisms are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"age_group": [
+"adults",
+"older_adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"harnessing_placebo_clinical",
+"provider_patient_interaction"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Insufficient information to determine whether the article empirically studied placebo/nocebo effects; the title suggested using verbal suggestion to manage pain in nursing practice.",
+"summary": "Discussed how conscious verbal suggestion can be used to manage pain, focusing on suggestion/expectation as a therapeutic mechanism.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conscious suggestion",
+"suggestion",
 "verbal suggestion",
 "pain management",
 "nursing",
 "relaxation"
 ],
 "usage": {
-"input_tokens": 426,
+"input_tokens": 554,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 660,
-"cost_usd": 0.00157
+"output_tokens": 1069,
+"cost_usd": 0.00242
 }
 },
 "sources": [
@@ -3346,18 +3372,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:51Z",
+"classified_at": "2026-09-06T18:36:17Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "Insufficient information (no abstract/full text) to determine whether the paper empirically studied placebo/nocebo effects or is a review, despite the title implying focus on placebo response in pain.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names the placebo response as the subject in the context of pain control, meeting inclusion criterion 2 (placebo/nocebo response as object of study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3367,36 +3393,42 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
-"treatment_cues_dose_route"
+"trial_methodology_placebo_response"
 ],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information to judge; title indicated a focus on placebo response in pain control but no abstract was available.",
+"summary": "Reviews evidence and concepts concerning the placebo response in pain control.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pain",
 "placebo response",
-"placebo",
-"psychopharmacology bulletin",
-"1970s-1980s"
+"pain",
+"psychopharmacology",
+"1981",
+"analgesia"
 ],
 "usage": {
-"input_tokens": 363,
+"input_tokens": 541,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 639,
-"cost_usd": 0.00152
+"output_tokens": 782,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -3432,51 +3464,70 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:41:50Z",
+"classified_at": "2026-09-06T18:36:26Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text available; title suggests a discussion of placebo response but available metadata do not reveal whether placebo/nocebo was the paper's explicit analytic focus or an empirical study.",
-"exclusion_reason": "insufficient_information",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly names 'Placebo response', indicating the paper's subject is placebo responses rather than using placebo as a mere comparator.",
+"exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_response"
+],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Likely discussed the placebo response and its relevance to clinical care and nursing practice, but abstract and methods/results are not available to confirm whether it reported original data.",
+"summary": "Discusses the placebo response, distinguishing myths from substantive findings about placebo effects and responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo response",
+"placebo",
 "nursing",
-"clinical practice",
-"attitudes",
 "history"
 ],
 "usage": {
-"input_tokens": 387,
+"input_tokens": 565,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 610,
-"cost_usd": 0.00146
+"output_tokens": 728,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -4021,23 +4072,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:19Z",
+"classified_at": "2026-09-06T18:36:34Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text available; title indicates focus on negative placebo/nocebo but insufficient information to judge whether placebo/nocebo was the main object or what study type it is.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "Title explicitly names the 'negative placebo response', indicating the paper's subject is nocebo/placebo responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_response"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
@@ -4046,26 +4099,27 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"nocebo_communication_disclosure"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Insufficient information in the record to determine study type; title suggested a focus on the negative placebo (nocebo) response but no abstract was available.",
+"summary": "Addressed the negative placebo (nocebo) response; no abstract or full text available to detail methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nocebo",
-"negative placebo response",
+"negative placebo",
 "placebo response",
-"dropouts",
-"1981"
+"patient dropouts"
 ],
 "usage": {
-"input_tokens": 363,
+"input_tokens": 541,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00157
+"output_tokens": 556,
+"cost_usd": 0.00139
 }
 },
 "sources": [
@@ -4101,52 +4155,74 @@
 "Journal Article",
 "Research Support, U.S. Gov't, Non-P.H.S."
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:00Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T18:36:43Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title implies study of personality as a nonspecific/placebo factor but insufficient information to confirm whether placebo/nocebo effects or responses were explicit study aims.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Review paper whose explicit focus was on personality correlates of placebo responsivity and methodological issues, so placebo response is the object of study (review of evidence).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "empirical_primary",
+"study_focus": [
+"placebo_response"
+],
+"article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"neurobiology_other_neurochemical",
+"history_conceptual",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"personality_traits"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "No abstract available; title suggests the paper examined personality as a nonspecific factor related to placebo effects in humans, but methods and outcomes are not provided.",
+"summary": "Reviewed human studies relating personality traits to placebo responsivity, concluding trait models were largely unsubstantiated and calling for better measurement and methodological work.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo personality",
+"placebo responsivity",
+"personality correlates",
 "nonspecific factors",
-"personality",
-"placebo response predictors",
-"psychometrics",
-"1970s"
+"methodology",
+"ethics"
 ],
 "usage": {
-"input_tokens": 386,
+"input_tokens": 539,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 451,
-"cost_usd": 0.00115
+"output_tokens": 749,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -4301,58 +4377,56 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:07Z",
+"classified_at": "2026-09-06T18:36:51Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title and MeSH suggest a conceptual/commentary piece about placebo and physician–patient relations but insufficient information to confirm if placebo effects/responses were empirically studied.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly centers on 'placebo', indicating placebo is the paper's main subject (conceptual/question), meeting inclusion for placebo-science content.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "human",
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
+"design": [],
 "effects": [],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"history_conceptual"
 ],
 "moderators": [],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "Insufficient information to determine methods or results; likely discussed conceptual or clinical questions about placebo and physician–patient relations.",
+"summary": "Discusses conceptual and scientific issues concerning the placebo phenomenon.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"physician-patient relations",
-"personality",
 "placebo",
-"1971-1981 literature"
+"conceptual",
+"history",
+"physician-patient",
+"ethics",
+"methodology"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 526,
-"cost_usd": 0.00129
+"output_tokens": 561,
+"cost_usd": 0.00141
 }
 },
 "sources": [
@@ -4488,55 +4562,64 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:42:04Z",
+"classified_at": "2026-09-06T18:37:03Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title explicitly addresses placebo potency on pain threshold across circadian time in healthy teeth but no abstract or methods/results are available to confirm design, measures, or analyses.",
+"decision": "include",
+"confidence": 0.75,
+"rationale": "The title explicitly states the paper studied the potency of placebos on pain threshold, indicating placebo effects/responses are the primary subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
 "healthy_adult"
 ],
-"age_group": [],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
-"design": [],
+"outcome_measures": [
+"self_report",
+"behavioral_performance"
+],
+"design": [
+"within_subject_experimental"
+],
 "effects": [],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Title indicated investigation of circadian variation in placebo potency on dental pain thresholds in healthy adults; abstract and details were not available.",
+"summary": "Studied circadian variation in the potency of placebos on dental pain threshold in healthy adults.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"circadian",
 "dental pain",
+"placebo analgesia",
 "pain threshold",
-"sensory threshold",
-"placebo"
+"circadian",
+"cold pain"
 ],
 "usage": {
-"input_tokens": 394,
+"input_tokens": 572,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 884,
-"cost_usd": 0.00201
+"output_tokens": 942,
+"cost_usd": 0.00217
 }
 },
 "sources": [

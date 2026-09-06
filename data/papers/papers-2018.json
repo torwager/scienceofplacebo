@@ -1405,51 +1405,74 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:31:31Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:04:11Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided; title suggests discussion of placebo equivalence for PCI but insufficient information to determine if placebo/nocebo phenomena were the study focus or if empirical data were analyzed.",
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Letter critically discussed the ORBITA placebo-controlled PCI trial and its interpretation, making placebo-controlled trial methodology the main subject (placebo science commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
-"article_type": "theory_commentary",
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "editorial_letter",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"cardiovascular_bp"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_surgery"
+]
 },
-"summary": "No abstract available; title suggested a commentary or perspective asking whether PCI functions as a placebo in stable angina, but the paper could not be assessed for empirical placebo/nocebo focus.",
+"summary": "Discussed and cautioned about interpretation of the ORBITA placebo-controlled PCI trial, highlighting methodological issues and need for further analyses and follow-up.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"percutaneous coronary intervention",
+"ORBITA",
+"PCI",
 "stable angina",
-"placebo",
-"sham surgery",
-"PCI"
+"placebo-controlled",
+"fractional flow reserve",
+"instantaneous wave-free ratio",
+"FFR",
+"iFR"
 ],
 "usage": {
-"input_tokens": 241,
-"cache_read_input_tokens": 6016,
+"input_tokens": 1682,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 597,
-"cost_usd": 0.0014
+"output_tokens": 755,
+"cost_usd": 0.00208
 }
 },
 "sources": [
@@ -12898,51 +12921,94 @@
 "oa_pdf_url": "https://escholarship.org/content/qt38h983d4/qt38h983d4.pdf",
 "landing_url": "https://doi.org/10.1097/j.pain.0000000000001272",
 "cited_by_count": 181,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-06T17:50:18Z",
+"input_mode": "full_text",
+"classified_at": "2026-09-06T19:04:21Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title suggests expectations and pain (a topic related to placebo/nocebo) but it's unclear whether placebo/nocebo effects/responses are an explicit focus.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Narrative review whose explicit focus is on how expectation produces placebo analgesia and nocebo hyperalgesia and their mechanisms (placebo/nocebo effects as main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_and_nocebo"
+],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri",
+"pet_neurochemical",
+"neuroendocrine",
+"motor_kinematic",
+"other"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"neurobiology_opioid",
+"neural_systems_circuits",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"trial_methodology_placebo_response",
+"prior_treatment_experience",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"pharmacological_manipulation",
+"prior_experience",
+"provider_characteristics",
+"expectation_level",
+"trial_characteristics"
+],
+"intervention_type": [
+"verbal_suggestion_only",
+"open_label_placebo",
+"active_drug_context_manipulation",
+"open_label_placebo",
+"not_applicable"
+]
 },
-"summary": "Reviews how expectations shape pain perception and modulation, discussing psychological and neurobiological pathways influencing pain.",
+"summary": "Narrative review described evidence that expectations powerfully modulate pain, producing placebo analgesia and nocebo hyperalgesia, and reviewed neural, opioid, conditioning, and corticostriatal mechanisms and clinical implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectation",
-"pain perception",
-"placebo-related",
-"nocebo-related",
-"predictive_coding"
+"placebo analgesia",
+"nocebo",
+"offset analgesia",
+"nucleus accumbens",
+"motivation-decision model",
+"infralimbic cortex",
+"naloxone"
 ],
 "usage": {
-"input_tokens": 163,
-"cache_read_input_tokens": 6144,
+"input_tokens": 12094,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 494,
-"cost_usd": 0.00118
+"output_tokens": 856,
+"cost_usd": 0.00488
 }
 },
 "sources": [
@@ -20452,109 +20518,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1249/jsr.0000000000000497",
-"title": "Caffeine Powder, Placebos for Athletes, and Muscle Breakdowns.",
-"authors": [
-"Eichner ER"
-],
-"journal": "Current sports medicine reports",
-"journal_abbrev": "Curr Sports Med Rep",
-"year": 2018,
-"date": "2018-07-01",
-"doi": "10.1249/jsr.0000000000000497",
-"pmid": "29994821",
-"pmcid": null,
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Athletes",
-"Athletic Performance",
-"Caffeine",
-"Creatine Kinase",
-"Humans",
-"Performance-Enhancing Substances",
-"Placebos",
-"Rhabdomyolysis",
-"Sports Nutritional Physiological Phenomena"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "review",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-03T03:33:40Z",
-"screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text provided and the title alone does not reveal whether placebo/nocebo phenomena were an explicit study focus versus a clinical commentary.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Discusses caffeine powder, the use of placebos in athletes, and risks of muscle breakdown (rhabdomyolysis), but no abstract was available to assess whether placebo effects were empirically studied.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"caffeine powder",
-"rhabdomyolysis",
-"athletes",
-"performance enhancement",
-"placebos",
-"sports nutrition"
-],
-"usage": {
-"input_tokens": 403,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 772,
-"cost_usd": 0.00179
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2018-07-01",
-"private_pdf": null,
-"openalex_id": "https://openalex.org/W2883326126",
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1249/jsr.0000000000000497",
-"cited_by_count": 1,
-"openalex_checked": "2026-09-02v2"
-},
-{
 "id": "doi:10.1177/0363546518783971",
 "title": "Lateral Epicondylitis \"Placebo\" Surgery Was Actually a Lateral Denervation Procedure: Response.",
 "authors": [
@@ -24177,53 +24140,75 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/mono.12365",
 "cited_by_count": 0,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:50:27Z",
+"classified_at": "2026-09-06T19:04:46Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or accessible details to determine whether placebo/nocebo effects or responses were an explicit focus versus a developmental study of reasoning about side effects.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses how temporal and spatial expectations influence reasoning about side effects, indicating a focus on expectancy effects relevant to nocebo/placebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"nocebo_effect"
+],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"healthy_pediatric",
+"healthy_adult"
+],
+"age_group": [
+"children_adolescents",
+"adults"
+],
+"condition_domain": [
+"adverse_events"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"nocebo_communication_disclosure"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Reported on how temporal and spatial expectations influenced reasoning about side effects in a developmental sample; abstract not available to judge placebo/nocebo focus.",
+"summary": "Investigated how temporal and spatial expectations shaped reasoning about drug side effects, focusing on expectancy influences across development.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"side effects",
+"nocebo",
+"side-effects",
 "expectation",
-"development",
-"children",
-"reasoning",
-"temporal expectations",
-"spatial expectations"
+"developmental_psychology",
+"temporal_expectation",
+"spatial_expectation"
 ],
 "usage": {
-"input_tokens": 511,
+"input_tokens": 639,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 536,
-"cost_usd": 0.00135
+"output_tokens": 1009,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -40132,24 +40117,24 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T03:36:42Z",
+"classified_at": "2026-09-06T19:04:58Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.4,
-"rationale": "No abstract or methods available; title and MeSH terms mention placebo for pediatric chronic abdominal pain but text is insufficient to judge whether placebo/nocebo was the study focus or merely a control.",
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly names placebo as a treatment for childhood chronic abdominal pain, indicating placebo effects/responses are the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -40160,45 +40145,40 @@
 "children_adolescents"
 ],
 "condition_domain": [
-"pain",
 "nausea_gi"
 ],
 "outcome_measures": [
 "self_report"
 ],
-"design": [
-"not_applicable"
-],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"other"
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Insufficient information: title and MeSH terms indicated a study of placebo for chronic childhood abdominal pain but the abstract and methods were unavailable to confirm study focus or design.",
+"summary": "Reported on testing placebo as a treatment for chronic abdominal pain in children.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"abdominal pain",
-"pediatrics",
-"childhood",
-"placebo",
-"psychophysiologic disorders",
-"randomized trial"
+"chronic abdominal pain",
+"pediatric",
+"functional abdominal pain",
+"placebo trial"
 ],
 "usage": {
-"input_tokens": 422,
+"input_tokens": 600,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 715,
-"cost_usd": 0.00168
+"output_tokens": 809,
+"cost_usd": 0.00192
 }
 },
 "sources": [

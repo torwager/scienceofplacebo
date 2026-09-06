@@ -23,18 +23,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:32Z",
+"classified_at": "2026-09-06T18:42:20Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.35,
-"rationale": "No abstract or full text provided and the title alone is insufficient to determine whether the paper empirically studied placebo effects/responses or was a methodological/commentary piece.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title explicitly names 'placebo' and frames it in the context of clinical research, indicating placebo is the paper's subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -63,6 +63,7 @@
 "not_applicable"
 ],
 "mechanisms": [
+"trial_methodology_placebo_response",
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [
@@ -72,22 +73,22 @@
 "not_applicable"
 ]
 },
-"summary": "No abstract available; title suggested discussion of the placebo issue in clinical research, but insufficient information was present to determine empirical focus.",
+"summary": "Reviews the role and implications of the placebo in clinical research, including methodological and ethical issues.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"clinical research",
+"clinical trials",
 "methodology",
-"chiropractic",
-"placebo ethics"
+"blinding",
+"randomization",
+"ethics"
 ],
 "usage": {
-"input_tokens": 369,
+"input_tokens": 547,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 734,
-"cost_usd": 0.00171
+"output_tokens": 700,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -1976,58 +1977,42 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:37:46Z",
+"classified_at": "2026-09-06T18:42:28Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided; title indicates placebo was considered alongside narcotics and brain stimulation for analgesia but insufficient information to determine whether placebo/nocebo was an explicit study focus or how it was studied.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly states the paper addressed analgesia mechanisms due to placebo, so placebo phenomena are the paper's subject per inclusion rule 4/1.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
 "self_report"
 ],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"neural_systems_circuits",
-"neurobiology_opioid"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "No abstract available; title indicated the paper compared mechanisms of analgesia across narcotics, brain stimulation, and placebo using verbal pain descriptors.",
+"summary": "Used verbal descriptor pain measures to clarify mechanisms of analgesia attributable to narcotics, brain stimulation, and placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -2035,14 +2020,14 @@
 "analgesia",
 "narcotics",
 "brain stimulation",
-"pain descriptors"
+"placebo"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 810,
-"cost_usd": 0.00186
+"output_tokens": 574,
+"cost_usd": 0.00143
 }
 },
 "sources": [
@@ -3004,51 +2989,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1987.10402705",
 "cited_by_count": 1,
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T17:58:59Z",
+"classified_at": "2026-09-06T18:42:39Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Insufficient information (no abstract) to determine whether the case report studied placebo/nocebo phenomena or merely reports therapeutic hypnosis as adjunctive treatment.",
-"exclusion_reason": "insufficient_information",
-"peer_reviewed": false
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Title explicitly makes hypnotic suggestion/imagery the treatment focus, so suggestion/expectation effects on clinical outcome are the subject and meet inclusion for placebo-science adjacency.",
+"exclusion_reason": null,
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "case_report",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"other_neurological"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
 },
-"summary": "Case report (no abstract available) that described use of hypnotic imagery and suggestion as adjunctive treatment in a female adult in coma.",
+"summary": "Reported a single case in which hypnotic imagery and suggestion were used as an adjunctive treatment in a patient in coma.",
 "key_finding": null,
 "sample_size": 1,
 "free_keywords": [
 "hypnosis",
 "coma",
 "suggestion",
-"imagination",
-"case report"
+"hypnotic imagery",
+"case report",
+"adjunctive treatment"
 ],
 "usage": {
-"input_tokens": 436,
+"input_tokens": 564,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 568,
-"cost_usd": 0.00139
+"output_tokens": 1017,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -4603,18 +4609,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:00Z",
+"classified_at": "2026-09-06T18:42:50Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "No abstract or full text available; title explicitly references 'placebo response in depression' suggesting the paper studied placebo response, but methods and results cannot be confirmed from available metadata.",
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Title explicitly names 'placebo response in depression', indicating placebo response was the study focus (predictor analysis of pre-treatment HPA status).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4638,14 +4644,14 @@
 "neuroendocrine"
 ],
 "design": [
+"placebo_arm_secondary_analysis",
 "observational"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"neurobiology_other_neurochemical",
-"trial_methodology_placebo_response"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
@@ -4654,23 +4660,22 @@
 "not_applicable"
 ]
 },
-"summary": "Insufficient information to judge from the record; title indicated the study examined pre-treatment pituitary-adrenocortical status and placebo response in depressed patients.",
+"summary": "Examined whether pre-treatment pituitary–adrenocortical (HPA) status predicted placebo response in depressed patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pituitary-adrenal",
-"hpa",
-"dexamethasone",
-"cortisol",
+"dexamethasone suppression test",
+"HPA axis",
+"placebo responders",
 "major depression",
-"placebo response"
+"psychopharmacology"
 ],
 "usage": {
-"input_tokens": 400,
+"input_tokens": 578,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 867,
-"cost_usd": 0.00198
+"output_tokens": 1060,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -6453,23 +6458,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "review",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-03T04:38:09Z",
+"classified_at": "2026-09-06T18:42:59Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.3,
-"rationale": "No abstract or full text provided and the title suggests a conceptual/discussion piece, so there is insufficient information to determine whether placebo effects were an explicit empirical focus.",
+"decision": "include",
+"confidence": 0.6,
+"rationale": "Title explicitly addresses the placebo effect as the paper's subject ('The placebo effect. Real or imaginary?'), indicating placebo is the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [],
+"study_focus": [
+"placebo_science_other"
+],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
@@ -6478,27 +6485,26 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [],
+"mechanisms": [
+"history_conceptual"
+],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "No abstract available; title suggests a discussion of the placebo effect in a geriatric nursing context but the paper's empirical focus could not be determined from the record.",
+"summary": "Discusses whether the placebo effect is real or imaginary, framing the issue for geriatric nursing readers.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"geriatric nursing",
-"placebo effect",
-"aged",
-"placebos",
-"1987",
-"Todd et al."
+"geriatrics",
+"nursing",
+"placebo debate"
 ],
 "usage": {
-"input_tokens": 371,
+"input_tokens": 549,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 494,
-"cost_usd": 0.00123
+"output_tokens": 662,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -6544,18 +6550,18 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0079-6123(08)60198-3",
 "cited_by_count": 10,
-"scope": "review",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-06T18:00:20Z",
+"classified_at": "2026-09-06T18:43:10Z",
 "screening": {
-"decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Title and MeSH indicate an animal study of classical conditioning of immune responses (a placebo-relevant mechanism), but no abstract or full text is available to confirm that placebo/nocebo phenomena were the explicit focus or to extract outcomes.",
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Title states classical conditioning of immune responses in animals, meeting inclusion rule for animal models of conditioned (placebo-like) responses (mechanisms via conditioning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6586,33 +6592,31 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"treatment_cues_dose_route"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "No abstract available; title and MeSH indicate an animal experiment reporting conditioned immune responses in rats with adrenocortical influences.",
+"summary": "Examined classical conditioning of immune responses in rats and the influence of the adrenal cortex/adrenocortical mechanisms on those conditioned responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
-"adrenal cortex",
+"conditioning",
 "rats",
-"classical conditioning",
-"immune conditioning",
-"adrenocortical"
+"adrenal cortex",
+"hpa axis",
+"immunosuppression"
 ],
 "usage": {
-"input_tokens": 438,
-"cache_read_input_tokens": 5888,
+"input_tokens": 182,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 866,
-"cost_usd": 0.00199
+"output_tokens": 912,
+"cost_usd": 0.00203
 }
 },
 "sources": [
