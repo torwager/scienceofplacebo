@@ -148,26 +148,26 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0924-977x(97)00081-3",
 "cited_by_count": 20,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:26:52Z",
+"classified_at": "2026-09-06T17:56:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Paper evaluated the role and outcomes of placebo arms across schizophrenia trials and argued about the necessity of placebo-controlled studies, making placebo methodology the main subject.",
+"confidence": 0.8,
+"rationale": "Paper analyzed and compared placebo-arm outcomes (responder rates, mean change, dropout) across trials, making placebo response the object of study (secondary analysis of clinical trials).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
-"article_type": "systematic_review",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
 "psychosis"
@@ -183,10 +183,10 @@
 "healthcare_utilization"
 ],
 "design": [
-"not_applicable"
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
-"not_applicable"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response"
@@ -198,131 +198,24 @@
 "not_applicable"
 ]
 },
-"summary": "Compared outcomes and responder/dropout rates in placebo-controlled versus active-controlled short-term schizophrenia trials and concluded placebo control remained necessary to demonstrate efficacy.",
-"key_finding": "Found substantial variability in responder rates across placebo arms and argued that placebo-controlled trials are still needed to demonstrate efficacy in schizophrenia.",
+"summary": "Compared placebo-controlled and non-placebo-controlled short-term schizophrenia trials and reported variable placebo-arm responder rates and high dropout rates, concluding placebo control remains necessary.",
+"key_finding": "Found placebo-arm responder rates varied widely (6–43%) and dropout rates in placebo arms were high (48–80%), suggesting placebo control is needed to assess efficacy.",
 "sample_size": null,
 "free_keywords": [
 "schizophrenia",
-"BPRS",
-"responder rates",
-"dropout",
-"antipsychotic",
+"bprs",
 "haloperidol",
-"atypical"
+"responder_rate",
+"dropout",
+"antipsychotic trials",
+"placebo-arm analysis"
 ],
 "usage": {
 "input_tokens": 908,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 836,
-"cost_usd": 0.00205
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1998-12-01",
-"private_pdf": null
-},
-{
-"id": "doi:10.1006/appe.1998.0211",
-"title": "Pharmacology of food conditioned preferences.",
-"authors": [
-"Sclafani A",
-"Bodnar RJ",
-"Delamater AR"
-],
-"journal": "Appetite",
-"journal_abbrev": "Appetite",
-"year": 1998,
-"date": "1998-12-01",
-"doi": "10.1006/appe.1998.0211",
-"pmid": "9920694",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2013768328",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Animal Nutritional Physiological Phenomena",
-"Animals",
-"Conditioning, Psychological",
-"Food Preferences",
-"Rats",
-"Taste"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1006/appe.1998.0211",
-"cited_by_count": 11,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-05T20:31:46Z",
-"screening": {
-"decision": "include",
-"confidence": 0.62,
-"rationale": "Title explicitly addresses conditioning effects on food preferences (an animal model of associative/conditioning mechanisms relevant to placebo-type learning), so it meets inclusion for conditioning mechanisms in nonhuman animals.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"appetite_metabolism"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"classical_conditioning"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"placebo_food_drink"
-]
-},
-"summary": "Studied pharmacological modulation of conditioned food preferences in rats using conditioning procedures to alter food choice.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"rats",
-"food preference",
-"conditioning",
-"appetite",
-"taste"
-],
-"usage": {
-"input_tokens": 571,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 946,
-"cost_usd": 0.00218
+"output_tokens": 731,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -373,72 +266,53 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:31:54Z",
+"classified_at": "2026-09-03T04:27:56Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses the use of placebos in clinical trials in children/adolescents, making placebo practice/ethics the paper's subject (placebo science).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates the paper discussed use/ethics of placebos in pediatric trials but it's unclear whether it reported empirical data or was a review/survey.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"pediatric_clinical",
-"not_applicable"
-],
+"population": [],
 "age_group": [
 "children_adolescents"
 ],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discussed the use of placebos in pediatric clinical trials, focusing on practice and ethical issues in children and adolescents.",
+"summary": "Insufficient abstract to determine whether the paper presented original data; the title indicated discussion of the use of placebos in clinical trials involving children and adolescents.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo ethics",
 "pediatrics",
-"ethics",
+"adolescents",
 "clinical trials",
-"placebo use",
-"children and adolescents"
+"psychiatry"
 ],
 "usage": {
-"input_tokens": 617,
+"input_tokens": 439,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 494,
-"cost_usd": 0.00129
+"output_tokens": 743,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -501,30 +375,27 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:28:26Z",
+"classified_at": "2026-09-06T17:56:56Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "The study experimentally manipulated instructional set/expectation about drug effects and measured subjective and discrimination outcomes, testing expectation as a mechanism (an active-drug context manipulation), so placebo/expectation effects are an explicit focus.",
+"confidence": 0.8,
+"rationale": "The study manipulated instructional set/expectation about drug effects and measured resulting subjective drug effects and discrimination, an expectancy/context manipulation of active drugs meeting the inclusion rule for placebo-effect designs (active_drug_context_manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public"
+"healthy_adult"
 ],
 "age_group": [
-"adults",
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"sensory_perception",
 "other"
 ],
 "outcome_measures": [
@@ -543,30 +414,31 @@
 ],
 "moderators": [
 "expectation_level",
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "active_drug_context_manipulation",
-"inert_pill_capsule"
+"inert_pill_capsule",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated instructional set about whether capsules were sedative or stimulant and measured discrimination and subjective effects, finding labels affected belief and produced only limited changes in subjective effects without altering discrimination accuracy.",
-"key_finding": "Instructional expectancy altered reported drug labels and produced some shifts in subjective sedative/stimulant ratings but did not change discrimination performance.",
+"summary": "Manipulated instructional set about sedative versus stimulant properties and found instructions did not alter discrimination accuracy and produced only limited shifts in subjective effects.",
+"key_finding": "Instructions (expectations) did not affect drug discrimination performance but produced small, inconsistent changes in subjective sedative/stimulant ratings.",
 "sample_size": null,
 "free_keywords": [
 "tripelennamine",
-"diazepam",
 "d-amphetamine",
+"diazepam",
 "drug discrimination",
-"instructional_set",
-"expectancy"
+"instructional set",
+"expectation"
 ],
 "usage": {
 "input_tokens": 657,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 813,
-"cost_usd": 0.00194
+"output_tokens": 1010,
+"cost_usd": 0.00233
 }
 },
 "sources": [
@@ -1079,11 +951,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:28:41Z",
+"classified_at": "2026-09-06T17:56:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Paper focused on methods for developing placebo preparations to maintain double-blind conditions, making placebo science the primary subject (trial methodology).",
+"confidence": 0.85,
+"rationale": "Paper focused on placebo development and blinding methodology for a phytopharmaceutical, making placebo manufacture/blind maintenance the primary subject (placebo_science_other), which meets inclusion rule 5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1121,23 +993,23 @@
 "not_applicable"
 ]
 },
-"summary": "Described methods and considerations for designing matched placebos for phytopharmaceuticals to preserve double-blind conditions in clinical trials.",
+"summary": "Described methods and considerations for developing a matched inert placebo for a phytopharmaceutical (Ginkgo extract) to preserve double-blind conditions in clinical trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo manufacturing",
+"blinding",
 "phytopharmaceutical",
 "ginkgo",
-"placebo_design",
-"double-blind",
-"sensory_matching",
-"placebo_manufacture"
+"placebo matching",
+"double-blind methodology"
 ],
 "usage": {
 "input_tokens": 583,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 610,
-"cost_usd": 0.00151
+"output_tokens": 728,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -1437,11 +1309,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:28:57Z",
+"classified_at": "2026-09-06T17:56:34Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Narrative review focused on placebo-controlled trial methodology and when placebo comparisons are essential, so placebo science/methodology is the paper's main subject.",
+"rationale": "Paper is a methodological review about when placebo-controlled trials are necessary, making placebo trial methodology the main subject (placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1458,7 +1330,8 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"nausea_gi"
+"nausea_gi",
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -1470,7 +1343,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -1479,24 +1353,25 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed the methodological necessity of placebo-controlled trials and argued that equivalence trials can be inadequate in some clinical contexts.",
+"summary": "Reviews when placebo-controlled trials are essential and why equivalence trials can be inadequate, focusing on trial methodology and implications for antiemetic research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"equivalence_trials",
-"trial_design",
-"placebo-controlled",
-"antiemetics",
+"equivalence trial",
+"antiemetic",
 "ondansetron",
 "nausea",
-"data_interpretation"
+"vomiting",
+"trial_design",
+"control groups",
+"ethics"
 ],
 "usage": {
 "input_tokens": 472,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 718,
-"cost_usd": 0.0017
+"output_tokens": 779,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -2389,11 +2264,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:30:22Z",
+"classified_at": "2026-09-06T17:56:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment used classical conditioning (saccharin CS paired with cyclosporine A) to produce conditioned immunosuppression, directly studying conditioned placebo-like effects and their neural mediation.",
+"rationale": "Animal experiment that explicitly tested behavioural (classical) conditioning to elicit drug-like immunosuppression, isolating a conditioned placebo-like effect via CNS and splenic innervation.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2424,35 +2299,35 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"treatment_cues_dose_route"
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"topical_cream",
+"other"
 ]
 },
-"summary": "Found that saccharin taste paired with cyclosporine A produced conditioned suppression of splenic lymphocyte proliferation, reduced IL-2/IFN-γ, and prolonged heart graft survival in rats, effects abolished by splenic denervation.",
-"key_finding": "Conditioned saccharin cues reinstated CsA-like immunosuppression (reduced proliferation and cytokine production; prolonged graft survival), which was eliminated by surgical splenic denervation.",
+"summary": "Found that saccharin paired with cyclosporine A in rats produced conditioned suppression of splenic lymphocyte proliferation, reduced IL-2/IFN-γ production, and prolonged heart graft survival, effects abolished by splenic denervation.",
+"key_finding": "Conditioned saccharin cue reinstated CsA-like immunosuppression (reduced IL-2/IFN-γ, lower lymphocyte proliferation) and prolonged graft survival; effects were neuronally mediated via splenic innervation.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporine a",
-"conditioned immunosuppression",
 "saccharin",
-"splenic denervation",
+"conditioned immunosuppression",
+"spleen denervation",
 "il-2",
 "ifn-gamma",
 "heart allograft",
-"rats"
+"rat"
 ],
 "usage": {
 "input_tokens": 793,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 977,
-"cost_usd": 0.0023
+"output_tokens": 959,
+"cost_usd": 0.00226
 }
 },
 "sources": [
@@ -2756,11 +2631,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:30:10Z",
+"classified_at": "2026-09-06T17:56:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized double-blind trial experimentally manipulated verbal therapeutic suggestions versus an empty tape and measured postoperative nausea/vomiting, making placebo/context effects the study focus.",
+"rationale": "Randomized double-blind trial that experimentally manipulated verbal therapeutic suggestions versus an empty tape during anaesthesia and measured postoperative nausea/vomiting, meeting the placebo-effect criterion (verbal suggestion/context manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2777,13 +2652,12 @@
 "adults"
 ],
 "condition_domain": [
-"nausea_gi",
-"adverse_events"
+"nausea_gi"
 ],
 "outcome_measures": [
 "self_report",
-"clinical_endpoint",
-"healthcare_utilization"
+"healthcare_utilization",
+"clinical_endpoint"
 ],
 "design": [
 "parallel_groups_rct"
@@ -2803,23 +2677,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized double-blind trial in 100 thyroidectomy patients found that intraoperative positive therapeutic suggestions via tape reduced postoperative nausea, vomiting, and antiemetic use compared with an empty tape.",
-"key_finding": "Suggestion group had lower postoperative nausea/vomiting (47.2% vs 85.7%) and required less antiemetic treatment (30.6% vs 68.6%).",
+"summary": "Randomized double-blind trial in 100 thyroidectomy patients found that tape-recorded positive therapeutic suggestions played during neurolept-anaesthesia reduced postoperative nausea/vomiting and antiemetic use.",
+"key_finding": "Therapeutic suggestions reduced postoperative nausea/vomiting (suggestion 47.2% vs control 85.7%) and antiemetic requirement (30.6% vs 68.6%).",
 "sample_size": 100,
 "free_keywords": [
 "thyroidectomy",
 "neurolept-anaesthesia",
 "droperidol-fentanyl",
-"tape_recording",
-"postoperative_nausea",
-"antiemetic_use"
+"postoperative nausea",
+"tape-recorded suggestion"
 ],
 "usage": {
 "input_tokens": 733,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 842,
-"cost_usd": 0.00201
+"output_tokens": 909,
+"cost_usd": 0.00215
 }
 },
 "sources": [
@@ -3430,11 +3303,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:29:46Z",
+"classified_at": "2026-09-06T17:56:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.75,
-"rationale": "Observational study measured pre-operative expectations as predictors of post-operative pain and function, meeting the inclusion rule for expectation/context effects when measured as predictors of health outcomes.",
+"rationale": "Measured patient pre-operative expectations and tested them as predictors/moderators of post-operative outcomes, so expectation as a contextual predictor of health outcomes fits inclusion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3453,11 +3326,10 @@
 ],
 "condition_domain": [
 "pain",
-"motor_function"
+"global_health_qol"
 ],
 "outcome_measures": [
-"self_report",
-"clinical_endpoint"
+"self_report"
 ],
 "design": [
 "observational"
@@ -3466,34 +3338,33 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"expectation_level",
 "disease_severity_duration"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Assessed 257 lumbar spinal stenosis patients and found pre-operative expectations predicted 6-month post-operative pain, function, and satisfaction, with higher functional expectations linked to better outcomes.",
-"key_finding": "Patients with more ambitious expectations for physical function, especially those with low baseline function, reported greater functional improvement at 6 months (N=257).",
+"summary": "Tested how pre-operative expectations predicted 6-month pain, function, and satisfaction after lumbar spinal stenosis surgery in 257 patients and found expectations influenced recovery and satisfaction.",
+"key_finding": "Patients with more ambitious expectations for physical function showed greater functional improvement and satisfaction at 6 months, while more numerous pain-relief expectations predicted more pain and less satisfaction.",
 "sample_size": 257,
 "free_keywords": [
 "lumbar spinal stenosis",
 "preoperative expectations",
+"spine surgery",
 "postoperative function",
 "patient satisfaction",
 "prognosis",
-"spine surgery"
+"expectancy"
 ],
 "usage": {
 "input_tokens": 674,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1063,
-"cost_usd": 0.00244
+"output_tokens": 988,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -3667,11 +3538,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:29:07Z",
+"classified_at": "2026-09-06T17:56:43Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Animal experiment used classical conditioning (drug + taste CS) to elicit conditioned immunosuppression, directly testing a placebo-like conditioned response (mechanisms of conditioned humoral suppression).",
+"confidence": 0.9,
+"rationale": "Animal experiment explicitly tested classical conditioning of immunosuppression (conditioned vs controls), directly studying a conditioned placebo-like effect on antibody and CD4 responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3681,12 +3552,8 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -3700,8 +3567,7 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -3710,24 +3576,24 @@
 "other"
 ]
 },
-"summary": "Found that mice conditioned with cyclophosphamide paired to a gustatory cue showed reduced antibody responses and lower CD4+ T cell proportions compared with non-conditioned and saline controls.",
-"key_finding": "Conditioned group exhibited lower hemagglutination antibody titers and reduced proportion of CD4+ T lymphocytes versus controls.",
+"summary": "Found that taste-cyclophosphamide conditioning reduced antibody titers and the proportion of CD4+ T cells in mice compared with non-conditioned and saline controls.",
+"key_finding": "Conditioned group showed lower hemagglutination antibody response and reduced CD4+ T lymphocyte proportion versus controls.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
 "sheep red blood cells",
 "hemagglutination",
-"CD4",
-"balb/c",
-"taste conditioning",
-"conditioned immunosuppression"
+"cd4",
+"conditioned immunosuppression",
+"mice",
+"taste-conditioning"
 ],
 "usage": {
 "input_tokens": 736,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 928,
-"cost_usd": 0.00219
+"output_tokens": 1136,
+"cost_usd": 0.0026
 }
 },
 "sources": [
@@ -3789,11 +3655,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:31:05Z",
+"classified_at": "2026-09-06T17:56:52Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested behaviorally conditioned (classical conditioning) immunosuppression as the study focus, meeting inclusion criterion for mechanisms of placebo-like responses.",
+"rationale": "Animal experiment demonstrating behaviorally conditioned (classical conditioning) immunosuppression—placebo-like conditioned response was the study's focus (mechanisms of conditioned immunosuppression).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3806,19 +3672,15 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"neuroendocrine"
+"immune_inflammatory"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
@@ -3834,23 +3696,24 @@
 "other"
 ]
 },
-"summary": "Found that taste-aversion conditioning with cyclosporine A produced reductions in lymphocyte subset counts and decreased granulocyte function in rats.",
-"key_finding": "Conditioned rats showed significant decreases in B cells, CD8+ and CD4+ (naive and memory) T cells, and granulocyte numbers and chemiluminescence compared with controls.",
+"summary": "Found that taste-aversion conditioning with cyclosporine A produced immunosuppression in rats, reducing lymphocyte and granulocyte numbers and granulocyte function.",
+"key_finding": "Conditioned rats showed significant decreases in B, CD8+, CD4+ naive and memory T cells, and reduced granulocyte numbers and chemiluminescence compared with controls.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporine a",
 "conditioned immunosuppression",
-"taste-aversion",
+"taste aversion",
 "granulocyte chemiluminescence",
-"flow cytometry",
-"rats"
+"lymphocyte subsets",
+"rats",
+"csA"
 ],
 "usage": {
 "input_tokens": 675,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1175,
-"cost_usd": 0.00267
+"output_tokens": 1079,
+"cost_usd": 0.00247
 }
 },
 "sources": [
@@ -4717,26 +4580,26 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:31:46Z",
+"classified_at": "2026-09-06T17:57:45Z",
 "screening": {
 "decision": "include",
-"confidence": 0.88,
-"rationale": "Animal experiments explicitly tested conditioned analgesia and conditioned inhibition (antianalgesia) circuits, isolating learning-related effects on pain via lesions and pharmacological manipulations, meeting criteria for mechanistic placebo/nocebo models.",
+"confidence": 0.9,
+"rationale": "Animal experiments explicitly tested conditioned analgesia and conditioned inhibition (antianalgesia) mechanisms and neural circuitry, fitting inclusion of conditioned placebo/nocebo-like mechanisms in nonhuman models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect",
-"nocebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
@@ -4745,41 +4608,40 @@
 "spinal_peripheral_electrophysiology"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_opioid"
+"neurobiology_opioid",
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Demonstrated in rats that conditioned inhibition of analgesia (antianalgesia) depended on raphe and spinal pathways and was distinct from conditioned analgesia circuitry.",
-"key_finding": "Lesions of raphe nuclei and the spinal dorsolateral funiculus abolished antianalgesia, indicating distinct neural circuits for conditioned analgesia versus antianalgesia.",
+"summary": "Demonstrated in rats that conditioned inhibition of analgesia (antianalgesia) depended on raphe nuclei and spinal pathways, and that analgesia and antianalgesia used distinct neural circuits.",
+"key_finding": "Lesions of dorsal raphe, raphe magnus, and the spinal dorsolateral funiculus abolished conditioned antianalgesia, indicating distinct circuitry from conditioned analgesia.",
 "sample_size": null,
 "free_keywords": [
-"conditioned analgesia",
 "antianalgesia",
+"conditioned analgesia",
+"spinal morphine",
 "raphe magnus",
-"spinal cord lesion",
-"rats",
-"endogenous opioids",
-"tail withdrawal"
+"amygdala"
 ],
 "usage": {
 "input_tokens": 754,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1271,
-"cost_usd": 0.00288
+"output_tokens": 1239,
+"cost_usd": 0.00281
 }
 },
 "sources": [
@@ -5328,17 +5190,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:32:59Z",
+"classified_at": "2026-09-06T17:56:42Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper experimentally manipulated outcome expectancies (verbal suggestion) and measured ad libitum alcohol consumption, so it tests causal expectancy effects (an active-drug context manipulation) relevant to placebo/expectation mechanisms.",
+"rationale": "Expectancy was experimentally manipulated for an active drug (alcohol) and effects on ad libitum consumption were a primary, causal outcome, meeting the active_drug_context_manipulation inclusion rule.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5359,38 +5222,38 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_objective",
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "prior_treatment_experience"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"expectation_level"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Manipulated verbal alcohol outcome expectancies in male nonproblem drinkers and found that negative expectancy reduced ad libitum alcohol consumption, mediated by expected task impairment.",
-"key_finding": "Telling participants alcohol would impair performance led to lower ad libitum consumption compared with neutral/unknown instructions (p < .05), mediated by expectancy.",
+"summary": "Manipulated expectancies about alcohol effects in male nonproblem drinkers and found that negative expectancy reduced ad libitum alcohol consumption, with expected effects mediating the group differences and disinhibition moderating expectancy formation.",
+"key_finding": "Told impairment reduced expected benefit and led to lower alcohol consumption (N=120); expected effects mediated group differences.",
 "sample_size": 120,
 "free_keywords": [
+"ad libitum drinking",
 "alcohol expectancy",
-"ad libitum consumption",
 "disinhibition",
-"male nonproblem drinkers",
-"behavioral measure",
+"male volunteers",
+"performance-contingent task",
 "expectancy manipulation"
 ],
 "usage": {
 "input_tokens": 770,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 983,
-"cost_usd": 0.00231
+"output_tokens": 847,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -5447,11 +5310,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:33:12Z",
+"classified_at": "2026-09-06T17:56:43Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Randomized trial included placebo and no-treatment arms and tested expectancies as predictors of performance, isolating placebo/context effects (placebo vs no treatment).",
+"confidence": 0.9,
+"rationale": "Randomized trial included placebo and no-treatment groups and tested expectancies as predictors of performance under placebo, isolating placebo/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5482,34 +5345,31 @@
 "significant_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience",
-"treatment_cues_dose_route"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "expectation_level"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"not_applicable"
+"placebo_food_drink"
 ]
 },
-"summary": "Tested whether expectancies predicted cognitive impairment under alcohol, placebo, or no treatment and found alcohol impaired processing and expectancies predicted poorer performance under alcohol and placebo.",
-"key_finding": "Found that higher expected impairment predicted worse task performance under both alcohol and placebo; alcohol (0.62 g/kg) impaired processing relative to placebo and no-treatment (N=27).",
+"summary": "Randomized trial found that expectancies predicted cognitive impairment under alcohol and under an alcoholic placebo versus no-treatment in male social drinkers.",
+"key_finding": "Participants who expected greater impairment performed worse under alcohol and under the placebo when they expected alcohol; placebo-induced impairment tracked expectancy.",
 "sample_size": 27,
 "free_keywords": [
 "rapid information processing",
-"alcohol 0.62 g/kg",
 "social drinkers",
-"expectancy",
+"alcohol placebo",
+"0.62 g/kg",
 "cognitive impairment"
 ],
 "usage": {
 "input_tokens": 661,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 869,
-"cost_usd": 0.00205
+"output_tokens": 606,
+"cost_usd": 0.00152
 }
 },
 "sources": [
@@ -5904,11 +5764,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:32:07Z",
+"classified_at": "2026-09-06T17:56:43Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Study experimentally manipulated alcohol expectancies (expectancy-challenge vs no-treatment) and measured consequent reductions in drinking, making expectation-driven effects the focus.",
+"confidence": 0.8,
+"rationale": "Randomized expectancy-challenge intervention manipulated alcohol expectancies versus no-treatment control and measured consequent reductions in drinking, making expectancy (a placebo-mechanism) the causal focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5919,7 +5779,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult"
+"general_public"
 ],
 "age_group": [
 "adults"
@@ -5928,8 +5788,7 @@
 "addiction_craving"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
 "parallel_groups_rct"
@@ -5947,23 +5806,21 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Assigned participants to expectancy-challenge (arousal or sociability) or no-treatment control and found reduced alcohol expectancies and consumption immediately and after 6 weeks with a booster.",
-"key_finding": "Both expectancy-challenge interventions reduced self-reported drinking and alcohol expectancies immediately and at 6-week follow-up (N=54).",
+"summary": "Randomized expectancy-challenge interventions reduced alcohol expectancies and self-reported consumption immediately and at 6-week follow-up compared with no treatment.",
+"key_finding": "Both arousal- and sociability-targeted expectancy challenges produced significant reductions in drinking immediately posttreatment and after a 6-week booster.",
 "sample_size": 54,
 "free_keywords": [
-"alcohol expectancies",
 "expectancy challenge",
-"drinking reduction",
-"booster session",
-"sociability expectancy",
-"arousal expectancy"
+"alcohol consumption",
+"social drinking",
+"booster session"
 ],
 "usage": {
 "input_tokens": 660,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 978,
-"cost_usd": 0.00227
+"output_tokens": 894,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -6020,11 +5877,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:32:21Z",
+"classified_at": "2026-09-06T17:56:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental manipulation of expectancy via a sham stimulator with/without prior pain exposure targeted expectancy-induced pain (a nocebo effect) and tested its moderators.",
+"rationale": "Experimental manipulation of expectancy using a sham stimulator and prior pain experience was the study's focus, isolating an expectancy-induced (nocebo) pain effect.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6057,8 +5914,8 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"classical_conditioning",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "prior_experience"
@@ -6068,22 +5925,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that prior painful stimulation increased expectancy-induced pain reports to a sham stimulator and shortened cold-water tolerance, indicating prior experience moderated expectancy-driven pain.",
-"key_finding": "Subjects exposed to actual pain before sham stimulation reported greater increases in pain with increased sham settings and showed reduced cold-water tolerance compared with those who received sham first.",
+"summary": "Found that prior pain exposure increased subjective pain reports in response to suggestion via a sham stimulator and reduced cold-water tolerance, indicating expectancy-induced pain.",
+"key_finding": "Prior physical pain exposure amplified suggestion-elicited pain ratings and shortened cold-water tolerance compared with sham-first participants.",
 "sample_size": null,
 "free_keywords": [
 "cold pressor",
+"ice water",
 "pressure pain",
 "sham stimulator",
-"expectancy",
-"headache suggestion"
+"headache expectation",
+"somatoform pain",
+"expectancy"
 ],
 "usage": {
 "input_tokens": 715,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1046,
-"cost_usd": 0.00242
+"output_tokens": 861,
+"cost_usd": 0.00205
 }
 },
 "sources": [
@@ -6433,133 +6292,6 @@
 "private_pdf": null
 },
 {
-"id": "pmid:9631345",
-"title": "Expectancy, the therapeutic alliance, and treatment outcome in short-term individual psychotherapy.",
-"authors": [
-"Joyce AS",
-"Piper WE"
-],
-"journal": "The Journal of psychotherapy practice and research",
-"journal_abbrev": "J Psychother Pract Res",
-"year": 1998,
-"date": "1998-01-01",
-"doi": null,
-"pmid": "9631345",
-"pmcid": "PMC3330500",
-"openalex_id": "https://openalex.org/W1491644347",
-"abstract": "Patient and therapist expectancies regarding the \"typical session\" were measured during a controlled trial of short-term, time-limited individual psychotherapy. Relationships between expectancy ratings and measures of the therapeutic alliance and treatment outcome were examined. Significant relationships were tested in the presence of a competing predictor variable, either pre-therapy disturbance (depression) or the patient's quality of object relations (QOR). Expectancies were associated strongly with the alliance but only moderately with treatment outcome. In most instances, expectancy and QOR combined in an additive fashion to account for variation in alliance or outcome. The patient's capacity for mature relationships and expectancies for therapy appear to be important determinants of treatment process and outcome. The clinical value of establishing accurate, moderate expectancies prior to therapy is considered.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Attitude of Health Personnel",
-"Attitude to Health",
-"Cooperative Behavior",
-"Depression",
-"Female",
-"Humans",
-"Male",
-"Mental Disorders",
-"Middle Aged",
-"Multivariate Analysis",
-"Object Attachment",
-"Patient Acceptance of Health Care",
-"Patient Satisfaction",
-"Professional-Patient Relations",
-"Psychotherapy, Brief",
-"Regression Analysis",
-"Treatment Outcome"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3330500",
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/9631345",
-"cited_by_count": 174,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:30:51Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "The study measured expectancies and tested their association with therapeutic alliance and treatment outcome, making expectation/placebo-related processes an explicit focus (measured predictor of clinical outcome) in an empirical trial.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"depression"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"parallel_groups_rct",
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"personality_traits",
-"disease_severity_duration"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Measured patient and therapist expectancies in a controlled trial of short-term individual psychotherapy and found expectancies strongly related to the therapeutic alliance and moderately related to treatment outcome.",
-"key_finding": "Expectancies strongly predicted alliance and were moderately associated with treatment outcome, often additively with quality of object relations.",
-"sample_size": null,
-"free_keywords": [
-"therapeutic alliance",
-"short-term psychotherapy",
-"expectancy",
-"object relations",
-"treatment outcome",
-"brief psychotherapy",
-"depression",
-"patient expectations"
-],
-"usage": {
-"input_tokens": 637,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1155,
-"cost_usd": 0.00262
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1998-01-01",
-"private_pdf": null
-},
-{
 "id": "pmid:9523385",
 "title": "Harmful effects of the placebo-controlled design.",
 "authors": [
@@ -6696,71 +6428,50 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:32:34Z",
+"classified_at": "2026-09-03T04:29:03Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly addresses physicians prescribing placebos, indicating placebo use/ethics in clinical practice is the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title suggests an ethics/clinical discussion rather than an empirical placebo-effect study, so content cannot be determined from available information.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses the circumstances and ethical issues surrounding physicians prescribing placebos in clinical practice.",
+"summary": "Could not determine content from the available record; likely discussed ethical and clinical issues of prescribing placebos in practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"physician prescribing",
+"placebo prescribing",
 "ethics",
 "clinical practice",
-"nursing",
-"placebo prescribing"
+"nursing"
 ],
 "usage": {
-"input_tokens": 568,
+"input_tokens": 390,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 683,
-"cost_usd": 0.00166
+"output_tokens": 564,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -8999,11 +8710,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:34:24Z",
+"classified_at": "2026-09-06T17:56:50Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Animal experiment explicitly studied classical conditioning (CTA) of immunosuppression, i.e., conditioned physiological responses, which meets inclusion criterion for conditioned-placebo-type mechanisms.",
+"confidence": 0.9,
+"rationale": "Animal classical-conditioning study explicitly tested conditioned immunosuppression (conditioned taste aversion paired with cyclosporine A) so placebo/nocebo-relevant mechanisms (classical conditioning) were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9033,35 +8744,34 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Conditioned saccharin paired with cyclosporine A produced a taste aversion and conditioned reductions in thymus and spleen weight and splenocyte proliferation in rats.",
-"key_finding": "Conditioned animals showed significantly reduced thymus and spleen weights and decreased splenocyte proliferative response after saccharin re-presentation.",
+"summary": "Found that pairing saccharin with cyclosporine A in rats produced conditioned taste aversion and conditioned reductions in thymus and spleen weights and splenocyte proliferative capacity.",
+"key_finding": "Conditioned animals showed significantly reduced thymus and spleen weights and decreased splenocyte proliferation to concanavalin A after saccharin-CsA pairings.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporine a",
+"conditioned immunosuppression",
 "saccharin",
 "conditioned taste aversion",
 "splenocyte proliferation",
 "thymus weight",
-"spleen weight",
 "rat",
-"immunosuppression"
+"concanavalin a"
 ],
 "usage": {
 "input_tokens": 812,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1277,
-"cost_usd": 0.0029
+"output_tokens": 1328,
+"cost_usd": 0.00301
 }
 },
 "sources": [

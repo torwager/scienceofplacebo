@@ -28,7 +28,7 @@
   <div class="page-head">
     <p class="eyebrow">Database</p>
     <h1>Placebo research database</h1>
-    <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND. Export sends the current results (up to 2,000) to a reference manager as BibTeX, RIS, a DOI list or CSV.</p>
+    <p>Search titles, abstracts and assigned keywords, and filter by author. Combine with the tag filters on the left; within an axis, any selected tag matches, and axes combine with AND. Papers marked <span class="badge adjacent">adjacent</span> (about placebo, but not studies of placebo or nocebo effects or responses) are included by default; untick "adjacent" to see core studies only. How the database is built, and what it is and is not suitable for, is described on the <a href="methods.html">methods page</a>. Export sends the current results (up to 2,000) to a reference manager as BibTeX, RIS, a DOI list or CSV.</p>
   </div>
   <div class="stat-row" id="stats"></div>
   <div class="searchbar"><input id="q" type="search" placeholder="Search titles, abstracts and keywords, e.g. naloxone conditioning, open-label placebo IBS" autocomplete="off" aria-label="Search titles and abstracts"><input id="qa" type="search" placeholder="Author, e.g. Benedetti or Benedetti F" autocomplete="off" aria-label="Author" style="flex:0 1 260px"><button class="btn primary" id="go">Search</button></div>
@@ -71,7 +71,7 @@
   els.q.value = params.get("q") || "";
   els.qa.value = params.get("author") || "";
   els.sort.value = params.get("sort") || (els.q.value ? "rel" : "new");
-  els.showAdjacent.checked = params.get("adj") === "1";
+  els.showAdjacent.checked = params.get("adj") !== "0";
   const years = state.stats.years;
   for (const y of years.slice().reverse()) { els.yfrom.add(new Option(y, y)); els.yto.add(new Option(y, y)); }
   els.yfrom.value = params.get("from") || ""; els.yto.value = params.get("to") || "";
@@ -131,8 +131,8 @@
       const names = Object.entries(counts).sort((a, b) => b[1] - a[1]);
       who.innerHTML = names.length > 1 ? `<span class="small muted">Matches ${names.length} author names:</span> ` + names.slice(0, 12).map(([a, n]) => `<button class="chip" data-author="${SOP.esc(a)}">${SOP.esc(a)} <span class="muted tnum">${n}</span></button>`).join(" ") + (names.length > 12 ? ` <span class="small muted">and ${names.length - 12} more</span>` : "") : "";
     } else who.innerHTML = "";
-    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && !els.showAdjacent.checked && !onlyList;
-    SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "1" : "", p: page > 1 ? page : "" });
+    els.clear.hidden = !Object.values(filters).some(s => s.size) && !q && !qa && !els.yfrom.value && !els.yto.value && els.showAdjacent.checked && !onlyList;
+    SOP.filtersToQuery(filters, { q, author: qa ? els.qa.value.trim() : "", sort: sort !== "new" ? sort : "", from: els.yfrom.value, to: els.yto.value, adj: els.showAdjacent.checked ? "" : "0", p: page > 1 ? page : "" });
     const slice = shown.slice((page - 1) * PAGE, page * PAGE);
     els.results.innerHTML = slice.length ? slice.map(r => SOP.paperCard(r)).join("") : '<div class="empty">No papers match. Try fewer filters or a broader search.</div>';
     els.pager.innerHTML = pages > 1 ? `<button class="btn" id="prev" ${page <= 1 ? "disabled" : ""}>‹ Prev</button><span class="small muted tnum">page ${page} of ${pages}</span><button class="btn" id="next" ${page >= pages ? "disabled" : ""}>Next ›</button>` : "";
@@ -149,7 +149,7 @@
   els.sort.onchange = els.yfrom.onchange = els.yto.onchange = els.showAdjacent.onchange = document.getElementById("onlyList").onchange = () => { page = 1; run(); };
   SOP.bindStars(els.results);
   els.active.addEventListener("click", e => { const c = e.target.closest(".chip"); if (!c) return; SOP.toggle(filters, c.dataset.axis, c.dataset.value); page = 1; run(); });
-  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = false; document.getElementById("onlyList").checked = false; els.sort.value = "new"; page = 1; run(); };
+  els.clear.onclick = () => { for (const k in filters) filters[k].clear(); els.q.value = ""; els.qa.value = ""; els.yfrom.value = ""; els.yto.value = ""; els.showAdjacent.checked = true; document.getElementById("onlyList").checked = false; els.sort.value = "new"; page = 1; run(); };
   // typing in either box applies on Enter, on the Search button, or when the box loses focus
   els.qa.addEventListener("change", () => { page = 1; run(); });
   document.getElementById("who").addEventListener("click", e => { const b = e.target.closest("[data-author]"); if (!b) return; els.qa.value = b.dataset.author; page = 1; run(); });

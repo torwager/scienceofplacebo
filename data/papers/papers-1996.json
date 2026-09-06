@@ -471,11 +471,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:41:08Z",
+"classified_at": "2026-09-06T17:57:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Paper's stated aim is to provide ethical guidelines about the use of placebo controls in psychopharmacologic trials, making placebo science the primary subject (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Paper is an ethics/guideline article whose primary focus is the justified use of placebo controls in psychopharmacologic trials, so it fits 'placebo_science_other'.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -483,7 +483,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "human",
 "population": [
 "not_applicable"
@@ -504,7 +504,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -513,23 +515,24 @@
 "not_applicable"
 ]
 },
-"summary": "Provided institutional review board guidelines for ethically justifiable use of placebo controls in psychopharmacologic clinical trials, focusing on protection of vulnerable subjects and study design considerations.",
+"summary": "Provided institutional-review-board guidelines on the ethical justifications for placebo controls in psychopharmacologic clinical trials, focusing on vulnerable subjects and research design considerations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ethics",
-"placebo-controlled trials",
+"informed consent",
+"vulnerable populations",
 "psychopharmacology",
 "institutional review board",
-"research design",
-"informed consent"
+"placebo control",
+"research design"
 ],
 "usage": {
 "input_tokens": 581,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00183
+"output_tokens": 625,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -714,73 +717,70 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:42:22Z",
+"classified_at": "2026-09-04T00:09:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.91,
-"rationale": "Randomized manipulation of positive vs. negative framing (expectation/communication) targeted side-effect expectations and altered self-reported side effects and absenteeism, so nocebo/placebo phenomena were the paper's explicit focus and outcome.",
+"confidence": 0.9,
+"rationale": "Systematic review quantitatively compared solicited adverse event rates in vaccine active versus placebo arms and explicitly framed placebo-arm events as nocebo effects, making nocebo/placebo phenomena the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"nocebo_response"
 ],
-"article_type": "empirical_primary",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
-"other_clinical"
+"not_applicable"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
-"adverse_events",
-"immune_inflammation"
+"adverse_events"
 ],
 "outcome_measures": [
-"self_report",
-"healthcare_utilization",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"meta_analytic"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"nocebo_communication_disclosure"
+"nocebo_communication_disclosure",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"age",
+"treatment_characteristics"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"saline_injection_infusion"
 ]
 },
-"summary": "Randomized patients to positively or negatively framed vaccine risk/benefit information and found framing altered side-effect expectations, reduced self-reported systemic side effects and work absenteeism in the positive frame group.",
-"key_finding": "Positive framing reduced self-reported systemic side effects and work absenteeism compared with negative framing (p < 0.05).",
-"sample_size": 292,
+"summary": "Systematic review and quantitative synthesis of SARS-CoV-2 vaccine phase-III trials found that solicited adverse events were common in placebo arms and patterns were consistent with nocebo effects.",
+"key_finding": "Found high rates of solicited fatigue, headache, myalgia and local pain in placebo recipients (e.g., ~27-29% fatigue after first mRNA dose), supporting a nocebo contribution to vaccine AEs.",
+"sample_size": 3,
 "free_keywords": [
-"influenza vaccine",
-"framing",
-"side effects",
-"decisional conflict",
-"chronic respiratory disease",
-"chronic cardiac disease",
-"work absenteeism",
-"risk communication"
+"covid-19 vaccine",
+"sars-cov-2",
+"solicited adverse events",
+"fatigue",
+"headache",
+"myalgia",
+"injection-site pain",
+"mRNA vaccine"
 ],
 "usage": {
-"input_tokens": 758,
+"input_tokens": 922,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 950,
-"cost_usd": 0.00224
+"output_tokens": 955,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -825,11 +825,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:40:32Z",
+"classified_at": "2026-09-06T17:57:23Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "Title indicates a methodological reappraisal of placebo-controlled clinical trials, making placebo science the main subject (review of trial methodology).",
+"rationale": "Title indicates the paper is a reappraisal of placebo-controlled clinical trials, making placebo methodology the primary topic (placebo science review) despite absent abstract.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -838,7 +838,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -867,22 +867,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed methodological issues, implications, and interpretation of placebo-controlled clinical trials.",
+"summary": "Reviews methodological issues, debates, and implications of placebo-controlled clinical trials and their interpretation.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo-controlled trials",
-"methodology",
+"trial methodology",
 "blinding",
-"clinical trial design",
-"ethics"
+"randomization",
+"ethics",
+"clinical trial design"
 ],
 "usage": {
 "input_tokens": 433,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 596,
-"cost_usd": 0.00145
+"output_tokens": 610,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -1520,17 +1521,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:41:53Z",
+"classified_at": "2026-09-06T17:57:05Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment explicitly studied conditioned drug-state responses elicited by placebo injections (classical conditioning of drug effects), making placebo/nocebo phenomena an object of study.",
+"confidence": 0.8,
+"rationale": "Animal experiment that explicitly studied conditioned drug responses elicited by placebo (saline) injections after pairing with methamphetamine, meeting the criterion for conditioning mechanisms of placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_response",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -1555,7 +1557,6 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"prior_treatment_experience",
 "neurobiology_other_neurochemical",
 "neural_systems_circuits"
 ],
@@ -1564,27 +1565,27 @@
 "prior_experience"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"saline_injection_infusion",
+"other"
 ]
 },
-"summary": "Found that rats repeatedly treated with methamphetamine plus scopolamine developed enhanced stereotyped behavioral sensitization and conditioned responses to a tone that were elicited by placebo injections.",
-"key_finding": "Methamphetamine+scopolamine-sensitized rats showed conditioned stereotyped responses to tone paired with placebo injections, indicating robust drug-state conditioning.",
+"summary": "Found that rats repeatedly treated with methamphetamine plus scopolamine developed enhanced stereotyped sensitization and that a tone paired with the drug state elicited conditioned responding to subsequent placebo (saline) injections.",
+"key_finding": "Conditioned behavioral responses were elicited by placebo injections following tone–drug pairings in methamphetamine+scopolamine-sensitized rats, indicating robust classical conditioning of drug-like effects.",
 "sample_size": null,
 "free_keywords": [
 "methamphetamine",
 "scopolamine",
-"behavioral_sensitization",
-"conditioned_response",
 "stereotypy",
-"tone_cue",
-"Wistar rat"
+"Wistar rats",
+"conditioned tone",
+"saline challenge"
 ],
 "usage": {
-"input_tokens": 785,
-"cache_read_input_tokens": 5888,
+"input_tokens": 529,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
 "output_tokens": 956,
-"cost_usd": 0.00226
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -1754,11 +1755,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:37:40Z",
+"classified_at": "2026-09-06T17:57:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.92,
-"rationale": "Used a balanced-placebo design that experimentally manipulated beverage expectancy versus content to isolate expectancy (placebo) effects on subjective intoxication and measured outcomes including BAC.",
+"rationale": "Used a balanced-placebo experimental design manipulating beverage instructions (expectancy) and beverage content to study placebo/expectancy effects on intoxication and BAC, meeting the placebo-effect criterion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1791,33 +1792,34 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"prior_treatment_experience"
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"personality_traits",
-"prior_experience"
+"personality_traits"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Used a balanced-placebo design in 132 male social drinkers to test beverage instruction versus content effects; expectancy influenced subjective intoxication and BAC, while consumption related to drinking restraint.",
-"key_finding": "Balanced-placebo manipulations predicted subjective intoxication and post-drinking BAC; consumption was primarily associated with individual differences in drinking restraint.",
+"summary": "Found that balanced-placebo instructions (expectancy) predicted subjective intoxication and BAC, while ad libitum consumption was primarily associated with drinking temptation (restraint).",
+"key_finding": "Balanced-placebo expectancy manipulation affected subjective intoxication and BAC; consumption was driven by temptation-related restraint.",
 "sample_size": 132,
 "free_keywords": [
 "balanced placebo design",
 "taste-rating task",
-"blood alcohol concentration",
+"BAC",
+"ad libitum consumption",
 "social drinkers",
-"beverage expectancy"
+"alcohol expectancy",
+"drinking restraint",
+"subjective intoxication"
 ],
 "usage": {
 "input_tokens": 828,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1128,
-"cost_usd": 0.00261
+"output_tokens": 1243,
+"cost_usd": 0.00284
 }
 },
 "sources": [
@@ -2099,11 +2101,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:42:51Z",
+"classified_at": "2026-09-06T17:57:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal classical-conditioning experiment that explicitly tested conditioned physiological (immune and corticosterone) responses to a learned cue, meeting inclusion for placebo/nocebo-relevant conditioned effects in animals.",
+"confidence": 0.9,
+"rationale": "Animal experiment that used classical conditioning (CS-US pairings) to elicit physiological (PBMC and corticosterone) responses, making conditioned responses the explicit object of study (mechanism of learned modulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2134,32 +2136,33 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reported that rats conditioned with a peppermint odor paired with nicotine showed conditioned increases in PBMC counts and corticosterone when reexposed to the odor.",
-"key_finding": "Conditioned increases in peripheral blood mononuclear cells appeared on the fifth unreinforced CS trial; corticosterone conditioning was observed but extinguished after the first test trial.",
+"summary": "Found that rats conditioned with a peppermint odor paired with nicotine showed increased peripheral blood mononuclear cells and corticosterone secretion upon reexposure to the odor, indicating learned modulation of immune and endocrine responses.",
+"key_finding": "Conditioned CS reexposure produced significant increases in PBMC number and corticosterone compared with unpaired and saline controls.",
 "sample_size": null,
 "free_keywords": [
 "nicotine",
-"peppermint odor",
-"PBMC",
 "corticosterone",
-"lewis rats",
-"conditioned immunomodulation"
+"peppermint odor",
+"conditioned immunomodulation",
+"Lewis rats",
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 662,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 900,
-"cost_usd": 0.00211
+"output_tokens": 1214,
+"cost_usd": 0.00274
 }
 },
 "sources": [
@@ -3026,11 +3029,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:44:36Z",
+"classified_at": "2026-09-06T17:57:05Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal Pavlovian conditioning experiment explicitly manipulated cue pairing to elicit conditioned immunoendocrine responses, meeting inclusion rule for conditioned/contextual mechanisms of placebo-like effects.",
+"rationale": "Animal experiment explicitly conditioned LPS-induced physiological/immune responses using a CS vs unpaired controls, testing conditioned (placebo-like) responses (classical conditioning mechanism).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3043,15 +3046,16 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
 "immune_inflammatory",
 "neuroendocrine",
-"autonomic",
-"behavioral_performance"
+"autonomic"
 ],
 "design": [
 "animal_experiment"
@@ -3067,27 +3071,27 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Conditioned saccharin cues paired with LPS suppressed splenic IL-2 production and splenic NE and increased corticosterone in rats, indicating Pavlovian modulation of immune and neuroendocrine responses.",
-"key_finding": "Paired (conditioned) cue exposure produced suppressed IL-2, reduced splenic NE, and elevated corticosterone relative to controls.",
+"summary": "Conditioned saccharin cues paired with LPS suppressed splenic IL-2 production and altered splenic NE and corticosterone in rats, indicating conditioned immunomodulation.",
+"key_finding": "Found that re-exposure to the saccharin cue produced suppressed IL-2, reduced splenic norepinephrine, and elevated corticosterone compared with controls.",
 "sample_size": null,
 "free_keywords": [
 "lipopolysaccharide",
 "IL-2",
-"corticosterone",
-"norepinephrine",
 "saccharin",
+"taste-aversion",
 "conditioned immunosuppression",
-"sprague-dawley"
+"rats",
+"splenic norepinephrine"
 ],
 "usage": {
 "input_tokens": 744,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1185,
-"cost_usd": 0.0027
+"output_tokens": 1089,
+"cost_usd": 0.00251
 }
 },
 "sources": [
@@ -3143,11 +3147,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:37:59Z",
+"classified_at": "2026-09-06T17:57:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.95,
-"rationale": "Balanced-placebo experimental design directly manipulated expectancy versus pharmacology to test placebo/context effects and their interaction with d-amphetamine, meeting criteria for placebo-effect research.",
+"rationale": "Balanced-placebo experiment manipulated expectancy versus drug and analyzed placebo/expectancy effects on subjective responses and self-administration, meeting the placebo-effect inclusion criterion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3165,6 +3169,8 @@
 "adults"
 ],
 "condition_domain": [
+"anxiety_stress",
+"addiction_craving",
 "other"
 ],
 "outcome_measures": [
@@ -3172,42 +3178,42 @@
 "behavioral_performance"
 ],
 "design": [
-"balanced_placebo"
+"balanced_placebo",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_subjective",
-"mixed_inconsistent"
+"significant_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
 "prior_treatment_experience"
 ],
 "moderators": [
-"expectation_level"
+"expectation_level",
+"prior_experience"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
+"active_drug_context_manipulation",
+"inert_pill_capsule"
 ]
 },
-"summary": "Tested how instructed expectancies and d-amphetamine pharmacology influenced subjective effects and self-administration using a balanced-placebo design in healthy volunteers.",
-"key_finding": "Expectancy increased reported 'feel drug' and 'like drug' regardless of pharmacology, but amphetamine's pharmacological effects mainly determined self-administration; mismatched expectations raised anxiety and altered arousal.",
+"summary": "Used a balanced-placebo design with d-amphetamine versus placebo to show expectancy altered subjective drug ratings while amphetamine pharmacology primarily drove self-administration choices.",
+"key_finding": "Expectancy increased reported 'feel drug' and 'like drug' ratings regardless of drug, but amphetamine administration determined choice to self-administer; mismatches produced higher anxiety.",
 "sample_size": 40,
 "free_keywords": [
-"balanced placebo",
 "d-amphetamine",
+"balanced placebo",
 "self-administration",
 "subjective effects",
 "stimulant",
-"expectancy",
 "mismatch anxiety"
 ],
 "usage": {
 "input_tokens": 924,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 992,
+"output_tokens": 993,
 "cost_usd": 0.00236
 }
 },
@@ -3277,11 +3283,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:43:41Z",
+"classified_at": "2026-09-06T17:57:07Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment explicitly studied conditioned immunosuppression (classical conditioning) and tested neural mechanism (insular cortex lesions), making placebo-like conditioned response the study focus (mechanism of conditioned immune response).",
+"confidence": 0.85,
+"rationale": "Animal experiment explicitly tested Pavlovian conditioned immunosuppression (placebo-related associative learning mechanisms) and showed lesion effects on acquisition, meeting inclusion as a mechanism study of conditioned placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3294,7 +3300,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -3318,25 +3326,25 @@
 "other"
 ]
 },
-"summary": "Found that NMDA lesions of the insular cortex in rats prevented the acquisition of conditioned immunosuppression to a taste CS, whereas control and parietal-lesioned animals showed reduced antibody responses.",
-"key_finding": "Insular cortex lesions abolished conditioned decreases in hemagglutinating titers and IgM production elicited by the conditioned taste.",
+"summary": "Found that NMDA lesions of the insular cortex in rats prevented the acquisition of conditioned immunosuppression (reduced hemagglutinating titers and IgM) produced by taste–drug pairings.",
+"key_finding": "Insular cortex lesions abolished conditioned decreases in hemagglutination titers and ovalbumin-specific IgM, while leaving unconditioned immune responses and cyclophosphamide effects intact.",
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
-"insular cortex",
 "cyclophosphamide",
-"saccharin",
 "hemagglutination",
 "IgM",
-"Wistar rat",
-"NMDA lesion"
+"insular cortex",
+"NMDA lesions",
+"Wistar rats",
+"taste aversion"
 ],
 "usage": {
 "input_tokens": 826,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1319,
-"cost_usd": 0.00299
+"output_tokens": 958,
+"cost_usd": 0.00227
 }
 },
 "sources": [
@@ -3990,11 +3998,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:43:04Z",
+"classified_at": "2026-09-06T17:58:14Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments manipulated conditioning to produce conditioned hypoalgesia and tested pharmacological blockade, which addresses mechanisms of conditioned (placebo-like) analgesia.",
+"rationale": "Animal experiment investigated conditioned hypoalgesia (classical conditioning) and pharmacological mechanisms, which fits inclusion of placebo/nocebo mechanisms via conditioning in animal models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4024,35 +4032,33 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"neural_systems_circuits"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Tested conditioned hypoalgesia in rats and found midazolam infusion into nucleus accumbens blocked acquisition of conditioned hypoalgesia, and systemic flumazenil blocked midazolam's effect when preventing benzodiazepine receptor activity.",
-"key_finding": "Midazolam infusion into nucleus accumbens prevented acquisition of conditioned analgesia; systemic flumazenil reversed this only when it effectively blocked benzodiazepine receptors.",
+"summary": "Tested conditioned hypoalgesia in rats using midazolam infusions and systemic flumazenil to probe acquisition and receptor mediation, and found midazolam blocked acquisition while flumazenil reversed midazolam only when preventing receptor activity.",
+"key_finding": "Midazolam infusion into nucleus accumbens blocked acquisition of conditioned hypoalgesia; systemic flumazenil blocked midazolam's effect only when it prevented benzodiazepine receptor activity.",
 "sample_size": null,
 "free_keywords": [
 "nucleus accumbens",
-"benzodiazepine",
-"flumazenil",
 "midazolam",
-"hot plate",
+"flumazenil",
 "conditioned hypoalgesia",
-"wistar rat"
+"hot plate",
+"rats",
+"benzodiazepine"
 ],
 "usage": {
 "input_tokens": 656,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 975,
-"cost_usd": 0.00226
+"output_tokens": 1097,
+"cost_usd": 0.00251
 }
 },
 "sources": [
@@ -4111,11 +4117,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:44:51Z",
+"classified_at": "2026-09-06T17:57:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment used a conditioned taste cue to elicit immunosuppression (classical conditioning), directly studying conditioned placebo-like responses (mechanisms of learned immunosuppression).",
+"confidence": 0.85,
+"rationale": "Animal experiment used classical conditioning (taste cue paired with cyclophosphamide) to elicit immunosuppression, an experimentally isolated conditioned response relevant to placebo mechanisms (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4153,23 +4159,24 @@
 "placebo_food_drink"
 ]
 },
-"summary": "Found that reexposure to a conditioned taste cue (chocolate milk) produced marked suppression of IgA- and IgM-antibody forming cells and reduced IL-2/IL-4 production in orally immunized mice.",
-"key_finding": "Conditioned reexposure produced >5-fold suppression of IgA AFCs in Peyer's patches and smaller but significant reductions in IgM AFCs and spleen responses, with decreased IL-2 and IL-4 production.",
+"summary": "Found that reexposure to a conditioned taste cue (chocolate milk) produced marked conditioned immunosuppression (reduced IgA and IgM antibody-forming cells and reduced IL-2/IL-4) in orally immunized mice.",
+"key_finding": "Conditioned taste produced >5-fold suppression of IgA AFC in Peyer's patches and twofold suppression for IgM-AFC and splenic responses.",
 "sample_size": null,
 "free_keywords": [
-"chocolate milk",
+"conditioned immunosuppression",
 "cyclophosphamide",
+"chocolate milk",
+"Peyer's patch",
 "IgA",
-"Peyer's patches",
-"antibody-forming cells",
-"conditioned immunosuppression"
+"BALB/c mice",
+"antibody-forming cells"
 ],
 "usage": {
 "input_tokens": 697,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1150,
-"cost_usd": 0.00262
+"output_tokens": 1037,
+"cost_usd": 0.0024
 }
 },
 "sources": [
@@ -4349,17 +4356,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:45:22Z",
+"classified_at": "2026-09-06T17:57:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment used classical conditioning to elicit CNS-mediated changes in core temperature and NK cell activity, making conditioned placebo-like responses the explicit focus (mechanisms of conditioned immune/CNS responses).",
+"confidence": 0.8,
+"rationale": "Animal study used classical conditioning to elicit physiological (fever) and immune (NK cell) responses, making conditioned placebo-like responses the explicit focus (mechanisms of conditioned CNS-immune regulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -4370,11 +4377,14 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"immune_inflammation"
+"immune_inflammation",
+"other"
 ],
 "outcome_measures": [
+"neuroendocrine",
+"immune_inflammatory",
 "autonomic",
-"immune_inflammatory"
+"other"
 ],
 "design": [
 "animal_experiment"
@@ -4394,24 +4404,25 @@
 "other"
 ]
 },
-"summary": "Conditioned stimuli were used in animals to trigger CNS circuits that modulated core body temperature and natural killer cell activity, implicating cytokines and neuroendocrine mediators.",
-"key_finding": "Found that conditioning produced reliable changes in thermoregulation and NK-cell activity, implicating interferon-beta, PGE2, CRH and ACTH in the conditioned pathway.",
+"summary": "Conditioned stimuli elicited changes in core body temperature and natural killer cell activity in animals, implicating CNS pathways and neuroendocrine mediators in the conditioned immune-thermoregulatory response.",
+"key_finding": "Found that conditioning of CNS pathways produced reliable increases in Tc and modulation of NK cell activity, implicating IFN-β, PGE2, CRH and ACTH.",
 "sample_size": null,
 "free_keywords": [
-"conditioned fever",
 "natural killer cells",
-"interferon",
+"fever",
+"conditioning",
+"interferon-beta",
 "prostaglandin e2",
-"crh",
-"acth",
-"classical conditioning"
+"CRH",
+"ACTH",
+"thermoregulation"
 ],
 "usage": {
 "input_tokens": 746,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1134,
-"cost_usd": 0.0026
+"output_tokens": 812,
+"cost_usd": 0.00196
 }
 },
 "sources": [
@@ -4943,11 +4954,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:41:30Z",
+"classified_at": "2026-09-06T17:57:11Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized controlled trial that experimentally manipulated intrasurgical verbal suggestion versus control with the explicit aim of reducing postoperative pain, meeting criterion for a placebo/context effect study.",
+"rationale": "Randomized clinical trial experimentally manipulated positive intrasurgical suggestion versus control instruction to test its effect on postoperative pain (a placebo/expectation/context manipulation with pain outcome).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4958,10 +4969,12 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"surgical_patients"
+"surgical_patients",
+"other_clinical"
 ],
 "age_group": [
-"adults"
+"adults",
+"older_adults"
 ],
 "condition_domain": [
 "pain"
@@ -4985,8 +4998,8 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested whether positive intrasurgical verbal suggestion reduced postoperative pain and found no effect on McGill Pain Questionnaire or VAS scores.",
-"key_finding": "Positive intrasurgical suggestion did not reduce postoperative pain on McGill Pain Questionnaire or visual analogue scale.",
+"summary": "Tested whether positive intrasurgical suggestion reduced postoperative pain after elective cholecystectomy or hysterectomy and found no effect on McGill Pain Questionnaire or VAS pain ratings.",
+"key_finding": "No reduction in postoperative pain ratings (MPQ, VAS) with positive intrasurgical suggestion compared with control.",
 "sample_size": null,
 "free_keywords": [
 "intrasurgical suggestion",
@@ -4994,14 +5007,15 @@
 "cholecystectomy",
 "hysterectomy",
 "McGill Pain Questionnaire",
-"visual analogue scale"
+"visual analogue scale",
+"intraoperative suggestion"
 ],
 "usage": {
 "input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 602,
-"cost_usd": 0.0015
+"output_tokens": 636,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -5472,25 +5486,23 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:30:42Z",
+"classified_at": "2026-09-03T04:30:51Z",
 "screening": {
-"decision": "include",
+"decision": "uncertain",
 "confidence": 0.6,
-"rationale": "Title explicitly names placebos and nocebos, indicating the paper's subject is placebo/nocebo phenomena.",
+"rationale": "No abstract or full text available; title and MeSH terms suggest a conceptual/discussion piece about placebo/nocebo in clinical contexts but insufficient information to determine whether it reported empirical data or focused on placebo effects/responses.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
@@ -5512,7 +5524,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"other"
 ],
 "moderators": [
 "none_reported"
@@ -5521,22 +5533,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed placebos and nocebos in clinical contexts, providing an overview of the phenomena and their relevance to care.",
+"summary": "Insufficient information available to determine whether the paper presented empirical data; the title and MeSH terms suggested a discussion of placebo and nocebo in clinical/physician–patient contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo",
+"nocebo",
 "physician-patient-relations",
-"hospital",
-"ethics",
 "psychoneuroimmunology",
-"psychophysiology"
+"hospital-patient-relations"
 ],
 "usage": {
-"input_tokens": 568,
+"input_tokens": 390,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 709,
-"cost_usd": 0.00171
+"output_tokens": 842,
+"cost_usd": 0.00193
 }
 },
 "sources": [
@@ -6703,11 +6715,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:45:08Z",
+"classified_at": "2026-09-06T17:57:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Randomized trial explicitly tested therapeutic verbal suggestion (pre/intraoperative) as an experimental context manipulation aiming to reduce postoperative morphine use, with primary analyses focused on that placebo/context effect.",
+"confidence": 0.9,
+"rationale": "Randomized trial experimentally manipulated therapeutic verbal suggestion versus control stories to test effects on postoperative analgesic use and symptoms (an isolated context/expectation manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6724,7 +6736,8 @@
 "adults"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"anxiety_stress"
 ],
 "outcome_measures": [
 "self_report",
@@ -6748,25 +6761,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial tested pre- and intraoperative therapeutic auditory suggestion versus control stories in gynecologic surgery patients and found no effect on 24-h PCA morphine use, pain, nausea, or anxiety.",
-"key_finding": "Found no difference in 24-hour postoperative morphine consumption or self-reported pain/anxiety between suggestion and control groups (N=60).",
+"summary": "Randomized trial tested pre- and intraoperative therapeutic auditory suggestions versus control stories in gynecologic surgery patients and found no effect on 24-h postoperative morphine use, pain, nausea, anxiety, or hospital stay; implicit memory for one story was detected.",
+"key_finding": "No significant differences between suggestion and control groups in postoperative morphine consumption or self-reported pain/anxiety over 24 hours (N=60).",
 "sample_size": 60,
 "free_keywords": [
-"intraoperative suggestion",
-"implicit memory",
-"pca morphine",
 "gynecologic surgery",
-"general anesthesia",
-"therapeutic tape",
-"robinson crusoe",
-"peter pan"
+"intraoperative suggestion",
+"patient-controlled analgesia",
+"morphine",
+"implicit memory",
+"Robinson Crusoe",
+"Peter Pan"
 ],
 "usage": {
 "input_tokens": 850,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 714,
-"cost_usd": 0.00179
+"output_tokens": 838,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -7060,11 +7072,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:40:09Z",
+"classified_at": "2026-09-06T17:57:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "The study explicitly tested whether pain expectancies cause pain by measuring expected and experienced pain within chronic low-back patients, making expectancy-placebo/nocebo phenomena the paper's focus (expectation measured as predictor of pain outcome).",
+"confidence": 0.9,
+"rationale": "Study explicitly tested whether pain expectancies cause pain in chronic low back patients (expectation effects measured as predictor of symptom and motor outcomes), fitting inclusion of expectation/context research into placebo/nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7085,7 +7097,8 @@
 ],
 "outcome_measures": [
 "self_report",
-"behavioral_performance"
+"behavioral_performance",
+"motor_kinematic"
 ],
 "design": [
 "within_subject_experimental"
@@ -7097,7 +7110,7 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "emotion_anxiety_regulation",
-"prior_treatment_experience"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -7106,22 +7119,22 @@
 "not_applicable"
 ]
 },
-"summary": "Tested whether expected pain predicted experienced pain during repeated exercise bouts in 29 chronic low-back patients and found no evidence that expectations increased subjective pain.",
-"key_finding": "Found that expected pain did not produce increases in subjective pain across exercise bouts; high expected pain co-occurred with greater fear and lower knee flexor peak torque.",
+"summary": "Tested whether expected pain predicted pain during repeated knee exercise in 29 chronic low-back patients and found no evidence that expectancies increased reported pain, though high expectancy related to more fear and lower knee flexor torque.",
+"key_finding": "Found no increase in subjective pain tied to expectancy, but high expected pain was associated with significantly lower peak torque of knee flexors.",
 "sample_size": 29,
 "free_keywords": [
-"low back pain",
-"expectancy",
+"chronic low back",
+"cybex 350",
+"knee torque",
 "fear of reinjury",
-"Cybex 350",
-"knee flexor torque"
+"isometric contraction"
 ],
 "usage": {
 "input_tokens": 698,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1024,
-"cost_usd": 0.00237
+"output_tokens": 1128,
+"cost_usd": 0.00258
 }
 },
 "sources": [
@@ -7300,11 +7313,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:40:24Z",
+"classified_at": "2026-09-06T17:57:17Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiments explicitly tested classical conditioning of analgesia and pharmacological moderators (midazolam, flumazenil, naloxone), making conditioned placebo-relevant mechanisms the study focus (rule 3).",
+"confidence": 0.9,
+"rationale": "Animal study of classical conditioning of analgesia and pharmacological manipulations (midazolam, naloxone, flumazenil) directly investigated mechanisms of conditioned (placebo-like) analgesic responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7330,22 +7343,24 @@
 "animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_opioid",
-"neurobiology_other_neurochemical"
+"neurobiology_other_neurochemical",
+"neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"pharmacological_manipulation",
+"prior_experience"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Tested how midazolam affected acquisition of fear-conditioned analgesia in rats and found midazolam impaired acquisition of certain conditioned analgesic responses, with effects reversed by flumazenil and differential naloxone sensitivity.",
-"key_finding": "Midazolam given before conditioning impaired acquisition of conditioned analgesia in rats for some test conditions; flumazenil reversed this effect and naloxone revealed opioid-sensitive and -insensitive components.",
+"summary": "Found that benzodiazepine midazolam impaired acquisition of conditioned analgesia in rats under some testing conditions, an effect reversed by flumazenil and differentially interacting with naloxone-sensitive analgesia.",
+"key_finding": "Midazolam (1.25–2.5 mg/kg) given before conditioning impaired acquisition of fear-mediated conditioned analgesia depending on the test stimulus; flumazenil reversed the impairment and naloxone distinguished naloxone-sensitive enduring analgesia from an immediate naloxone-insensitive component.",
 "sample_size": null,
 "free_keywords": [
 "midazolam",
@@ -7354,15 +7369,15 @@
 "conditioned analgesia",
 "hot-plate",
 "formalin",
-"fear-conditioning",
-"amygdala"
+"amygdala",
+"rats"
 ],
 "usage": {
 "input_tokens": 753,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1217,
-"cost_usd": 0.00277
+"output_tokens": 1053,
+"cost_usd": 0.00244
 }
 },
 "sources": [

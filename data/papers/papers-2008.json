@@ -174,24 +174,24 @@
 "oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2693956",
 "landing_url": "https://doi.org/10.1016/j.biopsych.2008.11.016",
 "cited_by_count": 129,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:35:39Z",
+"classified_at": "2026-09-06T17:54:13Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Human conditioned place-preference study experimentally manipulated drug-context pairings to test conditioned place preference, making placebo/context conditioning the study focus (classical conditioning mechanism).",
+"confidence": 0.7,
+"rationale": "Human conditioned place preference procedure manipulated drug versus placebo across distinct contexts to test classical conditioning of place preference, a mechanism relevant to placebo/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -209,41 +209,39 @@
 "behavioral_performance"
 ],
 "design": [
-"within_subject_experimental",
-"parallel_groups_rct"
+"within_subject_experimental"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"emotion_anxiety_regulation"
+"classical_conditioning"
 ],
 "moderators": [
-"mood_anxiety_state"
+"none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
+"active_drug_context_manipulation",
+"inert_pill_capsule"
 ]
 },
-"summary": "Demonstrated that healthy adults developed a preference for a room paired with d-amphetamine versus a placebo-paired room, and subjective drug effects predicted place liking.",
-"key_finding": "Paired participants rated the amphetamine-associated room higher than the placebo-associated room; drug liking positively predicted place preference while amphetamine-induced anxiety negatively predicted it.",
+"summary": "Found that healthy volunteers developed a preference for a room paired with d-amphetamine versus a room paired with placebo, linking subjective drug effects to conditioned place preference.",
+"key_finding": "Paired group liked the amphetamine-associated room significantly more than the placebo-associated room; drug-liking predicted room preference while anxiety/dysphoria predicted lower room liking.",
 "sample_size": 31,
 "free_keywords": [
-"conditioned place preference",
 "amphetamine",
+"conditioned place preference",
 "d-amphetamine",
-"conditioning",
-"reward",
-"room preference"
+"room preference",
+"drug liking",
+"human CPP"
 ],
 "usage": {
 "input_tokens": 778,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1231,
-"cost_usd": 0.0028
+"output_tokens": 1217,
+"cost_usd": 0.00278
 }
 },
 "sources": [
@@ -1285,18 +1283,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:48:21Z",
+"classified_at": "2026-09-03T04:08:28Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly asks about a high placebo response in antidepressant trials, making placebo/placebo-response the paper's subject (placebo response as object of study).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title implies focus on placebo response in antidepressant trials but insufficient information to confirm whether placebo/nocebo phenomena are the study's explicit object or whether this is a systematic/meta-analytic treatment versus a commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1334,22 +1332,22 @@
 "not_applicable"
 ]
 },
-"summary": "Asked whether high placebo responses seen in antidepressant trials are unique to that field, discussing placebo-response issues in depression trials and trial methodology.",
+"summary": "Abstract unavailable; title suggested the paper discussed whether high placebo response rates are unique to antidepressant trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"major depressive disorder",
 "antidepressant",
 "placebo response",
 "clinical trials",
-"response rate",
-"major depressive disorder"
+"response rates"
 ],
 "usage": {
-"input_tokens": 567,
+"input_tokens": 389,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 648,
-"cost_usd": 0.00158
+"output_tokens": 548,
+"cost_usd": 0.00134
 }
 },
 "sources": [
@@ -1605,66 +1603,52 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:48:35Z",
+"classified_at": "2026-09-03T04:08:33Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states that placebo acupuncture produced symptom and quality-of-life improvements in IBS, making placebo response the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available and publication type lists 'Comment', so it's unclear whether this reports original placebo-acupuncture trial data or is a commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
+"study_focus": [],
+"article_type": "editorial_letter",
 "species": "human",
-"population": [
-"gi_ibs"
-],
+"population": [],
 "age_group": [],
-"condition_domain": [
-"nausea_gi"
-],
-"outcome_measures": [
-"self_report"
-],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"sham_acupuncture"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reported that placebo acupuncture improved symptoms and quality of life in patients with irritable bowel syndrome.",
-"key_finding": "Found that placebo acupuncture produced symptom and quality-of-life improvements in IBS patients.",
+"summary": "Insufficient information in the record to determine whether this was original research or a commentary; the title suggested placebo acupuncture improved IBS symptoms and quality of life.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
 "placebo acupuncture",
 "quality of life",
-"symptom improvement"
+"symptoms",
+"evidence-based medicine",
+"comment"
 ],
 "usage": {
-"input_tokens": 544,
+"input_tokens": 366,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 780,
-"cost_usd": 0.00184
+"output_tokens": 665,
+"cost_usd": 0.00157
 }
 },
 "sources": [
@@ -1837,11 +1821,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:35:54Z",
+"classified_at": "2026-09-06T17:54:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Narrative review whose main focus was on expectancy and Pavlovian conditioning mechanisms of acupuncture (placebo/science of expectation), meeting inclusion for placebo science and mechanism-focused review.",
+"rationale": "Narrative review/hypothesis paper focused on expectancy and conditioning mechanisms of acupuncture as a way to precondition placebo-like effects, so placebo science is an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1858,8 +1842,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain",
-"anxiety_stress"
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -1880,10 +1863,10 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Narrative review proposed that acupuncture can precondition expectancy and induce Pavlovian extinction, arguing this may enhance specific and non-specific treatment effects and citing clinical and neural evidence.",
+"summary": "Proposed that acupuncture may precondition expectancy and induce Pavlovian conditioning/extinction, thereby enhancing specific and non-specific treatment effects; reviewed supporting clinical and neurobiological observations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -1891,17 +1874,15 @@
 "expectancy",
 "pavlovian extinction",
 "conditioning",
-"reward system",
-"self-appraisal",
-"placebo mechanisms",
-"non-specific effects"
+"therapeutic ritual",
+"placebo mechanism"
 ],
 "usage": {
 "input_tokens": 698,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 886,
-"cost_usd": 0.00209
+"output_tokens": 743,
+"cost_usd": 0.00181
 }
 },
 "sources": [
@@ -2218,11 +2199,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:36:56Z",
+"classified_at": "2026-09-06T17:53:49Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Controlled animal experiment manipulated contextual (fear) conditioning and pharmacological agents to study conditioned analgesia and its opioid/endocannabinoid mechanisms, matching inclusion criterion for animal models with cue/context contrasts (mechanisms of placebo-like effects).",
+"rationale": "Animal experiment manipulated contextual (fear-conditioned) analgesia and tested pharmacological moderators, so it experimentally isolated a conditioned/contextual analgesic effect relevant to placebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2258,31 +2239,31 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"pharmacological_manipulation",
+"none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Used a rat fear-conditioned analgesia model and pharmacological manipulations to show URB597 enhanced conditioned analgesia, which was blocked by naloxone and CB1/CB2 antagonists, with associated amygdala phospho-ERK changes.",
-"key_finding": "URB597 (FAAH inhibitor) enhanced fear-conditioned analgesia, and naloxone or CB1/CB2 antagonists attenuated this enhancement; these manipulations altered phospho-ERK1/2 expression in the amygdala.",
+"summary": "Showed in rats that fear-conditioned contextual analgesia (formalin test) was enhanced by the FAAH inhibitor URB597 and attenuated by naloxone and CB1/CB2 antagonists, with associated amygdala ERK1/2 signaling changes.",
+"key_finding": "URB597 enhanced fear-conditioned analgesia, and this enhancement was blocked by naloxone and CB1/CB2 antagonists, implicating opioid and endocannabinoid interaction.",
 "sample_size": null,
 "free_keywords": [
-"URB597",
-"FAAH inhibitor",
 "formalin test",
-"fear-conditioned analgesia",
-"amygdala",
-"phospho-ERK",
+"URB597",
 "naloxone",
-"CB1 CB2"
+"ERK1/2",
+"amygdala",
+"fear-conditioned analgesia",
+"Lister-hooded rat"
 ],
 "usage": {
 "input_tokens": 995,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1406,
-"cost_usd": 0.00321
+"output_tokens": 1025,
+"cost_usd": 0.00245
 }
 },
 "sources": [
@@ -2604,11 +2585,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:37:52Z",
+"classified_at": "2026-09-06T17:53:50Z",
 "screening": {
 "decision": "include",
-"confidence": 0.86,
-"rationale": "Nonhuman-animal experiment that explicitly tested conditioned (context-elicited) effects of heroin on immune mediators (classical conditioning of drug effects), matching inclusion rule for mechanism studies of conditioned placebo-like responses.",
+"confidence": 0.9,
+"rationale": "Animal experiment demonstrated conditioned (context-dependent) heroin effects on proinflammatory mediators via BLA inactivation, fitting inclusion of conditioned/contextual mechanisms of placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2646,28 +2627,28 @@
 "prior_experience"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"other"
 ]
 },
-"summary": "Demonstrated in rats that environmental cues paired with heroin produced conditioned suppression of iNOS and proinflammatory cytokine expression, which was blocked by inactivation of the basolateral amygdala.",
-"key_finding": "Inactivation of the basolateral amygdala with muscimol/baclofen abolished conditioned heroin-associated suppression of iNOS, TNF-α and IL-1β expression in spleen and liver after LPS challenge.",
+"summary": "Found that environmental cues paired with heroin suppressed inducible nitric oxide synthase and proinflammatory cytokine expression, and that inactivation of the basolateral amygdala blocked these conditioned effects in rats.",
+"key_finding": "BLA inactivation with muscimol/baclofen abolished conditioned heroin-associated suppression of iNOS, TNF-α and IL-1β expression after LPS challenge.",
 "sample_size": null,
 "free_keywords": [
+"heroin",
 "inducible nitric oxide synthase",
-"TNF-alpha",
-"IL-1beta",
-"muscimol",
-"baclofen",
+"il-1beta",
+"tnf-alpha",
 "basolateral amygdala",
-"conditioned immunomodulation",
-"lipopolysaccharide"
+"muscimol baclofen",
+"lipopolysaccharide",
+"conditioned context"
 ],
 "usage": {
 "input_tokens": 860,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1181,
-"cost_usd": 0.00272
+"output_tokens": 984,
+"cost_usd": 0.00233
 }
 },
 "sources": [
@@ -3392,25 +3373,23 @@
 "Journal Article",
 "Comment"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:49:21Z",
+"classified_at": "2026-09-03T04:08:50Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses 'response expectancy', indicating placebo/expectancy mechanisms are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided and the title suggests a relation between motivation and expectancy but does not confirm placebo/nocebo was the study's explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -3418,33 +3397,28 @@
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Studied the relation between motivational concordance and response expectancy.",
+"summary": "Insufficient information in the record to determine whether the study explicitly examined placebo or nocebo effects; examined links between motivational concordance and response expectancy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "response expectancy",
 "motivational concordance",
-"expectation"
+"set",
+"placebo effect",
+"expectation",
+"psychosomatic research"
 ],
 "usage": {
-"input_tokens": 587,
+"input_tokens": 409,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 674,
-"cost_usd": 0.00164
+"output_tokens": 617,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -3860,11 +3834,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:38:36Z",
+"classified_at": "2026-09-06T17:53:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The paper is a systematic review/meta-analysis whose primary topic is the use and ethics of vehicle (placebo) controls in topical antifungal trials, making placebo methodology/ethics the main subject (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Systematic review/meta-analysis focused on the ethics and justification of vehicle (placebo) controls in topical antifungal trials, making placebo use the central subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3872,19 +3846,19 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "systematic_review",
+"article_type": "meta_analysis",
 "species": "human",
 "population": [
-"not_applicable"
+"dermatology"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "other"
 ],
 "outcome_measures": [
-"not_applicable"
+"clinical_endpoint",
+"clinician_rated",
+"self_report"
 ],
 "design": [
 "meta_analytic"
@@ -3893,33 +3867,35 @@
 "not_applicable"
 ],
 "mechanisms": [
+"trial_methodology_placebo_response",
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"topical_cream"
 ]
 },
-"summary": "Reviews randomized vehicle-controlled trials of topical antifungals for tinea pedis and argues that established superiority of active creams raises ethical concerns about continued use of vehicle (placebo) controls.",
-"key_finding": null,
+"summary": "Systematic review and meta-analysis examined vehicle-controlled RCTs of topical antifungals for athlete's foot and argued that consistent superiority of active creams over vehicle challenges the ethics of further placebo-controlled trials.",
+"key_finding": "Found that allylamines and azoles were consistently superior to vehicle controls across RCTs, supporting abandonment of vehicle-controlled trials for tinea pedis.",
 "sample_size": null,
 "free_keywords": [
 "tinea pedis",
 "athlete's foot",
 "vehicle-controlled",
-"topical antifungal",
-"ethics",
-"azoles",
-"allylamines"
+"antifungal",
+"allylamine",
+"azole",
+"topical vehicle",
+"research ethics"
 ],
 "usage": {
-"input_tokens": 771,
-"cache_read_input_tokens": 5888,
+"input_tokens": 515,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 904,
-"cost_usd": 0.00215
+"output_tokens": 929,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -4111,11 +4087,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:12:39Z",
+"classified_at": "2026-09-06T17:53:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Used a balanced placebo (expectancy × actual nicotine) randomized design to isolate expectancy/context effects on smoking reward and reinforcement, with genetic moderators tested (placebo-effect design: active_drug_context_manipulation).",
+"confidence": 0.9,
+"rationale": "Used a balanced-placebo expectancy manipulation (told vs actual nicotine) to isolate context/expectation effects on smoking reward and reinforcement, meeting the placebo-effect inclusion rule for active drug context manipulation.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4126,15 +4102,13 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult",
 "substance_use"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"addiction_craving",
-"mood_depression"
+"addiction_craving"
 ],
 "outcome_measures": [
 "self_report",
@@ -4152,8 +4126,7 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "genetics_placebome",
-"emotion_anxiety_regulation",
-"treatment_cues_dose_route"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "genetics",
@@ -4164,24 +4137,25 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Randomized balanced-placebo study (n=72) tested actual versus expected nicotine across mood inductions and found genetic variants (dopamine, OPRM1) moderated increased smoking reward and reinforcement during negative mood.",
-"key_finding": "Several dopamine-pathway variants and OPRM1 were associated with greater smoking reward and increased puffs/shorter latency under negative mood and expectancy manipulations.",
+"summary": "Used a 2x2 balanced-placebo design (actual vs. expected nicotine) with mood induction in 72 smokers and found genetic variants were associated with increased smoking reward and reinforcement under negative mood.",
+"key_finding": "Found that DRD2, SLC6A3, DRD4, DRD2/ANKK1 TaqIA and OPRM1 variants were associated with greater smoking reward and increased puffs/shorter latency in negative mood, particularly when given nicotine.",
 "sample_size": 72,
 "free_keywords": [
-"nicotine",
-"denicotinized",
 "balanced placebo",
+"nicotine",
+"denicotinized cigarette",
 "DRD2",
+"SLC6A3",
 "OPRM1",
-"smoking reinforcement",
-"negative mood"
+"smoking reward",
+"smoking latency"
 ],
 "usage": {
 "input_tokens": 897,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1051,
-"cost_usd": 0.00247
+"output_tokens": 826,
+"cost_usd": 0.00202
 }
 },
 "sources": [
@@ -5296,125 +5270,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.arth.2008.05.016",
-"title": "Patient expectations predict greater pain relief with joint arthroplasty.",
-"authors": [
-"Gandhi R",
-"Davey JR",
-"Mahomed N"
-],
-"journal": "The Journal of arthroplasty",
-"journal_abbrev": "J Arthroplasty",
-"year": 2008,
-"date": "2008-08-12",
-"doi": "10.1016/j.arth.2008.05.016",
-"pmid": "18701241",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2035677733",
-"abstract": "We examined the relationship between patient expectations of total joint arthroplasty and functional outcomes. We surveyed 1799 patients undergoing primary hip or knee arthroplasty for demographic data and Western Ontario McMaster University Osteoarthritis Index scores at baseline, 3 months, and 1 year of follow-up. Patient expectations were determined with 3 survey questions. The patients with the greatest expectations of surgery were younger, male, and had a lower body mass index. Linear regression modeling showed that a greater expectation of pain relief with surgery independently predicted greater reported pain relief at 1 year of follow-up, adjusted for all relevant covariates (P < .05). Patient expectation of pain relief after joint arthroplasty is an important predictor of outcomes at 1 year.",
-"keywords": [],
-"mesh": [
-"Aged",
-"Aged, 80 and over",
-"Arthralgia",
-"Arthroplasty, Replacement",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Osteoarthritis",
-"Patient Satisfaction",
-"Recovery of Function",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.arth.2008.05.016",
-"cited_by_count": 235,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:39:54Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Measured preoperative patient expectations were tested as predictors of postoperative pain relief (an observational test of expectation effects on clinical outcomes).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients",
-"other_clinical"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"pain",
-"motor_function"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction"
-],
-"moderators": [
-"age",
-"sex_gender",
-"disease_severity_duration"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Examined whether preoperative expectations predicted pain and function after hip or knee arthroplasty in 1799 patients and found greater expectation of pain relief predicted greater reported pain relief at 1 year.",
-"key_finding": "Greater baseline expectation of pain relief independently predicted larger self-reported pain improvement at 1 year (adjusted regression, P < .05).",
-"sample_size": 1799,
-"free_keywords": [
-"osteoarthritis",
-"total knee replacement",
-"total hip replacement",
-"WOMAC",
-"expectation",
-"joint arthroplasty"
-],
-"usage": {
-"input_tokens": 614,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1016,
-"cost_usd": 0.00233
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2008-08-12",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/j.neuroimage.2008.05.037",
 "title": "Separating the effects of alcohol and expectancy on brain activation: an fMRI working memory study.",
 "authors": [
@@ -5463,18 +5318,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:13:08Z",
+"classified_at": "2026-09-06T17:53:53Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design that experimentally manipulated alcohol intoxication and expectancy, isolating expectation (placebo) effects on neural activation.",
+"rationale": "Used a balanced-placebo design to isolate pharmacological (alcohol) versus expectancy effects on brain activation, so placebo/expectancy effects were an explicit focus (expectation manipulation of an active drug).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5492,7 +5346,8 @@
 "behavioral_performance"
 ],
 "design": [
-"balanced_placebo"
+"balanced_placebo",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_objective"
@@ -5505,28 +5360,28 @@
 "expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"placebo_food_drink"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo fMRI working-memory study in 45 healthy men and found alcohol intoxication decreased prefrontal and dACC activation while expectancy increased activation in the same regions.",
-"key_finding": "Alcohol (BAC 0.08%) reduced dACC and prefrontal BOLD activation, whereas believing one had consumed alcohol increased activation, showing opposing pharmacological and expectancy effects.",
+"summary": "Used a balanced-placebo fMRI working-memory study (N=45) to separate alcohol pharmacology from expectancy and found alcohol decreased, while expectancy increased, BOLD activation in dACC and prefrontal regions.",
+"key_finding": "Alcohol intoxication (BAC 0.08%) decreased dACC and prefrontal BOLD activation, whereas being told one had consumed alcohol (expectancy) increased activation in the same areas.",
 "sample_size": 45,
 "free_keywords": [
-"balanced-placebo",
+"alcohol",
+"balanced placebo",
 "BAC 0.08",
 "working memory",
 "dACC",
 "prefrontal cortex",
-"BOLD fMRI",
-"alcohol expectancy"
+"BOLD",
+"expectancy"
 ],
 "usage": {
 "input_tokens": 742,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 856,
-"cost_usd": 0.00204
+"output_tokens": 896,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -5906,11 +5761,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:38:49Z",
+"classified_at": "2026-09-06T17:53:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Meta-analysis quantitatively pooled biochemical and histologic changes specifically in placebo arms of RCTs, making placebo response the paper's focus (rule 2/4).",
+"confidence": 0.85,
+"rationale": "Meta-analysis explicitly pooled and analyzed biochemical and histologic changes in placebo arms of RCTs, making placebo response the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5927,7 +5782,7 @@
 "adults"
 ],
 "condition_domain": [
-"other"
+"endocrine_hormonal"
 ],
 "outcome_measures": [
 "clinical_endpoint"
@@ -5948,22 +5803,24 @@
 "not_applicable"
 ]
 },
-"summary": "Pooled placebo arms from five RCTs in adults with NASH and found modest decreases in ALT/AST and one-point histologic improvements in a substantial minority, while larger (2-point) histologic improvements were rare.",
-"key_finding": "About one-third of placebo-treated patients had a 1-point histologic improvement and mean ALT/AST fell on placebo, but 2-point histologic improvements were rare.",
+"summary": "Pooled placebo arms from five RCTs in adult NASH patients and found decreases in ALT/AST and that ~30% showed a 1-point histologic improvement, while 2-point improvements were rare.",
+"key_finding": "About 31% had a 1-point improvement in steatosis and mean ALT/AST decreased on placebo; 2-point histologic improvements were rare.",
 "sample_size": 5,
 "free_keywords": [
-"nash",
+"nonalcoholic steatohepatitis",
+"NASH",
 "alanine aminotransferase",
+"aspartate aminotransferase",
+"liver biopsy",
 "histology",
-"placebo arm",
-"randomized controlled trials"
+"placebo arm"
 ],
 "usage": {
 "input_tokens": 856,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 797,
-"cost_usd": 0.00196
+"output_tokens": 846,
+"cost_usd": 0.00205
 }
 },
 "sources": [
@@ -6149,11 +6006,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:40:21Z",
+"classified_at": "2026-09-06T17:53:52Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of verbal suggestion (hypnotic vs non-hypnotic) targeted modulation of fibromyalgia pain with pain ratings and fMRI as outcomes, meeting inclusion criteria for placebo/expectation mechanism studies.",
+"rationale": "Explicit experimental manipulation of suggestion (hypnotic vs non-hypnotic) to causally modulate fibromyalgia pain with fMRI readouts meets the criterion for studying placebo/expectation/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6167,8 +6024,7 @@
 "chronic_pain"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
 "pain"
@@ -6189,31 +6045,29 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"expectation_level",
 "treatment_characteristics"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Used hypnotic and non-hypnotic verbal suggestions during fMRI to increase and decrease fibromyalgia pain and found greater subjective pain reduction and stronger brain activation changes when suggestions followed hypnotic induction.",
-"key_finding": "Found that suggestion reduced reported pain in fibromyalgia, with larger reductions and greater insula/midcingulate/thalamic activations following hypnotic induction than non-hypnotic suggestion.",
+"summary": "Used hypnotic and non-hypnotic suggestion within fMRI to increase and decrease fibromyalgia pain, finding larger subjective pain reduction and greater brain activation when suggestions followed hypnotic induction.",
+"key_finding": "Hypnotic suggestion produced greater pain reduction and larger activations in cerebellum, anterior midcingulate, insula, and inferior parietal cortex than identical non-hypnotic suggestions.",
 "sample_size": null,
 "free_keywords": [
 "fibromyalgia",
 "hypnosis",
 "suggestion",
-"fMRI",
+"pain neuromatrix",
 "insula",
-"midcingulate",
-"thalamus"
+"midcingulate"
 ],
 "usage": {
 "input_tokens": 829,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1018,
-"cost_usd": 0.00239
+"output_tokens": 796,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -6373,18 +6227,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:49:37Z",
+"classified_at": "2026-09-03T04:09:05Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names placebos as the topic in the context of medical education, indicating placebo science (attitudes/education/ethics) is the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title indicates placebos in medical education but available information is insufficient to determine whether placebo effects/responses were the paper's explicit focus or if it was a commentary/review.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6394,46 +6248,117 @@
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [
-"clinicians_providers"
-],
+"population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "clinical_use_ethics_attitudes"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discusses placebos in the context of medical education, likely covering ethics, attitudes, and teaching about placebo use.",
+"summary": "Insufficient information to determine whether it studied placebo effects; title addressed placebos in the context of medical education.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"medical students",
-"education",
-"ethics",
-"prescribing",
-"attitudes"
+"medical education",
+"placebo",
+"curriculum",
+"teaching",
+"ethics"
 ],
 "usage": {
-"input_tokens": 552,
+"input_tokens": 374,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 648,
-"cost_usd": 0.00158
+"output_tokens": 528,
+"cost_usd": 0.0013
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2008-07-01",
+"private_pdf": null
+},
+{
+"id": "pmid:19148327",
+"title": "Challenging received wisdom: antidepressants and the placebo effect.",
+"authors": [
+"Kirsch I"
+],
+"journal": "McGill journal of medicine : MJM : an international forum for the advancement of medical sciences by students",
+"journal_abbrev": "Mcgill J Med",
+"year": 2008,
+"date": "2008-07-01",
+"doi": null,
+"pmid": "19148327",
+"pmcid": "PMC2582668",
+"openalex_id": null,
+"abstract": "This article explores the reaction when an article challenging received wisdom is published and covered extensively by the media (1). The article in question was a meta-analysis of antidepressant clinical trials indicating that for most patients, difference between drug and placebo was not clinically significant. Reactions ranged from denial that the effects of antidepressants are so small to criticisms of the clinical trials that were analyzed. Each of these reactions is explored and countered.",
+"keywords": [],
+"mesh": [],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:53:54Z",
+"screening": {
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Opinion/commentary focused on the placebo response and interpretation of antidepressant versus placebo meta-analytic findings, so it addresses placebo science as the main subject.",
+"exclusion_reason": null,
+"peer_reviewed": false
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [],
+"intervention_type": []
+},
+"summary": "Discussed and rebutted reactions to a meta-analysis reporting minimal clinical differences between antidepressants and placebo, focusing on implications for interpretation and trial methodology.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"antidepressants",
+"meta-analysis",
+"drug-placebo",
+"media",
+"clinical trials"
+],
+"usage": {
+"input_tokens": 254,
+"cache_read_input_tokens": 6144,
+"cache_creation_input_tokens": 0,
+"output_tokens": 543,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -6461,18 +6386,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:49:45Z",
+"classified_at": "2026-09-03T04:09:29Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "The title explicitly addresses the placebo's role in clinical practice, indicating placebo science (use/ethics/implementation) is the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title suggests a clinical/practice discussion of placebo but insufficient information to confirm whether placebo effects/responses were empirically studied or if this is a review/commentary.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -6481,13 +6406,19 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
-"clinicians_providers"
+"not_applicable"
 ],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -6495,9 +6426,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -6506,22 +6435,21 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed the role of the placebo in clinical practice, focusing on its use, ethics, and implications for clinician–patient care.",
+"summary": "No abstract available; likely discussed the role, ethics, and clinical use of placebo in practice but full content was unavailable to confirm scope.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"clinical practice",
+"clinical use",
 "ethics",
-"physician-patient",
-"deception",
-"placebo prescribing"
+"placebo prescribing",
+"physician attitudes"
 ],
 "usage": {
-"input_tokens": 552,
+"input_tokens": 374,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 600,
-"cost_usd": 0.00149
+"output_tokens": 491,
+"cost_usd": 0.00122
 }
 },
 "sources": [
@@ -8860,24 +8788,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/0893-164x.22.2.278",
 "cited_by_count": 36,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:41:58Z",
+"classified_at": "2026-09-06T17:53:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Randomized experimental manipulation of thinness/restricting expectancies targeted expectancies as a causal factor for eating-disorder symptoms, so placebo/nocebo-relevant expectancy effects were the study focus.",
+"confidence": 0.9,
+"rationale": "The paper experimentally manipulated thinness/restricting expectancies and tested their causal effects on body dissatisfaction and eating-disordered symptoms, making expectancy/placebo-like mechanisms the primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -8885,8 +8813,7 @@
 "other_clinical"
 ],
 "age_group": [
-"children_adolescents",
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "other"
@@ -8901,7 +8828,8 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -8910,23 +8838,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized experiments manipulated thinness/restricting expectancies and found greater reductions in thinness expectancies and body dissatisfaction versus a psychoeducational control.",
-"key_finding": "The expectancy manipulation produced greater declines in thinness expectancies and body dissatisfaction; in high-school girls it also reduced overall eating-disordered attitudes.",
+"summary": "Manipulated thinness and restricting expectancies in symptomatic college women and high-school girls and found the expectancy manipulation reduced thinness expectancies, body dissatisfaction, and eating-disorder attitudes more than a psychoeducational intervention.",
+"key_finding": "Found that the thinness-expectancy manipulation produced greater declines in thinness expectancies and body dissatisfaction (and overall eating-disordered attitudes in adolescents) versus psychoeducation.",
 "sample_size": null,
 "free_keywords": [
-"eating disorder expectancy",
-"thinness expectancies",
+"thinness expectancy",
+"eating disorders",
 "body dissatisfaction",
 "psychoeducation",
-"symptomatic college women",
-"high school girls"
+"college women",
+"high school girls",
+"expectancy manipulation"
 ],
 "usage": {
-"input_tokens": 686,
-"cache_read_input_tokens": 5888,
+"input_tokens": 430,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 826,
-"cost_usd": 0.00197
+"output_tokens": 923,
+"cost_usd": 0.00211
 }
 },
 "sources": [
@@ -9716,11 +9645,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:43:25Z",
+"classified_at": "2026-09-06T17:54:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Prospective cohort tested patients' recovery expectations as a prognostic predictor of 6-month disability (expectation measured as predictor of outcome), which addresses placebo-related expectancy mechanisms.",
+"confidence": 0.9,
+"rationale": "Prospective cohort tested patients' baseline recovery expectations as a predictor of subsequent self-reported disability, meeting inclusion as expectation measured as a prognostic factor for health outcome.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9734,7 +9663,7 @@
 "other_clinical"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "pain"
@@ -9749,8 +9678,7 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -9759,23 +9687,23 @@
 "not_applicable"
 ]
 },
-"summary": "Measured baseline recovery expectations in 1,032 whiplash claimants and found lower expectations predicted greater self-reported disability at 6 months.",
-"key_finding": "Lower baseline recovery expectations were associated with higher 6-month disability (OR 4.2 for low vs high expectations, 95% CI 2.1–8.5).",
+"summary": "Prospective cohort found that lower baseline expectations of recovery after whiplash predicted greater self-reported disability at six months.",
+"key_finding": "Lower recovery expectations were associated with higher disability at 6 months (e.g., OR 4.2 for high disability in the lowest-expectation group versus highest).",
 "sample_size": 1032,
 "free_keywords": [
 "whiplash",
-"neck pain",
+"recovery expectations",
 "prognosis",
 "pain disability index",
-"recovery expectations",
-"cohort study"
+"cohort",
+"Sweden"
 ],
 "usage": {
 "input_tokens": 975,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 982,
-"cost_usd": 0.00235
+"output_tokens": 813,
+"cost_usd": 0.00202
 }
 },
 "sources": [
@@ -10473,127 +10401,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1037/0278-6133.27.3(suppl.).s197",
-"title": "The impact of expectations and satisfaction on the initiation and maintenance of smoking cessation: an experimental test.",
-"authors": [
-"Hertel AW",
-"Finch EA",
-"Kelly KM",
-"King C",
-"Lando H",
-"Linde JA",
-"Jeffery RW",
-"Rothman AJ"
-],
-"journal": "Health psychology : official journal of the Division of Health Psychology, American Psychological Association",
-"journal_abbrev": "Health Psychol",
-"year": 2008,
-"date": "2008-05-01",
-"doi": "10.1037/0278-6133.27.3(suppl.).s197",
-"pmid": "18979972",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2014293492",
-"abstract": "OBJECTIVE: Our primary objective was to test the thesis that the initiation of behavior change is dependent on favorable expectations, whereas maintaining a change in behavior is dependent on satisfaction with the outcomes afforded by behavior change. These hypotheses were tested in the context of a smoking cessation intervention. DESIGN: Adult smokers were randomized to an 8-week smoking cessation program designed to induce either optimistic or modest expectations about cessation. Participants were encouraged to quit smoking after Week 4 and were followed for 15 months after the end of the program. MAIN PROCESS AND OUTCOME MEASURES: The authors focused on participants' expectations about cessation, satisfaction with cessation, and smoking status. RESULTS: The effect of the expectation manipulation on smokers' beliefs about cessation was moderated by their prior cessation success. Those led to hold favorable expectations about cessation were more likely to initiate cessation. Although satisfaction was not affected by initial expectations, it predicted maintained cessation. CONCLUSIONS: Results highlight the challenge of altering how smokers think about cessation and the need for further research on intervention strategies that target different factors for the initiation and maintenance of cessation.",
-"keywords": [],
-"mesh": [
-"Decision Making",
-"Female",
-"Humans",
-"Male",
-"Middle Aged",
-"Models, Psychological",
-"Motivation",
-"Personal Satisfaction",
-"Self Efficacy",
-"Smoking Cessation",
-"United States"
-],
-"pub_types": [
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, N.I.H., Extramural"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1037/0278-6133.27.3(suppl.).s197",
-"cited_by_count": 43,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:37:39Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Randomized manipulation of expectations was the experimental focus and was tested as a causal predictor of smoking initiation and maintenance, meeting inclusion for expectation/context effects.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"substance_use"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"addiction_craving"
-],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_objective",
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
-],
-"moderators": [
-"prior_experience"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Randomized smokers to optimistic versus modest expectations and found optimistic expectations increased quit initiation, while satisfaction predicted maintained cessation.",
-"key_finding": "Optimistic expectation manipulation increased likelihood of initiating cessation, but satisfaction (not initial expectations) predicted long-term maintenance.",
-"sample_size": null,
-"free_keywords": [
-"smoking cessation",
-"quit initiation",
-"expectation manipulation",
-"satisfaction",
-"behavior change"
-],
-"usage": {
-"input_tokens": 696,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00217
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2008-05-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/j.rdc.2008.04.002",
 "title": "Placebo response: relevance to the rheumatic diseases.",
 "authors": [
@@ -10892,11 +10699,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:36:32Z",
+"classified_at": "2026-09-06T17:55:05Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Expectation for treatment outcome was measured as a predictor of symptom change (a study of expectation/context effects on clinical outcomes), matching inclusion rule to include studies that measure expectation as a predictor of health-relevant outcomes.",
+"confidence": 0.7,
+"rationale": "Expectancy for treatment outcome was measured as a predictor of symptom change (an expectation/context mechanism tested as determinant of therapeutic response), which fits inclusion of expectancy effects as a focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10935,8 +10742,8 @@
 "not_applicable"
 ]
 },
-"summary": "Found that higher baseline treatment expectancy predicted greater symptom reduction during therapy for fear of flying (n=72), using hierarchical linear modeling.",
-"key_finding": "Higher expectancy produced stronger rates of self-reported symptom reduction from baseline to end of treatment on two standardized fear-of-flying questionnaires.",
+"summary": "Tested whether pre-treatment expectancy predicted symptom change in 72 patients with fear of flying receiving in vivo or virtual reality exposure; higher expectations predicted greater self-reported improvement during treatment.",
+"key_finding": "Higher pre-treatment outcome expectancy predicted stronger rates of symptom reduction during the treatment phase on two standardized self-report fear-of-flying measures.",
 "sample_size": 72,
 "free_keywords": [
 "fear of flying",
@@ -10944,14 +10751,14 @@
 "exposure therapy",
 "hierarchical linear modeling",
 "expectancy",
-"treatment outcome"
+"phobia"
 ],
 "usage": {
 "input_tokens": 681,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1130,
-"cost_usd": 0.00258
+"output_tokens": 1010,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -11120,11 +10927,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:44:30Z",
+"classified_at": "2026-09-06T17:54:20Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Systematic review focused on the adequacy and methodology of placebo interventions, blinding, and expectations in low back pain RCTs, making placebo science the primary subject.",
+"rationale": "Systematic review explicitly examined the adequacy and implementation of placebo interventions and expectation/blinding issues in low back pain trials, making placebo the primary subject (placebo science/methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11158,29 +10965,32 @@
 "treatment_cues_dose_route"
 ],
 "moderators": [
+"expectation_level",
 "trial_characteristics"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Systematically reviewed 126 randomized trials of conservative low back pain interventions and found many used imperfect placebos, poor blinding, and unbalanced expectations that may bias efficacy estimates.",
-"key_finding": "Included 126 trials; only 13% assessed adequacy of blinding and 20% used placebos that could be genuine treatments, indicating widespread imperfect placebo implementation.",
+"summary": "Systematically reviewed 126 randomized low back pain trials and evaluated the adequacy of placebo interventions, finding many imperfect placebos and imbalanced expectations that may bias trial results.",
+"key_finding": "Found that 126 trials used over 25 different placebo interventions, only 13% assessed blinding, and placebos often generated lower expectations than active interventions.",
 "sample_size": 126,
 "free_keywords": [
 "low back pain",
 "blinding",
+"placebo adequacy",
 "expectations",
-"placebo design",
-"structurally equivalent placebo",
-"conservative interventions"
+"sham interventions",
+"conservative interventions",
+"trial methodology",
+"placebo design"
 ],
 "usage": {
-"input_tokens": 718,
-"cache_read_input_tokens": 5888,
+"input_tokens": 462,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 899,
-"cost_usd": 0.00212
+"output_tokens": 693,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -11760,11 +11570,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:43:01Z",
+"classified_at": "2026-09-06T17:53:59Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Between-group manipulation of positive vs negative verbal bias about an odor explicitly tested expectation/context effects on perception and ERPs (both positive and negative context effects were the focus).",
+"rationale": "Experimental manipulation of cognitive/emotional bias (positive vs negative vs control) explicitly targeted expectancy/context effects on odor perception and ERPs, so placebo/nocebo-like context effects were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11798,6 +11608,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
+"emotion_anxiety_regulation",
 "neural_systems_circuits"
 ],
 "moderators": [
@@ -11807,23 +11618,25 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulating positive versus negative cognitive/emotional bias about an odor altered subjective pleasantness and early chemosensory ERPs, with negative bias prolonging N1/P2 latencies and reducing well-being.",
-"key_finding": "Negative bias reduced well-being and pleasantness ratings and prolonged N1 and P2 ERP latencies, while positive bias shortened those latencies.",
+"summary": "Manipulated positive, negative, or neutral context about an odor in healthy women and found context-dependent changes in subjective pleasantness/well-being and in chemosensory ERPs (N1/P2) with frontal sources.",
+"key_finding": "Negative bias reduced well-being and prolonged N1/P2 latencies, while positive bias shortened latencies versus control.",
 "sample_size": 45,
 "free_keywords": [
-"olfaction",
 "isobornyl acetate",
 "chemosensory ERP",
-"N1 P2",
+"N1",
+"P2",
 "olfactometer",
-"odor valence"
+"frontal cortex",
+"odor valence",
+"female sample"
 ],
 "usage": {
 "input_tokens": 645,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 816,
-"cost_usd": 0.00194
+"output_tokens": 855,
+"cost_usd": 0.00202
 }
 },
 "sources": [
@@ -11859,25 +11672,23 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:49:57Z",
+"classified_at": "2026-09-03T04:09:58Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly states that placebo was as effective as paroxetine for acute moderate-to-severe major depression, making the placebo response the apparent subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "Only title and metadata available with no abstract or full text to determine whether placebo response/effect was an explicit focus or the study was a standard drug-versus-placebo efficacy trial.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -11891,7 +11702,9 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
@@ -11902,21 +11715,22 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Reported that placebo was as effective as paroxetine for treating acute moderate-to-severe major depression.",
-"key_finding": "Found no superior benefit of paroxetine over placebo in acute moderate-to-severe major depression (title claim).",
+"summary": "Insufficient information in the record to determine whether the paper tested placebo/placebo-response as a primary focus; title suggests a trial comparing paroxetine with placebo for major depression.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "paroxetine",
 "major depression",
-"antidepressant",
-"placebo response"
+"antidepressant trial",
+"placebo response",
+"medscape journal of medicine"
 ],
 "usage": {
-"input_tokens": 570,
+"input_tokens": 392,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 816,
-"cost_usd": 0.00192
+"output_tokens": 778,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -11956,29 +11770,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:50:06Z",
+"classified_at": "2026-09-03T04:09:56Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Title explicitly asks why placebos work in some children with migraine, indicating placebo responses/mechanisms in pediatric migraine are the paper's focus (placebo as the subject).",
+"decision": "uncertain",
+"confidence": 0.5,
+"rationale": "No abstract or full text available; title implies a focus on placebo effects in pediatric migraine but insufficient information to confirm study design, outcomes, or whether placebo/nocebo was the explicit object of study.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_pediatric"
+"other_clinical"
 ],
 "age_group": [
 "children_adolescents"
@@ -11986,43 +11798,29 @@
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"single_group_pre_post"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
-],
-"moderators": [
-"prior_experience"
-],
-"intervention_type": [
-"not_applicable"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated why placebo treatments produce benefit in some children with migraine, focusing on variability and possible mechanisms.",
+"summary": "No abstract available; title suggested investigation of placebo effects in children with migraine but details of methods and findings were unavailable.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
-"pediatrics",
-"placebo_response",
+"pediatric",
 "children",
-"expectation",
-"treatment history"
+"placebo",
+"pain"
 ],
 "usage": {
-"input_tokens": 579,
+"input_tokens": 401,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 702,
-"cost_usd": 0.0017
+"output_tokens": 612,
+"cost_usd": 0.00147
 }
 },
 "sources": [
@@ -12763,144 +12561,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1007/s11999-008-0194-7",
-"title": "Do patient expectations of spinal surgery relate to functional outcome?",
-"authors": [
-"Yee A",
-"Adjei N",
-"Do J",
-"Ford M",
-"Finkelstein J"
-],
-"journal": "Clinical orthopaedics and related research",
-"journal_abbrev": "Clin Orthop Relat Res",
-"year": 2008,
-"date": "2008-03-18",
-"doi": "10.1007/s11999-008-0194-7",
-"pmid": "18347892",
-"pmcid": "PMC2311462",
-"openalex_id": "https://openalex.org/W2022152445",
-"abstract": "It is important for surgeons to understand patients' expectations for surgery. We asked whether patient factors and preoperative functional outcome scores reflect the degree of expectations patients have for posterior spinal surgery. Second, we asked whether patients' expectations for surgery predict improvements in functional outcome scores after surgery. We prospectively enrolled 155 consecutive surgical patients with greater than 90% followup. Patients' expectations were evaluated preoperatively along with SF-36 and Oswestry disability questionnaires. Postoperatively (6 months for decompression; 1 year for fusions), we quantified patient-derived satisfaction regarding whether expectations were met and by patient-derived functional outcome scores. In patients undergoing decompression, gender, SF-36 general health domain, and SF-36 physical component score predicted patients with high expectations for surgery. Patients with high expectations also reported greater postoperative improvements in SF-36 role physical domain scores after surgery. Expectations for surgery were met in 81% of patients. In a subset of patients (21 of 143), expectations were not met. These patients reported lower mean preoperative SF-36 general health, vitality, and mean mental component scores.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Aged, 80 and over",
-"Decompression, Surgical",
-"Disability Evaluation",
-"Female",
-"Follow-Up Studies",
-"Health Knowledge, Attitudes, Practice",
-"Humans",
-"Lumbar Vertebrae",
-"Male",
-"Middle Aged",
-"Orthopedic Procedures",
-"Patient Education as Topic",
-"Patient Satisfaction",
-"Patient Selection",
-"Prospective Studies",
-"Recovery of Function",
-"Severity of Illness Index",
-"Sex Factors",
-"Spinal Diseases",
-"Spinal Fusion",
-"Surveys and Questionnaires",
-"Time Factors",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2311462",
-"landing_url": "https://doi.org/10.1007/s11999-008-0194-7",
-"cited_by_count": 149,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:45:16Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The study prospectively measured preoperative patient expectations and tested whether expectation level predicted postoperative functional outcomes, making expectations (a placebo/nocebo-relevant mechanism) the object of analysis.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"expectation_level",
-"sex_gender"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Prospectively measured preoperative expectations in 155 spinal surgery patients and found higher expectations predicted greater postoperative improvements on self-report functional scores.",
-"key_finding": "Higher preoperative expectations were associated with greater improvement in SF-36 role-physical scores postoperatively; 81% reported expectations met.",
-"sample_size": 155,
-"free_keywords": [
-"spinal fusion",
-"decompression",
-"oswestry",
-"sf-36",
-"patient expectations",
-"functional outcome",
-"prospective cohort"
-],
-"usage": {
-"input_tokens": 741,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 985,
-"cost_usd": 0.0023
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2008-03-18",
-"private_pdf": {
-"available": true,
-"store_key": "yee_2008_do_patient_expectations_of_spinal.pdf",
-"source": "downloaded",
-"sha256": "d890de454576c180"
-}
-},
-{
 "id": "pmid:24150150",
 "title": "Identification of placebo responsive participants in 40km laboratory cycling performance.",
 "authors": [
@@ -13500,128 +13160,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.jss.2008.01.030",
-"title": "Fatigue after colorectal surgery and its relationship to patient expectations.",
-"authors": [
-"Paddison JS",
-"Booth RJ",
-"Cameron LD",
-"Robinson E",
-"Frizelle FA",
-"Hill AG"
-],
-"journal": "The Journal of surgical research",
-"journal_abbrev": "J Surg Res",
-"year": 2008,
-"date": "2008-02-29",
-"doi": "10.1016/j.jss.2008.01.030",
-"pmid": "18468632",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2077318543",
-"abstract": "BACKGROUND: Feelings of fatigue are pronounced even after uncomplicated abdominal surgery. Patient expectations are associated with a variety of postsurgical outcomes, but few data about fatigue prevalence, nature, and time frame are available for patients and health professionals. Therefore, this study sought to investigate the effect of patient expectations on fatigue experiences following major colorectal surgery. METHODS: Based on the common sense model of illness self-regulation, prior to surgery 51 patients were asked to complete questionnaires assessing their perceptions of likely time frame and ability to control their return to normal functioning after surgery, using subset of questions from the Revised Illness Perceptions Questionnaire. Experience of fatigue and impact of fatigue were also assessed for 2 mo postsurgery using the Identity-Consequences Fatigue Scale. RESULTS: Using mixed model linear regression, baseline depression scores exerted significant main effects on both Fatigue Experiences and Fatigue Impacts scores of the patients. Further, after controlling for depression, there remained significant expectation interactions with both Fatigue Experiences and Fatigue Impacts scores. CONCLUSIONS: Postsurgical fatigue is multidimensional and this should be considered in studies investigating this phenomenon. Patients who before surgery reported shorter expected fatigue resolution time lines and a higher degree of expected control, experienced more persistent fatigue following surgery.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Aged, 80 and over",
-"Cognition",
-"Colorectal Surgery",
-"Fatigue",
-"Female",
-"Health Surveys",
-"Humans",
-"Linear Models",
-"Male",
-"Middle Aged",
-"New Zealand",
-"Patient Satisfaction",
-"Postoperative Complications",
-"Psychology",
-"Severity of Illness Index"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.jss.2008.01.030",
-"cited_by_count": 17,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:43:41Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "The study measured preoperative patient expectations as predictors of postoperative fatigue (an expectation effect measured observationally), making placebo/nocebo-relevant expectancy effects the paper's focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"fatigue"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"expectation_level",
-"mood_anxiety_state"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Assessed preoperative expectations in 51 colorectal surgery patients and found that baseline expectations predicted the persistence of self-reported fatigue over two months postoperatively.",
-"key_finding": "Found that patients who expected a shorter recovery timeline and greater control before surgery experienced more persistent postoperative fatigue, controlling for baseline depression.",
-"sample_size": 51,
-"free_keywords": [
-"colorectal surgery",
-"postoperative fatigue",
-"illness perceptions",
-"identity-consequences fatigue scale",
-"mixed-model regression",
-"New Zealand"
-],
-"usage": {
-"input_tokens": 720,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 845,
-"cost_usd": 0.00202
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2008-02-29",
-"private_pdf": null
-},
-{
 "id": "doi:10.1177/0269881107083807",
 "title": "Ethics and science of placebo-controlled trials.",
 "authors": [
@@ -13661,13 +13199,13 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:45:26Z",
+"classified_at": "2026-09-06T17:53:59Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Paper is a commentary on the ethics and science of placebo-controlled trials, making placebo research the explicit subject (placebo science/ethics).",
+"confidence": 0.7,
+"rationale": "Paper is a commentary addressing ethical and scientific aspects of placebo-controlled trials, making placebo the main subject (placebo science/ethics).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -13695,7 +13233,8 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -13704,22 +13243,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses ethical and scientific issues surrounding placebo-controlled trials, including consent, trial design, and implications for clinical research.",
+"summary": "Discussed ethical and scientific issues surrounding the use of placebo-controlled trials in clinical research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo-controlled trials",
-"research ethics",
-"informed consent",
-"deception",
-"clinical_trial_methodology"
+"ethics",
+"clinical_trials",
+"placebo-controlled",
+"informed_consent",
+"research_design",
+"equipoise"
 ],
 "usage": {
 "input_tokens": 439,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 954,
-"cost_usd": 0.00216
+"output_tokens": 522,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -13894,24 +13434,24 @@
 "oa_pdf_url": "https://www.ahajournals.org/doi/pdf/10.1161/HYPERTENSIONAHA.107.104950",
 "landing_url": "https://doi.org/10.1161/hypertensionaha.107.104950",
 "cited_by_count": 18,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:45:55Z",
+"classified_at": "2026-09-06T17:54:07Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Meta-analysis specifically examined safety (adverse events) in placebo arms of pediatric antihypertensive trials, making placebo use the paper's primary focus (placebo science/safety).",
+"rationale": "Patient-level pooled analysis explicitly examined adverse event rates in placebo arms across pediatric antihypertensive trials, making the placebo arm safety/response the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "meta_analysis",
 "species": "human",
@@ -13922,23 +13462,23 @@
 "children_adolescents"
 ],
 "condition_domain": [
-"cardiovascular_bp"
+"cardiovascular_bp",
+"adverse_events"
 ],
 "outcome_measures": [
-"self_report",
 "clinical_endpoint",
-"other",
-"not_applicable"
+"healthcare_utilization"
 ],
 "design": [
-"meta_analytic"
+"meta_analytic",
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "null_objective"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -13947,23 +13487,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Pooled patient-level data from 10 pediatric antihypertensive trials (N=1707) and found no increased adverse-event rates for children randomized to placebo versus active drug.",
-"key_finding": "Found no difference in adverse event rates between placebo and active drug among 1707 children across 10 trials.",
-"sample_size": 10,
+"summary": "Pooled patient-level data from 10 pediatric antihypertensive trials (n=1707) compared adverse event rates and found no increase in risk for children randomized to placebo versus active drug.",
+"key_finding": "No differences in overall or serious adverse event rates were observed between placebo and active drug arms among 1707 pediatric participants.",
+"sample_size": 1707,
 "free_keywords": [
 "pediatric hypertension",
-"adverse events",
-"FDA",
-"placebo control",
 "antihypertensive",
-"safety"
+"adverse events",
+"safety",
+"FDA",
+"pooled analysis",
+"placebo arm"
 ],
 "usage": {
 "input_tokens": 751,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 952,
-"cost_usd": 0.00224
+"output_tokens": 978,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -14493,11 +14034,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:14:02Z",
+"classified_at": "2026-09-06T17:54:08Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Balanced-placebo design manipulated actual and expected nicotine dose to test expectancy/placebo effects on smoking-related mood and reinforcement (placebo/expectancy was an explicit experimental focus).",
+"rationale": "Used a balanced-placebo design manipulating actual vs. expected nicotine dose to test expectancy/placebo mechanisms on smoking-related affect and craving (an explicit placebo-effect/expectation study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14509,15 +14050,14 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"substance_use"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"mood_depression",
 "addiction_craving",
-"adverse_events"
+"mood_depression"
 ],
 "outcome_measures": [
 "self_report",
@@ -14525,44 +14065,43 @@
 ],
 "design": [
 "balanced_placebo",
-"placebo_vs_no_treatment_arm",
-"within_subject_experimental"
+"within_subject_experimental",
+"parallel_groups_rct",
+"placebo_vs_no_treatment_arm"
 ],
 "effects": [
-"significant_subjective",
-"null_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "treatment_cues_dose_route",
-"attention_cognitive_appraisal"
+"prior_treatment_experience"
 ],
 "moderators": [
-"expectation_level",
-"prior_experience"
+"expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Randomized balanced-placebo study (N=200) tested mood induction and actual versus expected nicotine and found smoking reduced negative affect, withdrawal, and craving largely independent of nicotine dose or expectancy, implicating sensory smoke cues.",
-"key_finding": "Smoking (including denicotinized cigarettes) attenuated negative affect and craving regardless of actual or expected nicotine, suggesting sensory inhalation cues drove mood relief.",
+"summary": "Randomized smokers to a balanced-placebo design (actual vs. expected nicotine) plus a no-smoking control across mood induction sessions and found smoking (sensory inhalation) reduced negative affect and craving, while expected nicotine dose had little influence.",
+"key_finding": "Smoking reduced negative affect and craving independent of actual or expected nicotine dose, implicating sensory smoke cues rather than nicotine expectancy.",
 "sample_size": 200,
 "free_keywords": [
-"denicotinized cigarette",
-"balanced placebo design",
+"smoking",
+"denicotinized",
+"balanced placebo",
 "mood induction",
-"smoking reinforcement",
-"withdrawal",
-"craving"
+"negative affect",
+"craving",
+"sensory cues"
 ],
 "usage": {
 "input_tokens": 693,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 926,
-"cost_usd": 0.00217
+"output_tokens": 1055,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -15580,20 +15119,20 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:35:18Z",
+"classified_at": "2026-09-06T17:54:04Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Title and journal indicate the paper discusses the ethics of placebo-controlled antidepressant trials, making placebo the main subject (placebo science/ethics discussion).",
+"confidence": 0.7,
+"rationale": "Title and MeSH terms indicate the paper addresses ethical issues of placebo-controlled antidepressant trials, making placebo the main subject (placebo_science_other).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -15622,21 +15161,24 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed ethical arguments for and against placebo-controlled trials in antidepressant research and their defensibility.",
+"summary": "Discusses ethical arguments and considerations regarding placebo-controlled trials of antidepressants.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"antidepressant_trials",
-"ethics",
-"placebo_controlled_trials",
-"informed_consent"
+"antidepressant",
+"ethical_analysis",
+"clinical_trials",
+"informed_consent",
+"depression",
+"placebo_control",
+"research_ethics"
 ],
 "usage": {
 "input_tokens": 430,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 687,
-"cost_usd": 0.00163
+"output_tokens": 551,
+"cost_usd": 0.00136
 }
 },
 "sources": [
@@ -16222,24 +15764,24 @@
 "oa_pdf_url": "http://infoscience.epfl.ch/record/174085",
 "landing_url": "https://doi.org/10.1515/revneuro.2008.19.1.1",
 "cited_by_count": 37,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:41:42Z",
+"classified_at": "2026-09-06T17:54:10Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Systematic review explicitly focused on behavioural (classical) conditioning of peripheral immune functions, a mechanism relevant to placebo/nocebo research (mechanisms of conditioned immune responses).",
+"rationale": "Review explicitly summarized experimental evidence on behavioural (Pavlovian) conditioning of peripheral immune functions, making placebo-like conditioned responses the paper's focus (mechanisms and evidence).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "systematic_review",
 "species": "not_applicable",
@@ -16253,8 +15795,7 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"neuroendocrine"
+"immune_inflammatory"
 ],
 "design": [
 "not_applicable"
@@ -16274,24 +15815,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews experimental evidence that behavioural (classical) conditioning can modulate peripheral immune functions and discusses underlying mechanisms and clinical implications.",
+"summary": "Reviews experimental evidence that behavioural (Pavlovian) conditioning can modify peripheral immune functions, outlines underlying neural and chemical mechanisms, and discusses clinical feasibility.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychoneuroimmunology",
 "conditioned immunosuppression",
-"taste-immune conditioning",
-"cytokines",
-"glucocorticoids",
-"animal models",
-"associative learning"
+"Pavlovian conditioning",
+"taste-immune paradigm",
+"CNS-immune communication"
 ],
 "usage": {
 "input_tokens": 590,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1199,
-"cost_usd": 0.00269
+"output_tokens": 983,
+"cost_usd": 0.00226
 }
 },
 "sources": [
@@ -17659,11 +17198,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:47:14Z",
+"classified_at": "2026-09-06T17:54:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.65,
-"rationale": "Review explicitly addresses the use of sham designs and placebos in interventional (endoscopic) trials, making placebo methodology and ethics the paper's main subject.",
+"confidence": 0.8,
+"rationale": "Review article explicitly addresses sham design and placebos in interventional/endoscopic trials, making placebo methodology and ethics the paper's primary subject (placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -17699,27 +17238,28 @@
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"sham_surgery"
 ]
 },
-"summary": "Reviewed ethical and methodological implications of using sham designs in interventional endoscopic trials, focusing on placebo and research-design issues.",
+"summary": "Discusses the use, ethical considerations, and methodological implications of sham (placebo) designs for interventional and endoscopic trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sham design",
+"sham endoscopy",
 "sham surgery",
-"endoscopy",
 "research ethics",
 "trial design",
-"placebo-controlled",
-"invasive procedures"
+"blinding",
+"placebo control",
+"methodology",
+"interventional trials"
 ],
 "usage": {
 "input_tokens": 443,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 713,
-"cost_usd": 0.00168
+"output_tokens": 810,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -17781,11 +17321,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:31:40Z",
+"classified_at": "2026-09-06T17:54:10Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper's primary aim was developing and validating a sham TMS system to match real TMS sensations, addressing placebo/sham methodology and thus fits placebo science inclusion criteria (method development/validation).",
+"rationale": "Paper developed and empirically evaluated a portable sham TMS system and focused on placebo/sham methodology with an experimental within-subject comparison of real versus sham sensations.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -17793,7 +17333,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "methods_measurement",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
 "healthy_adult"
@@ -17802,7 +17342,6 @@
 "adults"
 ],
 "condition_domain": [
-"pain",
 "sensory_perception"
 ],
 "outcome_measures": [
@@ -17812,37 +17351,37 @@
 "within_subject_experimental"
 ],
 "effects": [
-"not_applicable"
+"null_subjective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"sham_device",
 "sham_neurostimulation"
 ]
 },
-"summary": "Developed and provided preliminary validation (N=9 healthy adults) that a portable electrical sham TMS system produced scalp sensations and tolerability ratings similar to real rTMS over prefrontal cortex.",
-"key_finding": "Found that eSham and real 10 Hz rTMS were rated similarly across seven sensory dimensions and tolerability at multiple stimulation intensities.",
+"summary": "Developed a portable electrical sham TMS (eSham) and found in 9 healthy adults that self-reported sensation quality, tolerability, and perceived location were similar for real and eSham rTMS.",
+"key_finding": "Found no reliable differences in seven sensory dimensions or tolerability ratings between real TMS and the eSham.",
 "sample_size": 9,
 "free_keywords": [
 "eSham",
 "rTMS",
 "prefrontal cortex",
-"sham TMS",
-"sensory matching",
-"James Long system"
+"sensory similarity",
+"James Long system",
+"tolerability",
+"motor threshold"
 ],
 "usage": {
 "input_tokens": 900,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 906,
-"cost_usd": 0.00218
+"output_tokens": 876,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -17907,11 +17446,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:31:31Z",
+"classified_at": "2026-09-06T17:54:14Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "The paper experimentally evaluated and validated a sham (placebo) rTMS control and its ability to mimic active stimulation sensations, making placebo/sham methodology the primary focus.",
+"rationale": "Empirical study that directly tested and validated a sham (placebo) control for rTMS, making placebo/sham methodology the primary focus (placebo science/methods).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -17938,7 +17477,7 @@
 "within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"not_applicable"
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
@@ -17948,29 +17487,29 @@
 "treatment_characteristics"
 ],
 "intervention_type": [
-"sham_neurostimulation",
-"sham_device"
+"sham_device",
+"sham_neurostimulation"
 ]
 },
-"summary": "Tested a focal electrical sham designed to mimic prefrontal rTMS sensations in 15 healthy adults and found the sham differed from real rTMS at low intensity but approximated real stimulation better at higher intensities.",
-"key_finding": "Sham electrical stimulation produced different subjective sensation quality than active rTMS at low intensity, while differences were reduced at higher intensities, indicating need for individualized titration.",
+"summary": "Compared a focal electrical sham system to active prefrontal rTMS in 15 healthy adults and found the sham did not fully mimic subjective cutaneous sensations at low intensity but approximated active rTMS more closely at higher intensities, suggesting individualized titration is needed.",
+"key_finding": "At low intensities subjective sensation quality differed between real and sham rTMS, while higher-intensity titration produced closer mimicry, indicating that individualized electrical titration is required for a truly indistinguishable sham.",
 "sample_size": 15,
 "free_keywords": [
 "rTMS",
 "focal electrical sham",
 "cutaneous sensation",
-"muscle twitch",
+"scalp pain",
 "blinding",
 "titration",
-"prefrontal cortex",
-"painfulness"
+"sham control",
+"stimulation intensity"
 ],
 "usage": {
 "input_tokens": 945,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 935,
-"cost_usd": 0.00225
+"output_tokens": 949,
+"cost_usd": 0.00228
 }
 },
 "sources": [

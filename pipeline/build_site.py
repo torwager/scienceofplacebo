@@ -120,7 +120,7 @@ def bibliometrics(visible, index):
         oa[r.get("oa_status") or "unknown"] += 1
         if "jips" in (r.get("sources") or []):
             jips += 1
-        if r.get("cited_by_count") is not None:
+        if r.get("cited_by_count") is not None and r.get("scope") == "core":
             cites.append((r["cited_by_count"], s["id"], s["t"], s["a"], y, j or ""))
     cites.sort(reverse=True)
     years = sorted(by_year)
@@ -256,7 +256,7 @@ def main():
     today = time.strftime("%Y-%m-%d")
     pages = [("", "daily", "1.0"), ("feed.html", "daily", "0.9"), ("database.html", "daily", "0.9"), ("bibliometrics.html", "weekly", "0.7"), ("network.html", "weekly", "0.7"),
              ("newsevents.html", "daily", "0.6"), ("news.html", "daily", "0.6"), ("events.html", "weekly", "0.6"), ("resources.html", "monthly", "0.7"), ("discuss.html", "daily", "0.5"),
-             ("join.html", "monthly", "0.5"), ("picks.html", "daily", "0.5"), ("about.html", "monthly", "0.6")]
+             ("join.html", "monthly", "0.5"), ("methods.html", "monthly", "0.8"), ("picks.html", "daily", "0.5"), ("about.html", "monthly", "0.6")]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{today}</lastmod><changefreq>{f}</changefreq><priority>{pr}</priority></url>" for u, f, pr in pages]
     sm.append("</urlset>")

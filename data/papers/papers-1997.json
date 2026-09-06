@@ -465,11 +465,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:34:01Z",
+"classified_at": "2026-09-06T17:56:55Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Prospective study explicitly tested patient and physician expectations as predictors of postprocedure pain relief, addressing expectancy/provider communication as a potential placebo-related mechanism.",
+"rationale": "Prospective study measured patient and physician expectations and tested whether expectations predicted subsequent pain relief, making expectation-driven nonspecific effects the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -500,31 +500,33 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "provider_patient_interaction",
-"prior_treatment_experience"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"provider_characteristics"
+"provider_characteristics",
+"expectation_level"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Prospective study of 46 chronic pain patients found physician pretreatment expectations predicted patient-reported pain relief after nerve blocks and IV infusions, while patients' own expectations did not.",
-"key_finding": "Physician expectation ratings correlated significantly with patient pain relief and pre-post change, whereas patient expectations did not.",
+"summary": "Prospective study of 46 chronic pain patients found physician pretreatment expectations predicted patient-reported pain relief after nerve blocks or IV infusions, whereas patient expectations did not.",
+"key_finding": "Physician expectations correlated significantly with patient-reported pain relief and pre-post change; patient expectations did not.",
 "sample_size": 46,
 "free_keywords": [
 "nerve block",
 "intravenous infusion",
+"pain clinic",
 "physician expectation",
-"chronic pain",
-"procedure outcome"
+"nonspecific effects",
+"predictor study"
 ],
 "usage": {
 "input_tokens": 748,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 887,
-"cost_usd": 0.00211
+"output_tokens": 891,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -935,11 +937,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:34:42Z",
+"classified_at": "2026-09-06T17:56:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Paper is a conceptual/ethical discussion about when placebo-controlled trials are appropriate, making placebo science (ethics/methodology) its primary subject.",
+"confidence": 0.9,
+"rationale": "Paper’s primary topic is methodological/ethical discussion of when placebo-controlled trials are inappropriate, making placebo the main subject (placebo science/methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -952,15 +954,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -969,7 +965,8 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -978,22 +975,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed ethical and methodological reasons when placebo-controlled trials are inappropriate or infeasible and alternatives like active-control equivalence trials.",
+"summary": "Discusses ethical and methodological reasons when placebo-controlled trials may be inappropriate and alternatives like active-control trials, highlighting issues such as assay sensitivity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo-controlled trials",
 "ethics",
+"equivalence_trial",
 "assay sensitivity",
-"equivalence trials",
-"clinical trial methodology"
+"active_control",
+"clinical_trials",
+"trial_design"
 ],
 "usage": {
-"input_tokens": 521,
-"cache_read_input_tokens": 5888,
+"input_tokens": 265,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 802,
-"cost_usd": 0.00188
+"output_tokens": 754,
+"cost_usd": 0.00173
 }
 },
 "sources": [
@@ -1041,11 +1039,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:34:50Z",
+"classified_at": "2026-09-06T17:56:47Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Paper's primary focus was ethical standards for placebo-controlled trials and when such trials are inappropriate, i.e., placebo science / ethics as the main subject (placebo_science_other).",
+"rationale": "Paper's primary focus was ethical standards for placebo-controlled trials and when they are inappropriate, making placebo methodology and ethics the main subject (placebo science adjacent).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1074,7 +1072,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -1083,25 +1083,23 @@
 "not_applicable"
 ]
 },
-"summary": "Proposed ethical standards for when placebo-controlled trials are inappropriate, illustrated using thrombolytic (streptokinase) trials in myocardial infarction.",
+"summary": "Argued ethical standards for when placebo-controlled trials are inappropriate and illustrated the framework using major thrombolytic trials in myocardial infarction.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"ethics",
 "placebo-controlled trials",
+"ethics",
 "thrombolysis",
-"myocardial infarction",
 "streptokinase",
-"fibrinolytics",
-"research_ethics",
-"informed consent"
+"myocardial infarction",
+"clinical trial methodology"
 ],
 "usage": {
 "input_tokens": 530,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00164
+"output_tokens": 510,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -1161,11 +1159,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:35:28Z",
+"classified_at": "2026-09-06T17:56:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Animal experiment explicitly studied conditioned analgesia (a classical-conditioning placebo mechanism) and its modulation by perinatal malnutrition and morphine, meeting inclusion criterion for mechanisms in nonhuman models.",
+"confidence": 0.9,
+"rationale": "Animal experiment explicitly studied conditioned analgesia (context-conditioned analgesia) and opioid mechanisms, a classical-conditioning model relevant to placebo mechanisms (mechanisms rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1185,8 +1183,7 @@
 "pain"
 ],
 "outcome_measures": [
-"behavioral_performance",
-"motor_kinematic"
+"behavioral_performance"
 ],
 "design": [
 "animal_experiment"
@@ -1196,35 +1193,33 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid",
-"prior_treatment_experience"
+"neurobiology_opioid"
 ],
 "moderators": [
-"pharmacological_manipulation",
 "prior_experience"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Tested conditioned analgesia and shock-induced inactivity in adult rats perinatally undernourished, finding controls developed conditioned analgesia while malnourished rats did not, and morphine restored these responses in undernourished rats.",
-"key_finding": "Conditioned analgesia (increased paw-lick latency) occurred in control rats but was absent in perinatally malnourished rats; morphine administration before shock normalized both inactivity and conditioned analgesia.",
+"summary": "Found that perinatal malnutrition in rats reduced inactivity during inescapable shock and prevented context-conditioned analgesia, while morphine restored both, implicating altered opioid-mediated conditioned analgesic processes.",
+"key_finding": "Perinatally undernourished rats failed to develop conditioned analgesia (increased paw-lick latency) seen in controls; morphine before shock normalized inactivity and conditioned analgesia.",
 "sample_size": null,
 "free_keywords": [
-"conditioned analgesia",
+"paw-lick latency",
 "inescapable foot shock",
 "perinatal malnutrition",
 "morphine",
-"wistar rats",
-"paw-lick latency",
-"learned analgesia"
+"Wistar rats",
+"conditioned analgesia",
+"behavioral inactivity"
 ],
 "usage": {
 "input_tokens": 673,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1206,
-"cost_usd": 0.00273
+"output_tokens": 1305,
+"cost_usd": 0.00293
 }
 },
 "sources": [
@@ -1275,11 +1270,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:32:30Z",
+"classified_at": "2026-09-06T17:56:49Z",
 "screening": {
 "decision": "include",
 "confidence": 0.75,
-"rationale": "Title indicates a focused ethical argument about placebo-controlled trials in palliative care, making placebo science (ethics) the paper's main subject despite missing abstract.",
+"rationale": "Title indicates the paper's main subject is the ethics and methodology of placebo-controlled trials in palliative care, so placebo is the primary focus (placebo science/ethics commentary).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1289,36 +1284,50 @@
 ],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"history_conceptual"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Argued against the use of placebo-controlled trials in palliative care on ethical grounds.",
+"summary": "Argued against the ethics and appropriateness of placebo-controlled randomized trials in palliative care settings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "palliative care",
 "ethics",
 "placebo-controlled trials",
-"clinical trials",
-"research ethics"
+"randomized trials"
 ],
 "usage": {
-"input_tokens": 432,
-"cache_read_input_tokens": 5888,
+"input_tokens": 176,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00161
+"output_tokens": 658,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -1619,11 +1628,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:35:13Z",
+"classified_at": "2026-09-06T17:56:57Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment that explicitly tested conditioned immunomodulation via classical conditioning and opioid antagonists, making conditioned (nocebo-like) immune responses the primary focus.",
+"rationale": "Animal experiment tested classical conditioning producing immune changes and pharmacological blockade of the effect, so conditioned (placebo/nocebo-relevant) responses and mechanisms were the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1636,7 +1645,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -1651,7 +1662,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid"
+"neurobiology_opioid",
+"neural_systems_circuits"
 ],
 "moderators": [
 "pharmacological_manipulation"
@@ -1660,24 +1672,24 @@
 "other"
 ]
 },
-"summary": "Demonstrated in rats that an aversive conditioned stimulus suppressed splenic NK activity, splenocyte proliferation, and IFN-gamma, and that central mu-opioid receptor antagonism blocked these conditioned immunomodulatory effects.",
-"key_finding": "Conditioned reductions in NK activity, splenocyte proliferation, and IFN-gamma were reversed by central mu-opioid antagonists (naltrexone, naloxonazine), implicating CNS mu-opioid receptors.",
+"summary": "Found that an aversive conditioned stimulus reduced splenic NK activity, splenocyte proliferation and IFN-gamma in rats, and that central mu-opioid receptor antagonists blocked these conditioned immunomodulatory effects.",
+"key_finding": "Intracerebroventricular naltrexone and the mu1-selective antagonist naloxonazine prevented conditioned immunosuppression, implicating central mu-opioid receptors.",
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
+"lewis rats",
 "natural killer cells",
 "interferon-gamma",
 "naloxonazine",
-"nor-bni",
-"lewis rats",
-"electric footshock"
+"naltrexone",
+"classical conditioning",
+"immunosuppression"
 ],
 "usage": {
 "input_tokens": 850,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1268,
-"cost_usd": 0.0029
+"output_tokens": 1227,
+"cost_usd": 0.00281
 }
 },
 "sources": [
@@ -2036,18 +2048,18 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:31:13Z",
+"classified_at": "2026-09-03T04:29:15Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly asks whether positive placebo response in chronic schizophrenia is investigator-dependent, indicating placebo response is the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.45,
+"rationale": "No abstract or full text provided; title explicitly addresses placebo response in chronic schizophrenia and investigator dependence, but insufficient information to confirm that placebo/nocebo phenomena were the explicit analytic focus or details of design.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2066,34 +2078,41 @@
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"clinician_rated"
+],
 "design": [
 "parallel_groups_rct"
 ],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"provider_characteristics"
+"none_reported"
 ],
-"intervention_type": []
+"intervention_type": [
+"inert_pill_capsule"
+]
 },
-"summary": "Reported that positive placebo response in chronic schizophrenia varied by investigator.",
+"summary": "No abstract available; title indicated the study examined whether positive placebo response in chronic schizophrenia varied by investigator.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "schizophrenia",
 "placebo response",
-"investigator-dependent",
+"investigator effects",
+"psychiatric rating scales",
 "clinical trial"
 ],
 "usage": {
-"input_tokens": 606,
+"input_tokens": 428,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 767,
-"cost_usd": 0.00183
+"output_tokens": 690,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -2155,11 +2174,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:36:33Z",
+"classified_at": "2026-09-06T17:57:14Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Experimental comparison of analgesia suggestion/guided imagery versus a placebo-control (mind-wandering) and distractor tasks isolated suggestion-driven analgesia, meeting the placebo-effect experimental-contrast criterion.",
+"confidence": 0.86,
+"rationale": "Verbal suggestion and guided-imagery analgesia were experimentally compared to a neutral/placebo-control instruction, isolating context/expectation effects on cold-pressor pain (placebo-type effect) with hypnotizability as moderator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2187,7 +2206,6 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
@@ -2198,26 +2216,27 @@
 "personality_traits"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"sham_psychological"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Compared suggestion-based (analgesia suggestion, guided imagery) and external distraction tasks to a placebo-control mind-wandering condition in cold-pressor pain; found reductions in pain ratings for highly hypnotizable participants but not for low hypnotizables.",
-"key_finding": "Analgesic suggestion and guided imagery reduced cold-pressor pain in high hypnotizables versus control; no benefit in low hypnotizables.",
+"summary": "Compared internal (suggestion, guided imagery) and external distraction tasks to a permissive placebo-control in a cold-pressor pain test and found analgesic effects for highly hypnotizable participants but not for low hypnotizables.",
+"key_finding": "Analgesia suggestion and guided imagery reduced pain ratings significantly in high-hypnotizable participants versus control, with no effect in low hypnotizables.",
 "sample_size": null,
 "free_keywords": [
 "cold-pressor",
 "hypnotizability",
 "guided imagery",
-"distraction tasks",
-"analgesia suggestion"
+"analgesia suggestion",
+"attention diversion",
+"word-memory task",
+"pursuit-rotor"
 ],
 "usage": {
 "input_tokens": 702,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1046,
-"cost_usd": 0.00241
+"output_tokens": 982,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -3227,18 +3246,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:35:38Z",
+"classified_at": "2026-09-06T17:56:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiments tested how conditioned contextual cues modulated morphine analgesia, addressing mechanisms of context-dependent analgesia (classical conditioning) relevant to placebo-like effects.",
+"confidence": 0.85,
+"rationale": "Animal experiments manipulated conditioned contextual cues to alter morphine analgesia, testing classical conditioning mechanisms that modulate drug response (an established placebo-context mechanism).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -3265,29 +3283,28 @@
 "prior_treatment_experience"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that prior exposure to conditioned fear contexts enhanced morphine analgesia in rats, with stronger enhancement when conditioned analgesia was demonstrated.",
-"key_finding": "Observed small enhancement of morphine analgesia in Experiment 1 and strong enhancement in Experiment 2 contingent on expression of conditioned analgesia.",
+"summary": "Tested whether exposure to conditioned fear contexts enhanced morphine analgesia in rats and found that prior conditioned cues increased analgesic response, especially in animals that showed conditioned analgesia.",
+"key_finding": "Enhancement of morphine analgesia in a neutral context occurred only in rats that demonstrated conditioned analgesia; overall context-induced augmentation of opioid analgesia was observed.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned fear",
 "contextual conditioning",
-"shock",
-"analgesia",
-"sprague-dawley rat"
+"Sprague-Dawley",
+"electroshock"
 ],
 "usage": {
 "input_tokens": 697,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 876,
-"cost_usd": 0.00207
+"output_tokens": 936,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -3346,11 +3363,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:36:04Z",
+"classified_at": "2026-09-06T17:56:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Study empirically examined blinding/unblinding and its association with clinical outcome, which is a placebo-trial methodology question included as placebo_science_other.",
+"confidence": 0.8,
+"rationale": "Primary focus was on double-blindness procedures, assessor/patient unblinding, and its association with clinical outcome—methodological placebo science rather than using placebo only as a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3370,8 +3387,8 @@
 "anxiety_stress"
 ],
 "outcome_measures": [
-"self_report",
-"clinician_rated"
+"clinician_rated",
+"self_report"
 ],
 "design": [
 "parallel_groups_rct"
@@ -3383,30 +3400,29 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics"
+"treatment_characteristics"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"sham_psychological"
+"inert_pill_capsule"
 ]
 },
-"summary": "Tested whether assessor and patient blinding was maintained in a randomized trial of alprazolam plus exposure/relaxation versus placebo, and whether unblinding related to clinical outcome.",
-"key_finding": "Assessors correctly guessed treatment in ~80% and patients in ~70%; unblinding was associated with drug side effects but not assessor-rated treatment outcome.",
+"summary": "Assessed maintenance of blinding in 129 patients randomized to alprazolam or placebo with exposure/relaxation and found high rates of correct guessing by assessors and patients; unblinding was related to side effects but not assessor-rated outcomes.",
+"key_finding": "Assessors correctly identified treatment in ~80% and patients in ~70%; unblinding was associated with drug side effects but did not bias assessor outcome ratings.",
 "sample_size": 129,
 "free_keywords": [
 "alprazolam",
 "panic disorder",
 "agoraphobia",
-"double-blind",
-"unblinding",
-"rater blindness"
+"blinding",
+"assessor blindness",
+"side effects"
 ],
 "usage": {
 "input_tokens": 740,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 844,
-"cost_usd": 0.00202
+"output_tokens": 849,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -3471,25 +3487,26 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:36:20Z",
+"classified_at": "2026-09-06T17:56:57Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Preclinical animal experiment used Pavlovian conditioning to induce conditioned anti-analgesia and tested its effects on spinal non-opiate analgesia, meeting criterion for mechanisms of placebo/nocebo (conditioning) in animals.",
+"rationale": "Animal experiments used Pavlovian conditioning to produce conditioned anti-analgesia (an experimentally isolated adverse/contextual effect) and tested its ability to reverse non-opiate analgesia, making nocebo/anti-analgesia the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect",
-"placebo_science_other"
+"nocebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
@@ -3508,31 +3525,31 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"pharmacological_manipulation",
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that Pavlovian conditioned anti-analgesia in rats blocked spinal GABA(B)- and 5HT3-mediated non-opiate analgesia but did not affect GABA(A) or 5HT1/2 analgesias.",
-"key_finding": "Conditioned anti-analgesia completely reversed GABA(B) and 5HT3 spinal analgesia in rats, demonstrating conditioned modulation of non-opiate analgesic states.",
+"summary": "Demonstrated in rats that Pavlovian conditioned anti-analgesia blocked certain spinal non-opiate (GABA-B and 5HT3-mediated) analgesias, showing conditioned anti-analgesia can modulate non-opiate as well as opiate analgesia.",
+"key_finding": "Conditioned anti-analgesia fully reversed GABA(B)- and 5HT3-mediated spinal analgesia but did not affect GABA(A) or 5HT2+5HT1 analgesias.",
 "sample_size": null,
 "free_keywords": [
 "conditioned anti-analgesia",
-"Pavlovian conditioning",
 "cholecystokinin",
-"GABA-B",
-"5HT3",
+"gaba-b",
+"5-ht3",
 "intrathecal",
-"sprague-dawley rats",
-"spinal cord"
+"spinal cord",
+"sprague-dawley rat"
 ],
 "usage": {
 "input_tokens": 863,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1181,
-"cost_usd": 0.00272
+"output_tokens": 1092,
+"cost_usd": 0.00255
 }
 },
 "sources": [
@@ -4441,18 +4458,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:38:27Z",
+"classified_at": "2026-09-06T17:57:21Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "A balanced-placebo experiment manipulated expectations about insulin vs saline and measured symptom reports and physiological responses, so placebo/nocebo phenomena were the explicit experimental focus (expectation effects).",
+"confidence": 0.95,
+"rationale": "Balanced-placebo experiment that manipulated expectation (told insulin vs told saline) and measured symptom reports and physiological responses, explicitly testing expectancy effects on symptom awareness.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect"
+"placebo_effect",
+"nocebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4463,8 +4480,7 @@
 "adults"
 ],
 "condition_domain": [
-"endocrine_hormonal",
-"adverse_events"
+"endocrine_hormonal"
 ],
 "outcome_measures": [
 "self_report",
@@ -4473,7 +4489,8 @@
 "clinical_endpoint"
 ],
 "design": [
-"balanced_placebo"
+"balanced_placebo",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_subjective",
@@ -4489,26 +4506,28 @@
 "prior_experience"
 ],
 "intervention_type": [
+"saline_injection_infusion",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2 balanced-placebo design in 40 healthy men and found that expectations about receiving insulin influenced perceived hypoglycemic symptoms and physiological responses.",
-"key_finding": "Expecting insulin increased neuroglycopenic symptom reports and raised norepinephrine, heart rate, and glucagon levels compared with expecting saline.",
+"summary": "Manipulated expectations in a balanced-placebo insulin/saline design in 40 healthy men and found that expecting insulin increased neuroglycopenic symptoms and physiological responses including norepinephrine, heart rate, and glucagon.",
+"key_finding": "Expecting insulin increased self-reported neuroglycopenic symptoms and objective autonomic and neuroendocrine responses (norepinephrine, HR, glucagon) compared with expecting saline.",
 "sample_size": 40,
 "free_keywords": [
 "hypoglycemia",
 "insulin",
 "glucagon",
 "norepinephrine",
-"balanced placebo",
+"neuroglycopenia",
+"heart rate",
 "symptom awareness"
 ],
 "usage": {
 "input_tokens": 804,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1187,
-"cost_usd": 0.00272
+"output_tokens": 1346,
+"cost_usd": 0.00304
 }
 },
 "sources": [
@@ -4566,17 +4585,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:38:06Z",
+"classified_at": "2026-09-06T17:56:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Study measured expectancy variables as predictors of pain tolerance and avoidance in chronic pain patients, testing expectation effects on pain outcomes (an explicit focus on expectancy as a mechanism of symptom response).",
+"confidence": 0.7,
+"rationale": "Measured expectancy variables as predictors of pain tolerance and avoidance in chronic pain patients, making expectation-placebo mechanisms the study focus (expectation effects on outcomes).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4590,44 +4609,43 @@
 "pain"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"behavioral_performance",
+"self_report"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"significant_subjective"
+"significant_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"prior_treatment_experience"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Examined how four expectancy measures predicted cold-pressor pain tolerance and avoidance in chronic pain patients and found response expectancy predicted tolerance while danger expectancy predicted avoidance.",
-"key_finding": "Response (expected tolerance) significantly predicted actual cold-pressor tolerance; expected danger predicted avoidance.",
+"summary": "Found that response expectancy predicted cold-pressor tolerance and danger expectancy predicted avoidance in chronic pain patients.",
+"key_finding": "Expected tolerance predicted actual tolerance; expected danger predicted avoidance behavior.",
 "sample_size": null,
 "free_keywords": [
 "cold pressor",
 "response expectancy",
 "danger expectancy",
-"tolerance",
+"pain tolerance",
 "avoidance",
-"chronic pain",
-"expectation"
+"chronic pain"
 ],
 "usage": {
 "input_tokens": 647,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1028,
-"cost_usd": 0.00236
+"output_tokens": 949,
+"cost_usd": 0.00221
 }
 },
 "sources": [
@@ -5497,17 +5515,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:37:00Z",
+"classified_at": "2026-09-06T17:57:10Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo (told vs received drug/placebo) design manipulating expectancy of an active drug, so placebo/context effects were an explicit experimental focus (expectancy manipulation).",
+"rationale": "Balanced-placebo randomized design experimentally manipulated drug administration and expectancy to test effects on performance, persistence, and self-evaluations (expectancy/placebo context was a primary manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5518,47 +5537,53 @@
 "children_adolescents"
 ],
 "condition_domain": [
-"cognition"
+"cognition",
+"other"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"behavioral_performance",
+"self_report"
 ],
 "design": [
 "balanced_placebo",
 "parallel_groups_rct"
 ],
 "effects": [
-"null_subjective",
+"significant_subjective",
+"significant_objective",
 "null_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
+"inert_pill_capsule",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that methylphenidate improved task persistence and self-evaluations in boys with ADHD, while expectancy (told-drug vs told-placebo) produced no reliable placebo effect on performance, persistence, or attributions in a balanced-placebo design.",
-"key_finding": "Medication improved persistence and self-evaluations; expectancy produced no placebo effect.",
+"summary": "Used a balanced-placebo design in 60 boys with ADHD to manipulate methylphenidate administration and expectancy, and found drug improved task persistence and some self-evaluations while expectancy (told drug) did not affect performance or attributions.",
+"key_finding": "Pharmacological methylphenidate increased task persistence and altered self-evaluations, whereas expectancy (told-drug vs told-placebo) did not affect task performance or attributions.",
 "sample_size": 60,
 "free_keywords": [
 "adhd",
 "methylphenidate",
-"balanced-placebo",
-"expectancy",
+"balanced placebo",
 "task persistence",
-"attribution"
+"attributions",
+"children",
+"expectancy"
 ],
 "usage": {
 "input_tokens": 691,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1176,
-"cost_usd": 0.00267
+"output_tokens": 1055,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -6611,18 +6636,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:31:25Z",
+"classified_at": "2026-09-03T04:29:48Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly states evaluation of the 'hypnosis/placebo theory' for spiritual healing, indicating placebo mechanisms are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title indicates a conceptual/review evaluation of the hypnosis/placebo theory in spiritual healing but insufficient information to confirm whether placebo phenomena were the primary empirical focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6651,9 +6676,6 @@
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"classical_conditioning",
-"therapeutic_ritual_context",
 "history_conceptual"
 ],
 "moderators": [
@@ -6663,22 +6685,21 @@
 "not_applicable"
 ]
 },
-"summary": "Evaluated the hypnosis/placebo theory as an explanation for spiritual healing and folklore accounts, discussing placebo-related mechanisms and concepts.",
+"summary": "Reviewed and evaluated the hypnosis/placebo theory as an explanation for spiritual healing and folklore research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"spiritual healing",
+"spiritual_healing",
 "hypnosis",
 "folklore",
-"placebo theory",
-"ritual"
+"placebo_theory"
 ],
 "usage": {
-"input_tokens": 561,
+"input_tokens": 383,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 731,
-"cost_usd": 0.00175
+"output_tokens": 683,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -6926,11 +6947,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:34:09Z",
+"classified_at": "2026-09-06T17:56:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title indicates a methodological critique of the double-blind placebo-controlled food challenge, making placebo methodology the paper's focus (placebo_science_other / methods).",
+"confidence": 0.7,
+"rationale": "Title indicates a methodological critique of the double-blind placebo-controlled food challenge, making placebo methodology the paper's primary subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6938,7 +6959,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "methods_measurement",
+"article_type": "narrative_review",
 "species": "human",
 "population": [
 "not_applicable"
@@ -6947,7 +6968,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"immune_inflammation"
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -6959,8 +6980,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -6969,7 +6989,7 @@
 "not_applicable"
 ]
 },
-"summary": "Critically examined the double-blind placebo-controlled food challenge as a methodological test for food hypersensitivity and placebos in clinical assessment.",
+"summary": "Critically examined the double-blind placebo-controlled food challenge test and discussed methodological issues in its use for food hypersensitivity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -6977,15 +6997,14 @@
 "DBPCFC",
 "food_challenge",
 "food_allergy",
-"placebo_control",
-"methodology"
+"placebo_controls"
 ],
 "usage": {
 "input_tokens": 431,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 639,
-"cost_usd": 0.00153
+"output_tokens": 688,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -7401,11 +7420,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:39:34Z",
+"classified_at": "2026-09-06T17:56:59Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of verbal expectancy (instruction A vs B) directly tested effects on procedural pain, meeting criterion for placebo/context effect.",
+"confidence": 0.93,
+"rationale": "Within-subject experimental manipulation of verbal expectancy was the stated intervention and significantly altered reported pain, meeting criteria for an experimentally isolated placebo/context effect via suggestion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7416,7 +7435,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"surgical_patients"
 ],
 "age_group": [
 "adults",
@@ -7435,8 +7454,7 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -7445,22 +7463,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Compared two verbal instructions in the same patients before sequential arteriotomies and found that an expectancy instruction significantly reduced reported pain.",
-"key_finding": "Expectancy instruction-B reduced arteriotomy pain versus neutral instruction (paired test p < .005).",
+"summary": "Found that verbal expectancy instructions delivered before a second arteriotomy significantly reduced patients' self-reported pain compared with a neutral instruction an hour earlier.",
+"key_finding": "Expectancy instruction stating 'coolness numbs the skin' significantly reduced pain ratings for the second arteriotomy (paired test p < .005).",
 "sample_size": 25,
 "free_keywords": [
 "arteriotomy",
 "radial artery",
-"procedural pain",
 "expectancy instruction",
-"hospitalized patients"
+"verbal suggestion",
+"skin cooling",
+"hospitalized patients",
+"clinical hypnosis journal"
 ],
 "usage": {
-"input_tokens": 613,
-"cache_read_input_tokens": 5888,
+"input_tokens": 357,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 705,
-"cost_usd": 0.00171
+"output_tokens": 743,
+"cost_usd": 0.00173
 }
 },
 "sources": [
@@ -7737,17 +7757,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:37:10Z",
+"classified_at": "2026-09-06T17:56:59Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating alcohol expectancy and consumption to test expectation effects on anxiety and self-disclosure (an expectancy/placebo-related experimental manipulation of an active drug).",
+"rationale": "Used a balanced-placebo expectancy manipulation of an active drug (alcohol), which isolates expectancy/placebo effects (active_drug_context_manipulation), so placebo-related mechanisms were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -7762,44 +7783,46 @@
 "other"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
-"balanced_placebo",
-"parallel_groups_rct"
+"balanced_placebo"
 ],
 "effects": [
+"significant_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
-"sex_gender"
+"sex_gender",
+"expectation_level"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2 balanced-placebo RCT in 64 social drinkers and found alcohol expectancy reduced intimacy of self-disclosure while actual consumption had no effect, and males who expected but did not receive alcohol reported the largest anxiety increase.",
-"key_finding": "Alcohol expectancy decreased intimacy of self-disclosure; the largest anxiety increase occurred in males who expected but did not receive alcohol.",
+"summary": "Tested alcohol consumption versus alcohol-expectancy in a 2x2 balanced-placebo design and found expectancy reduced intimacy of self-disclosure and increased anxiety in men who expected but did not receive alcohol.",
+"key_finding": "Alcohol expectancy (told alcohol) reduced intimacy of self-disclosure; male participants who expected but did not receive alcohol showed the largest anxiety increase.",
 "sample_size": 64,
 "free_keywords": [
-"balanced-placebo",
-"alcohol expectancy",
+"alcohol",
+"balanced placebo",
 "self-disclosure",
+"intimacy",
 "social interaction",
-"sex differences",
-"social drinkers"
+"expectancy",
+"gender differences",
+"anxiety"
 ],
 "usage": {
 "input_tokens": 632,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 830,
-"cost_usd": 0.00197
+"output_tokens": 817,
+"cost_usd": 0.00194
 }
 },
 "sources": [

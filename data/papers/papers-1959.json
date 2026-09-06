@@ -133,11 +133,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:30:12Z",
+"classified_at": "2026-09-06T18:01:44Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Experimental administration of inert substances to healthy volunteers with analyses predicting who reported symptoms, so placebo/nocebo responses and their predictors were the study focus (placebo response).",
+"rationale": "Primary experimental study of individual differences in reactions to inert substances, predicting symptom reports to dummies—placebo response is the study focus (predictors of response).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -162,14 +162,15 @@
 "behavioral_performance"
 ],
 "design": [
-"single_group_pre_post"
+"single_group_pre_post",
+"observational"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
 "attention_cognitive_appraisal",
-"prior_treatment_experience",
+"classical_conditioning",
 "other"
 ],
 "moderators": [
@@ -179,23 +180,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Tested healthy medical students with inert 'dummies' and found that behavioural-test scores predicted which individuals reported physical and mental changes after taking the placebo.",
-"key_finding": "Behavioural test scores significantly predicted which participants reported symptoms after taking inert substances.",
+"summary": "Tested healthy medical students and found consistent individual differences in symptom reporting after inert dummies, and that behavioural test scores predicted who reacted.",
+"key_finding": "Behavioural test scores predicted which participants reported changes after inert substances.",
 "sample_size": null,
 "free_keywords": [
 "medical students",
 "symptom reporting",
-"predictors",
-"nocebo",
-"behavioural tests",
+"behavioral predictors",
+"dummies",
+"placebo responders",
 "1959"
 ],
 "usage": {
-"input_tokens": 277,
-"cache_read_input_tokens": 6144,
+"input_tokens": 533,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 806,
-"cost_usd": 0.00183
+"output_tokens": 759,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -434,19 +435,19 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:34:30Z",
+"classified_at": "2026-09-03T04:50:45Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names placebos as the subject in evaluation of treatments for rheumatic diseases, indicating placebo science/methodology is the paper's focus.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title implies a discussion of placebos in rheumatology but the paper's aims and empirical status cannot be confirmed from available metadata.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": false
 },
 "tags": {
@@ -456,50 +457,40 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"autoimmune_rheum"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"pain",
-"immune_inflammation"
+"other"
 ],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviews the role of placebos in evaluating treatments for rheumatic diseases, focusing on placebo use and implications for trials.",
+"summary": "Insufficient abstract to judge; title suggested a discussion of the role of placebos in evaluating treatments for rheumatic diseases.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"rheumatoid arthritis",
-"trial methodology",
-"blinding",
-"placebo control",
+"rheumatic diseases",
+"rheumatology",
+"placebo methodology",
+"clinical trials",
+"trial evaluation",
 "1959"
 ],
 "usage": {
-"input_tokens": 549,
+"input_tokens": 371,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 910,
-"cost_usd": 0.0021
+"output_tokens": 832,
+"cost_usd": 0.0019
 }
 },
 "sources": [

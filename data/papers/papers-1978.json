@@ -971,18 +971,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:09:01Z",
+"classified_at": "2026-09-03T04:43:27Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names 'Placebo' and sleep patterns in normal young adults, indicating placebo/placebo-response was the study focus.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or methods/results available; title and MeSH indicate the paper studied placebos and sleep in young adults but design and whether placebo was primary focus or a comparator are unclear.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1001,37 +1001,43 @@
 "condition_domain": [
 "sleep"
 ],
-"outcome_measures": [],
-"design": [],
+"outcome_measures": [
+"eeg",
+"self_report"
+],
+"design": [
+"single_group_pre_post"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"inert_pill_capsule"
 ]
 },
-"summary": "Studied placebo effects on sleep patterns in normal young adults.",
+"summary": "Insufficient abstract available; title and indexing suggested the study examined placebo effects on sleep stage patterns in normal young adults.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"polysomnography",
 "sleep stages",
 "young adults",
 "placebo",
-"biological psychiatry",
-"1978"
+"touyz 1978",
+"biological psychiatry"
 ],
 "usage": {
-"input_tokens": 573,
+"input_tokens": 395,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 830,
-"cost_usd": 0.00195
+"output_tokens": 896,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1993,70 +1999,51 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:09:29Z",
+"classified_at": "2026-09-03T04:43:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title indicates the paper analyzed incidence of treatment-emergent (adverse) symptoms under placebo conditions, making placebo-associated adverse events (nocebo response) the subject.",
+"decision": "uncertain",
+"confidence": 0.45,
+"rationale": "Only the title is available and it reports incidence under chlorpromazine and placebo conditions, but no abstract or methods are provided to determine whether placebo/nocebo phenomena were an explicit focus versus a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"nocebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"adverse_events"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"parallel_groups_rct"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reported the incidence of treatment-emergent symptoms under chlorpromazine and placebo conditions.",
+"summary": "No abstract was available; the title reported incidence of treatment-emergent symptoms under chlorpromazine and placebo conditions, but details were insufficient to judge whether placebo/nocebo was the study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chlorpromazine",
 "schizophrenia",
-"antipsychotic",
-"adverse events",
-"placebo-controlled"
+"treatment-emergent",
+"adverse-effects",
+"placebo"
 ],
 "usage": {
-"input_tokens": 591,
+"input_tokens": 413,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 896,
-"cost_usd": 0.00209
+"output_tokens": 670,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -2103,24 +2090,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0097-7403.4.2.188",
 "cited_by_count": 129,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:07:53Z",
+"classified_at": "2026-09-06T18:00:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested Pavlovian conditioning of morphine analgesic tolerance by pairing predrug environmental cues with morphine versus unpaired or saline controls, addressing mechanisms of conditioned (nocebo-like) responses.",
+"rationale": "Animal experiment explicitly tested Pavlovian (classical) conditioning of morphine tolerance by pairing predrug environmental cues with drug administration, directly studying conditioned drug response mechanisms (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2131,7 +2118,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"other"
 ],
 "outcome_measures": [
 "behavioral_performance"
@@ -2144,33 +2131,35 @@
 ],
 "mechanisms": [
 "classical_conditioning",
+"treatment_cues_dose_route",
 "prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"active_drug_context_manipulation",
+"saline_injection_infusion"
 ]
 },
-"summary": "Found that rats given morphine repeatedly in a consistent environmental context showed conditioned analgesic tolerance when tested with the cue, whereas unpaired controls did not.",
-"key_finding": "Pairing predrug contextual cues with morphine produced reduced analgesic effect (conditioned tolerance) compared with unpaired or saline controls.",
+"summary": "Found that rats given morphine repeatedly in an environment paired with the drug showed conditioned analgesic tolerance, whereas unpaired controls did not, supporting a Pavlovian conditioning model of tolerance.",
+"key_finding": "Paired morphine‑environment associations produced measurable analgesic tolerance compared with unpaired or saline controls.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned tolerance",
 "rats",
-"Pavlovian conditioning",
 "analgesia",
-"tail-flick",
-"environmental cues"
+"classical conditioning",
+"environmental cues",
+"drug-context"
 ],
 "usage": {
 "input_tokens": 655,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 984,
-"cost_usd": 0.00228
+"output_tokens": 838,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -2650,17 +2639,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:09:15Z",
+"classified_at": "2026-09-06T18:00:42Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experimental demonstration of cue/context-conditioned compensatory responses (classical conditioning) as the mechanism of morphine tolerance fits inclusion rule for animal models that manipulate contextual cues to study placebo/nocebo-like learning mechanisms.",
+"confidence": 0.8,
+"rationale": "Animal experimental study explicitly investigated Pavlovian/context conditioning of morphine tolerance (conditioned responses to administration cues in absence of drug), which is a mechanistic model of placebo/nocebo-like context effects (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2686,33 +2675,35 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_other_neurochemical"
+"prior_treatment_experience",
+"neural_systems_circuits"
 ],
 "moderators": [
+"pharmacological_manipulation",
 "prior_experience"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Summarized animal experiments showing that environmental cues paired with morphine produced conditioned compensatory responses that reduced drug effects, supporting a Pavlovian conditioning model of morphine tolerance.",
-"key_finding": "Found that context-specific conditioned compensatory responses attenuated morphine's effects and that extinction, partial reinforcement, and latent inhibition modulated tolerance.",
+"summary": "Summarized and presented animal experiments showing that Pavlovian context cues previously paired with morphine produced compensatory responses (drug tolerance) when the drug was omitted, and that extinction, reinforcement schedules, and neural/metabolic manipulations altered this conditioned tolerance.",
+"key_finding": "Found that environmental cues elicited morphine-compensatory conditioned responses that reduced drug effects (context-specific tolerance) and that extinction and protein-synthesis inhibitors altered the display of tolerance.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
-"conditioned tolerance",
+"tolerance",
 "classical conditioning",
 "rats",
-"compensatory response",
-"extinction"
+"extinction",
+"protein synthesis",
+"electroconvulsive shock"
 ],
 "usage": {
 "input_tokens": 682,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1372,
-"cost_usd": 0.00306
+"output_tokens": 1094,
+"cost_usd": 0.00251
 }
 },
 "sources": [
@@ -3081,56 +3072,53 @@
 "Historical Article",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:09:41Z",
+"classified_at": "2026-09-03T04:43:46Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The title explicitly names 'placebos' indicating the article's main subject is placebo use in health care (likely a historical/commentary piece), satisfying inclusion for placebo-science content.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available and the title suggests a historical/commentary piece about placebos but it's unclear whether placebo/nocebo is the explicit focus required for inclusion.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
+"effects": [],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Argues about the role and appropriateness of placebos in health care, discussing placebo use and its implications in clinical practice.",
+"summary": "Appeared to discuss the role or history of placebos in healthcare in the United States, but no abstract or text was available to confirm focus or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo",
 "history",
-"medical-ethics",
-"clinical-practice",
-"placebo-prescribing"
+"healthcare",
+"united states",
+"1978",
+"editorial",
+"commentary"
 ],
 "usage": {
-"input_tokens": 552,
+"input_tokens": 374,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 581,
-"cost_usd": 0.00145
+"output_tokens": 692,
+"cost_usd": 0.00162
 }
 },
 "sources": [

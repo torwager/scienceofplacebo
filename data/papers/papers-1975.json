@@ -45,11 +45,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:14:03Z",
+"classified_at": "2026-09-06T18:00:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The study experimentally compared conditioning interventions with a placebo group and examined whether changes were due to conditioning versus demand characteristics, making placebo/expectancy effects an explicit focus.",
+"confidence": 0.9,
+"rationale": "Empirical study that included a placebo group and analyzed placebo-related changes (placebo produced equivalent self-report and behavioral changes), so placebo response/demand-characteristics was a focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -67,7 +67,8 @@
 "adults"
 ],
 "condition_domain": [
-"cognition"
+"motor_function",
+"other"
 ],
 "outcome_measures": [
 "self_report",
@@ -82,33 +83,35 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"trial_methodology_placebo_response",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"sham_psychological",
 "verbal_suggestion_only"
 ]
 },
-"summary": "Compared language-conditioning treatments, control, and a placebo group for self-concept and hand-grip performance and found placebo and experimental groups showed similar pre-post changes, implicating demand characteristics rather than conditioning.",
-"key_finding": "Placebo group showed significant self-report and behavioral change equal to experimental groups, suggesting nonconditioning factors (demand characteristics) drove effects.",
+"summary": "Compared semantic desensitization, control, and a placebo group and found that self-report and hand dynamometer performance changed as much in the placebo group as in experimental groups, implicating demand characteristics rather than conditioning.",
+"key_finding": "Placebo group showed changes equal to experimental groups on self-report and grip-strength performance.",
 "sample_size": 27,
 "free_keywords": [
 "semantic desensitization",
-"language conditioning",
-"self-concept",
+"demand characteristics",
 "hand dynamometer",
-"demand characteristics"
+"self-concept",
+"language conditioning",
+"behavior therapy",
+"1975"
 ],
 "usage": {
 "input_tokens": 604,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1015,
-"cost_usd": 0.00233
+"output_tokens": 1098,
+"cost_usd": 0.00249
 }
 },
 "sources": [
@@ -355,11 +358,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:10:46Z",
+"classified_at": "2026-09-06T18:01:17Z",
 "screening": {
 "decision": "include",
-"confidence": 0.66,
-"rationale": "Narrative review in Psychological Bulletin explicitly addressing expectancy (placebo-related) factors in fear treatment, fitting inclusion criterion for reviews of placebo/nocebo mechanisms and methodology.",
+"confidence": 0.7,
+"rationale": "Title and MeSH terms indicate the paper reviews expectancy (placebo-related) mechanisms in fear treatment, making placebo/nocebo phenomena the paper's explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -390,8 +393,7 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "classical_conditioning",
-"history_conceptual",
-"attention_cognitive_appraisal"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -400,25 +402,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed methodological and theoretical issues about expectancy factors (including placebos, suggestion, and conditioning) in psychological treatments for fear and phobias.",
+"summary": "Reviews methodological and theoretical issues concerning expectancy (placebo) factors in fear treatment and behavior therapy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"fear",
 "phobia",
 "desensitization",
-"behavior therapy",
+"behavioral therapy",
 "expectancy",
 "placebo",
-"methodology",
-"1975"
+"fear treatment",
+"knowledge of results"
 ],
 "usage": {
 "input_tokens": 451,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 804,
-"cost_usd": 0.00187
+"output_tokens": 887,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -1042,18 +1043,18 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:04:54Z",
+"classified_at": "2026-09-03T04:45:03Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names 'The placebo effect' as the topic applied to podiatry, indicating placebo phenomena are the paper's subject (include per guidance).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title indicates placebo in podiatry but available text is insufficient to confirm whether placebo/nocebo was an explicit focus or merely a control in a drug trial.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1061,10 +1062,10 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"surgical_patients"
 ],
 "age_group": [
 "adults"
@@ -1073,40 +1074,43 @@
 "pain"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"clinical_endpoint"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule"
 ]
 },
-"summary": "Discussed the placebo effect as it relates to podiatric practice.",
+"summary": "No abstract available; title suggested a 1975 randomized study of placebo effects in podiatry/postoperative foot pain but text was insufficient to confirm aims or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "podiatry",
-"foot",
-"placebo effect",
 "postoperative pain",
-"1975"
+"aspirin",
+"placebo",
+"foot",
+"1975",
+"randomized"
 ],
 "usage": {
-"input_tokens": 568,
+"input_tokens": 390,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00184
+"output_tokens": 628,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -1168,11 +1172,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:14:13Z",
+"classified_at": "2026-09-06T18:00:51Z",
 "screening": {
 "decision": "include",
 "confidence": 0.95,
-"rationale": "Animal experiment explicitly tested conditioned (placebo-elicited) hyperalgesic responses and conditioning as the mechanism of morphine tolerance, so placebo/nocebo phenomena were the study focus (mechanisms and responses).",
+"rationale": "Animal experiment explicitly tested conditioned placebo (saline) responses and conditioning mechanisms for morphine tolerance, making placebo/nocebo phenomena the study focus (mechanisms of conditioned tolerance and placebo-elicited hyperalgesia).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1214,24 +1218,24 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Found that environmental cues paired with morphine produced conditioned hyperalgesia when cues were followed by placebo, supporting a learned component to morphine tolerance in rats.",
-"key_finding": "Conditioned environmental cues elicited hyperalgesia on placebo tests and cue-only extinction reduced tolerance, implicating classical conditioning in morphine tolerance.",
+"summary": "Found that morphine tolerance in rats was mediated by conditioned compensatory responses: drug-paired cues elicited hyperalgesia when followed by placebo (saline), and repeated cue presentations without drug extinguished tolerance.",
+"key_finding": "Drug-paired environmental cues produced a conditioned hyperalgesic response (placebo/saline) contributing to apparent morphine tolerance.",
 "sample_size": null,
 "free_keywords": [
 "hot plate",
 "conditioned tolerance",
 "morphine",
-"hyperalgesia",
-"placebo-elicited",
-"conditioning",
-"rats"
+"conditioned hyperalgesia",
+"placebo injection",
+"environmental cues",
+"extinction"
 ],
 "usage": {
 "input_tokens": 620,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 750,
-"cost_usd": 0.0018
+"output_tokens": 714,
+"cost_usd": 0.00173
 }
 },
 "sources": [
@@ -1517,63 +1521,72 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0076723",
 "cited_by_count": 23,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:05:08Z",
+"classified_at": "2026-09-06T18:00:58Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly refers to 'meaning-response' (a synonym for placebo/expectancy response) as the bias under study in schizophrenia, so placebo/nocebo phenomena are the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text available; title suggests 'meaning-response' (placebo) but there is insufficient information to determine whether placebo/nocebo phenomena were the explicit object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
 "psychosis"
 ],
-"age_group": [],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
-"design": [],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"therapeutic_ritual_context"
+"other"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Investigated meaning-response (placebo-like) bias in people with schizophrenia.",
+"summary": "No abstract available; title indicates investigation of meaning-response bias in schizophrenia but methods and outcomes were not reported, preventing judgment about placebo/nocebo focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"meaning response",
 "schizophrenia",
+"meaning-response",
 "placebo",
-"expectation",
-"1975"
+"bias",
+"1975",
+"abnormal psychology"
 ],
 "usage": {
-"input_tokens": 583,
+"input_tokens": 455,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 725,
-"cost_usd": 0.00174
+"output_tokens": 729,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -1926,116 +1939,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1002/1097-4679(197504)31:2<351::aid-jclp2270310243>3.0.co;2-3",
-"title": "Effects of outcome expectancy and timing of self-monitoring on cigarette smoking.",
-"authors": [
-"Karoly P",
-"Doyle WW"
-],
-"journal": "Journal of clinical psychology",
-"journal_abbrev": "J Clin Psychol",
-"year": 1975,
-"date": "1975-04-01",
-"doi": "10.1002/1097-4679(197504)31:2<351::aid-jclp2270310243>3.0.co;2-3",
-"pmid": "1133208",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2045907652",
-"abstract": "",
-"keywords": [],
-"mesh": [
-"Attitude to Health",
-"Behavior Therapy",
-"Humans",
-"Self Concept",
-"Self-Assessment",
-"Smoking Prevention",
-"Time Factors"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1002/1097-4679(197504)31:2<351::aid-jclp2270310243>3.0.co;2-3",
-"cited_by_count": 19,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_only",
-"classified_at": "2026-09-05T20:05:20Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly studies outcome expectancy (an expectation manipulation) as it affects cigarette smoking, meeting inclusion for expectation/context effects on a health-relevant outcome.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect",
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"addiction_craving"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Tested effects of outcome expectancy and timing of self-monitoring on cigarette smoking behavior.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"smoking cessation",
-"outcome expectancy",
-"self-monitoring",
-"behavior therapy",
-"cigarette smoking",
-"1975"
-],
-"usage": {
-"input_tokens": 565,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 693,
-"cost_usd": 0.00167
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1975-04-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/0002-9343(75)90594-x",
 "title": "Patient bias, investigator bias and the double-masked procedure in clinical trials.",
 "authors": [
@@ -2076,11 +1979,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:05:22Z",
+"classified_at": "2026-09-06T18:01:04Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Title and MeSH terms indicate the paper addressed placebo-related trial methodology (bias and double-masked procedures), fitting placebo-science methodology inclusion.",
+"rationale": "Paper focused on methodological issues of masking/blinding and investigator/patient bias in trials where placebos are a central topical concern (placebo science/methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2109,7 +2012,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -2118,23 +2022,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed patient and investigator bias and double-masked (placebo) procedures in clinical trials, focusing on methodological issues in masking and trial design.",
+"summary": "Discussed patient and investigator bias and the double-masked (blinding) procedure in clinical trials and implications for placebo use and trial validity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
+"double-blind",
 "masking",
-"clinical-trial-methods",
-"measurement-bias",
-"placebo-control",
-"double-blind"
+"trial methodology",
+"bias"
 ],
 "usage": {
 "input_tokens": 442,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 465,
-"cost_usd": 0.00119
+"output_tokens": 663,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -2507,25 +2410,23 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1111/j.1744-6198.1975.tb00600.x",
 "cited_by_count": 37,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:05:51Z",
+"classified_at": "2026-09-06T18:00:58Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly links 'expectations' to 'labor and birth outcomes', indicating expectancy effects on clinical outcomes are the paper's focus (expectation→outcome), meeting the inclusion rule for expectancy/context studies.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title implies expectations and birth outcomes but available information is insufficient to determine whether placebo/nocebo phenomena were an explicit focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -2535,46 +2436,37 @@
 "adults"
 ],
 "condition_domain": [
-"other"
+"pain"
 ],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"observational"
-],
+"outcome_measures": [],
+"design": [],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
-"verbal_suggestion_only"
+"not_applicable"
 ]
 },
-"summary": "Examined associations between prenatal expectations and labor/birth outcomes in pregnant women, focusing on how expectations related to delivery experiences and results.",
+"summary": "No abstract available; title suggested the paper examined expectations and labor/birth outcomes but available information is insufficient to determine whether placebo/nocebo effects were an explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pregnancy",
 "labor",
-"childbirth",
-"expectations",
-"birth outcomes",
-"nursing",
-"parity"
+"birth",
+"expectation",
+"obstetrics",
+"pain"
 ],
 "usage": {
-"input_tokens": 582,
+"input_tokens": 454,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 736,
-"cost_usd": 0.00176
+"output_tokens": 723,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -2736,18 +2628,18 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0033-3182(75)71196-9",
 "cited_by_count": 0,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:06:03Z",
+"classified_at": "2026-09-06T18:00:58Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses nonspecific factors in psychopharmacotherapy which typically denotes placebo/expectancy and physician–patient contextual effects as the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.45,
+"rationale": "No abstract or methods are available; title and MeSH suggest the paper discussed non-specific/placebo factors in psychopharmacotherapy, but it is unclear whether it was an empirical study, review, or commentary meeting inclusion criteria.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2757,10 +2649,19 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"mood_depression",
+"anxiety_stress"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -2768,30 +2669,34 @@
 "not_applicable"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
 "provider_patient_interaction",
-"therapeutic_ritual_context"
+"therapeutic_ritual_context",
+"trial_methodology_placebo_response"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discusses nonspecific factors (placebo, physician–patient relations, contextual influences) in psychopharmacotherapy.",
+"summary": "Insufficient information in the record; likely discussed non-specific (placebo/contextual) factors influencing psychopharmacotherapy outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"nonspecific factors",
-"physician-patient relations",
 "psychopharmacotherapy",
-"placebo"
+"therapeutic alliance",
+"placebo",
+"non-specific effects",
+"physician-patient relation",
+"1975"
 ],
 "usage": {
-"input_tokens": 553,
+"input_tokens": 425,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 708,
-"cost_usd": 0.0017
+"output_tokens": 736,
+"cost_usd": 0.00173
 }
 },
 "sources": [
@@ -2843,25 +2748,23 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0022-3999(75)90023-9",
 "cited_by_count": 50,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:04:13Z",
+"classified_at": "2026-09-06T18:00:59Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates an experimental manipulation of suggestion/hypnosis to alter pain threshold and tolerance, making placebo/expectation effects the explicit focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Title indicates suggestion/hypnosis effects on pain thresholds but no abstract or full text available to confirm that placebo/nocebo phenomena were an explicit focus or to determine design/results.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -2894,23 +2797,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested whether suggestions of relaxation or analgesia altered pain threshold and tolerance in the waking and hypnotic state in adults.",
+"summary": "Title indicated an experimental study of suggestion (relaxation or analgesia) on pain threshold and tolerance in waking and hypnotic states, but no abstract was available to confirm methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
-"pain threshold",
-"pain tolerance",
 "suggestion",
 "analgesia",
-"waking state"
+"pain threshold",
+"pain tolerance",
+"relaxation",
+"electroshock"
 ],
 "usage": {
-"input_tokens": 468,
-"cache_read_input_tokens": 5888,
+"input_tokens": 212,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 745,
-"cost_usd": 0.00175
+"output_tokens": 986,
+"cost_usd": 0.00218
 }
 },
 "sources": [

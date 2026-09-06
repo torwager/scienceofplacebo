@@ -2190,70 +2190,57 @@
 "Randomized Controlled Trial",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:38:05Z",
+"classified_at": "2026-09-03T04:21:46Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly asks whether attitudes and beliefs (expectancy) about complementary medicine affect treatment outcomes, implicating placebo/expectancy effects as the study focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title and MeSH terms mention attitudes, complementary medicine and 'Placebo Effect' but it's unclear whether placebo/nocebo phenomena were an explicit focus or merely indexed.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"other_clinical"
-],
+"population": [],
 "age_group": [],
 "condition_domain": [
 "respiratory"
 ],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"expectation_level"
-],
-"intervention_type": [
-"not_applicable"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Asked whether patients' attitudes and beliefs about complementary medicine predicted treatment outcomes in a clinical trial setting.",
+"summary": "No abstract available; the paper examined whether attitudes and beliefs about complementary medicine influenced treatment outcomes, but it is unclear if placebo/nocebo effects were an explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "complementary medicine",
 "attitudes",
 "beliefs",
-"expectancy",
-"asthma"
+"asthma",
+"peak expiratory flow",
+"quality of life",
+"Lewith"
 ],
 "usage": {
-"input_tokens": 619,
+"input_tokens": 441,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 756,
-"cost_usd": 0.00181
+"output_tokens": 447,
+"cost_usd": 0.00115
 }
 },
 "sources": [
@@ -2679,11 +2666,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:48:12Z",
+"classified_at": "2026-09-06T17:55:32Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper explicitly analyzed symptom change after placebo (IV saline) and compared placebo responses between migraine with versus without aura, making placebo response the study focus.",
+"rationale": "The paper explicitly analyzed symptom change after an inert IV saline placebo and compared placebo responses between migraine with and without aura, making placebo response the study focus (rule 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2701,47 +2688,47 @@
 ],
 "condition_domain": [
 "pain",
-"nausea_gi",
-"sensory_perception"
+"nausea_gi"
 ],
 "outcome_measures": [
 "self_report"
 ],
 "design": [
-"placebo_arm_secondary_analysis"
+"placebo_arm_secondary_analysis",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"disease_severity_duration"
+"none_reported"
 ],
 "intervention_type": [
 "saline_injection_infusion"
 ]
 },
-"summary": "Compared symptom change after IV saline placebo in migraine patients and found greater reductions in pain and associated symptoms in patients without aura than in those with aura.",
-"key_finding": "Placebo (10 mL IV saline) produced significantly greater reduction of pain, nausea, photophobia and phonophobia in migraine without aura versus migraine with aura.",
+"summary": "Compared symptom intensity after an IV saline placebo in migraine patients and found greater reductions in pain and associated symptoms in patients without aura than with aura.",
+"key_finding": "Placebo (IV saline) produced significantly greater reduction in pain, nausea, photophobia and phonophobia in migraine without aura versus migraine with aura.",
 "sample_size": null,
 "free_keywords": [
 "migraine with aura",
 "migraine without aura",
-"iv saline",
+"intravenous saline",
+"placebo arm",
 "photophobia",
 "phonophobia",
 "acute migraine",
-"placebo arm"
+"analogue verbal scale"
 ],
 "usage": {
 "input_tokens": 710,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1131,
-"cost_usd": 0.00259
+"output_tokens": 898,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -3044,11 +3031,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:47:01Z",
+"classified_at": "2026-09-06T17:55:36Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly studied behaviourally conditioned immunosuppression (classical conditioning) and tested adrenergic mechanisms, matching inclusion criteria for mechanistic placebo/nocebo models.",
+"rationale": "Animal study experimentally induced behavioral (classical) conditioning of immunosuppression and tested adrenergic mechanisms, so placebo-like conditioned response mechanisms were the explicit focus (mechanisms of conditioned immunosuppression).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3079,34 +3066,34 @@
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_other_neurochemical",
-"neural_systems_circuits"
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Found that behavioural (classical) conditioning produced suppressed splenocyte proliferation and cytokine production in rats, and that this conditioned immunosuppression depended on the sympathetic noradrenergic/beta-adrenergic system.",
-"key_finding": "Conditioned suppression of splenocyte proliferation and IL-2/IFN-γ production was abolished by chemical sympathectomy (6-OHDA) and by beta-adrenoceptor blockade with propranolol, implicating noradrenaline and beta-adrenergic mechanisms.",
+"summary": "Found that behavioural (classical) conditioning with cyclosporin A produced conditioned suppression of splenocyte proliferation and cytokine production in rats, mediated by the sympathetic nervous system and beta-adrenergic mechanisms.",
+"key_finding": "Chemical sympathectomy (6‑OHDA) and beta‑adrenoceptor blockade (propranolol) abolished conditioned immunosuppression, while beta-agonists mimicked it in vitro.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporin a",
 "splenocyte proliferation",
 "interleukin-2",
-"ifn-gamma",
+"interferon-gamma",
+"6‑OHDA",
 "propranolol",
-"6-ohda",
-"noradrenaline"
+"noradrenaline",
+"rat"
 ],
 "usage": {
 "input_tokens": 752,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1183,
-"cost_usd": 0.0027
+"output_tokens": 1124,
+"cost_usd": 0.00258
 }
 },
 "sources": [
@@ -3349,20 +3336,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:38:17Z",
+"classified_at": "2026-09-03T04:21:51Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names 'Placebo surgery', indicating the paper's main subject is placebo/sham surgical procedures and related placebo phenomena (a review/discussion likely).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title and MeSH suggest the paper discusses placebo/sham surgery but content and whether it empirically studies placebo effects is unclear.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -3370,12 +3357,18 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -3383,7 +3376,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -3392,22 +3385,22 @@
 "sham_surgery"
 ]
 },
-"summary": "Reviews issues and evidence concerning placebo (sham) surgery and its implications for clinical research and practice.",
+"summary": "No abstract available; title and MeSH terms indicated the paper concerned placebo or sham surgery but the study type and data could not be determined from the record.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sham surgery",
 "placebo surgery",
-"surgical placebo",
+"sham surgery",
 "arthroscopy",
-"dental restoration"
+"dental restoration",
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 553,
+"input_tokens": 375,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 876,
-"cost_usd": 0.00204
+"output_tokens": 795,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -3588,11 +3581,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:48:32Z",
+"classified_at": "2026-09-06T17:55:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Meta-analytic review explicitly focused on placebo-controlled trials and the frequency with which approved antidepressants and anxiolytics were superior to placebo, making placebo response and trial methodology the paper's primary focus (fits inclusion rule 4/2).",
+"confidence": 0.9,
+"rationale": "Secondary analysis of placebo-controlled clinical trials explicitly examined frequency of drug superiority over placebo, making placebo/placebo-control the focus (trial-methodology/placebo-response question).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3601,12 +3594,11 @@
 "placebo_response",
 "placebo_science_other"
 ],
-"article_type": "meta_analysis",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
 "depression",
-"anxiety_disorders",
-"mixed_clinical"
+"anxiety_disorders"
 ],
 "age_group": [
 "adults"
@@ -3616,11 +3608,12 @@
 "anxiety_stress"
 ],
 "outcome_measures": [
-"clinician_rated",
-"clinical_endpoint"
+"self_report",
+"clinician_rated"
 ],
 "design": [
-"meta_analytic"
+"meta_analytic",
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "mixed_inconsistent"
@@ -3635,23 +3628,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Reviewed placebo-controlled trials of FDA-approved antidepressants and anxiolytics and found that fewer than half of treatment arms showed statistical superiority to placebo, arguing placebo controls remain necessary.",
-"key_finding": "Across 52 antidepressant trials (93 treatment arms) and 40 anxiolytic trials (75 treatment arms), 48% of treatment arms were superior to placebo.",
+"summary": "Analyzed FDA-submitted placebo-controlled trials of antidepressants and anxiolytics and found that fewer than half of treatment arms showed superiority to placebo.",
+"key_finding": "Fewer than half (48%) of tested antidepressant and anxiolytic treatment arms demonstrated superiority over placebo.",
 "sample_size": 92,
 "free_keywords": [
 "antidepressant",
 "anxiolytic",
-"FDA-approved",
-"publication_bias",
-"superiority-to-placebo",
-"non-inferiority-trials"
+"clinical trials",
+"drug approvals",
+"placebo-controlled",
+"FDA",
+"treatment superiority"
 ],
 "usage": {
 "input_tokens": 792,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 933,
-"cost_usd": 0.00221
+"output_tokens": 1104,
+"cost_usd": 0.00255
 }
 },
 "sources": [
@@ -3701,20 +3695,20 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:49:00Z",
+"classified_at": "2026-09-06T17:55:35Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Paper is a methodological/theoretical discussion of blinding and participant guessing in RCTs, making placebo science (trial methodology) its primary subject.",
+"confidence": 0.8,
+"rationale": "Paper's primary focus was on blinding, participant guesses, and trial methodology related to placebo response, fitting 'placebo science' inclusion.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -3737,31 +3731,31 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Argued that participant guesses about allocation depend on treatment effects and side-effects and examined factors affecting blind integrity and the interpretation of allocation guesses in randomized controlled trials.",
+"summary": "Discussed factors that influence participants' guesses about allocation in double-blind RCTs and the implications for blinding, placebo response, and trial validity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
+"masking",
 "allocation_guess",
-"blind integrity",
 "double-blind",
 "side-effects",
-"trial_design",
-"masking",
+"trial-validity",
+"randomized-controlled-trial",
 "medical-hypotheses"
 ],
 "usage": {
 "input_tokens": 622,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 897,
-"cost_usd": 0.0021
+"output_tokens": 756,
+"cost_usd": 0.00181
 }
 },
 "sources": [
@@ -3947,11 +3941,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:49:40Z",
+"classified_at": "2026-09-06T17:55:35Z",
 "screening": {
 "decision": "include",
-"confidence": 0.92,
-"rationale": "Prospective cohort tested whether repeated painful stimulation produced anticipatory pain and hyperalgesia (classical conditioning) and made that learning the primary focus.",
+"confidence": 0.85,
+"rationale": "Study explicitly tested whether repeated painful procedures produced learned anticipatory hyperalgesia (conditioning) in newborns, making placebo/nocebo-like learning the focus (classical conditioning/nocebo mechanisms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3978,36 +3972,37 @@
 "observational"
 ],
 "effects": [
-"significant_subjective"
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
 "prior_treatment_experience"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Found that newborns exposed to repeated heel lances showed anticipatory and greater pain responses during subsequent venipuncture compared with unexposed infants.",
-"key_finding": "Infants with repeated heel lances had higher grimacing, crying time, and VAS scores during venipuncture (e.g., median VAS 69% vs 5%; P = .002).",
+"summary": "Compared newborns exposed to repeated heel lances with unexposed newborns and found that exposed infants showed learned anticipatory hyperalgesia and greater pain behaviors during subsequent venipuncture.",
+"key_finding": "Infants exposed to repeated heel lances had significantly greater grimacing, crying time, and VAS pain scores during venipuncture compared with unexposed infants.",
 "sample_size": 42,
 "free_keywords": [
-"newborn",
 "heel lance",
 "venipuncture",
-"anticipatory pain",
+"newborn",
 "hyperalgesia",
-"conditioning"
+"anticipatory pain",
+"diabetic mothers",
+"neonatal pain"
 ],
 "usage": {
 "input_tokens": 1033,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1011,
-"cost_usd": 0.00243
+"output_tokens": 846,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -4194,11 +4189,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:50:03Z",
+"classified_at": "2026-09-06T17:55:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Animal experiment manipulated cue-drug pairing to produce conditioned locomotion and measured neural correlates, qualifying as a classical-conditioning model of placebo-like conditioned responses (mechanisms of conditioned drug effects).",
+"rationale": "Animal experiment manipulates Pavlovian cue-context pairing with cocaine to produce conditioned locomotion and investigates conditioned neural responses (classical conditioning model of conditioned drug effects), fitting inclusion of animal conditioning models of placebo-like mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4215,12 +4210,11 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"motor_function",
-"addiction_craving"
+"motor_function"
 ],
 "outcome_measures": [
 "behavioral_performance",
-"genetic_molecular"
+"other"
 ],
 "design": [
 "animal_experiment"
@@ -4233,21 +4227,21 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"not_applicable"
 ]
 },
-"summary": "Paired a discrete light or contextual cues with cocaine in rats, found conditioned locomotion for both cue types but Fos induction only with contextual cues, indicating stimulus-specific neural activation patterns.",
-"key_finding": "Conditioned locomotion occurred to both discrete and contextual cocaine-paired cues, but Fos activation in prelimbic cortex and nucleus accumbens core was present only after contextual cue pairing.",
+"summary": "Paired a discrete or contextual cue with cocaine in rats, found conditioned locomotion for both cues but Fos induction only after contextual cue pairing, indicating cue-type-dependent neural activation.",
+"key_finding": "Conditioned locomotion occurred to both discrete and contextual cocaine-predictive cues, but Fos activation in prelimbic cortex and nucleus accumbens core occurred only with contextual cues.",
 "sample_size": null,
 "free_keywords": [
 "cocaine",
 "conditioned locomotion",
-"Fos",
+"Fos immunohistochemistry",
 "prelimbic cortex",
-"nucleus accumbens",
+"nucleus accumbens core",
 "discrete cue",
 "contextual cue"
 ],
@@ -4255,8 +4249,8 @@
 "input_tokens": 632,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1080,
-"cost_usd": 0.00247
+"output_tokens": 945,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -5231,39 +5225,46 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 91,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:38:38Z",
+"classified_at": "2026-09-04T00:14:09Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Title explicitly names the nocebo phenomenon as the subject in relation to medication side effects, meeting inclusion as a paper focused on nocebo effects/responses.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided and title suggests a discussion of nocebo-related side effects, so insufficient information to determine if this is an empirical study, review, or commentary.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
+"article_type": "theory_commentary",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "adverse_events"
 ],
-"outcome_measures": [],
-"design": [],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
 "nocebo_communication_disclosure"
 ],
 "moderators": [
@@ -5273,23 +5274,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed when medication side effects can be attributed to the nocebo phenomenon, reviewing conceptual and clinical evidence.",
+"summary": "No abstract available; title indicated a discussion about when medication side effects reflect the nocebo phenomenon.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"side effects",
-"adverse effects",
 "nocebo",
+"side effects",
 "medication",
-"informed consent",
-"expectation"
+"clinical trials",
+"adverse events"
 ],
 "usage": {
-"input_tokens": 543,
-"cache_read_input_tokens": 5888,
+"input_tokens": 159,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 868,
-"cost_usd": 0.00202
+"output_tokens": 721,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -6893,11 +6893,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:52:24Z",
+"classified_at": "2026-09-06T17:55:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Empirical study explicitly tested placebo/blinding validity (placebo science) by examining subjects' ability to guess fish-oil versus olive-oil capsules, so placebo methodology was the primary focus.",
+"confidence": 0.8,
+"rationale": "Paper's primary aim was to evaluate blinding validity and how expectations affect guessing, which is a placebo-science methodological question.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6917,7 +6917,8 @@
 "sensory_perception"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"other"
 ],
 "design": [
 "parallel_groups_rct"
@@ -6928,33 +6929,33 @@
 "mechanisms": [
 "trial_methodology_placebo_response",
 "treatment_cues_dose_route",
-"attention_cognitive_appraisal"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "expectation_level"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"inert_pill_capsule",
+"placebo_food_drink"
 ]
 },
-"summary": "Tested whether healthy volunteers could guess assignment to fish-oil versus olive-oil capsules to evaluate double-blind integrity; found no significant difference in correct guesses between groups.",
-"key_finding": "Despite different aftertaste, correct-guess rates did not differ significantly between fish oil and olive oil groups, suggesting blinding adequacy with ambiguous consent wording.",
+"summary": "Tested whether healthy adults could guess fish-oil versus olive-oil capsules under ambiguous consent; found no significant difference in correct guesses despite marked taste differences.",
+"key_finding": "No significant difference in correct guesses between fish-oil and olive-oil groups, suggesting expectations could further support blinding.",
 "sample_size": null,
 "free_keywords": [
 "fish oil",
 "olive oil",
 "blinding integrity",
 "aftertaste",
-"double-blind",
 "taste",
-"placebo control"
+"pilot study"
 ],
 "usage": {
 "input_tokens": 626,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 648,
-"cost_usd": 0.0016
+"output_tokens": 843,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -7683,11 +7684,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:51:12Z",
+"classified_at": "2026-09-06T17:55:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Experimental manipulation of verbal suggestion (danger warning vs neutral) produced symptom reports, so the paper studied nocebo-type suggestion effects (experimental isolation of context/expectation).",
+"confidence": 0.9,
+"rationale": "Between-group experimental manipulation of verbal suggestion versus neutral instruction produced symptom reports, making nocebo-like effects the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7707,6 +7708,7 @@
 "adverse_events"
 ],
 "outcome_measures": [
+"self_report",
 "self_report"
 ],
 "design": [
@@ -7716,34 +7718,36 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"nocebo_communication_disclosure"
 ],
 "moderators": [
 "personality_traits",
-"expectation_level"
+"prior_experience"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that a confederate's danger suggestion increased students' self-reported illness symptoms, moderated by perceived danger and low hardiness.",
-"key_finding": "Participants who perceived danger and scored low on hardiness were more likely to report illness; willingness to sue was predicted by perceived danger and anger reactivity.",
+"summary": "Found that experimental verbal suggestions about danger in an abandoned room increased self-reported illness symptoms, moderated by perceived danger and low hardiness.",
+"key_finding": "Perceived danger and low hardiness significantly predicted symptom reports; willingness to sue was predicted by perceived danger and anger reactivity.",
 "sample_size": 92,
 "free_keywords": [
 "suggestion",
 "hardiness",
-"anger_reactivity",
+"anger reactivity",
+"symptom reporting",
 "confederate",
-"abandoned_basement",
-"symptom_reporting",
-"lawsuit_intent"
+"legal action",
+"abandoned theater",
+"student sample"
 ],
 "usage": {
 "input_tokens": 765,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 751,
-"cost_usd": 0.00184
+"output_tokens": 809,
+"cost_usd": 0.00196
 }
 },
 "sources": [
@@ -9276,133 +9280,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/s0278-5846(01)00214-7",
-"title": "Lisuride, a dopamine D2 receptor agonist, and anticraving drug expectancy as modifiers of relapse in alcohol dependence.",
-"authors": [
-"Schmidt LG",
-"Kuhn S",
-"Smolka M",
-"Schmidt K",
-"Rommelspacher H"
-],
-"journal": "Progress in neuro-psychopharmacology & biological psychiatry",
-"journal_abbrev": "Prog Neuropsychopharmacol Biol Psychiatry",
-"year": 2002,
-"date": "2002-02-01",
-"doi": "10.1016/s0278-5846(01)00214-7",
-"pmid": "11817496",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2043187808",
-"abstract": "Due to a central role of dopamine in mediating ethanol intake and dependence, the authors tested lisuride, a dopamine D2 receptor agonist, for relapse prevention in alcoholics. Psychological and neuroendocrine determinants of outcome were also assessed within the study. This double-blind, placebo-controlled randomized study comprised 120 alcoholics who were subjected to an intend-to-treat analysis (ITT). After hospital detoxification, patients received an outpatient rehabilitation program and either the study medication or placebo for 6 months and follow-up for another 6 months without medication. Pharmacological and psychological effects on relapse and times to first drink were assessed using survival analysis and multivariate analysis of variance (ANOVA). Neuroendocrine assessments were made using growth hormone (GH) response to stimulation with dopamine D2 receptor agonist apomorphine. In contrast to our hypothesis, the pharmacological effects of lisuride shortened (effect size: 0.51) and the expectation of receiving the drug (while being on medication) prolonged the latency of relapse (effect size: 0.47) in weaned alcoholics. Lisuride was associated with side effects like dizziness and hypotension. Dopaminergic responsivity to apomorphine stimulation was reduced under lisuride. This study supports the view that alcoholics may relapse due to decreased dopamine function, resulting from intake of dopamine D2 receptor agonists. In particular, our data do not support the use of lisuride for relapse prevention in alcoholics. The favorable impact of anticraving drug expectancy on outcome was unrelated to this effect.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Alcoholism",
-"Behavior, Addictive",
-"Chi-Square Distribution",
-"Double-Blind Method",
-"Female",
-"Follow-Up Studies",
-"Humans",
-"Lisuride",
-"Male",
-"Middle Aged",
-"Prospective Studies",
-"Receptors, Dopamine D2",
-"Secondary Prevention",
-"Survival Analysis"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/s0278-5846(01)00214-7",
-"cited_by_count": 37,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:55:42Z",
-"screening": {
-"decision": "include",
-"confidence": 0.65,
-"rationale": "Although a drug efficacy RCT, the paper explicitly tested anticraving drug expectancy as a modifier of relapse, making placebo/expectation phenomena an analytic focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect",
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"substance_use"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"addiction_craving",
-"adverse_events"
-],
-"outcome_measures": [
-"clinical_endpoint",
-"self_report",
-"neuroendocrine"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"neurobiology_dopamine",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"expectation_level"
-],
-"intervention_type": [
-"active_drug_context_manipulation"
-]
-},
-"summary": "Randomized, double-blind trial of lisuride versus placebo in 120 detoxified alcoholics found lisuride shortened time to relapse while the expectation of receiving an anticraving drug prolonged relapse latency; neuroendocrine dopamine responsivity was assessed.",
-"key_finding": "Pharmacological lisuride use shortened time to relapse (effect size 0.51), whereas anticraving drug expectancy while on medication prolonged relapse latency (effect size 0.47).",
-"sample_size": 120,
-"free_keywords": [
-"lisuride",
-"apomorphine",
-"dopamine d2",
-"relapse",
-"anticraving expectancy",
-"growth hormone"
-],
-"usage": {
-"input_tokens": 830,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1170,
-"cost_usd": 0.00269
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2002-02-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/s0094-0143(02)00039-3",
 "title": "The placebo effect and randomized trials: analysis of alternative medicine.",
 "authors": [
@@ -9664,20 +9541,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:39:04Z",
+"classified_at": "2026-09-03T04:22:50Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly frames yoga benefits as potentially placebo versus specific treatment, indicating placebo effects/expectations are the paper's subject per inclusion rule 4/5.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text was provided and the title suggests a discussion of placebo versus specific effects but does not reveal whether the paper reported empirical placebo/nocebo-focused research.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -9689,38 +9566,29 @@
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"design": [],
+"effects": [],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"clinical_use_ethics_attitudes"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses whether yoga's benefits reflect specific therapeutic mechanisms or placebo/contextual and expectancy effects.",
+"summary": "No abstract available; the title questioned whether yoga's benefits reflect specific treatment effects or placebo/context effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "yoga",
-"mind-body",
 "placebo",
-"expectation"
+"psychiatry",
+"complementary_medicine"
 ],
 "usage": {
-"input_tokens": 537,
+"input_tokens": 359,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 543,
-"cost_usd": 0.00137
+"output_tokens": 558,
+"cost_usd": 0.00135
 }
 },
 "sources": [
@@ -11241,11 +11109,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:51:24Z",
+"classified_at": "2026-09-06T17:55:41Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Single-arm evaluation of a simulated (suggestion-based) X-ray treatment in children assessing remission of warts, so the placebo/sham response was the study's focus (single-group pre-post placebo response).",
+"rationale": "Single-group evaluation of a simulated (inert) X‑ray suggestion therapy with measured clinical remission of warts, so the placebo response (improvement on an inert treatment) was the study object.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11266,8 +11134,8 @@
 "adverse_events"
 ],
 "outcome_measures": [
-"clinical_endpoint",
-"clinician_rated"
+"clinician_rated",
+"clinical_endpoint"
 ],
 "design": [
 "single_group_pre_post"
@@ -11284,25 +11152,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"sham_psychological"
+"sham_device"
 ]
 },
-"summary": "Treated nine children with a simulated X-ray suggestion therapy for verrucae; five had complete remission, three partial, one no response.",
-"key_finding": "Five of nine children had complete remission and three had partial remission after an average of three simulated X-ray sessions.",
+"summary": "Treated nine children with a simulated X‑ray suggestion therapy for warts and found 5 complete remissions, 3 partial remissions, and 1 nonresponder after an average of 3 sessions.",
+"key_finding": "Five of nine children had complete remission, three partial remission, and one no response.",
 "sample_size": 9,
 "free_keywords": [
-"verruca",
+"verruca vulgaris",
 "wart",
-"simulated x-ray",
+"children",
 "suggestion therapy",
-"pediatrics"
+"simulated x-ray"
 ],
 "usage": {
-"input_tokens": 616,
-"cache_read_input_tokens": 5888,
+"input_tokens": 360,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 849,
-"cost_usd": 0.002
+"output_tokens": 801,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -11734,11 +11602,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:52:40Z",
+"classified_at": "2026-09-06T17:55:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Animal classical-conditioning experiment manipulated cue-outcome contingencies to produce conditioned excitation and inhibition, which tests mechanisms relevant to conditioned (placebo-like) responses.",
+"confidence": 0.8,
+"rationale": "Animal experiment manipulated cue-outcome associations (classical conditioning) to produce conditioned excitation and inhibition, a mechanism relevant to placebo/nocebo learning models and conditioned physiological responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11748,18 +11616,20 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
-"sensory_perception",
-"immune_inflammation"
+"sensory_perception"
 ],
 "outcome_measures": [
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
@@ -11774,15 +11644,14 @@
 "other"
 ]
 },
-"summary": "Conditioned flavor trials in rats produced conditioned excitation and conditioned inhibition of cyclophosphamide-induced taste aversion, suggesting conditioned cues could modify immune-related responses.",
+"summary": "Demonstrated in rats that one flavor paired with cyclophosphamide produced conditioned excitation and another flavor produced conditioned inhibition of taste aversion, suggesting conditioned cues could modulate drug-related and immune responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"saccharin",
-"vanilla",
-"taste_aversion",
 "cyclophosphamide",
-"conditioned_inhibition",
+"taste aversion",
+"saccharin",
+"conditioned inhibition",
 "rats",
 "psychoneuroimmunology"
 ],
@@ -11790,8 +11659,8 @@
 "input_tokens": 588,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1195,
-"cost_usd": 0.00268
+"output_tokens": 1054,
+"cost_usd": 0.0024
 }
 },
 "sources": [
@@ -12170,18 +12039,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:50:38Z",
+"classified_at": "2026-09-06T17:55:43Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental manipulation of hypnotic suggestions (increase vs decrease pain) tested effects on self-report and EEG, so placebo/nocebo-like expectation/context mechanisms were the study focus.",
+"rationale": "Within-subject experimental manipulation of hypnotic suggestions to increase or decrease pain was the study's focus, testing effects on self-report and EEG indicators.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -12207,33 +12075,34 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"personality_traits",
-"expectation_level"
+"personality_traits"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested how hypnotic suggestions to increase or decrease pain altered self-reported pain and high-density EEG in high- and low-susceptible adults, finding suggestion-related changes in report and late evoked potentials.",
-"key_finding": "Hypnotic suggestions produced differential pain reports and modulated later components of evoked potentials, especially in highly susceptible individuals.",
+"summary": "Tested effects of hypnotic suggestions to increase or decrease pain in high- and low-susceptible adults and found suggestion-modulated self-reported pain and late EEG evoked-potential components.",
+"key_finding": "Hypnotic suggestions produced differential self-reported pain and modulated later ERP components, especially in highly susceptible individuals.",
 "sample_size": 12,
 "free_keywords": [
-"129-channel EEG",
-"evoked potentials",
-"hypnotic induction",
-"hyperalgesia",
+"hypnosis",
 "hypoalgesia",
-"hypnotic susceptibility"
+"hyperalgesia",
+"event-related potential",
+"129-channel EEG",
+"hypnotic susceptibility",
+"late ERP components"
 ],
 "usage": {
 "input_tokens": 668,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 921,
-"cost_usd": 0.00216
+"output_tokens": 860,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -12278,24 +12147,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0074-7742(02)52015-8",
 "cited_by_count": 18,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:46:15Z",
+"classified_at": "2026-09-06T17:55:50Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Narrative review explicitly focused on behavioral (classical) conditioning of immune function, a mechanism relevant to placebo-like conditioned responses (meets inclusion criterion 4/3).",
+"confidence": 0.8,
+"rationale": "Title and MeSH terms indicate the review explicitly addresses classical conditioning of immune responses, a mechanism of placebo-like conditioned biological responses (review of placebo-relevant phenomenon).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
@@ -12319,8 +12188,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_other_neurochemical"
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
@@ -12329,22 +12197,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews evidence that behavioral (classical/Pavlovian) conditioning can modulate immune function in animals and humans, producing conditioned immunosuppression and immunomodulation.",
+"summary": "Reviews behavioral (Pavlovian) conditioning of the immune system across humans and animals, discussing mechanisms, findings, and implications for conditioned immunosuppression.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "Pavlovian conditioning",
 "cytokines",
-"immunomodulation",
-"behavioral immunology"
+"lymphocyte function",
+"taste conditioned",
+"learned immunomodulation"
 ],
 "usage": {
 "input_tokens": 424,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 922,
-"cost_usd": 0.0021
+"output_tokens": 1055,
+"cost_usd": 0.00236
 }
 },
 "sources": [

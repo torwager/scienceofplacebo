@@ -408,11 +408,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:51:11Z",
+"classified_at": "2026-09-06T17:57:42Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal Pavlovian conditioning study that tested CS-elicited physiological responses in placebo (drug-absent) tests, directly studying conditioned (placebo-like) responses.",
+"confidence": 0.95,
+"rationale": "Nonhuman animal Pavlovian conditioning manipulated CS duration to elicit conditioned physiological responses to morphine, directly studying conditioning mechanisms of drug-related (placebo-like) responses (mechanisms of placebo/nocebo).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -425,19 +425,16 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
-"cardiovascular_bp",
 "other"
 ],
 "outcome_measures": [
-"autonomic",
-"other"
+"autonomic"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
@@ -447,29 +444,30 @@
 "neurobiology_opioid"
 ],
 "moderators": [
-"treatment_characteristics"
+"none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Conducted Pavlovian conditioning in rats pairing a light-noise CS with morphine and found the CS alone elicited conditioned increases in heart rate and body temperature, with stronger responses for longer CS durations.",
-"key_finding": "Conditioned (placebo-like) tachycardia and hyperthermia were elicited by the CS in drug-absent tests, and conditioning strength increased with CS duration.",
+"summary": "Conditioned stimuli previously paired with morphine elicited increases in heart rate and body temperature in rats, with stronger conditioning for longer CS durations.",
+"key_finding": "Found CS-elicited conditioned tachycardia and hyperthermia in rats, with conditioning strength increasing with CS duration.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned hyperthermia",
 "conditioned tachycardia",
-"cs duration",
-"rats",
-"pavlovian conditioning"
+"rat",
+"CS duration",
+"classical conditioning",
+"opioid"
 ],
 "usage": {
 "input_tokens": 683,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 970,
-"cost_usd": 0.00226
+"output_tokens": 1084,
+"cost_usd": 0.00249
 }
 },
 "sources": [
@@ -643,11 +641,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:50:05Z",
+"classified_at": "2026-09-06T17:57:40Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment that explicitly tested classical conditioning of antibody production (conditioned immune response), which matches inclusion rule for mechanism studies in nonhuman animals.",
+"rationale": "Classical conditioning in mice produced a conditioned enhancement of antibody production after CS reexposure paired with a minimally immunogenic antigen dose, making conditioned immune responses the paper's explicit focus (animal experiment manipulating cue-outcome associations).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -677,6 +675,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
+"neural_systems_circuits",
 "neurobiology_other_neurochemical"
 ],
 "moderators": [
@@ -686,24 +685,24 @@
 "other"
 ]
 },
-"summary": "Found that mice showed a classically conditioned enhancement of anti-KLH antibody titers when a gustatory CS was paired with antigen and later reexposed with a minimally immunogenic antigen dose.",
-"key_finding": "Conditioned mice exhibited increased anti-KLH antibody titers upon reexposure to the gustatory CS plus minimal antigen.",
+"summary": "Found that gustatory conditioned cues paired with KLH immunization produced a classically conditioned enhancement of anti-KLH antibody titers in BALB/c mice.",
+"key_finding": "Conditioned mice showed increased anti-KLH antibody titers upon CS reexposure with a minimally immunogenic antigen, indicating a learned enhancement of immune response.",
 "sample_size": null,
 "free_keywords": [
 "keyhole limpet hemocyanin",
 "KLH",
-"conditioned immunostimulation",
 "classical conditioning",
+"conditioned immunomodulation",
 "BALB/c",
-"gustatory conditioned stimulus",
+"gustatory cue",
 "antibody titers"
 ],
 "usage": {
 "input_tokens": 576,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1220,
-"cost_usd": 0.00273
+"output_tokens": 941,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -1117,11 +1116,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:38:51Z",
+"classified_at": "2026-09-06T17:57:43Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Used a balanced-placebo design manipulating alcohol expectancies (treated as an active-drug context manipulation), so placebo/expectation effects were an explicit experimental focus.",
+"confidence": 0.9,
+"rationale": "Used a balanced placebo design manipulating alcohol expectancy (told/received) to test causal effects of expectancy on disinhibited racial judgments, meeting the criterion for expectancy manipulations of an active drug (placebo effect)",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1138,8 +1137,7 @@
 "adults"
 ],
 "condition_domain": [
-"anxiety_stress",
-"cognition"
+"other"
 ],
 "outcome_measures": [
 "self_report"
@@ -1152,8 +1150,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"prior_treatment_experience"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "personality_traits"
@@ -1162,23 +1159,23 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design (N=82) to test alcohol expectancy and dosing on ratings of a videotaped ambiguous aggressive act and mood; expecting alcohol increased seriousness ratings and alcohol interacted with racism group to affect tension.",
-"key_finding": "Expecting alcohol (placebo expectancy) led to higher aggression seriousness ratings and, with received alcohol, increased tension among high-racism subjects.",
+"summary": "Randomized balanced-placebo study in 82 white male undergraduates tested alcohol expectancy effects on ratings of a racially ambiguous shove and mood, finding expectancy and prejudice-group effects on aggression ratings and mood.",
+"key_finding": "Expecting alcohol increased ratings of aggression and high-racism participants who received alcohol reported greater tension; main effects of racism group and alcohol dosing on aggression ratings were significant.",
 "sample_size": 82,
 "free_keywords": [
+"modern racism scale",
 "balanced placebo",
 "alcohol expectancy",
-"modern racism scale",
 "disinhibition",
-"mood tension",
-"social perception"
+"racial prejudice",
+"young adult males"
 ],
 "usage": {
 "input_tokens": 698,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 913,
-"cost_usd": 0.00215
+"output_tokens": 891,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -1716,19 +1713,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:49:42Z",
+"classified_at": "2026-09-06T17:57:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Study experimentally paired insulin (US) with a conditioned stimulus and tested the conditioned blood-glucose response to a placebo injection/CS, so placebo-like conditioned physiological responses were the explicit focus.",
+"confidence": 0.9,
+"rationale": "Human experimental study that used classical conditioning with insulin (US) and a placebo injection (test) to elicit conditioned blood-glucose changes, making placebo/conditioned response the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response",
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1742,45 +1737,44 @@
 "endocrine_hormonal"
 ],
 "outcome_measures": [
-"neuroendocrine",
-"clinical_endpoint"
+"clinical_endpoint",
+"neuroendocrine"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
 "treatment_cues_dose_route"
 ],
 "moderators": [
-"prior_experience"
+"treatment_characteristics"
 ],
 "intervention_type": [
-"saline_injection_infusion",
-"other"
+"saline_injection_infusion"
 ]
 },
-"summary": "Conditioned pairing of insulin with a stimulus produced reproducible decreases in blood glucose, and the CS evoked glucose changes on a subsequent placebo injection in about half of participants.",
-"key_finding": "About half of subjects showed >10 mg/dL conditioned changes in blood glucose to the CS/placebo; conditioning occurred more often when an explicit CS compound accompanied insulin.",
+"summary": "Conditioned decreases in blood glucose were elicited in some healthy male volunteers after repeated insulin administrations paired with a stimulus, and a placebo injection with the stimulus produced glucose changes in about half the subjects.",
+"key_finding": "About half of participants showed >10 mg/dL conditioned change in blood glucose on the placebo test; conditioning was more frequent when an explicit CS compound accompanied injections.",
 "sample_size": 30,
 "free_keywords": [
 "insulin",
 "conditioned hypoglycemia",
-"conditioned response",
 "classical conditioning",
-"smell cue",
 "placebo injection",
-"psychophysiology"
+"smell conditioned stimulus",
+"blood glucose",
+"male volunteers"
 ],
 "usage": {
-"input_tokens": 752,
-"cache_read_input_tokens": 5888,
+"input_tokens": 496,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1028,
-"cost_usd": 0.00239
+"output_tokens": 1078,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -2264,17 +2258,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:52:06Z",
+"classified_at": "2026-09-06T17:57:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Included because an animal conditioning contrast (paired vs unpaired vs control) tested conditioned tolerance, a learning mechanism relevant to placebo/nocebo (inclusion rule 3).",
+"rationale": "Animal experiment manipulated contextual pairing (conditioned vs unpaired vs control) to test conditioned tolerance to opioid analgesia, directly addressing associative mechanisms relevant to placebo/nocebo research (classical conditioning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2298,7 +2292,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"genetics_placebome"
+"neurobiology_opioid"
 ],
 "moderators": [
 "genetics"
@@ -2307,25 +2301,23 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Tested conditioned tolerance to the opioid etonitazene in three inbred mouse strains and found that only the context-paired group developed tolerance to analgesia.",
-"key_finding": "Paired (context-associated) etonitazene administration produced conditioned tolerance (reduced hot-plate analgesia) in all strains, with no genotype x condition interaction.",
+"summary": "Tested conditioned tolerance to the opioid etonitazene in three inbred mouse strains and found that only animals with drug–context pairing developed tolerance, with no genotype effects on conditioned tolerance.",
+"key_finding": "Found significant conditioned tolerance to etonitazene in paired groups across strains; genotype did not modify conditioned tolerance.",
 "sample_size": null,
 "free_keywords": [
 "etonitazene",
-"hot-plate",
-"opioid",
 "conditioned tolerance",
-"C57BL",
-"associative learning",
+"hot-plate",
 "mice",
-"analgesia"
+"opioid tolerance",
+"associative learning"
 ],
 "usage": {
 "input_tokens": 818,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1333,
-"cost_usd": 0.00302
+"output_tokens": 1253,
+"cost_usd": 0.00286
 }
 },
 "sources": [
@@ -3787,24 +3779,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.3109/00207459309000607",
 "cited_by_count": 11,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:48:17Z",
+"classified_at": "2026-09-06T17:58:06Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Narrative review focused on classical conditioning of immune function (conditioned immunomodulation), which is a mechanism of placebo/nocebo effects and therefore meets inclusion as a review of placebo-related phenomena.",
+"confidence": 0.7,
+"rationale": "Review explicitly on conditioned immunomodulation (classical conditioning of immune responses), which addresses mechanisms of placebo-like responses and thus fits inclusion as a placebo/neuroimmune mechanism review.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
@@ -3827,8 +3819,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neurobiology_other_neurochemical"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -3837,23 +3828,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews developments in classical conditioning of immune responses (conditioned immunomodulation) across animal and human studies.",
+"summary": "Reviews conditioned immunomodulation (classical conditioning of immune responses) and recent developments in animal and human studies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "classical conditioning",
 "cyclophosphamide",
-"immune modulation",
-"taste-conditioning",
-"learned immunosuppression"
+"immune conditioning",
+"learned immunomodulation",
+"psychoimmune"
 ],
 "usage": {
 "input_tokens": 455,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 979,
-"cost_usd": 0.00222
+"output_tokens": 880,
+"cost_usd": 0.00202
 }
 },
 "sources": [
@@ -3896,11 +3887,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:46:15Z",
+"classified_at": "2026-09-06T17:57:48Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment manipulated Pavlovian context (CS-UCS interval, extinction) to study conditioned place preference and analgesic tolerance, addressing classical-conditioning mechanisms relevant to placebo-like contextual effects.",
+"rationale": "Non-human animal experiment that manipulated cue/context (CS–UCS interval and extinction) to study conditioned place preference and conditioned analgesic tolerance, meeting the animal-model/classical-conditioning inclusion criterion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3913,7 +3904,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain",
 "other"
@@ -3928,34 +3921,35 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"prior_treatment_experience"
 ],
 "moderators": [
-"prior_experience",
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"other"
 ]
 },
-"summary": "Demonstrated in rats that morphine produced conditioned place preference when given before context exposure and that extinction eliminated the preference, while analgesic tolerance developed across groups regardless of CS-UCS interval.",
-"key_finding": "Morphine produced place preference when administered prior to context exposure but not when given after placement; all morphine-conditioned groups showed equal analgesic tolerance on hot-plate testing.",
+"summary": "Studied how CS–UCS interval and extinction affected morphine-induced conditioned place preference and analgesic tolerance in rats, finding timing affected place preference while tolerance developed regardless of timing.",
+"key_finding": "Found that morphine produced place preference only when drug preceded or was concurrent with context exposure, but analgesic tolerance occurred across groups irrespective of CS–UCS timing, indicating dissociation between associative place conditioning and tolerance.",
 "sample_size": null,
 "free_keywords": [
-"morphine",
 "conditioned place preference",
-"hot-plate",
+"morphine",
 "analgesic tolerance",
 "CS-UCS interval",
-"classical conditioning",
-"rat"
+"extinction",
+"hot-plate",
+"rat",
+"associative learning"
 ],
 "usage": {
-"input_tokens": 744,
-"cache_read_input_tokens": 5888,
+"input_tokens": 488,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1404,
-"cost_usd": 0.00314
+"output_tokens": 1283,
+"cost_usd": 0.00284
 }
 },
 "sources": [
@@ -4723,11 +4717,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:55:21Z",
+"classified_at": "2026-09-06T17:57:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Nonhuman animal experiments explicitly studied conditioned hypoalgesia (context/cue-induced analgesia) and pharmacological moderators, meeting inclusion rule for mechanism-focused placebo-relevant conditioning studies.",
+"confidence": 0.88,
+"rationale": "Animal experiment manipulated prior exposure (conditioning) and pharmacological blockade to study conditioned hypoalgesia, addressing mechanisms of conditioned (placebo-like) analgesia.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4750,44 +4744,41 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid",
-"treatment_cues_dose_route",
-"emotion_anxiety_regulation"
+"neurobiology_opioid"
 ],
 "moderators": [
 "pharmacological_manipulation",
-"prior_experience",
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Examined conditioned hypoalgesia in rats exposed to a hot-plate and tested how low and high doses of midazolam (and naloxone) modulated conditioned and novelty-induced analgesia.",
-"key_finding": "Low-dose midazolam attenuated conditioned hypoalgesia, while high-dose midazolam enhanced novelty- and conditioned-induced hypoalgesia, with naloxone reversing some effects.",
+"summary": "Found that prior exposure to a heated floor produced conditioned hypoalgesia in rats, low-dose midazolam attenuated conditioned hypoalgesia, and high-dose midazolam augmented hypoalgesia with mixed naloxone sensitivity.",
+"key_finding": "Low midazolam (0.63–1.25 mg/kg) reduced conditioned hypoalgesia; high midazolam (2.5 mg/kg) increased hypoalgesia, partly naloxone-insensitive.",
 "sample_size": null,
 "free_keywords": [
+"hot-plate",
 "midazolam",
 "naloxone",
-"hot-plate",
 "conditioned hypoalgesia",
-"wistar rats",
-"fear conditioning"
+"fear conditioning",
+"rats",
+"paw-lick latency"
 ],
 "usage": {
 "input_tokens": 750,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1067,
-"cost_usd": 0.00247
+"output_tokens": 1379,
+"cost_usd": 0.00309
 }
 },
 "sources": [

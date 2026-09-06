@@ -275,11 +275,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:19:16Z",
+"classified_at": "2026-09-06T17:54:56Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Title indicates the paper's primary focus is the ethics of sham procedures/placebos in clinical trials, making placebo science the main subject (placebo_science_other).",
+"rationale": "Title indicates the paper's primary focus is the ethics of sham/placebo procedures in clinical trials, a topic within placebo science (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -292,9 +292,7 @@
 "population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -302,31 +300,36 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"sham_surgery",
+"sham_acupuncture",
+"other"
 ]
 },
-"summary": "Discusses ethical issues surrounding the use of sham procedures and placebos in clinical trials.",
+"summary": "Discussed ethical issues surrounding the use of sham procedures in clinical trials and their implications for research practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sham surgery",
-"research ethics",
 "informed consent",
+"deception",
+"research ethics",
 "clinical trials",
-"placebo control"
+"acupuncture",
+"placebo"
 ],
 "usage": {
 "input_tokens": 446,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 620,
-"cost_usd": 0.0015
+"output_tokens": 780,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -1244,11 +1247,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:21:19Z",
+"classified_at": "2026-09-06T17:55:05Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Nonhuman animal experiment that used a Pavlovian (classical) conditioning paradigm to elicit and measure a conditioned antibody response and neural activation, making conditioned placebo-like responses the primary focus (mechanisms of conditioned immunomodulation).",
+"confidence": 0.85,
+"rationale": "Animal experiment used Pavlovian (classical) conditioning to causally manipulate context/cue and produced conditioned antibody and neural responses, meeting inclusion criterion for conditioned placebo/nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1261,19 +1264,17 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
 "immune_inflammatory",
+"genetic_molecular",
 "other"
 ],
 "design": [
-"animal_experiment",
-"parallel_groups_rct"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
@@ -1286,27 +1287,27 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Found that single-trial saccharin–ovalbumin conditioning in rats enhanced anti-ovalbumin antibody production and increased c-Fos expression in the insular cortex on re‑exposure to the conditioned stimulus.",
-"key_finding": "Conditioned rats showed significantly higher anti-ovalbumin antibody levels at days 15, 20 and 25 after CS re-exposure and increased c-Fos immunoreactivity in insular cortex.",
+"summary": "Found that a single-trial saccharin–ovalbumin pairing produced a conditioned enhancement of anti-ovalbumin antibody production and increased c-Fos expression in the insular cortex of rats.",
+"key_finding": "Conditioned rats showed significantly greater anti-ovalbumin antibody titers at days 15, 20 and 25 after CS re-exposure and increased c-Fos immunoreactivity in insular cortex subregions.",
 "sample_size": null,
 "free_keywords": [
 "ovalbumin",
 "saccharin",
-"conditioned immunomodulation",
 "c-fos",
 "insular cortex",
-"single-trial conditioning",
+"conditioned immunomodulation",
+"Pavlovian conditioning",
 "Wistar rats"
 ],
 "usage": {
 "input_tokens": 750,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1161,
-"cost_usd": 0.00266
+"output_tokens": 1248,
+"cost_usd": 0.00283
 }
 },
 "sources": [
@@ -1368,11 +1369,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:19:53Z",
+"classified_at": "2026-09-06T17:55:01Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Survey of anesthetists' use, knowledge and attitudes toward suggestion/hypnosis addresses placebo-related clinical use and attitudes, fitting 'placebo_science_other' inclusion.",
+"confidence": 0.9,
+"rationale": "Surveyed anaesthetists about their use, knowledge and attitudes toward suggestion/hypnosis, making placebo-related practice and attitudes the primary focus (placebo science/clinical use topic).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1393,10 +1394,7 @@
 "anxiety_stress"
 ],
 "outcome_measures": [
-"self_report",
-"healthcare_utilization",
-"other",
-"not_applicable"
+"self_report"
 ],
 "design": [
 "survey_interview"
@@ -1406,35 +1404,31 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context",
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "prior_experience"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"not_applicable"
 ]
 },
-"summary": "Surveyed 317 South Australian anaesthetists (218 respondents) about their use, knowledge and attitudes toward positive suggestion, hypnosis and hypnotherapy in anaesthesia and reported that nearly half supported its clinical role, particularly for pain and anxiety.",
-"key_finding": "Found that 48% indicated a role for hypnotherapy in clinical anaesthesia and those with prior experience were more likely to support hypnosis teaching.",
+"summary": "Surveyed 218 South Australian anaesthetists about their knowledge, use and attitudes toward suggestion, hypnosis and hypnotherapy, and found substantial support but generally low self-rated knowledge.",
+"key_finding": "48% indicated a role for hypnotherapy in clinical anaesthesia; clinicians with prior hypnotherapy experience were more likely to support hypnosis teaching.",
 "sample_size": 218,
 "free_keywords": [
 "hypnosis",
 "hypnotherapy",
-"positive suggestion",
 "anaesthetists",
-"ANZCA",
-"clinical hypnosis",
-"pain",
-"anxiety"
+"positive suggestion",
+"south australia"
 ],
 "usage": {
 "input_tokens": 712,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1033,
-"cost_usd": 0.00239
+"output_tokens": 749,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -2421,18 +2415,18 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:41:31Z",
+"classified_at": "2026-09-03T04:18:51Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly addresses placebos in the treatment of pain, indicating placebo phenomena are the paper's subject (review/discussion).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract available and publication types list case reports; title and MeSH terms suggest discussion of placebo use/ethics in pain rather than an experimental placebo/nocebo study, but insufficient information to be sure.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2440,11 +2434,10 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "case_report",
 "species": "human",
 "population": [
-"chronic_pain",
-"other_clinical"
+"chronic_pain"
 ],
 "age_group": [
 "adults"
@@ -2462,7 +2455,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -2471,22 +2464,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews the role and use of placebos in the treatment of pain.",
+"summary": "No abstract; appears to discuss the use of placebos in treating pain, likely addressing clinical practice, informed consent, and disclosure based on MeSH and title.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo analgesia",
 "low back pain",
 "intractable pain",
-"placebo prescribing",
-"clinical use"
+"informed consent",
+"physician practice",
+"truth disclosure"
 ],
 "usage": {
-"input_tokens": 579,
+"input_tokens": 401,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 684,
-"cost_usd": 0.00166
+"output_tokens": 837,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -2684,19 +2677,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:20:08Z",
+"classified_at": "2026-09-06T17:55:03Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of verbal suggestion (inert inhaler described as bronchoconstrictor vs bronchodilator) made placebo/nocebo responses the explicit focus, testing symptom and physiological outcomes.",
+"confidence": 0.95,
+"rationale": "Within-subject experimental manipulation of suggestion (told-bronchoconstrictor vs. bronchodilator vs. inert) examined placebo/nocebo effects on subjective and objective asthma outcomes, with focus on moderators (negative affectivity).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_response",
-"nocebo_response"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -2712,8 +2703,7 @@
 "outcome_measures": [
 "self_report",
 "clinical_endpoint",
-"autonomic",
-"behavioral_performance"
+"autonomic"
 ],
 "design": [
 "within_subject_experimental"
@@ -2724,35 +2714,36 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"emotion_anxiety_regulation",
-"attention_cognitive_appraisal"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "personality_traits",
-"none_reported"
+"mood_anxiety_state"
 ],
 "intervention_type": [
+"verbal_suggestion_only",
 "other"
 ]
 },
-"summary": "Tested how verbal suggestion about inert inhalers affected asthma symptoms and physiology, finding that high negative affectivity increased suggestion-driven self-reported obstruction while lung function was unchanged.",
-"key_finding": "Patients high in negative affectivity reported more airway obstruction after suggested bronchoconstriction and less after suggested bronchodilation, but objective lung function did not change.",
+"summary": "Tested effects of suggestion using three inert inhalers described as inert, bronchoconstrictor, or bronchodilator in 32 asthmatics and found suggestion altered self-reported symptoms in high negative affectivity patients but did not change objective lung function.",
+"key_finding": "Found that suggestion produced larger changes in self-reported airway obstruction in patients high in negative affectivity, while lung function measures were unchanged.",
 "sample_size": 32,
 "free_keywords": [
 "asthma",
-"placebo inhaler",
 "bronchoconstriction",
 "bronchodilator",
+"inhaler",
 "negative affectivity",
 "suggestion",
-"total respiratory resistance"
+"respiratory resistance",
+"symptom reporting"
 ],
 "usage": {
 "input_tokens": 701,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1059,
-"cost_usd": 0.00244
+"output_tokens": 1038,
+"cost_usd": 0.0024
 }
 },
 "sources": [
@@ -3316,17 +3307,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:22:22Z",
+"classified_at": "2026-09-06T17:55:05Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment manipulated contextual conditioning (footshock vs no footshock) and pharmacologically probed fear-conditioned analgesia, meeting inclusion for conditioned placebo-like effects (classical conditioning) and mechanism testing.",
+"rationale": "Animal experiment explicitly manipulated conditioning context (footshock vs no-footshock) to isolate fear-conditioned analgesia and conditioned aversion, testing CB1 pharmacological modulation (mechanisms of conditioned analgesia).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -3337,7 +3328,8 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"anxiety_stress"
 ],
 "outcome_measures": [
 "behavioral_performance",
@@ -3351,7 +3343,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical"
+"neurobiology_other_neurochemical",
+"neural_systems_circuits"
 ],
 "moderators": [
 "pharmacological_manipulation"
@@ -3360,24 +3353,25 @@
 "not_applicable"
 ]
 },
-"summary": "Found that blocking CB1 receptors with SR141716A attenuated fear-conditioned analgesia and conditioned aversive behaviors in rats exposed to footshock.",
-"key_finding": "CB1 antagonist SR141716A reduced conditioned analgesia, freezing, and defecation in footshock-conditioned rats.",
+"summary": "Found that CB1 antagonist SR141716A attenuated fear-conditioned analgesia and conditioned aversive behaviours (freezing, defecation) in rats, without affecting formalin nociception in non-footshocked controls.",
+"key_finding": "SR141716A (1 mg/kg i.p.) reduced conditioned analgesia and conditioned aversive responses following footshock.",
 "sample_size": null,
 "free_keywords": [
-"formalin test",
-"fear-conditioned analgesia",
 "SR141716A",
-"CB1",
+"CB1 receptor",
+"formalin test",
+"footshock",
+"fear-conditioned analgesia",
 "freezing",
-"ultrasonic vocalization",
+"defecation",
 "rat"
 ],
 "usage": {
 "input_tokens": 801,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1028,
-"cost_usd": 0.0024
+"output_tokens": 1157,
+"cost_usd": 0.00266
 }
 },
 "sources": [
@@ -3566,13 +3560,13 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:21:59Z",
+"classified_at": "2026-09-06T17:55:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Forum paper explicitly focused on the ethics, design, and use of placebo controls in pediatric psychopharmacology trials, so it addresses placebo science broadly (methodology/ethics).",
+"rationale": "Forum paper explicitly addressed placebo use, ethics, and trial methodology in pediatric psychopharmacology, making placebo the main subject (placebo science and trial methodology).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -3581,7 +3575,8 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"pediatric_clinical"
+"clinicians_providers",
+"not_applicable"
 ],
 "age_group": [
 "children_adolescents"
@@ -3599,8 +3594,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -3609,25 +3604,23 @@
 "not_applicable"
 ]
 },
-"summary": "Summarized a 2002 AACAP research forum that discussed ethical, design, regulatory, and practical challenges and solutions for using placebo controls in pediatric psychopharmacology trials.",
+"summary": "Discussed challenges, ethics, and methodological solutions for using placebo controls in randomized pediatric psychopharmacology trials and recommended designs and stakeholder collaboration to make placebo trials feasible and ethical.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "pediatric psychopharmacology",
-"ethics",
-"placebo-controlled trials",
-"regulatory",
+"placebo ethics",
+"trial methodology",
 "FDA",
 "workgroup",
-"research design",
-"consumers"
+"stakeholder engagement"
 ],
 "usage": {
-"input_tokens": 693,
-"cache_read_input_tokens": 5888,
+"input_tokens": 437,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 849,
-"cost_usd": 0.00202
+"output_tokens": 592,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -4299,17 +4292,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:22:08Z",
+"classified_at": "2026-09-06T17:55:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Prospective study explicitly tested patients' presurgery response expectancies as predictors of postoperative symptoms, making placebo/nocebo-relevant expectancy effects the study focus (observational prediction of symptom response).",
+"confidence": 0.8,
+"rationale": "Prospective study measured presurgery response expectancies as predictors of postsurgery symptoms, making expectation/placebo-related mechanisms the paper's explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4322,8 +4315,7 @@
 "condition_domain": [
 "pain",
 "nausea_gi",
-"fatigue",
-"other"
+"fatigue"
 ],
 "outcome_measures": [
 "self_report"
@@ -4335,8 +4327,7 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"emotion_anxiety_regulation"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -4345,23 +4336,22 @@
 "not_applicable"
 ]
 },
-"summary": "Prospective study found presurgery distress predicted postoperative nausea, fatigue, and discomfort, while specific response expectancies predicted postoperative pain intensity, pain unpleasantness, and fatigue in 63 breast cancer surgery patients.",
-"key_finding": "Specific presurgery response expectancies uniquely predicted greater postoperative pain intensity and unpleasantness and fatigue; presurgery distress uniquely predicted postoperative nausea, fatigue, and discomfort.",
+"summary": "Prospective study found that presurgery distress and specific response expectancies predicted postoperative pain, nausea, fatigue, and discomfort in 63 breast cancer surgery patients.",
+"key_finding": "Specific expectancies uniquely predicted postoperative pain intensity, pain unpleasantness, and fatigue (ps < .05); presurgery distress uniquely predicted nausea, fatigue, and discomfort.",
 "sample_size": 63,
 "free_keywords": [
 "breast cancer",
-"presurgery distress",
-"response expectancies",
+"preoperative expectations",
 "postoperative pain",
 "postoperative nausea",
-"prospective study"
+"postoperative fatigue"
 ],
 "usage": {
 "input_tokens": 631,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 682,
-"cost_usd": 0.00167
+"output_tokens": 1079,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -4759,17 +4749,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:22:42Z",
+"classified_at": "2026-09-06T17:55:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental manipulation of expectation (high vs low) was the stated aim and was tested for effects on motion sickness symptoms and gastric myoelectric activity, meeting the criterion for placebo/nocebo mechanism studies.",
+"rationale": "Expectation was experimentally manipulated and tested as a causal predictor of motion-sickness symptoms and gastric activity, meeting inclusion for studies of expectation/context mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4803,23 +4793,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated high versus low expectation for motion sickness in healthy adults and found low-expectation participants showed greater abnormal gastric myoelectric activity during provocative rotation, while retrospective symptom reports did not differ.",
-"key_finding": "Low expectation produced greater gastric tachyarrhythmia (EGG indicator of motion sickness) during drum rotation, whereas self-reported motion sickness did not differ between expectation groups.",
+"summary": "Manipulated expectations about sickness before provocative motion and measured gastric myoelectric activity and symptoms; low expectation increased abnormal gastric activity while high expectation was protective, with no subjective symptom differences.",
+"key_finding": "Low expectation for sickness produced significantly greater gastric tachyarrhythmia (EGG) during drum rotation, whereas high expectation reduced objective gastric markers despite no retrospective symptom differences.",
 "sample_size": 80,
 "free_keywords": [
 "electrogastrogram",
 "EGG",
-"motion sickness",
-"drum rotation",
-"nausea profile",
-"expectation manipulation"
+"motion_sickness",
+"nausea_profile",
+"expectancy_manipulation",
+"gastric_tachyarrhythmia"
 ],
 "usage": {
 "input_tokens": 735,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 922,
-"cost_usd": 0.00217
+"output_tokens": 764,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -6136,11 +6126,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:22:50Z",
+"classified_at": "2026-09-06T17:55:07Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Systematic review explicitly focused on how sham/placebo interventions were described to participants (placebo science/ethics and trial reporting), meeting inclusion criterion 5.",
+"confidence": 0.9,
+"rationale": "Systematic review explicitly studied reporting and patient information about sham/placebo (sham-controlled acupuncture trials), addressing placebo-related ethics and trial methodology.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6169,33 +6159,34 @@
 "not_applicable"
 ],
 "mechanisms": [
-"nocebo_communication_disclosure",
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"sham_acupuncture"
 ]
 },
-"summary": "Systematically reviewed reporting of information given to participants in 47 sham-controlled acupuncture trials and analyzed 16 patient leaflets, finding variable and often non-explicit descriptions of sham interventions.",
-"key_finding": "Found that only 10/47 trials reported information given to patients and 7/16 leaflets explicitly used terms like 'sham' or 'placebo', with large variability in disclosure practices.",
+"summary": "Reviewed 47 sham-controlled acupuncture trials and found that reporting of information given to patients about true versus sham interventions was infrequent and highly variable, with potential ethical and trial-methodological implications.",
+"key_finding": null,
 "sample_size": 47,
 "free_keywords": [
 "acupuncture",
 "informed consent",
 "patient information leaflet",
 "sham acupuncture",
-"reporting"
+"blinding",
+"trial reporting"
 ],
 "usage": {
 "input_tokens": 786,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 621,
-"cost_usd": 0.00159
+"output_tokens": 782,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -6340,124 +6331,6 @@
 "landing_url": "https://doi.org/10.1089/107555304323062266",
 "cited_by_count": 31,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.ijpsycho.2003.10.001",
-"title": "Focused analgesia and generalized relaxation produce differential hypnotic analgesia in response to ascending stimulus intensity.",
-"authors": [
-"Sharav Y",
-"Tal M"
-],
-"journal": "International journal of psychophysiology : official journal of the International Organization of Psychophysiology",
-"journal_abbrev": "Int J Psychophysiol",
-"year": 2004,
-"date": "2004-04-01",
-"doi": "10.1016/j.ijpsycho.2003.10.001",
-"pmid": "15050376",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2037077412",
-"abstract": "This study was designed in order to examine the effects of different types of hypnotic suggestion on hypnotic analgesia. Generalized relaxation and focused analgesia were induced in seven high-hypnotizable (HH) and eight low-hypnotizable (LH) subjects. Subjects were not aware to which group they belonged. The two groups did not differ in their expectation rates to achieve analgesia under hypnosis. Pain intensity and unpleasantness were rated on visual analogue scales in response to painful electrical stimuli, delivered in random order in five ascending intensities. Both focused analgesia and generalized relaxation decreased pain intensity significantly (P < 0.01). However, stimulus-intensity response curves differed under the two hypnotic conditions. As stimulus intensity became higher pain reduction was enhanced under focused analgesia, while a constant reduction occurred under generalized relaxation. The interaction between hypnotic state and stimulus intensity was significant for focused analgesia (P < 0.05) but not for generalized relaxation (P > 0.07), difference became more pronounced when analyzed for HH subjects only (P < 0.002 for analgesia, P > 0.10 for relaxation). Pain reduction was significantly higher in HH than in LH subjects under focused analgesia (P < 0.02) but not under generalized relaxation (P > 0.5). We conclude that by utilizing two modes of hypnotic suggestions in response to ascending stimuli, we were able to discover two components of hypnotic analgesia. One shows a parallel shift in the stimulus-response function, has features similar to placebo and bears no clear relationship to hypnotic susceptibility. The other shows a slope change in the stimulus-response curve and has a positive relationship to hypnotic susceptibility.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Analgesia",
-"Electric Stimulation",
-"Female",
-"Humans",
-"Hypnosis",
-"Hypnosis, Anesthetic",
-"Male",
-"Pain",
-"Pain Measurement",
-"Pain Threshold",
-"Relaxation Therapy",
-"Suggestion"
-],
-"pub_types": [
-"Clinical Trial",
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.ijpsycho.2003.10.001",
-"cited_by_count": 22,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:24:31Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "The study experimentally manipulated types of hypnotic suggestion and measured analgesia, so placebo-like expectation/context effects were the explicit object of study.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"crossover_rct",
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"personality_traits"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Compared focused analgesia versus generalized relaxation hypnotic suggestions in 15 adults and found both reduced pain ratings, with focused analgesia producing intensity-dependent greater analgesia especially in highly hypnotizable subjects.",
-"key_finding": "Focused analgesia produced increasing pain reduction with higher stimulus intensity and greater effects in high-hypnotizable participants versus generalized relaxation.",
-"sample_size": 15,
-"free_keywords": [
-"hypnosis",
-"hypnotizability",
-"visual analogue scale",
-"electrical pain",
-"stimulus-intensity",
-"analgesia"
-],
-"usage": {
-"input_tokens": 833,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1005,
-"cost_usd": 0.00237
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2004-04-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1001/archpsyc.61.4.412",
@@ -6654,11 +6527,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:23:31Z",
+"classified_at": "2026-09-06T17:55:12Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Title indicates the paper empirically evaluated a sham protocol and adverse effects in an osteopathic manipulation RCT, making placebo/sham methodology the explicit focus.",
+"confidence": 0.7,
+"rationale": "Paper explicitly addressed the effectiveness of a sham protocol and adverse effects in an RCT of osteopathic manipulation, making placebo/sham methodology the primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6675,14 +6548,12 @@
 "older_adults"
 ],
 "condition_domain": [
-"other"
+"pain"
 ],
 "outcome_measures": [
 "self_report",
 "clinician_rated",
-"autonomic",
-"other",
-"not_applicable"
+"other"
 ],
 "design": [
 "parallel_groups_rct"
@@ -6691,8 +6562,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"therapeutic_ritual_context"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -6701,22 +6571,23 @@
 "sham_exercise_physical"
 ]
 },
-"summary": "Evaluated the effectiveness (credibility) of a sham osteopathic manipulation protocol and reported adverse effects in a randomized trial of nursing-home patients.",
+"summary": "Assessed the effectiveness of a sham protocol and reported adverse effects within a randomized multicenter trial of osteopathic manipulative treatment in nursing home patients.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"osteopathic manipulation",
 "nursing home",
-"sham manipulation",
-"sham credibility",
-"adverse effects"
+"osteopathic manipulation",
+"sham",
+"blinding",
+"adverse events",
+"elderly"
 ],
 "usage": {
 "input_tokens": 489,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 887,
-"cost_usd": 0.00204
+"output_tokens": 1035,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -6768,11 +6639,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:24:12Z",
+"classified_at": "2026-09-06T17:55:12Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Used a within-subjects balanced-placebo design manipulating alcohol ingestion and expectancy (an active-drug context manipulation), so placebo/context effects were an explicit experimental focus.",
+"confidence": 0.8,
+"rationale": "Used a within-subjects balanced-placebo design manipulating alcohol vs. expectancy (told beverage) to isolate drug and expectancy effects, so it experimentally tested placebo/expectation mechanisms with neural and autonomic outcomes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6797,43 +6668,42 @@
 "behavioral_performance"
 ],
 "design": [
-"within_subject_experimental",
-"balanced_placebo"
+"balanced_placebo",
+"within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"null_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"attention_cognitive_appraisal"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"mood_anxiety_state"
+"expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"placebo_food_drink"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Used a within-subjects balanced-placebo design in social drinkers and found alcohol ingestion altered ERPs (attenuated N180, increased N450 amplitude, delayed P580) while expectancy produced no effects.",
-"key_finding": "Alcohol ingestion (peak BAC ~0.045%) altered ERP indices of prelexical and semantic processing (N180 attenuation; larger N450; longer P580), whereas expectancy had no measurable effect.",
+"summary": "Used a within-subject balanced-placebo design in social drinkers to test alcohol pharmacology versus expectancy on ERPs and skin conductance during word recognition and found pharmacologic alcohol effects on ERPs but no effect of expectancy.",
+"key_finding": "Alcohol ingestion altered ERP components (attenuated N180, increased N450 amplitude and delayed P580) while expectancy (told beverage content) produced no measurable effects.",
 "sample_size": null,
 "free_keywords": [
 "balanced placebo",
+"alcohol expectancy",
 "event-related potentials",
-"n180",
-"n450",
-"p580",
+"N450",
+"P580",
 "skin conductance",
+"word recognition",
 "social drinkers"
 ],
 "usage": {
 "input_tokens": 826,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1139,
-"cost_usd": 0.00263
+"output_tokens": 1106,
+"cost_usd": 0.00257
 }
 },
 "sources": [
@@ -7329,11 +7199,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:12:51Z",
+"classified_at": "2026-09-06T17:55:10Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Narrative review explicitly addressed ethics and methodology of using placebos in osteoporosis trials, so placebo is the main subject (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Paper's primary topic was the ethics and trial methodology of placebo-controlled trials in osteoporosis, making placebo the main subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7344,13 +7214,17 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"clinicians_providers"
+"not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"older_adults"
+],
 "condition_domain": [
-"other"
+"endocrine_hormonal"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -7368,25 +7242,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed ethical considerations and trial-design strategies for using placebos in osteoporosis clinical trials, arguing selective low-risk enrollment and trial safeguards to minimize harm.",
-"key_finding": "Concluded placebo-controlled trials can be ethical for selected low-risk subjects with informed consent and recommended design measures to limit exposure.",
+"summary": "Reviews ethical considerations and trial-design recommendations for using placebo controls in osteoporosis trials, advising restricted inclusion and measures to minimize harm.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "osteoporosis",
-"fracture risk",
+"fractures",
 "informed consent",
-"placebo-controlled trials",
-"unbalanced randomization",
-"risk stratification",
-"bone density",
-"trial ethics"
+"diphosphonates",
+"randomized_controlled_trials",
+"ethics",
+"placebo_controlled_trials"
 ],
 "usage": {
 "input_tokens": 727,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 790,
-"cost_usd": 0.00191
+"output_tokens": 820,
+"cost_usd": 0.00197
 }
 },
 "sources": [
@@ -7671,11 +7544,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:25:27Z",
+"classified_at": "2026-09-06T17:55:10Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Observational study measured patient outcome expectancies as a predictor of functional improvement, making expectancy/placebo-related processes the paper's focus.",
+"confidence": 0.85,
+"rationale": "Study measured patient outcome expectancies as a predictor of subsequent clinical improvement, meeting the inclusion rule for expectancy measurements predicting health outcomes (placebo/expectation effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7689,7 +7562,7 @@
 "other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "motor_function"
@@ -7704,8 +7577,7 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -7714,22 +7586,22 @@
 "not_applicable"
 ]
 },
-"summary": "Examined whether baseline outcome expectancies predicted self-reported shoulder function over 3 months and found higher expectancies predicted greater functional improvement and expectancy fulfillment.",
-"key_finding": "Outcome expectancies accounted for 10% of variance in functional improvement; high-expectancy patients improved 4.57 points more, exceeding the 3.02-point minimal clinically important difference.",
+"summary": "Measured baseline outcome expectancies in 199 shoulder patients and found higher expectancies predicted greater self-reported functional improvement and expectancy fulfillment over 3 months.",
+"key_finding": "Higher baseline outcome expectancies predicted a clinically relevant 4.57-point greater improvement in shoulder function (exceeding the 3.02-point MCID).",
 "sample_size": 199,
 "free_keywords": [
 "shoulder",
 "orthopedics",
-"outcome expectancies",
+"outcome expectations",
 "expectancy fulfillment",
-"functional improvement"
+"patient-physician communication"
 ],
 "usage": {
 "input_tokens": 814,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 905,
-"cost_usd": 0.00216
+"output_tokens": 740,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -8371,129 +8243,6 @@
 "language": "eng"
 },
 {
-"id": "doi:10.3200/bmed.30.3.113-123",
-"title": "Impact of two types of expectancy on recovery from total knee replacement surgery (TKR) in adults with osteoarthritis.",
-"authors": [
-"Engel C",
-"Hamilton NA",
-"Potter PT",
-"Zautra AJ"
-],
-"journal": "Behavioral medicine (Washington, D.C.)",
-"journal_abbrev": "Behav Med",
-"year": 2004,
-"date": "2004-01-01",
-"doi": "10.3200/bmed.30.3.113-123",
-"pmid": "15816314",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W1971450100",
-"abstract": "This study examines the impact of 2 classes of psychological variables--expectancies for the future and self-efficacy--on recovery of function and reduction in symptomatology among individuals seeking total knee replacement surgery (TKR). The authors collected outcome measures (SF-36, WOMAC, Clinician assessments) prior to surgery, 4-6 weeks after surgery, and 6 months postsurgery for surgery patients and controls. Linear trend analyses by group gauged the impact of the surgical intervention on recovery, revealing significant improvements over time on physical health outcomes for the surgery patients not attained by controls. In addition, two classes of psychosocial variables--expectancies and efficacy beliefs--predicted the extent of gains in physical and mental health outcomes among those patients who elected to have surgery. When initial status was controlled, between 9 and 13 percent of the variance in TKR outcomes was due to expectations and efficacy. These results point to the importance of psychosocial variables in recovery of function and reduced symptoms after knee surgery.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Arthroplasty, Replacement, Knee",
-"Attitude",
-"Convalescence",
-"Culture",
-"Female",
-"Humans",
-"Male",
-"Osteoarthritis",
-"Prospective Studies",
-"Surveys and Questionnaires",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.3200/bmed.30.3.113-123",
-"cited_by_count": 87,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:16:43Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Prospective study measured patients' expectancies and self-efficacy as predictors of post-surgical recovery (expectation measured as predictor of health outcome), meeting inclusion for expectation/context effects.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical",
-"surgical_patients"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Prospective study found patients' expectations and self-efficacy predicted magnitude of functional recovery and symptom reduction after total knee replacement, explaining about 9–13% of outcome variance.",
-"key_finding": "Expectations and efficacy beliefs accounted for 9–13% of variance in TKR outcomes after controlling for initial status.",
-"sample_size": null,
-"free_keywords": [
-"total knee replacement",
-"osteoarthritis",
-"self-efficacy",
-"SF-36",
-"WOMAC",
-"recovery trajectory",
-"prospective study",
-"expectancy"
-],
-"usage": {
-"input_tokens": 685,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1052,
-"cost_usd": 0.00242
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2004-01-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1353/pbm.2004.0053",
 "title": "The placebo response: its putative role as a functional salutogenic mechanism of the central nervous system.",
 "authors": [
@@ -8773,19 +8522,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:24:48Z",
+"classified_at": "2026-09-06T17:55:13Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment used Pavlovian conditioning to manipulate drug/placebo pairings and tested conditioned tolerance and placebo-elicited withdrawal-like behavior, meeting inclusion for mechanism-focused placebo research (classical conditioning).",
+"confidence": 0.85,
+"rationale": "Animal experiment explicitly manipulated Pavlovian conditioning of drug versus placebo administrations and measured conditioned placebo-related behavioral responses (conditioned tolerance and placebo-elicited activity), meeting inclusion criterion for mechanistic animal models of placebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
 "placebo_effect",
-"nocebo_response"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -8802,15 +8550,16 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"significant_objective",
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
@@ -8819,23 +8568,25 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Tested Pavlovian conditioning of tolerance to a cannabinoid in female rats and found associative conditioning accelerated tolerance development and placebo administration in the conditioned context produced withdrawal-like activity changes.",
-"key_finding": "Associative (conditioned) administration produced significantly faster development of tolerance than nonassociative administration (p < 0.03); placebo in the conditioned context produced a trend toward withdrawal-like increased activity (p = 0.06).",
+"summary": "Found that Pavlovian conditioning in rats accelerated development of tolerance to cannabinoid-induced hypolocomotion and produced placebo-elicited increases in activity consistent with withdrawal-like behavior.",
+"key_finding": "Associative conditioning produced faster tolerance development (p < 0.03) and placebo in the conditioned environment trended toward increased locomotion (p = 0.06).",
 "sample_size": null,
 "free_keywords": [
 "HU-210",
 "cannabinoid",
 "conditioned tolerance",
 "hypolocomotion",
-"placebo administration",
-"withdrawal-like behavior"
+"withdrawal-like",
+"pavlovian conditioning",
+"rat",
+"vehicle injection"
 ],
 "usage": {
 "input_tokens": 690,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1288,
-"cost_usd": 0.0029
+"output_tokens": 927,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -9237,11 +8988,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:21:03Z",
+"classified_at": "2026-09-06T17:55:11Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Review focused on ethical guidelines and recommendations for the use of placebos in pediatric clinical trials, making placebo the main subject (placebo_science_other).",
+"rationale": "Paper's primary focus was the ethical use of placebo controls in pediatric clinical trials (placebo as main subject: guidelines and recommendations).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9250,9 +9001,9 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
-"pediatric_clinical"
+"not_applicable"
 ],
 "age_group": [
 "children_adolescents"
@@ -9270,7 +9021,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -9279,25 +9031,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed ethical statements and guidelines on the use of placebo controls in pediatric clinical trials and recommended updating AAP guidance with stakeholder input.",
+"summary": "Reviewed ethical guidelines and recommendations for the use of placebo controls in clinical trials involving children and called for updated guidance from stakeholders.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "pediatrics",
 "ethics",
-"placebo-controls",
 "guidelines",
-"american academy of pediatrics",
-"clinical trials",
-"children",
-"bioethics"
+"AAP",
+"placebo-controlled trials"
 ],
 "usage": {
 "input_tokens": 575,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 741,
-"cost_usd": 0.00177
+"output_tokens": 654,
+"cost_usd": 0.0016
 }
 },
 "sources": [
@@ -9584,11 +9333,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:26:16Z",
+"classified_at": "2026-09-06T17:55:16Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested classical conditioning of antibody responses (placebo-like conditioned immunomodulation), meeting inclusion criterion for mechanisms in animal cue/context contrasts.",
+"rationale": "Animal experiment that explicitly tested classical conditioning of antibody responses (a placebo-science mechanism) across antigen conditions, matching inclusion criterion for conditioned immunomodulation studies.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9617,33 +9366,33 @@
 "mixed_inconsistent"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neural_systems_circuits"
+"classical_conditioning"
 ],
 "moderators": [
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found a modest conditioned enhancement of antibody response with hen egg lysozyme but not with keyhole limpet hemocyanin, suggesting number of conditioning trials may be critical.",
-"key_finding": "One-trial conditioning produced reliable but modest antibody enhancement with hen egg lysozyme, whereas no conditioned effect occurred with keyhole limpet hemocyanin.",
+"summary": "Tested one-trial classical conditioning of antibody responses in Wistar rats using two different antigens and timing/dose variations, finding conditioned enhancement for hen egg lysozyme but not keyhole limpet hemocyanin.",
+"key_finding": "Found no conditioned antibody effect with keyhole limpet hemocyanin but a modest, reliable conditioned enhancement with hen egg lysozyme, suggesting number of conditioning trials may be critical.",
 "sample_size": null,
 "free_keywords": [
-"conditioned immunoenhancement",
+"antibody conditioning",
 "keyhole limpet hemocyanin",
 "hen egg lysozyme",
 "one-trial conditioning",
-"Wistar rat",
-"antibody formation"
+"wistar rats",
+"conditioned immunomodulation",
+"neuroimmunomodulation"
 ],
 "usage": {
 "input_tokens": 617,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1003,
-"cost_usd": 0.00231
+"output_tokens": 1017,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -9683,53 +9432,72 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:41:49Z",
+"classified_at": "2026-09-03T04:19:47Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names placebo and claims self-healing via placebo, indicating placebo effects are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text provided; title suggests a commentary on placebo efficacy (likely in Parkinson's) but insufficient information to confirm whether it presents new data or is an opinion piece.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"parkinson_movement"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"motor_function"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Argued that placebo-induced self-healing can produce clinically meaningful benefit and discussed placebo effects.",
+"summary": "Discusses placebo effects and their relevance to Parkinson's disease, arguing that placebo can produce improvement; no abstract or full text was available to verify study data.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"expectation",
-"parkinson's",
-"sham surgery",
-"brain transplantation"
+"parkinson's disease",
+"placebo effect",
+"editorial",
+"stoessl",
+"movement disorder",
+"quality of life"
 ],
 "usage": {
-"input_tokens": 582,
+"input_tokens": 404,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 668,
-"cost_usd": 0.00163
+"output_tokens": 653,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -9804,11 +9572,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:19:40Z",
+"classified_at": "2026-09-06T17:55:19Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Classical conditioning in rats paired saccharin (CS) with SEB (US) and re-exposure to CS alone produced conditioned immune and endocrine responses, so placebo-relevant conditioned responses were the explicit object of the study (animal experiment isolating conditioned response).",
+"rationale": "Animal experiment explicitly tested classical conditioning of immune and endocrine responses (CS saccharin paired with SEB) and reported conditioned physiological and behavioral responses, matching inclusion rule for conditioned-placebo-like mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9827,7 +9595,7 @@
 "condition_domain": [
 "immune_inflammation",
 "endocrine_hormonal",
-"other"
+"pain"
 ],
 "outcome_measures": [
 "behavioral_performance",
@@ -9841,33 +9609,33 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"other"
 ]
 },
-"summary": "Found that saccharin taste paired with SEB in rats produced conditioned taste avoidance and, on re-exposure to saccharin alone, increased IL-2, IFN-γ and corticosterone levels compared with non-reexposed conditioned animals.",
-"key_finding": "Re-exposure to the conditioned saccharin stimulus elicited significant increases in IL-2, interferon-gamma and corticosterone versus conditioned controls not re-exposed.",
+"summary": "Found that pairing saccharin taste with intraperitoneal SEB in rats produced conditioned taste avoidance and increases in IL-2, IFN-γ and corticosterone upon re-exposure to the taste.",
+"key_finding": "Re-exposure to the saccharin CS elicited significant increases in plasma IL-2, interferon-gamma and corticosterone compared with conditioned animals not re-exposed.",
 "sample_size": null,
 "free_keywords": [
-"staphylococcal enterotoxin b",
-"SEB",
 "saccharin",
+"staphylococcal enterotoxin B",
+"SEB",
 "conditioned taste avoidance",
-"dark agouti rats",
-"cytokines",
-"corticosterone"
+"dark agouti rat",
+"c-fos"
 ],
 "usage": {
 "input_tokens": 790,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1349,
-"cost_usd": 0.00304
+"output_tokens": 1162,
+"cost_usd": 0.00267
 }
 },
 "sources": [
@@ -10887,11 +10655,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:24:16Z",
+"classified_at": "2026-09-06T17:55:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Public consultations surveyed lay attitudes and ethics about placebo use, making placebo science (attitudes/policy) the primary focus (eligible as placebo_science_other).",
+"rationale": "Public consultations specifically examined beliefs and policy preferences about placebo use—placebo was the main subject (attitudes/ethics), meeting inclusion for placebo science adjacent research.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10921,7 +10689,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -10930,22 +10699,22 @@
 "not_applicable"
 ]
 },
-"summary": "Conducted national deliberative public consultations in Canada (2003) and reported public views on acceptable placebo use, balancing patient autonomy, protection, and research needs.",
-"key_finding": "Found that the public viewed placebo-controlled trials as valuable if valid and justifiable, favored patient autonomy for low–moderate risk situations, and supported greater patient-centered decision-making.",
+"summary": "Conducted national public consultations using deliberative dialogues in Canada to gather views on appropriate placebo use and policy trade-offs; reported that the public valued patient autonomy for low-risk trials and supported justified placebo-controlled trials.",
+"key_finding": "Found that respondents favored patient autonomy in low-to-moderate risk trials and endorsed placebo-controlled trials when scientifically justified and participant protections were met.",
 "sample_size": null,
 "free_keywords": [
-"deliberative_dialogue",
 "public_consultation",
+"deliberative_dialogue",
 "placebo_policy",
 "patient_autonomy",
-"canada"
+"placebo-controlled_trials"
 ],
 "usage": {
 "input_tokens": 859,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 558,
-"cost_usd": 0.00148
+"output_tokens": 702,
+"cost_usd": 0.00177
 }
 },
 "sources": [
@@ -11213,11 +10982,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:24:25Z",
+"classified_at": "2026-09-06T17:55:39Z",
 "screening": {
 "decision": "include",
-"confidence": 0.92,
-"rationale": "Narrative review focused on ethical and methodological issues of using placebo versus active-controlled trial designs, making placebo science (ethics/trial methodology) the explicit subject.",
+"confidence": 0.9,
+"rationale": "Narrative review whose main subject is the ethics and methodology of placebo versus active-control trials, so it is a placebo-science review (placebo is the explicit focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11257,23 +11026,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed ethical and scientific arguments about using placebo versus active-control (superiority vs non-inferiority) trial designs and their implications for research validity and patient rights.",
+"summary": "Reviews ethical and scientific arguments about placebo versus active-control (superiority and non-inferiority) trial designs and argues that active-control designs better balance ethics and scientific needs.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "declaration of helsinki",
-"superiority trial",
 "non-inferiority",
-"active control",
+"superiority trial",
 "research ethics",
-"trial design"
+"clinical trial design",
+"active control",
+"uncertainty principle"
 ],
 "usage": {
 "input_tokens": 769,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 650,
-"cost_usd": 0.00164
+"output_tokens": 774,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -11888,11 +11658,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:24:32Z",
+"classified_at": "2026-09-06T17:55:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.87,
-"rationale": "Paper was a review focused on the ethics and use of placebo-controlled trials, using empirical data about placebo controls to inform ethical analysis (placebo is the main subject).",
+"confidence": 0.9,
+"rationale": "Narrative review focused on the ethics and methodology of placebo-controlled trials, making placebo use the paper's primary subject (placebo science/ethics), so it meets inclusion as placebo_science_other.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11901,7 +11671,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -11909,8 +11679,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"cardiovascular_bp",
-"mood_depression"
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -11933,22 +11702,25 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed empirical data about use of placebo-controls in hypertension and psychiatric drug trials to inform ethical analyses and policy on placebo-controlled research.",
+"summary": "Reviewed empirical data and arguments to inform ethical analyses and policy about the use of placebo controls in clinical trials, with examples from hypertension and psychiatric studies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ethics",
-"placebo-controls",
+"placebo-controlled trials",
 "hypertension",
-"psychiatric_trials",
-"research_policy"
+"psychiatric trials",
+"informed consent",
+"trial methodology",
+"policy",
+"placebo use"
 ],
 "usage": {
 "input_tokens": 568,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 488,
-"cost_usd": 0.00127
+"output_tokens": 758,
+"cost_usd": 0.00181
 }
 },
 "sources": [

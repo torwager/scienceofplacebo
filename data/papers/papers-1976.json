@@ -816,11 +816,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:13:06Z",
+"classified_at": "2026-09-06T18:01:05Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Narrative review in Psychological Bulletin explicitly evaluated nonspecific (placebo) treatment effects and methodology, meeting inclusion criterion 4 for reviews whose subject is placebo/nonspecific effects.",
+"rationale": "Title and MeSH terms indicate this is a methodological review focused on nonspecific (placebo) treatment effects in psychotherapy, making placebo/nonspecific effects the paper's subject (review).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -828,8 +828,8 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "not_applicable",
+"article_type": "systematic_review",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -850,33 +850,36 @@
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
+"therapeutic_ritual_context",
 "provider_patient_interaction",
-"therapeutic_ritual_context"
+"history_conceptual"
 ],
 "moderators": [
-"trial_characteristics"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Reviewed methodological issues in systematic desensitization and nonspecific (placebo) treatment effects in psychotherapy research.",
+"summary": "Reviews methodological issues about systematic desensitization and nonspecific (placebo) treatment effects in human psychotherapy research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "systematic desensitization",
+"phobia",
 "nonspecific effects",
+"common factors",
 "placebo",
+"behavior therapy",
 "psychotherapy",
-"phobic disorders",
 "research design"
 ],
 "usage": {
 "input_tokens": 457,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 925,
-"cost_usd": 0.00211
+"output_tokens": 819,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -1162,17 +1165,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:05:59Z",
+"classified_at": "2026-09-06T18:01:10Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment demonstrated context-specific (Pavlovian) conditioning of morphine analgesic tolerance, addressing mechanisms of conditioned drug/context effects relevant to placebo/nocebo science (inclusion rule 3).",
+"rationale": "Animal experiment explicitly tested context-dependent (Pavlovian) conditioning of morphine analgesic tolerance, an established model for conditioning mechanisms relevant to placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"nocebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -1189,15 +1193,16 @@
 "behavioral_performance"
 ],
 "design": [
-"within_subject_experimental",
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
 "prior_experience"
@@ -1206,23 +1211,24 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that morphine analgesic tolerance in rats was specific to the environment paired with prior morphine exposure, supporting a Pavlovian conditioning account of tolerance.",
-"key_finding": "Morphine tolerance manifested when animals were tested in the environment previously paired with morphine but not in an alternative environment, indicating conditioned, context-specific tolerance.",
+"summary": "Found that morphine analgesic tolerance in rats was specific to the environment where morphine had been administered, supporting a Pavlovian conditioning account of tolerance.",
+"key_finding": "Analgesic tolerance occurred when tested in the morphine-paired environment but not in the alternate environment, indicating context-conditioned compensatory responses.",
 "sample_size": null,
 "free_keywords": [
-"conditioned tolerance",
-"environmental cues",
-"rats",
 "morphine",
-"classical conditioning",
-"analgesia"
+"conditioned tolerance",
+"Pavlovian",
+"rats",
+"analgesia",
+"context specificity",
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 530,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1213,
-"cost_usd": 0.00271
+"output_tokens": 1100,
+"cost_usd": 0.00248
 }
 },
 "sources": [
@@ -1268,76 +1274,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.2466/pr0.1976.38.3c.1235",
 "cited_by_count": 2,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:06:28Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-06T18:00:44Z",
 "screening": {
-"decision": "include",
-"confidence": 0.72,
-"rationale": "Study measured therapists' expectancies and correlated them with patient treatment outcomes, testing expectation as a predictor of clinical response (an expectancy/context mechanism relevant to placebo research).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or methods available to determine whether therapists' expectancies were studied as placebo/nocebo mechanisms or merely as prognostic predictors, so inclusion cannot be judged from the available record.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"clinicians_providers",
-"psychosis"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated",
-"other"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"provider_patient_interaction",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Analyzed correlations between therapists' expectancy measures and multiple objective treatment outcomes in hospitalized psychiatric patients, finding expectancy measures strongly related to outcomes.",
-"key_finding": "Therapists' expectancies were significantly correlated with most treatment outcome measures (14 of 15 in a subsequent sample).",
+"summary": "Insufficient information (no abstract) to determine whether therapists' expectancies were studied as placebo/nocebo effects; paper reported on therapists' expectancies and psychotherapy treatment outcome in a clinical sample.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"therapist expectancy",
-"psychotherapy outcome",
+"therapist_expectancy",
+"psychotherapy",
 "schizophrenia",
-"brief psychiatric rating scale",
-"mmpi"
+"brief_psychiatric_rating_scale",
+"MMPI"
 ],
 "usage": {
-"input_tokens": 576,
+"input_tokens": 464,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1021,
-"cost_usd": 0.00233
+"output_tokens": 598,
+"cost_usd": 0.00146
 }
 },
 "sources": [
@@ -1722,67 +1703,53 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/786380",
 "cited_by_count": 6,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:06:42Z",
+"classified_at": "2026-09-06T18:00:46Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly examines effects by suggestibility levels, indicating suggestion/expectation moderation of treatment response (placebo-related mechanism).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Abstract unavailable and title/MeSH terms mention placebos and suggestion but do not clearly indicate that placebo/nocebo effects or responses were the explicit focus or that a placebo condition was used.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "anxiety_stress"
 ],
-"outcome_measures": [
-"self_report"
-],
+"outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"personality_traits"
-],
-"intervention_type": [
-"other"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined effects of transcranial electrotherapy (electrosleep) on state anxiety across levels of suggestibility.",
+"summary": "No abstract available; reported effects of transcranial electrotherapy (electrosleep) on state anxiety by suggestibility, but insufficient information to judge whether placebo/nocebo phenomena were a study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"electrosleep",
 "transcranial electrotherapy",
-"suggestibility",
+"electrosleep",
 "state anxiety",
+"suggestibility",
 "1976"
 ],
 "usage": {
-"input_tokens": 590,
+"input_tokens": 462,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 971,
-"cost_usd": 0.00224
+"output_tokens": 566,
+"cost_usd": 0.00139
 }
 },
 "sources": [
@@ -2195,11 +2162,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:13:45Z",
+"classified_at": "2026-09-06T18:00:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "The study experimentally manipulated expectancy set (verbal suggestion) as a moderator of systematic desensitization and analyzed its effects on subjective and objective anxiety measures, making placebo/expectation the explicit focus.",
+"confidence": 0.85,
+"rationale": "The study experimentally manipulated expectancy (verbal information) as a predictor of response to systematic desensitization and reported differential self-report outcomes, meeting the criterion for studying placebo/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2224,7 +2191,8 @@
 "autonomic"
 ],
 "design": [
-"parallel_groups_rct"
+"parallel_groups_rct",
+"single_group_pre_post"
 ],
 "effects": [
 "significant_subjective",
@@ -2235,29 +2203,31 @@
 "therapeutic_ritual_context"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"verbal_suggestion_only",
+"sham_psychological"
 ]
 },
-"summary": "Manipulated expectancy set for systematic desensitization in people with public-speaking anxiety and found improved self-reported anxiety with high expectancy but no change in behavioral or physiological indices.",
-"key_finding": "High-expectancy instructions significantly reduced self-reported speech anxiety from pre- to posttreatment, but did not affect behavioral or physiological measures.",
+"summary": "Manipulated expectancy for systematic desensitization in people with public-speaking anxiety and found higher-expectancy increased self-reported anxiety reduction but did not alter behavioral or physiological indices.",
+"key_finding": "High-expectancy instructions produced greater self-reported reductions in speech anxiety (pre-post) but no change in overt behavioral or physiological measures.",
 "sample_size": 18,
 "free_keywords": [
 "systematic desensitization",
 "public speaking",
 "speech anxiety",
-"self-report",
+"expectancy manipulation",
+"psychophysiology",
 "sweating",
-"group therapy"
+"self-report"
 ],
 "usage": {
 "input_tokens": 695,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1131,
-"cost_usd": 0.00258
+"output_tokens": 978,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -2419,11 +2389,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:12:03Z",
+"classified_at": "2026-09-06T18:00:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Study empirically assessed matching quality of placebo/active preparations in double-blind trials, making placebo/blinding methodology the primary focus (placebo science).",
+"confidence": 0.8,
+"rationale": "Empirical study specifically examined matching/indistinguishability of placebo/active preparations and blinding quality, a placebo-science methodological topic.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2446,13 +2416,15 @@
 "behavioral_performance"
 ],
 "design": [
-"observational"
+"observational",
+"within_subject_experimental"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -2461,23 +2433,23 @@
 "not_applicable"
 ]
 },
-"summary": "Assessed the perceptual matching of 22 pairs of preparations used in double-blind trials and found many were distinguishable, with colour and taste most detectable and observer ability varying.",
+"summary": "Assessed how well 22 pairs of preparations used in double-blind trials were matched by four observers, finding many pairs distinguishable (colour and taste differences detected) and observer variability in detection ability.",
 "key_finding": null,
 "sample_size": 22,
 "free_keywords": [
 "blinding",
-"double-blind",
 "matching",
-"pill appearance",
-"taste",
-"observer variability"
+"drug packaging",
+"observer detection",
+"colour",
+"taste"
 ],
 "usage": {
-"input_tokens": 632,
-"cache_read_input_tokens": 5888,
+"input_tokens": 376,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 843,
-"cost_usd": 0.00199
+"output_tokens": 776,
+"cost_usd": 0.0018
 }
 },
 "sources": [
@@ -3293,11 +3265,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:05:39Z",
+"classified_at": "2026-09-06T18:00:50Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Title indicates an experimental animal replication of behaviorally conditioned (classical conditioning) immunosuppression, making placebo-like conditioned responses the explicit focus (mechanism study).",
+"rationale": "Animal experiment explicitly about behaviorally conditioned immunosuppression (classical conditioning of immune responses), meeting inclusion criterion for mechanisms/animal models of placebo-like effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3317,7 +3289,8 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory"
+"immune_inflammatory",
+"behavioral_performance"
 ],
 "design": [
 "animal_experiment"
@@ -3332,27 +3305,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Reported a replication of behaviorally conditioned immunosuppression in rats, demonstrating conditioned reductions in immune measures following saccharin-cyclophosphamide pairing.",
+"summary": "Found that immunosuppression could be behaviorally conditioned in rats, replicating prior findings of conditioned decreases in immune measures.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
 "cyclophosphamide",
 "saccharin",
+"conditioned immunosuppression",
 "rats",
-"hemagglutination",
-"conditioning",
-"replication"
+"hemagglutination"
 ],
 "usage": {
 "input_tokens": 468,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 842,
-"cost_usd": 0.00195
+"output_tokens": 912,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -3393,30 +3364,26 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0005-7967(76)90008-5",
 "cited_by_count": 22,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:07:03Z",
+"classified_at": "2026-09-06T18:00:50Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly lists 'suggestion' as a treatment alongside desensitization and relaxation, indicating suggestion/expectancy effects were a focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or methods available and the title lists behavioral treatments including 'suggestion', so it is unclear whether placebo/nocebo phenomena were an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"anxiety_disorders"
-],
+"population": [],
 "age_group": [],
 "condition_domain": [
 "anxiety_stress"
@@ -3424,17 +3391,11 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Compared systematic desensitization, relaxation training, and suggestion as treatments for test anxiety.",
+"summary": "No abstract was available; the 1976 study compared systematic desensitization, relaxation training, and suggestion for test anxiety, but it is unclear whether placebo/nocebo processes were studied.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -3446,11 +3407,11 @@
 "1976"
 ],
 "usage": {
-"input_tokens": 571,
+"input_tokens": 443,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 895,
-"cost_usd": 0.00208
+"output_tokens": 675,
+"cost_usd": 0.00161
 }
 },
 "sources": [

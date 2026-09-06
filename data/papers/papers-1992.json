@@ -159,18 +159,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:27:22Z",
+"classified_at": "2026-09-03T04:33:42Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly frames CPR as a 'technologic placebo', indicating the paper's main subject is the concept/role of placebo in medical practice.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title implies a conceptual/ethical discussion of CPR as a 'technologic placebo' rather than an empirical study of placebo effects, so inclusion is unclear.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -179,35 +179,48 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
+"condition_domain": [
+"other"
 ],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Debated whether cardiopulmonary resuscitation functions as a medical 'placebo' or an effective therapy and considered ethical and clinical implications.",
+"summary": "No abstract available; title suggested a conceptual/ethical discussion framing cardiopulmonary resuscitation as a 'technologic placebo' and debating futility and practice implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "cardiopulmonary resuscitation",
-"CPR",
+"cpr",
 "medical futility",
+"ethics",
 "technologic placebo",
-"ethics"
+"resuscitation orders"
 ],
 "usage": {
-"input_tokens": 632,
+"input_tokens": 454,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 583,
-"cost_usd": 0.00147
+"output_tokens": 791,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -722,11 +735,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:01:05Z",
+"classified_at": "2026-09-06T17:57:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.87,
-"rationale": "Randomized controlled manipulation of preparatory information altered expectations and state anxiety and was tested as a predictor of psychotherapy outcomes (context/expectation manipulation qualifies as a placebo/context effect).",
+"confidence": 0.85,
+"rationale": "Randomized manipulation of preparatory information altered expectations and short-term anxiety and was tested for effects on psychotherapy outcomes, so placebo/context expectancy effects are the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -743,7 +756,8 @@
 "adults"
 ],
 "condition_domain": [
-"anxiety_stress"
+"anxiety_stress",
+"mood_depression"
 ],
 "outcome_measures": [
 "self_report"
@@ -765,22 +779,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial tested a preparatory videotape versus waitlist and found improved expectations and reduced state anxiety short-term, but only one of ten psychotherapy outcomes favored preparation at two-month follow-up.",
-"key_finding": "Preparation reduced state anxiety and improved expectations immediately; long-term clinical benefits were minimal (significant on 1/10 outcomes at 2 months).",
+"summary": "Randomized adults referred for outpatient psychotherapy to view an 11-minute preparatory videotape or wait; the tape improved expectation accuracy and reduced state anxiety short-term, but yielded better outcome on only 1 of 10 measures at 2-month follow-up.",
+"key_finding": "Preparation reduced pre-appointment state anxiety and improved expectations, but produced limited long-term outcome benefits (significant on 1/10 measures at 2 months).",
 "sample_size": 138,
 "free_keywords": [
+"psychotherapy",
 "preparatory videotape",
-"psychotherapy expectations",
+"treatment-expectation",
 "state anxiety",
-"outpatient",
-"treatment preparation"
+"outpatient"
 ],
 "usage": {
 "input_tokens": 625,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 956,
-"cost_usd": 0.00222
+"output_tokens": 947,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -820,34 +834,28 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:27:33Z",
+"classified_at": "2026-09-03T04:33:46Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "The title explicitly names the placebo effect in the context of sneezing/allergy, indicating placebo phenomena are the paper's subject.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title and MeSH terms mention 'Placebo Effect' and rhinitis but insufficient detail to confirm placebo/nocebo is the study's explicit focus or its design.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
+"study_focus": [],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [
-"not_applicable"
-],
+"population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -855,22 +863,23 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Discussed the placebo effect in the context of sneezing and allergic rhinitis, arguing it is a meaningful phenomenon.",
+"summary": "Insufficient information in the abstract; title and MeSH terms indicate the paper concerned placebo effects related to sneezing/rhinitis but methods and outcomes were not available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sneezing",
 "rhinitis",
-"allergy",
+"sneezing",
 "nasal mucosa",
-"topical"
+"topical administration",
+"placebo effect",
+"fluocinolone"
 ],
 "usage": {
-"input_tokens": 585,
+"input_tokens": 407,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 809,
-"cost_usd": 0.00191
+"output_tokens": 526,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -1051,17 +1060,16 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:01:19Z",
+"classified_at": "2026-09-06T17:57:48Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments explicitly tested Pavlovian/contextual conditioning of morphine hypoalgesic tolerance and associated conditioned hyperalgesia, which addresses mechanisms of placebo/nocebo-like conditioned responses (criterion 3).",
+"rationale": "Nonhuman animal experiments explicitly tested Pavlovian/contextual conditioning of morphine hypoalgesic tolerance and conditioned hyperalgesia, so placebo/nocebo-like mechanisms were the study focus (mechanisms in animal model).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect",
 "placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
@@ -1089,29 +1097,29 @@
 "prior_treatment_experience"
 ],
 "moderators": [
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
-"not_applicable"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Found that contextual (Pavlovian) pairing of morphine with noxious stimulation produced conditioned tolerance to morphine hypoalgesia and an associated hyperalgesic response in rats.",
-"key_finding": "Conditioned contextual cues paired with morphine+noxious stimulation produced measurable conditioned hyperalgesia and contextually controlled tolerance.",
+"summary": "Reported conditioned, context-dependent tolerance to morphine hypoalgesia and an associated conditioned hyperalgesic response in rats when drug administration was paired with noxious stimulation.",
+"key_finding": "Found contextually controlled morphine tolerance and conditioned hyperalgesia in rats after pairing morphine with noxious stimulation.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned tolerance",
-"conditioned hyperalgesia",
-"Wistar rats",
-"noxious stimulation",
-"Pavlovian conditioning"
+"contextual conditioning",
+"hyperalgesia",
+"wistar rats",
+"noxious stimulation"
 ],
 "usage": {
 "input_tokens": 720,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 963,
-"cost_usd": 0.00225
+"output_tokens": 1043,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -1756,11 +1764,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:02:15Z",
+"classified_at": "2026-09-06T17:57:49Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Animal experiment manipulated meal-associated cues to evoke a learned (conditioned) cephalic-phase insulin response and tested parasympathetic blockade, making classical conditioning a studied mechanism of placebo-like contextual effects.",
+"confidence": 0.9,
+"rationale": "Animal experiment of classical (meal-associated) conditioning producing a measurable conditioned physiological response (insulin) with pharmacological blockade tests, fitting inclusion rule for conditioning models of placebo-like mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1792,34 +1800,35 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "pharmacological_manipulation",
 "prior_experience"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Demonstrated that a meal-associated conditioned stimulus rapidly evoked cephalic-phase insulin secretion in rats, which was abolished by nicotinic and muscarinic blockade, implicating vagal mediation.",
-"key_finding": "Conditioned insulin secretion occurred within one minute after meal-associated cue and was eliminated by hexamethonium and atropine.",
+"summary": "Found that meal-associated cues rapidly evoked conditioned cephalic-phase insulin secretion in rats, which was abolished by muscarinic and nicotinic blockade, indicating vagal mediation and dependence on feeding schedule.",
+"key_finding": "Conditioned insulin increase occurred within one minute after meal-associated cues and was abolished by atropine and hexamethonium, implicating parasympathetic cholinergic mediation.",
 "sample_size": null,
 "free_keywords": [
-"insulin",
 "cephalic phase",
 "vagus",
 "atropine",
 "hexamethonium",
-"wistar rat",
-"feeding schedule"
+"conditioned insulin",
+"meal cues",
+"wistar rat"
 ],
 "usage": {
 "input_tokens": 685,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1242,
-"cost_usd": 0.0028
+"output_tokens": 1244,
+"cost_usd": 0.00281
 }
 },
 "sources": [
@@ -1880,11 +1889,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:02:54Z",
+"classified_at": "2026-09-06T17:57:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly tested classical (Pavlovian) drug-drug conditioning producing conditioned heart-rate responses, a mechanistic model of placebo-like conditioned effects.",
+"confidence": 0.9,
+"rationale": "Animal Pavlovian drug-drug conditioning study that explicitly tested classical conditioning as mechanism of a conditioned autonomic response, fitting inclusion rule for animal models of conditioning mechanisms of placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1904,12 +1913,10 @@
 "cardiovascular_bp"
 ],
 "outcome_measures": [
-"autonomic",
-"behavioral_performance"
+"autonomic"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
@@ -1924,24 +1931,24 @@
 "other"
 ]
 },
-"summary": "Found that pentobarbital given as a conditioned stimulus produced increased heart rate after pairings with amphetamine or nicotine USs in rats, but not after other drug or shock USs.",
-"key_finding": "Pentobarbital CS elicited a conditioned HR increase after ~4 pairings with amphetamine or nicotine, indicating stimulus-specific drug-drug heart-rate conditioning.",
+"summary": "Found that pentobarbital given as a CS produced conditioned increases in heart rate in rats after pairings with amphetamine or nicotine as USs, but not with several other pharmacological or shock USs.",
+"key_finding": "Pentobarbital CS evoked higher heart rate after ~4 pairings with amphetamine or nicotine USs, indicating learned drug-drug conditioning.",
 "sample_size": null,
 "free_keywords": [
 "drug-drug conditioning",
-"heart rate",
 "pentobarbital",
 "amphetamine",
 "nicotine",
-"conditioned taste aversion",
-"rat"
+"heart rate",
+"rats",
+"Pavlovian conditioning"
 ],
 "usage": {
 "input_tokens": 676,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1194,
-"cost_usd": 0.0027
+"output_tokens": 962,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -2114,11 +2121,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:58:29Z",
+"classified_at": "2026-09-06T17:57:52Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "The study experimentally manipulated hypnotic suggestion (expectation) and measured physiological and subjective responses, making placebo/nocebo-like suggestion effects the focus.",
+"rationale": "Experimental manipulation of hypnotic suggestion (expectation) produced physiological and perceptual changes, making placebo/nocebo-like suggestion effects the study's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2130,7 +2137,7 @@
 "species": "human",
 "population": [
 "healthy_adult",
-"dermatology"
+"other_clinical"
 ],
 "age_group": [
 "adults"
@@ -2141,14 +2148,15 @@
 ],
 "outcome_measures": [
 "self_report",
+"behavioral_performance",
 "autonomic"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_objective",
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
@@ -2162,23 +2170,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested hypnotic suggestion of pain in 14 participants (8 with atopic eczema, 6 healthy) and found an average local skin temperature increase of 0.6°C with corresponding subjective changes.",
-"key_finding": "Hypnotic suggestion of pain produced a mean local cutaneous temperature increase of ~0.6°C despite some subjects reporting analgesia after prior suggestions.",
+"summary": "Used hypnotic suggestion to induce pain or analgesia in eczema patients and healthy subjects and found a local skin temperature increase (mean 0.6°C) accompanying suggested pain, despite subjective reports varying.",
+"key_finding": "Hypnotic suggestion of pain increased local skin temperature by ~0.6°C; analgesia suggestion altered subjective pain but not the temperature change.",
 "sample_size": 14,
 "free_keywords": [
 "hypnosis",
 "thermovision",
 "atopic eczema",
-"cutaneous temperature",
-"pain suggestion",
-"sensory threshold"
+"skin temperature",
+"pain threshold",
+"analgesia suggestion"
 ],
 "usage": {
 "input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1032,
-"cost_usd": 0.00236
+"output_tokens": 994,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -2243,17 +2251,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:03:06Z",
+"classified_at": "2026-09-06T17:57:52Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment tested a conditioned stimulus (paired with shock) that causally altered immune function and probed mechanisms with opioid antagonists, fitting inclusion criterion for conditioned placebo/nocebo-like mechanisms.",
+"confidence": 0.87,
+"rationale": "Animal experiment tested a conditioned stimulus (CS) paired with aversive shock that produced immunomodulation and pharmacologically probed mechanisms, meeting inclusion for conditioned placebo/nocebo-like responses and mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"nocebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2281,31 +2289,30 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that a stimulus conditioned with footshock suppressed multiple splenic immune measures in rats and that naltrexone (but not N-methylnaltrexone) attenuated these CS-induced immunomodulatory effects, implicating central endogenous opioids.",
-"key_finding": "Naltrexone dose-dependently blocked CS-induced suppression of lymphocyte proliferation and natural killer cell activity, indicating central opioid involvement in conditioned immunomodulation.",
+"summary": "Found that a conditioned aversive stimulus suppressed splenic lymphocyte proliferation and NK activity in rats, and that systemic naltrexone attenuated these conditioned immunomodulatory effects.",
+"key_finding": "Naltrexone dose-dependently attenuated CS-induced suppression of lymphocyte proliferation and natural killer cell activity, implicating central endogenous opioids.",
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "naltrexone",
-"n-methylnaltrexone",
 "footshock",
 "splenic lymphocytes",
-"natural killer cells",
-"Lew rats"
+"natural killer",
+"concanavalin A",
+"psychoneuroimmunology"
 ],
 "usage": {
 "input_tokens": 844,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 964,
-"cost_usd": 0.00229
+"output_tokens": 938,
+"cost_usd": 0.00223
 }
 },
 "sources": [
@@ -2363,11 +2370,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:02:29Z",
+"classified_at": "2026-09-06T17:58:09Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment explicitly tested conditioned (CS-induced) immunomodulation and its blockade by beta-adrenergic antagonists, which isolates a context/conditioning-driven biological response (placebo/nocebo-like) and mechanisms.",
+"confidence": 0.85,
+"rationale": "Animal experiment manipulated a conditioned stimulus to produce immune suppression and tested pharmacological blockade, meeting inclusion as a conditioned (classical) mechanism study of placebo/nocebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2380,7 +2387,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -2404,25 +2413,24 @@
 "other"
 ]
 },
-"summary": "Found that a conditioned aversive stimulus suppressed multiple splenic T-cell responses and IFN-γ in rats, and that beta1 and beta2 antagonists dose-dependently attenuated these conditioned immunosuppressive effects.",
-"key_finding": "Beta1-selective (atenolol) and beta2-selective (ICI 118,551) antagonists dose-dependently reduced CS-induced suppression of splenic T-cell proliferation and IFN-γ production.",
+"summary": "Found that a conditioned aversive cue suppressed multiple splenic T-cell functions in rats and that beta1- and beta2-adrenergic antagonists dose-dependently attenuated these conditioned immunosuppressive effects.",
+"key_finding": "Beta1-selective (atenolol) and beta2-selective (ICI 118,551) antagonists dose-dependently reduced CS-induced suppression of T-cell proliferation and IFN-γ production.",
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "atenolol",
-"ICI 118,551",
+"ICI-118,551",
 "concanavalin A",
-"splenocytes",
-"gamma-interferon",
-"rats",
-"electric shock"
+"interferon-gamma",
+"lewis rat",
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 779,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1227,
-"cost_usd": 0.0028
+"output_tokens": 1048,
+"cost_usd": 0.00244
 }
 },
 "sources": [
@@ -2479,11 +2487,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:03:18Z",
+"classified_at": "2026-09-06T17:57:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH terms indicate an animal experiment testing conditioning of immune responses by anesthetics (classical conditioning of immunity), which fits inclusion criterion 3 for conditioned placebo-like effects in animals.",
+"confidence": 0.7,
+"rationale": "Included because this is an animal experiment that used classical conditioning to alter immune responses (an animal model of conditioned immunomodulation), meeting criterion 3 for placebo-related mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2521,24 +2529,23 @@
 "other"
 ]
 },
-"summary": "Reported conditioning of immune responses in rats using anesthetic-related cues, implying learned modulation of immunity.",
+"summary": "Reported that anesthetic administration could be used to condition immune responses in rats.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "anesthetics",
-"rats",
+"rat",
 "lymphocytes",
 "phagocytosis",
-"cAMP",
-"inbred strains"
+"cAMP"
 ],
 "usage": {
-"input_tokens": 468,
-"cache_read_input_tokens": 5888,
+"input_tokens": 212,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 981,
-"cost_usd": 0.00223
+"output_tokens": 1073,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -2826,17 +2833,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:57:48Z",
+"classified_at": "2026-09-06T17:58:20Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Review explicitly focused on classically conditioned alterations of cell-mediated immunity (classical conditioning as a mechanism of placebo/nocebo-like responses).",
+"rationale": "Review explicitly focused on classical conditioning of immune responses (behaviourally induced immunosuppression/enhancement), which is a placebo-relevant mechanism (classical conditioning) and meets inclusion as a review of placebo-related phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
@@ -2860,8 +2867,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_other_neurochemical"
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
@@ -2870,23 +2876,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed evidence that classical conditioning using immunopharmacologic agents, stress, and antigens produced conditioned suppression and enhancement of cell-mediated immunity in animals and humans.",
+"summary": "Reviews conditioned suppression and enhancement of cell-mediated immunity using immunopharmacologic agents, stress, and antigenic stimuli as unconditioned stimuli.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
-"delayed-type hypersensitivity",
-"graft-vs-host",
+"delayed type hypersensitivity",
+"behavioral immunology",
 "host-vs-graft",
-"behavioral conditioning",
-"ader and cohen"
+"Ader-Cohen"
 ],
 "usage": {
 "input_tokens": 548,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 938,
-"cost_usd": 0.00216
+"output_tokens": 1051,
+"cost_usd": 0.00239
 }
 },
 "sources": [
@@ -2943,11 +2948,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:59:41Z",
+"classified_at": "2026-09-06T17:57:56Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "The study experimentally measured symptom expectations (imagined concussion) and related them to postconcussional symptoms, testing expectation as an aetiological factor (an expectation/nocebo-type mechanism).",
+"rationale": "Study experimentally measured symptom expectations (imagining concussion) as a proposed etiological factor for postconcussion symptoms, making placebo/nocebo-like expectancy effects the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2959,7 +2964,7 @@
 "species": "human",
 "population": [
 "healthy_adult",
-"other_clinical"
+"other_neurological"
 ],
 "age_group": [
 "adults"
@@ -2968,8 +2973,7 @@
 "other"
 ],
 "outcome_measures": [
-"self_report",
-"clinician_rated"
+"self_report"
 ],
 "design": [
 "within_subject_experimental",
@@ -2979,7 +2983,8 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
@@ -2988,22 +2993,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Asked healthy participants to imagine having a mild head injury and report expected symptoms, compared expectations to actual head-injury patients, and found expectations paralleled postconcussion syndrome and shared substantial variance with symptom reports.",
-"key_finding": "Imagined concussion elicited expectations of a coherent cluster of symptoms matching postconcussion syndrome and symptom expectation accounted for as much variance in outcomes as head injury itself.",
+"summary": "Administered a symptom checklist to controls who imagined sustaining a mild head injury and to head-injured patients, and found that expectations in controls matched postconcussion symptoms and related strongly to patient reports, suggesting expectation as an aetiology.",
+"key_finding": "Imagined-concussion expectations in controls paralleled patient postconcussion syndrome and shared as much variance with symptoms as head injury itself.",
 "sample_size": null,
 "free_keywords": [
 "postconcussion syndrome",
-"concussion",
-"symptom expectation",
 "imagined injury",
-"somatic symptoms"
+"symptom expectation",
+"mild traumatic brain injury",
+"somatoform",
+"mental simulation"
 ],
 "usage": {
 "input_tokens": 625,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 965,
-"cost_usd": 0.00223
+"output_tokens": 786,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -3284,11 +3290,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:00:19Z",
+"classified_at": "2026-09-06T17:57:56Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "No abstract, but MeSH terms include Placebos and Informed Consent and the title addresses patients' rights in nursing research, indicating a paper focused on ethical/attitudinal aspects of placebo use (placebo_science_other).",
+"rationale": "Article likely discussed ethics, informed consent and use of placebos in nursing research (MeSH terms include Placebos, Informed Consent) making it a placebo-science commentary on patient rights.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -3297,9 +3303,9 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
-"not_applicable"
+"clinicians_providers"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -3326,22 +3332,24 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed ethical issues and patients' rights in nursing research, including informed consent and the use of placebos.",
+"summary": "Discussed ethical issues in nursing research, informed consent and the use of placebos in clinical trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"nursing",
 "informed consent",
 "ethics",
+"nursing research",
 "placebo use",
-"patient rights"
+"patient rights",
+"clinical trials",
+"double-blind"
 ],
 "usage": {
 "input_tokens": 444,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 744,
-"cost_usd": 0.00175
+"output_tokens": 709,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -3623,11 +3631,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:02:39Z",
+"classified_at": "2026-09-06T17:57:57Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Narrative review/theoretical paper focused on classical conditioning of immune responses, a mechanistic topic directly relevant to placebo-like conditioned responses and placebo science.",
+"confidence": 0.78,
+"rationale": "Review focused on behavioral conditioning of immune responses as a mechanism of CNS modulation of immunity, which addresses classical-conditioning mechanisms relevant to placebo-like effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3657,8 +3665,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
@@ -3667,22 +3675,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed and theorized that lymphoid cells can be behaviorally conditioned by CNS signals, proposing conditioning as a mechanism for neural modulation of immunity.",
+"summary": "Reviews behavioral conditioning of immune responses and proposed that lymphoid cells can store CNS–immune associations, explaining neural modulation of immunity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "lymphoid cells",
 "neuroimmunomodulation",
-"pavlovian conditioning",
-"neuroendocrine"
+"Pavlovian conditioning",
+"CNS-immune communication"
 ],
 "usage": {
-"input_tokens": 596,
-"cache_read_input_tokens": 5888,
+"input_tokens": 340,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 877,
-"cost_usd": 0.00205
+"output_tokens": 799,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -3736,11 +3744,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:58:43Z",
+"classified_at": "2026-09-06T17:57:58Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Prospective cohort measured patients' recovery expectations and tested their association with post-fracture ambulatory outcomes, making expectations a measured predictor of clinical recovery (placebo/nocebo-relevant).",
+"rationale": "Prospective cohort study explicitly measured patients' initial expectations and related them to recovery in ambulation, making expectation effects on health outcomes the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3751,17 +3759,19 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"surgical_patients"
+"surgical_patients",
+"other_clinical"
 ],
 "age_group": [
 "older_adults"
 ],
 "condition_domain": [
-"motor_function"
+"motor_function",
+"global_health_qol"
 ],
 "outcome_measures": [
-"self_report",
-"clinician_rated"
+"clinician_rated",
+"self_report"
 ],
 "design": [
 "observational"
@@ -3771,31 +3781,35 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"emotion_anxiety_regulation"
 ],
 "moderators": [
-"prior_experience"
+"prior_experience",
+"age"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Prospective study of 80 elderly hip-fracture patients found that more positive initial expectations and greater prior illness experience predicted better ambulatory recovery at three months.",
-"key_finding": "Patients with positive recovery expectations and more prior experience had less decline in ambulation from pre-fracture to three months.",
+"summary": "Examined how elderly hip fracture patients' initial expectations predicted change in ambulatory status to three months, and found more positive expectations and greater prior illness experience were associated with better recovery.",
+"key_finding": "Patients with positive recovery expectations and greater prior experience had less decline in ambulation and better ambulation at three months (N=80).",
 "sample_size": 80,
 "free_keywords": [
 "hip fracture",
 "ambulation",
+"activities of daily living",
+"elderly",
 "rehabilitation",
 "expectations",
-"elderly"
+"prognosis"
 ],
 "usage": {
 "input_tokens": 649,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1009,
-"cost_usd": 0.00233
+"output_tokens": 1103,
+"cost_usd": 0.00252
 }
 },
 "sources": [
@@ -4456,17 +4470,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:01:49Z",
+"classified_at": "2026-09-06T17:58:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Human experimental conditioning manipulated a neutral cue paired with epinephrine and tested for a conditioned change in NK cell activity, making placebo-like conditioning of an immune outcome the study focus (mechanism: classical conditioning).",
+"rationale": "Human experimental study explicitly tested classical conditioning of an immune outcome (NK cell activity) with CS+saline test and control groups, making conditioned placebo-like responses the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4480,12 +4495,11 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"neuroendocrine"
+"immune_inflammatory"
 ],
 "design": [
-"parallel_groups_rct",
-"within_subject_experimental"
+"within_subject_experimental",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_objective"
@@ -4499,26 +4513,26 @@
 ],
 "intervention_type": [
 "saline_injection_infusion",
-"placebo_food_drink"
+"other"
 ]
 },
-"summary": "Found that a neutral candy paired with epinephrine produced a conditioned increase in natural killer cell activity when later presented with saline, compared with unpaired and saline controls.",
-"key_finding": "Conditioned group showed increased NK cell activity to the sweet+saline test, while unpaired and saline-control groups showed no increase.",
+"summary": "Found that a neutral gustatory cue (sherbet) paired with epinephrine produced conditioned increases in NK cell activity when later presented with saline, whereas unpaired and saline controls showed no increase.",
+"key_finding": "Conditioned group showed increased natural killer cell activity after CS reexposure with saline; neither saline-control nor unpaired groups showed this response.",
 "sample_size": null,
 "free_keywords": [
-"natural killer",
-"NK cell activity",
 "epinephrine",
-"classical conditioning",
-"sherbet sweet",
-"conditioned immunomodulation"
+"sherbet cue",
+"natural killer cells",
+"conditioning",
+"psychoneuroimmunology",
+"immune conditioning"
 ],
 "usage": {
 "input_tokens": 667,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1044,
-"cost_usd": 0.0024
+"output_tokens": 1051,
+"cost_usd": 0.00242
 }
 },
 "sources": [
@@ -4571,11 +4585,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:59:52Z",
+"classified_at": "2026-09-06T17:58:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.88,
-"rationale": "The study explicitly tested psychological predictors (state anxiety and expectations) of post-chemotherapy nausea, making nocebo-related expectation/anxiety mechanisms the object of study (predictors of adverse placebo-like response).",
+"confidence": 0.8,
+"rationale": "Measured patient expectations and anxiety as predictors of post-chemotherapy nausea (an adverse outcome), meeting inclusion for expectation/nocebo-related research where expectation is measured as a predictor of symptom outcome.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4602,38 +4616,36 @@
 "observational"
 ],
 "effects": [
-"significant_subjective",
-"null_subjective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"emotion_anxiety_regulation"
+"emotion_anxiety_regulation",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"mood_anxiety_state",
 "treatment_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Studied 65 chemotherapy patients across initial infusions and found state anxiety predicted post-treatment nausea while pre-treatment expectations did not.",
-"key_finding": "State anxiety was significantly associated with greater post-chemotherapy nausea; expectations for nausea were unrelated, and the anxiety–nausea link was weaker with higher emetic-potential regimens.",
+"summary": "Studied 65 chemotherapy patients across initial infusions and found state anxiety predicted post-treatment nausea while pre-treatment expectations did not, with anxiety effects varying by regimen emetic potential.",
+"key_finding": "State anxiety was significantly associated with greater post-chemotherapy nausea, whereas baseline expectations for nausea were unrelated.",
 "sample_size": 65,
 "free_keywords": [
 "chemotherapy",
-"post-chemotherapy nausea",
-"state anxiety",
-"expectation",
 "emetic potential",
-"anticipatory nausea"
+"state anxiety",
+"anticipatory nausea",
+"predictors",
+"post-chemotherapy nausea"
 ],
 "usage": {
 "input_tokens": 640,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 839,
-"cost_usd": 0.00199
+"output_tokens": 936,
+"cost_usd": 0.00218
 }
 },
 "sources": [
@@ -5032,34 +5044,33 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:59:18Z",
+"classified_at": "2026-09-06T17:58:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Randomized experimental manipulation of beverage content (alcohol vs. placebo) and social/physical context tested how expectancies and cues influenced drinking and self-perception, making placebo phenomena an explicit study target.",
+"confidence": 0.88,
+"rationale": "Experimental factorial trial manipulated beverage content (alcohol vs. placebo) and expectancy/environmental cues with primary analyses focused on how expectancies and placebo beverage influenced consumption and self-perception, meeting inclusion as a study of placebo response/effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
 "placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public"
+"substance_use"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
 "addiction_craving",
-"global_health_qol"
+"other"
 ],
 "outcome_measures": [
-"behavioral_performance",
-"self_report"
+"self_report",
+"behavioral_performance"
 ],
 "design": [
 "parallel_groups_rct"
@@ -5070,37 +5081,36 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context",
-"social_observational_learning"
+"social_observational_learning",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "expectation_level",
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"active_drug_context_manipulation"
+"placebo_food_drink"
 ]
 },
-"summary": "Randomized adults to alcohol or placebo beverages across social and physical contexts and found that stronger expectancies for impairment increased placebo self-administration, while friendly social cues increased post-drinking reports of disinhibition.",
-"key_finding": "Receiving placebo (vs. alcohol) increased ad lib consumption among participants who strongly expected behavioral impairment; friendly social cues increased self-reported disinhibition regardless of beverage content.",
+"summary": "Randomized lab study manipulated beverage content (alcohol vs. placebo), social and physical environment, and found expectancies and social cues influenced ad-lib consumption and post-drinking self-perception.",
+"key_finding": "Found that participants who expected impairment drank more when given a placebo beverage, and friendly social cues increased reported disinhibition.",
 "sample_size": 88,
 "free_keywords": [
-"alcohol placebo",
-"simulated bar",
+"alcohol expectancy",
 "ad lib consumption",
-"alcohol expectancies",
+"simulated bar",
 "social cues",
-"male participants",
-"reinforcement",
-"behavioral impairment"
+"placebo beverage",
+"disinhibition",
+"heavy drinking",
+"male"
 ],
 "usage": {
-"input_tokens": 672,
-"cache_read_input_tokens": 5888,
+"input_tokens": 416,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1386,
-"cost_usd": 0.00309
+"output_tokens": 992,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -5158,11 +5168,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:03:44Z",
+"classified_at": "2026-09-06T17:58:24Z",
 "screening": {
 "decision": "include",
-"confidence": 0.72,
-"rationale": "Animal experiments explicitly tested classical conditioning effects on immune function (conditioned immunosuppression) and the immunomodulatory properties of LiCl, fitting inclusion rule for mechanisms in animal cue/context models of placebo-like effects.",
+"confidence": 0.85,
+"rationale": "Animal experiments investigated classical conditioning of immunosuppression (conditioning as mechanism of placebo-like responses), making placebo/nocebo mechanisms an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5182,7 +5192,8 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory"
+"immune_inflammatory",
+"behavioral_performance"
 ],
 "design": [
 "animal_experiment"
@@ -5191,34 +5202,32 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neurobiology_other_neurochemical"
+"classical_conditioning"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"none_reported"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Tested classical taste-aversion conditioning effects on immunosuppression in rats and found that lithium chloride itself had immunomodulatory effects that could confound conditioned immunosuppression findings.",
-"key_finding": "Found LiCl was not immunologically neutral and could antagonize residual and conditioned immunosuppression following CS reexposure.",
+"summary": "Found that lithium chloride (LiCl) was not immunologically neutral in rat taste-aversion conditioning and could antagonize residual and conditioned immunosuppression, calling prior conclusions into question.",
+"key_finding": "LiCl administration reduced or antagonized conditioned immunosuppression following taste-aversion conditioning in rats.",
 "sample_size": null,
 "free_keywords": [
 "lithium chloride",
 "taste aversion",
 "conditioned immunosuppression",
 "rats",
-"UCS confound",
-"leukocyte count",
-"classical conditioning"
+"unconditioned stimulus",
+"immunomodulation"
 ],
 "usage": {
 "input_tokens": 611,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 914,
-"cost_usd": 0.00213
+"output_tokens": 886,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -5276,11 +5285,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:03:33Z",
+"classified_at": "2026-09-06T17:58:05Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested conditioned analgesia (classical conditioning Paired vs Unpaired) and pharmacologically probed spinal noradrenergic mediation, making placebo-like conditioned analgesia the study focus (mechanisms).",
+"rationale": "Animal experiment that explicitly tested conditioned analgesia by context (paired vs unpaired) and pharmacologically manipulated spinal receptors to probe mechanism, meeting inclusion rule 3 for mechanism-focused placebo-like models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5290,8 +5299,12 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
@@ -5315,25 +5328,25 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Tested conditioned analgesia in rats using contextual classical conditioning and spinal drug blockade, and found that yohimbine attenuated conditioned analgesia while phentolamine and methysergide did not.",
-"key_finding": "Yohimbine administered intrathecally attenuated conditioned (contextual) analgesia, implicating spinal alpha-2 noradrenergic receptors.",
+"summary": "Found that contextually conditioned analgesia in rats was expressed as increased hot-plate latencies and was attenuated by spinal yohimbine, implicating spinal alpha-2 noradrenergic receptors.",
+"key_finding": "Yohimbine (30 µg, spinal) blocked conditioned analgesia seen in paired animals, whereas phentolamine and methysergide did not.",
 "sample_size": null,
 "free_keywords": [
-"alpha2 receptor",
-"spinal catheter",
-"hot plate",
-"paw lick latency",
-"footshock",
 "conditioned analgesia",
 "yohimbine",
-"phentolamine"
+"alpha-2 adrenergic receptor",
+"hot plate",
+"spinal catheter",
+"phentolamine",
+"methysergide",
+"rats"
 ],
 "usage": {
-"input_tokens": 747,
-"cache_read_input_tokens": 5888,
+"input_tokens": 491,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1136,
-"cost_usd": 0.00261
+"output_tokens": 1112,
+"cost_usd": 0.0025
 }
 },
 "sources": [
@@ -5502,11 +5515,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:58:06Z",
+"classified_at": "2026-09-06T17:58:06Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Animal Pavlovian conditioning study that experimentally demonstrated that contextual cues elicit a conditioned dopaminergic movement response (classical conditioning mechanism), meeting inclusion for mechanistic placebo-relevant research.",
+"rationale": "Animal Pavlovian conditioning experiment explicitly studied conditioned drug-induced movement (placebo-like conditioned response) and mechanisms, meeting inclusion criterion for conditioning models of placebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5542,30 +5555,31 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"pharmacological_manipulation",
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that contextual (Pavlovian) cues previously paired with L-dopa elicited contralateral rotation in 6-OHDA lesioned rats even without L-dopa and despite D1/D2 receptor blockade.",
-"key_finding": "Contextual cues produced conditioned contralateral rotation similar to L-dopa effects and this conditioned response was resistant to D1/D2 antagonists (SCH23390 + haloperidol).",
+"summary": "Found that L-dopa–induced contralateral rotation in 6-OHDA lesioned rats became conditioned to environmental cues and was elicited without drug, and that the conditioned response persisted despite D1/D2 receptor blockade.",
+"key_finding": "Conditioned contralateral rotation matched the drug-induced profile and was not blocked by D1/D2 antagonists (SCH23390 + haloperidol), suggesting non-dopaminergic mediation of the conditioned response.",
 "sample_size": null,
 "free_keywords": [
 "6-ohda",
-"parkinsonian rat",
-"contralateral rotation",
-"levodopa",
-"SCH23390",
+"l-dopa",
+"conditioned rotation",
 "haloperidol",
-"paradoxical kinesia"
+"sch-23390",
+"paradoxical kinesia",
+"substantia nigra"
 ],
 "usage": {
 "input_tokens": 806,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1319,
-"cost_usd": 0.00299
+"output_tokens": 1199,
+"cost_usd": 0.00275
 }
 },
 "sources": [

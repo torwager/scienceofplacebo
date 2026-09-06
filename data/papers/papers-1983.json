@@ -159,17 +159,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:10:15Z",
+"classified_at": "2026-09-06T17:59:54Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Measured client expectancy as a predictor of psychotherapy outcomes (an expectation/context effect examined as the study's focus), meeting inclusion for studies of expectation as a mechanism/moderator of clinical outcomes.",
+"confidence": 0.65,
+"rationale": "Measured client expectancy as a predictor of psychotherapy outcome (expectation effects on health-relevant outcome), meeting inclusion for studies of expectation/context as predictors.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_and_nocebo",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -180,7 +181,8 @@
 "adults"
 ],
 "condition_domain": [
-"global_health_qol"
+"mood_depression",
+"anxiety_stress"
 ],
 "outcome_measures": [
 "self_report",
@@ -203,24 +205,23 @@
 "not_applicable"
 ]
 },
-"summary": "Examined whether clients' expectancy predicted psychotherapy outcome and found expectancy related to self-rated improvement but not therapist-rated change in 110 counseling clients.",
-"key_finding": "Client expectancy predicted self-assessed outcome (linear relationship) but not therapist-rated outcome (N=110).",
+"summary": "Found that client expectancy predicted self-reported therapy outcome but not therapist-rated outcome in 110 university counseling clients.",
+"key_finding": "Linear relationship between expectancy and self-assessed outcome; no relationship with therapist-defined outcome.",
 "sample_size": 110,
 "free_keywords": [
 "psychotherapy",
-"client expectancy",
-"counseling center",
-"adjustment scale",
-"therapist ratings",
-"treatment expectancy",
-"outcome prediction"
+"expectancy",
+"counseling",
+"therapeutic outcome",
+"self-report",
+"therapist rating"
 ],
 "usage": {
 "input_tokens": 553,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 998,
-"cost_usd": 0.00228
+"output_tokens": 1037,
+"cost_usd": 0.00236
 }
 },
 "sources": [
@@ -365,11 +366,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:10:32Z",
+"classified_at": "2026-09-06T18:00:23Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized/assigned experimental comparison of a hypnotic verbal-suggestion script versus control explicitly tested effects on intraoperative movement and postoperative discomfort (context/expectation manipulation).",
+"confidence": 0.8,
+"rationale": "Randomized assignment compared a hypnotic verbal-suggestion relaxation script versus control to alter perioperative behavior and postoperative discomfort, making context/suggestion the experimental manipulation.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -387,11 +388,13 @@
 ],
 "condition_domain": [
 "pain",
-"motor_function"
+"motor_function",
+"global_health_qol"
 ],
 "outcome_measures": [
 "self_report",
-"behavioral_performance"
+"behavioral_performance",
+"clinician_rated"
 ],
 "design": [
 "parallel_groups_rct"
@@ -407,26 +410,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"sham_psychological"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Compared a four-minute hypnotic relaxation/suggestion script versus control in 59 radial keratotomy patients and found no differences in intraoperative behavior or pain but greater positive day-after subjective feelings in the hypnosis group.",
-"key_finding": "13/34 patients receiving the hypnosis script reported feeling 'wonderful' the day after surgery versus 1/24 in control.",
+"summary": "Assigned patients undergoing radial keratotomy to a four-minute hypnotic relaxation script or control; hypnosis increased reports of feeling 'wonderful' the day after surgery but did not reduce intraoperative movement or pain.",
+"key_finding": "Hypnosis group: 13/34 reported feeling wonderful day after surgery versus 1/24 in control; no differences in intraoperative movement or pain.",
 "sample_size": 59,
 "free_keywords": [
 "radial keratotomy",
-"hypnosis",
-"relaxation script",
 "ophthalmic surgery",
-"postoperative feeling"
+"hypnosis",
+"postoperative well-being",
+"relaxation script"
 ],
 "usage": {
 "input_tokens": 625,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 865,
-"cost_usd": 0.00203
+"output_tokens": 908,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -611,11 +613,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:12:27Z",
+"classified_at": "2026-09-06T17:59:55Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested conditioned analgesia (a placebo-like conditioned effect) and pharmacologically probed its opioid and pituitary mechanisms, so placebo/nocebo mechanisms were the study focus.",
+"rationale": "Animal experiment explicitly tested conditioned analgesia (placebo-analog) and its blockade by naloxone and dexamethasone, so placebo/nocebo mechanisms were the study focus (mechanistic conditioning/opioid effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -646,33 +648,35 @@
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_opioid",
-"neurobiology_other_neurochemical"
+"neurobiology_other_neurochemical",
+"prior_treatment_experience"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that contextual (conditioned) analgesia in rats was antagonized by naloxone and suppressed by dexamethasone, implicating an opioid–pituitary mechanism for conditioned analgesia.",
-"key_finding": null,
+"summary": "Found that context-conditioned analgesia in rats was suppressed by naloxone (6 mg/kg) and dose-dependently by dexamethasone, implicating an opioid–pituitary mechanism for conditioned analgesia.",
+"key_finding": "Naloxone (6 mg/kg) antagonized conditioned analgesia; dexamethasone produced a dose-dependent suppression, suggesting involvement of opioid and pituitary-mediated mechanisms.",
 "sample_size": null,
 "free_keywords": [
 "conditioned analgesia",
 "naloxone",
 "dexamethasone",
 "rats",
-"bar-press suppression",
-"opiate pituitary"
+"bar-pressing",
+"operant conditioning",
+"endogenous opiates",
+"pituitary"
 ],
 "usage": {
 "input_tokens": 654,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 834,
-"cost_usd": 0.00198
+"output_tokens": 1012,
+"cost_usd": 0.00233
 }
 },
 "sources": [
@@ -841,11 +845,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:09:55Z",
+"classified_at": "2026-09-06T17:59:56Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Between-group experimental manipulation contrasted veridical EMG biofeedback with noncontingent pseudofeedback patterns to test effects of feedback/context on subjective and physiological relaxation outcomes (placebo-like mechanisms).",
+"confidence": 0.85,
+"rationale": "Experimental manipulation compared veridical EMG biofeedback to three pseudofeedback patterns to test placebo/context effects on subjective and physiological relaxation responses (an explicit focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -872,12 +876,10 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective",
-"null_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
 "attention_cognitive_appraisal"
 ],
 "moderators": [
@@ -887,8 +889,8 @@
 "sham_psychological"
 ]
 },
-"summary": "Compared veridical EMG biofeedback to three noncontingent pseudofeedback patterns in healthy adults and found differential subjective responses but no significant differences in EMG physiology across groups.",
-"key_finding": "Pseudofeedback pattern influenced subjective experience (apparent success vs failure) but did not produce reliable changes in frontal/neck EMG compared with true biofeedback.",
+"summary": "Compared veridical EMG biofeedback to three types of noncontingent pseudofeedback in healthy adults and found subjective responses differed by pseudofeedback pattern while EMG physiology did not show significant group differences.",
+"key_finding": "Pseudofeedback patterns produced reliable differences in subjective reactions but no significant differences in frontal or neck EMG across groups.",
 "sample_size": null,
 "free_keywords": [
 "emg biofeedback",
@@ -899,11 +901,11 @@
 "frontal emg"
 ],
 "usage": {
-"input_tokens": 735,
-"cache_read_input_tokens": 5888,
+"input_tokens": 479,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 989,
-"cost_usd": 0.00231
+"output_tokens": 885,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -934,19 +936,19 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 65,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:17:38Z",
+"classified_at": "2026-09-04T00:15:30Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states the paper is about 'Placebo Effects in the Treatment of Ulcer Disease', making placebo effects the main subject.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text available; title indicates placebo effects are the topic but insufficient information to judge study type or whether placebo/nocebo was an empirical focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": false
 },
 "tags": {
@@ -954,35 +956,51 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
-"population": [],
-"age_group": [],
+"species": "not_applicable",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "nausea_gi"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Reviewed placebo effects in the treatment of ulcer disease from a medical-anthropological perspective.",
+"summary": "No abstract available; title suggested a discussion of placebo effects in ulcer treatment but methods and findings were not reported.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "peptic ulcer",
+"placebo effects",
 "ulcer disease",
 "medical anthropology",
-"placebo effects",
-"1970s-1980s"
+"1983"
 ],
 "usage": {
-"input_tokens": 544,
-"cache_read_input_tokens": 5888,
+"input_tokens": 160,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 724,
-"cost_usd": 0.00173
+"output_tokens": 762,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -1269,11 +1287,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:40:46Z",
+"classified_at": "2026-09-06T17:59:59Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating told versus received alcohol (expectation vs. pharmacology), an active-drug context manipulation that isolates placebo/expectation effects.",
+"rationale": "Used a balanced-placebo expectancy manipulation of alcohol (told/alcohol vs. told/nonalcohol crossed with received alcohol/tonic), which is an active-drug context manipulation that isolates placebo/expectation effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1290,52 +1308,51 @@
 "adults"
 ],
 "condition_domain": [
-"sexual_function"
+"sexual_function",
+"cognition"
 ],
 "outcome_measures": [
-"self_report",
 "behavioral_performance",
+"self_report",
 "autonomic"
 ],
 "design": [
 "balanced_placebo"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "treatment_cues_dose_route",
-"open_label_placebo",
-"other"
+"prior_treatment_experience"
 ],
 "moderators": [
 "personality_traits",
-"expectation_level",
-"treatment_characteristics"
+"expectation_level"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design with alcohol to test expectancy and dose effects on delay-to-view erotic film and penile tumescence; instructional set increased delay and sexual thoughts and dose interacted with locus of control.",
-"key_finding": "Told-alcohol (instructional set) increased delay times and sexual thoughts regardless of drink content; alcohol dose interacted with locus of control (externalizers showed reduced delay with higher dose).",
+"summary": "Used a balanced-placebo design to manipulate alcohol expectancy and dose, and found instructional set increased delay times while alcohol dose interacted with locus of control to affect delay of gratification and arousal.",
+"key_finding": "Instructional set (told alcohol vs. told nonalcohol) increased delay times regardless of drink content, and locus of control moderated dose effects: externalizers showed decreased delay with higher dose while internalizers showed the opposite.",
 "sample_size": null,
 "free_keywords": [
 "balanced placebo",
-"alcohol",
+"alcohol expectancy",
 "penile tumescence",
 "delay of gratification",
 "locus of control",
+"erotic film",
 "sexual arousal"
 ],
 "usage": {
 "input_tokens": 675,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 966,
-"cost_usd": 0.00225
+"output_tokens": 879,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -1509,11 +1526,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:07:33Z",
+"classified_at": "2026-09-06T17:59:58Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiments directly tested contextually conditioned drug tolerance and context-elicited antinociception, addressing classical conditioning mechanisms of placebo-like responses (rule 3).",
+"confidence": 0.88,
+"rationale": "Animal experiments explicitly tested classical conditioning of morphine tolerance and contextual (placebo-like) effects, addressing mechanisms of conditioned drug responses relevant to placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1537,34 +1554,34 @@
 "genetic_molecular"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid"
+"neurobiology_opioid",
+"prior_treatment_experience"
 ],
 "moderators": [
-"prior_experience",
-"mood_anxiety_state"
+"mood_anxiety_state",
+"prior_experience"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Found that morphine tolerance developed faster when morphine was paired with salient contextual cues, but those cues did not elicit conditioned compensatory responses; stress produced antinociception that was cross-tolerant with morphine and naloxone-reversible.",
-"key_finding": "Contextual pairing accelerated morphine tolerance, contexts alone did not produce conditioned compensatory analgesia, and stress-induced antinociception showed cross-tolerance with morphine and naloxone sensitivity.",
+"summary": "Found that pairing morphine with contextual cues accelerated tolerance development in rats, contexts alone did not elicit compensatory analgesic responses, and stress-induced antinociception was cross-tolerant with morphine and naloxone-sensitive.",
+"key_finding": "Contextual cues paired with morphine sped tolerance but did not produce conditioned compensatory responses; stress induced naloxone-reversible antinociception that showed cross-tolerance with morphine.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned tolerance",
-"enkephalin",
+"contextual cues",
 "naloxone",
+"enkephalin",
 "rat",
-"classical conditioning",
 "antinociception",
 "stress"
 ],
@@ -1572,8 +1589,8 @@
 "input_tokens": 711,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1272,
-"cost_usd": 0.00287
+"output_tokens": 985,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -1845,30 +1862,31 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:12:38Z",
+"classified_at": "2026-09-06T17:59:56Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Nonhuman animal experiment that used classical (taste-aversion) conditioning to reinstate immunosuppression, directly studying conditioned immune responses (mechanism of placebo-like effects).",
+"rationale": "Animal experiment used classical (taste) conditioning to reinstate immunosuppression, making conditioned placebo-like responses the study's focus (mechanism of placebo/nocebo relevant).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"behavioral_performance"
+"immune_inflammatory"
 ],
 "design": [
 "animal_experiment"
@@ -1883,10 +1901,10 @@
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Found that pairing saccharin with antilymphocyte serum in rats produced conditioned immunosuppression upon later saccharin exposure alone.",
+"summary": "Found that pairing saccharin with antilymphocyte serum conditioned immunosuppression in rats, with reexposure to saccharin alone suppressing lymphocyte response.",
 "key_finding": "Conditioned rats showed a 35% suppression of the primary mixed lymphocyte culture response compared to controls.",
 "sample_size": null,
 "free_keywords": [
@@ -1895,14 +1913,15 @@
 "conditioned immunosuppression",
 "taste aversion",
 "mixed lymphocyte culture",
-"rats"
+"rats",
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 689,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1017,
-"cost_usd": 0.00235
+"output_tokens": 680,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -2763,17 +2782,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:08:02Z",
+"classified_at": "2026-09-06T18:00:01Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly manipulated environmental context and conditioning versus habituation to study mechanisms of morphine analgesic tolerance, fitting inclusion rule for animal cue/context models of placebo/nocebo mechanisms.",
+"confidence": 0.9,
+"rationale": "Animal experiment tested how contextual (distinctive vs nondistinctive) cues and dosing schedules influenced morphine analgesic tolerance, fitting inclusion rule for mechanism studies of conditioning relevant to placebo-like effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2784,7 +2803,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"other"
 ],
 "outcome_measures": [
 "behavioral_performance"
@@ -2800,30 +2819,31 @@
 "prior_treatment_experience"
 ],
 "moderators": [
-"treatment_characteristics",
-"prior_experience"
+"prior_experience",
+"treatment_characteristics"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Tested rats for development of morphine analgesic tolerance across distinctive versus nondistinctive contexts and found habituation-mediated tolerance in nondistinctive contexts and conditioned tolerance in distinctive contexts.",
-"key_finding": "Conditioned (context-dependent) tolerance persisted across time in distinctive environments, whereas tolerance in nondistinctive environments was mediated by habituation and showed spontaneous recovery.",
+"summary": "Tested in rats whether distinctive vs nondistinctive environments and dosing schedules influenced development and persistence of morphine analgesic tolerance, finding conditioning-like context effects and habituation processes.",
+"key_finding": "Distinctive contexts produced environment-sensitive, persistent tolerance consistent with classical conditioning, whereas nondistinctive contexts produced habituation-like, less persistent tolerance.",
 "sample_size": null,
 "free_keywords": [
-"morphine tolerance",
-"conditioned tolerance",
-"habituation",
+"morphine",
+"analgesic tolerance",
 "rats",
-"analgesia",
-"spaced vs massed"
+"context conditioning",
+"habituation",
+"environmental cues",
+"dosing schedule"
 ],
 "usage": {
 "input_tokens": 726,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1230,
-"cost_usd": 0.00279
+"output_tokens": 1007,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -2875,24 +2895,26 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:09:44Z",
+"classified_at": "2026-09-06T18:00:02Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment tested Pavlovian conditioning (blocking and sensory preconditioning) as a mechanism for morphine analgesic tolerance, making placebo-like conditioned responses the explicit focus.",
+"confidence": 0.75,
+"rationale": "Nonhuman animal experiment testing Pavlovian (classical) conditioning of morphine analgesic tolerance, which is a mechanistic study relevant to placebo/nocebo learning models (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
@@ -2900,13 +2922,15 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
@@ -2915,24 +2939,24 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Demonstrated blocking and sensory preconditioning in morphine analgesic tolerance in rats, supporting a Pavlovian conditioning model of drug tolerance.",
-"key_finding": "Found that conditioned cues produced effects on morphine analgesic tolerance (blocking and sensory preconditioning), implicating Pavlovian learning in drug tolerance.",
+"summary": "Found that blocking and sensory preconditioning influenced morphine analgesic tolerance in rats, supporting a Pavlovian conditioning model of drug tolerance.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned tolerance",
 "blocking",
 "sensory preconditioning",
+"classical conditioning",
 "analgesia",
-"rats",
-"pavlovian conditioning"
+"rat model"
 ],
 "usage": {
 "input_tokens": 469,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1096,
-"cost_usd": 0.00246
+"output_tokens": 967,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -3075,20 +3099,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:18:06Z",
+"classified_at": "2026-09-03T04:40:41Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly frames acupuncture in terms of placebo, indicating placebo mechanisms/interpretation are the paper's subject (a review/discussion).",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text available; title implies a discussion of whether acupuncture effects are placebo, but the paper's aim and methods cannot be confirmed from available information.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -3099,9 +3123,15 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -3110,30 +3140,32 @@
 ],
 "mechanisms": [
 "therapeutic_ritual_context",
-"verbal_suggestion_expectation",
-"classical_conditioning"
+"treatment_cues_dose_route",
+"history_conceptual"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
-"sham_acupuncture"
+"not_applicable"
 ]
 },
-"summary": "Discusses whether acupuncture's apparent benefits reflect specific physiological effects or placebo mechanisms such as expectancy, ritual, and conditioning.",
+"summary": "Discusses whether acupuncture's apparent benefits reflect specific physiological mechanisms or placebo/contextual effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "acupuncture",
-"sham-acupuncture",
-"ritual",
-"expectancy",
-"placebo"
+"placebo",
+"contextual_effects",
+"therapeutic ritual",
+"history"
 ],
 "usage": {
-"input_tokens": 554,
+"input_tokens": 376,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 682,
-"cost_usd": 0.00165
+"output_tokens": 728,
+"cost_usd": 0.0017
 }
 },
 "sources": [
@@ -3872,11 +3904,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:10:04Z",
+"classified_at": "2026-09-06T18:00:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The study experimentally manipulated analgesic suggestion (verbal expectancy) and measured its effect on cold-pressor pain magnitude and tolerance, so placebo/nocebo phenomena were an explicit experimental focus.",
+"confidence": 0.85,
+"rationale": "Experimental manipulation of an analgesic suggestion versus no suggestion directly tested expectation/context effects on cold-pressor pain (placebo-effect style manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3900,40 +3932,40 @@
 "behavioral_performance"
 ],
 "design": [
-"within_subject_experimental"
+"within_subject_experimental",
+"parallel_groups_rct"
 ],
 "effects": [
-"null_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
-"emotion_anxiety_regulation"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated analgesic suggestion before a cold-pressor posttest and measured magnitude-estimated pain and tolerance; suggestion did not alter pain growth rate, but catastrophizing and tolerance group differences affected pain trajectories.",
-"key_finding": "Analgesic suggestion had no reliable effect on pain-intensity growth, while catastrophizers showed faster pain escalation and high-tolerance subjects showed slower growth.",
+"summary": "Tested whether an analgesic verbal suggestion altered cold-pressor pain magnitude estimates and tolerance; suggestion did not reduce pain growth overall, but catastrophizers showed faster pain escalation and high-tolerance participants showed slower pain growth.",
+"key_finding": "Analgesic suggestion produced no overall analgesic effect; catastrophizers had greater pain increase posttest, and high-tolerance subjects showed slower pain-intensity growth.",
 "sample_size": null,
 "free_keywords": [
 "cold pressor",
 "magnitude estimation",
 "catastrophizing",
-"tolerance",
-"analgesic suggestion"
+"pain tolerance",
+"coping"
 ],
 "usage": {
-"input_tokens": 6494,
-"cache_read_input_tokens": 0,
+"input_tokens": 606,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 882,
-"cost_usd": 0.00339
+"output_tokens": 772,
+"cost_usd": 0.00184
 }
 },
 "sources": [

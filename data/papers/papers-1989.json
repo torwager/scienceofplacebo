@@ -38,24 +38,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/2604670",
 "cited_by_count": 11,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:44:44Z",
+"classified_at": "2026-09-06T17:58:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Expectation for disliking cold weather training was measured as a predictor of mood and symptom outcomes (an observational study of expectation effects), meeting inclusion for studies that measure expectation/context as predictors of health-relevant outcomes.",
+"confidence": 0.6,
+"rationale": "Measured participants' expectations for liking cold-weather training and showed those expectations predicted self-reported mood and symptoms, so the paper studies expectation effects on symptom outcomes (nocebo-like) rather than using placebo only as a comparator.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -66,9 +66,6 @@
 "adults"
 ],
 "condition_domain": [
-"mood_depression",
-"anxiety_stress",
-"fatigue",
 "other"
 ],
 "outcome_measures": [
@@ -82,10 +79,10 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
+"emotion_anxiety_regulation",
 "attention_cognitive_appraisal"
 ],
 "moderators": [
-"prior_experience",
 "mood_anxiety_state",
 "expectation_level"
 ],
@@ -93,8 +90,8 @@
 "not_applicable"
 ]
 },
-"summary": "Measured soldiers' expectations about cold-weather training and found that negative expectations predicted greater self-reported tension, depression, anger, fatigue, and physical discomfort during three days of cold training.",
-"key_finding": "Negative expectation for liking the training was associated with higher self-reported negative mood and symptoms (N=59).",
+"summary": "Found that soldiers' negative expectations about cold-weather training predicted greater self-reported tension, depression, anger, fatigue, and physical discomfort during three days of cold training (N=59).",
+"key_finding": "Greater expectation of disliking the training predicted higher scores on multiple POMS domains and environmental symptoms.",
 "sample_size": 59,
 "free_keywords": [
 "military",
@@ -102,6 +99,7 @@
 "profile of mood states",
 "environmental symptoms questionnaire",
 "expectation",
+"mood",
 "self-report"
 ],
 "usage": {
@@ -162,27 +160,24 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:45:20Z",
+"classified_at": "2026-09-06T17:58:34Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Animal experiment tested conditioned immunosuppression (a cue/context-induced physiological response) and its blockade by drugs, so placebo-like conditioned effect and its mechanisms were the explicit focus.",
+"rationale": "Animal experiment demonstrated classical conditioning of immunosuppression and tested pharmacological blockade, fitting inclusion criterion for conditioned placebo-like mechanisms (mechanisms/moderators of placebo effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -198,37 +193,33 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"treatment_cues_dose_route"
+"other"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Found that chlorpromazine or amitriptyline given after conditioning abolished conditioned immunosuppression and reduced conditioned taste aversion in mice.",
-"key_finding": "Pharmacological treatment with chlorpromazine or amitriptyline reduced the conditioned decrease in antibody response evoked by saccharin-associated cyclophosphamide.",
+"summary": "Found that mice conditioned with saccharin paired with cyclophosphamide showed immunosuppression, and post-challenge treatment with chlorpromazine or amitriptyline reduced the conditioned immunosuppression and taste aversion.",
+"key_finding": "Chlorpromazine and amitriptyline given after challenge abolished or reduced conditioned immunosuppression and, to a lesser extent, conditioned taste aversion in mice.",
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
-"saccharin",
 "cyclophosphamide",
-"antibody response",
+"saccharin",
 "conditioned taste aversion",
+"antibody response",
 "chlorpromazine",
 "amitriptyline",
-"balb/c mice"
+"BALB/c"
 ],
 "usage": {
 "input_tokens": 581,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1298,
-"cost_usd": 0.00289
+"output_tokens": 1257,
+"cost_usd": 0.00281
 }
 },
 "sources": [
@@ -651,11 +642,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:44:59Z",
+"classified_at": "2026-09-06T17:58:34Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "The study explicitly tested conditioned physiological and subjective responses to alcohol and a placebo challenge, making placebo/nocebo responses an object of study (classical conditioning of alcohol responses).",
+"confidence": 0.9,
+"rationale": "Placebo (placebo alcohol) was used as a challenge to assess conditioned physiological and self-report responses after repeated alcohol administrations, making placebo response/conditioning an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -677,8 +668,8 @@
 "other"
 ],
 "outcome_measures": [
-"autonomic",
-"self_report"
+"self_report",
+"autonomic"
 ],
 "design": [
 "within_subject_experimental",
@@ -690,32 +681,32 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"prior_treatment_experience"
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Tested conditioned autonomic and self-report responses to repeated ethanol and a placebo challenge in Asian men and found placebo-evoked physiological and subjective changes in non-flushers.",
-"key_finding": "Placebo challenge produced decreased finger-pulse amplitude and increased self-ratings of 'boastful' in men who did not flush, suggesting conditioned placebo responses.",
+"summary": "Tested conditioned skin-flushing, autonomic, and mood responses in Asian men after repeated alcohol sessions and found significant autonomic and self-report responses during a placebo (nonalcohol) challenge in non-flushers.",
+"key_finding": "Finger-pulse amplitude decreased and self-ratings of 'boastful' increased significantly to the placebo challenge in men who did not flush to alcohol.",
 "sample_size": null,
 "free_keywords": [
 "alcohol placebo",
-"flushing",
-"finger pulse amplitude",
+"skin flushing",
 "asian men",
-"ethanol challenge",
-"conditioned response"
+"ethanol",
+"conditioned response",
+"cardiovascular"
 ],
 "usage": {
 "input_tokens": 622,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 770,
-"cost_usd": 0.00184
+"output_tokens": 1035,
+"cost_usd": 0.00237
 }
 },
 "sources": [
@@ -1129,11 +1120,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:24:22Z",
+"classified_at": "2026-09-06T17:58:34Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Randomized manipulation of preparatory information changed expectations/anxiety and increased reported post-myelogram side effects, so the paper experimentally tested a nocebo/communication effect (negative expectation) versus control.",
+"confidence": 0.85,
+"rationale": "Randomized manipulation of preparatory information altered expectations, anxiety and incidence of post-myelogram side effects, making expectation-driven nocebo effects the study's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1147,14 +1138,16 @@
 "general_public"
 ],
 "age_group": [
-"adults"
+"adults",
+"mixed_unspecified"
 ],
 "condition_domain": [
-"adverse_events",
-"anxiety_stress"
+"anxiety_stress",
+"adverse_events"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"clinician_rated"
 ],
 "design": [
 "parallel_groups_rct"
@@ -1163,9 +1156,8 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"nocebo_communication_disclosure",
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
+"nocebo_communication_disclosure"
 ],
 "moderators": [
 "none_reported"
@@ -1174,24 +1166,25 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized patients received sensory, procedural, or no preparatory tape information before myelogram; sensory information increased reported post-myelogram side effects and procedural information reduced anxiety.",
-"key_finding": "Sensory preparatory information produced significantly more reported side effects than procedural or no information; procedural information reduced pre-test anxiety.",
+"summary": "Randomized patients received sensory, procedural, or no preparatory tape-recorded information before myelography; sensory information increased post-test anxiety and the number of reported side effects compared with procedural or no information.",
+"key_finding": "Sensory preparatory information produced greater anxiety and significantly more reported side effects than procedural or no information.",
 "sample_size": 30,
 "free_keywords": [
 "myelogram",
-"pre-procedure education",
+"patient education",
+"preparation information",
 "sensory information",
 "procedural information",
-"side effects",
-"anxiety",
-"taped message"
+"nocebo",
+"expectation",
+"side effects"
 ],
 "usage": {
-"input_tokens": 663,
-"cache_read_input_tokens": 5888,
+"input_tokens": 407,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 870,
-"cost_usd": 0.00205
+"output_tokens": 843,
+"cost_usd": 0.00194
 }
 },
 "sources": [
@@ -1722,24 +1715,24 @@
 "oa_pdf_url": "https://kops.uni-konstanz.de/server/api/core/bitstreams/a4cc0169-d91d-4a30-88a7-c6dfd026742a/content",
 "landing_url": "https://doi.org/10.1016/0091-3057(89)90353-5",
 "cited_by_count": 17,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:44:21Z",
+"classified_at": "2026-09-06T17:58:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment demonstrated classical conditioning of a drug response to environmental cues, which is a mechanistic model relevant to placebo-related learning processes (included per rule 3).",
+"rationale": "Animal experiment manipulated environmental context paired with an active drug and demonstrated conditioned sensitization and place preference, addressing classical conditioning mechanisms relevant to placebo/nocebo science (inclusion rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -1763,7 +1756,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
 "prior_experience"
@@ -1772,23 +1766,24 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that repeated apomorphine injections in the same environment produced sensitized behavioral responses and induced conditioned place preference in pigeons, implicating environmental cue conditioning of drug effects.",
-"key_finding": "Conditioned sensitization to apomorphine and place preference indicated environmental cues augmented drug-induced behavior.",
+"summary": "Found that repeated apomorphine in the same environment produced augmented behavioral sensitization and conditioned place preference in pigeons, indicating environmental cues conditioned the drug response.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "apomorphine",
 "pigeon",
 "sensitization",
-"conditioned_place_preference",
-"classical_conditioning",
-"dopamine_agonist"
+"conditioned place preference",
+"classical conditioning",
+"environmental cues",
+"reinforcement"
 ],
 "usage": {
 "input_tokens": 616,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1283,
-"cost_usd": 0.00287
+"output_tokens": 1189,
+"cost_usd": 0.00268
 }
 },
 "sources": [
@@ -2414,11 +2409,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:43:36Z",
+"classified_at": "2026-09-06T17:58:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental manipulation of verbal/hypnotic suggestion versus no-suggestion directly tested effects on pain perception, meeting inclusion for context/expectation effects.",
+"rationale": "Experimental manipulation of suggestion (analgesia vs relaxation vs no suggestion) tested effects on pain perception, isolating context/suggestion effects on subjective pain.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2449,7 +2444,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -2458,23 +2453,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Compared analgesia suggestion, relaxation suggestion, and no suggestion in highly susceptible volunteers and found differential effects on pain intensity versus unpleasantness.",
-"key_finding": "Hypnotic-analgesia suggestion reduced perceived intensity but not unpleasantness, while hypnotic-relaxation suggestion reduced unpleasantness but not intensity.",
+"summary": "Assigned highly hypnotically susceptible volunteers to analgesia, relaxation, or no-suggestion groups and found hypnotic analgesia reduced perceived intensity while relaxation reduced unpleasantness of shocks.",
+"key_finding": "Hypnotic-analgesia suggestion selectively decreased sensory intensity ratings, whereas hypnotic-relaxation suggestion selectively decreased unpleasantness ratings.",
 "sample_size": 45,
 "free_keywords": [
 "hypnosis",
 "hypnotic analgesia",
 "magnitude estimation",
 "pain descriptors",
-"intensity",
-"unpleasantness"
+"sensory-affective dimension"
 ],
 "usage": {
-"input_tokens": 596,
-"cache_read_input_tokens": 5888,
+"input_tokens": 340,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 799,
-"cost_usd": 0.00189
+"output_tokens": 851,
+"cost_usd": 0.00194
 }
 },
 "sources": [
@@ -2531,11 +2525,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:45:55Z",
+"classified_at": "2026-09-06T17:58:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested classical conditioning as a cue (MIF) predictive of morphine administration and its effect on conditioned tolerance, meeting inclusion rule for animal models of conditioning mechanisms.",
+"rationale": "Animal experiment tested classical conditioning (cue predictive of morphine) affecting tolerance, which addresses mechanisms of conditioned drug responses relevant to placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2548,7 +2542,9 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
@@ -2556,14 +2552,14 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -2572,8 +2568,8 @@
 "other"
 ]
 },
-"summary": "Tested whether Pro-Leu-Gly-NH2 (MIF) served as a conditioned cue predicting morphine and found MIF pretreatment influenced acquisition/expression of morphine tolerance in rats on a hot-plate antinociception task.",
-"key_finding": "MIF pretreatment acted as a cue that appeared to interfere with acquisition or expression of morphine tolerance, as indicated by longer paw-lick latencies when MIF was absent at test.",
+"summary": "Found that Pro-Leu-Gly-NH2 (MIF) served as a conditioned cue predicting morphine and interfered with acquisition of morphine tolerance in rats, altering hot-plate paw-lick latencies.",
+"key_finding": "MIF pretreatment appeared to block acquisition of morphine tolerance, as animals tested 72 hours later without MIF showed longer paw-lick latencies.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
@@ -2585,10 +2581,10 @@
 "classical conditioning"
 ],
 "usage": {
-"input_tokens": 637,
-"cache_read_input_tokens": 5888,
+"input_tokens": 381,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1107,
+"output_tokens": 1137,
 "cost_usd": 0.00252
 }
 },
@@ -3358,18 +3354,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:46:06Z",
+"classified_at": "2026-09-06T17:58:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title and metadata indicate the paper reviews Pavlovian (classical) conditioning of pain using morphine/naloxone, directly addressing conditioning mechanisms of placebo-like analgesia.",
+"confidence": 0.8,
+"rationale": "Title and publication type indicate a review focused on pharmacological (Pavlovian) conditioning of pain with morphine/naloxone, directly addressing mechanisms of placebo-like conditioned analgesia (placebo/nocebo) consistent with inclusion rule for reviews of placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_science_other"
+"placebo_and_nocebo"
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
@@ -3394,32 +3389,31 @@
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_opioid",
-"prior_treatment_experience",
 "neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reviewed evidence that Pavlovian (classical) conditioning with morphine and naloxone produces conditioned modulation of pain, implicating opioid-mediated mechanisms.",
-"key_finding": "Argued that pharmacological conditioning can elicit conditioned analgesia and that opioid systems (blocked by naloxone) mediate these effects.",
+"summary": "Reviewed Pavlovian pharmacological conditioning with morphine and naloxone as a model for conditioned modulation of pain and opioid-mediated placebo/nocebo mechanisms.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conditioned analgesia",
 "morphine",
 "naloxone",
-"opioid receptors",
-"pavlovian conditioning"
+"conditioned analgesia",
+"opioid-mediated",
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 457,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 913,
-"cost_usd": 0.00209
+"output_tokens": 867,
+"cost_usd": 0.002
 }
 },
 "sources": [
@@ -3470,11 +3464,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:43:18Z",
+"classified_at": "2026-09-06T17:59:04Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Review focused on experimentally demonstrated classical conditioning of immune responses (behaviourally conditioned immunomodulation), a placebo-related mechanism in animal models (mechanisms of conditioned immunosuppression/enhancement).",
+"rationale": "Reviewed animal studies of behaviourally conditioned immunomodulation—classical conditioning of immune responses is an explicit placebo-like mechanism and the paper's subject is conditioned immunomodification (placebo-related mechanisms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3501,37 +3495,39 @@
 "not_applicable"
 ],
 "effects": [
-"significant_objective"
+"not_applicable"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid",
+"neurobiology_other_neurochemical",
 "neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"not_applicable"
 ]
 },
-"summary": "Reviewed animal studies showing that Pavlovian (taste aversion) conditioning produced reliable conditioned immunosuppression and immunoenhancement, implicating ACTH and beta-endorphin-mediated CNS–immune communication.",
-"key_finding": "Reviewed evidence that conditioned taste cues produced objective changes in immune markers (e.g., helper:suppressor T cell ratios, DTH), mediated by neuroendocrine pathways including ACTH and endogenous opioids.",
+"summary": "Reviews animal studies showing Pavlovian (taste-aversion) conditioning can alter cellular immune responses and discusses neuroendocrine mediators (ACTH, beta-endorphin) and potential clinical applications.",
+"key_finding": "Described conditioned increases in helper:suppressor T-cell ratios and conditioned suppression of DTH in animal models, implicating ACTH and beta-endorphin.",
 "sample_size": null,
 "free_keywords": [
+"conditioned immunosuppression",
+"conditioned immunoenhancement",
 "conditioned taste aversion",
 "Ader and Cohen",
-"helper:suppressor ratio",
-"delayed-type hypersensitivity",
+"ACTH",
 "beta-endorphin",
-"ACTH"
+"delayed-type hypersensitivity",
+"helper:suppressor ratio"
 ],
 "usage": {
 "input_tokens": 707,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1114,
-"cost_usd": 0.00255
+"output_tokens": 1059,
+"cost_usd": 0.00244
 }
 },
 "sources": [
@@ -3813,11 +3809,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:42:57Z",
+"classified_at": "2026-09-06T17:58:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Title indicates a methodological review of randomized double-blind procedures and placebos, making placebo science the main subject despite no abstract.",
+"confidence": 0.65,
+"rationale": "Paper is a methodological discussion of double-blind procedures and placebos in clinical trials, so placebo is the main subject as a research-design/methods topic (placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3827,36 +3823,52 @@
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [
-"trial_methodology_placebo_response"
+"population": [
+"not_applicable"
 ],
-"moderators": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed the importance of randomized, double-blind procedures and the role of placebo controls in clinical trial methodology.",
+"summary": "Discusses the importance of randomized double-blind procedures and the role of placebos in clinical trial methodology.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"blinding",
 "double-blind",
-"placebo-controls",
-"clinical_trials",
-"research_design"
+"randomization",
+"research design",
+"placebo-controlled",
+"blinding",
+"clinical trials"
 ],
 "usage": {
 "input_tokens": 439,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 465,
-"cost_usd": 0.00119
+"output_tokens": 695,
+"cost_usd": 0.00165
 }
 },
 "sources": [
@@ -4260,24 +4272,25 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0306-4603(89)90002-6",
 "cited_by_count": 25,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:44:32Z",
+"classified_at": "2026-09-06T17:58:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "The paper explicitly studied an attention-placebo control and methods to equate program success expectancies between experimental and placebo conditions, making placebo/expectancy methodology the study focus.",
+"confidence": 0.8,
+"rationale": "Study experimentally contrasted an attention-placebo control with an active prevention program and made program success expectancies the focus, testing their prediction and equivalence across conditions (trial methodology/placebo-science focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_science_other",
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4288,7 +4301,7 @@
 "children_adolescents"
 ],
 "condition_domain": [
-"addiction_craving"
+"other"
 ],
 "outcome_measures": [
 "self_report"
@@ -4310,22 +4323,23 @@
 "sham_psychological"
 ]
 },
-"summary": "Tested whether an attention-placebo (information) smoking prevention program could be equated with an experimental social-influences program on program success expectancies and found equivalent posttest expectancies and that baseline expectancies predicted outcomes.",
-"key_finding": "Baseline program success expectancies predicted smoking-related outcomes, and youths held equivalent overall expectancies across the two program conditions at posttest.",
+"summary": "Tested whether an attention-placebo school smoking prevention program could equate program-success expectancies with an experimental social-influences program and found expectancies predicted outcomes and were equivalent at posttest.",
+"key_finding": "Baseline program success expectancies predicted outcome measures even after controlling for baseline smoking intentions, ethnicity, and gender; posttest expectancies were equivalent across conditions.",
 "sample_size": null,
 "free_keywords": [
-"adolescent smoking",
+"adolescents",
+"smoking prevention",
 "attention-placebo",
-"program expectancies",
-"school-based prevention",
-"social-influences program"
+"expectancies",
+"school-based",
+"randomized"
 ],
 "usage": {
 "input_tokens": 694,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 961,
-"cost_usd": 0.00224
+"output_tokens": 1011,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -4729,11 +4743,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:46:44Z",
+"classified_at": "2026-09-06T17:58:39Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Review focused on response expectancies and learning mechanisms that modulate drug (alcohol) tolerance, which addresses placebo-related mechanisms (expectation/conditioning) and fits inclusion criterion for mechanism-focused reviews.",
+"rationale": "Narrative review focused on response expectancies and learned modulation of alcohol tolerance, which addresses expectancy mechanisms relevant to placebo/nocebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4764,33 +4778,31 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "classical_conditioning",
-"prior_treatment_experience",
-"treatment_cues_dose_route"
+"prior_treatment_experience"
 ],
 "moderators": [
-"prior_experience",
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Reviews evidence that learned response expectancies and practice under alcohol influence development and display of alcohol tolerance through conditioning and mental rehearsal.",
+"summary": "Reviewed evidence that response expectancies acquired by learning or mental rehearsal influence alcohol tolerance in humans and animals.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "alcohol tolerance",
 "response expectancy",
-"acute tolerance",
 "mental rehearsal",
-"conditioned tolerance"
+"conditioned tolerance",
+"acute tolerance"
 ],
 "usage": {
 "input_tokens": 594,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1036,
-"cost_usd": 0.00237
+"output_tokens": 829,
+"cost_usd": 0.00195
 }
 },
 "sources": [

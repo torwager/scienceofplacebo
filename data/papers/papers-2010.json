@@ -299,28 +299,24 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:07:30Z",
+"classified_at": "2026-09-06T17:53:09Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Paper's primary focus was ethical analysis of placebo use in clinical trials (placebo as the main subject), meeting inclusion for placebo science/ethics.",
+"confidence": 0.8,
+"rationale": "Paper's main focus was ethical analysis of placebo use in migraine clinical trials (placebo science), meeting inclusion for placebo_science_other.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
-"other"
+"pain"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -333,6 +329,7 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
+"history_conceptual",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
@@ -342,24 +339,25 @@
 "not_applicable"
 ]
 },
-"summary": "Analyzed ethical conflicts arising from placebo use in migraine drug trials using a moral deliberation method and proposed decision pathways for resolving them.",
+"summary": "Discussed ethical problems of using placebo in migraine drug trials and illustrated resolution via the moral deliberation method applied to two trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "migraine",
 "ethics",
-"clinical trial",
-"moral_deliberation",
+"moral deliberation",
+"clinical trials",
 "placebo use",
 "prophylaxis",
-"acute treatment"
+"acute treatment",
+"informed consent"
 ],
 "usage": {
 "input_tokens": 672,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 550,
-"cost_usd": 0.00142
+"output_tokens": 654,
+"cost_usd": 0.00162
 }
 },
 "sources": [
@@ -1222,17 +1220,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:08:28Z",
+"classified_at": "2026-09-06T17:53:13Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Meta-analysis explicitly quantified nonspecific (sham) acupuncture effects by comparing sham versus no-acupuncture controls, directly addressing placebo effects (experimental isolation across trials).",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly examined nonspecific (sham) acupuncture effects by pooling randomized trials that compared sham acupuncture to no-acupuncture controls, meeting criterion 4/2 (placebo/nocebo effects as object).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "meta_analysis",
 "species": "human",
@@ -1253,37 +1252,38 @@
 "meta_analytic"
 ],
 "effects": [
-"significant_subjective",
-"mixed_inconsistent"
+"significant_subjective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
 "therapeutic_ritual_context",
+"treatment_cues_dose_route",
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics"
+"trial_characteristics",
+"treatment_characteristics"
 ],
 "intervention_type": [
 "sham_acupuncture"
 ]
 },
-"summary": "Pooled randomized trials found that sham acupuncture produced moderately large nonspecific effects versus no acupuncture, suggesting sizable placebo/context effects associated with sham interventions.",
-"key_finding": "Across 32 trials with continuous outcomes, sham acupuncture versus no acupuncture showed SMD = -0.45 (95% CI -0.57 to -0.34), indicating a moderate nonspecific effect.",
+"summary": "Pooled randomized trials found that sham acupuncture produced a moderate nonspecific effect versus no acupuncture (SMD = -0.45), with heterogeneity across conditions and trials.",
+"key_finding": "Sham acupuncture versus no acupuncture: standardized mean difference = -0.45 (95% CI -0.57 to -0.34), indicating a moderate nonspecific effect.",
 "sample_size": 37,
 "free_keywords": [
 "acupuncture",
 "sham acupuncture",
 "nonspecific effects",
 "standardized mean difference",
-"meta-regression"
+"heterogeneity",
+"eggers test"
 ],
 "usage": {
 "input_tokens": 783,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 877,
-"cost_usd": 0.0021
+"output_tokens": 956,
+"cost_usd": 0.00225
 }
 },
 "sources": [
@@ -1348,11 +1348,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:08:40Z",
+"classified_at": "2026-09-06T17:53:16Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment that explicitly tested classical (backward) conditioning of an immunological (TNF-α) response, i.e., a conditioned physiological response consistent with placebo/nocebo mechanism studies (rule 3).",
+"confidence": 0.9,
+"rationale": "Animal experiment testing classical (backward) conditioning of an immunological (TNF-α) response, making conditioned immune response the study focus (mechanism of placebo-like effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1362,12 +1362,8 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -1385,30 +1381,30 @@
 "classical_conditioning"
 ],
 "moderators": [
-"treatment_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Tested backward classical conditioning in mice and found timing-dependent conditioned TNF-α responses and subsequent LPS tolerance after a single saccharin–LPS pairing.",
-"key_finding": "Observed evidence of a conditioned TNF-α response and altered LPS tolerance in some timing conditions following a single-trial backward conditioning.",
+"summary": "Tested backward classical conditioning in mice and found timing-dependent conditioned TNF-α responses and LPS tolerance after a single trial, while taste aversion was not observed.",
+"key_finding": "Found evidence of a conditioned TNF-α response and subsequent LPS tolerance that depended on CS timing; taste-aversion was not produced.",
 "sample_size": 48,
 "free_keywords": [
 "lipopolysaccharide",
-"saccharin",
-"tnf-alpha",
+"LPS",
+"tumor necrosis factor-alpha",
+"TNF-α",
 "backward conditioning",
-"conditioned immunosuppression",
-"balb/c",
-"single-trial"
+"saccharin",
+"BALB/c"
 ],
 "usage": {
 "input_tokens": 789,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 944,
-"cost_usd": 0.00223
+"output_tokens": 818,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -3135,11 +3131,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:09:28Z",
+"classified_at": "2026-09-06T17:53:15Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Empirical study that explicitly examined reporting of placebo composition in randomized, placebo-controlled trials, making placebo reporting the paper's primary subject (placebo science).",
+"rationale": "The paper empirically studied reporting of placebo composition across randomized, placebo-controlled trials, making placebo science (trial methodology/reporting) its explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3177,24 +3173,23 @@
 "not_applicable"
 ]
 },
-"summary": "Assessed how often randomized, placebo-controlled trials in high-impact journals reported the composition of their placebos and found that disclosure was uncommon, especially for pills.",
-"key_finding": "Found placebo composition was disclosed in 8.2% of pill studies versus 26.7% of injection/other studies (P = 0.002).",
+"summary": "Analyzed high-impact general/internal medicine journals (2008–2009) and found that most randomized, placebo-controlled trials did not disclose placebo composition, with pills less often described than injections.",
+"key_finding": "Found low disclosure of placebo formulation overall and significantly lower reporting for pill placebos (8.2%) versus injections (26.7%).",
 "sample_size": null,
 "free_keywords": [
 "placebo_composition",
-"reporting_transparency",
+"reporting_standards",
+"randomized_controlled_trials",
 "trial_reporting",
 "placebo_reporting",
-"consort",
-"methodology",
-"journal_practices"
+"reporting_bias"
 ],
 "usage": {
 "input_tokens": 687,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 810,
-"cost_usd": 0.00194
+"output_tokens": 713,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -3254,11 +3249,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:09:38Z",
+"classified_at": "2026-09-06T17:53:14Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized manipulation of verbal expectations about pain (habituation vs. sensitization vs. stable vs. control) made expectation/placebo-like context the explicit experimental factor affecting pain habituation.",
+"rationale": "Randomized manipulation of verbal expectations about pain trajectory was the study's primary experimental manipulation and it causally altered pain habituation, meeting criteria for placebo/nocebo (expectation/context) effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3280,11 +3275,11 @@
 "pain"
 ],
 "outcome_measures": [
-"self_report",
-"autonomic"
+"self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"parallel_groups_rct",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_subjective"
@@ -3300,22 +3295,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized healthy volunteers received different verbal instructions about expected pain across eight days and expectation manipulations altered long-term heat-pain habituation.",
-"key_finding": "Instructing participants that pain would habituate increased habituation, while instructions that pain would increase or remain stable abolished habituation.",
+"summary": "Randomized healthy volunteers received different verbal expectations about multi-day heat pain; expectations modulated habituation, with increased habituation when told pain would decrease and abolished habituation when told it would increase or remain stable.",
+"key_finding": "Expectation instructions significantly altered long-term heat-pain habituation: habituation was enhanced in the 'pain will habituate' group and reduced/abolished in 'increase' and 'stable' groups (N=37).",
 "sample_size": 37,
 "free_keywords": [
 "heat pain",
 "habituation",
-"expectancy",
+"repetitive stimulation",
+"expectation manipulation",
 "sensitization",
-"repetitive stimulation"
+"verbal instruction"
 ],
 "usage": {
 "input_tokens": 718,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 819,
-"cost_usd": 0.00196
+"output_tokens": 780,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -3497,11 +3493,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:06:59Z",
+"classified_at": "2026-09-06T17:53:41Z",
 "screening": {
 "decision": "include",
-"confidence": 0.88,
-"rationale": "The study explicitly compared verum versus non-penetrating sham acupuncture focusing on biomechanical properties and sensation/credibility of the sham, a methodological placebo-research question.",
+"confidence": 0.9,
+"rationale": "Empirical crossover study directly compared verum versus non-penetrating sham acupuncture and measured sham credibility, sensations, and biomechanical properties (placebo control methodology/mechanism focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3523,7 +3519,6 @@
 ],
 "outcome_measures": [
 "self_report",
-"motor_kinematic",
 "other"
 ],
 "design": [
@@ -3536,34 +3531,34 @@
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
-"attention_cognitive_appraisal",
-"therapeutic_ritual_context"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"sham_acupuncture"
+"sham_acupuncture",
+"other"
 ]
 },
-"summary": "Compared biomechanical insertion/pullout forces and sensation ratings between verum and non-penetrating sham needles in a 14-participant crossover, and found higher insertion force and stronger sensations for verum acupuncture.",
-"key_finding": "Verum acupuncture produced significantly greater insertion force and higher penetration, acute pain and DeQi ratings than the non-penetrating sham; participants could reliably distinguish the two.",
+"summary": "Compared verum penetrating acupuncture and non-penetrating sham needles in a crossover design and found larger insertion/pullout forces and higher self-reported penetration, pain and DeQi ratings for verum acupuncture.",
+"key_finding": "Found significant differences in insertion force (68.5 vs 27.2 gf) and higher self-reported sensations for verum versus sham acupuncture.",
 "sample_size": 14,
 "free_keywords": [
-"LI4",
+"li4",
 "deqi",
-"insertion force",
-"pullout force",
-"non-penetrating sham",
-"credibility",
-"needling sensation"
+"insertion_force",
+"pullout_force",
+"sham needle",
+"non-penetrating",
+"acupuncture credibility"
 ],
 "usage": {
 "input_tokens": 773,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 983,
-"cost_usd": 0.00231
+"output_tokens": 1150,
+"cost_usd": 0.00264
 }
 },
 "sources": [
@@ -3993,11 +3988,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:09:49Z",
+"classified_at": "2026-09-06T17:53:39Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Systematic review of RCT reporting and terminology concerning placebos/vehicles in topical dermatology trials, fitting placebo science/methodology inclusion (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Systematic review whose primary focus was placebo/vehicle terminology and reporting practices in RCTs (placebo science/methodology), meeting inclusion criterion 5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4008,7 +4003,7 @@
 "article_type": "systematic_review",
 "species": "human",
 "population": [
-"not_applicable"
+"mixed_clinical"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -4026,8 +4021,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"clinical_use_ethics_attitudes"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -4036,22 +4030,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed topical dermatology RCTs (1999–2008) for correct use of the terms 'vehicle' versus 'placebo' and found frequent misclassification.",
-"key_finding": "Found that 49% of 132 trials correctly classified their topical control as a vehicle, with pharmaceutical-funded studies more likely to classify correctly.",
+"summary": "Reviews topical dermatology RCTs for correct use of the terms 'vehicle' versus 'placebo' and found many studies mislabelled controls.",
+"key_finding": "Found that 49% of trials correctly classified controls as vehicle-controlled and pharmaceutical-funded studies were more likely to use correct terminology (55%, P=0.01).",
 "sample_size": 132,
 "free_keywords": [
-"topical vehicle",
-"dermatology",
-"reporting standards",
-"terminology",
-"placebo terminology"
+"vehicle terminology",
+"topical drug",
+"dermatology journals",
+"reporting quality",
+"pharmaceutical funding"
 ],
 "usage": {
 "input_tokens": 761,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 686,
-"cost_usd": 0.00171
+"output_tokens": 803,
+"cost_usd": 0.00194
 }
 },
 "sources": [
@@ -4198,75 +4192,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T20:52:15Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:03:40Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Essay/commentary focused on the concept of the doctor as a therapeutic agent and the history/role of Balint work, fitting placebo science (history/ethics/clinical role) inclusion criterion.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text provided and title suggests a commentary on physician–patient relations; insufficient information to judge whether placebo/nocebo phenomena were an explicit study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual",
-"therapeutic_ritual_context",
-"provider_patient_interaction"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Provided a historical and conceptual commentary on Balint’s idea of the doctor as a therapeutic agent and the importance of doctor–patient relationship in clinical outcomes.",
+"summary": "Insufficient information (no abstract) to determine whether the paper empirically studied placebo/nocebo effects; title suggests a commentary on Balint work and physician–patient relations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "balint",
-"doctor-as-drug",
+"physician-patient relations",
+"placebo effect (meSH term present)",
+"clinical competence",
 "general practice",
-"therapeutic relationship",
-"consultation",
-"empathy"
+"psychodynamic"
 ],
 "usage": {
-"input_tokens": 2615,
+"input_tokens": 413,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 731,
-"cost_usd": 0.00226
+"output_tokens": 575,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -5172,18 +5143,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:08:07Z",
+"classified_at": "2026-09-06T17:53:24Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Used a balanced-placebo design manipulating alcohol administration and belief (expectation) to test effects on intentionality bias, so placebo/expectation effects were an explicit experimental focus (active_drug_context_manipulation).",
+"confidence": 0.9,
+"rationale": "Used a balanced-placebo design manipulating alcohol consumption and belief (expectation), so placebo/expectation effects were experimentally isolated as a focus of the study (balanced placebo expectancy manipulation of an active drug).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5197,6 +5167,7 @@
 "cognition"
 ],
 "outcome_measures": [
+"behavioral_performance",
 "self_report"
 ],
 "design": [
@@ -5207,33 +5178,33 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"emotion_anxiety_regulation"
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2×2 balanced-placebo field experiment with alcohol administration and belief manipulation and found intoxicated participants judged more actions as intentional than sober participants.",
-"key_finding": "Intoxication (and/or belief of intoxication) increased the tendency to interpret actions as intentional, providing a mechanism linking alcohol expectancy to increased aggression.",
+"summary": "Used a 2×2 balanced-placebo field experiment with actual versus believed alcohol consumption to test whether alcohol and alcohol expectancy increased the tendency to judge others' actions as intentional, and found intoxication increased intentionality judgments.",
+"key_finding": "Intoxicated participants judged more actions as intentional than sober participants, supporting alcohol-related amplification of intentionality bias.",
 "sample_size": null,
 "free_keywords": [
-"alcohol expectancy",
 "intentionality bias",
+"alcohol expectancy",
 "balanced placebo",
+"field experiment",
+"social cognition",
 "aggression",
-"blood alcohol concentration",
-"social cognition"
+"bac 0.10"
 ],
 "usage": {
 "input_tokens": 647,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 766,
-"cost_usd": 0.00184
+"output_tokens": 809,
+"cost_usd": 0.00193
 }
 },
 "sources": [
@@ -5533,11 +5504,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:16:31Z",
+"classified_at": "2026-09-06T17:53:16Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Paper surveyed spine surgeons about information they give patients and implications for patient expectations—a study of clinical communication relevant to placebo science/expectation effects (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Survey study of clinicians' communication about patient expectations is an empirical investigation of placebo-science–relevant practice (attitudes/communication), so it fits 'placebo_science_other'.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5554,7 +5525,6 @@
 "adults"
 ],
 "condition_domain": [
-"sexual_function",
 "other"
 ],
 "outcome_measures": [
@@ -5569,7 +5539,7 @@
 ],
 "mechanisms": [
 "provider_patient_interaction",
-"trial_methodology_placebo_response"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -5578,22 +5548,25 @@
 "not_applicable"
 ]
 },
-"summary": "Surveyed spine surgeons about the information they provide to spinal trauma patients and found substantial variability, highlighting the need to standardize information to shape appropriate patient expectations.",
-"key_finding": "Found wide variability among surgeons in what they tell patients (surgeon-induced variance ratios ranged 9%–84% across domains).",
+"summary": "Surveyed spine surgeons about information they provide to spinal trauma patients and found substantial variability, suggesting need to improve consistency to align patient expectations and potentially affect outcomes.",
+"key_finding": "Found substantial variability in surgeons' prognostic information across cases (surgeon-induced variance ratios 9%–84%).",
 "sample_size": 31,
 "free_keywords": [
-"spinal trauma",
-"surgeon survey",
+"spine trauma",
+"surgeon communication",
 "patient expectations",
-"preoperative counseling",
-"spine trauma study group"
+"spinal cord injury",
+"thoracolumbar",
+"cervical spine",
+"variability",
+"spine surgeons"
 ],
 "usage": {
-"input_tokens": 867,
-"cache_read_input_tokens": 5888,
+"input_tokens": 611,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 782,
-"cost_usd": 0.00193
+"output_tokens": 679,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -7624,11 +7597,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:11:47Z",
+"classified_at": "2026-09-06T17:53:20Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "The study developed and validated a sham cupping device and tested its credibility in a randomized trial, making placebo control development the explicit focus (methods/validation of a placebo).",
+"confidence": 0.9,
+"rationale": "Study developed and validated a sham cupping device as a placebo control and experimentally compared real versus sham cupping sensations in healthy volunteers, making placebo methodology the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7654,11 +7627,11 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"null_subjective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "treatment_cues_dose_route",
-"therapeutic_ritual_context"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -7667,25 +7640,23 @@
 "sham_device"
 ]
 },
-"summary": "Developed a sham cupping device and in a randomized pilot with 34 healthy volunteers found similar sensations and credible blinding between sham and real cupping.",
-"key_finding": "Sham cupping produced sensations similar to real cupping and was judged a credible control in this pilot (N=34).",
+"summary": "Developed a sham cupping device and in a randomized pilot study (N=34 healthy adults) found sham and real cupping produced similar self-reported sensations, supporting the sham's credibility as a placebo control.",
+"key_finding": "Sham cupping produced similar sensations to real cupping though real cupping tended to yield stronger VAS sensations (48.9±21.4 vs 33.3±20.3).",
 "sample_size": 34,
 "free_keywords": [
 "cupping",
 "sham cupping",
-"credibility",
-"visual analogue scale",
-"suction",
+"vacuum suction",
 "placebo control",
-"validation",
-"pilot"
+"credibility",
+"sensory sensation"
 ],
 "usage": {
-"input_tokens": 735,
-"cache_read_input_tokens": 5888,
+"input_tokens": 479,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1007,
-"cost_usd": 0.00234
+"output_tokens": 851,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -8805,11 +8776,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:12:09Z",
+"classified_at": "2026-09-06T17:53:18Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Clinical perspective/review explicitly focused on the role of patient expectation (a placebo/context factor) in musculoskeletal pain outcomes, making placebo science the paper's subject.",
+"rationale": "Clinical perspective explicitly focused on patient expectation as a determinant of musculoskeletal pain outcomes and discussing mechanisms and clinical integration, meeting inclusion as placebo-science content.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -8820,7 +8791,7 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"other_clinical"
+"chronic_pain"
 ],
 "age_group": [
 "adults"
@@ -8829,7 +8800,8 @@
 "pain"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"clinician_rated"
 ],
 "design": [
 "not_applicable"
@@ -8850,22 +8822,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed how patient expectations can influence outcomes in musculoskeletal pain and proposed mechanisms and clinical integration strategies for physical therapists.",
+"summary": "Presented a clinical perspective arguing that patient expectation influences outcomes in musculoskeletal pain, reviewing definitions, mechanisms, and clinical implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "musculoskeletal pain",
 "physical therapy",
 "expectation",
-"therapeutic alliance",
-"treatment context"
+"treatment expectancy",
+"rehabilitation",
+"clinical perspective"
 ],
 "usage": {
 "input_tokens": 580,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 568,
-"cost_usd": 0.00143
+"output_tokens": 580,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -9066,11 +9039,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:12:26Z",
+"classified_at": "2026-09-06T17:54:28Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized trial experimentally manipulated expectancy (expectancy-enhancing vs neutral) to alter effectiveness of acupressure bands on chemotherapy-related nausea, testing expectation as a moderator of response.",
+"rationale": "Randomized manipulation of expectancy (expectancy-enhancing vs neutral handout/CD) with measurement of nausea and antiemetic use made placebo/expectation effects the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9085,8 +9058,7 @@
 "cancer"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
 "nausea_gi"
@@ -9099,13 +9071,11 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"mixed_inconsistent",
-"significant_subjective",
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "expectation_level"
@@ -9115,24 +9085,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized breast-cancer trial manipulated expectancy about acupressure bands and found reduced nausea and antiemetic use in high-expectancy patients but increased nausea in low-expectancy patients, indicating expectancy-modulated placebo/nocebo effects.",
-"key_finding": "Expectancy-enhancing information reduced antiemetic pill use overall (mean enhanced=12.6 vs neutral=18.5, P=0.003) and decreased nausea in high-expectancy patients but increased nausea in low-expectancy patients (interaction peak nausea P=0.030).",
+"summary": "Found that an expectancy-enhancing informational intervention given with acupressure bands reduced antiemetic use and reduced nausea in patients with high expected nausea but increased nausea among low-expectancy patients.",
+"key_finding": "Expectancy-enhancing manipulation reduced antiemetic pill use overall and decreased peak nausea in high-expectancy patients (P=0.030) but increased nausea in low-expectancy patients (interaction P≈0.084 for average nausea).",
 "sample_size": 53,
 "free_keywords": [
-"acupressure",
-"chemotherapy-induced nausea",
-"breast cancer",
+"acupressure bands",
 "relaxation CD",
-"expectancy manipulation",
+"chemotherapy-induced nausea",
 "antiemetic use",
-"anticipatory nausea"
+"breast cancer",
+"expectancy manipulation"
 ],
 "usage": {
 "input_tokens": 816,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1159,
-"cost_usd": 0.00267
+"output_tokens": 1090,
+"cost_usd": 0.00253
 }
 },
 "sources": [
@@ -10359,18 +10328,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:52:24Z",
+"classified_at": "2026-09-03T04:04:06Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Narrative review compared neural correlates of mindfulness, psychotherapy, pharmacotherapy and explicitly discussed placebo effect mechanisms, so placebo science is a substantive topic of the paper.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "Review focused on neural correlates of mindfulness and compared them with psychotherapy, pharmacotherapy and placebo; placebo is discussed but not clearly the main subject or the explicit focus of the review.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10379,19 +10348,14 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
-"population": [
-"mixed_clinical"
-],
-"age_group": [
-"adults"
-],
+"species": "not_applicable",
+"population": [],
+"age_group": [],
 "condition_domain": [
-"mood_depression",
-"cognition"
+"mood_depression"
 ],
 "outcome_measures": [
-"fmri"
+"not_applicable"
 ],
 "design": [
 "not_applicable"
@@ -10408,25 +10372,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Reviews functional neuroimaging studies of mindfulness, psychotherapy, pharmacotherapy and placebo, and noted overlapping brain regions and top-down emotional regulation mechanisms associated with placebo-like effects.",
+"summary": "Reviewed studies of mindfulness meditation neural correlates and compared neural patterns with psychotherapy, pharmacotherapy and placebo, noting overlapping brain regions and top-down regulation mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "mindfulness",
+"meditation",
 "amygdala",
 "frontal cortex",
-"emotional regulation",
-"placebo effect"
+"antidepressants",
+"top-down regulation"
 ],
 "usage": {
-"input_tokens": 694,
+"input_tokens": 644,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 912,
-"cost_usd": 0.00214
+"output_tokens": 563,
+"cost_usd": 0.00143
 }
 },
 "sources": [
@@ -10833,70 +10798,50 @@
 "Evaluation Study",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:52:33Z",
+"classified_at": "2026-09-03T04:04:08Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses placebos as the main subject (conceptual/clinical discussion), so it meets inclusion as placebo science/theory.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided so it is unclear whether the paper empirically studied placebo/nocebo effects or was a commentary/review on placebo terminology or ethics.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses conceptual and clinical issues about placebos, framing them as 'trick or treatment' for clinical practice and ethics.",
+"summary": "No abstract was available; the title indicates the paper discussed placebos and terminology/ethics in optometry, but the specific focus and whether it reported empirical data were not provided.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "optometry",
-"placebo ethics",
-"clinical use",
-"patient communication"
+"placebo",
+"terminology",
+"ethics"
 ],
 "usage": {
-"input_tokens": 560,
+"input_tokens": 382,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 556,
-"cost_usd": 0.0014
+"output_tokens": 633,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -11327,19 +11272,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:15:27Z",
+"classified_at": "2026-09-06T17:53:25Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Human randomized, within-subject design specifically tested psychophysiological classical conditioning producing responses to placebo injections, making placebo/nocebo phenomena an explicit focus.",
+"rationale": "Human randomized crossover study explicitly examined psychophysiological conditioning producing panic-like responses to placebo injection (placebo/nocebo response), meeting inclusion criterion for conditioned placebo/nocebo responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response",
-"placebo_and_nocebo"
+"nocebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -11362,38 +11305,39 @@
 "within_subject_experimental"
 ],
 "effects": [
-"significant_objective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route"
+"prior_treatment_experience",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"none_reported"
+"treatment_characteristics",
+"prior_experience"
 ],
 "intervention_type": [
 "saline_injection_infusion",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Randomized healthy volunteers received CCK-4 and placebo in varied orders and showed dose-dependent panic and EMG increases to CCK-4 and a conditioned facial-muscle response to placebo after prior CCK-4 without HPA-axis activation.",
-"key_finding": "Placebo injections given after CCK-4 produced psychophysiological (facial EMG) conditioned responses despite no HPA-axis hormone rise.",
+"summary": "Randomized double-blind crossover in 20 healthy males found that conditioned placebo injections after CCK-4 provoked panic-like subjective and facial EMG responses without HPA-axis hormone increases.",
+"key_finding": "Placebo given after repeated CCK-4 injections elicited conditioned panic-related facial EMG and subjective anxiety despite no rise in HPA hormones.",
 "sample_size": 20,
 "free_keywords": [
 "cck-4",
 "panic",
 "facial emg",
-"conditioning",
 "hpa-axis",
+"conditioning",
 "psychophysiology"
 ],
 "usage": {
 "input_tokens": 828,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1285,
-"cost_usd": 0.00292
+"output_tokens": 1249,
+"cost_usd": 0.00285
 }
 },
 "sources": [
@@ -11788,11 +11732,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:16:21Z",
+"classified_at": "2026-09-06T17:53:45Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Quantitative retrospective analysis of 130 double-blind placebo-controlled antidepressant trials focused on changes in placebo and drug arm outcomes and trial features predicting the diminishing drug–placebo difference (placebo response/trial-methodology focus).",
+"confidence": 0.9,
+"rationale": "The paper pooled data from 130 antidepressant RCTs and explicitly analyzed change scores in placebo arms (placebo response) and design moderators, so placebo response is an analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11812,45 +11756,44 @@
 "mood_depression"
 ],
 "outcome_measures": [
+"clinician_rated",
 "self_report"
 ],
 "design": [
 "meta_analytic"
 ],
 "effects": [
-"significant_subjective"
+"significant_objective"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"treatment_cues_dose_route"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "trial_characteristics",
-"disease_severity_duration"
+"disease_severity_duration",
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Analyzed 130 double-blind antidepressant trials (1981–2008) and found that antidepressant–placebo differences declined over time, related to baseline HAM-D scores, HAM-D version, and trial duration.",
-"key_finding": "Found that both antidepressant and placebo change scores declined over time and that baseline severity, HAM-D version, and shorter trial duration were associated with larger drug–placebo differences.",
+"summary": "Analyzed 130 double-blind antidepressant trials (1981–2008) and found that antidepressant-placebo differences declined over time and were associated with baseline HAM-D, HAM-D version, and trial duration.",
+"key_finding": "Found that placebo-group change and shrinking drug–placebo differences over three decades were related to baseline severity, HAM-D version, and shorter trial duration.",
 "sample_size": 130,
 "free_keywords": [
 "ham-d",
 "baseline severity",
-"trial duration",
-"antidepressant trials",
 "publication year",
-"regression analysis",
-"diminishing efficacy",
-"placebo response"
+"antidepressant trials",
+"hierarchical regression",
+"trial duration"
 ],
 "usage": {
-"input_tokens": 863,
-"cache_read_input_tokens": 5888,
+"input_tokens": 607,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 897,
-"cost_usd": 0.00216
+"output_tokens": 906,
+"cost_usd": 0.00212
 }
 },
 "sources": [
@@ -12361,32 +12304,28 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:53:04Z",
+"classified_at": "2026-09-03T04:04:19Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names 'Placebo support' and refers to a weaning trial in ventilator dependency, indicating placebo is the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title suggests placebo-related ventilation weaning but insufficient information to determine whether placebo/nocebo phenomena were an explicit study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
+"study_focus": [],
+"article_type": "case_report",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
@@ -12394,22 +12333,22 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Reported a trial of placebo support to aid weaning in ventilator-dependent patients.",
+"summary": "No abstract available; title suggested a discussion or proposal about using placebo support in ventilator weaning but details and aims were not provided.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ventilator",
 "weaning",
-"mechanical ventilation",
-"icu",
-"placebo support"
+"placebo support",
+"critical care",
+"mechanical ventilation"
 ],
 "usage": {
-"input_tokens": 563,
+"input_tokens": 385,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 758,
-"cost_usd": 0.0018
+"output_tokens": 555,
+"cost_usd": 0.00135
 }
 },
 "sources": [
@@ -13790,11 +13729,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:19:00Z",
+"classified_at": "2026-09-06T17:53:22Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Study contrasted nociceptive stimulation with versus without suggestions for analgesia (verbal-expectation manipulation), isolating a placebo-like effect of suggestion on pain ratings.",
+"confidence": 0.9,
+"rationale": "Within-subject experimental contrast of suggestions for analgesia (verbal expectation manipulation) versus nociceptive stimulation tested effects on pain and physiology, so placebo/context effect was an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -13821,12 +13760,12 @@
 "within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_subjective",
+"null_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
-"other"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "personality_traits",
@@ -13836,23 +13775,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Compared cardiovascular and respiratory responses during deep nociceptive stimulation with and without suggestions for analgesia in healthy volunteers and found suggestions reduced subjective pain in highly hypnotizable participants but produced little change in autonomic responses.",
-"key_finding": "Suggestions for analgesia reduced reported pain intensity in highly hypnotizable (Highs) but autonomic measures showed scarce differences between groups or conditions.",
+"summary": "Tested effects of suggestions for analgesia versus nociceptive stimulation, finding reduced subjective pain with analgesic suggestions in highly hypnotizable participants but no corresponding autonomic differences.",
+"key_finding": "Suggestions for analgesia decreased reported pain in high-hypnotizable but not low-hypnotizable subjects; autonomic measures did not differ reliably between conditions.",
 "sample_size": null,
 "free_keywords": [
 "hypnotizability",
-"nociceptive pressure",
-"skin blood flow",
-"respiratory amplitude",
-"systolic blood pressure",
-"heart rate"
+"nociceptive pressor",
+"heart rate",
+"blood pressure",
+"pain imagery"
 ],
 "usage": {
 "input_tokens": 798,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 863,
-"cost_usd": 0.00207
+"output_tokens": 772,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -14695,7 +14633,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.neuron.2008.06.030",
+"id": "doi:10.1186/1741-7015-8-15",
 "title": "Frequency and circumstances of placebo use in clinical practice--a systematic review of empirical studies.",
 "authors": [
 "Fässler M",
@@ -14707,9 +14645,9 @@
 "journal_abbrev": "BMC Med",
 "year": 2010,
 "date": "2010-02-23",
-"doi": "10.1016/j.neuron.2008.06.030",
+"doi": "10.1186/1741-7015-8-15",
 "pmid": "20178561",
-"pmcid": "PMC28658",
+"pmcid": "PMC2837612",
 "abstract": "BACKGROUND: The use of placebo interventions outside clinical trials is ethically, professionally and legally controversial. Little is known about the frequency and circumstances of placebo use in clinical practice. Our aim was to summarize the available empirical studies addressing these issues. METHODS: We searched PubMed and EMBASE from inception to July 2009 in order to identify cross-sectional surveys, qualitative or longitudinal studies among health care professionals, students or patients which investigated at least one of the following issues--frequency of placebo use or attitudes to, or motivations for, the use of placebo interventions. At least two reviewers extracted information on the study methods, participants and findings. Descriptive summaries were prepared in an iterative process by at least two reviewers per study. RESULTS: Twenty-two studies from 12 different countries met the inclusion criteria. Most studies had relevant shortcomings. The proportion of respondents reporting that they had applied 'pure' placebos (for example, saline injection) during their professional life varied between 17% and 80% among physicians and between 51% and 100% among nurses, but it seems that the actual frequency of such use seems to be rare. The use of 'impure' or 'active' placebos (for example, antibiotics for viral infections) is likely to be much more frequent. However, it is impossible to make a reliable estimation because there is no agreement of what an impure placebo might be. Studies using qualitative methods or asking participants to judge case examples suggest that motivations and attitudes towards placebo use are complex and health care providers are often faced with a dilemma. CONCLUSIONS: Although the available evidence is incomplete and confusing at times there can be little doubt that the prevalence of placebo use outside of clinical trials is not negligible and that views and attitudes on placebos use differ considerably among individuals, both health care professionals and patients. Further research is needed to clarify these issues.",
 "keywords": [],
 "mesh": [
@@ -14733,11 +14671,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:12:32Z",
+"classified_at": "2026-09-06T17:53:23Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Systematic review of empirical surveys explicitly about frequency, circumstances, attitudes and motivations for placebo use in clinical practice (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Systematic review of empirical surveys about frequency, attitudes and motivations for placebo use in clinical practice meets inclusion as placebo science (surveys of prescribing/attitudes).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14752,15 +14690,17 @@
 "general_public"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "other"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"not_applicable"
 ],
 "design": [
+"survey_interview",
 "not_applicable"
 ],
 "effects": [
@@ -14776,25 +14716,24 @@
 "not_applicable"
 ]
 },
-"summary": "Systematic review of 22 empirical studies summarized surveys and qualitative work on the frequency, circumstances, motivations and attitudes toward placebo use in clinical practice.",
-"key_finding": "Found wide variation in reported lifetime use of 'pure' placebos (physicians 17–80%, nurses 51–100%) and suggested 'impure' placebos are likely more common but poorly defined.",
-"sample_size": 22,
+"summary": "Systematic review of 22 empirical studies summarized surveys and qualitative work on frequency, attitudes and motivations for placebo use in clinical practice among health professionals, students and patients.",
+"key_finding": "Found wide variation in reported use: 17–80% of physicians and 51–100% of nurses reported having used 'pure' placebos at some point, and impure/placebo-like practices appeared more common.",
+"sample_size": null,
 "free_keywords": [
-"physicians",
-"nurses",
+"pure placebo",
 "impure placebo",
-"survey",
-"cross-sectional",
-"ethics",
-"frequency",
-"attitudes"
+"placebo prescribing",
+"saline injection",
+"antibiotics for viral infections",
+"healthcare attitudes",
+"survey"
 ],
 "usage": {
 "input_tokens": 828,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 826,
-"cost_usd": 0.00201
+"output_tokens": 677,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -15229,11 +15168,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:23:31Z",
+"classified_at": "2026-09-06T17:53:24Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The article is a theoretical/ethical analysis whose explicit focus is on the use of suggestion (a placebo-like intervention) as treatment for psychogenic movement disorders and reviews evidence and ethical arguments, fitting 'placebo science' inclusion.",
+"confidence": 0.85,
+"rationale": "The paper is a theoretical/ethical analysis whose main subject is suggestion as a treatment (a placebo-like/contextual intervention) for psychogenic movement disorders and reviews evidence, so it fits placebo science/theory inclusion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -15252,7 +15191,9 @@
 "condition_domain": [
 "motor_function"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -15260,10 +15201,10 @@
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
+"clinical_use_ethics_attitudes",
 "provider_patient_interaction",
 "therapeutic_ritual_context",
-"clinical_use_ethics_attitudes"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -15272,23 +15213,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Argues that clinician-delivered suggestion is an ethically justifiable treatment for psychogenic (functional) movement disorders, reviewing empirical and ethical evidence.",
-"key_finding": null,
+"summary": "Argues that physician use of suggestion to treat psychogenic movement disorders can be ethically justified, reviewing evidence from imaging, trials, and expert opinion and analyzing consent, autonomy, and trust from an ethics-of-care perspective.",
+"key_finding": "Concluded that suggestion may enhance patient autonomy and is ethically justifiable for psychogenic movement disorders.",
 "sample_size": null,
 "free_keywords": [
+"psychogenic movement disorder",
 "functional movement disorder",
-"conversion disorder",
-"suggestion therapy",
-"medical ethics",
-"physician-patient relationship",
-"autonomy"
+"suggestion",
+"ethics",
+"informed consent",
+"physician-patient relationship"
 ],
 "usage": {
 "input_tokens": 644,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 808,
-"cost_usd": 0.00192
+"output_tokens": 803,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -15316,76 +15257,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T20:53:14Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:04:42Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "This peer-reviewed commentary focused on the placebo effect in alternative medicine and hot flashes, discussing clinical implications and trial methodology rather than reporting new efficacy data.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title suggests a commentary about alternative medicine and placebo but insufficient information to judge whether placebo/nocebo phenomena were an explicit study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response",
-"therapeutic_ritual_context",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Commentary argued that placebo effects are important in alternative medicine and hot flashes, reviewed trial evidence and discussed clinical and ethical implications.",
+"summary": "Insufficient information available; title appears to be a commentary questioning whether alternative medicine outperforms placebo and its relevance.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hot flashes",
-"androgen deprivation therapy",
-"dong quai",
 "alternative medicine",
-"flaxseed",
-"placebo effect",
-"clinical ethics"
+"placebo",
+"commentary",
+"clinical relevance",
+"urology"
 ],
 "usage": {
-"input_tokens": 3332,
+"input_tokens": 376,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 803,
-"cost_usd": 0.00259
+"output_tokens": 635,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -15585,11 +15501,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:21:28Z",
+"classified_at": "2026-09-06T17:53:49Z",
 "screening": {
 "decision": "include",
-"confidence": 0.78,
-"rationale": "Paper's explicit focus is the ethics of using placebo controls in a severe-malaria trial (placebo as the main subject), discussing trial justification and implications for placebo use in clinical research.",
+"confidence": 0.8,
+"rationale": "Paper's main focus was ethical issues of using placebo in a rectal artesunate trial and reported placebo-controlled trial findings, making placebo use and its ethics a primary subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -15597,7 +15513,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
 "other_clinical"
@@ -15612,10 +15528,10 @@
 "clinical_endpoint"
 ],
 "design": [
-"not_applicable"
+"parallel_groups_rct"
 ],
 "effects": [
-"not_applicable"
+"significant_objective"
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
@@ -15628,24 +15544,23 @@
 "other"
 ]
 },
-"summary": "Discussed the ethical justification and protections for using a placebo control in a rectal artesunate trial for severe malaria and reported trial findings supporting benefit in patients who could not reach care quickly.",
-"key_finding": "Among patients who could not reach clinic rapidly, a single artesunate suppository significantly reduced death or permanent disability.",
+"summary": "Discussed ethical justification for a placebo-controlled rectal artesunate trial in rural severe malaria and reported that artesunate reduced death or permanent disability in patients who could not reach a clinic quickly.",
+"key_finding": "A single artesunate suppository significantly reduced death or permanent disability among patients unable to reach clinic rapidly.",
 "sample_size": null,
 "free_keywords": [
-"rectal suppository",
-"severe malaria",
 "artesunate",
+"severe malaria",
+"suppository",
 "placebo-controlled trial",
-"research ethics",
-"rural health",
-"referral"
+"referral",
+"rural health"
 ],
 "usage": {
 "input_tokens": 702,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 893,
-"cost_usd": 0.00211
+"output_tokens": 831,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -15965,11 +15880,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:19:43Z",
+"classified_at": "2026-09-06T17:53:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper explicitly analyzed physiological effects of sham-CPAP versus polysomnography without sham (a within-subject placebo vs. no-placebo comparison), evaluating sham as a placebo intervention.",
+"rationale": "Secondary within-subject analysis comparing polysomnography without sham-CPAP to first-night sham-CPAP explicitly evaluated sham-CPAP as a placebo intervention (objective effects), meeting inclusion as a study of placebo effects/responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -15983,27 +15898,24 @@
 "other_clinical"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
-"sleep"
+"sleep",
+"respiratory"
 ],
 "outcome_measures": [
-"clinician_rated",
-"eeg"
+"other"
 ],
 "design": [
 "within_subject_experimental",
-"placebo_arm_secondary_analysis"
+"single_group_pre_post"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
-"treatment_cues_dose_route",
-"trial_methodology_placebo_response",
-"other"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -16012,25 +15924,24 @@
 "sham_device"
 ]
 },
-"summary": "Analyzed polysomnography in 104 participants and found small but statistically significant changes in sleep quality on the first night with sham-CPAP versus without sham, supporting sham-CPAP as a usable placebo.",
-"key_finding": "Sham-CPAP produced small increases in arousal index and stage 1 sleep and prolonged REM latency versus polysomnography without sham, with relatively low effect sizes.",
+"summary": "Analyzed polysomnograms from 104 participants to compare recordings without sham-CPAP to the first night with sham-CPAP and found small but statistically significant degradations in sleep quality, supporting sham-CPAP as a placebo.",
+"key_finding": "Sham-CPAP produced small but statistically significant increases in arousal index and stage 1 sleep and decreased sleep efficiency and REM latency versus no-sham recordings.",
 "sample_size": 104,
 "free_keywords": [
-"sham-cpap",
 "obstructive sleep apnea",
+"AHI",
 "polysomnography",
-"arousal index",
-"rem latency",
-"apnea-hypopnea index",
-"CATNAP",
-"placebo device"
+"sleep efficiency",
+"stage 1 NREM",
+"REM latency",
+"sham-CPAP"
 ],
 "usage": {
-"input_tokens": 908,
-"cache_read_input_tokens": 5888,
+"input_tokens": 652,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1129,
-"cost_usd": 0.00263
+"output_tokens": 934,
+"cost_usd": 0.00218
 }
 },
 "sources": [
@@ -16230,17 +16141,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:22:52Z",
+"classified_at": "2026-09-06T17:53:30Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized trial manipulated presurgical hypnosis versus attention control and tested response expectancies and distress as mediators of postsurgical side-effect outcomes, making expectation/context mechanisms the explicit focus.",
+"confidence": 0.8,
+"rationale": "Randomized trial manipulated presurgical hypnosis vs. attention control and tested response expectancies and distress as mediators of postoperative side effects (an explicit test of expectation/context mechanisms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -16253,7 +16165,8 @@
 "condition_domain": [
 "pain",
 "nausea_gi",
-"fatigue"
+"fatigue",
+"adverse_events"
 ],
 "outcome_measures": [
 "self_report"
@@ -16270,30 +16183,33 @@
 "therapeutic_ritual_context"
 ],
 "moderators": [
-"none_reported"
+"expectation_level",
+"mood_anxiety_state"
 ],
 "intervention_type": [
+"sham_psychological",
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial found presurgical hypnosis reduced postsurgical pain, nausea, and fatigue in breast-conserving surgery patients, with effects partially mediated by response expectancies and presurgical distress.",
-"key_finding": "Hypnotic effects on pain were mediated by pain expectancy; nausea effects were mediated by presurgical distress; fatigue effects were mediated by both expectancy and distress.",
+"summary": "Randomized trial of presurgical hypnosis versus attention control in 200 breast-conserving surgery patients tested whether response expectancies and presurgical distress mediated reductions in postoperative pain, nausea, and fatigue.",
+"key_finding": "Hypnosis reduced postsurgical pain, nausea, and fatigue, with pain improvement mediated by pain expectancy, nausea improvement mediated by presurgical distress, and fatigue improvement mediated by both expectancy and distress.",
 "sample_size": 200,
 "free_keywords": [
 "hypnosis",
 "breast-conserving surgery",
 "postoperative pain",
 "postoperative nausea",
-"postoperative fatigue",
+"fatigue",
 "response expectancy",
-"mediator"
+"mediation",
+"structural equation modeling"
 ],
 "usage": {
 "input_tokens": 836,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1028,
-"cost_usd": 0.00241
+"output_tokens": 1093,
+"cost_usd": 0.00254
 }
 },
 "sources": [
@@ -17991,76 +17907,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T20:53:41Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:05:04Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Opinion piece focused on interpreting RCTs that found sham (placebo) effects in vertebroplasty and discussed placebo mechanisms and trial methodology, so placebo science is a main subject.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "Abstract unavailable and title suggests a commentary on vertebroplasty and evidence-based medicine mentioning placebo, insufficient information to judge whether placebo/nocebo is the paper's primary focus.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"clinical_use_ethics_attitudes",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Commentary discussed two RCTs showing no clear benefit of vertebroplasty over sham, considered powerful placebo effects and cognitive dissonance in clinical practice, and reflected on implications for evidence-based medicine.",
+"summary": "No abstract available; discussed vertebroplasty, cognitive dissonance, and the implications of placebo-related evidence for evidence-based medicine.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "vertebroplasty",
-"kyphoplasty",
-"sham surgery",
-"cognitive dissonance",
 "evidence-based medicine",
-"knee arthroscopy",
-"Buchbinder",
-"Kallmes"
+"cognitive dissonance",
+"placebo effect",
+"spinal fractures"
 ],
 "usage": {
-"input_tokens": 4831,
+"input_tokens": 423,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 732,
-"cost_usd": 0.00282
+"output_tokens": 495,
+"cost_usd": 0.00124
 }
 },
 "sources": [
@@ -18223,11 +18114,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:57:34Z",
+"classified_at": "2026-09-06T17:53:29Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Review explicitly examined the role of hypnotic suggestions (verbal/contextual manipulation) for chronic pain outcomes, addressing mechanisms closely related to expectation and suggestion.",
+"confidence": 0.8,
+"rationale": "Review explicitly examined the effects of hypnotic suggestions (verbal/contextual manipulations) on chronic pain outcomes across controlled trials, making suggestion/placebo-like mechanisms the review focus (eligible under 'expectation/suggestion' reviews).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -18253,40 +18144,38 @@
 "not_applicable"
 ],
 "effects": [
-"significant_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"provider_patient_interaction",
 "therapeutic_ritual_context"
 ],
 "moderators": [
-"treatment_characteristics",
-"none_reported"
+"treatment_characteristics"
 ],
 "intervention_type": [
-"sham_psychological",
-"verbal_suggestion_only",
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Reviewed 25 clinical trials of hypnosis for chronic pain, focusing on the content of hypnotic suggestions and finding hypnosis superior to non-treatment and similar to active controls, with some advantage when pain-specific suggestions were used.",
-"key_finding": "Found hypnosis reduced pain versus non-treatment and was comparable to active treatments, with superiority when both pain-specific and non-pain suggestions were combined.",
-"sample_size": null,
+"summary": "Reviewed 25 controlled trials of hypnosis for adult chronic pain, finding hypnosis superior to non-treatment and similar to active treatments, with suggestion content influencing some outcomes.",
+"key_finding": "Hypnosis produced greater pain relief than non-treatment and comparable effects to active treatments, with combined pain-specific and non-pain suggestions often yielding superior outcomes.",
+"sample_size": 25,
 "free_keywords": [
 "hypnosis",
-"hypnotic_suggestions",
-"posthypnotic_suggestion",
-"relaxation_control",
-"supportive_attention"
+"suggestions",
+"posthypnotic suggestions",
+"relaxation",
+"biofeedback",
+"chronic low back pain",
+"pain-management",
+"clinical trials"
 ],
 "usage": {
 "input_tokens": 632,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 853,
-"cost_usd": 0.00201
+"output_tokens": 882,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -18537,115 +18426,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1371/journal.pmed.0050045",
-"title": "Optimal Partitioning for Linear Mixed Effects Models: Applications to Identifying Placebo Responders.",
-"authors": [
-"Tarpey T",
-"Petkova E",
-"Lu Y",
-"Govindarajulu U"
-],
-"journal": "Journal of the American Statistical Association",
-"journal_abbrev": "J Am Stat Assoc",
-"year": 2010,
-"date": "2010-01-01",
-"doi": "10.1371/journal.pmed.0050045",
-"pmid": "21494314",
-"pmcid": "PMC2575245",
-"abstract": "A long-standing problem in clinical research is distinguishing drug treated subjects that respond due to specific effects of the drug from those that respond to non-specific (or placebo) effects of the treatment. Linear mixed effect models are commonly used to model longitudinal clinical trial data. In this paper we present a solution to the problem of identifying placebo responders using an optimal partitioning methodology for linear mixed effects models. Since individual outcomes in a longitudinal study correspond to curves, the optimal partitioning methodology produces a set of prototypical outcome profiles. The optimal partitioning methodology can accommodate both continuous and discrete covariates. The proposed partitioning strategy is compared and contrasted with the growth mixture modelling approach. The methodology is applied to a two-phase depression clinical trial where subjects in a first phase were treated openly for 12 weeks with fluoxetine followed by a double blind discontinuation phase where responders to treatment in the first phase were randomized to either stay on fluoxetine or switched to a placebo. The optimal partitioning methodology is applied to the first phase to identify prototypical outcome profiles. Using time to relapse in the second phase of the study, a survival analysis is performed on the partitioned data. The optimal partitioning results identify prototypical profiles that distinguish whether subjects relapse depending on whether or not they stay on the drug or are randomized to a placebo.",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Journal Article",
-"Research Support, N.I.H., Extramural"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:12:30Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Paper developed and applied a statistical method to identify placebo responders and analyzed relapse on randomized placebo versus drug, making placebo response the analytic focus (method to identify non-specific responders).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "methods_measurement",
-"species": "human",
-"population": [
-"depression"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated",
-"clinical_endpoint"
-],
-"design": [
-"placebo_arm_secondary_analysis",
-"single_group_pre_post"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"prior_treatment_experience"
-],
-"moderators": [
-"prior_experience"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
-},
-"summary": "Presented an optimal partitioning method for linear mixed models to identify prototypical outcome trajectories and applied it to a fluoxetine discontinuation trial to distinguish placebo responders who relapsed when switched to placebo.",
-"key_finding": "Identified prototypical symptom trajectories from the open-label phase that predicted time to relapse differentially on placebo versus continued fluoxetine.",
-"sample_size": null,
-"free_keywords": [
-"fluoxetine",
-"discontinuation",
-"relapse",
-"optimal partitioning",
-"growth mixture comparison",
-"longitudinal trajectories",
-"linear mixed effects"
-],
-"usage": {
-"input_tokens": 442,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 975,
-"cost_usd": 0.00221
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2010-01-01",
-"private_pdf": {
-"available": true,
-"store_key": "tarpey_2010_optimal_partitioning_for_linear_mixed.pdf",
-"source": "downloaded",
-"sha256": "c42938c1e39813c5"
-},
-"language": "eng"
-},
-{
 "id": "doi:10.1353/pbm.2010.0004",
 "title": "Semiotics and the placebo effect.",
 "authors": [
@@ -18864,6 +18644,113 @@
 "landing_url": "https://doi.org/10.1249/jsr.0b013e3181e7c37d",
 "cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1198/jasa.2010.ap08713",
+"title": "Optimal Partitioning for Linear Mixed Effects Models: Applications to Identifying Placebo Responders.",
+"authors": [
+"Tarpey T",
+"Petkova E",
+"Lu Y",
+"Govindarajulu U"
+],
+"journal": "Journal of the American Statistical Association",
+"journal_abbrev": "J Am Stat Assoc",
+"year": 2010,
+"date": "2010-01-01",
+"doi": "10.1198/jasa.2010.ap08713",
+"pmid": "21494314",
+"pmcid": "PMC3007089",
+"abstract": "A long-standing problem in clinical research is distinguishing drug treated subjects that respond due to specific effects of the drug from those that respond to non-specific (or placebo) effects of the treatment. Linear mixed effect models are commonly used to model longitudinal clinical trial data. In this paper we present a solution to the problem of identifying placebo responders using an optimal partitioning methodology for linear mixed effects models. Since individual outcomes in a longitudinal study correspond to curves, the optimal partitioning methodology produces a set of prototypical outcome profiles. The optimal partitioning methodology can accommodate both continuous and discrete covariates. The proposed partitioning strategy is compared and contrasted with the growth mixture modelling approach. The methodology is applied to a two-phase depression clinical trial where subjects in a first phase were treated openly for 12 weeks with fluoxetine followed by a double blind discontinuation phase where responders to treatment in the first phase were randomized to either stay on fluoxetine or switched to a placebo. The optimal partitioning methodology is applied to the first phase to identify prototypical outcome profiles. Using time to relapse in the second phase of the study, a survival analysis is performed on the partitioned data. The optimal partitioning results identify prototypical profiles that distinguish whether subjects relapse depending on whether or not they stay on the drug or are randomized to a placebo.",
+"keywords": [],
+"mesh": [],
+"pub_types": [
+"Journal Article",
+"Research Support, N.I.H., Extramural"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:53:29Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Paper developed and applied a statistical method explicitly to identify placebo responders and analyze placebo-arm relapse in a depression discontinuation trial, making placebo response the analytic focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response"
+],
+"article_type": "methods_measurement",
+"species": "human",
+"population": [
+"depression"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"mood_depression"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated",
+"clinical_endpoint"
+],
+"design": [
+"observational",
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Presented an optimal partitioning method for linear mixed effects models and applied it to a fluoxetine discontinuation trial to identify prototypical outcome profiles predictive of relapse on placebo versus continued drug.",
+"key_finding": "Method identified prototypical responder profiles in the open-label phase that predicted differential time-to-relapse after randomization to placebo versus fluoxetine.",
+"sample_size": null,
+"free_keywords": [
+"fluoxetine",
+"discontinuation",
+"depression trial",
+"linear mixed effects",
+"optimal partitioning",
+"growth mixture comparison",
+"survival analysis"
+],
+"usage": {
+"input_tokens": 698,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 730,
+"cost_usd": 0.00178
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2010-01-01",
+"private_pdf": {
+"available": true,
+"store_key": "tarpey_2010_optimal_partitioning_for_linear_mixed.pdf",
+"source": "downloaded",
+"sha256": "c42938c1e39813c5"
+},
+"language": "eng"
 },
 {
 "id": "doi:10.1136/ard.2009.115832",
@@ -19153,11 +19040,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:23:21Z",
+"classified_at": "2026-09-06T17:53:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized controlled trial experimentally manipulated intraoperative therapeutic suggestion versus control conditions to test effects on postoperative nausea/vomiting, making placebo/context expectation the study focus.",
+"rationale": "Randomized controlled trial that experimentally manipulated intraoperative therapeutic suggestion (verbal expectancy) versus controls to test its effect on postoperative nausea and vomiting, making placebo-like context the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -19197,22 +19084,25 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial tested intraoperative positive therapeutic suggestion versus prosody control and operating room noise in 67 children undergoing tonsillectomy/adenoidectomy and found no benefit on postoperative nausea or vomiting.",
-"key_finding": "Therapeutic suggestion delivered under general anesthesia did not reduce postoperative nausea severity or vomiting compared with control conditions.",
+"summary": "Randomized trial tested intraoperative therapeutic suggestion versus story or ambient noise in 67 children undergoing tonsillectomy/adenoidectomy and found no group differences in postoperative nausea or vomiting.",
+"key_finding": "Therapeutic suggestion delivered under general anesthesia did not reduce postoperative nausea or vomiting compared with prosody control or standard noise.",
 "sample_size": 67,
 "free_keywords": [
 "tonsillectomy",
 "adenoidectomy",
-"pediatric anesthesia",
-"postanesthesia care unit",
-"intraoperative suggestion"
+"children",
+"general anesthesia",
+"postoperative nausea and vomiting",
+"PACU",
+"therapeutic suggestion",
+"prosody control"
 ],
 "usage": {
 "input_tokens": 864,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 875,
-"cost_usd": 0.00211
+"output_tokens": 738,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -19467,24 +19357,24 @@
 "oa_pdf_url": "http://www.jmptonline.org/article/S0161475409003030/pdf",
 "landing_url": "https://doi.org/10.1016/j.jmpt.2009.11.007",
 "cited_by_count": 21,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:22:00Z",
+"classified_at": "2026-09-06T17:54:42Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "The trial explicitly tested the effects of patient expectancy and the patient-provider encounter on pain outcomes (placebo/context mechanisms) using path analysis in an open-label RCT, meeting inclusion for studies of expectation/context as predictors of health outcomes.",
+"rationale": "The study explicitly analyzed expectancy and patient-provider encounter effects on clinical pain outcomes within an open-label randomized trial, making placebo/contextual effects the object of study (expectation and PPE as predictors).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -19512,28 +19402,31 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"none_reported"
+"expectation_level",
+"provider_characteristics"
 ],
 "intervention_type": [
-"verbal_suggestion_only"
+"not_applicable"
 ]
 },
-"summary": "Modeled effects of baseline expectancy and patient-provider encounter on monthly pain in an open-label randomized trial of spinal manipulation for cervicogenic headache and found small or negligible expectancy and PPE effects relative to treatment and baseline pain.",
-"key_finding": "Expectancy had little effect on pain (|beta|<.15) and PPE effects were weak (|beta|=.03-.27), while treatment and baseline pain had the largest effects (|beta|=.46-.59).",
+"summary": "Analyzed whether baseline expectancy and patient-provider encounter predicted change in cervicogenic headache pain in an open-label randomized trial and found small or negligible effects compared with treatment and baseline pain.",
+"key_finding": "Treatment dose and baseline pain had the largest effects (|β|=.46-.59); expectancy effects were minimal (|β|<.15) and PPE effects were weak (|β|=.03-.27).",
 "sample_size": 80,
 "free_keywords": [
 "cervicogenic headache",
 "spinal manipulation",
-"expectancy",
 "patient-provider encounter",
-"path analysis"
+"expectancy",
+"path analysis",
+"light massage",
+"open-label trial"
 ],
 "usage": {
 "input_tokens": 839,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1175,
-"cost_usd": 0.00271
+"output_tokens": 1037,
+"cost_usd": 0.00243
 }
 },
 "sources": [

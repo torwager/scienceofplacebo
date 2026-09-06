@@ -45,11 +45,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:56:37Z",
+"classified_at": "2026-09-06T17:58:27Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "An empirical case series directly tested brief suggestion therapy (verbal suggestion/therapeutic context) as the intervention and reported symptom remission, so placebo-like response to suggestion was the study's focus (single-group pre-post).",
+"confidence": 0.9,
+"rationale": "Single-group empirical study examined symptom change following a brief suggestion therapy session, making placebo/suggestion mechanisms the study focus (placebo-response paradigm: pre-post change following verbal suggestion).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -80,7 +80,8 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"therapeutic_ritual_context",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
@@ -89,22 +90,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Treated nine children with habit cough using a single 15-minute session of suggestion therapy and found immediate symptom cessation in all, with long-term remission in most on follow-up.",
-"key_finding": "All nine became symptom-free during the session; at long-term follow-up 6 of 7 contacted were totally asymptomatic.",
+"summary": "Reported that nine children with habit (psychogenic) cough became symptom-free during a single 15-minute session of suggestion therapy, with most maintaining long-term remission on follow-up.",
+"key_finding": "All 9 became symptom-free during the session; of 7 contacted long-term, 6 were totally asymptomatic and one had occasional minor symptoms.",
 "sample_size": 9,
 "free_keywords": [
 "habit cough",
 "suggestion therapy",
 "psychogenic cough",
 "pediatric",
-"brief psychotherapy"
+"brief psychotherapy",
+"long-term follow-up"
 ],
 "usage": {
 "input_tokens": 686,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 986,
-"cost_usd": 0.00229
+"output_tokens": 970,
+"cost_usd": 0.00226
 }
 },
 "sources": [
@@ -165,11 +167,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:55:01Z",
+"classified_at": "2026-09-06T17:58:11Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal Pavlovian conditioning study that experimentally paired an odor CS with an immune-activating US and measured conditioned augmentation of NK activity, so placebo/nocebo-relevant associative mechanisms were the explicit focus.",
+"rationale": "Animal experiment explicitly tested Pavlovian (classical) conditioning of NK immune responses with CS vs control, making placebo-like associative learning the primary focus (mechanism of conditioned physiological response).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -205,26 +207,27 @@
 "none_reported"
 ],
 "intervention_type": [
+"topical_cream",
 "other"
 ]
 },
-"summary": "Conditioned BALB/c mice showed odor-specific Pavlovian augmentation of NK cell activity when reexposed to the CS after pairing an odor with poly I:C.",
-"key_finding": "Reexposure to the odor CS selectively increased NK cell responses to a suboptimal poly I:C dose, demonstrating odor-specific conditioned immunoaugmentation.",
+"summary": "Conditioned BALB/c mice showed odor-specific Pavlovian augmentation of NK cell activity when reexposed to the odor CS paired with poly I:C.",
+"key_finding": "Found that reexposure to the odor CS selectively enhanced NK cell responses to a suboptimal poly I:C dose, indicating odor-specific conditioned immunoaugmentation.",
 "sample_size": null,
 "free_keywords": [
-"poly i:c",
-"natural killer cells",
+"natural killer",
+"poly I:C",
 "camphor",
 "citronella",
-"balb/c mice",
-"pavlovian conditioning"
+"BALB/c",
+"Pavlovian conditioning"
 ],
 "usage": {
 "input_tokens": 773,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 969,
-"cost_usd": 0.00228
+"output_tokens": 1046,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -288,11 +291,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:56:09Z",
+"classified_at": "2026-09-06T17:58:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested behaviorally conditioned immunosuppression (classical conditioning) that causally prolonged graft survival, meeting criteria for mechanistic placebo-like effects in nonhuman models.",
+"rationale": "Animal experiment explicitly tested behaviorally conditioned immunosuppression (classical conditioning) producing prolonged graft survival, so placebo-like conditioned effect was the study focus (mechanism experimentally isolated).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -302,14 +305,18 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
 "clinical_endpoint",
+"immune_inflammatory",
 "behavioral_performance"
 ],
 "design": [
@@ -325,27 +332,28 @@
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Found that saccharin taste paired with cyclosporine produced conditioned immunosuppression and significantly prolonged heart allograft survival in rats.",
-"key_finding": "Conditioned animals reexposed to saccharin showed significant prolongation of graft survival compared with controls.",
+"summary": "Found that taste-aversion conditioning with saccharin paired to cyclosporine produced conditioned immunosuppression and significantly prolonged heart allograft survival in rats.",
+"key_finding": "Conditioned rats reexposed to saccharin showed taste aversion and significantly longer graft survival compared with controls.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporine",
 "saccharin",
-"heart allograft",
 "conditioned immunosuppression",
+"heart allograft",
+"rats",
+"graft survival",
 "taste aversion",
-"rats"
+"psychoneuroimmunology"
 ],
 "usage": {
 "input_tokens": 710,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1096,
-"cost_usd": 0.00252
+"output_tokens": 952,
+"cost_usd": 0.00223
 }
 },
 "sources": [
@@ -510,71 +518,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:26:23Z",
+"classified_at": "2026-09-03T04:34:28Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly contrasts oat bran efficacy with placebo, indicating placebo is a central topic (likely a commentary on placebo vs true effect).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title suggests a discussion about oat bran efficacy but insufficient information to judge whether placebo/placebo-response is an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discussed whether reported benefits of oat bran reflected true physiological effects or placebo-related effects in clinical reports.",
+"summary": "No abstract available; title implied a discussion of oat bran efficacy versus placebo but full text is needed to determine whether placebo phenomena were an explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "oat bran",
 "dietary fiber",
 "cholesterol",
-"efficacy",
-"placebo debate"
+"south african medical journal",
+"1991"
 ],
 "usage": {
-"input_tokens": 558,
+"input_tokens": 380,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 516,
-"cost_usd": 0.00132
+"output_tokens": 600,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -738,11 +726,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:55:35Z",
+"classified_at": "2026-09-06T17:58:06Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Review explicitly surveyed experimental human and animal studies of classical conditioning producing learned changes in immune responses, directly addressing placebo-like conditioned physiological responses (mechanism-focused review).",
+"rationale": "Review focused on classical conditioning of immune responses, a mechanistic literature on conditioned placebo-like effects in humans and animals (meets inclusion criterion for mechanisms/reviews of placebo-related phenomena).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -768,7 +756,7 @@
 "not_applicable"
 ],
 "effects": [
-"significant_objective"
+"not_applicable"
 ],
 "mechanisms": [
 "classical_conditioning",
@@ -781,23 +769,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed experimental human and animal studies showing classical (Pavlovian) conditioning produced learned alterations in humoral and cell-mediated immune responses and could modulate disease progression.",
-"key_finding": "Found conditioned immunosuppression and other learned immunomodulatory effects (e.g., via taste-aversion/cyclophosphamide paradigms) that affected animal disease models and were demonstrated in humans.",
+"summary": "Reviews experimental studies showing that classical conditioning can alter humoral and cell-mediated immune responses in animals and humans, indicating brain–immune integration.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
 "cyclophosphamide",
 "taste aversion",
-"Pavlovian conditioning",
-"immune modulation",
-"classical conditioning"
+"conditioned immunosuppression",
+"humoral immunity",
+"cell-mediated immunity",
+"ader-cohen",
+"behavioral immunology"
 ],
 "usage": {
 "input_tokens": 608,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 963,
-"cost_usd": 0.00223
+"output_tokens": 994,
+"cost_usd": 0.00229
 }
 },
 "sources": [
@@ -967,11 +956,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:46:38Z",
+"classified_at": "2026-09-06T17:58:07Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating alcohol administration and expectancy, which is an experimental placebo/context manipulation of an active drug.",
+"rationale": "Used a balanced placebo design manipulating expectation (told alcohol vs told tonic) crossed with actual alcohol administration, an expectancy/placebo-effect experimental isolation (active_drug_context_manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -988,7 +977,6 @@
 "adults"
 ],
 "condition_domain": [
-"cognition",
 "sensory_perception"
 ],
 "outcome_measures": [
@@ -1003,8 +991,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"neurobiology_other_neurochemical"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -1013,23 +1000,25 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2 balanced-placebo design with vodka vs tonic and expectancy manipulations in social drinkers and found alcohol increased spontaneous SCRs, errors, and selectively enhanced signal-evoked SCRs.",
-"key_finding": "Alcohol (≈.05% BAC) increased spontaneous skin conductance responses, raised incorrect pedal-press responses, and selectively enhanced SCRs to signal tones.",
+"summary": "Randomized social drinkers underwent a balanced placebo design; alcohol and expectancy increased spontaneous and stimulus-evoked skin conductance responses and errors, interpreted as alcohol effects on frontal inhibitory function.",
+"key_finding": "Alcohol (≈0.05% BAC) and expectancy selectively enhanced evoked SCRs and increased incorrect responses (N=40).",
 "sample_size": 40,
 "free_keywords": [
-"skin conductance",
-"electrodermal",
-"balanced placebo",
 "vodka",
-"BAC .05",
-"orienting reflex"
+"balanced placebo",
+"skin conductance",
+"orienting reflex",
+"electrodermal",
+"frontal inhibition",
+"social drinkers",
+"footpedal oddball"
 ],
 "usage": {
 "input_tokens": 656,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1061,
-"cost_usd": 0.00243
+"output_tokens": 1040,
+"cost_usd": 0.00239
 }
 },
 "sources": [
@@ -1212,11 +1201,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:53:28Z",
+"classified_at": "2026-09-06T17:58:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment demonstrated Pavlovian (classical) conditioning produced immunosuppression (placebo-like conditioned response), which is an explicit focus and mechanism test.",
+"rationale": "Animal experiment demonstrated Pavlovian conditioned immunosuppression (CS saccharin) with physiological suppression of DTH, addressing mechanisms of conditioned (placebo-like) responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1226,36 +1215,38 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
 "immune_inflammatory",
-"neuroendocrine",
-"behavioral_performance"
+"clinical_endpoint"
 ],
 "design": [
 "animal_experiment"
 ],
 "effects": [
-"significant_objective",
-"null_objective"
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_other_neurochemical"
 ],
 "moderators": [
-"none_reported"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Demonstrated conditioned immunosuppression in mice: saccharin paired with cyclophosphamide suppressed DTH paw swelling, without accompanying corticosterone elevation.",
-"key_finding": "Conditioned saccharin exposure reduced DTH paw swelling (immunosuppression) despite no change in serum corticosterone.",
+"summary": "Found that saccharin paired with cyclophosphamide produced conditioned suppression of murine DTH (paw swelling) without accompanying rises in serum corticosterone.",
+"key_finding": "Conditioned saccharin alone suppressed DTH-induced paw swelling, demonstrating immunosuppression independent of corticosterone elevation.",
 "sample_size": null,
 "free_keywords": [
 "saccharin",
@@ -1263,16 +1254,16 @@
 "delayed-type hypersensitivity",
 "DTH",
 "corticosterone",
-"taste-aversion",
+"conditioned immunosuppression",
 "BALB/c",
-"immunosuppression"
+"paw swelling"
 ],
 "usage": {
 "input_tokens": 848,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1141,
-"cost_usd": 0.00264
+"output_tokens": 1220,
+"cost_usd": 0.0028
 }
 },
 "sources": [
@@ -1331,18 +1322,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:46:57Z",
+"classified_at": "2026-09-06T17:58:11Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Balanced-placebo design manipulated expectancy (told drug vs told placebo) crossed with received hashish/placebo to test expectancy effects on subjective, autonomic, and pharmacokinetic outcomes (an experimental placebo/context effect with active drug context manipulation).",
+"rationale": "Balanced-placebo design experimentally manipulated expectancy crossed with received drug/placebo to test expectancy effects on subjective, autonomic, and pharmacokinetic outcomes (active_drug_context_manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1353,8 +1343,6 @@
 "adults"
 ],
 "condition_domain": [
-"cognition",
-"cardiovascular_bp",
 "other"
 ],
 "outcome_measures": [
@@ -1366,40 +1354,38 @@
 "balanced_placebo"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"prior_treatment_experience"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"expectation_level",
-"prior_experience",
-"treatment_characteristics"
+"none_reported"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"active_drug_context_manipulation",
+"other"
 ]
 },
-"summary": "Used a balanced-placebo design (n=48) to test how expectancy affected subjective intoxication, heart rate, and THC pharmacokinetics after smoked hashish; found expectancy altered subjective effects, heart rate AUC, and THC metabolism.",
-"key_finding": "Positive expectancy increased subjective effects even without THC and, when THC was received, was associated with higher heart-rate AUC and greater THC/COOH-THC AUCs (p<.05).",
+"summary": "Used a balanced-placebo design in experienced cannabis smokers (N=48) and found expectancy altered subjective effects, heart-rate AUC, and THC pharmacokinetics, indicating expectancy influences intoxication and drug disposition.",
+"key_finding": "Positive expectancy increased heart-rate AUC and THC/COOH-THC AUC patterns and altered THC metabolism; subjective effects trended higher with concordant expectancy and drug.",
 "sample_size": 48,
 "free_keywords": [
 "THC",
+"cannabis",
 "hashish",
-"balanced-placebo",
-"smoking",
-"cannabinoids",
-"AUC"
+"balanced placebo",
+"pharmacokinetics",
+"heart rate",
+"intoxication",
+"expectancy"
 ],
 "usage": {
 "input_tokens": 744,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1021,
-"cost_usd": 0.00238
+"output_tokens": 995,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -1902,18 +1888,18 @@
 "Comparative Study",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T20:27:04Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:34:42Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Methodological review/commentary focusing on n-of-1 single-subject randomized trials and the role/measurement of placebo effects in clinical practice, making placebo phenomena the main subject.",
+"decision": "uncertain",
+"confidence": 0.42,
+"rationale": "No abstract or full text provided; title suggests a methods paper on single-subject controlled trials and MeSH lists 'Placebo Effect', but it's unclear whether placebo/nocebo is an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1921,20 +1907,12 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
+"article_type": "methods_measurement",
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -1942,35 +1920,31 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed the rationale, methods, and clinical value of randomized single-subject (n-of-1) trials and their use to identify placebo effects and individual treatment responders.",
+"summary": "No abstract was available; likely discussed controlled single-subject (n-of-1) trial methodology and its value in clinical medicine, with possible mention of placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"single-subject",
 "n-of-1",
-"single-subject trial",
-"randomisation test",
-"cimetidine",
-"non-ulcer dyspepsia",
+"controlled trials",
 "methodology",
 "placebo effect",
-"clinical decision-making"
+"BMJ 1991",
+"clinical medicine"
 ],
 "usage": {
-"input_tokens": 3594,
+"input_tokens": 399,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 743,
-"cost_usd": 0.00253
+"output_tokens": 696,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -2162,11 +2136,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:54:42Z",
+"classified_at": "2026-09-06T17:58:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly studied classical conditioning of immunosuppression (conditioned antibody responses), a mechanistic placebo-relevant phenomenon (conditioning) and thus meets inclusion criterion for conditioned placebo/nocebo mechanisms.",
+"rationale": "Animal experiment explicitly investigated classical conditioning of antibody responses (conditioned immunosuppression), a mechanistic placebo-relevant conditioned response, so it meets inclusion criterion for conditioned placebo/nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2199,31 +2173,30 @@
 "prior_treatment_experience"
 ],
 "moderators": [
-"age",
-"prior_experience"
+"age"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that pairing cyclophosphamide with saccharin produced conditioned immunosuppression (reduced IgG AFC) in young mice, an effect diminished in aged mice and linked to loss of suppressor T-cell function.",
-"key_finding": "Conditioned immunosuppression occurred in young but not aged mice, implicating age-related loss of suppressor T-cells in the diminished conditioned response.",
+"summary": "Found that saccharin paired with cyclophosphamide produced conditioned immunosuppression of IgG antibody-forming cells in young mice, with age-related deficits in the conditioned response.",
+"key_finding": "Conditioned immunosuppression was observed in young but not aged mice, implicating loss of suppressor T-cell function with aging.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
 "saccharin",
-"sheep erythrocytes",
-"antibody-forming cell",
 "conditioned immunosuppression",
-"aged mice",
-"suppressor T-cell"
+"sheep red blood cells",
+"antibody-forming cells",
+"CBA mice",
+"suppressor T cells"
 ],
 "usage": {
 "input_tokens": 727,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1165,
-"cost_usd": 0.00266
+"output_tokens": 882,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -2514,22 +2487,26 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:57:34Z",
+"classified_at": "2026-09-06T17:58:14Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Animal Pavlovian conditioning experiment explicitly tested conditioned immunomodulation and its blockade by propranolol, addressing mechanisms of conditioned (placebo/nocebo-like) responses.",
+"confidence": 0.95,
+"rationale": "Animal Pavlovian conditioning study that experimentally isolated a conditioned immunomodulatory response and tested pharmacological blockade, which fits inclusion of mechanisms of placebo/nocebo-like conditioned responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"nocebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -2544,8 +2521,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"classical_conditioning"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "pharmacological_manipulation"
@@ -2554,23 +2530,24 @@
 "other"
 ]
 },
-"summary": "Tested Pavlovian-conditioned suppression of splenic mitogenic responsiveness in rats and found propranolol blocked the conditioned immunosuppression when given before the CS.",
-"key_finding": "Propranolol administered before CS presentation abolished the conditioned suppression of splenic lymphocyte responsiveness, implicating beta-adrenergic catecholamine release in the conditioned immunomodulatory response.",
+"summary": "Showed in rats that an aversive conditioned stimulus produced splenic immunosuppression and that propranolol given before CS presentation blocked this conditioned immune alteration.",
+"key_finding": "Propranolol administration before CS presentation fully blocked the conditioned suppression of splenic mitogenic responsiveness, implicating beta-adrenergic catecholamine release in the conditioned immunomodulatory response.",
 "sample_size": null,
 "free_keywords": [
 "propranolol",
 "conditioned immunosuppression",
-"splenic lymphocytes",
 "rats",
+"splenic lymphocytes",
+"mitogen response",
 "aversive conditioned stimulus",
-"beta-adrenergic"
+"catecholamine"
 ],
 "usage": {
 "input_tokens": 667,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1257,
-"cost_usd": 0.00283
+"output_tokens": 1044,
+"cost_usd": 0.0024
 }
 },
 "sources": [
@@ -2623,11 +2600,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:53:52Z",
+"classified_at": "2026-09-06T17:58:18Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested classical conditioning of drug (apomorphine) effects by pairing external stimuli with pharmacological effects and measured conditioned behavioral and EEG responses (mechanism-focused study).",
+"rationale": "Animal experiment explicitly studied classical conditioning of a pharmacological (apomorphine) effect on EEG and behavior, meeting inclusion for mechanistic placebo-relevant conditioning models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2664,25 +2641,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"other"
 ]
 },
-"summary": "Found that repeated pairings of apomorphine with external stimuli in rats produced conditioned increases in EEG alpha-1 power and stereotyped behaviour, which extinguished after unpaired presentations.",
-"key_finding": null,
+"summary": "Found that stimuli previously paired with apomorphine elicited conditioned increases in EEG alpha-1 power and stereotyped behaviors in rats, with both effects extinguishing over repeated unpaired presentations.",
+"key_finding": "Conditioned stimuli produced significant short-lasting episodes of enhanced alpha-1 EEG power that correlated with stereotyped behaviors and declined across four extinction sessions.",
 "sample_size": null,
 "free_keywords": [
 "apomorphine",
-"alpha-1 band",
-"telemetric eeg",
+"dopamine",
 "conditioned stereotypy",
-"rats",
-"dopamine"
+"telemetric eeg",
+"alpha-1",
+"rats"
 ],
 "usage": {
 "input_tokens": 771,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1197,
+"output_tokens": 1195,
 "cost_usd": 0.00273
 }
 },
@@ -3068,11 +3045,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:45:43Z",
+"classified_at": "2026-09-06T17:58:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo expectancy design manipulating alcohol versus tonic and told/received information, qualifying as an active-drug context placebo effect study (expectancy manipulation of drug effects).",
+"rationale": "Used a balanced placebo design manipulating alcohol administration and expectancy (an active-drug context manipulation) to isolate expectancy/placebo effects on cognition.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3106,28 +3083,31 @@
 "treatment_cues_dose_route"
 ],
 "moderators": [
+"sex_gender",
 "none_reported"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Randomized balanced-placebo study of social drinkers found that beverage alcohol (vs. tonic) increased perseverative errors on the WCST, implicating expectancy and intoxication effects on frontal function.",
-"key_finding": "Alcohol ingestion increased percent perseverative errors and other perseveration measures (p < 0.05) on the WCST.",
+"summary": "Randomized social drinkers in a balanced placebo design showed that beverage alcohol (and/or expectancy) increased perseverative errors on the WCST, implicating frontal cognitive effects and expectancy issues.",
+"key_finding": "Alcohol (and/or expectancy in a balanced-placebo design) selectively increased percent perseverative errors on the WCST (p < 0.05).",
 "sample_size": 40,
 "free_keywords": [
 "wisconsin card sorting test",
 "perseveration",
-"vodka",
 "balanced placebo",
-"blood alcohol concentration"
+"alcohol expectancy",
+"vodka",
+"frontal cortex",
+"social drinkers"
 ],
 "usage": {
-"input_tokens": 603,
-"cache_read_input_tokens": 5888,
+"input_tokens": 347,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 809,
-"cost_usd": 0.00192
+"output_tokens": 831,
+"cost_usd": 0.0019
 }
 },
 "sources": [
@@ -4032,11 +4012,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:52:18Z",
+"classified_at": "2026-09-06T17:58:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper's primary focus was the integrity of double-blind methodology (ability of patients and physicians to guess treatment), which is placebo science about trial methodology rather than a placebo-effect experiment.",
+"rationale": "Study empirically tested the integrity of double-blind (placebo) allocation, making placebo/blinding methodology the main subject (placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4047,8 +4027,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"anxiety_disorders",
-"general_public"
+"anxiety_disorders"
 ],
 "age_group": [
 "adults"
@@ -4073,29 +4052,27 @@
 "none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
+"inert_pill_capsule"
 ]
 },
-"summary": "Analyzed blinding in a randomized double-blind trial of alprazolam, imipramine, and placebo in 59 panic patients and found most patients and physicians correctly guessed treatment allocation.",
-"key_finding": "Most patients and their physicians could accurately identify active drug versus placebo (majority correct guesses), raising concerns about double-blind validity.",
+"summary": "Randomized double-blind trial (alprazolam, imipramine, placebo; N=59) found most patients and physicians could accurately guess treatment allocation, questioning blinding integrity.",
+"key_finding": "Most patients and treating physicians correctly identified whether active drug or placebo had been given halfway through treatment.",
 "sample_size": 59,
 "free_keywords": [
 "panic disorder",
 "alprazolam",
 "imipramine",
-"double-blind",
-"blinding integrity",
+"double-blind integrity",
 "treatment guess",
-"clinical trial",
-"internal validity"
+"blinding",
+"clinical trial"
 ],
 "usage": {
 "input_tokens": 594,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 929,
-"cost_usd": 0.00215
+"output_tokens": 691,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -5150,18 +5127,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:55:56Z",
+"classified_at": "2026-09-06T17:58:15Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study experimentally manipulated response expectancies and measured compensatory tolerance displayed on a placebo alcohol session, making placebo response and learning mechanisms the explicit focus.",
+"rationale": "Human experiments focused on the placebo session and tested how learned response expectancies influenced compensatory performance under placebo, making placebo response the study focus (mechanisms of expectancy/learning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response",
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5179,40 +5155,41 @@
 ],
 "design": [
 "within_subject_experimental",
-"crossover_rct"
+"single_group_pre_post"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
 "verbal_suggestion_expectation",
+"classical_conditioning",
 "prior_treatment_experience"
 ],
 "moderators": [
-"prior_experience",
-"expectation_level"
+"prior_experience"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Found that learned response expectancies enhanced behavioral tolerance to alcohol and produced compensatory facilitation on a subsequent placebo alcohol session.",
-"key_finding": "Groups trained with informative expectancy displayed significantly greater behavioral tolerance and compensatory performance under placebo than control groups (p < .05).",
-"sample_size": 48,
+"summary": "Found that trained response expectancies increased behavioral tolerance to alcohol and produced compensatory facilitation of motor performance on placebo sessions in social drinkers.",
+"key_finding": "Groups trained with informative consequences showed significantly greater alcohol tolerance and compensatory performance under placebo than control groups.",
+"sample_size": 24,
 "free_keywords": [
 "alcohol tolerance",
-"response expectancy",
-"compensatory response",
+"compensatory behavior",
 "motor task",
-"social drinkers"
+"response expectancy",
+"social drinkers",
+"reinforcement",
+"operant conditioning"
 ],
 "usage": {
 "input_tokens": 750,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 912,
-"cost_usd": 0.00216
+"output_tokens": 710,
+"cost_usd": 0.00175
 }
 },
 "sources": [
@@ -5512,18 +5489,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:56:24Z",
+"classified_at": "2026-09-06T17:58:18Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Experimental manipulation of pain intensity expectations (cues) independently of objective intensity to test effects on pain and anticipatory responses matches inclusion criterion for expectation/placebo-nocebo mechanisms.",
+"confidence": 0.92,
+"rationale": "Experimental manipulation of momentary pain intensity expectations (over- vs underprediction) was the primary focus and altered physiological and anticipatory responses, meeting inclusion criteria for expectation/placebo–nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"nocebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5549,32 +5525,31 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
-"prior_treatment_experience"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated incorrect intensity expectations for painful stimuli and found that underpredicted pain increased physiological pain responses and anticipatory fear, while overpredictions sped fear reduction.",
-"key_finding": "Underpredicted painful experiences produced higher physiological pain responses and increased anticipatory fear and skin conductance; overpredictions accelerated subjective fear decline.",
+"summary": "Manipulated incorrect expectations about painful stimulus intensity and found that underpredicted pain increased physiological pain responses and anticipatory fear, while overpredicted pain sped reduction of subjective fear.",
+"key_finding": "Underprediction of pain increased skin conductance and anticipatory fear and elevated physiological pain responses, whereas overprediction mainly accelerated subjective fear decline.",
 "sample_size": 62,
 "free_keywords": [
 "prediction error",
+"expectancy violation",
 "skin conductance",
 "anticipatory fear",
-"pain expectation",
-"habituation"
+"analogue signal"
 ],
 "usage": {
 "input_tokens": 688,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1026,
-"cost_usd": 0.00237
+"output_tokens": 893,
+"cost_usd": 0.00211
 }
 },
 "sources": [

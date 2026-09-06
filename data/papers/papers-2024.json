@@ -181,11 +181,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T08:54:09Z",
+"classified_at": "2026-09-06T17:47:22Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "The paper explicitly measured preoperative expectations and tested them as predictors of postoperative patient-reported outcomes, meeting the inclusion rule for expectation/context effects as predictors of health outcomes.",
+"confidence": 0.7,
+"rationale": "Observational study measured preoperative expectations as a predictor of patient-reported pain and function outcomes after surgery, thus addressing expectancy/context effects relevant to placebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -216,35 +216,32 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"provider_patient_interaction",
-"prior_treatment_experience"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"expectation_level",
 "none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Retrospective cohort study found greater preoperative expectations predicted significantly better two-year self-reported pain and function after knee surgery.",
-"key_finding": "Greater baseline expectations independently predicted improvement in PROMIS Pain Interference and IKDC scores at two years (N=460).",
+"summary": "Found that higher preoperative expectations were independently predictive of better patient-reported pain and function two years after knee surgery in a retrospective cohort.",
+"key_finding": "Greater baseline expectations predicted improvement in PROMIS Pain Interference and IKDC at two years.",
 "sample_size": 460,
 "free_keywords": [
 "knee surgery",
 "preoperative expectations",
-"MODEMS",
 "PROMIS",
 "IKDC",
-"surgical outcomes",
-"SSQ-8"
+"retrospective cohort",
+"surgical outcomes"
 ],
 "usage": {
 "input_tokens": 839,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1146,
-"cost_usd": 0.00265
+"output_tokens": 998,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -841,11 +838,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:23:27Z",
+"classified_at": "2026-09-06T17:47:23Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Meta-analysis explicitly compared types of sham acupuncture (verum-point vs sham-point) and tested whether sham location influenced treatment outcomes, addressing placebo/sham response and control validity.",
+"rationale": "Meta-analysis explicitly examined effects of different sham acupuncture locations and whether sham acted as a proper placebo control, addressing placebo/sham responses and trial methodology.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -859,7 +856,7 @@
 "other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "pain"
@@ -875,36 +872,36 @@
 "mixed_inconsistent"
 ],
 "mechanisms": [
+"trial_methodology_placebo_response",
 "treatment_cues_dose_route",
-"trial_methodology_placebo_response"
+"classical_conditioning"
 ],
 "moderators": [
-"treatment_characteristics",
-"trial_characteristics"
+"trial_characteristics",
+"none_reported"
 ],
 "intervention_type": [
 "sham_acupuncture"
 ]
 },
-"summary": "Performed a network meta-analysis of 18 RCTs (1936 participants) and found verum acupuncture improved headache intensity and response rate versus sham needling at sham points (SATS) but not versus sham needling at verum points (SATV), implying sham location matters.",
-"key_finding": "Verum acupuncture was superior to sham at sham points (SATS) for pain intensity and responder rate, but not superior to sham at verum points (SATV), suggesting SATV may act as an active control.",
-"sample_size": 18,
+"summary": "Performed a network meta-analysis of 18 trials (n=1936) and found verum acupuncture improved headache intensity and response rate versus sham needling at non-acupoints (SATS), while sham at verum points (SATV) did not differ from verum, questioning SATV as an inert placebo.",
+"key_finding": "Verum acupuncture was superior to sham at sham points (SATS) for pain and response rate, whereas sham needling at verum points (SATV) showed no significant difference from verum.",
+"sample_size": 1936,
 "free_keywords": [
 "migraine",
-"acupuncture points",
-"sham points",
+"sham acupuncture",
+"acupoint specificity",
+"network meta-analysis",
 "SATV",
 "SATS",
-"network meta-analysis",
-"responder rate",
-"headache intensity"
+"placebo control"
 ],
 "usage": {
 "input_tokens": 707,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1097,
-"cost_usd": 0.00252
+"output_tokens": 1042,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -2221,6 +2218,131 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.7554/elife.97793",
+"title": "The neural dynamics of positive and negative expectations of pain.",
+"authors": [
+"Wittkamp CA",
+"Wolf MI",
+"Rose M"
+],
+"journal": "eLife",
+"journal_abbrev": "Elife",
+"year": 2024,
+"date": "2024-12-02",
+"doi": "10.7554/elife.97793",
+"pmid": "39620899",
+"pmcid": "PMC11616993",
+"openalex_id": null,
+"abstract": "Pain is heavily modulated by expectations. Whereas the integration of expectations with sensory information has been examined in some detail, little is known about how positive and negative expectations are generated and their neural dynamics from generation over anticipation to the integration with sensory information. The present preregistered study employed a novel paradigm to induce positive and negative expectations on a trial-by-trial basis and examined the neural mechanisms using combined EEG-fMRI measurements (n=50). We observed substantially different neural representations between the anticipatory and the actual pain period. In the anticipation phase i.e., before the nociceptive input, the insular cortex, dorsolateral prefrontal cortex (DLPFC), and anterior cingulate cortex (ACC) showed increased activity for directed expectations regardless of their valence. Interestingly, a differentiation between positive and negative expectations within the majority of areas only occurred after the arrival of nociceptive information. FMRI-informed EEG analyses could reliably track the temporal sequence of processing showing an early effect in the DLPFC, followed by the anterior insula and late effects in the ACC. The observed effects indicate the involvement of different expectation-related subprocesses, including the transformation of visual information into a value signal that is maintained and differentiated according to its valence only during stimulus processing.",
+"keywords": [
+"EEG",
+"anticipation",
+"fMRI",
+"human",
+"neuroscience",
+"nocebo",
+"pain",
+"placebo"
+],
+"mesh": [
+"Humans",
+"Magnetic Resonance Imaging",
+"Electroencephalography",
+"Male",
+"Female",
+"Pain",
+"Adult",
+"Young Adult",
+"Gyrus Cinguli",
+"Anticipation, Psychological",
+"Brain Mapping"
+],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:16Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Within-subject experimental manipulation of positive and negative expectations about pain was the stated aim and neural effects of those expectations were the primary outcome, meeting the placebo/nocebo mechanism criterion.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_and_nocebo"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri",
+"eeg"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"neural_systems_circuits"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only"
+]
+},
+"summary": "Induced positive and negative pain expectations on a trial-by-trial basis and found distinct anticipatory and stimulus-period neural dynamics using combined EEG-fMRI in healthy adults (n=50).",
+"key_finding": "Found that expectation cues engaged DLPFC, anterior insula, and ACC with valence differentiation emerging after nociceptive input, tracked by fMRI-informed EEG timing.",
+"sample_size": 50,
+"free_keywords": [
+"insula",
+"dorsolateral prefrontal cortex",
+"anterior cingulate cortex",
+"anticipation",
+"EEG-fMRI",
+"neural dynamics"
+],
+"usage": {
+"input_tokens": 6590,
+"cache_read_input_tokens": 0,
+"cache_creation_input_tokens": 0,
+"output_tokens": 785,
+"cost_usd": 0.00322
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-12-02",
+"private_pdf": null
+},
+{
 "id": "doi:10.24869/psyd.2024.340",
 "title": "EFFECT OF DECEPTIVE VERSUS NON-DECEPTIVE PLACEBO ON PSYCHOMOTOR AND COGNITIVE FUNCTIONS IN HEALTHY ADULT HUMAN VOLUNTEERS: AN OPEN-LABEL CROSS-OVER RANDOMIZED CONTROLLED TRIAL.",
 "authors": [
@@ -2551,11 +2673,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:21:41Z",
+"classified_at": "2026-09-06T17:47:21Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Expectation ratings (patient and clinician) were measured and analysed as predictors of clinical outcomes, so placebo/context-expectation effects are the paper's substantive focus.",
+"rationale": "Measured patient and clinician expectations and tested their association with clinical outcomes, so placebo/expectation effects were the study’s analytic focus (expectation as predictor of outcome).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2569,14 +2691,14 @@
 "chronic_pain"
 ],
 "age_group": [
-"adults",
-"older_adults"
+"adults"
 ],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"clinician_rated"
 ],
 "design": [
 "observational"
@@ -2590,30 +2712,30 @@
 ],
 "moderators": [
 "expectation_level",
-"provider_characteristics",
-"prior_experience"
+"provider_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Examined patient and clinician expectations in tertiary non-surgical musculoskeletal care and found higher and congruent expectations were associated with better self-reported clinical outcomes at 6 months in 619 patients.",
-"key_finding": "Higher patient (β=0.33) and clinician (β=0.32) expectations predicted better clinical outcomes, with stronger effects when expectations were congruent.",
+"summary": "Examined patient and clinician expectations in 619 non-surgical musculoskeletal patients and found higher and congruent expectations were associated with better self-reported clinical outcomes at 6 months.",
+"key_finding": "Higher patient (β=0.33) and clinician (β=0.32) expectations were each associated with better outcomes, with strongest effects when ratings were congruent.",
 "sample_size": 619,
 "free_keywords": [
-"musculoskeletal",
-"osteoarthritis",
+"knee osteoarthritis",
 "low back pain",
 "shoulder impingement",
-"expectation congruence",
-"advanced physiotherapy practitioner"
+"expectations",
+"congruence",
+"advanced physiotherapy practitioner",
+"rehabilitation"
 ],
 "usage": {
 "input_tokens": 827,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 929,
-"cost_usd": 0.00221
+"output_tokens": 1036,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -3244,137 +3366,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.bbr.2024.115356",
-"title": "A novel virtual reality fear conditioning paradigm to investigate the influence of expectancy violation on fear extinction.",
-"authors": [
-"Gromer D",
-"Stegmann Y",
-"Lorenz B",
-"Kraus Y",
-"Franz P",
-"Gamer M"
-],
-"journal": "Behavioural brain research",
-"journal_abbrev": "Behav Brain Res",
-"year": 2024,
-"date": "2024-11-27",
-"doi": "10.1016/j.bbr.2024.115356",
-"pmid": "39608647",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W4404769030",
-"abstract": "Exposure therapy is an efficient treatment for pathological anxiety, yet its underlying mechanisms are not fully understood. Prediction error models suggest that optimizing the violation of threat-related expectancies improves treatment outcomes, however, causal evidence is still sparse. The aim of the current study was therefore to provide causal evidence for the influence of the extent of expectancy violations on extinction retention using a novel virtual reality fear conditioning paradigm. In total, 100 participants completed a two-day fear conditioning paradigm in which the approach behavior of an animated stimulus was differentially reinforced with an electrical stimulus (i.e., closer distances were associated with a higher probability for receiving the aversive stimulation). To experimentally manipulate the extent of expectancy violations during fear extinction, participants were presented only with distances to the conditioned stimulus that either weakly (i.e., far distances) or strongly predicted the aversive outcome (i.e., close distances), resulting in low vs. high expectancy violations. We found successful fear acquisition and extinction, as well as an influence of the extent of expectancy violations on US-expectancy and threat ratings after extinction on day 1. On the second day, at a spontaneous recovery and reinstatement test, however, there was only weak evidence for improved extinction retention in the high expectancy violation condition. Optimizing expectancy violations might be a necessary but not sufficient condition for improved extinction retention. Future research needs to address the conditions under which expectancy violations lead to robust expectancy adjustments and how these conditions can be met in exposure therapy for anxiety disorders.",
-"keywords": [
-"Anxiety",
-"Expectancy violation prediction errors",
-"Exposure therapy",
-"Fear",
-"Fear conditioning",
-"Inhibitory learning",
-"Virtual reality"
-],
-"mesh": [
-"Humans",
-"Extinction, Psychological",
-"Fear",
-"Male",
-"Female",
-"Young Adult",
-"Adult",
-"Conditioning, Classical",
-"Virtual Reality",
-"Adolescent",
-"Anticipation, Psychological"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "hybrid",
-"oa_pdf_url": "https://doi.org/10.1016/j.bbr.2024.115356",
-"landing_url": "https://doi.org/10.1016/j.bbr.2024.115356",
-"cited_by_count": 4,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:37:07Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "The study experimentally manipulated expectancy (high vs low expectancy-violation) within a fear-conditioning extinction paradigm to test causal effects on extinction retention, making expectation/conditioning the explicit focus (mechanisms of extinction/prediction error).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_effect",
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"parallel_groups_rct",
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective",
-"mixed_inconsistent"
-],
-"mechanisms": [
-"classical_conditioning",
-"computational_predictive_processing",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Used a two-day VR differential fear-conditioning paradigm (N=100) to manipulate the magnitude of expectancy violation during extinction and found effects on US-expectancy and threat ratings after extinction but only weak evidence for improved extinction retention at follow-up.",
-"key_finding": "High expectancy-violation during extinction reduced US-expectancy and threat ratings after extinction on day 1, but produced only weak improvement in extinction retention at day 2 (spontaneous recovery/reinstatement).",
-"sample_size": 100,
-"free_keywords": [
-"virtual reality",
-"prediction error",
-"fear conditioning",
-"extinction retention",
-"electrical stimulation",
-"reinstatement",
-"spontaneous recovery"
-],
-"usage": {
-"input_tokens": 761,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1213,
-"cost_usd": 0.00276
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-11-27",
-"private_pdf": null
-},
-{
 "id": "doi:10.1152/jn.00214.2024",
 "title": "Understanding the effects of different transcranial magnetic stimulation control protocols: a behavioral and neural perspective.",
 "authors": [
@@ -3909,6 +3900,118 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.3390/healthcare12222314",
+"title": "Placebo Effects: Neurological Mechanisms Inducing Physiological, Organic, and Belief Responses-A Prospective Analysis.",
+"authors": [
+"Niazi SK"
+],
+"journal": "Healthcare (Basel, Switzerland)",
+"journal_abbrev": "Healthcare (Basel)",
+"year": 2024,
+"date": "2024-11-20",
+"doi": "10.3390/healthcare12222314",
+"pmid": "39595511",
+"pmcid": "PMC11593399",
+"openalex_id": null,
+"abstract": "The placebo effect can induce physiological or clinical neurological and organic responses despite the recipient receiving no active ingredients; these responses are based instead on the recipient's perceptions. Placebo effects come from the rostral anterior cingulate cortex, pontine nucleus, and cerebellum of the brain; this information provides a better understanding of placebo effects and can also help us understand the mechanism of the modulation of neurotransmitters from the use of psychedelic substances, activity of selective serotonin reuptake inhibitors, the process of transcranial magnetic stimulation, and deep brain stimulation, as well as aid in developing novel therapies, challenging the validity of controlled clinical trials (RCTs) that the regulatory agencies now appreciate. Education about how placebo effects bring in social, political, and religious beliefs and whether these can be modulated may help reduce global confrontations.",
+"keywords": [
+"addictions",
+"belief systems",
+"organic changes",
+"placebo trials",
+"randomized control trials",
+"real-world evidence",
+"therapeutic applications"
+],
+"mesh": [],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-03T03:01:15Z",
+"screening": {
+"decision": "include",
+"confidence": 0.7,
+"rationale": "Narrative review focused on neurological mechanisms of the placebo effect (placebo is the explicit subject), meeting inclusion criterion for reviews of placebo/nocebo effects.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "narrative_review",
+"species": "not_applicable",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"neural_systems_circuits",
+"neurobiology_other_neurochemical",
+"treatment_cues_dose_route",
+"clinical_use_ethics_attitudes",
+"media_social_contagion"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Reviewed neurological mechanisms and brain regions implicated in placebo-induced physiological and clinical responses and discussed implications for neuromodulation, pharmacology, and societal beliefs.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"rostral anterior cingulate",
+"pontine nucleus",
+"cerebellum",
+"psychedelics",
+"ssri",
+"tms",
+"dbs"
+],
+"usage": {
+"input_tokens": 539,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 897,
+"cost_usd": 0.00208
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-11-20",
+"private_pdf": null
+},
+{
 "id": "doi:10.1017/neu.2024.52",
 "title": "Placebo and nocebo effects in gambling disorder pharmacological trials: a meta-analysis.",
 "authors": [
@@ -4095,17 +4198,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:31:16Z",
+"classified_at": "2026-09-06T17:47:27Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Observational study that explicitly measured preoperative expectations and tested them as predictors of postoperative patient-reported outcomes, meeting inclusion for expectation effects as a predictor of health outcomes.",
+"confidence": 0.7,
+"rationale": "Preoperative expectations were measured and tested as predictors of postoperative patient-reported outcomes, so the study examines expectation/context effects relevant to placebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4116,10 +4219,10 @@
 "adults"
 ],
 "condition_domain": [
-"pain",
+"motor_function",
+"fatigue",
 "mood_depression",
 "anxiety_stress",
-"fatigue",
 "global_health_qol"
 ],
 "outcome_measures": [
@@ -4132,32 +4235,34 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Examined whether preoperative expectations predicted 2-year patient-reported psychosocial and pain outcomes after hip arthroscopy and found higher expectations independently predicted better fatigue, social satisfaction, and anxiety outcomes.",
-"key_finding": "Higher preoperative expectations were associated with better 2-year PROMIS fatigue, social satisfaction, and anxiety scores; patients achieving MCID had higher baseline expectations.",
+"summary": "Measured preoperative expectations and found higher expectations predicted better psychosocial and functional patient-reported outcomes two years after hip arthroscopy.",
+"key_finding": "Higher preoperative expectations independently predicted better PROMIS Fatigue, Social Satisfaction, and Anxiety scores at two years; patients achieving MCID had higher baseline expectations.",
 "sample_size": 78,
 "free_keywords": [
 "hip arthroscopy",
 "preoperative expectations",
 "PROMIS",
 "MODEMS",
+"MARS",
 "MCID",
-"Marx activity scale"
+"numeric pain scale"
 ],
 "usage": {
 "input_tokens": 851,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 985,
-"cost_usd": 0.00233
+"output_tokens": 1139,
+"cost_usd": 0.00264
 }
 },
 "sources": [
@@ -4221,11 +4326,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:43:57Z",
+"classified_at": "2026-09-06T17:47:20Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of analgesia expectation was the stated intervention and primary analysis assessing its effect on conditioned pain modulation magnitude.",
+"rationale": "Within-subject experimental manipulation of expectation (audiovisual suggestion) tested its effect on conditioned pain modulation, making placebo/expectation the explicit object of study (placebo/context effect).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4245,14 +4350,13 @@
 "pain"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"self_report"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
@@ -4265,24 +4369,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested whether induced expectation of analgesia altered conditioned pain modulation in healthy adults and found expectation increased inhibitory CPM magnitude in participants with a baseline non-inhibitory profile.",
-"key_finding": "Expectation increased the magnitude of inhibitory conditioned pain modulation in baseline non-inhibitors (N=43).",
+"summary": "Assessed whether an induced expectation of analgesia (audiovisual suggestion) altered conditioned pain modulation in 43 healthy adults and found expectation increased inhibitory CPM magnitude in participants with a baseline non-inhibitory profile.",
+"key_finding": "Expectation increased CPM inhibitory magnitude in baseline non-inhibitors (reduced proportion of non-inhibitors from baseline to expectation session).",
 "sample_size": 43,
 "free_keywords": [
 "conditioned pain modulation",
 "cold pressor",
 "pressure pain threshold",
 "mechanical palpation",
-"temporalis",
-"thenar eminence",
-"expectation of analgesia"
+"expectation of analgesia",
+"healthy volunteers"
 ],
 "usage": {
 "input_tokens": 873,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 878,
-"cost_usd": 0.00212
+"output_tokens": 913,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -4444,18 +4547,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T21:21:33Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T03:01:18Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Opinion/theoretical paper whose primary subject is placebo methodology and sham acupuncture design (placebo_science_other), so it fits the bibliography of placebo science.",
+"decision": "uncertain",
+"confidence": 0.62,
+"rationale": "No abstract or full text provided; title suggests a methodological review of sham acupuncture but the paper's focus on placebo/nocebo cannot be confirmed from available information.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4463,7 +4566,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [
 "not_applicable"
@@ -4472,7 +4575,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"other"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -4495,22 +4598,22 @@
 "sham_acupuncture"
 ]
 },
-"summary": "Argues that sham acupuncture controls should better match real acupuncture (depth, placement, stimulation) to validly isolate acupoint-specific effects and improve trial validity.",
+"summary": "No abstract available; title indicated a reconsideration of sham acupuncture methods, likely discussing placebo/sham control methodology in acupuncture research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"sham needling",
-"acupoint specificity",
-"superficial vs deep needling",
-"placebo control",
-"trial methodology"
+"sham acupuncture",
+"placebo acupuncture",
+"acupuncture controls",
+"methodology",
+"control interventions"
 ],
 "usage": {
-"input_tokens": 2591,
+"input_tokens": 363,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 645,
-"cost_usd": 0.00208
+"output_tokens": 786,
+"cost_usd": 0.00181
 }
 },
 "sources": [
@@ -5490,32 +5593,32 @@
 "oa_pdf_url": "https://biblio.ugent.be/publication/01JD50RWWNM739R38PE2T92V1F/file/01JD50VQ9W6WCY77CEBVMTMST7.pdf",
 "landing_url": "https://doi.org/10.1016/j.cpr.2024.102517",
 "cited_by_count": 7,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:45:29Z",
+"classified_at": "2026-09-06T17:47:25Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Systematic review/meta-analysis explicitly examined expectations and attention as moderators of conditioned pain modulation, addressing cognitive mechanisms (expectation/attention) relevant to placebo/nocebo processes.",
+"rationale": "Systematic review/meta-analysis explicitly examined expectations and attention (placebo-relevant cognitive mechanisms) as influences on conditioned pain modulation, meeting inclusion for mechanisms of expectation/conditioning affecting pain modulation.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_and_nocebo"
 ],
 "article_type": "meta_analysis",
 "species": "human",
 "population": [
-"healthy_adult"
+"mixed_clinical"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "pain"
@@ -5531,8 +5634,8 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
-"neural_systems_circuits"
+"classical_conditioning",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "expectation_level"
@@ -5541,23 +5644,23 @@
 "not_applicable"
 ]
 },
-"summary": "Synthesized 24 studies and found that expectations and attentional focus influenced conditioned pain modulation, with CPM more efficient when pain relief was expected and when attention was directed to the conditioning stimulus, though evidence was limited and mixed.",
-"key_finding": "Found that expecting pain relief enhanced CPM and directing attention to the conditioning stimulus increased CPM efficiency, but results were inconsistent across studies.",
+"summary": "Systematic review and meta-analysis of 24 studies assessed how expectations and attention influence conditioned pain modulation, finding that expectations and attentional focus can alter CPM but evidence was limited and inconsistent.",
+"key_finding": "Meta-analyses showed greater CPM when attention was directed to the conditioning stimulus versus the test stimulus, and expectations tended to enhance CPM, though findings were not unanimous.",
 "sample_size": 24,
 "free_keywords": [
 "conditioned pain modulation",
 "CPM",
-"pain inhibition",
 "attention",
 "expectation",
+"endogenous pain inhibition",
 "pain perception"
 ],
 "usage": {
 "input_tokens": 696,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1074,
-"cost_usd": 0.00247
+"output_tokens": 1290,
+"cost_usd": 0.0029
 }
 },
 "sources": [
@@ -6075,145 +6178,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.2519/jospt.2024.12590",
-"title": "The Influence of \"Labels\" for Neck Pain on Recovery Expectations Following a Motor Vehicle Crash: An Online-Randomized Vignette-Based Experiment.",
-"authors": [
-"Xie Y",
-"Costa N",
-"Söderlund A",
-"Zadro J",
-"Malmström EM",
-"Grant G",
-"Jull G",
-"Westergren H",
-"Kasch H",
-"MacDermid J",
-"Treleaven J",
-"Curatolo M",
-"Ravn SL",
-"Andersen T",
-"Rebbeck T",
-"Sterling M"
-],
-"journal": "The Journal of orthopaedic and sports physical therapy",
-"journal_abbrev": "J Orthop Sports Phys Ther",
-"year": 2024,
-"date": "2024-11-01",
-"doi": "10.2519/jospt.2024.12590",
-"pmid": "39475669",
-"pmcid": "PMC13391242",
-"openalex_id": "https://openalex.org/W4402288690",
-"abstract": "OBJECTIVES: To (1) investigate whether different labels for neck pain after a motor vehicle crash (MVC) influenced recovery expectations and management beliefs, (2) explore reasons for low recovery expectations and greater likelihood for lodging a claim, and (3) explore the moderating effect of neck pain history and sociodemographic characteristics. DESIGN: Online randomized experiment with nested qualitative content analysis. METHODS: We randomized 2229 participants from the general population (mean age: 46.7 ± 17.5 years; 72.4% females; 66% with previous or current neck pain; 10% with an MVC experience) to read 1 of 5 scenarios describing a patient with neck pain after an MVC, each was labeled as whiplash injury, whiplash-associated disorder, posttraumatic neck pain, neck pain, or neck strain. The primary outcome was recovery expectations, rated on a 0- to 10-point scale. RESULTS: Participants allocated to whiplash-associated disorder or neck pain had lower recovery expectations than those allocated to neck strain (adjusted mean difference [95% confidence interval]: -0.5 [-0.9 to -0.1] for both comparisons). Whiplash-associated disorder led to more recovery uncertainty, while neck pain led to greater doubt about the health care provider. Most secondary outcomes showed significant but small differences. Participants allocated to neck strain were less inclined to claim than those allocated to whiplash-associated disorder or whiplash injury due to less perceived need for financial support. Neck pain history moderated labeling effects on recovery expectations; household income moderated the claim intention. CONCLUSIONS: Labels for neck pain after an MVC influenced recovery expectations and management preferences. The clinical relevance of the small effects was unclear. J Orthop Sports Phys Ther 2024;54(11):1-10. Epub 5 September 2024. doi:10.2519/jospt.2024.12590.",
-"keywords": [
-"clinical communication",
-"compensable injury",
-"road traffic injury",
-"terminology"
-],
-"mesh": [
-"Humans",
-"Neck Pain",
-"Female",
-"Accidents, Traffic",
-"Male",
-"Middle Aged",
-"Adult",
-"Whiplash Injuries"
-],
-"pub_types": [
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13391242/",
-"landing_url": "https://doi.org/10.2519/jospt.2024.12590",
-"cited_by_count": 6,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:53:23Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Randomized manipulation of diagnostic labels causally altered recovery expectations (an expectation/nocebo communication effect), making placebo/nocebo phenomena an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"general_public"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"parallel_groups_rct",
-"survey_interview"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"nocebo_communication_disclosure",
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"prior_experience",
-"trial_characteristics"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Randomized vignette experiment found that labeling neck pain after a motor vehicle crash influenced recovery expectations and claim intentions, with whiplash-associated disorder and neck pain lowering expectations versus neck strain.",
-"key_finding": "Whiplash-associated disorder and neck pain labels reduced recovery expectations compared with neck strain (adjusted mean difference −0.5, 95% CI −0.9 to −0.1).",
-"sample_size": 2229,
-"free_keywords": [
-"neck pain",
-"whiplash",
-"labeling",
-"recovery expectations",
-"vignette experiment",
-"motor vehicle crash",
-"claim intention"
-],
-"usage": {
-"input_tokens": 874,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1216,
-"cost_usd": 0.0028
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-11-01",
-"private_pdf": {
-"available": true,
-"store_key": "xie_2024_the_influence_of_labels_for.pdf",
-"source": "downloaded",
-"sha256": "651e67d4683aa05a"
-}
-},
-{
 "id": "doi:10.1016/j.msksp.2024.103210",
 "title": "Good vibes for the brain - Placebo versus real vibration in patients with chronic neck pain: A randomized cross-over study.",
 "authors": [
@@ -6363,68 +6327,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:21:43Z",
+"classified_at": "2026-09-03T03:01:32Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names 'placebo response' in mental disorders, indicating placebo phenomena are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title indicates a short reply/commentary, so it is unclear whether this paper reports original placebo/nocebo data or is an editorial comment on informant effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "editorial_letter",
 "species": "human",
-"population": [
-"mixed_clinical"
-],
+"population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
+"condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Was a reply discussing informant effects on placebo response in mental disorders.",
+"summary": "Could not determine content from the record; likely a brief reply/commentary about informant effects on placebo response in mental disorders.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"informant",
 "informant-report",
-"placebo response",
-"reporter bias",
-"psychiatry",
-"mental disorders"
+"placebo_response",
+"mental_disorders",
+"reply",
+"jama psychiatry"
 ],
 "usage": {
-"input_tokens": 545,
+"input_tokens": 367,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 742,
-"cost_usd": 0.00177
+"output_tokens": 697,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -6460,18 +6407,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:21:53Z",
+"classified_at": "2026-09-03T03:01:32Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names 'Placebo Response' in mental disorders, indicating placebo phenomena are the paper's subject (placebo response and informant effects).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title clearly targets placebo response in mental disorders but insufficient information to determine study design or whether placebo/nocebo is the analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6482,25 +6429,30 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"mixed_clinical"
+"mixed_clinical",
+"other_clinical"
 ],
 "age_group": [
 "mixed_unspecified"
 ],
 "condition_domain": [
+"mood_depression",
+"anxiety_stress",
 "other"
 ],
 "outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
+"self_report",
+"clinician_rated",
 "not_applicable"
 ],
+"design": [
+"placebo_arm_secondary_analysis",
+"not_applicable"
+],
+"effects": [],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
@@ -6509,22 +6461,22 @@
 "not_applicable"
 ]
 },
-"summary": "Examined how informant (observer) reports influenced the placebo response in people with mental disorders.",
+"summary": "No abstract available; title indicated the paper examined informant effects on placebo response in mental disorders, but methods and findings were not provided.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"informant-report",
-"placebo_response",
-"mental_disorders",
+"informant",
+"placebo response",
+"mental disorders",
 "psychiatry",
-"observer_effect"
+"treatment expectancy"
 ],
 "usage": {
-"input_tokens": 543,
+"input_tokens": 365,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 714,
-"cost_usd": 0.00171
+"output_tokens": 842,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -6966,19 +6918,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:52:34Z",
+"classified_at": "2026-09-06T17:47:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.86,
-"rationale": "Within-subject experimental manipulation of pain versus no-pain expectation via instructional videos tested effects on pain ratings and pupil diameter, meeting criteria for an isolated expectation (placebo/nocebo) effect.",
+"confidence": 0.9,
+"rationale": "Experimental manipulation of pain versus no-pain expectation (instructional videos) directly tested expectation effects on pain and pupil responses, meeting the criterion for studying placebo/nocebo context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"nocebo_effect",
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -7014,25 +6964,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated pain versus no-pain expectation with instructional videos in 30 healthy volunteers and found higher VAS pain ratings and larger pupil diameter under pain-expectation.",
-"key_finding": "Pain expectation increased subjective pain (VAS) and pupil diameter compared with no-pain expectation.",
+"summary": "Induced pain versus no-pain expectations via instructional videos modulated self-reported pain and pupil diameter in 30 healthy adults, with higher VAS scores and larger pupils under pain expectation.",
+"key_finding": "Pain expectation produced significantly higher VAS pain ratings and larger pupil diameter compared with no-pain expectation.",
 "sample_size": 30,
 "free_keywords": [
 "masseter",
 "algometer",
 "pupillometry",
 "visual analog scale",
-"instructional video",
-"expectation manipulation",
-"young adults",
-"pain perception"
+"anticipation",
+"instructional videos"
 ],
 "usage": {
 "input_tokens": 729,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 854,
-"cost_usd": 0.00204
+"output_tokens": 883,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -7845,11 +7793,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:27:57Z",
+"classified_at": "2026-09-06T17:47:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Randomized three-arm trial included an explicit sham (placebo) and a no-treatment control and reported sham vs. control comparisons, isolating a placebo/context effect.",
+"confidence": 0.85,
+"rationale": "Randomized sham (placebo) versus no-treatment comparison was reported and sham differed from control on cortisol, so the study experimentally isolated a placebo/sham effect.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7860,14 +7808,16 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"cardiovascular"
+"other_clinical"
 ],
 "age_group": [
 "adults",
 "older_adults"
 ],
 "condition_domain": [
-"cardiovascular_bp"
+"cardiovascular_bp",
+"anxiety_stress",
+"endocrine_hormonal"
 ],
 "outcome_measures": [
 "self_report",
@@ -7881,8 +7831,7 @@
 ],
 "effects": [
 "significant_subjective",
-"significant_objective",
-"null_objective"
+"significant_objective"
 ],
 "mechanisms": [
 "therapeutic_ritual_context",
@@ -7895,23 +7844,24 @@
 "sham_psychological"
 ]
 },
-"summary": "Randomized trial compared Reiki, sham (placebo) Reiki, and no-treatment control in cardiac outpatients and found lower cortisol in Reiki and sham versus control and reduced anxiety in the Reiki group.",
-"key_finding": "Sham and Reiki groups had lower post-test cortisol than control (p=0.002); Reiki produced greater anxiety reduction (Beck scores) than sham and control (p<0.001); no ECG differences.",
+"summary": "Randomized single-blind trial compared Reiki, sham (inactive Reiki), and no treatment in cardiac patients and found Reiki reduced anxiety and both Reiki and sham had lower post-test cortisol than control.",
+"key_finding": "Both Reiki and sham groups had significantly lower post-test cortisol than control (P = 0.002); Reiki had significantly lower post-test anxiety than other groups (P < 0.001).",
 "sample_size": 65,
 "free_keywords": [
 "reiki",
-"energy_healing",
-"sham_reiki",
-"cortisol",
+"energy healing",
+"cardiac disease",
+"electrocardiography",
 "beck anxiety inventory",
-"electrocardiography"
+"cortisol",
+"randomized"
 ],
 "usage": {
 "input_tokens": 874,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1045,
-"cost_usd": 0.00246
+"output_tokens": 1262,
+"cost_usd": 0.00289
 }
 },
 "sources": [
@@ -8462,11 +8412,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T11:44:46Z",
+"classified_at": "2026-09-06T17:47:32Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Systematic review explicitly examined effects of pre-operative patient expectations on postoperative outcomes (an expectation/placebo-related question) and therefore fits inclusion as a review of expectation effects relevant to placebo mechanisms.",
+"confidence": 0.75,
+"rationale": "Systematic review explicitly examined effects of pre-operative patient expectations (an expectancy/placebo-related mechanism) on postoperative outcomes, so placebo-related phenomena are the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -8489,8 +8439,8 @@
 ],
 "outcome_measures": [
 "self_report",
-"clinician_rated",
-"motor_kinematic"
+"behavioral_performance",
+"clinician_rated"
 ],
 "design": [
 "not_applicable"
@@ -8500,6 +8450,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
+"prior_treatment_experience",
 "provider_patient_interaction"
 ],
 "moderators": [
@@ -8509,23 +8460,22 @@
 "not_applicable"
 ]
 },
-"summary": "Systematic review synthesized four studies on how pre-operative patient expectations related to outcomes after total shoulder arthroplasty and found mostly low-quality evidence with conflicting results and some moderate evidence of no association for several outcomes.",
-"key_finding": "Found moderate evidence for absence of an association between greater pre-operative expectations and multiple postoperative outcomes, with other associations conflicting or preliminary.",
+"summary": "Systematic review of four studies examined whether pre-operative patient expectations predicted outcomes after total shoulder arthroplasty and found moderate evidence for no association on many measures but overall conflicting and low-quality evidence.",
+"key_finding": "Found moderate evidence for an absence of association between greater pre-operative expectations and numerous post-operative outcomes, with other associations conflicting.",
 "sample_size": 4,
 "free_keywords": [
 "total shoulder arthroplasty",
 "preoperative expectations",
-"shoulder function",
-"range of motion",
-"patient satisfaction",
-"quality of life"
+"patient expectations",
+"shoulder pain",
+"range of motion"
 ],
 "usage": {
 "input_tokens": 678,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1119,
-"cost_usd": 0.00255
+"output_tokens": 1150,
+"cost_usd": 0.00262
 }
 },
 "sources": [
@@ -9368,18 +9318,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:04:01Z",
+"classified_at": "2026-09-06T17:47:30Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Meta-analysis explicitly examined how trial design, blinding and expectancy influenced antidepressant effect sizes in psychedelic trials, making placebo/expectancy and trial-methodology the paper's focus.",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly examined how study design and blinding/expectancy influence antidepressant effect sizes in psychedelic trials, making placebo-related responses and trial methodology the analytic focus (rule 4/3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response",
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "meta_analysis",
 "species": "human",
@@ -9393,8 +9342,7 @@
 "mood_depression"
 ],
 "outcome_measures": [
-"self_report",
-"clinician_rated"
+"self_report"
 ],
 "design": [
 "meta_analytic"
@@ -9403,36 +9351,37 @@
 "mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"emotion_anxiety_regulation",
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "trial_characteristics",
 "expectation_level"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Synthesized randomized and non-randomized psychedelic trials and found that antidepressant effect sizes varied by study design, with larger effects in pre-post, non-active-placebo, and waitlist designs.",
-"key_finding": "Antidepressant effect sizes were larger in pre-post single-arm, non-active-drug-as-placebo, and waitlist designs than in active-drug-as-placebo designs, suggesting study design and expectancy inflate effects.",
+"summary": "Meta-analysis examined how study design influenced antidepressant effect sizes in psychedelic-assisted therapy trials and found larger effects in pre-post, non-active-placebo, and waitlist designs, implicating expectancy and blinding biases.",
+"key_finding": "Found larger effect sizes (e.g., Hedges' g >1 in pre-post and waitlist designs) compared with smaller or non-significant effects in active-drug-as-placebo designs, suggesting overestimation in weaker designs.",
 "sample_size": null,
 "free_keywords": [
 "psilocybin",
 "mdma",
 "lsd",
 "ayahuasca",
+"antidepressant",
 "blinding",
 "expectancy",
-"hedges_g",
-"research design"
+"study_design"
 ],
 "usage": {
 "input_tokens": 1154,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1053,
-"cost_usd": 0.00254
+"output_tokens": 1001,
+"cost_usd": 0.00244
 }
 },
 "sources": [
@@ -11133,34 +11082,34 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:13:16Z",
+"classified_at": "2026-09-06T17:47:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.92,
-"rationale": "Meta-analysis explicitly examined harms associated with receiving placebo (placebo-arm adverse events) in randomized trials, making placebo/nocebo response the analytic focus.",
+"confidence": 0.95,
+"rationale": "Meta-analysis explicitly examined harms associated with receiving placebo across RCT placebo arms for biologics and small molecules in IBD, making placebo/nocebo response the analytic focus (rule 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_response",
 "nocebo_response"
 ],
 "article_type": "meta_analysis",
 "species": "human",
 "population": [
-"general_public",
+"gi_ibs",
 "other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"nausea_gi",
-"other"
+"adverse_events"
 ],
 "outcome_measures": [
-"self_report",
 "clinical_endpoint",
+"clinician_rated",
 "healthcare_utilization"
 ],
 "design": [
@@ -11176,28 +11125,29 @@
 "trial_characteristics"
 ],
 "intervention_type": [
-"not_applicable"
+"inert_pill_capsule",
+"saline_injection_infusion"
 ]
 },
-"summary": "Meta-analysis of 47 randomized placebo-controlled induction trials in adults with ulcerative colitis or Crohn's disease found higher rates of worsening IBD and some serious adverse events in placebo recipients compared with active drug.",
-"key_finding": "Placebo arms had significantly higher risks of worsening IBD (RR ~2.08; active vs placebo RR 0.48) and several serious adverse events, suggesting notable harms associated with receiving placebo in these trials.",
+"summary": "Meta‑analysis of 47 RCTs in adults with ulcerative colitis or Crohn's disease found placebo recipients had higher rates of worsening disease and some serious adverse events compared with active drug.",
+"key_finding": "Found that placebo arms had higher risk of worsening IBD activity and several serious adverse events (e.g., RR for worsening IBD 0.48 favoring active drug; RRs reported).",
 "sample_size": 47,
 "free_keywords": [
 "inflammatory bowel disease",
 "ulcerative colitis",
 "crohn's disease",
-"adverse events",
-"serious infection",
+"induction therapy",
+"serious adverse events",
 "venous thromboembolism",
-"remission induction",
-"biologics"
+"biologics",
+"small molecules"
 ],
 "usage": {
 "input_tokens": 1316,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1284,
-"cost_usd": 0.00304
+"output_tokens": 1259,
+"cost_usd": 0.00299
 }
 },
 "sources": [
@@ -11258,11 +11208,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:13:01Z",
+"classified_at": "2026-09-06T17:47:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Meta-analysis explicitly examined harms associated with receiving placebo in maintenance trials of biologics/small molecules for IBD, making placebo response/harm the paper's primary focus (inclusion rule 4/2).",
+"rationale": "Meta-analysis explicitly examined harms experienced by placebo arms in maintenance trials of biologics/small molecules for IBD, making placebo response/harm the analytic focus (inclusion rule 2/4).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11273,19 +11223,17 @@
 "article_type": "meta_analysis",
 "species": "human",
 "population": [
-"gi_ibs"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"nausea_gi",
-"adverse_events"
+"adverse_events",
+"immune_inflammation"
 ],
 "outcome_measures": [
-"clinical_endpoint",
-"clinician_rated",
-"healthcare_utilization"
+"clinical_endpoint"
 ],
 "design": [
 "meta_analytic"
@@ -11300,28 +11248,28 @@
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Pooled 45 randomized placebo-controlled maintenance trials in adults with IBD and found that placebo was associated with higher rates of worsening disease and withdrawals, while some adverse events were similar or lower than with active drugs.",
-"key_finding": "Placebo arms had higher risk of worsening IBD (RR 1.72 for worsening vs active; pooled RR 0.58 for active vs placebo indicates higher worsening on placebo) and higher withdrawal rates, indicating clinically important harms from placebo in maintenance trials.",
+"summary": "Meta-analysis examined harms in placebo arms of 45 randomized maintenance trials of biologics/small molecules for adult IBD and found some clinically important harms associated with placebo, including higher rates of worsening disease and withdrawals.",
+"key_finding": "Found higher rates of worsening IBD activity in placebo arms (placebo 22.8% vs active 12.8%; RR active vs placebo 0.58, 95% CI 0.52–0.64) and higher withdrawal rates for placebo.",
 "sample_size": 45,
 "free_keywords": [
-"inflammatory bowel disease",
 "ulcerative colitis",
 "crohn's disease",
-"maintenance therapy",
 "biologics",
 "small molecules",
+"maintenance therapy",
 "adverse events",
-"withdrawal"
+"serious infection",
+"withdrawal due to adverse events"
 ],
 "usage": {
 "input_tokens": 1409,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1113,
-"cost_usd": 0.00273
+"output_tokens": 1257,
+"cost_usd": 0.00301
 }
 },
 "sources": [
@@ -12177,78 +12125,53 @@
 "Journal Article",
 "Randomized Controlled Trial"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T21:22:15Z",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-03T03:02:14Z",
 "screening": {
-"decision": "include",
-"confidence": 0.95,
-"rationale": "Randomized trial directly tested an open-label placebo versus treatment-as-usual with primary analysis of weight change, isolating placebo effects.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "Title and metadata claim an open-label placebo RCT in obesity but the abstract describes expectancies in an antibiotic trial for persistent Lyme disease, creating insufficient information to judge whether placebo/nocebo phenomena were the paper's focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"appetite_metabolism"
-],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"parallel_groups_rct",
-"placebo_vs_no_treatment_arm"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"open_label_placebo",
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"open_label_placebo",
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Randomized trial found that 4 weeks of open-label placebo (two cellulose capsules daily) plus diet/exercise produced greater weight loss and altered eating behavior versus treatment-as-usual.",
-"key_finding": "OLP group lost 2.22 ± 1.59 kg versus 1.26 ± 1.43 kg in TAU (ANCOVA F(1,54)=6.91, p=0.011, partial η2=0.11).",
-"sample_size": 57,
+"summary": "Title and metadata indicated an open-label placebo RCT in obesity, but the provided abstract instead described expectancy predictors in an antibiotic trial for persistent Lyme disease, preventing a clear assessment of placebo/nocebo focus.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
-"open-label placebo",
+"title-abstract-mismatch",
+"open-label-placebo",
 "obesity",
-"body mass index",
-"cellulose capsule",
-"FEV questionnaire",
-"diet and exercise"
+"lyme disease",
+"expectancy",
+"antibiotic trial",
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 10412,
+"input_tokens": 973,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 890,
-"cost_usd": 0.00453
+"output_tokens": 730,
+"cost_usd": 0.00185
 }
 },
 "sources": [
@@ -12456,11 +12379,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:21:43Z",
+"classified_at": "2026-09-06T17:47:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental manipulation of direct and indirect verbal suggestions for analgesia in healthy volunteers contrasted conditions and tested expectation and hypnotizability as moderators, so placebo/context effects were the study focus.",
+"rationale": "Experimental manipulation of direct vs. indirect verbal suggestions for analgesia in healthy volunteers tested effects and moderators (hypnotizability, expectation), making placebo/expectation mechanisms the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -12480,18 +12403,18 @@
 "pain"
 ],
 "outcome_measures": [
-"behavioral_performance",
-"self_report"
+"self_report",
+"behavioral_performance"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
+"significant_subjective",
 "significant_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "personality_traits",
@@ -12501,8 +12424,8 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested direct and indirect suggestions for analgesia in 65 healthy volunteers during the cold pressor, finding both suggestions increased pain threshold and expectation predicted effects only for direct suggestions.",
-"key_finding": "Both direct and indirect suggestions increased experimental pain threshold; expectation of pain relief moderated only the direct-suggestion effect.",
+"summary": "Tested direct and indirect verbal suggestions for analgesia in 65 healthy adults during the cold pressor test and found both increased pain threshold, with expectation predicting effects only for direct suggestions.",
+"key_finding": "Both direct and indirect suggestions increased experimental pain threshold; expectation of pain relief moderated only direct suggestion effects.",
 "sample_size": 65,
 "free_keywords": [
 "cold pressor",
@@ -12516,8 +12439,8 @@
 "input_tokens": 726,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 800,
-"cost_usd": 0.00193
+"output_tokens": 721,
+"cost_usd": 0.00177
 }
 },
 "sources": [
@@ -12552,20 +12475,20 @@
 "oa_pdf_url": "http://dx.doi.org/10.1371/journal.pmen.0000115",
 "landing_url": "http://dx.doi.org/10.1371/journal.pmen.0000115",
 "cited_by_count": 1,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T07:52:13Z",
+"classified_at": "2026-09-06T17:47:28Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates a conceptual/theoretical argument about patient expectations as part of treatment strategy rather than bias, meeting inclusion for placebo science/theory.",
-"exclusion_reason": null,
-"peer_reviewed": false
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title suggests a conceptual/theoretical stance about expectations rather than an empirical study of placebo/nocebo, so inclusion cannot be confidently determined.",
+"exclusion_reason": "insufficient_information",
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -12577,35 +12500,39 @@
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
+"history_conceptual",
 "clinical_use_ethics_attitudes"
 ],
-"moderators": [],
+"moderators": [
+"none_reported"
+],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Argues that patient expectations should be conceptualized as a deliberate feature of treatment strategy rather than merely a source of bias in trials and practice.",
+"summary": "Presented a conceptual argument that patient expectations are an element of treatment strategy rather than merely a source of bias; no abstract available to assess empirical content.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectations",
-"treatment strategy",
+"expectation",
+"treatment_strategy",
 "bias",
-"clinical trials",
-"ethics",
-"shared decision making"
+"placebo",
+"nocebo"
 ],
 "usage": {
-"input_tokens": 418,
-"cache_read_input_tokens": 5888,
+"input_tokens": 162,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 451,
-"cost_usd": 0.00115
+"output_tokens": 660,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -13139,6 +13066,122 @@
 "landing_url": "https://doi.org/10.1002/alr.23444",
 "cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.3389/fnint.2024.1432270",
+"title": "Pain, mindfulness, and placebo: a systematic review.",
+"authors": [
+"Lopes A",
+"Sampaio R",
+"Tavares I"
+],
+"journal": "Frontiers in integrative neuroscience",
+"journal_abbrev": "Front Integr Neurosci",
+"year": 2024,
+"date": "2024-08-29",
+"doi": "10.3389/fnint.2024.1432270",
+"pmid": "39267814",
+"pmcid": "PMC11390565",
+"openalex_id": null,
+"abstract": "INTRODUCTION: Pain is a complex phenomenon influenced by psychosocial variables, including the placebo effect. The effectiveness of mindfulness-based interventions (MBIs) for pain has been demonstrated in experimental studies and systematic reviews, but the mechanisms of action are only starting to be established. Whether the expectations of individuals experiencing pain can be manipulated during MBIs remains to be systematically evaluated, and what role placebo effects might play remains to be explored. METHODS: To evaluate the literature analyzing placebo effects in MBIs for pain, we performed a systematic review based on searches conducted in PubMed, Web of Science, and SCOPUS databases. Our search revealed a total of 272 studies, of which only 19 studies were included (10 acute pain and nine chronic pain), considering the inclusion and exclusion criteria related to expectations and placebo effects. RESULTS: From the 19 included studies, six measured placebo effects only in relation to the pharmacological intervention used in the study and not to an MBI. DISCUSSION: The results of the few studies that focused on the placebo effects of the MBIs indicate that placebo and expectations play a role in the MBIs' effects on pain. Although expectations and placebo effects are frequently discussed in the context of mindfulness and pain research, these results show that these factors are still not routinely considered in experimental designs. However, the results of the few studies included in this systematic review highlight a clear role for placebo and expectancy effects in the overall effects of MBIs for both acute and chronic pain, suggesting that routine measurement and further consideration in future studies are warranted. Additional research in this fascinating and challenging field is necessary to fully understand the connection between MBIs, placebo/expectations, and their effects on pain relief.",
+"keywords": [
+"cognitive-behavioral therapy",
+"expectations",
+"meditation therapy",
+"mindfulness-based cognitive therapy (MBCT)",
+"mindfulness-based stress reduction (MBSR)",
+"pain measurements",
+"placebo effects"
+],
+"mesh": [],
+"pub_types": [
+"Journal Article",
+"Systematic Review"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:29Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Systematic review explicitly examined placebo effects and expectations as the object of study in mindfulness-based interventions for pain (meets inclusion rule 4).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
+"article_type": "systematic_review",
+"species": "human",
+"population": [
+"acute_clinical_pain",
+"chronic_pain"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"not_applicable",
+"meta_analytic"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context",
+"attention_cognitive_appraisal"
+],
+"moderators": [
+"expectation_level",
+"none_reported"
+],
+"intervention_type": [
+"verbal_suggestion_only",
+"sham_psychological"
+]
+},
+"summary": "Systematically reviewed studies that examined placebo and expectancy effects in mindfulness-based interventions for acute and chronic pain and found limited but suggestive evidence that expectations/placebo contribute to MBI analgesia.",
+"key_finding": "Found few studies directly testing placebo/expectancy in MBIs, with available evidence suggesting expectations contributed to pain relief.",
+"sample_size": null,
+"free_keywords": [
+"mindfulness",
+"MBI",
+"expectancy",
+"meditation",
+"acute pain",
+"chronic pain"
+],
+"usage": {
+"input_tokens": 762,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 784,
+"cost_usd": 0.00191
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2024-08-29",
+"private_pdf": null
 },
 {
 "id": "doi:10.1177/23259671241258477",
@@ -14784,74 +14827,61 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:22:28Z",
+"classified_at": "2026-09-03T03:02:37Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The title explicitly names 'Expectations' alongside tDCS modulation and their effects on experimental pain, indicating expectancy/placebo mechanisms were a stated focus.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title implies expectation and tDCS effects on experimental pain but does not confirm whether placebo/nocebo phenomena or sham/placebo conditions were an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [
-"self_report",
-"fmri"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"mixed_inconsistent"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"treatment_cues_dose_route"
 ],
-"moderators": [
-"neurostimulation"
-],
+"moderators": [],
 "intervention_type": [
 "sham_neurostimulation",
-"verbal_suggestion_only"
+"sham_device",
+"not_applicable"
 ]
 },
-"summary": "Examined how induced expectations and tDCS-related brain modulation independently and additively affected experimental pain in human participants.",
+"summary": "No abstract available; title suggested an experimental study of expectations and tDCS modulation on experimental pain, but it was unclear whether placebo/nocebo effects or sham controls were the explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "tDCS",
-"expectancy",
+"transcranial direct current stimulation",
+"expectation",
 "experimental pain",
-"brain modulation",
-"placebo"
+"brain modulation"
 ],
 "usage": {
-"input_tokens": 551,
+"input_tokens": 373,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1148,
-"cost_usd": 0.00258
+"output_tokens": 701,
+"cost_usd": 0.00164
 }
 },
 "sources": [
@@ -17850,123 +17880,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1038/s44184-024-00068-9",
-"title": "A rapid narrative review of the clinical evolution of psychedelic treatment in clinical trials.",
-"authors": [
-"Kishon R",
-"Modlin NL",
-"Cycowicz YM",
-"Mourtada H",
-"Wilson T",
-"Williamson V",
-"Cleare A",
-"Rucker J"
-],
-"journal": "Npj mental health research",
-"journal_abbrev": "Npj Ment Health Res",
-"year": 2024,
-"date": "2024-07-02",
-"doi": "10.1038/s44184-024-00068-9",
-"pmid": "38956330",
-"pmcid": "PMC11220096",
-"openalex_id": "https://openalex.org/W4400240498",
-"abstract": "Pre-prohibition psychedelic research with complex psychiatric patients generated a wealth of treatment methodologies and practices, providing invaluable clinical insights pertaining to the medical administration of psychedelics in various mental health diagnoses. Building upon these early studies, which lack the rigor and research tools available today, contemporary psychedelic research has focused on investigating the safety and efficacy of psychedelics in randomized controlled trials via psychometric measures and symptom assessments. Both then and now, the treatment context and the role of clinicians in psychedelic treatment has been recognized as an essential feature for positive patient outcomes. To broaden the knowledge base of modern psychedelic research and support the training of clinicians conducting medically supervised psychedelic research studies, this paper provides a review of pre-prohibition clinical research narratives pertaining to the phenomenology of psychedelic treatment and the role of the non-pharmacological treatment factors in the patient experience. Lastly, this paper explores a range of clinician perspectives and psychological interventions employed in pre-prohibition psychedelic research to inform future research directions and best practice guidelines.",
-"keywords": [],
-"mesh": [],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://doi.org/10.1038/s44184-024-00068-9",
-"landing_url": "https://doi.org/10.1038/s44184-024-00068-9",
-"cited_by_count": 23,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:56:26Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Narrative review explicitly focused on non-pharmacological treatment context and the clinician's role in psychedelic clinical research, which pertains to placebo-science topics (therapeutic ritual, provider interaction, history) and thus meets inclusion as placebo_science_other.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"mood_depression",
-"anxiety_stress",
-"other"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"therapeutic_ritual_context",
-"provider_patient_interaction",
-"history_conceptual",
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Reviewed historical and contemporary clinical psychedelic research, emphasizing the role of clinicians and non-pharmacological treatment context in patient outcomes to inform training and best practices.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"psychedelics",
-"set and setting",
-"therapeutic context",
-"psychotherapy",
-"psychedelic-assisted therapy",
-"clinical history",
-"treatment ritual"
-],
-"usage": {
-"input_tokens": 615,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 807,
-"cost_usd": 0.00191
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-07-02",
-"private_pdf": {
-"available": true,
-"store_key": "kishon_2024_a_rapid_narrative_review_of.pdf",
-"source": "downloaded",
-"sha256": "b2f0c918ab175725"
-}
-},
-{
 "id": "doi:10.1007/s00415-024-12529-4",
 "title": "Factors associated with a placebo effect in Parkinson's disease in clinical trials: a meta-analysis.",
 "authors": [
@@ -18343,132 +18256,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1016/j.cct.2003.10.016",
-"title": "Placebo Control and Blinding in Randomized Trials of Procedural Interventions: A Systematic Review and Meta-Regression.",
-"authors": [
-"Rajkumar CA",
-"Thomas KE",
-"Foley M",
-"Ganesananthan S",
-"Evans H",
-"Simader F",
-"Syam S",
-"Nour D",
-"Beattie C",
-"Khan C",
-"Reddy RK",
-"Ahmed-Jushuf F",
-"Francis DP",
-"Shun-Shin M",
-"Al-Lamee RK"
-],
-"journal": "JAMA surgery",
-"journal_abbrev": "JAMA Surg",
-"year": 2024,
-"date": "2024-07-01",
-"doi": "10.1016/j.cct.2003.10.016",
-"pmid": "38630462",
-"pmcid": "PMC5114123",
-"abstract": "IMPORTANCE: Unlike medications, procedural interventions are rarely trialed against placebo prior to becoming accepted in clinical practice. When placebo-controlled trials are eventually conducted, procedural interventions may be less effective than previously believed. OBJECTIVE: To investigate the importance of including a placebo arm in trials of surgical and interventional procedures by comparing effect sizes from trials of the same procedure that do and do not include a placebo arm. DATA SOURCES: Searches of MEDLINE and Embase identified all placebo-controlled trials for procedural interventions in any specialty of medicine and surgery from inception to March 31, 2019. A secondary search identified randomized clinical trials assessing the same intervention, condition, and end point but without a placebo arm for paired comparison. STUDY SELECTION: Placebo-controlled trials of anatomically site-specific procedures requiring skin incision or endoscopic techniques were eligible for inclusion; these were then matched to trials without placebo control that fell within prespecified limits of heterogeneity. DATA EXTRACTION AND SYNTHESIS: Random-effects meta-regression, with placebo and blinding as a fixed effect and intervention and end point grouping as random effects, was used to calculate the impact of placebo control for each end point. Data were analyzed from March 2019 to March 2020. MAIN OUTCOMES AND MEASURES: End points were examined in prespecified subgroups: patient-reported or health care professional-assessed outcomes, quality of life, pain, blood pressure, exercise-related outcomes, recurrent bleeding, and all-cause mortality. RESULTS: Ninety-seven end points were matched from 72 blinded, placebo-controlled trials (hereafter, blinded) and 55 unblinded trials without placebo control (hereafter, unblinded), including 111 500 individual patient end points. Unblinded trials had larger standardized effect sizes than blinded trials for exercise-related outcomes (standardized mean difference [SMD], 0.59; 95% CI, 0.29 to 0.89; P < .001) and quality-of-life (SMD, 0.32; 95% CI, 0.11 to 0.53; P = .003) and health care professional-assessed end points (SMD, 0.40; 95% CI, 0.18 to 0.61; P < .001). The placebo effect accounted for 88.1%, 55.2%, and 61.3% of the observed unblinded effect size for these end points, respectively. There was no significant difference between unblinded and blinded trials for patient-reported end points (SMD, 0.31; 95% CI, -0.02 to 0.64; P = .07), blood pressure (SMD, 0.26; 95% CI, -0.10 to 0.62; P = .15), all-cause mortality (odds ratio [OR], 0.23; 95% CI, -0.26 to 0.72; P = .36), pain (SMD, 0.03; 95% CI, -0.52 to 0.57; P = .91), or recurrent bleeding events (OR, -0.12; 95% CI, -1.11 to 0.88; P = .88). CONCLUSIONS AND RELEVANCE: The magnitude of the placebo effect found in this systematic review and meta-regression was dependent on the end point. Placebo control in trials of procedural interventions had the greatest impact on exercise-related, quality-of-life, and health care professional-assessed end points. Randomized clinical trials of procedural interventions may consider placebo control accordingly.",
-"keywords": [],
-"mesh": [
-"Humans",
-"Randomized Controlled Trials as Topic",
-"Placebos"
-],
-"pub_types": [
-"Journal Article",
-"Systematic Review",
-"Meta-Analysis",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:43Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Meta-analysis explicitly quantified the magnitude of placebo effects by comparing placebo-controlled (sham) procedural trials with matched unblinded trials, making placebo response/effect the analytic focus (trial methodology/placebo response).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect",
-"placebo_response",
-"placebo_science_other"
-],
-"article_type": "meta_analysis",
-"species": "human",
-"population": [
-"mixed_clinical"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"sport_exercise_performance",
-"global_health_qol",
-"pain",
-"cardiovascular_bp",
-"other"
-],
-"outcome_measures": [
-"self_report",
-"clinician_rated",
-"clinical_endpoint",
-"behavioral_performance"
-],
-"design": [
-"meta_analytic"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"trial_characteristics"
-],
-"intervention_type": [
-"sham_surgery",
-"sham_device"
-]
-},
-"summary": "Meta-analysis compared blinded placebo-controlled procedural trials with matched unblinded trials and found that placebo control markedly reduced effect sizes for exercise-related, quality-of-life, and clinician-assessed end points, with variable effects across outcomes.",
-"key_finding": "Unblinded trials showed larger effects than blinded placebo-controlled trials for exercise-related outcomes (SMD 0.59), quality-of-life (SMD 0.32), and clinician-assessed end points (SMD 0.40), indicating large placebo contributions for these domains.",
-"sample_size": 127,
-"free_keywords": [
-"surgical placebo",
-"blinding",
-"standardized mean difference",
-"exercise outcomes",
-"quality of life",
-"recurrent bleeding",
-"mortality"
-],
-"usage": {
-"input_tokens": 971,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1102,
-"cost_usd": 0.0026
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2024-07-01",
-"private_pdf": null,
-"language": "eng"
-},
-{
 "id": "doi:10.1001/jamasurg.2024.0719",
 "title": "Blinding, Placebo Effect, and GRADE Methodology-What Is Relevant?",
 "authors": [
@@ -18576,6 +18363,128 @@
 "landing_url": "https://doi.org/10.1001/jamasurg.2024.0719",
 "cited_by_count": 0,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1001/jamasurg.2024.0718",
+"title": "Placebo Control and Blinding in Randomized Trials of Procedural Interventions: A Systematic Review and Meta-Regression.",
+"authors": [
+"Rajkumar CA",
+"Thomas KE",
+"Foley M",
+"Ganesananthan S",
+"Evans H",
+"Simader F",
+"Syam S",
+"Nour D",
+"Beattie C",
+"Khan C",
+"Reddy RK",
+"Ahmed-Jushuf F",
+"Francis DP",
+"Shun-Shin M",
+"Al-Lamee RK"
+],
+"journal": "JAMA surgery",
+"journal_abbrev": "JAMA Surg",
+"year": 2024,
+"date": "2024-07-01",
+"doi": "10.1001/jamasurg.2024.0718",
+"pmid": "38630462",
+"pmcid": "PMC11024757",
+"abstract": "IMPORTANCE: Unlike medications, procedural interventions are rarely trialed against placebo prior to becoming accepted in clinical practice. When placebo-controlled trials are eventually conducted, procedural interventions may be less effective than previously believed. OBJECTIVE: To investigate the importance of including a placebo arm in trials of surgical and interventional procedures by comparing effect sizes from trials of the same procedure that do and do not include a placebo arm. DATA SOURCES: Searches of MEDLINE and Embase identified all placebo-controlled trials for procedural interventions in any specialty of medicine and surgery from inception to March 31, 2019. A secondary search identified randomized clinical trials assessing the same intervention, condition, and end point but without a placebo arm for paired comparison. STUDY SELECTION: Placebo-controlled trials of anatomically site-specific procedures requiring skin incision or endoscopic techniques were eligible for inclusion; these were then matched to trials without placebo control that fell within prespecified limits of heterogeneity. DATA EXTRACTION AND SYNTHESIS: Random-effects meta-regression, with placebo and blinding as a fixed effect and intervention and end point grouping as random effects, was used to calculate the impact of placebo control for each end point. Data were analyzed from March 2019 to March 2020. MAIN OUTCOMES AND MEASURES: End points were examined in prespecified subgroups: patient-reported or health care professional-assessed outcomes, quality of life, pain, blood pressure, exercise-related outcomes, recurrent bleeding, and all-cause mortality. RESULTS: Ninety-seven end points were matched from 72 blinded, placebo-controlled trials (hereafter, blinded) and 55 unblinded trials without placebo control (hereafter, unblinded), including 111 500 individual patient end points. Unblinded trials had larger standardized effect sizes than blinded trials for exercise-related outcomes (standardized mean difference [SMD], 0.59; 95% CI, 0.29 to 0.89; P < .001) and quality-of-life (SMD, 0.32; 95% CI, 0.11 to 0.53; P = .003) and health care professional-assessed end points (SMD, 0.40; 95% CI, 0.18 to 0.61; P < .001). The placebo effect accounted for 88.1%, 55.2%, and 61.3% of the observed unblinded effect size for these end points, respectively. There was no significant difference between unblinded and blinded trials for patient-reported end points (SMD, 0.31; 95% CI, -0.02 to 0.64; P = .07), blood pressure (SMD, 0.26; 95% CI, -0.10 to 0.62; P = .15), all-cause mortality (odds ratio [OR], 0.23; 95% CI, -0.26 to 0.72; P = .36), pain (SMD, 0.03; 95% CI, -0.52 to 0.57; P = .91), or recurrent bleeding events (OR, -0.12; 95% CI, -1.11 to 0.88; P = .88). CONCLUSIONS AND RELEVANCE: The magnitude of the placebo effect found in this systematic review and meta-regression was dependent on the end point. Placebo control in trials of procedural interventions had the greatest impact on exercise-related, quality-of-life, and health care professional-assessed end points. Randomized clinical trials of procedural interventions may consider placebo control accordingly.",
+"keywords": [],
+"mesh": [
+"Humans",
+"Randomized Controlled Trials as Topic",
+"Placebos"
+],
+"pub_types": [
+"Journal Article",
+"Systematic Review",
+"Meta-Analysis",
+"Research Support, Non-U.S. Gov't"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:32Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly quantified the impact of placebo control/blinding on effect sizes of procedural interventions, making placebo effects the primary object of study (trial_methodology/placebo response).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"mixed_clinical"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"sport_exercise_performance",
+"global_health_qol",
+"pain",
+"cardiovascular_bp",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated",
+"behavioral_performance",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Meta-analysis compared blinded placebo-controlled versus unblinded trials of procedural interventions and found that placebo control substantially reduced apparent effects for exercise-related, quality-of-life, and clinician-assessed end points.",
+"key_finding": "Placebo control accounted for up to 88.1% of the observed unblinded effect size for exercise-related outcomes and substantially reduced effect sizes for QoL and clinician-assessed end points.",
+"sample_size": 127,
+"free_keywords": [
+"surgery",
+"procedural interventions",
+"placebo-controlled trials",
+"blinding",
+"standardized mean difference",
+"quality of life"
+],
+"usage": {
+"input_tokens": 1227,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 953,
+"cost_usd": 0.00236
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2024-07-01",
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1002/mus.28189",
@@ -19628,11 +19537,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:40:30Z",
+"classified_at": "2026-09-06T17:47:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject cue-based expectation manipulation tested as a causal modulator of pain perception (expectation effect on reported intensity) which fits inclusion of expectancy/context effects on health outcomes.",
+"rationale": "Within-subject cue-based expectation manipulation tested causal effects of expectation on pain perception and its neural correlates, fitting inclusion rule for expectancy/context placebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -19659,38 +19568,36 @@
 "within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_subjective",
+"null_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "neural_systems_circuits"
 ],
 "moderators": [
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Used cue-based expectation manipulations in 40 healthy adults and found expectation changed perceived pain intensity but did not alter frequency-tagged ongoing EEG oscillations.",
-"key_finding": "Expectation cues produced a strong effect on perceived stimulus intensity (self-report) but did not modify frequency-tagged theta/alpha/beta EEG responses to stimulation.",
+"summary": "Used cue-based expectation in 40 healthy adults to modulate perceived pain and tested whether frequency-tagged EEG oscillations tracked expectation-driven perception changes; expectation changed perceived intensity but not ongoing oscillations.",
+"key_finding": "Expectation cues reliably altered perceived pain intensity, but frequency-tagged theta/alpha/beta EEG oscillations were not modulated by expectation.",
 "sample_size": 40,
 "free_keywords": [
-"eeg",
-"frequency-tagging",
 "thermonociceptive",
-"theta",
-"alpha",
-"beta",
-"expectation",
-"cue"
+"frequency-tagging",
+"theta-alpha-beta",
+"EEG oscillations",
+"registered report"
 ],
 "usage": {
-"input_tokens": 678,
-"cache_read_input_tokens": 5888,
+"input_tokens": 422,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 881,
-"cost_usd": 0.00208
+"output_tokens": 663,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -19846,39 +19753,41 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:22:46Z",
+"classified_at": "2026-09-03T03:03:22Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly addresses meta-analyses of placebo response in drug trials for irritable bowel syndrome, making placebo response the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "Only the title is available and it could be a commentary calling for disclosure rather than a meta-analysis or empirical re-analysis, so it's unclear whether placebo response is the paper's analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
-"article_type": "meta_analysis",
+"article_type": "theory_commentary",
 "species": "human",
 "population": [
 "gi_ibs"
 ],
-"age_group": [],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "nausea_gi"
 ],
 "outcome_measures": [
-"self_report"
+"not_applicable"
 ],
 "design": [
-"meta_analytic"
+"not_applicable"
 ],
 "effects": [
 "not_applicable"
@@ -19890,25 +19799,26 @@
 "trial_characteristics"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"not_applicable"
 ]
 },
-"summary": "Re-examined meta-analyses of placebo response in IBS drug trials and urged disclosure of placebo excipients.",
+"summary": "Discussed meta-analyses of placebo response in IBS drug trials and called for disclosure of excipients; abstract was not available so study details were unclear.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "irritable bowel syndrome",
-"ibs",
+"placebo response",
 "excipients",
-"placebo arm",
-"meta-analysis"
+"meta-analysis",
+"clinical trials",
+"gastroenterology"
 ],
 "usage": {
-"input_tokens": 582,
+"input_tokens": 404,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 725,
-"cost_usd": 0.00174
+"output_tokens": 930,
+"cost_usd": 0.00211
 }
 },
 "sources": [
@@ -21408,6 +21318,134 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1016/j.jpain.2024.104582",
+"title": "Treatment Expectations-You Get What You Expect-and Depression Plays a Role.",
+"authors": [
+"Levenig CG",
+"Hasenbring MI",
+"Günnewig L",
+"Titze C",
+"Elsenbruch S",
+"Schulte TL"
+],
+"journal": "The journal of pain",
+"journal_abbrev": "J Pain",
+"year": 2024,
+"date": "2024-05-29",
+"doi": "10.1016/j.jpain.2024.104582",
+"pmid": "38821312",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "Positive treatment expectations demonstrably shape treatment outcomes regarding pain and disability in patients with chronic low back pain. However, knowledge about positive and negative treatment expectations as putative predictors of interindividual variability in treatment outcomes is sparse, and the role of other psychological variables of interest, especially of depression as a known predictor of long-term disability, is lacking. We present results of the first prospective study considering expectations in concert with depression in a sample of 200 patients with chronic low back pain undergoing an inpatient interdisciplinary multimodal pain therapy. We analyzed the characteristics of pain and disability, treatment expectation, and depression assessed at the beginning (T0), at the end of (T1), and at 3-month follow-up (T2) of interdisciplinary multimodal pain therapy. Treatment expectations did emerge as a significant predictor of changes in pain intensity and disability, respectively, showing that positive expectations were associated with better treatment outcomes. Mediation analyses revealed a partially mediating effect of treatment expectations on the relation between depression and pain outcomes. PERSPECTIVE: These results expand knowledge regarding the role of treatment expectations in individual treatment outcome trajectories in chronic pain patients, paving the way for much-needed efforts toward optimizing patient expectations and personalized approaches in clinical settings.",
+"keywords": [
+"Chronic low back pain",
+"depression",
+"interdisciplinary multimodal pain therapy",
+"treatment expectations"
+],
+"mesh": [
+"Humans",
+"Male",
+"Female",
+"Middle Aged",
+"Low Back Pain",
+"Adult",
+"Chronic Pain",
+"Depression",
+"Prospective Studies",
+"Aged",
+"Follow-Up Studies",
+"Combined Modality Therapy",
+"Treatment Outcome",
+"Pain Management"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-03T03:03:39Z",
+"screening": {
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Prospective study measured treatment expectations as a predictor of clinical outcomes and tested mediation by depression, meeting inclusion for expectation effects as predictors of health outcomes.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_and_nocebo"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults",
+"older_adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"mood_anxiety_state",
+"expectation_level"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Found that baseline treatment expectations predicted improvements in pain intensity and disability in 200 chronic low back pain patients undergoing interdisciplinary multimodal therapy, with expectations partially mediating the relation between depression and outcomes.",
+"key_finding": "Positive expectations were associated with better pain and disability outcomes; treatment expectations partially mediated depression's effect.",
+"sample_size": 200,
+"free_keywords": [
+"low back pain",
+"interdisciplinary multimodal therapy",
+"disability",
+"treatment expectations",
+"depression",
+"prospective study"
+],
+"usage": {
+"input_tokens": 670,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 916,
+"cost_usd": 0.00215
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-05-29",
+"private_pdf": null
+},
+{
 "id": "doi:10.1002/lary.31474",
 "title": "Natural History of Untreated Idiopathic Sudden Sensorineural Hearing Loss.",
 "authors": [
@@ -21458,11 +21496,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:11:19Z",
+"classified_at": "2026-09-06T17:47:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Systematic review/meta-analysis explicitly pooled untreated/placebo arms to quantify natural history/placebo response in ISSNHL (placebo response is the analytic focus).",
+"rationale": "Meta-analysis specifically quantified natural history/placebo- or untreated-arm responses in ISSNHL, making placebo/placebo-arm response the analytic focus (inclusion rule 2/4).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -21500,23 +21538,23 @@
 "not_applicable"
 ]
 },
-"summary": "Pooled data from six studies (319 untreated/placebo patients) found a mean hearing gain of 24.0 dB and 36% achieved ≥30 dB recovery at ~2–3 months, describing the natural history of ISSNHL.",
-"key_finding": "36% of untreated/placebo patients recovered ≥30 dB and mean hearing gain was 24.0 dB (95% CI 2.65–45.37) at 2–3 months.",
+"summary": "Meta-analyzed untreated or placebo-treated adults with idiopathic sudden sensorineural hearing loss and found substantial spontaneous objective hearing improvement across studies.",
+"key_finding": "Found mean hearing gain of 24.0 dB HL (95% CI 2.65–45.37) at 2–3 months; 36% regained ≥30 dB HL and 70% regained ≥10 dB HL.",
 "sample_size": 6,
 "free_keywords": [
 "idiopathic sudden sensorineural hearing loss",
 "issnhl",
 "audiometry",
 "natural history",
-"hearing recovery",
-"placebo arm"
+"hearing_gain",
+"placebo_group"
 ],
 "usage": {
-"input_tokens": 959,
-"cache_read_input_tokens": 5888,
+"input_tokens": 703,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 991,
-"cost_usd": 0.00237
+"output_tokens": 992,
+"cost_usd": 0.00231
 }
 },
 "sources": [
@@ -22458,27 +22496,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T21:22:55Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T03:04:07Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Commentary focused on placebo response in antidepressant RCTs and possible KOR antagonist effects on intrinsic placebo, meeting inclusion as placebo-science/theory content.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available to determine whether the paper presents new data or is a commentary/theoretical piece focusing on placebo response in antidepressant RCTs.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -22498,36 +22536,32 @@
 "not_applicable"
 ],
 "mechanisms": [
-"neurobiology_opioid",
 "trial_methodology_placebo_response",
-"verbal_suggestion_expectation"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"none_reported"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Commentary proposed that kappa-opioid receptor antagonists may modulate intrinsic placebo response in antidepressant RCTs by acting on reward/aversive neural systems and discussed implications for lead-in enrichment methods.",
+"summary": "Discussed the possibility that kappa-opioid receptor (KOR) antagonists might influence intrinsic placebo responses observed in antidepressant randomized trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"Aticaprant",
-"kappa-opioid antagonist",
-"lead-in enrichment",
-"intrinsic placebo",
-"anhedonia",
-"MADRS",
-"antidepressant RCTs",
-"probabilistic reward task"
+"kappa-opioid receptor",
+"KOR antagonist",
+"antidepressant trials",
+"randomized controlled trials",
+"placebo response"
 ],
 "usage": {
-"input_tokens": 2824,
+"input_tokens": 415,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 720,
-"cost_usd": 0.00229
+"output_tokens": 757,
+"cost_usd": 0.00176
 }
 },
 "sources": [
@@ -22843,11 +22877,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:14:13Z",
+"classified_at": "2026-09-06T17:47:38Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "The study explicitly measured side-effect expectations and incident side effects as predictors of medication nonpersistence, making nocebo-related expectation effects an explicit analytic focus (observational survey of expectation → outcomes).",
+"confidence": 0.88,
+"rationale": "Observational cross-sectional study directly tested how pre-treatment side-effect expectations and incident side effects related to treatment nonpersistence, addressing nocebo-related predictors of adverse-event reporting and discontinuation.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -22858,14 +22892,13 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"mixed_clinical"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"adverse_events",
-"cardiovascular_bp"
+"adverse_events"
 ],
 "outcome_measures": [
 "self_report",
@@ -22876,41 +22909,42 @@
 "survey_interview"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
+"nocebo_communication_disclosure",
+"attention_cognitive_appraisal",
 "prior_treatment_experience",
-"trial_methodology_placebo_response"
+"emotion_anxiety_regulation",
+"treatment_cues_dose_route",
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"expectation_level",
-"prior_experience",
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Surveyed 3,029 new medication users and found pre-treatment side-effect expectations moderated the relationship between incident side effects and early medication discontinuation.",
-"key_finding": "Among those reporting incident side effects, prior expectation for side effects was associated with lower odds of early nonpersistence (adjusted OR 0.38, 95% CI 0.25–0.60); incident side effects and negative beliefs strongly increased nonpersistence.",
+"summary": "Surveyed 3,029 adults starting new cardiovascular or glycemic medications and found that negative beliefs and incident side effects predicted early nonpersistence, while pre-treatment expectations for side effects moderated discontinuation risk.",
+"key_finding": "Incident side effects (adjusted OR 8.00) and negative beliefs (adjusted OR 7.26) were strongly associated with nonpersistence; among those with incident side effects, prior expectation for side effects was associated with lower nonpersistence (adjusted OR 0.38).",
 "sample_size": 3029,
 "free_keywords": [
+"medication discontinuation",
+"side-effect expectations",
+"nocebo",
 "antihypertensive",
 "statin",
 "antihyperglycemic",
-"medication adherence",
-"side-effect expectation",
-"treatment discontinuation",
-"nonpersistence"
+"treatment beliefs",
+"adherence"
 ],
 "usage": {
 "input_tokens": 881,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1322,
-"cost_usd": 0.00301
+"output_tokens": 1147,
+"cost_usd": 0.00266
 }
 },
 "sources": [
@@ -23814,11 +23848,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:18:30Z",
+"classified_at": "2026-09-06T17:47:36Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly tested classical (taste) conditioning of a drug's immunosuppressive effects, so placebo/nocebo-like associative learning of physiological response was the study focus (meets rule 3).",
+"confidence": 0.92,
+"rationale": "Animal experiment that directly tested classical (taste) conditioning of an immunosuppressive drug's physiological effects, i.e., conditioned immunomodulation (mechanism of placebo-like responses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -23843,41 +23877,43 @@
 "pharmacokinetic"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"mixed_inconsistent",
+"null_objective",
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
 "neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"other"
 ]
 },
-"summary": "Tested whether pairing saccharin/sucrose with fingolimod in rats produced conditioned immunosuppression; found mild conditioned taste avoidance but no conditioned changes in blood leukocyte subsets or splenic cytokines.",
-"key_finding": "Re-exposure to the taste CS did not reproduce FTY720's immunosuppressive effects (no change in leukocyte distribution or splenic cytokine production).",
+"summary": "Tested whether gustatory (saccharin/sucrose) conditioning of fingolimod in rats produced conditioned immunosuppression and found mild conditioned taste avoidance but no conditioned changes in blood immune cell subsets or splenic cytokine production.",
+"key_finding": "Conditioning produced a modest behavioral taste avoidance (saccharin) but failed to elicit conditioned immunological effects (no change in leukocyte subsets or splenic cytokines).",
 "sample_size": null,
 "free_keywords": [
 "fingolimod",
 "FTY720",
-"conditioned taste avoidance",
-"saccharin",
 "conditioned immunosuppression",
-"Wistar rats",
-"classical conditioning"
+"saccharin",
+"taste avoidance",
+"Wistar rat",
+"splenic cytokines"
 ],
 "usage": {
 "input_tokens": 833,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1265,
-"cost_usd": 0.00289
+"output_tokens": 1072,
+"cost_usd": 0.0025
 }
 },
 "sources": [
@@ -24193,76 +24229,51 @@
 "oa_pdf_url": "https://hdl.handle.net/11380/1353746",
 "landing_url": "https://doi.org/10.1097/phm.0000000000002544",
 "cited_by_count": 27,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T13:19:30Z",
+"classified_at": "2026-09-06T17:47:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title indicates a conceptual/theoretical paper about integrating placebo-like (drucebo) effects and expectation management into clinical rehabilitation, so it fits reviews/theory on placebo science (criterion 4/5).",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text available; title suggests a conceptual piece about the 'drucebo' and expectation management but it's unclear whether placebo/nocebo phenomena are the explicit focus or if the article is a review/commentary.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"therapeutic_ritual_context",
-"clinical_use_ethics_attitudes",
-"harnessing_placebo_clinical"
-],
-"moderators": [
-"provider_characteristics",
-"expectation_level"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Argued for integrating the 'drucebo' concept and expectation-management strategies into physical medicine and rehabilitation to improve patient outcomes.",
+"summary": "Unclear from available metadata; title indicated a conceptual discussion of the 'drucebo' and expectation management in physical medicine and rehabilitation.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "drucebo",
-"physical rehabilitation",
 "expectation management",
-"placebo-informed care"
+"physical medicine",
+"rehabilitation",
+"placebo_concept"
 ],
 "usage": {
-"input_tokens": 430,
-"cache_read_input_tokens": 5888,
+"input_tokens": 174,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 686,
-"cost_usd": 0.00163
+"output_tokens": 624,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -24718,11 +24729,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:22:49Z",
+"classified_at": "2026-09-06T17:47:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Narrative/historical review with explicit focus on behavioral (classical) conditioning of immune responses, a topic within placebo-science history and mechanisms.",
+"rationale": "Narrative historical review focused on behaviorally conditioned immune responses, a placebo-relevant mechanism (classical conditioning) and its clinical implications, so placebo science is the main subject.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -24742,7 +24753,7 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory"
+"not_applicable"
 ],
 "design": [
 "not_applicable"
@@ -24752,7 +24763,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"history_conceptual"
+"history_conceptual",
+"harnessing_placebo_clinical"
 ],
 "moderators": [
 "none_reported"
@@ -24761,23 +24773,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews the historical development and evidence for behaviorally conditioned immune responses and discusses translation of conditioning to enhance pharmacological interventions.",
+"summary": "Reviewed the history and modern research on behaviorally conditioned (associative) modulation of immune function and discussed exploiting conditioned pharmacological responses clinically.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"pavlov",
 "conditioned immunosuppression",
-"behavioral conditioning",
+"pavlov",
+"behavioral immunology",
+"associative learning",
 "neuroimmune",
-"schedlowski",
-"history of science"
+"schedlowski"
 ],
 "usage": {
-"input_tokens": 679,
-"cache_read_input_tokens": 5888,
+"input_tokens": 423,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 680,
-"cost_usd": 0.00168
+"output_tokens": 800,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -24906,6 +24918,136 @@
 "landing_url": "https://doi.org/10.1097/j.pain.0000000000003251",
 "cited_by_count": 6,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1001/jamanetworkopen.2024.10335",
+"title": "Matched vs Nonmatched Placebos in a Randomized Trial of COVID-19 Treatments.",
+"authors": [
+"Reis G",
+"Savassi LCM",
+"Ferreira TS",
+"Reis LLF",
+"Simplicio MIC",
+"Ribeiro LB",
+"Silva EADSM",
+"Lat PK",
+"Harari O",
+"Forrest JI",
+"Dron L",
+"Park JJH",
+"Thorlund K",
+"Mills EJ"
+],
+"journal": "JAMA network open",
+"journal_abbrev": "JAMA Netw Open",
+"year": 2024,
+"date": "2024-05-01",
+"doi": "10.1001/jamanetworkopen.2024.10335",
+"pmid": "38767921",
+"pmcid": "PMC11107303",
+"openalex_id": null,
+"abstract": "IMPORTANCE: Matched placebo interventions are complex and resource intensive. Recent evidence suggests matched placebos may not always be necessary. Previous studies have predominantly evaluated potential bias of nonmatched placebos (ie, differing on dose, frequency of administration, or formulation) in pain and mental health, but to date no systematic examination has been conducted in infectious disease. OBJECTIVE: To test for differences between nonmatched and matched placebo arms with respect to clinical outcome measures across multiple therapeutics for COVID-19. DESIGN, SETTING, AND PARTICIPANTS: In a comparative effectiveness research study, a post hoc analysis was conducted of data on individual patients enrolled in a large, multiarm, platform randomized clinical trial in symptomatic adult outpatients with COVID-19 between January 15, 2021, to September 28, 2023, in which the outcomes of both matched and nonmatched placebo groups were reported. Bayesian and frequentist covariate-adjusted techniques were compared with 7 intervention-placebo pairs. EXPOSURES: Seven matched and nonmatched placebo pairs (for a total of 7 comparisons) were evaluated throughout the primary platform trial. Comparisons were made between treatment and its associated matched (concurrent) placebo, as well as with nonmatched placebo (alone and in combination) assessed at a similar time point. MAIN OUTCOMES AND MEASURES: Outcomes assessed included hospitalizations, EuroQol 5-Dimension 5-level scores, and PROMIS Global-10 scores. RESULTS: A total of 7 intervention-control pairs (N = 2684) were assessed, including 1620 (60.4%) women, with mean (SD) age, 47 (15.2) years; the most common comorbidities were obesity (41.9%) and hypertension (37.9%). In a meta-analysis with decoupled SEs, accounting for overlapping placebo patients, the overall odds ratio (OR) of nonmatched compared with matched placebo was 1.01 (95% credible interval, 0.77-1.32), with posterior probability of equivalence, defined as 0.8 ≤ OR ≤ 1.2 (a deviation from perfect equivalence ie, OR = 1, by no more than 0.2) of 85.4%, implying no significant difference. Unadjusted analysis of the event rate difference between all nonmatched and matched placebo groups did not identify any notable differences across all 7 treatment-placebo combinations assessed. Similar analysis that was conducted for patient-reported quality of life outcomes did not yield statistically significant differences. CONCLUSIONS AND RELEVANCE: In this post hoc study of a randomized clinical platform trial, pooling matched and nonmatched placebo patient data did not lead to inconsistencies in treatment effect estimation for any of the investigational drugs. These findings may have significant implications for future platform trials, as the use of nonmatched placebo may improve statistical power, or reduce barriers to placebo implementation.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Female",
+"Humans",
+"Male",
+"Middle Aged",
+"Bayes Theorem",
+"Comparative Effectiveness Research",
+"COVID-19",
+"COVID-19 Drug Treatment",
+"Placebos",
+"SARS-CoV-2",
+"Treatment Outcome",
+"Randomized Controlled Trials as Topic",
+"Adaptive Clinical Trials as Topic"
+],
+"pub_types": [
+"Journal Article"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:41Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Primary analysis focused on differences between matched and nonmatched placebo arms (placebo-arm comparison/secondary analysis of trial data), making placebo response/methodology the study focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_response"
+],
+"article_type": "secondary_analysis",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"clinical_endpoint",
+"self_report"
+],
+"design": [
+"placebo_arm_secondary_analysis",
+"meta_analytic"
+],
+"effects": [
+"null_subjective",
+"null_objective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Pooled individual-patient data from a multiarm platform RCT and found no significant differences between matched and nonmatched placebo arms for hospitalizations or patient-reported quality-of-life in adult COVID-19 outpatients.",
+"key_finding": "Overall OR of nonmatched vs matched placebo = 1.01 (95% credible interval 0.77–1.32), with high posterior probability of equivalence (85.4%).",
+"sample_size": 2684,
+"free_keywords": [
+"platform trial",
+"matched placebo",
+"nonmatched placebo",
+"COVID-19 outpatients",
+"EQ-5D",
+"PROMIS Global-10",
+"bayesian analysis"
+],
+"usage": {
+"input_tokens": 824,
+"cache_read_input_tokens": 6144,
+"cache_creation_input_tokens": 0,
+"output_tokens": 980,
+"cost_usd": 0.00232
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2024-05-01",
+"private_pdf": null
 },
 {
 "id": "doi:10.2519/jospt.2024.12259",
@@ -25326,11 +25468,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:24:10Z",
+"classified_at": "2026-09-06T17:47:39Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "The paper developed and applied a natural-history modeling framework explicitly aimed at evaluating efficacy in the absence of a placebo arm and thus addresses placebo-trial methodology (placebo science) rather than testing placebo effects.",
+"confidence": 0.8,
+"rationale": "The paper's primary aim was methodological: using natural-history disease-course modeling to avoid a placebo control arm, which is a placebo-science/methods contribution rather than an investigation of placebo/nocebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -25353,8 +25495,9 @@
 "clinical_endpoint"
 ],
 "design": [
+"observational",
 "computational_modeling",
-"observational"
+"single_group_pre_post"
 ],
 "effects": [
 "not_applicable"
@@ -25369,24 +25512,24 @@
 "not_applicable"
 ]
 },
-"summary": "Developed a multivariate natural-history growth model for children with achondroplasia and compared simulated untreated trajectories to observed outcomes after recifercept, finding no treatment effect and proposing the framework as an alternative to placebo arms.",
-"key_finding": "Observations after recifercept matched simulated natural-history trajectories at 6 and 12 months, suggesting no treatment effect and supporting the model as a potential substitute for placebo controls.",
+"summary": "Developed and validated a natural-history growth model for children with achondroplasia and used it to simulate untreated trajectories to compare with phase II recifercept observations, finding no treatment effect and supporting termination of development.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "achondroplasia",
 "recifercept",
 "natural history",
-"growth",
-"pharmacometrics",
-"linear mixed effects",
+"growth modeling",
+"anthropometrics",
+"phase II",
 "pediatric"
 ],
 "usage": {
-"input_tokens": 796,
-"cache_read_input_tokens": 5888,
+"input_tokens": 540,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 908,
-"cost_usd": 0.00216
+"output_tokens": 870,
+"cost_usd": 0.00203
 }
 },
 "sources": [
@@ -26535,122 +26678,6 @@
 "landing_url": "https://doi.org/10.1016/j.ejps.2024.106777",
 "cited_by_count": 8,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.3389/fpsyg.2024.1363037",
-"title": "The relevance of outcome expectations in group hypnosis for stress reduction: a secondary analysis of a multicenter randomized controlled trial.",
-"authors": [
-"Siewert J",
-"Teut M",
-"Brinkhaus B",
-"Fisch S",
-"Kummer S"
-],
-"journal": "Frontiers in psychology",
-"journal_abbrev": "Front Psychol",
-"year": 2024,
-"date": "2024-04-19",
-"doi": "10.3389/fpsyg.2024.1363037",
-"pmid": "38708017",
-"pmcid": "PMC11069319",
-"openalex_id": "https://openalex.org/W4394959080",
-"abstract": "BACKGROUND: There is evidence that patients' positive outcome expectations prior to study interventions are associated with better treatment outcomes. Nevertheless, to date, only few studies have investigated whether individual outcome expectations affect treatment outcomes in hypnosis. OBJECTIVE: To examine whether outcome expectations to hypnosis prior to starting treatment were able to predict perceived stress, as measured on a visual analog scale (VAS), after 5 weeks. METHODS: We performed a secondary data analysis of a multicenter randomized controlled trial of intervention group participants only. Study participants with stress symptoms were randomized to 5 weekly sessions of a group hypnosis program for stress reduction and improved stress coping, plus 5 hypnosis audio recordings for further individual practice at home, as well as an educational booklet on coping with stress. Perceived stress for the following week was measured at baseline and after 5 weeks using a visual analog scale (0-100 mm; VAS). Hypnosis outcome expectations were assessed at baseline only with the Expectations for Treatment Scale (ETS). Unadjusted and adjusted linear regressions were performed to examine the association between baseline expectations and perceived stress at 5 weeks. RESULTS: Data from 47 participants (M = 45.02, SD = 13.40 years; 85.1% female) were analyzed. Unadjusted (B = 0.326, t = 0.239, p = 0.812, R2 = 0.001) and adjusted (B = 0.639, t = 0.470, p = 0.641, R2 = 0.168) linear regressions found that outcome expectations to hypnosis were not associated with a change in perceived stress between baseline and after 5 weeks in the intervention group. CONCLUSION: Our findings suggest that the beneficial effect of group hypnosis in distressed participants were not associated with outcome expectations. Other mechanisms of action may be more important for the effect of hypnosis, which should be explored in future research.Clinical trial registration: ClinicalTrials.gov, identifier NCT03525093.",
-"keywords": [
-"hypnosis",
-"hypnotherapy",
-"outcome expectation",
-"randomized controlled trial",
-"stress",
-"stress reduction"
-],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1363037/pdf",
-"landing_url": "http://dx.doi.org/10.3389/fpsyg.2024.1363037",
-"cited_by_count": 1,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:21:35Z",
-"screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "The study explicitly tested whether baseline outcome expectations predicted clinical response to a therapeutic intervention (expectation as a predictor of outcome), meeting the criterion to include studies that measure expectancy as a mechanism of treatment effects.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "secondary_analysis",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"single_group_pre_post"
-],
-"effects": [
-"null_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Performed a secondary analysis of an RCT intervention group and found baseline expectations did not predict perceived stress after 5 weeks of group hypnosis.",
-"key_finding": "Baseline treatment expectations were not associated with change in perceived stress at 5 weeks (adjusted B=0.639, p=0.641).",
-"sample_size": 47,
-"free_keywords": [
-"group hypnosis",
-"expectations",
-"visual analog scale",
-"stress reduction",
-"multicenter trial",
-"ETS",
-"psychological intervention",
-"NCT03525093"
-],
-"usage": {
-"input_tokens": 849,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1065,
-"cost_usd": 0.00249
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-04-19",
-"private_pdf": {
-"available": true,
-"store_key": "siewert_2024_the_relevance_of_outcome_expectations.pdf",
-"source": "downloaded",
-"sha256": "53974b8ffee98765"
-}
 },
 {
 "id": "doi:10.3389/fpsyg.2024.1293975",
@@ -28227,24 +28254,23 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:27:25Z",
+"classified_at": "2026-09-06T17:47:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized manipulation of role-expectancy (told patient vs told healthy) tested effects on self-reported symptoms, meeting criterion for experimental context/expectation effects (placebo/nocebo) as the study focus.",
+"rationale": "Randomized manipulation of assigned 'patient' vs 'healthy' role altered self-reported vestibular and migraine outcomes, testing expectation/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
 "placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical",
-"general_public"
+"healthy_adult",
+"other_clinical"
 ],
 "age_group": [
 "adults"
@@ -28267,30 +28293,31 @@
 "treatment_cues_dose_route"
 ],
 "moderators": [
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized migraine patients were told they were either patients or healthy participants and those assigned the patient role reported greater vestibular symptoms, higher headache frequency, and greater migraine disability than those told they were healthy.",
-"key_finding": "Assigning patients to a 'patient' role (vs a 'healthy' role) increased self-reported dizziness after videos and raised reported monthly headache days and migraine disability (all statistically significant).",
+"summary": "Randomized trial found that telling people with migraine they were participants versus healthy controls changed self-reported vestibular symptoms, motion sickness after videos, and reported headache frequency and disability.",
+"key_finding": "Patients told they were 'patients' reported more vestibular symptoms (64.8% vs 23.8%), higher median monthly headache days (7 vs 5) and greater migraine disability (median MIDAS 35 vs 25) than those told they were healthy.",
 "sample_size": 366,
 "free_keywords": [
 "migraine",
-"role expectancy",
+"vestibular symptoms",
 "motion sickness",
-"dizziness",
-"roller-coaster",
-"patient-labeling",
-"expectation manipulation"
+"role expectancy",
+"roller coaster",
+"migraine disability",
+"expectation manipulation",
+"NCT06322550"
 ],
 "usage": {
 "input_tokens": 1169,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 918,
-"cost_usd": 0.00228
+"output_tokens": 849,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -28702,6 +28729,116 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.3389/fmed.2024.1373520",
+"title": "Nocebo effects in systemic therapies for adult plaque psoriasis: A systematic review and meta-analysis.",
+"authors": [
+"Ma B",
+"Park YJ",
+"Barber K",
+"Mydlarski PR"
+],
+"journal": "Frontiers in medicine",
+"journal_abbrev": "Front Med (Lausanne)",
+"year": 2024,
+"date": "2024-03-27",
+"doi": "10.3389/fmed.2024.1373520",
+"pmid": "38601115",
+"pmcid": "PMC11004429",
+"abstract": "INTRODUCTION: The nocebo effect is defined as adverse outcomes secondary to negative patient expectations rather than the pharmacologic activity of an intervention. Nocebo effects can reduce treatment adherence and/or persistence. Therefore, nocebo effects in psoriasis need to be defined. METHODS: A Cochrane systematic review was updated with a search of MEDLINE, Embase, and the CENTRAL Register of Controlled Trials for phase II - IV RCTs comparing systemic therapy versus placebo for patients with moderate-to-severe plaque psoriasis. Estimates were pooled using a random effects model, and heterogeneity was evaluated using the I2 statistic. The primary outcome was the pooled proportion of any adverse event (AE) and corresponding risk difference (RD) in patients randomized to placebo versus systemic therapy. RESULTS: A total of 103 unique trials were identified enrolling 43,189 patients. The overall pooled AE rate in patients randomized to systemic therapy was 57.1% [95% CI: 54.7-59.5%] compared to 49.8% [95% CI: 47.1-52.4%] for placebo [RD 6.7% (95% CI: 4.6-8.9%), p < 0.00001, I2 = 75%]. Both biologic and non-biologic systemic therapy groups had a higher proportion of infectious AEs compared to placebo. No statistically significant RD in serious AEs or AEs leading to discontinuation was identified between systemic therapy and placebo groups. DISCUSSION: Half of patients exposed to inert placebo in clinical trials of systemic psoriasis therapies experienced AEs, which may be explained by nocebo effects. These findings have important implications when counseling patients and designing future studies.",
+"keywords": [
+"biologic",
+"nocebo effect",
+"psoriasis",
+"randomized controlled trial",
+"systemic therapy"
+],
+"mesh": [],
+"pub_types": [
+"Systematic Review",
+"Journal Article"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:41Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly pooled adverse-event rates in placebo arms and framed findings as nocebo effects, so placebo/nocebo response is the analytic focus (inclusion rule: meta-analyses of placebo/sham arms).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"adverse_events",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"significant_objective"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"trial_characteristics"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Pooled RCT data from systemic-therapy trials in adult plaque psoriasis and found that nearly half of patients randomized to placebo experienced adverse events, which the authors interpreted as evidence of nocebo effects.",
+"key_finding": "Found 49.8% AE rate in placebo arms; risk difference between systemic therapy and placebo was 6.7% (95% CI 4.6–8.9%).",
+"sample_size": 103,
+"free_keywords": [
+"psoriasis",
+"biologic",
+"systemic therapy",
+"adverse events",
+"placebo arm",
+"randomized controlled trials",
+"nocebo",
+"meta-analysis"
+],
+"usage": {
+"input_tokens": 774,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 1102,
+"cost_usd": 0.00254
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-03-27",
+"private_pdf": null,
+"language": "eng"
+},
+{
 "id": "doi:10.1016/j.psychsport.2024.102633",
 "title": "Warm-up plus verbal communications administered as placebo procedure during the training session improves running performance.",
 "authors": [
@@ -28945,116 +29082,6 @@
 ],
 "date_added": "2024-03-27",
 "private_pdf": null
-},
-{
-"id": "doi:10.1007/s12160-016-9772-1",
-"title": "Nocebo effects in systemic therapies for adult plaque psoriasis: A systematic review and meta-analysis.",
-"authors": [
-"Ma B",
-"Park YJ",
-"Barber K",
-"Mydlarski PR"
-],
-"journal": "Frontiers in medicine",
-"journal_abbrev": "Front Med (Lausanne)",
-"year": 2024,
-"date": "2024-03-27",
-"doi": "10.1007/s12160-016-9772-1",
-"pmid": "38601115",
-"pmcid": "PMC6749907",
-"abstract": "INTRODUCTION: The nocebo effect is defined as adverse outcomes secondary to negative patient expectations rather than the pharmacologic activity of an intervention. Nocebo effects can reduce treatment adherence and/or persistence. Therefore, nocebo effects in psoriasis need to be defined. METHODS: A Cochrane systematic review was updated with a search of MEDLINE, Embase, and the CENTRAL Register of Controlled Trials for phase II - IV RCTs comparing systemic therapy versus placebo for patients with moderate-to-severe plaque psoriasis. Estimates were pooled using a random effects model, and heterogeneity was evaluated using the I2 statistic. The primary outcome was the pooled proportion of any adverse event (AE) and corresponding risk difference (RD) in patients randomized to placebo versus systemic therapy. RESULTS: A total of 103 unique trials were identified enrolling 43,189 patients. The overall pooled AE rate in patients randomized to systemic therapy was 57.1% [95% CI: 54.7-59.5%] compared to 49.8% [95% CI: 47.1-52.4%] for placebo [RD 6.7% (95% CI: 4.6-8.9%), p < 0.00001, I2 = 75%]. Both biologic and non-biologic systemic therapy groups had a higher proportion of infectious AEs compared to placebo. No statistically significant RD in serious AEs or AEs leading to discontinuation was identified between systemic therapy and placebo groups. DISCUSSION: Half of patients exposed to inert placebo in clinical trials of systemic psoriasis therapies experienced AEs, which may be explained by nocebo effects. These findings have important implications when counseling patients and designing future studies.",
-"keywords": [
-"biologic",
-"nocebo effect",
-"psoriasis",
-"randomized controlled trial",
-"systemic therapy"
-],
-"mesh": [],
-"pub_types": [
-"Systematic Review",
-"Journal Article"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:45Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Systematic review/meta-analysis explicitly investigated nocebo effects by pooling adverse-event rates in placebo arms of RCTs and comparing them to active treatment, matching inclusion rule for meta-analyses on placebo/nocebo.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_response"
-],
-"article_type": "meta_analysis",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"adverse_events",
-"other"
-],
-"outcome_measures": [
-"clinical_endpoint",
-"self_report"
-],
-"design": [
-"meta_analytic"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response",
-"nocebo_communication_disclosure"
-],
-"moderators": [
-"treatment_characteristics",
-"trial_characteristics"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Pooled RCTs of systemic therapies for plaque psoriasis found high rates of adverse events in placebo arms (~49.8%) and interpreted these events as nocebo effects, with a small but significant RD favoring higher AE rates in active treatments.",
-"key_finding": "Pooled placebo AE rate 49.8% (95% CI 47.1–52.4%); risk difference 6.7% higher AE rate in active versus placebo (p<0.00001).",
-"sample_size": 103,
-"free_keywords": [
-"psoriasis",
-"systemic therapy",
-"adverse events",
-"placebo arm",
-"biologics",
-"risk difference",
-"randomized controlled trials"
-],
-"usage": {
-"input_tokens": 544,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1207,
-"cost_usd": 0.0027
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2024-03-27",
-"private_pdf": null,
-"language": "eng"
 },
 {
 "id": "doi:10.1016/j.imr.2024.101040",
@@ -29430,119 +29457,6 @@
 "landing_url": "https://doi.org/10.1017/s1092852924000142",
 "cited_by_count": 9,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1177/23743735241240925",
-"title": "Listening to Patients Makes Sense: Soliciting and Purposefully Addressing Written Patient Expectations at a Provider Visit Improve Patient Satisfaction.",
-"authors": [
-"Bratincsak A",
-"Quensell J",
-"Mih B"
-],
-"journal": "Journal of patient experience",
-"journal_abbrev": "J Patient Exp",
-"year": 2024,
-"date": "2024-03-21",
-"doi": "10.1177/23743735241240925",
-"pmid": "38515762",
-"pmcid": "PMC10956138",
-"openalex_id": "https://openalex.org/W4393051099",
-"abstract": "Patient satisfaction is an important aspect of medical care. This study aimed to assess if patient satisfaction improved when patients shared their expectations with the provider in writing before a visit, and providers purposefully addressed those expectations during the visit. We gave 2 types of questionnaires to 343 patients: Version 1 asked for written expectations before the visit and assessed the visit quality after addressing those expectations, while Version 2 only evaluated the visit without soliciting expectations. Patient satisfaction and meeting expectations were measured on a 1-10 Likert-type scale. The grouped that shared written expectations before the visit (n = 169) showed a significantly higher patient satisfaction score (9.88) compared to the group without shared expectations (n = 136, score 9.43, P < .0001). Conveying written expectations to healthcare providers before the visit improved patient satisfaction, potentially enhancing compliance and overall medical outcomes.",
-"keywords": [
-"patient expectations",
-"patient satisfaction",
-"pediatrics",
-"previsit questionnaire"
-],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://doi.org/10.1177/23743735241240925",
-"landing_url": "https://doi.org/10.1177/23743735241240925",
-"cited_by_count": 0,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:44:21Z",
-"screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "The study experimentally manipulated soliciting and addressing patient expectations to change patient-reported satisfaction, which is an intervention that leverages treatment context/expectation (placebo-science/harnessing context) rather than merely mentioning placebo as a comparator.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"general_public"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"provider_patient_interaction",
-"therapeutic_ritual_context",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only",
-"other"
-]
-},
-"summary": "Found that soliciting written patient expectations before a visit and purposefully addressing them during the visit increased patient-reported satisfaction compared with not soliciting expectations.",
-"key_finding": "Patients who shared written expectations (n=169) had higher satisfaction (mean 9.88) than those who did not (n=136; mean 9.43; P < .0001).",
-"sample_size": 343,
-"free_keywords": [
-"patient expectations",
-"patient satisfaction",
-"clinic communication",
-"expectation management",
-"clinical encounter",
-"written expectation"
-],
-"usage": {
-"input_tokens": 613,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 943,
-"cost_usd": 0.00219
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2024-03-21",
-"private_pdf": {
-"available": true,
-"store_key": "bratincsak_2024_listening_to_patients_makes_sense.pdf",
-"source": "downloaded",
-"sha256": "e86d3450fb9fffae"
-}
 },
 {
 "id": "doi:10.1136/bmjebm-2022-112197",
@@ -30719,11 +30633,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:53:53Z",
+"classified_at": "2026-09-06T17:47:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Experimental manipulation of socially communicated expectations (advice trustworthiness) was the focus and predicted changes in pain expectations and pain tolerance (expectation-driven pain modulation).",
+"confidence": 0.9,
+"rationale": "Experimentally manipulated social advice/expectation (trustworthiness) and measured its influence on pain expectations and pain tolerance, so placebo/context expectation effects are the study focus (expectation-driven pain modulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -30756,36 +30670,37 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"social_observational_learning",
-"computational_predictive_processing"
+"treatment_cues_dose_route",
+"computational_predictive_processing",
+"social_observational_learning"
 ],
 "moderators": [
-"prior_experience",
+"provider_characteristics",
 "expectation_level",
-"provider_characteristics"
+"prior_experience"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated social advice trustworthiness and found that trustworthy advice shifted pain expectations and predicted increased pain tolerance in a cold-pressor task in healthy volunteers.",
-"key_finding": "Participants shifted expectations more after high- vs low-trust advice, and this increased expectation-taking predicted greater pain tolerance (N=72).",
+"summary": "Tested how experimentally manipulated trustworthiness of social advice altered pain expectations and cold-pressor pain tolerance in healthy volunteers, finding that high-trust advice shifted expectations and predicted greater tolerance.",
+"key_finding": "Participants updated expectations more toward high-trust confederate advice, and greater advice-taking predicted increased pain tolerance; trust modulated weighting of social versus sensory evidence in Bayesian learning.",
 "sample_size": 72,
 "free_keywords": [
+"cold pressor",
 "coldpressor",
-"cold pain",
-"trustworthiness",
-"belief updating",
-"confederate",
 "bayesian learning",
+"trustworthiness",
+"advice-taking",
+"confederate",
 "pain tolerance"
 ],
 "usage": {
 "input_tokens": 853,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 885,
-"cost_usd": 0.00213
+"output_tokens": 1033,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -31692,6 +31607,123 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1371/journal.pone.0298665",
+"title": "Point-of-care ultrasound (POCUS): Assessing patient satisfaction and socioemotional benefits in the hospital setting.",
+"authors": [
+"Balmuth EA",
+"Luan D",
+"Jannat-Khah D",
+"Evans A",
+"Wong T",
+"Scales DA"
+],
+"journal": "PloS one",
+"journal_abbrev": "PLoS One",
+"year": 2024,
+"date": "2024-02-16",
+"doi": "10.1371/journal.pone.0298665",
+"pmid": "38363766",
+"pmcid": "PMC10871481",
+"abstract": "Point-of-care ultrasound (POCUS) is an imaging modality used to make expedient patient care decisions at bedside. Though its diagnostic utility has been extensively described, POCUS is not yet considered standard of care in inpatient settings. Data from emergency department settings suggest that POCUS may yield socioemotional benefits beyond its diagnostic utility; furthermore, elements of the POCUS experience are known to promote placebo effects. These elements likely contribute to a placebo-like \"POCUS positive care effect\" (PPCE) with socioemotional benefits for receptive patients. Our objective is to provide the first characterization of the PPCE and its facilitating factors in an inpatient setting. In this novel mixed-methods study, we recruited 30 adult patients admitted to internal medicine floors in an urban academic medical center, recorded observations during their routine POCUS encounters, and administered post-encounter surveys. We conducted complementary quantitative and qualitative analyses to define and assess the magnitude of the PPCE. We also aimed to identify factors associated with and facilitating receptiveness to the PPCE. The results indicated that POCUS improves patients' satisfaction with their hospital providers and care overall, as well as perceived care efficiency. Mutual engagement, strong therapeutic alliances, and interpreting POCUS images to provide reassurance are most closely associated with this PPCE. Patients who have lower anxiety levels, less severe illness, and received efficient care delivery during their hospitalizations are most receptive to the PPCE. We conclude that diagnostic POCUS has the potential to exert a positive care effect for hospitalized patients. This PPCE is associated with modifiable factors at the patient, provider, and environment levels. Together, our findings lay the groundwork for an optimized \"therapeutic POCUS\" that yields maximal socioemotional benefits for receptive patients.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Humans",
+"Point-of-Care Systems",
+"Patient Satisfaction",
+"Point-of-Care Testing",
+"Emergency Service, Hospital",
+"Ultrasonography",
+"Hospitals",
+"Inpatients"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, Non-U.S. Gov't"
+],
+"scope": "adjacent",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:44Z",
+"screening": {
+"decision": "include",
+"confidence": 0.85,
+"rationale": "Study explicitly investigated a placebo-like 'POCUS positive care effect' (contextual/socioemotional benefits) and analyzed factors facilitating receptiveness, making placebo phenomena the paper's focus (placebo science/adaptive context effects).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_science_other"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"global_health_qol"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"observational",
+"survey_interview"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"provider_patient_interaction",
+"therapeutic_ritual_context",
+"attention_cognitive_appraisal",
+"emotion_anxiety_regulation"
+],
+"moderators": [
+"mood_anxiety_state",
+"disease_severity_duration",
+"treatment_characteristics",
+"provider_characteristics"
+],
+"intervention_type": [
+"other"
+]
+},
+"summary": "Recruited 30 hospitalized adults and found that bedside POCUS was associated with improved patient satisfaction and perceived efficiency, with mutual engagement, reassurance, and therapeutic alliance facilitating this placebo-like positive care effect.",
+"key_finding": "Found that POCUS encounters increased patient-reported satisfaction and perceived efficiency, especially among less anxious and less severely ill patients and when providers engaged and used images to reassure.",
+"sample_size": 30,
+"free_keywords": [
+"point-of-care ultrasound",
+"POCUS",
+"patient satisfaction",
+"therapeutic alliance",
+"reassurance",
+"socioemotional effects"
+],
+"usage": {
+"input_tokens": 817,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 972,
+"cost_usd": 0.0023
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2024-02-16",
+"private_pdf": null,
+"language": "eng"
+},
+{
 "id": "doi:10.1093/bjd/ljad375",
 "title": "Addressing high placebo response rates in randomized clinical trials for hidradenitis suppurativa.",
 "authors": [
@@ -31718,35 +31750,39 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:23:19Z",
+"classified_at": "2026-09-03T03:04:56Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states the paper addresses high placebo response rates in randomized clinical trials for hidradenitis suppurativa, making placebo response the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text provided; title and MeSH suggest the paper addresses placebo/ placebo-response rates in hidradenitis suppurativa RCTs but content and article type are unclear.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"dermatology"
+"other_clinical"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -31757,29 +31793,28 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics"
+"none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed strategies to address high placebo response rates observed in randomized trials for hidradenitis suppurativa.",
+"summary": "Title suggested the paper addressed high placebo-response rates in randomized trials for hidradenitis suppurativa, but no abstract was available to confirm scope or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"hidradenitis suppurativa",
-"placebo response",
-"randomized clinical trials",
+"hidradenitis_suppurativa",
+"placebo_response",
 "dermatology",
-"placebo rates",
-"trial design"
+"randomized_controlled_trials",
+"trial_methodology"
 ],
 "usage": {
-"input_tokens": 575,
+"input_tokens": 397,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 558,
-"cost_usd": 0.00141
+"output_tokens": 708,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -31927,122 +31962,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1056/nejmoa1103319",
-"title": "Point-of-care ultrasound (POCUS): Assessing patient satisfaction and socioemotional benefits in the hospital setting.",
-"authors": [
-"Balmuth EA",
-"Luan D",
-"Jannat-Khah D",
-"Evans A",
-"Wong T",
-"Scales DA"
-],
-"journal": "PloS one",
-"journal_abbrev": "PLoS One",
-"year": 2024,
-"date": "2024-02-16",
-"doi": "10.1056/nejmoa1103319",
-"pmid": "38363766",
-"pmcid": "PMC3154208",
-"abstract": "Point-of-care ultrasound (POCUS) is an imaging modality used to make expedient patient care decisions at bedside. Though its diagnostic utility has been extensively described, POCUS is not yet considered standard of care in inpatient settings. Data from emergency department settings suggest that POCUS may yield socioemotional benefits beyond its diagnostic utility; furthermore, elements of the POCUS experience are known to promote placebo effects. These elements likely contribute to a placebo-like \"POCUS positive care effect\" (PPCE) with socioemotional benefits for receptive patients. Our objective is to provide the first characterization of the PPCE and its facilitating factors in an inpatient setting. In this novel mixed-methods study, we recruited 30 adult patients admitted to internal medicine floors in an urban academic medical center, recorded observations during their routine POCUS encounters, and administered post-encounter surveys. We conducted complementary quantitative and qualitative analyses to define and assess the magnitude of the PPCE. We also aimed to identify factors associated with and facilitating receptiveness to the PPCE. The results indicated that POCUS improves patients' satisfaction with their hospital providers and care overall, as well as perceived care efficiency. Mutual engagement, strong therapeutic alliances, and interpreting POCUS images to provide reassurance are most closely associated with this PPCE. Patients who have lower anxiety levels, less severe illness, and received efficient care delivery during their hospitalizations are most receptive to the PPCE. We conclude that diagnostic POCUS has the potential to exert a positive care effect for hospitalized patients. This PPCE is associated with modifiable factors at the patient, provider, and environment levels. Together, our findings lay the groundwork for an optimized \"therapeutic POCUS\" that yields maximal socioemotional benefits for receptive patients.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Humans",
-"Point-of-Care Systems",
-"Patient Satisfaction",
-"Point-of-Care Testing",
-"Emergency Service, Hospital",
-"Ultrasonography",
-"Hospitals",
-"Inpatients"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:45Z",
-"screening": {
-"decision": "include",
-"confidence": 0.95,
-"rationale": "Post hoc secondary analysis explicitly compared matched versus nonmatched placebo arms and tested whether pooling them affected treatment effect estimates, making placebo methodology the primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other",
-"placebo_response"
-],
-"article_type": "secondary_analysis",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other",
-"global_health_qol"
-],
-"outcome_measures": [
-"clinical_endpoint",
-"self_report"
-],
-"design": [
-"placebo_arm_secondary_analysis",
-"meta_analytic"
-],
-"effects": [
-"null_objective",
-"null_subjective"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"trial_characteristics"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Analyzed pooled data from a platform RCT (7 intervention–placebo pairs, N=2684) and found no meaningful differences between nonmatched and matched placebo arms for hospitalizations or patient-reported quality-of-life.",
-"key_finding": "Pooled odds ratio for nonmatched vs matched placebo was 1.01 (95% CrI 0.77–1.32), indicating no significant difference.",
-"sample_size": 2684,
-"free_keywords": [
-"covid-19",
-"platform trial",
-"matched placebo",
-"nonmatched placebo",
-"equivalence",
-"euroqol-5d",
-"promis-global"
-],
-"usage": {
-"input_tokens": 818,
-"cache_read_input_tokens": 6144,
-"cache_creation_input_tokens": 0,
-"output_tokens": 994,
-"cost_usd": 0.00235
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2024-02-16",
-"private_pdf": null,
-"language": "eng"
-},
-{
 "id": "doi:10.3389/fcvm.2024.1338964",
 "title": "Patient-centered evaluation of an expectation-focused intervention for patients undergoing heart valve surgery: a qualitative study.",
 "authors": [
@@ -32085,11 +32004,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T13:57:05Z",
+"classified_at": "2026-09-06T17:47:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Qualitative empirical study explicitly focused on an expectation-focused intervention (placebo-harnessing clinical intervention) assessing perceived benefits, barriers, and adverse effects in cardiac surgery patients.",
+"rationale": "Study explicitly evaluated an expectation-focused intervention (patient perspectives, feasibility and perceived benefits) in surgical recovery, which addresses harnessing placebo/expectation mechanisms in clinical care.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -32106,21 +32025,21 @@
 "adults"
 ],
 "condition_domain": [
-"cardiovascular_bp"
+"global_health_qol"
 ],
 "outcome_measures": [
-"self_report"
+"not_applicable",
+"other"
 ],
 "design": [
 "survey_interview"
 ],
 "effects": [
-"significant_subjective"
+"not_applicable"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "provider_patient_interaction",
-"therapeutic_ritual_context",
 "harnessing_placebo_clinical"
 ],
 "moderators": [
@@ -32130,25 +32049,25 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Interviewed 18 patients after an expectation-focused intervention around minimally invasive heart valve surgery and found participants perceived enhanced control and helpful preparation, with no reported adverse effects.",
-"key_finding": "Patients reported the expectation-focused intervention as helpful for preparation and recovery, enhancing perceived personal control and emotional support (N=18).",
+"summary": "Interviewed 18 heart valve surgery patients about an expectation-focused intervention delivered within an RCT, found it was perceived as helpful for preparation and control with no reported adverse effects.",
+"key_finding": "Patients reported enhanced personal control and valued preparatory and emotional aspects of the expectation-focused intervention; no adverse effects were reported.",
 "sample_size": 18,
 "free_keywords": [
 "heart valve surgery",
 "enhanced recovery after surgery",
-"ERAS",
+"qualitative",
 "expectation intervention",
-"qualitative content analysis",
 "psychologist",
 "feasibility",
-"patient perspectives"
+"patient perspectives",
+"recovery"
 ],
 "usage": {
 "input_tokens": 771,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 870,
-"cost_usd": 0.00208
+"output_tokens": 970,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -33554,24 +33473,24 @@
 "oa_pdf_url": "https://eor.bioscientifica.com/downloadpdf/view/journals/eor/9/2/EOR-23-0087.pdf",
 "landing_url": "https://doi.org/10.1530/eor-23-0087",
 "cited_by_count": 13,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T14:11:03Z",
+"classified_at": "2026-09-06T17:47:44Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Systematic review explicitly examined preoperative expectations (measured predictor) and their association with postoperative outcomes, which fits inclusion of expectation/context effects as predictors of health outcomes.",
+"confidence": 0.8,
+"rationale": "Systematic review explicitly examined preoperative expectations (an expectancy mechanism) as predictors of postoperative outcomes, which fits inclusion of expectation effects/mechanisms in placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "systematic_review",
 "species": "human",
@@ -33587,44 +33506,46 @@
 "global_health_qol"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"clinician_rated"
 ],
 "design": [
-"not_applicable"
+"meta_analytic"
 ],
 "effects": [
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"emotion_anxiety_regulation",
-"trial_methodology_placebo_response"
+"prior_treatment_experience"
 ],
 "moderators": [
+"expectation_level",
 "none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Systematic review examined associations between preoperative expectations/self-efficacy and postoperative pain, function, stiffness, satisfaction, and quality of life after total hip/knee arthroplasty, finding some positive but inconsistent associations.",
-"key_finding": "Found positive associations in some adjusted analyses between outcome expectations and function, and between self-efficacy and overall outcome, but results were heterogeneous across studies.",
+"summary": "Systematic review synthesized prospective cohort studies linking preoperative expectations and self-efficacy to postoperative pain, function, stiffness, satisfaction, and quality of life after total hip or knee arthroplasty, finding some positive but inconsistent associations.",
+"key_finding": "Found possible positive associations between higher preoperative outcome expectations/self-efficacy and better postoperative pain and function outcomes, but results were heterogeneous and many studies had high risk of bias.",
 "sample_size": 50,
 "free_keywords": [
 "total knee arthroplasty",
 "total hip arthroplasty",
 "preoperative expectations",
 "self-efficacy",
-"postoperative pain",
-"function",
-"satisfaction"
+"satisfaction",
+"QUIPS",
+"orthopaedics",
+"postoperative outcomes"
 ],
 "usage": {
 "input_tokens": 781,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1157,
-"cost_usd": 0.00266
+"output_tokens": 991,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -33684,24 +33605,24 @@
 "oa_pdf_url": "https://doi.org/10.1371/journal.pone.0297067",
 "landing_url": "https://doi.org/10.1371/journal.pone.0297067",
 "cited_by_count": 3,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T15:13:53Z",
+"classified_at": "2026-09-06T17:47:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Study tested how measured pain expectations related to spatial summation of pain (an expectation mechanism relevant to placebo/nocebo research), making placebo-related mechanisms an explicit focus.",
+"confidence": 0.72,
+"rationale": "The study explicitly measured pain expectations as a predictor of spatial summation of pain, making expectation (a core placebo/nocebo mechanism) the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -33734,24 +33655,24 @@
 "not_applicable"
 ]
 },
-"summary": "Used a home-based cold pressor task in healthy adults (N=68) and found spatial summation of pain and a significant correlation between participants' pain expectations and perceived pain.",
-"key_finding": "Found that higher pain expectations were significantly associated with greater spatial summation of pain (significant correlation between expectation VAS and pain VAS).",
+"summary": "Reproduced spatial summation of pain using a home-based cold pressor task and found that participants' pain expectations correlated with perceived spatial summation.",
+"key_finding": "Found a significant correlation between pain expectations and perceived spatial summation (higher expectations associated with greater reported pain).",
 "sample_size": 68,
 "free_keywords": [
-"cold pressor",
-"spatial summation",
+"cold pressor task",
 "CPT",
+"spatial summation",
 "visual analogue scale",
 "home-based",
-"ascending immersion",
-"descending withdrawal"
+"non-laboratory",
+"ascending descending immersion"
 ],
 "usage": {
-"input_tokens": 115,
-"cache_read_input_tokens": 6528,
+"input_tokens": 755,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1080,
-"cost_usd": 0.00235
+"output_tokens": 917,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -33816,24 +33737,24 @@
 "oa_pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/hex.13951",
 "landing_url": "https://doi.org/10.1111/hex.13951",
 "cited_by_count": 5,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T12:40:13Z",
+"classified_at": "2026-09-06T17:47:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.62,
-"rationale": "The paper explicitly tested participants' outcome expectancy as a predictor/moderator of outcomes in online depression prevention (expectation as a mechanism), meeting inclusion for studies that measure expectation as a predictor of health outcomes.",
+"confidence": 0.85,
+"rationale": "Secondary analysis explicitly tested participants' outcome expectancy as a predictor/moderator of depression prevention outcomes, meeting the criterion for studying expectation/context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_response"
 ],
 "article_type": "secondary_analysis",
 "species": "human",
@@ -33854,7 +33775,7 @@
 "observational"
 ],
 "effects": [
-"null_subjective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
@@ -33868,24 +33789,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Analyzed outcome expectancy as a predictor of symptom change and depression onset in two RCT datasets of online depression prevention and found no robust prediction posttreatment, with small follow-up effects that did not survive multiple-testing correction.",
-"key_finding": "Outcome expectancy did not predict posttreatment outcomes or 12-month depression onset; small follow-up associations lost significance after multiple-testing correction.",
+"summary": "Conducted a secondary analysis of two RCTs (N=304) assessing whether baseline outcome expectancy predicted symptom change and depression onset in an online depression prevention intervention; expectancy did not predict posttreatment outcomes and showed small, non-robust effects at follow-up.",
+"key_finding": "Outcome expectancy did not predict posttreatment outcomes; small effects at follow-up were not robust to multiple-testing correction.",
 "sample_size": 304,
 "free_keywords": [
 "online intervention",
-"indicated prevention",
 "subthreshold depression",
-"outcome expectancy",
-"multilevel modelling",
-"depression onset",
+"expectancy",
+"internet-based intervention",
+"prevention",
+"secondary analysis",
 "DRKS"
 ],
 "usage": {
 "input_tokens": 941,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1270,
-"cost_usd": 0.00292
+"output_tokens": 1230,
+"cost_usd": 0.00284
 }
 },
 "sources": [
@@ -34455,11 +34376,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T15:14:18Z",
+"classified_at": "2026-09-06T17:47:46Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Explicit experimental manipulation of threat expectancy (predictive cues) tested its causal effect on perceived heartbeat (an interoceptive percept), meeting inclusion for expectation/context effects (nocebo-like) as the study's primary focus.",
+"rationale": "Experimental manipulation of threat-predictive cues altered perceived heartbeat (expectation-induced interoceptive illusion), so placebo/nocebo-relevant expectation effects were the study's focus (experimental within-subject expectancy manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -34481,6 +34402,7 @@
 ],
 "outcome_measures": [
 "self_report",
+"behavioral_performance",
 "autonomic"
 ],
 "design": [
@@ -34503,24 +34425,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated threat-predictive cues caused participants to report an illusory increase in heartbeats during anticipation of higher pain, despite no corresponding change in recorded heart rate.",
-"key_finding": "Threat expectancy increased subjective heartbeat reports (significant) while ECG-recorded heart rate remained unchanged (null).",
+"summary": "Found that threat-predictive cues induced an illusory increase in perceived heartbeat (higher subjective reports) without corresponding increases in actual heart rate.",
+"key_finding": "Threat expectancy increased reported heartbeat counts (subjective) but ECG showed no real heart-rate change, indicating an expectancy-driven interoceptive illusion.",
 "sample_size": null,
 "free_keywords": [
 "interoception",
-"heartbeat counting",
+"heartbeat perception",
 "ECG",
 "threat expectancy",
-"predictive processing",
-"cutaneous stimulation",
-"pain cues"
+"bayesian predictive processing",
+"cutaneous pain cues"
 ],
 "usage": {
-"input_tokens": 103,
-"cache_read_input_tokens": 6528,
+"input_tokens": 743,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 986,
-"cost_usd": 0.00216
+"output_tokens": 1064,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -35942,6 +35863,128 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1177/02698811231219060",
+"title": "The impact of cannabidiol placebo on responses to an acute stressor: A replication and proof of concept study.",
+"authors": [
+"Zhekova RM",
+"Perry RN",
+"Spinella TC",
+"Dockrill K",
+"Stewart SH",
+"Barrett SP"
+],
+"journal": "Journal of psychopharmacology (Oxford, England)",
+"journal_abbrev": "J Psychopharmacol",
+"year": 2024,
+"date": "2024-01-12",
+"doi": "10.1177/02698811231219060",
+"pmid": "38214314",
+"pmcid": "PMC10851629",
+"openalex_id": null,
+"abstract": "BACKGROUND: Our group has previously reported that cannabidiol (CBD) expectancy alone blunts markers of stress, particularly during anticipation, but it is not clear the extent to which such findings were specific to the methods utilized. AIMS: To examine CBD-related placebo effects on stress reactivity and anticipation and to validate a protocol to be used in a neuroimaging study. METHODS: Forty-eight healthy adults (24 female) were randomly assigned to be informed that they ingested a CBD-containing oil or a CBD-free oil despite receiving the same oil (CBD-free). Following oil administration, participants engaged in a laboratory stressor and were then incorrectly informed that they would engage in a second more difficult task following a waiting period. Subjective state (sedation, energy, stress, anxiety) and heart rate were assessed at baseline, post-oil administration, immediately following the first stressor, and while anticipating the second stressor. RESULTS: Subjective stress and anxiety were significantly elevated immediately following the stressor (p-values < 0.001). CBD expectancy was associated with increased subjective sedation (p < 0.01) and tended to be associated with blunted subjective stress (p = 0.053). Post hoc within-condition pairwise compassions suggested a return to pre-stressor levels during the anticipation period in the CBD condition for subjective stress and anxiety (p = 0.784, 0.845), but not the CBD-free condition (p = 0.025, 0.045). CONCLUSION: Results replicate and extend previous findings that CBD expectancy alone can impact stress- and anxiety-relevant responses in the laboratory context.",
+"keywords": [
+"Cannabidiol",
+"anxiety",
+"placebo",
+"stress"
+],
+"mesh": [
+"Adult",
+"Female",
+"Humans",
+"Anxiety",
+"Anxiety Disorders",
+"Cannabidiol",
+"Double-Blind Method",
+"Proof of Concept Study",
+"Male"
+],
+"pub_types": [
+"Randomized Controlled Trial",
+"Journal Article",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-03T03:05:30Z",
+"screening": {
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Randomized manipulation of CBD expectancy (told-CBD vs told-CBD-free) while all received inert oil explicitly tested placebo/expectation effects on stress and anxiety, matching inclusion criterion #1.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"anxiety_stress"
+],
+"outcome_measures": [
+"self_report",
+"autonomic"
+],
+"design": [
+"parallel_groups_rct",
+"within_subject_experimental"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"verbal_suggestion_expectation"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"placebo_food_drink"
+]
+},
+"summary": "Randomized healthy volunteers were told they received CBD or CBD-free oil (all received CBD-free), and CBD expectancy altered subjective sedation and tended to blunt stress/anxiety during anticipation.",
+"key_finding": "CBD expectancy increased subjective sedation (p < 0.01) and was associated with a trend toward blunted subjective stress (p = 0.053) with anticipation-period recovery in the told-CBD group.",
+"sample_size": 48,
+"free_keywords": [
+"cbd expectancy",
+"anticipatory stress",
+"laboratory stress task",
+"sedation",
+"heart rate"
+],
+"usage": {
+"input_tokens": 749,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 775,
+"cost_usd": 0.00188
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-01-12",
+"private_pdf": null
+},
+{
 "id": "doi:10.1038/s44220-023-00187-w",
 "title": "Neuroanatomical dimensions in medication-free individuals with major depressive disorder and treatment response to SSRI antidepressant medications or placebo.",
 "authors": [
@@ -36219,6 +36262,122 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.1097/j.pain.0000000000003151",
+"title": "Clinical improvements due to specific effects and placebo effects in conservative interventions and changes observed with no treatment in randomized controlled trials of patients with chronic nonspecific low back pain: a systematic review and meta-analysis.",
+"authors": [
+"Pedersen JR",
+"Strijkers R",
+"Gerger H",
+"Koes B",
+"Chiarotto A"
+],
+"journal": "Pain",
+"journal_abbrev": "Pain",
+"year": 2024,
+"date": "2024-01-10",
+"doi": "10.1097/j.pain.0000000000003151",
+"pmid": "38198235",
+"pmcid": null,
+"openalex_id": null,
+"abstract": "Little is known about the contribution of placebo effects and changes observed with no treatment in interventions for nonspecific low back pain (NSLBP). This systematic review assessed the proportions of the overall treatment effect that may be attributable to specific treatment effects, placebo effects, and changes observed with no treatment in randomized controlled trials (RCTs) in patients with NSLBP. Trials published before 2019 were identified from a published systematic review, and the search was updated in MEDLINE, Embase, and Cochrane Central for trials published between January 2019 and March 2023. Three-arm RCTs comparing the effects of experimental interventions vs placebo control vs no intervention reporting pain intensity, physical function, and/or health-related quality of life (HRQoL) were included. Sixteen RCTs with 1436 adults with chronic NSLBP testing conservative and mainly passive interventions were included. For pain intensity (16 studies), 33%, 18%, and 49% of the overall short-term treatment effect was attributable to specific treatment effects, placebo effects, and changes observed with no treatment, respectively. For physical function (11 studies) and HRQoL (6 studies), these proportions were 34%, 13%, and 53%, and 11%, 41%, and 48%, respectively. These results show that approximately half of the overall treatment effect of conservative and mainly passive interventions for patients with chronic NSLBP is attributable to changes observed with no treatment, rather than specific or placebo effects of treatments. However, the certainty of evidence was very low to low, suggesting that the true effects might be markedly different from the effect sizes underlying these estimates.",
+"keywords": [],
+"mesh": [
+"Humans",
+"Low Back Pain",
+"Randomized Controlled Trials as Topic",
+"Placebo Effect",
+"Chronic Pain",
+"Treatment Outcome",
+"Conservative Treatment",
+"Quality of Life",
+"Pain Measurement"
+],
+"pub_types": [
+"Systematic Review",
+"Journal Article",
+"Meta-Analysis",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-03T03:05:35Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Systematic review and meta-analysis explicitly quantified placebo effects and no-treatment changes in three-arm RCTs of chronic nonspecific low back pain, making placebo/nocebo phenomena the primary focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"significant_subjective"
+],
+"mechanisms": [
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"other"
+]
+},
+"summary": "Pooled three-arm RCTs in chronic nonspecific low back pain and estimated proportions of overall treatment effects attributable to specific, placebo, and no-treatment effects for pain, function, and HRQoL.",
+"key_finding": "Approximately half of the overall short-term treatment effect was attributable to changes observed with no treatment, with placebo effects accounting for about 18% of pain improvement (certainty very low to low).",
+"sample_size": 16,
+"free_keywords": [
+"nonspecific low back pain",
+"three-arm trials",
+"conservative interventions",
+"health-related quality of life",
+"pain intensity",
+"physical function"
+],
+"usage": {
+"input_tokens": 774,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 942,
+"cost_usd": 0.00222
+}
+},
+"sources": [
+"jips",
+"pubmed_query"
+],
+"date_added": "2024-01-10",
+"private_pdf": null
+},
+{
 "id": "doi:10.1016/j.physbeh.2024.114462",
 "title": "Perceived dehydration impairs endurance cycling performance in the heat in active males.",
 "authors": [
@@ -36382,73 +36541,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T21:23:41Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T03:05:36Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Narrative review whose explicit focus is the use of placebo in IBD trials, addressing ethics and alternative trial designs (placebo science subject).",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title suggests placebo may be discussed but it's unclear whether placebo/nocebo phenomena are the paper's focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"gi_ibs"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviewed ethical concerns and alternative trial designs for use of placebo in inflammatory bowel disease clinical trials and proposed approaches to balance ethics and clinical relevance.",
+"summary": "Insufficient information: no abstract available to determine whether the paper focused on placebo or nocebo phenomena in IBD trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "inflammatory bowel disease",
 "ulcerative colitis",
-"placebo arms",
-"ethics",
-"trial design",
-"placebo-controlled trials"
+"placebo",
+"clinical trials",
+"trial methodology"
 ],
 "usage": {
-"input_tokens": 466,
-"cache_read_input_tokens": 5888,
+"input_tokens": 255,
+"cache_read_input_tokens": 6016,
 "cache_creation_input_tokens": 0,
-"output_tokens": 794,
-"cost_usd": 0.00185
+"output_tokens": 665,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -36895,30 +37032,29 @@
 "oa_pdf_url": "https://doi.org/10.14283/jpad.2023.62",
 "landing_url": "https://doi.org/10.14283/jpad.2023.62",
 "cited_by_count": 2,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T15:15:41Z",
+"classified_at": "2026-09-06T17:47:52Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "The study explicitly tested whether therapeutic expectancy predicted treatment response in an RCT of cognitive training, making placebo/expectation phenomena an explicit analytic focus (mechanism/moderator of treatment effects).",
+"confidence": 0.7,
+"rationale": "The RCT explicitly measured therapeutic expectancy and tested whether expectancy predicted treatment outcomes, satisfying inclusion for studies that measure expectation as a moderator/mechanism of outcome.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical",
-"healthy_older_adult"
+"other_neurological"
 ],
 "age_group": [
 "older_adults"
@@ -36927,9 +37063,8 @@
 "cognition"
 ],
 "outcome_measures": [
-"behavioral_performance",
-"clinician_rated",
 "self_report",
+"clinician_rated",
 "smri"
 ],
 "design": [
@@ -36944,29 +37079,32 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
+"age",
+"disease_severity_duration",
+"sex_gender",
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Tested whether pre-randomization expectancy predicted 78-week outcomes in a randomized trial of computerized cognitive training versus crossword training in MCI and found no association between expectancy and cognitive, functional, or hippocampal-volume change.",
-"key_finding": "Expectancy did not predict change in global cognition, everyday functioning, or hippocampal volume over 78 weeks.",
+"summary": "Randomized trial in 107 older adults with MCI found that baseline expectancy differed across interventions and by age/cognition, but expectancy did not predict change in cognition, everyday function, or hippocampal volume over 78 weeks.",
+"key_finding": "Expectancy was not associated with treatment response on cognitive, functional, or hippocampal-volume outcomes.",
 "sample_size": 107,
 "free_keywords": [
 "mild cognitive impairment",
 "computerized cognitive training",
 "crossword puzzle training",
-"expectancy",
 "hippocampal volume",
-"long-term follow-up"
+"expectancy",
+"randomized trial"
 ],
 "usage": {
-"input_tokens": 128,
-"cache_read_input_tokens": 6528,
+"input_tokens": 768,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1263,
-"cost_usd": 0.00272
+"output_tokens": 1270,
+"cost_usd": 0.00288
 }
 },
 "sources": [
@@ -37392,124 +37530,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1111/j.1749-6632.2009.04424.x",
-"title": "The Roles of Endogenous Opioids in Placebo and Nocebo Effects: From Pain to Performance to Prozac.",
-"authors": [
-"Kerr PL",
-"Gregg JM"
-],
-"journal": "Advances in neurobiology",
-"journal_abbrev": "Adv Neurobiol",
-"year": 2024,
-"date": "2024-01-01",
-"doi": "10.1111/j.1749-6632.2009.04424.x",
-"pmid": "38874724",
-"pmcid": "4770341",
-"abstract": "Placebo and nocebo effects have been well documented for nearly two centuries. However, research has only relatively recently begun to explicate the neurobiological underpinnings of these phenomena. Similarly, research on the broader social implications of placebo/nocebo effects, especially within healthcare delivery settings, is in a nascent stage. Biological and psychosocial outcomes of placebo/nocebo effects are of equal relevance. A common pathway for such outcomes is the endogenous opioid system. This chapter describes the history of placebo/nocebo in medicine; delineates the current state of the literature related to placebo/nocebo in relation to pain modulation; summarizes research findings related to human performance in sports and exercise; discusses the implications of placebo/nocebo effects among diverse patient populations; and describes placebo/nocebo influences in research related to psychopharmacology, including the relevance of endogenous opioids to new lines of research on antidepressant pharmacotherapies.",
-"keywords": [
-"Endogenous opioids",
-"Nocebo",
-"Pain",
-"Performance",
-"Placebo"
-],
-"mesh": [
-"Humans",
-"Analgesics, Opioid",
-"Antidepressive Agents",
-"Athletic Performance",
-"Nocebo Effect",
-"Opioid Peptides",
-"Pain",
-"Placebo Effect"
-],
-"pub_types": [
-"Journal Article"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:08:45Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Human neuroimaging study explicitly tested placebo-induced analgesia and associated endogenous opioid and dopamine responses under expectancy manipulations, making placebo effects the primary focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain",
-"mood_depression"
-],
-"outcome_measures": [
-"self_report",
-"fmri",
-"pet_neurochemical"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"neurobiology_opioid",
-"neurobiology_dopamine",
-"neural_systems_circuits"
-],
-"moderators": [
-"expectation_level"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Demonstrated that expectation-induced placebo administration in healthy volunteers activated endogenous opioid and dopamine neurotransmission in pain- and reward-related brain regions and reduced pain ratings and negative affect.",
-"key_finding": "PET with [11C]carfentanil and [11C]raclopride showed opioid and dopamine release in nucleus accumbens and multiple cortical/subcortical regions that correlated with reductions in reported pain and negative affect during placebo expectation.",
-"sample_size": null,
-"free_keywords": [
-"carfentanil",
-"raclopride",
-"mu-opioid",
-"nucleus accumbens",
-"placebo analgesia",
-"rostral anterior cingulate"
-],
-"usage": {
-"input_tokens": 801,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 835,
-"cost_usd": 0.00202
-}
-},
-"sources": [
-"jips",
-"pubmed_query"
-],
-"date_added": "2024-01-01",
-"private_pdf": null,
-"language": "eng"
-},
-{
 "id": "doi:10.1111/cts.13715",
 "title": "Pooled analysis of routine safety parameters observed in healthy participants at baseline and following placebo administration in early phase clinical studies.",
 "authors": [
@@ -37663,38 +37683,134 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s2665-9913(23)00319-3",
 "cited_by_count": 2,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T15:14:43Z",
+"classified_at": "2026-09-06T17:47:49Z",
+"screening": {
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text available and the title suggests a methodological comment about contextual factors but it's unclear whether placebo/nocebo phenomena are the explicit focus.",
+"exclusion_reason": "insufficient_information",
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [],
+"article_type": "theory_commentary",
+"species": "human",
+"population": [],
+"age_group": [],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
+},
+"summary": "Commentary on how contextual factors might clarify results of low back pain trials; abstract unavailable so focus on placebo/nocebo effects is unclear.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"low back pain",
+"contextual factors",
+"trial methodology",
+"placebo response",
+"expectation"
+],
+"usage": {
+"input_tokens": 425,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 824,
+"cost_usd": 0.0019
+}
+},
+"sources": [
+"pubmed_audit"
+],
+"date_added": "2024-01-01",
+"private_pdf": null
+},
+{
+"id": "doi:10.1007/978-3-031-45493-6_10",
+"title": "The Roles of Endogenous Opioids in Placebo and Nocebo Effects: From Pain to Performance to Prozac.",
+"authors": [
+"Kerr PL",
+"Gregg JM"
+],
+"journal": "Advances in neurobiology",
+"journal_abbrev": "Adv Neurobiol",
+"year": 2024,
+"date": "2024-01-01",
+"doi": "10.1007/978-3-031-45493-6_10",
+"pmid": "38874724",
+"pmcid": null,
+"abstract": "Placebo and nocebo effects have been well documented for nearly two centuries. However, research has only relatively recently begun to explicate the neurobiological underpinnings of these phenomena. Similarly, research on the broader social implications of placebo/nocebo effects, especially within healthcare delivery settings, is in a nascent stage. Biological and psychosocial outcomes of placebo/nocebo effects are of equal relevance. A common pathway for such outcomes is the endogenous opioid system. This chapter describes the history of placebo/nocebo in medicine; delineates the current state of the literature related to placebo/nocebo in relation to pain modulation; summarizes research findings related to human performance in sports and exercise; discusses the implications of placebo/nocebo effects among diverse patient populations; and describes placebo/nocebo influences in research related to psychopharmacology, including the relevance of endogenous opioids to new lines of research on antidepressant pharmacotherapies.",
+"keywords": [
+"Endogenous opioids",
+"Nocebo",
+"Pain",
+"Performance",
+"Placebo"
+],
+"mesh": [
+"Humans",
+"Analgesics, Opioid",
+"Antidepressive Agents",
+"Athletic Performance",
+"Nocebo Effect",
+"Opioid Peptides",
+"Pain",
+"Placebo Effect"
+],
+"pub_types": [
+"Journal Article"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:47:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.65,
-"rationale": "Commentary likely focused on contextual/placebo factors and trial methodology for low back pain, making placebo science the primary subject.",
+"confidence": 0.9,
+"rationale": "Narrative review chapter explicitly focused on placebo and nocebo phenomena and their endogenous-opioid neurobiology across pain, performance, and psychopharmacology, meeting criterion 4.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_and_nocebo"
 ],
-"article_type": "theory_commentary",
-"species": "not_applicable",
+"article_type": "narrative_review",
+"species": "human",
 "population": [
-"chronic_pain"
+"mixed_clinical",
+"healthy_adult"
 ],
 "age_group": [
 "mixed_unspecified"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"sport_exercise_performance",
+"mood_depression"
 ],
 "outcome_measures": [
-"not_applicable"
+"self_report",
+"clinical_endpoint",
+"pet_neurochemical",
+"neuroendocrine"
 ],
 "design": [
 "not_applicable"
@@ -37703,9 +37819,11 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"therapeutic_ritual_context",
-"provider_patient_interaction"
+"neurobiology_opioid",
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route",
+"provider_patient_interaction",
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -37714,29 +37832,31 @@
 "not_applicable"
 ]
 },
-"summary": "Comment argued that considering contextual factors could improve clarity and interpretation of clinical trials for low back pain.",
+"summary": "Narrative review described historical and current human research on placebo and nocebo effects, emphasizing endogenous opioid mechanisms across pain, athletic performance, and antidepressant contexts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"low back pain",
-"contextual factors",
-"trial design",
-"placebo",
-"clinical trials"
+"endogenous opioid",
+"placebo analgesia",
+"antidepressant placebo",
+"sports placebo",
+"opioid peptides"
 ],
 "usage": {
-"input_tokens": 41,
-"cache_read_input_tokens": 6272,
+"input_tokens": 644,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 782,
-"cost_usd": 0.00173
+"output_tokens": 866,
+"cost_usd": 0.00204
 }
 },
 "sources": [
-"pubmed_audit"
+"jips",
+"pubmed_query"
 ],
 "date_added": "2024-01-01",
-"private_pdf": null
+"private_pdf": null,
+"language": "eng"
 },
 {
 "id": "doi:10.1007/7854_2024_506",

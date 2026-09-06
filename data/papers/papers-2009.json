@@ -780,11 +780,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:23:01Z",
+"classified_at": "2026-09-06T17:53:30Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Review explicitly focused on the development, validity and methodological challenges of placebos in CAM trials (placebo science/methodology as primary topic).",
+"confidence": 0.88,
+"rationale": "Review focused on the development, validity and methodological issues of placebos in CAM trials, making placebo science the explicit subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -793,7 +793,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -824,24 +824,25 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews debates and methodological challenges in designing credible placebos for acupuncture, homeopathy, kinesiology, herbal medicine and healing, concluding valid, reliable placebos are lacking for most CAM therapies.",
-"key_finding": null,
+"summary": "Reviewed methodological challenges in designing and applying credible placebos across CAM therapies and concluded that valid, reliable placebos are lacking for most interventions.",
+"key_finding": "Concluded that many CAM modalities currently lack valid and credible placebo controls, notably beyond acupuncture where debates remain unresolved.",
 "sample_size": null,
 "free_keywords": [
+"complementary and alternative medicine",
 "acupuncture",
 "homeopathy",
-"kinesiology",
-"herbal medicine",
 "healing",
-"complementary and alternative medicine",
-"placebo design"
+"kinesiology",
+"chinese herbal medicine",
+"placebo_design",
+"sham_acupuncture"
 ],
 "usage": {
 "input_tokens": 744,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 824,
-"cost_usd": 0.00198
+"output_tokens": 631,
+"cost_usd": 0.0016
 }
 },
 "sources": [
@@ -4519,11 +4520,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:25:25Z",
+"classified_at": "2026-09-06T17:53:32Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The experiments explicitly tested and demonstrated conditioned (placebo-like) performance effects by pairing caffeine with contextual cues and testing with placebo, satisfying the criterion for experimentally isolated placebo/context effects (classical conditioning).",
+"rationale": "Human experiments explicitly tested classical conditioning of caffeine effects and demonstrated placebo-like conditioned performance improvements when placebo was administered in the previously drug-paired context (experimental isolation of conditioned placebo effect).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4541,14 +4542,15 @@
 "adults"
 ],
 "condition_domain": [
-"cognition"
+"cognition",
+"motor_function"
 ],
 "outcome_measures": [
 "behavioral_performance"
 ],
 "design": [
-"parallel_groups_rct",
-"within_subject_experimental"
+"within_subject_experimental",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_objective"
@@ -4561,27 +4563,28 @@
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"placebo_food_drink",
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Found that contextual cues previously paired with caffeine elicited faster reaction times when placebo was administered, indicating conditioned stimulant-like effects on performance.",
-"key_finding": "Conditioned contextual cues paired with caffeine produced faster simple reaction times on placebo test sessions compared with unpaired controls.",
+"summary": "Tested whether caffeine's facilitatory effects on reaction time and reasoning could be conditioned to contextual cues and found conditioned performance improvements when placebo was given in previously drug-paired contexts.",
+"key_finding": "Found that contexts paired with caffeinated beverages produced faster reaction times on placebo test sessions, indicating conditioned stimulant-like responses (N=28 across two experiments).",
 "sample_size": 28,
 "free_keywords": [
 "caffeine",
-"conditioned response",
-"reaction time",
-"semantic verification",
-"context conditioning",
-"CS+",
-"stimulant"
+"conditioning",
+"contextual_cues",
+"reaction_time",
+"semantic_verification",
+"stimulant",
+"contextual_placebo"
 ],
 "usage": {
 "input_tokens": 814,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 990,
-"cost_usd": 0.00233
+"output_tokens": 1000,
+"cost_usd": 0.00235
 }
 },
 "sources": [
@@ -6560,11 +6563,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:26:02Z",
+"classified_at": "2026-09-06T17:53:35Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Meta-analysis explicitly focused on the association between response expectancies and cancer treatment side effects (placebo/nocebo-related outcomes), meeting inclusion criteria for placebo/nocebo response research.",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly quantified the association between patients' response expectancies and experience of cancer treatment side effects (a nocebo/expectancy-driven response), meeting inclusion criterion for studies of placebo/nocebo responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6575,8 +6578,7 @@
 "article_type": "meta_analysis",
 "species": "human",
 "population": [
-"cancer",
-"mixed_clinical"
+"cancer"
 ],
 "age_group": [
 "adults",
@@ -6584,8 +6586,8 @@
 ],
 "condition_domain": [
 "adverse_events",
-"nausea_gi",
 "pain",
+"nausea_gi",
 "fatigue"
 ],
 "outcome_measures": [
@@ -6609,24 +6611,25 @@
 "not_applicable"
 ]
 },
-"summary": "Pooled analysis of 14 studies found that patients' response expectancies were reliably associated with greater cancer treatment-related side effects, supporting expectancies' contribution to symptom occurrence.",
-"key_finding": "Found a medium-sized association between response expectancies and side effects (r=0.36, Z=6.58, P<0.001); effect moderated by temporal specificity of expectancy assessment and prior treatment experience.",
+"summary": "Meta-analysis found that patients' response expectancies were moderately associated (r=0.36) with cancer treatment-related side effects, supporting an expectancy/nocebo contribution to symptoms.",
+"key_finding": "Found a medium-sized association between response expectancies and side effects (r = 0.36, Z = 6.58, P < 0.001); effects were moderated by temporal specificity of expectancy assessment and prior treatment experience.",
 "sample_size": 14,
 "free_keywords": [
-"response expectancy",
 "chemotherapy",
+"response expectancies",
 "nausea",
 "vomiting",
 "pain",
 "fatigue",
-"side effects"
+"effect size",
+"meta-analysis"
 ],
 "usage": {
 "input_tokens": 770,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 671,
-"cost_usd": 0.00168
+"output_tokens": 880,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -7378,135 +7381,6 @@
 "landing_url": "https://doi.org/10.1017/s0033291709991085",
 "cited_by_count": 24,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.jpain.2009.04.019",
-"title": "Alterations in extracellular levels of gamma-aminobutyric acid in the rat basolateral amygdala and periaqueductal gray during conditioned fear, persistent pain and fear-conditioned analgesia.",
-"authors": [
-"Rea K",
-"Lang Y",
-"Finn DP"
-],
-"journal": "The journal of pain",
-"journal_abbrev": "J Pain",
-"year": 2009,
-"date": "2009-09-02",
-"doi": "10.1016/j.jpain.2009.04.019",
-"pmid": "19729347",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2018800690",
-"abstract": "Evidence suggests an important role for supraspinal gamma-aminobutyric acid (GABA) in conditioned fear and pain. Using dual probe microdialysis coupled to HPLC, we investigated alterations in extracellular levels of GABA simultaneously in the rat basolateral amygdala and dorsal periaqueductal gray during expression of conditioned fear, formalin-evoked nociception, and fear-conditioned analgesia. Re-exposure to a context previously paired with footshock significantly increased the duration of freezing and 22-kilohertz ultrasonic vocalization, and reduced formalin-evoked nociceptive behavior. Upon re-exposure to the context, GABA levels in the basolateral amygdala were significantly lower in fear-conditioned animals compared with non-fear-conditioned controls, irrespective of intraplantar formalin/saline injection. GABA levels in the dorsal periaqueductal gray were lower in rats receiving intraplantar injection of formalin, compared with saline-treated controls. GABA levels sampled were sensitive to nipecotic acid and calcium infusion. No specific fear-conditioned analgesia-related alterations in GABA efflux were observed in these regions despite the ability of rats undergoing dual probe microdialysis to express this important survival response. In conclusion, expression of contextually induced fear- and pain-related behavior are accompanied by suppression of GABA release in the basolateral amygdala and dorsal periaqueductal gray, respectively, compared with non-fear, non-pain controls. PERSPECTIVE: This study investigates alterations in levels of the neurotransmitter GABA simultaneously in the rat amygdala and periaqueductal grey during expression of pain- and fear-related behavior and fear-induced analgesia. The results enhance our understanding of the role of this neurotransmitter in pain, memory of pain and control of pain during fear.",
-"keywords": [],
-"mesh": [
-"Amygdala",
-"Animals",
-"Behavior, Animal",
-"Conditioning, Psychological",
-"Disease Models, Animal",
-"Electric Stimulation",
-"Extracellular Fluid",
-"Fear",
-"Freezing Reaction, Cataleptic",
-"Male",
-"Microdialysis",
-"Neural Inhibition",
-"Neuropsychological Tests",
-"Pain",
-"Pain Measurement",
-"Pain Threshold",
-"Periaqueductal Gray",
-"Rats",
-"Synaptic Transmission",
-"Vocalization, Animal",
-"gamma-Aminobutyric Acid"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.jpain.2009.04.019",
-"cited_by_count": 36,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:26:49Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Non-human animal experiment investigated classical conditioning (fear-conditioned analgesia) and associated neurochemical changes, which addresses mechanistic aspects of conditioned placebo-like analgesia (rule: animal cue/context conditioning included).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"pain",
-"anxiety_stress"
-],
-"outcome_measures": [
-"behavioral_performance",
-"other"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_other_neurochemical"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Measured extracellular GABA in rat basolateral amygdala and periaqueductal gray during conditioned fear, formalin pain, and fear-conditioned analgesia, and found region-specific suppression of GABA associated with fear and pain.",
-"key_finding": "Fear context reduced GABA in basolateral amygdala and formalin reduced GABA in dorsal PAG; no specific GABA changes uniquely tied to fear-conditioned analgesia were observed.",
-"sample_size": null,
-"free_keywords": [
-"gaba",
-"microdialysis",
-"formalin",
-"fear-conditioned analgesia",
-"basolateral amygdala",
-"periaqueductal gray",
-"freezing",
-"ultrasonic vocalization"
-],
-"usage": {
-"input_tokens": 910,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1213,
-"cost_usd": 0.0028
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-09-02",
-"private_pdf": null
 },
 {
 "id": "doi:10.1258/jrsm.2009.09k037",
@@ -8768,13 +8642,13 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:24:24Z",
+"classified_at": "2026-09-06T17:53:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Commentary addressing the ethics and methodological debate about placebo-controlled trials is about placebo science rather than reporting empirical placebo effects, meeting the 'placebo_science_other' inclusion criterion.",
+"rationale": "Commentary explicitly about the ethics and methodological status of placebo-controlled trials, making placebo science the primary subject (placebo_science_other).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -8812,23 +8686,24 @@
 "not_applicable"
 ]
 },
-"summary": "Commentary critiqued claims of the superiority of placebo-controlled trials and discussed ethical and methodological implications for placebo research and trial design.",
+"summary": "Argued against claims that placebo-controlled trials are superior, discussing ethical and methodological issues surrounding placebo use in clinical research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"research ethics",
 "placebo-controlled trials",
-"howick",
-"trial design",
-"methodology",
+"ethics",
+"research design",
+"Howick",
+"clinical trials",
+"FDA",
 "physician-patient relations"
 ],
 "usage": {
 "input_tokens": 471,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 513,
-"cost_usd": 0.00129
+"output_tokens": 622,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -9005,11 +8880,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:26:35Z",
+"classified_at": "2026-09-06T17:53:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper's primary analysis examined placebo-group outcomes across randomized AD trials (placebo response as the analytic focus), meeting inclusion criterion 2.",
+"rationale": "Paper's primary analysis focused on placebo-group outcomes across randomized AD trials (placebo response as the analytic object), meeting inclusion criterion 2.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9020,7 +8895,7 @@
 "article_type": "secondary_analysis",
 "species": "human",
 "population": [
-"other_neurological"
+"other_clinical"
 ],
 "age_group": [
 "older_adults"
@@ -9029,11 +8904,11 @@
 "cognition"
 ],
 "outcome_measures": [
-"clinician_rated"
+"clinician_rated",
+"clinical_endpoint"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
-"observational"
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "significant_objective"
@@ -9049,25 +8924,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed placebo-group changes in 18-month randomized Alzheimer's trials and found modest mean ADAS-cog worsening with substantial variability across trials.",
-"key_finding": "Placebo-group ADAS-cog worsening over 18 months ranged from 4.34 to 9.10 (SDs 8.17–9.39), with increasing variability that may reduce power to detect modest drug effects.",
-"sample_size": 23,
+"summary": "Analyzed placebo-group outcomes from 18-month randomized Alzheimer's trials, reporting mean ADAS-cog decline and increasing variability across trials and noting implications for trial design and drug detectability.",
+"key_finding": "ADAS-cog worsening in placebo groups over 18 months ranged from 4.34 to 9.10 points with SDs 8.17–9.39.",
+"sample_size": null,
 "free_keywords": [
-"adas-cog",
-"clinicaltrials.gov",
-"cholinesterase inhibitors",
+"ADAS-cog",
+"MMSE",
 "memantine",
-"apoe4",
-"18-month trials",
-"phase III",
-"randomized"
+"cholinesterase inhibitors",
+"clinicaltrials.gov",
+"18-month trials"
 ],
 "usage": {
 "input_tokens": 989,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 977,
-"cost_usd": 0.00235
+"output_tokens": 996,
+"cost_usd": 0.00239
 }
 },
 "sources": [
@@ -11456,139 +11329,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1097/brs.0b013e31819fcd52",
-"title": "Great expectations: really the novel predictor of outcome after spinal surgery?",
-"authors": [
-"Mannion AF",
-"Junge A",
-"Elfering A",
-"Dvorak J",
-"Porchet F",
-"Grob D"
-],
-"journal": "Spine",
-"journal_abbrev": "Spine (Phila Pa 1976)",
-"year": 2009,
-"date": "2009-07-01",
-"doi": "10.1097/brs.0b013e31819fcd52",
-"pmid": "19521272",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2013317465",
-"abstract": "STUDY DESIGN: Prospective study. OBJECTIVE: The present study compared different theories on the role of expectations in a group of patients undergoing lumbar decompression surgery. SUMMARY OF BACKGROUND DATA: Patients' expectations of treatment are a potentially important predictor of self-rated outcome after surgery. Some studies suggest that high baseline expectations per se yield better outcomes, others maintain that the fulfillment of prior expectations is paramount, and still others assert that it is the actual improvement in symptom status that governs outcome, regardless of prior expectations. METHODS: Hundred patients took part (33 F, 67 M; mean [SD] age, 65 [11] yrs). Before surgery, they completed a booklet containing the Roland-Morris (RM) disability questionnaire, 0-10 pain graphic rating scales (back and leg separately), and Likert-scales about the degree of improvement expected in various domains. Two and 12 months after surgery, questions were answered regarding the perceived improvement for each of these domains, the RM and pain scales were completed again, and the patients rated the global outcome on a 5-point Likert-scale. RESULTS: Compared with the actual improvement recorded at 12 months, prior expectations had been overly optimistic in about 40% patients for the domains leg pain, back pain, walking capacity, social life, mental well-being, and independence, and in 50% patients for everyday activities and sport. There was no significant relationship between baseline expectations and follow-up scores for back pain, leg pain, RM-disability (corrected for baseline values), or global outcome. Hierarchical multiple regression analysis revealed that \"expectations being fulfilled\" was the most significant predictor of global outcome. CONCLUSION: In this patient group, expectations of surgery were overly optimistic. Having one's expectations fulfilled was most important for a good outcome. The results emphasize the importance of assessing patient-orientated outcome in routine practice, and the factors that might influence it, such that realistic expectations can be established for patients before surgery.",
-"keywords": [],
-"mesh": [
-"Activities of Daily Living",
-"Aged",
-"Attitude to Health",
-"Decompression, Surgical",
-"Female",
-"Health Status",
-"Humans",
-"Intervertebral Disc Displacement",
-"Low Back Pain",
-"Male",
-"Middle Aged",
-"Neurosurgical Procedures",
-"Outcome Assessment, Health Care",
-"Pain Measurement",
-"Patient Satisfaction",
-"Physician-Patient Relations",
-"Prospective Studies",
-"Quality of Life",
-"Recovery of Function",
-"Severity of Illness Index",
-"Surveys and Questionnaires",
-"Treatment Outcome"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Randomized Controlled Trial",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1097/brs.0b013e31819fcd52",
-"cited_by_count": 163,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:30:01Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Prospective study measured patients' preoperative expectations and tested their association with postoperative outcomes, so expectations as a predictor of health outcome (an expectancy/placebo-relevant mechanism) was an explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients",
-"not_applicable"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain",
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
-],
-"moderators": [
-"prior_experience"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Prospective study of 100 lumbar decompression patients found that fulfillment of preoperative expectations predicted better global self-rated outcome at 12 months, while baseline expectations alone did not.",
-"key_finding": "Fulfillment of expectations was the strongest predictor of global outcome; baseline expectations were overly optimistic and did not predict pain or disability.",
-"sample_size": 100,
-"free_keywords": [
-"lumbar decompression",
-"roland-morris",
-"expectations",
-"expectation-fulfillment",
-"global outcome",
-"back pain"
-],
-"usage": {
-"input_tokens": 919,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 977,
-"cost_usd": 0.00233
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-07-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1016/j.apnr.2009.01.002",
 "title": "Feasibility trial of guided imagery and control interventions in mock subjects.",
 "authors": [
@@ -12219,18 +11959,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:51:14Z",
+"classified_at": "2026-09-03T04:07:31Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states placebo use is the subject (practical use of placebos), meeting inclusion for placebo-science content (practice/ethics)",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title and MeSH suggest a commentary about physician use/attitudes toward placebos rather than an empirical placebo-effect study, so inclusion as empirical science is unclear.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -12243,9 +11983,15 @@
 "population": [
 "clinicians_providers"
 ],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -12262,24 +12008,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses the use of placebos in clinical practice and related ethical/practical considerations for physicians.",
+"summary": "No abstract available; appears to be a commentary about physicians' use or attitudes toward placebos in clinical practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo_prescribing",
-"physicians",
-"clinical_practice",
-"ethics",
-"practice_patterns",
+"physician_attitudes",
+"clinical_use",
 "medical_economics",
 "united_states"
 ],
 "usage": {
-"input_tokens": 550,
+"input_tokens": 372,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 655,
-"cost_usd": 0.00159
+"output_tokens": 796,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -12529,125 +12273,6 @@
 "landing_url": "https://doi.org/10.1016/j.ejim.2009.04.006",
 "cited_by_count": 8,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1016/j.appet.2009.06.002",
-"title": "Expectations, mood, and eating behavior in binge eating disorder. Beware of the bright side.",
-"authors": [
-"Dingemans AE",
-"Martijn C",
-"van Furth EF",
-"Jansen AT"
-],
-"journal": "Appetite",
-"journal_abbrev": "Appetite",
-"year": 2009,
-"date": "2009-06-09",
-"doi": "10.1016/j.appet.2009.06.002",
-"pmid": "19520125",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2167652079",
-"abstract": "Sad people may indulge in fattening snacks because they believe that eating will repair their mood. To test whether (1) changes in expectations and mood had an effect on caloric intake and (2) depressive symptoms moderated caloric intake, 73 women with binge eating disorder were randomly assigned to a condition in which expectations about food and emotion were either confirmed or disconfirmed. Subsequently they were shown either an upsetting or an amusing movie clip followed by a taste task. Contrary to our expectations, there were no differences in the four conditions: participants in all four conditions ate comparable amounts of calories. Manipulation of expectations or mood had no effect on caloric intake. However, higher baseline expectations that food is pleasurable and useful as a reward resulted in a higher caloric intake after positive mood induction. Non-depressed individuals ate less after a negative mood induction than did depressed individuals. Interestingly, they also ate less than the group of individuals, depressed and not, whose mood was positively induced. Non-depressed individuals seem to use healthier coping strategies: negative affect signals that the environment poses a problem. Positive affect on the other hand signals that the environment is benign, and thus makes people less vigilant about food intake.",
-"keywords": [],
-"mesh": [
-"Adaptation, Psychological",
-"Adolescent",
-"Adult",
-"Affect",
-"Behavior",
-"Binge-Eating Disorder",
-"Depression",
-"Eating",
-"Energy Intake",
-"Female",
-"Health Knowledge, Attitudes, Practice",
-"Humans",
-"Middle Aged"
-],
-"pub_types": [
-"Journal Article",
-"Randomized Controlled Trial"
-],
-"oa_status": "bronze",
-"oa_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0195666309005376",
-"landing_url": "https://doi.org/10.1016/j.appet.2009.06.002",
-"cited_by_count": 47,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:30:12Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Randomized manipulation of expectations and mood tested their causal effects on caloric intake in binge eating disorder, making expectation/context effects the study focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"appetite_metabolism"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"emotion_anxiety_regulation"
-],
-"moderators": [
-"expectation_level",
-"mood_anxiety_state"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Randomized women with binge eating disorder to confirmed-versus-disconfirmed expectations and to positive versus negative mood; overall manipulations did not change caloric intake, though baseline food-expectancy and depression status moderated intake.",
-"key_finding": "Expectation or mood manipulations had no main effect on calories consumed, but higher baseline expectations predicted greater intake after positive mood, and depressed participants ate more after negative mood than non-depressed participants.",
-"sample_size": 73,
-"free_keywords": [
-"binge eating disorder",
-"caloric intake",
-"mood induction",
-"taste test",
-"expectation manipulation",
-"women"
-],
-"usage": {
-"input_tokens": 705,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1049,
-"cost_usd": 0.00242
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-06-09",
-"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.neuroimage.2009.05.087",
@@ -13875,24 +13500,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1001/archophthalmol.2009.101",
 "cited_by_count": 6,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:30:29Z",
+"classified_at": "2026-09-06T17:54:05Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Retrospective matched analysis explicitly compared sham versus no-treatment controls to test whether sham masking altered visual-acuity outcomes, addressing trial methodology about placebo/sham controls.",
+"confidence": 0.85,
+"rationale": "Retrospective matched comparison explicitly tested differences between sham (placebo) and no-treatment control arms, making placebo/sham response the analytic focus (placebo-effect question).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "secondary_analysis",
 "species": "human",
@@ -13909,8 +13534,8 @@
 "clinical_endpoint"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
-"observational"
+"placebo_vs_no_treatment_arm",
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "mixed_inconsistent"
@@ -13925,24 +13550,23 @@
 "sham_device"
 ]
 },
-"summary": "Compared 2-year visual acuity outcomes in matched participants assigned to sham versus no-treatment control arms from randomized trials and found no important difference in fully matched pairs but some differences in partially matched pairs.",
-"key_finding": "Fully matched pairs showed no important difference in 2-year visual acuity between sham and no-treatment controls, whereas partially matched pairs showed some differences.",
-"sample_size": 321,
+"summary": "Compared visual acuity outcomes in matched sham versus no-treatment controls from randomized trials and found no important difference in fully matched pairs but some differences in partially matched pairs.",
+"key_finding": "Fully matched pairs showed no important difference in 2-year visual acuity between sham and no-treatment controls, while partially matched pairs showed some differences.",
+"sample_size": null,
 "free_keywords": [
-"age-related macular degeneration",
-"verteporfin",
 "visual acuity",
-"sham control",
-"masking",
-"matched-pair analysis",
-"randomized trials"
+"macular degeneration",
+"sham laser",
+"masked trial",
+"retrospective matching",
+"verteporfin"
 ],
 "usage": {
 "input_tokens": 785,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 913,
-"cost_usd": 0.00217
+"output_tokens": 909,
+"cost_usd": 0.00216
 }
 },
 "sources": [
@@ -14487,11 +14111,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:28:37Z",
+"classified_at": "2026-09-06T17:54:05Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The study experimentally manipulated prefitting counseling/demonstration to alter expectations and tested effects on hearing-aid outcomes, so expectation/context effects were a stated focus.",
+"confidence": 0.87,
+"rationale": "Randomized manipulation of prefitting counseling/demonstration (expectation/context) was the focus and was tested for causal effects on hearing-aid outcomes, so this is an expectancy/context placebo-type effect on an active treatment.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14502,7 +14126,8 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"healthy_older_adult",
+"healthy_adult"
 ],
 "age_group": [
 "adults",
@@ -14515,7 +14140,7 @@
 "outcome_measures": [
 "self_report",
 "behavioral_performance",
-"clinician_rated"
+"autonomic"
 ],
 "design": [
 "parallel_groups_rct"
@@ -14526,37 +14151,35 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
+"treatment_cues_dose_route",
+"provider_patient_interaction"
 ],
 "moderators": [
 "expectation_level",
-"treatment_characteristics",
 "none_reported"
 ],
 "intervention_type": [
 "verbal_suggestion_only",
+"topical_cream",
 "other"
 ]
 },
-"summary": "Randomized counseling with or without real-world listening demonstrations altered expectations slightly and positive expectations predicted better hearing-aid satisfaction after 8–10 weeks; fine-tuning also improved outcomes.",
-"key_finding": "Positive prefitting expectations were associated with more positive hearing-aid outcomes; demonstration versus verbal-only counseling did not differentially change expectations.",
+"summary": "Randomized comparison found prefitting counseling with or without real-world listening demonstration modestly changed expectations and that more positive expectations predicted better hearing-aid satisfaction and outcomes after 8–10 weeks.",
+"key_finding": "Positive pre-fitting expectations were associated with more positive self-reported hearing-aid outcomes; counseling modestly changed expectations and fine-tuning improved outcomes.",
 "sample_size": 60,
 "free_keywords": [
-"hearing aids",
+"hearing aid",
 "prefitting counseling",
-"expectations",
 "Beltone AVE",
-"satisfaction",
-"speech perception",
-"fine-tuning"
+"patient satisfaction",
+"speech perception"
 ],
 "usage": {
 "input_tokens": 1116,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1109,
-"cost_usd": 0.00264
+"output_tokens": 980,
+"cost_usd": 0.00239
 }
 },
 "sources": [
@@ -14564,127 +14187,6 @@
 ],
 "date_added": "2009-05-01",
 "private_pdf": null
-},
-{
-"id": "doi:10.15288/jsad.2009.70.391",
-"title": "Marijuana primes, marijuana expectancies, and arithmetic efficiency.",
-"authors": [
-"Hicks JA",
-"Pedersen SL",
-"McCarthy DM",
-"Friedman RS"
-],
-"journal": "Journal of studies on alcohol and drugs",
-"journal_abbrev": "J Stud Alcohol Drugs",
-"year": 2009,
-"date": "2009-05-01",
-"doi": "10.15288/jsad.2009.70.391",
-"pmid": "19371490",
-"pmcid": "PMC2670744",
-"openalex_id": "https://openalex.org/W2093726371",
-"abstract": "OBJECTIVE: Previous research has shown that primes associated with alcohol influence behavior consistent with specific alcohol expectancies. The present study examined whether exposure to marijuana-related primes and marijuana expectancies interact to produce similar effects. Specifically, the present study examined whether marijuana primes and marijuana expectancies regarding cognitive and behavioral impairment interact to influence performance on an arithmetic task. METHOD: Two independent samples (N = 260) of undergraduate students (both marijuana users and nonusers) first completed measures of marijuana-outcome expectancies associated with cognitive and behavioral impairment and with general negative effects (Sample 2). Later in the semester, participants were exposed to marijuana-related (or neutral) primes and then completed an arithmetic task. RESULTS: Results from Sample 1 indicated that participants who were exposed to marijuana-themed magazine covers performed more poorly on the arithmetic task if they expected that marijuana would lead to cognitive and behavioral impairment. Results from Sample 2 indicated that, for marijuana users, cognitive and behavioral impairment expectancies, but not expectancies regarding general negative effects, similarly moderated arithmetic performance for participants exposed to marijuana-related words. CONCLUSIONS: Results support the hypothesis that the implicit activation of specific marijuana-outcome expectancies can influence cognitive processes. Implications for research on marijuana are discussed.",
-"keywords": [],
-"mesh": [
-"Adolescent",
-"Affect",
-"Attitude",
-"Cognition",
-"Female",
-"Humans",
-"Male",
-"Marijuana Smoking",
-"Mathematical Concepts",
-"Young Adult"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, N.I.H., Extramural"
-],
-"oa_status": "bronze",
-"oa_pdf_url": "https://www.jsad.com/doi/epdf/10.15288/jsad.2009.70.391?role=tab",
-"landing_url": "https://doi.org/10.15288/jsad.2009.70.391",
-"cited_by_count": 3,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:32:15Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Experimental manipulation of marijuana-related primes interacted with measured expectancies to causally influence cognitive performance, meeting criteria for expectancy-driven placebo/nocebo effects.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"cognition"
-],
-"outcome_measures": [
-"behavioral_performance"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"prior_experience",
-"expectation_level"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Found that marijuana-related primes impaired arithmetic performance for participants who endorsed expectancies that marijuana causes cognitive/behavioral impairment.",
-"key_finding": "Primes referencing marijuana reduced arithmetic performance among participants with stronger cognitive/behavioral impairment expectancies (N = 260 across two samples).",
-"sample_size": 260,
-"free_keywords": [
-"marijuana",
-"priming",
-"expectancy",
-"arithmetic",
-"college students",
-"cognitive impairment",
-"implicit activation"
-],
-"usage": {
-"input_tokens": 701,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1012,
-"cost_usd": 0.00235
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-05-01",
-"private_pdf": {
-"available": true,
-"store_key": "hicks_2009_marijuana_primes_marijuana_expectancies_and.pdf",
-"source": "downloaded",
-"sha256": "251458220f1c3480"
-}
 },
 {
 "id": "doi:10.1038/clpt.2009.32",
@@ -15784,18 +15286,18 @@
 "Journal Article",
 "Meta-Analysis"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:51:48Z",
+"classified_at": "2026-09-03T04:07:35Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names the influence of expectations on antidepressant response, indicating placebo/expectancy effects are the paper's subject (meta-analysis of antidepressant/placebo trials).",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract available and only bibliographic metadata (title and MeSH terms) suggest a meta-analytic focus on expectation/placebo in antidepressant trials, so inclusion is plausible but not verifiable from available text.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -15814,34 +15316,45 @@
 "condition_domain": [
 "mood_depression"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"self_report"
+],
 "design": [
 "meta_analytic"
 ],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "verbal_suggestion_expectation",
 "trial_methodology_placebo_response"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"trial_characteristics",
+"expectation_level"
+],
+"intervention_type": [
+"active_drug_context_manipulation",
+"verbal_suggestion_only"
+]
 },
-"summary": "Meta-analysis that examined how patient expectations influenced responses to antidepressant treatment.",
+"summary": "No abstract available; title and MeSH terms indicated a meta-analysis examining how expectations influenced antidepressant response and placebo effects in major depression trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "antidepressant",
-"expectation",
-"placebo response",
-"depression",
-"randomized trials"
+"expectancy",
+"placebo",
+"major depressive disorder",
+"randomized controlled trials",
+"meta-analysis"
 ],
 "usage": {
-"input_tokens": 592,
+"input_tokens": 414,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 812,
-"cost_usd": 0.00192
+"output_tokens": 897,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -18563,17 +18076,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:33:53Z",
+"classified_at": "2026-09-06T17:53:44Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study experimentally manipulated threat expectancy and attentional training and tested causal effects on pain ratings and thresholds, so negative expectancy/nocebo-like effects were an explicit focus.",
+"rationale": "Study experimentally manipulated threat expectancy (high vs low) and attentional retraining to causally alter pain perception, so expectation-induced (nocebo-like) effects were the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"nocebo_effect",
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -18594,14 +18108,12 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"mixed_inconsistent",
 "significant_subjective",
 "significant_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal",
-"emotion_anxiety_regulation"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "expectation_level"
@@ -18611,24 +18123,24 @@
 "other"
 ]
 },
-"summary": "Randomized undergraduates to threat-inducing vs -alleviating information and attentional retraining; found pain-directed training and high threat expectancy increased pain ratings and produced faster pain detection but did not change tolerance.",
-"key_finding": "Pain-attention retraining and threat induction increased self-reported pain and earlier pain registration (faster threshold), but tolerance was unchanged.",
+"summary": "Randomized undergraduates received threat-inducing or threat-alleviating information and attentional retraining; threat induction and pain-focused retraining increased early pain ratings and faster pain detection during a cold-pressor task.",
+"key_finding": "Threat-inducing information and attention retraining toward pain both increased early pain ratings and reduced time to pain detection; tolerance did not differ (N=104).",
 "sample_size": 104,
 "free_keywords": [
 "cold-pressor",
-"attentional_bias",
+"attentional bias",
 "attention retraining",
-"threat induction",
+"threat expectancy",
+"undergraduate",
 "pain threshold",
-"pain tolerance",
-"undergraduate"
+"pain tolerance"
 ],
 "usage": {
 "input_tokens": 793,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 981,
-"cost_usd": 0.00231
+"output_tokens": 1033,
+"cost_usd": 0.00241
 }
 },
 "sources": [
@@ -20223,123 +19735,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1007/s10926-008-9161-0",
-"title": "Systematic review of the ability of recovery expectations to predict outcomes in non-chronic non-specific low back pain.",
-"authors": [
-"Iles RA",
-"Davidson M",
-"Taylor NF",
-"O'Halloran P"
-],
-"journal": "Journal of occupational rehabilitation",
-"journal_abbrev": "J Occup Rehabil",
-"year": 2009,
-"date": "2009-01-06",
-"doi": "10.1007/s10926-008-9161-0",
-"pmid": "19127345",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2003635729",
-"abstract": "OBJECTIVE: The aim of the current review was to determine the predictive strength of low recovery expectations for activity limitation outcomes in people with non-chronic NSLBP. METHODS: A systematic review of prognostic studies was performed. Included studies took baseline measures in the non-chronic phase of NSLBP, included at least one baseline measure of recovery expectation, defined as a prediction or judgement made by the person with NSLBP regarding any aspect of prognosis, and studied a sample with at least 75% of participants with NSLBP. RESULTS: Recovery expectations measured using a time-based, specific single-item tool produced a strong prediction of work outcome. Recovery expectations measured within 3 weeks of NSLBP onset provide a strong prediction of outcome. It is not clear whether predictive strength of recovery expectations is affected by the length of time between the expectation measure and outcome measure. CONCLUSION: Recovery expectations when measured using a specific, time-based measure within the first 3 weeks of NSLBP can identify people at risk of poor outcome.",
-"keywords": [],
-"mesh": [
-"Employment",
-"Humans",
-"Low Back Pain",
-"Odds Ratio",
-"Outcome Assessment, Health Care",
-"Patients",
-"Prognosis",
-"Recovery of Function"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't",
-"Systematic Review"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1007/s10926-008-9161-0",
-"cited_by_count": 184,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:35:08Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Systematic review explicitly examined recovery expectations (a form of expectancy) as a predictor of health outcomes in non-chronic low back pain, meeting inclusion for measured expectation effects on clinical outcomes.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "systematic_review",
-"species": "human",
-"population": [
-"acute_clinical_pain",
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Systematic review found that patients' recovery expectations, measured early with specific time-based items, predicted worse activity limitation and work outcomes in non-chronic non-specific low back pain.",
-"key_finding": "Found that time-based single-item recovery expectations measured within 3 weeks strongly predicted work and activity outcomes.",
-"sample_size": null,
-"free_keywords": [
-"low back pain",
-"recovery expectations",
-"prognosis",
-"work outcome",
-"activity limitation",
-"non-chronic"
-],
-"usage": {
-"input_tokens": 666,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 983,
-"cost_usd": 0.00228
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-01-06",
-"private_pdf": null
-},
-{
 "id": "doi:10.1186/1471-2288-9-1",
 "title": "Spontaneous improvement in randomised clinical trials: meta-analysis of three-armed trials comparing no treatment, placebo and active intervention.",
 "authors": [
@@ -20526,11 +19921,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T19:28:09Z",
+"classified_at": "2026-09-06T17:53:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Case report explicitly about a false-positive reaction to placebo during a double-blind placebo-controlled food challenge, making placebo/nocebo response the paper's focus.",
+"rationale": "Title indicates a case report focused on a false-positive placebo reaction during a double-blind placebo-controlled food challenge, making the placebo/nocebo response the paper's subject (case report of placebo-induced adverse response).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -20547,11 +19942,13 @@
 "children_adolescents"
 ],
 "condition_domain": [
-"other"
+"immune_inflammation",
+"adverse_events"
 ],
 "outcome_measures": [
 "clinician_rated",
-"immune_inflammatory"
+"immune_inflammatory",
+"self_report"
 ],
 "design": [
 "single_group_pre_post"
@@ -20569,23 +19966,23 @@
 "placebo_food_drink"
 ]
 },
-"summary": "Reported a false-positive placebo reaction (urticaria) in an infant during a double-blind placebo-controlled food challenge.",
-"key_finding": "Observed objective urticarial reaction after administration of placebo during DBPCFC in a single infant case.",
+"summary": "Reported a case of a false-positive placebo reaction (urticaria) during a double-blind placebo-controlled food challenge in an infant male.",
+"key_finding": "Documented objective urticarial reaction to placebo during DBPCFC (false-positive placebo/nocebo response) in a single pediatric case.",
 "sample_size": 1,
 "free_keywords": [
 "double-blind placebo-controlled food challenge",
 "egg",
 "urticaria",
 "false positive",
-"infant",
-"IgE"
+"placebo reaction",
+"infant"
 ],
 "usage": {
 "input_tokens": 486,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1009,
-"cost_usd": 0.00229
+"output_tokens": 834,
+"cost_usd": 0.00194
 }
 },
 "sources": [
@@ -20878,11 +20275,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:34:08Z",
+"classified_at": "2026-09-06T17:53:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment tested classical conditioning of taste aversion and immunosuppression, directly studying conditioning mechanisms relevant to placebo/nocebo phenomena (mechanisms of conditioned responses).",
+"confidence": 0.85,
+"rationale": "Animal experiment that explicitly tested classical conditioning of taste-aversion and conditioned immunosuppression, so placebo/nocebo-relevant conditioning mechanisms were the study focus (inclusion rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -20892,22 +20289,25 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
-"sensory_perception",
-"immune_inflammation"
+"immune_inflammation",
+"sensory_perception"
 ],
 "outcome_measures": [
 "behavioral_performance",
 "immune_inflammatory"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
-"significant_objective",
-"null_objective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
@@ -20920,23 +20320,24 @@
 "other"
 ]
 },
-"summary": "Found that saccharin taste-aversion conditioning occurred but conditioned suppression of antibody responses did not occur under partial water deprivation in mice.",
-"key_finding": "Conditioned taste aversion was produced by pairing saccharin with low-dose cyclophosphamide, whereas conditioned immunosuppression (reduced antibody response) was not observed under the same partial water-deprivation protocol.",
+"summary": "Tested classical conditioning in mice by pairing saccharin/sucrose with cyclophosphamide and found conditioned taste aversion but not conditioned suppression of antibody responses under partial water deprivation.",
+"key_finding": "Conditioned aversion to saccharin was produced, but conditioned immunosuppression (decreased antibody response) was not observed under the partial water-deprivation protocol.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
 "saccharin",
-"taste aversion",
+"conditioned taste aversion",
 "conditioned immunosuppression",
 "CD1 mice",
-"water deprivation"
+"water deprivation",
+"antibody response"
 ],
 "usage": {
 "input_tokens": 651,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1234,
-"cost_usd": 0.00278
+"output_tokens": 1157,
+"cost_usd": 0.00262
 }
 },
 "sources": [
@@ -21326,130 +20727,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1097/jcn.0b013e3181ac8a3c",
-"title": "Expectations, anxiety, depression, and physical health status as predictors of recovery in open-heart surgery patients.",
-"authors": [
-"Chunta KS"
-],
-"journal": "The Journal of cardiovascular nursing",
-"journal_abbrev": "J Cardiovasc Nurs",
-"year": 2009,
-"date": "2009-01-01",
-"doi": "10.1097/jcn.0b013e3181ac8a3c",
-"pmid": "19858954",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2042753685",
-"abstract": "BACKGROUND AND OBJECTIVES: Recovery after open-heart surgery is a complex process that presents psychosocial and physical challenges that continue well after discharge. The purpose of this study was to examine the relationship among expectations, anxiety, depression, and physical health status (PHS) and to determine predictors of postoperative PHS in open-heart surgery patients. PARTICIPANTS AND METHODS: A convenience sample (N = 54) was recruited from 2 hospitals in rural regions from 2 different mid-Atlantic states. The sample included participants who underwent coronary artery bypass graft or valve replacement surgery for the first time. The study used a longitudinal design, and data were collected preoperatively in the hospital or surgeons' offices and 4 weeks postoperatively by telephone interviews. Participants were interviewed using the following questionnaires: the Future Expectations Regarding Life with Heart Disease scale, the Hospital Anxiety and Depression scale, and the Medical Outcomes Study 36-Item Short Form Health Survey. Repeated-measures analysis of variance, Pearson product-moment correlations, and multiple regression were used for data analyses. RESULTS AND CONCLUSIONS: Statistical analysis revealed that anxiety (P = .002) and depression (P = .026) scores decreased postoperatively. Significant relationships were found among the preoperative and postoperative variables: expectations, anxiety, depression, and PHS. Analyses also found that preoperative expectations, anxiety, depression, and PHS contributed 38% of the variance of postoperative PHS (P < .001). However, the postoperative variables were not significant predictors of postoperative PHS (P = .075). The findings support the need for interventions to assist patients in developing realistic expectations and for clinicians to screen patients for anxiety and depression before and after surgery. Future research needs to measure PHS at various times postoperatively to identify continued limitations after surgery.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Aged, 80 and over",
-"Anxiety",
-"Attitude to Health",
-"Coronary Artery Bypass",
-"Depression",
-"Female",
-"Health Status",
-"Heart Valve Prosthesis Implantation",
-"Hospitals, Rural",
-"Humans",
-"Longitudinal Studies",
-"Male",
-"Middle Aged",
-"Multivariate Analysis",
-"Pennsylvania",
-"Recovery of Function",
-"Regression Analysis",
-"West Virginia"
-],
-"pub_types": [
-"Journal Article",
-"Multicenter Study"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1097/jcn.0b013e3181ac8a3c",
-"cited_by_count": 45,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:25:54Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The study explicitly measured patients' expectations as a predictor of postoperative physical health status, meeting the inclusion rule that expectation/context measures predicting health outcomes count as placebo-related research.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"global_health_qol",
-"cardiovascular_bp"
-],
-"outcome_measures": [
-"self_report",
-"other"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Measured preoperative expectations, anxiety, depression, and physical health status and found preoperative expectations, anxiety, depression and PHS together predicted 38% of variance in postoperative physical health status.",
-"key_finding": "Preoperative expectations, anxiety, depression, and baseline PHS explained 38% of variance in 4-week postoperative physical health status.",
-"sample_size": 54,
-"free_keywords": [
-"coronary artery bypass",
-"valve replacement",
-"sf-36",
-"future expectations scale",
-"hospital anxiety and depression scale",
-"postoperative recovery"
-],
-"usage": {
-"input_tokens": 860,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1054,
-"cost_usd": 0.00247
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2009-01-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1097/gme.0b013e318199d5e6",
 "title": "Predictors of placebo response in a randomized, controlled trial of phytotherapy in menopause.",
 "authors": [
@@ -21736,20 +21013,20 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:51:56Z",
+"classified_at": "2026-09-03T04:08:21Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly poses placebo as a possible explanation for singing warm-ups, indicating placebo phenomena are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.55,
+"rationale": "No abstract or full text provided and the title/questions suggest placebo is discussed but it's unclear whether placebo effects were the explicit focus or empirically studied.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -21757,32 +21034,52 @@
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Considered whether benefits of singing warm-ups reflect physiological or psychological mechanisms, including placebo effects.",
+"summary": "Examines whether benefits from singing warm-ups arise from physiological, psychological, or placebo mechanisms.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"singing warm-ups",
-"voice training",
+"singing",
+"warm-ups",
+"voice",
 "voice quality",
 "placebo",
-"psychological mechanisms"
+"placebo effect"
 ],
 "usage": {
-"input_tokens": 561,
+"input_tokens": 383,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 498,
-"cost_usd": 0.00128
+"output_tokens": 803,
+"cost_usd": 0.00185
 }
 },
 "sources": [

@@ -251,18 +251,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:38:54Z",
+"classified_at": "2026-09-03T04:49:18Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names placebos and pain in relation to physicians, indicating placebo phenomena and their clinical/ethical implications are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text provided; title indicates discussion of placebos in clinical pain but insufficient information to determine whether empirical data or a commentary/review.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -271,22 +271,25 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
-"clinicians_providers"
+"not_applicable"
 ],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -295,22 +298,21 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed the role of placebos in pain management and the relation between placebos and physicians.",
+"summary": "No abstract available; likely discussed placebos, pain and physicians clinically or historically but insufficient detail to classify as empirical.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "beecher",
-"1962",
-"clinical use",
-"physician attitudes",
-"pain management"
+"placebo history",
+"analgesia",
+"physician attitudes"
 ],
 "usage": {
-"input_tokens": 544,
+"input_tokens": 366,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 576,
-"cost_usd": 0.00144
+"output_tokens": 736,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -572,11 +574,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:33:49Z",
+"classified_at": "2026-09-06T18:01:39Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Animal experiment testing classical conditioning of immune/arthritis outcomes is a mechanistic placebo-relevant study (conditioning of physiological responses).",
+"confidence": 0.7,
+"rationale": "Animal experiment explicitly tested conditioning effects on development of nephrotoxic serum arthritis (classical conditioning of immune/inflammatory outcomes), meeting inclusion for placebo/nocebo mechanism studies in animals.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -586,23 +588,20 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory"
+"immune_inflammatory",
+"clinical_endpoint"
 ],
 "design": [
 "animal_experiment"
 ],
 "effects": [
-"not_applicable"
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning"
@@ -614,24 +613,23 @@
 "other"
 ]
 },
-"summary": "Tested whether classical conditioning with mineral cues (e.g., potassium, sodium chloride) altered development of nephrotoxic serum arthritis in rabbits.",
-"key_finding": null,
+"summary": "Tested classical conditioning of minerals on development of nephrotoxic serum arthritis in rabbits and reported conditioned effects on disease development.",
+"key_finding": "Found that pairing certain minerals with immunological challenge altered subsequent arthritis development in rabbits (conditioning effect reported).",
 "sample_size": null,
 "free_keywords": [
+"conditioned immunomodulation",
 "nephrotoxic serum arthritis",
+"rabbit",
 "potassium",
 "sodium chloride",
-"conditioned immunomodulation",
-"rabbits",
-"lagomorpha",
-"conditioning"
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 471,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 941,
-"cost_usd": 0.00215
+"output_tokens": 777,
+"cost_usd": 0.00182
 }
 },
 "sources": [
@@ -672,29 +670,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:39:14Z",
+"classified_at": "2026-09-03T04:49:25Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names the impact of 'placebo', indicating the placebo response/effect was an object of study rather than merely a control.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates a trial comparing perphenazine and placebo but it's unclear whether placebo/nocebo phenomena were an explicit focus or merely a control.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"pediatric_clinical"
+"other_clinical"
 ],
 "age_group": [
 "children_adolescents"
@@ -703,11 +699,15 @@
 "other"
 ],
 "outcome_measures": [],
-"design": [],
+"design": [
+"parallel_groups_rct"
+],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
+"mechanisms": [
+"other"
+],
 "moderators": [
 "none_reported"
 ],
@@ -715,22 +715,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Compared perphenazine and placebo in committed delinquent boys and reported effects associated with placebo.",
+"summary": "No abstract available; reported a comparison of perphenazine and placebo in committed delinquent boys, but insufficient information to determine whether placebo effects were an explicit focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "perphenazine",
 "juvenile delinquency",
-"delinquent boys",
-"psychiatry",
-"1962"
+"antipsychotic",
+"placebo",
+"1962",
+"male adolescents"
 ],
 "usage": {
-"input_tokens": 567,
+"input_tokens": 389,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 693,
-"cost_usd": 0.00167
+"output_tokens": 772,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -874,31 +875,39 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:39:27Z",
+"classified_at": "2026-09-03T04:49:28Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names placebo reactions in psychotherapy, indicating placebo phenomena are the paper's subject (placebo responses in a psychotherapy context).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Title explicitly concerns placebo reactions in psychotherapy but no abstract or full text provided to determine whether this was empirical, a review, or a conceptual discussion, so inclusion cannot be judged.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -906,9 +915,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context",
-"provider_patient_interaction"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -917,23 +924,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed placebo reactions in psychotherapy, describing how suggestion, therapeutic context, and related factors influence patient responses.",
+"summary": "No abstract available; paper's title indicated it discussed placebo reactions in psychotherapy, but methods and findings were not retrievable from the provided record.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychotherapy",
-"placebo reaction",
-"placebo",
-"suggestion",
-"expectancy",
-"psychosurgery"
+"placebo reactions",
+"psychosurgery",
+"1962",
+"placebos"
 ],
 "usage": {
-"input_tokens": 549,
+"input_tokens": 371,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00164
+"output_tokens": 751,
+"cost_usd": 0.00174
 }
 },
 "sources": [
@@ -1289,18 +1295,18 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 95,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:39:47Z",
+"classified_at": "2026-09-04T00:16:10Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names placebos and suggests a model/theoretical design about drugs and placebos, meeting inclusion for placebo-focused scholarship (theory/model).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text available; the title indicates a conceptual/model review of drugs and placebos but provides insufficient information to judge whether placebo/nocebo effects were an explicit empirical focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1308,43 +1314,41 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
 "history_conceptual"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Proposes a model design relating drugs and placebos, discussing placebo-related concepts and methodology.",
+"summary": "Likely presented a conceptual or model-based review linking drug effects and placebo phenomena but no abstract or full text was available to confirm scope or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"model design",
-"placebo theory",
-"drugs and placebos",
-"psychological reports",
-"1962"
+"drug-placebo model",
+"conceptual review",
+"1962",
+"psychological reports"
 ],
 "usage": {
-"input_tokens": 542,
-"cache_read_input_tokens": 5888,
+"input_tokens": 158,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 603,
-"cost_usd": 0.00149
+"output_tokens": 656,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -1395,28 +1399,40 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:40:03Z",
+"classified_at": "2026-09-06T18:01:48Z",
 "screening": {
 "decision": "include",
-"confidence": 0.65,
-"rationale": "Title explicitly addresses conditioning (a placebo/nocebo-relevant learning mechanism) producing adrenaline-induced anorexia, so placebo/nocebo mechanisms are the paper's focus.",
+"confidence": 0.6,
+"rationale": "Study appears to report an experimental classical-conditioning manipulation of an epinephrine-induced anorexia response in humans, a learning mechanism relevant to placebo/nocebo effects (conditioning), so it meets criterion for mechanism studies.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"other_clinical"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "appetite_metabolism"
 ],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"outcome_measures": [
+"behavioral_performance",
+"autonomic",
+"neuroendocrine"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_objective"
+],
 "mechanisms": [
 "classical_conditioning"
 ],
@@ -1427,24 +1443,22 @@
 "other"
 ]
 },
-"summary": "Investigated conditioning of adrenaline-induced anorexia (learning effects of epinephrine on feeding) in humans.",
+"summary": "Reported classical conditioning of an epinephrine-induced anorexia response in humans, demonstrating learned suppression of feeding after drug–cue pairings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "epinephrine",
-"anorexia",
-"feeding",
+"conditioned anorexia",
 "classical conditioning",
-"learning",
-"1962",
-"russek"
+"feeding",
+"1962"
 ],
 "usage": {
-"input_tokens": 553,
+"input_tokens": 425,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1018,
-"cost_usd": 0.00232
+"output_tokens": 977,
+"cost_usd": 0.00221
 }
 },
 "sources": [
@@ -1680,52 +1694,71 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:40:26Z",
+"classified_at": "2026-09-03T04:49:36Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states the paper is about the therapeutic effect of placebos, so placebo effects are the subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "Title explicitly concerns the therapeutic significance of placebos but no abstract or full text was available to determine whether it presented original data, a review, or commentary, so inclusion cannot be judged.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discussed the therapeutic significance of placebo effects in clinical contexts.",
+"summary": "Insufficient information was available; the paper's title addressed the therapeutic significance of placebos but no abstract was provided to determine whether it reported data or was a review/commentary.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"therapeutic effect",
+"placebo effect",
+"therapeutic significance",
+"history",
 "1962",
-"oral surgery"
+"oral surgery journal"
 ],
 "usage": {
-"input_tokens": 549,
+"input_tokens": 371,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 516,
-"cost_usd": 0.00132
+"output_tokens": 696,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -1776,11 +1809,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:34:13Z",
+"classified_at": "2026-09-06T18:01:40Z",
 "screening": {
 "decision": "include",
 "confidence": 0.6,
-"rationale": "The title indicates an animal experiment explicitly investigating classical conditioning of cortisone effects on thyroid homograft outcomes, meeting criterion 3 (animal model with cue/context contrast).",
+"rationale": "Animal experiment explicitly tested a conditioning effect of cortisone on grafting (classical conditioning of drug effects), which fits inclusion of animal models of placebo-related learning mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1800,27 +1833,26 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"clinical_endpoint"
+"clinical_endpoint",
+"immune_inflammatory"
 ],
 "design": [
 "animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"not_applicable"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neurobiology_other_neurochemical"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Studied classical conditioning of intermittent cortisone treatment on thyroid homograft outcomes in rats.",
+"summary": "Tested whether non-continuous cortisone treatment could be conditioned to influence survival of thyroid homografts in rats.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -1828,15 +1860,14 @@
 "conditioned immunosuppression",
 "thyroid homograft",
 "rat",
-"transplantation",
-"classical conditioning"
+"transplantation"
 ],
 "usage": {
 "input_tokens": 453,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 944,
-"cost_usd": 0.00215
+"output_tokens": 889,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -1991,25 +2022,23 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf01227009",
 "cited_by_count": 1,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:40:38Z",
+"classified_at": "2026-09-06T18:01:39Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly reports a classical conditioning procedure (conditioned reflex) using nicotinic acid vascular reactions in mental patients, directly studying conditioning mechanisms relevant to placebo/nocebo research.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or methods available and the title does not explicitly state that placebo/nocebo phenomena were the study focus; insufficient information to judge inclusion.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
@@ -2023,36 +2052,29 @@
 ],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"classical_conditioning"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Studied conditioned reflexes using the vascular reaction to nicotinic acid in psychiatric patients to investigate nervous system activity.",
+"summary": "No abstract available; the title indicated use of a classical conditioning procedure on the vascular reaction to niacin in psychiatric patients to study nervous activity.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"nicotinic acid",
 "niacin",
-"conditioned reflex",
+"nicotinic acid",
+"classical conditioning",
 "vascular reaction",
 "psychiatric patients",
-"classical conditioning"
+"conditioned reflex",
+"1962"
 ],
 "usage": {
-"input_tokens": 594,
+"input_tokens": 466,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 820,
-"cost_usd": 0.00194
+"output_tokens": 769,
+"cost_usd": 0.0018
 }
 },
 "sources": [

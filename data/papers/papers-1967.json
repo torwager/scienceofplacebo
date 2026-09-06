@@ -158,25 +158,23 @@
 "Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:49:26Z",
+"classified_at": "2026-09-03T04:47:17Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly frames placebo as a prognosticator, indicating the paper studied placebo responses as the subject.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title alone does not allow determination whether placebo effects/responses were the study focus or merely mentioned, so inclusion cannot be judged.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -185,27 +183,27 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Title suggested that placebo response was examined as a prognostic indicator of outcome.",
+"summary": "No abstract available; title suggests the paper considered placebo as a prognostic indicator in psychiatric/neurological patients, but full text is needed to confirm focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo as prognosticator",
 "perphenazine",
+"placebo",
+"prognosis",
+"mental disorders",
 "1967",
-"mental disorders"
+"clinical trial"
 ],
 "usage": {
-"input_tokens": 571,
-"cache_read_input_tokens": 5888,
+"input_tokens": 265,
+"cache_read_input_tokens": 6016,
 "cache_creation_input_tokens": 0,
-"output_tokens": 661,
-"cost_usd": 0.00161
+"output_tokens": 531,
+"cost_usd": 0.00128
 }
 },
 "sources": [
@@ -456,69 +454,53 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:49:41Z",
+"classified_at": "2026-09-03T04:48:29Z",
 "screening": {
-"decision": "include",
+"decision": "uncertain",
 "confidence": 0.6,
-"rationale": "Title explicitly states the paper examined effects of a placebo (versus an acetaminophen-salicylamide combination) on moods, emotions, and motivations, making placebo responses the focus.",
+"rationale": "Title names placebo vs drug comparison but no abstract or methods accessible to determine whether placebo/placebo-response was a primary focus versus serving as a control for drug efficacy.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression"
-],
-"outcome_measures": [
-"self_report"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined effects of a placebo and an acetaminophen-salicylamide combination on moods, emotions, and motivations in adults.",
+"summary": "Insufficient abstract available; 1967 randomized/comparative trial compared placebo and an acetaminophen-salicylamide combination on moods, emotions, and motivations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"acetaminophen",
-"salicylamide",
+"acetaminophen-salicylamide",
 "mood",
 "emotion",
 "motivation",
-"placebo"
+"placebo",
+"comparative trial",
+"1967"
 ],
 "usage": {
-"input_tokens": 589,
+"input_tokens": 411,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1010,
-"cost_usd": 0.00231
+"output_tokens": 631,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -567,73 +549,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037/h0025043",
 "cited_by_count": 42,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:13:41Z",
+"classified_at": "2026-09-06T18:01:20Z",
 "screening": {
-"decision": "include",
-"confidence": 0.78,
-"rationale": "Title states the paper experimentally tested the effect of suggestion on experimental pain, making placebo/expectation the explicit focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Only title available; likely studies suggestion effects on experimental pain but abstract/methods are missing so it's unclear whether placebo/nocebo phenomena were the explicit focus or how they were manipulated/measured.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Tested whether verbal suggestion altered experimentally induced pain in human participants and found that suggestion influenced pain reports.",
-"key_finding": "Verbal suggestion changed subjective pain ratings (validation of suggestion effects on experimental pain).",
+"summary": "No abstract available; title implied examination of suggestion effects on experimental pain, but methods and whether placebo/nocebo effects were the explicit focus were not reported.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "suggestion",
 "experimental pain",
 "validation study",
-"pain ratings",
-"1967"
+"Wolff 1967",
+"psychology"
 ],
 "usage": {
 "input_tokens": 433,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 656,
-"cost_usd": 0.00157
+"output_tokens": 572,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -994,76 +954,52 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:50:13Z",
+"classified_at": "2026-09-03T04:47:54Z",
 "screening": {
-"decision": "include",
-"confidence": 0.78,
-"rationale": "Title explicitly lists placebo as one of the treatments whose effects on mood, emotions and motivation were examined, making placebo response/effects the study focus.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or methods provided; title names placebo but available information is insufficient to judge whether placebo/nocebo was an explicit object of study or merely a control.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression",
-"other"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Compared effects of placebo and two active drugs on moods, emotions, and motivation in adult participants.",
+"summary": "No abstract available; title reported a 1967 controlled trial comparing placebo with Dexamyl and Lucofen on moods, emotions, and motivations, but methods and outcomes were not provided.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dexamyl",
 "lucofen",
-"amobarbital",
-"chlorphentermine",
-"dextroamphetamine",
+"amphetamines",
 "mood",
-"emotion",
-"motivation"
+"motivation",
+"1967"
 ],
 "usage": {
-"input_tokens": 599,
+"input_tokens": 421,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00184
+"output_tokens": 864,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -1207,73 +1143,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1176/ajp.123.12.1577",
 "cited_by_count": 0,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:50:26Z",
+"classified_at": "2026-09-06T18:01:25Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly states hypnotic suggestion as a treatment for facial pain, indicating suggestion/expectation effects on symptoms are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title describes hypnosis/suggestion as treatment but does not make clear whether placebo/nocebo phenomena were an explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult",
-"healthy_older_adult"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"single_group_pre_post"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated hypnotic suggestion as a method of treatment for facial pain in adults.",
+"summary": "Reported on use of hypnotic suggestion to treat facial pain, but abstract/text were unavailable so focus on placebo/nocebo effects could not be determined.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
-"hypnotic suggestion",
-"facial neuralgia",
-"headache",
+"facial pain",
+"neuralgia",
+"suggestion",
 "psychosomatic"
 ],
 "usage": {
-"input_tokens": 570,
+"input_tokens": 442,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 897,
-"cost_usd": 0.00208
+"output_tokens": 533,
+"cost_usd": 0.00132
 }
 },
 "sources": [
@@ -1421,25 +1335,23 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:50:40Z",
+"classified_at": "2026-09-03T04:47:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names the placebo effect as the topic in relation to hypnosis, indicating placebo phenomena are the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title implies a focus on hypnosis-placebo relations but insufficient information to confirm that placebo effects/responses were an explicit study objective or primary analysis.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -1452,22 +1364,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Examined the relationship between hypnosis and the placebo effect; no abstract or full text available for details.",
+"summary": "No abstract available; title suggested the paper examined relations between hypnosis and the placebo effect, but available records were insufficient to determine study aims or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hypnosis",
-"placebo",
-"psychosomatic dentistry",
+"placebo effect",
 "1967",
-"suggestion"
+"psychosomatic dentistry"
 ],
 "usage": {
-"input_tokens": 557,
+"input_tokens": 379,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 669,
-"cost_usd": 0.00162
+"output_tokens": 523,
+"cost_usd": 0.00129
 }
 },
 "sources": [
@@ -1629,73 +1540,52 @@
 "Controlled Clinical Trial",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:50:51Z",
+"classified_at": "2026-09-03T04:48:00Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly contrasts side reactions on meprobamate and placebo, indicating placebo-arm adverse events (nocebo response) were the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or methods available; title indicates comparison of side reactions on meprobamate and placebo but insufficient information to confirm whether placebo/nocebo phenomena were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"nocebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"anxiety_disorders",
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"adverse_events"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"parallel_groups_rct"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"nocebo_communication_disclosure"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"inert_pill_capsule"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Compared side reactions reported during meprobamate treatment versus placebo, and reported adverse reactions on placebo.",
+"summary": "No abstract available; paper seemingly compared side reactions on meprobamate versus placebo but insufficient detail to judge whether placebo/nocebo effects were a study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "meprobamate",
-"anxiolytic",
-"side-effects",
-"nocebo",
+"side reactions",
+"adverse effects",
+"placebo",
 "1967",
-"clinical-trial"
+"clinical trial"
 ],
 "usage": {
-"input_tokens": 577,
+"input_tokens": 399,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 637,
-"cost_usd": 0.00157
+"output_tokens": 568,
+"cost_usd": 0.00138
 }
 },
 "sources": [

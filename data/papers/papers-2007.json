@@ -690,11 +690,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:47:43Z",
+"classified_at": "2026-09-06T17:54:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Secondary analysis explicitly examined patients' expectations as a predictor/moderator of clinical outcome, making expectation (a placebo-related mechanism) the focus of the paper.",
+"rationale": "Secondary analysis explicitly tested patients' expectations as predictors of clinical recovery (an expectation effect measured as a predictor of outcome), meeting inclusion for studies measuring expectation as a predictor of health outcomes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -717,40 +717,42 @@
 "self_report"
 ],
 "design": [
-"observational"
+"single_group_pre_post",
+"observational",
+"not_applicable"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"trial_methodology_placebo_response"
+"prior_treatment_experience"
 ],
 "moderators": [
-"treatment_characteristics",
-"none_reported"
+"treatment_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Found that higher baseline expectations for recovery predicted greater improvement in functional disability among adults with acute low back pain in a secondary analysis of an RCT (N=444).",
-"key_finding": "A 1-point increase in general expectations was associated with a 0.96-point improvement in Roland score (beta=0.96, 95% CI 0.56–1.36).",
+"summary": "Analyzed whether baseline expectations predicted functional recovery in 444 adults with acute low back pain in a trial offering choice versus usual care and found higher expectations associated with greater improvement.",
+"key_finding": "A one-point higher general expectation score predicted a 0.96-point greater improvement on the Roland disability score (beta=0.96, 95% CI 0.56–1.36).",
 "sample_size": 444,
 "free_keywords": [
 "low back pain",
-"Roland",
-"functional disability",
+"Roland disability questionnaire",
 "patient expectations",
-"treatment choice",
-"usual care"
+"chiropractic",
+"acupuncture",
+"massage",
+"patient choice"
 ],
 "usage": {
 "input_tokens": 797,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1123,
-"cost_usd": 0.00259
+"output_tokens": 816,
+"cost_usd": 0.00198
 }
 },
 "sources": [
@@ -1160,11 +1162,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:48:14Z",
+"classified_at": "2026-09-06T17:54:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "The paper's primary aim was to compare open versus double-blind placebo-controlled food challenges (use of placebo-controlled design and diagnostic utility), making placebo-controlled methodology the main subject.",
+"confidence": 0.85,
+"rationale": "The study's primary aim was to compare open versus double-blind placebo-controlled food challenges (DBPCFC) as diagnostic methods, making placebo-controlled challenge methodology the main subject (placebo science/methods).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1185,10 +1187,11 @@
 ],
 "outcome_measures": [
 "self_report",
-"clinical_endpoint"
+"clinical_endpoint",
+"immune_inflammatory"
 ],
 "design": [
-"observational"
+"within_subject_experimental"
 ],
 "effects": [
 "not_applicable"
@@ -1203,23 +1206,25 @@
 "placebo_food_drink"
 ]
 },
-"summary": "Compared open food challenges and double-blind placebo-controlled food challenges in children and found that open challenges had moderate positive predictive value for immediate objective symptoms while DBPCFC was preferable for delayed or subjective symptoms.",
-"key_finding": "Positive predictive values for open food challenges were 73% for 1-day and 57% for 1-week challenges; parents preferred OFC for 1-day and DBPCFC for 1-week challenges.",
+"summary": "Compared open versus double-blind placebo-controlled food challenges in children and found 1-day OFC PPV 73% and 1-week OFC PPV 57%, recommending DBPCFC for delayed or subjective symptoms and reporting differing parental preferences.",
+"key_finding": "Positive predictive value for 1-day OFC was 73% (8/11) and for 1-week OFC 57% (20/35); DBPCFC advised for delayed/subjective reactions.",
 "sample_size": 41,
 "free_keywords": [
 "food challenge",
-"dbpcfc",
+"double-blind placebo-controlled",
 "open food challenge",
+"food hypersensitivity",
 "diagnostic accuracy",
 "children",
-"parent preference"
+"predictive value",
+"parental preference"
 ],
 "usage": {
 "input_tokens": 869,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1023,
-"cost_usd": 0.00241
+"output_tokens": 1050,
+"cost_usd": 0.00246
 }
 },
 "sources": [
@@ -2266,17 +2271,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:49:15Z",
+"classified_at": "2026-09-06T17:54:41Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly studied conditioned (context-elicited) drug-like responses to saline and neural mechanisms, meeting inclusion as conditioned placebo-like responses via classical conditioning.",
+"confidence": 0.9,
+"rationale": "Animal experiment examined context-elicited conditioned responses to saline after amphetamine-context pairings (conditioned placebo-like response), testing classical conditioning mechanisms and neural correlates.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2287,7 +2293,8 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"motor_function"
+"motor_function",
+"other"
 ],
 "outcome_measures": [
 "behavioral_performance",
@@ -2306,32 +2313,33 @@
 "neural_systems_circuits"
 ],
 "moderators": [
+"prior_experience",
 "none_reported"
 ],
 "intervention_type": [
 "saline_injection_infusion",
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Found that amphetamine-context pairings produced conditioned motor sensitization in rats, with saline in the drug-paired context eliciting conditioned motor activity and increased Fos and synaptophysin in reward-related brain regions.",
-"key_finding": "Saline given in the amphetamine-paired context produced conditioned increases in motor activity and Fos in nucleus accumbens and amygdala; amphetamine in the paired context increased Fos and synaptophysin in hippocampus and striatum.",
+"summary": "Found that amphetamine-context pairings produced conditioned motor sensitization: saline given in the amphetamine-paired context elicited increased motor activity and context-dependent increases in Fos and synaptophysin immunoreactivity in reward-related brain regions.",
+"key_finding": "Saline administered in an amphetamine-paired context elicited conditioned hyperactivity and increased Fos (and region-specific synaptophysin) in nucleus accumbens core and basolateral amygdala; hippocampus encoded spatial context (N=48).",
 "sample_size": 48,
 "free_keywords": [
 "amphetamine",
+"conditioned_sensitization",
 "fos",
 "synaptophysin",
-"conditioned sensitization",
-"nucleus accumbens",
-"basolateral amygdala",
-"dentate gyrus",
-"rat"
+"nucleus_accumbens",
+"basolateral_amygdala",
+"hippocampus",
+"sprague-dawley_rat"
 ],
 "usage": {
 "input_tokens": 865,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1309,
-"cost_usd": 0.00298
+"output_tokens": 1064,
+"cost_usd": 0.00249
 }
 },
 "sources": [
@@ -2526,11 +2534,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:49:31Z",
+"classified_at": "2026-09-06T17:54:38Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Animal experiment explicitly tested conditioned (context-induced) analgesia and its neurochemical mechanisms, meeting inclusion criterion for conditioned placebo-like effects (mechanisms in nonhuman animals).",
+"rationale": "Animal experiment explicitly tested conditioned (contextual) analgesia and its neural/biochemical mechanisms (CB1 antagonist in BLA), meeting inclusion for conditioned placebo-like mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2552,13 +2560,13 @@
 ],
 "outcome_measures": [
 "behavioral_performance",
-"genetic_molecular"
+"other"
 ],
 "design": [
 "animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
@@ -2566,31 +2574,31 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that CB1 receptor antagonism in the right basolateral amygdala altered conditioned fear behaviours and produced analgesia, while not blocking fear-conditioned analgesia, with associated monoamine changes in discrete brain areas.",
-"key_finding": null,
+"summary": "Tested effects of intra-BLA CB1 antagonist on fear-conditioned analgesia and related behaviours/monoamines in rats and found the antagonist did not block fear-conditioned analgesia but altered nociceptive and fear behaviours and monoamine changes.",
+"key_finding": "SR141716A in the right BLA did not attenuate fear-conditioned analgesia but modified formalin-evoked nociception, prolonged fear behaviours, and altered regional monoamine levels.",
 "sample_size": null,
 "free_keywords": [
 "CB1",
+"SR141716A",
 "basolateral amygdala",
-"rimonabant",
-"formalin",
+"formalin test",
 "conditioned analgesia",
-"ultrasonic vocalization",
-"rats"
+"rats",
+"HVA",
+"dopamine"
 ],
 "usage": {
 "input_tokens": 982,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1326,
-"cost_usd": 0.00304
+"output_tokens": 1226,
+"cost_usd": 0.00284
 }
 },
 "sources": [
@@ -3110,11 +3118,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:50:35Z",
+"classified_at": "2026-09-06T17:54:15Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Review paper whose explicit focus is the use, ethics, and methodological trade-offs of sham/placebo controls in device and procedural trials, matching 'placebo science' inclusion criterion.",
+"rationale": "Review explicitly focused on the use, ethics, and methodology of sham/placebo controls in device/procedural trials, making placebo science the main subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3123,7 +3131,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "human",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -3144,7 +3152,8 @@
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -3153,25 +3162,25 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews ethical and methodological issues in using sham procedural controls versus usual care in device and procedural trials, illustrating trade-offs with examples.",
+"summary": "Reviewed ethical, methodological, and practical considerations for using sham controls versus usual care in device and procedural trials, illustrating controversies with literature examples.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sham surgery",
 "device trials",
 "ethics",
-"clinical trial design",
-"procedural placebo",
+"informed consent",
 "risk-benefit",
-"parkinson's",
-"asthma"
+"procedural placebo",
+"trial design",
+"control arm"
 ],
 "usage": {
-"input_tokens": 696,
-"cache_read_input_tokens": 5888,
+"input_tokens": 440,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 534,
-"cost_usd": 0.00139
+"output_tokens": 554,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -3218,11 +3227,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:50:43Z",
+"classified_at": "2026-09-06T17:54:14Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Narrative review focusing on the methodological and ethical use of placebo versus best-available-therapy control groups, making placebo the main subject (placebo science/methodology).",
+"rationale": "Narrative review focused on methodological and ethical considerations of placebo versus best-available-therapy control groups, making placebo science the primary subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3239,7 +3248,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"other"
+"respiratory"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -3255,28 +3264,28 @@
 "clinical_use_ethics_attitudes"
 ],
 "moderators": [
-"none_reported"
+"trial_characteristics"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Discussed scientific and ethical considerations for using placebo versus best-available-therapy control groups in clinical trials and weighed pros and cons of each approach.",
+"summary": "Discussed scientific and ethical pros and cons of using placebo versus best-available-therapy control groups in clinical trials, with relevance to asthma and respiratory research.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo-controlled trials",
 "best-available-therapy",
+"clinical_trial_design",
 "ethics",
-"clinical trial design",
-"assay sensitivity"
+"asthma"
 ],
 "usage": {
 "input_tokens": 592,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 687,
-"cost_usd": 0.00167
+"output_tokens": 531,
+"cost_usd": 0.00136
 }
 },
 "sources": [
@@ -3318,56 +3327,54 @@
 "Comment",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:47:15Z",
+"classified_at": "2026-09-03T04:11:15Z",
 "screening": {
-"decision": "include",
-"confidence": 0.65,
-"rationale": "Title explicitly poses whether outcomes of serial casting reflect a placebo effect, indicating placebo/nocebo is a central subject of the commentary.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available and the title/question format makes it unclear whether placebo phenomena are the paper's explicit focus or a rhetorical device.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "human",
 "population": [],
 "age_group": [],
-"condition_domain": [],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
+"effects": [],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Raised the question of whether clinical improvements from serial casting in cerebral palsy reflect true therapeutic effects or placebo/contextual influences.",
+"summary": "Was a commentary questioning whether serial casting for cerebral palsy represents beneficial treatment, placebo, or risk, but abstract/full text were unavailable to confirm focus on placebo mechanisms or responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"serial casting",
 "cerebral palsy",
+"serial casting",
+"orthotics",
 "spasticity",
-"orthotics"
+"pediatric rehabilitation",
+"casting complications"
 ],
 "usage": {
-"input_tokens": 570,
+"input_tokens": 392,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 694,
-"cost_usd": 0.00168
+"output_tokens": 531,
+"cost_usd": 0.00131
 }
 },
 "sources": [
@@ -3434,17 +3441,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:15:39Z",
+"classified_at": "2026-09-06T17:54:19Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Healthy-subject within-subject experiment manipulated hypnotic analgesic vs hyperalgesic vs neutral suggestions and measured viscerosensory evoked potentials, testing histamine H1 blockade as a moderator of the suggestion effect (expectation/suggestion mechanism).",
+"confidence": 0.85,
+"rationale": "Study experimentally manipulated verbal hypnotic suggestions (analgesic, hyperalgesic, neutral) within subjects and measured viscerosensory evoked potentials, testing causally how expectation/context modulates visceral pain and its blockade by an H1 antagonist.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3455,15 +3462,13 @@
 "adults"
 ],
 "condition_domain": [
-"pain",
-"nausea_gi"
+"pain"
 ],
 "outcome_measures": [
 "eeg",
 "self_report"
 ],
 "design": [
-"crossover_rct",
 "within_subject_experimental"
 ],
 "effects": [
@@ -3475,30 +3480,29 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation"
+"pharmacological_manipulation",
+"none_reported"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested hypnotic analgesic and hyperalgesic suggestions in 12 healthy men and found analgesic suggestion reduced viscerosensory evoked-potential amplitude, an effect diminished by H1-antagonist chlorpheniramine.",
-"key_finding": "Analgesic hypnotic suggestion reduced the amplitude of a viscerosensory evoked-potential peak, and H1-receptor blockade attenuated this modulation.",
+"summary": "Tested hypnotic analgesic, hyperalgesic and neutral suggestions in 12 healthy males and found analgesic suggestion reduced viscerosensory evoked-potential amplitude, an effect diminished by H1-antagonist chlorpheniramine.",
+"key_finding": "Analgesic hypnotic suggestion reduced the deepest positive peak of viscerosensory evoked potentials, and this attenuation was reduced after histamine H1 blockade.",
 "sample_size": 12,
 "free_keywords": [
-"hypnosis",
-"histamine H1",
-"chlorpheniramine",
 "rectal electrical stimulation",
-"viscerosensory evoked potentials",
-"visceral pain",
-"electrophysiology"
+"viscerosensory evoked potential",
+"chlorpheniramine",
+"hypnosis",
+"histamine H1"
 ],
 "usage": {
 "input_tokens": 760,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1094,
-"cost_usd": 0.00253
+"output_tokens": 948,
+"cost_usd": 0.00223
 }
 },
 "sources": [
@@ -4355,136 +4359,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.2106/jbjs.f.00358",
-"title": "Patients' preoperative expectations predict the outcome of rotator cuff repair.",
-"authors": [
-"Henn RF",
-"Kang L",
-"Tashjian RZ",
-"Green A"
-],
-"journal": "The Journal of bone and joint surgery. American volume",
-"journal_abbrev": "J Bone Joint Surg Am",
-"year": 2007,
-"date": "2007-09-01",
-"doi": "10.2106/jbjs.f.00358",
-"pmid": "17768186",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2132318432",
-"abstract": "BACKGROUND: We are not aware of any previous studies of the relationship between patients' expectations regarding rotator cuff repair and the actual outcome. We hypothesized that preoperative expectations are predictive of the outcome of rotator cuff repair. METHODS: One hundred and twenty-five patients who underwent unilateral primary repair of a chronic rotator cuff tear were included in the study. All operations were performed by a single surgeon. Each patient prospectively completed the Simple Shoulder Test (SST); the Disabilities of the Arm, Shoulder and Hand (DASH) questionnaire; three visual analogue scales for shoulder pain, shoulder function, and quality of life; and the Short Form-36 (SF-36) preoperatively and at one year (mean and standard deviation, 54.1 +/- 7.6 weeks) postoperatively. Preoperative expectations were quantified with use of six questions from the Musculoskeletal Outcomes Data Evaluation and Management System (MODEMS) questionnaire. RESULTS: Greater preoperative expectations correlated with better postoperative performance on the SST, DASH, each visual analogue scale, and the SF-36 (p values ranging from <0.0001 to 0.03) as well as with greater improvement from the baseline scores on the DASH and SF-36 (p values ranging from <0.0001 to 0.018). A rigorous multivariate analysis controlling for age, gender, smoking, Workers' Compensation status, symptom duration, number of previous operations, number of comorbidities, tear size, and repair technique confirmed that greater expectations were a significant independent predictor of both better performance at one year and greater improvement on the SST, the DASH, each visual analogue scale, and the SF-36 (p values ranging from <0.001 to 0.042). CONCLUSIONS: Patients' preoperative expectations regarding rotator cuff repair are associated with their actual self-assessed outcome. Variations in patient expectations may help to explain divergent results in published series as well as among various patient populations.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Age Factors",
-"Aged",
-"Aged, 80 and over",
-"Attitude to Health",
-"Chronic Disease",
-"Female",
-"Forecasting",
-"Humans",
-"Male",
-"Middle Aged",
-"Pain Measurement",
-"Prospective Studies",
-"Quality of Life",
-"Range of Motion, Articular",
-"Reoperation",
-"Rotator Cuff",
-"Rotator Cuff Injuries",
-"Sex Factors",
-"Shoulder Joint",
-"Shoulder Pain",
-"Smoking",
-"Surveys and Questionnaires",
-"Treatment Outcome",
-"Workers' Compensation"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.2106/jbjs.f.00358",
-"cited_by_count": 189,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:51:12Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Prospective study explicitly tested preoperative expectations as a predictor/mechanism for surgical outcomes (expectation context measured as predictor of health outcome).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain",
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Found that greater preoperative expectations predicted better one-year self-reported pain, function, and quality-of-life outcomes after rotator cuff repair in a prospective cohort of 125 patients.",
-"key_finding": "Higher preoperative expectations independently predicted greater improvement on SST, DASH, VAS pain/function, and SF-36 at one year (p values <0.001 to 0.042).",
-"sample_size": 125,
-"free_keywords": [
-"rotator cuff",
-"shoulder surgery",
-"preoperative expectations",
-"DASH",
-"SST",
-"SF-36"
-],
-"usage": {
-"input_tokens": 913,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1138,
-"cost_usd": 0.00265
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2007-09-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.15288/jsad.2007.68.748",
 "title": "Acute alcohol intoxication impairs controlled search across the visual field.",
 "authors": [
@@ -4840,234 +4714,6 @@
 "landing_url": "https://doi.org/10.1037/0278-6133.26.5.598",
 "cited_by_count": 44,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1093/chemse/bjm055",
-"title": "Verbal cues modulate hedonic perception of odors in 5-year-old children as well as in adults.",
-"authors": [
-"Bensafi M",
-"Rinck F",
-"Schaal B",
-"Rouby C"
-],
-"journal": "Chemical senses",
-"journal_abbrev": "Chem Senses",
-"year": 2007,
-"date": "2007-08-28",
-"doi": "10.1093/chemse/bjm055",
-"pmid": "17728278",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2139047432",
-"abstract": "The judgment of pleasantness/unpleasantness is the prominent reaction to the olfactory world. In human adults, the hedonic valence of odor perception is affected by various factors, among which is an individual's lexical knowledge about smells. The present study examined whether such top-down effects of lexical knowledge on hedonic judgment of olfactory input are similar in children (5-6 years) and adults (20-25 years). In both groups, the lexical knowledge was found to influence the perception of the least emotional (or most neutral) odors: the pleasantness of the smells of banana and mint was enhanced when participants were given the corresponding odor label before olfactory sensation. These results lend support to the notion that, during childhood, smells are not only encoded perceptually but that verbal encoding also steers contextual effects that may be prominent factors in the early memorization and categorization of odors.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Child",
-"Child, Preschool",
-"Female",
-"Humans",
-"Male",
-"Motivation",
-"Odorants",
-"Smell"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "bronze",
-"oa_pdf_url": "https://academic.oup.com/chemse/article-pdf/32/9/855/776602/bjm055.pdf",
-"landing_url": "https://doi.org/10.1093/chemse/bjm055",
-"cited_by_count": 77,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:51:23Z",
-"screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "The study experimentally manipulated verbal labels (top-down expectation) and measured their effect on hedonic odor ratings, making expectation/context effects the explicit focus.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult",
-"healthy_pediatric"
-],
-"age_group": [
-"children_adolescents",
-"adults"
-],
-"condition_domain": [
-"sensory_perception"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"age"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
-},
-"summary": "Found that providing odor labels increased pleasantness ratings for neutral odors in both 5-6-year-old children and young adults.",
-"key_finding": "Labeling enhanced pleasantness ratings for banana and mint odors across children and adults.",
-"sample_size": null,
-"free_keywords": [
-"odor labeling",
-"hedonic judgment",
-"banana odor",
-"mint odor",
-"lexical knowledge",
-"top-down modulation"
-],
-"usage": {
-"input_tokens": 631,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 920,
-"cost_usd": 0.00214
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2007-08-28",
-"private_pdf": null
-},
-{
-"id": "doi:10.1016/j.pnpbp.2007.08.027",
-"title": "Conditioned and sensitized responses to stimulant drugs in humans.",
-"authors": [
-"Leyton M"
-],
-"journal": "Progress in neuro-psychopharmacology & biological psychiatry",
-"journal_abbrev": "Prog Neuropsychopharmacol Biol Psychiatry",
-"year": 2007,
-"date": "2007-08-28",
-"doi": "10.1016/j.pnpbp.2007.08.027",
-"pmid": "17888557",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W1991899916",
-"abstract": "In animal models considerable evidence suggests that increased motivation to seek and ingest drugs of abuse are related to conditioned and sensitized activations of the mesolimbic dopamine (DA) system. Direct evidence for these phenomena in humans, though, is sparse. However, recent studies support the following. First, the acute administration of drugs of abuse across pharmacological classes increases extracellular DA levels within the human ventral striatum. Second, individual differences in the magnitude of this response correlate with rewarding effects of the drugs and the personality trait of novelty seeking. Third, transiently diminishing DA transmission in humans decreases drug craving, the propensity to preferentially respond to reward-paired stimuli, and the ability to sustain responding for future drug reward. Finally, very recent studies suggest that repeated exposure to stimulant drugs, either on the street or in the laboratory, can lead to conditioned and sensitized behavioral responses and DA release. In contrast to these findings, though, in individuals with a long history of substance abuse, drug-induced DA release is decreased. This diminished DA release could reflect two different phenomena. First, it is possible that drug withdrawal related decrements in DA cell function persist longer than previously suspected. Second, drug-paired stimuli may gain marked conditioned control over the release of DA and the expression of sensitization leading to reduced DA release when drug-related cues are absent. Based on these observations a two-factor hypothesis of the role of DA in drug abuse is proposed. In the presence of drug cues, conditioned and sensitized DA release would occur leading to focused drug-seeking behavior. In comparison, in the absence of drug-related stimuli DA function would be reduced, diminishing the ability of individuals to sustain goal-directed behavior and long-term objectives. This conditioned control of the expression of sensitized DA release could aggravate susceptibility to relapse, narrow the range of interests and perturb decision-making, accounting for a wide range of addiction related phenomena.",
-"keywords": [],
-"mesh": [
-"Behavior",
-"Central Nervous System Stimulants",
-"Conditioning, Psychological",
-"Cues",
-"Dopamine",
-"Humans",
-"Substance-Related Disorders"
-],
-"pub_types": [
-"Journal Article",
-"Review"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1016/j.pnpbp.2007.08.027",
-"cited_by_count": 128,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:50:28Z",
-"screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Review explicitly focused on conditioned and sensitized drug- and cue-elicited dopamine responses in humans, which maps onto placebo/nocebo-relevant mechanisms (classical conditioning, cue/context control).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
-"species": "human",
-"population": [
-"substance_use"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"addiction_craving",
-"other"
-],
-"outcome_measures": [
-"self_report",
-"behavioral_performance",
-"pet_neurochemical"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_dopamine",
-"prior_treatment_experience"
-],
-"moderators": [
-"personality_traits",
-"prior_experience"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Reviewed evidence that stimulant drugs and drug-paired cues produce conditioned and sensitized behavioral and dopamine responses in humans and proposed a two-factor hypothesis linking cue-induced DA release to craving and relapse.",
-"key_finding": null,
-"sample_size": null,
-"free_keywords": [
-"ventral striatum",
-"mesolimbic dopamine",
-"sensitization",
-"cue-induced craving",
-"novelty seeking"
-],
-"usage": {
-"input_tokens": 824,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1030,
-"cost_usd": 0.00241
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2007-08-28",
-"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.mehy.2007.06.029",
@@ -5479,11 +5125,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:51:33Z",
+"classified_at": "2026-09-06T17:54:19Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of painful versus non-painful expectancy tested its causal effect on olfactory ERP and detection, meeting the placebo/nocebo effect criterion (nocebo expectation manipulation).",
+"rationale": "Within-subject experimental manipulation of pain-expectancy (painful vs non-painful condition) directly tested expectancy effects on olfactory perception and ERPs, so placebo/nocebo-type expectancy was the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5500,8 +5146,7 @@
 "adults"
 ],
 "condition_domain": [
-"sensory_perception",
-"pain"
+"sensory_perception"
 ],
 "outcome_measures": [
 "eeg",
@@ -5524,22 +5169,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated expectation of nasal irritation while delivering harmless H2S odors and found that expecting pain shortened the N1 olfactory ERP latency, indicating altered early odor perception.",
-"key_finding": "Expecting a painful/irritant stimulus significantly reduced N1 latency to harmless H2S, suggesting faster detection under pain-expectancy.",
+"summary": "Manipulated expectancy of nasal irritation and found that expecting a painful stimulus speeded olfactory detection (shorter N1 latency) to harmless H2S, altering early odor perception.",
+"key_finding": "Expecting pain reduced N1 latency to harmless odor stimuli, indicating faster neural detection under negative expectancy.",
 "sample_size": null,
 "free_keywords": [
-"olfactory_erp",
-"H2S",
-"CO2",
-"n1_latency",
-"odor_detection"
+"h2s",
+"co2",
+"olfactory erp",
+"n1 latency",
+"pain expectancy"
 ],
 "usage": {
 "input_tokens": 766,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 808,
-"cost_usd": 0.00195
+"output_tokens": 793,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -5963,11 +5608,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:52:58Z",
+"classified_at": "2026-09-06T17:54:21Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Study explicitly analysed placebo events/responses during double-blind, placebo-controlled food challenges and their diagnostic significance, making placebo response the paper's focus (rule 2).",
+"rationale": "The paper's explicit objective and analyses focused on occurrence and diagnostic significance of placebo events in double-blind, placebo-controlled food challenges, making placebo response the study object (rule 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5989,7 +5634,6 @@
 "outcome_measures": [
 "self_report",
 "clinician_rated",
-"clinical_endpoint",
 "immune_inflammatory"
 ],
 "design": [
@@ -6010,15 +5654,16 @@
 "placebo_food_drink"
 ]
 },
-"summary": "Found that 12.9% of double-blind, placebo-controlled food challenges in sensitized children produced positive placebo events, including objective and subjective reactions, which affected diagnostic accuracy.",
-"key_finding": "12.9% of challenges had positive placebo events; 5.4% of positive active challenges were revealed false positive by placebo, indicating diagnostic impact.",
-"sample_size": 132,
+"summary": "Analyzed 132 double-blind placebo-controlled food challenges in 105 sensitized children and found placebo events in 12.9% of challenges, including objective and subjective reactions, which sometimes revealed false-positive active challenges.",
+"key_finding": "Found 17/132 (12.9%) positive placebo events (9 immediate, 8 late-onset; 11 objective, 6 subjective) and 4 of 74 positive active challenges were refuted by placebo.",
+"sample_size": 105,
 "free_keywords": [
 "dbpcfc",
-"food challenge",
-"cow's milk",
+"food_challenge",
+"food_allergy",
+"false_positive",
+"cow_milk",
 "peanut",
-"egg",
 "hazelnut",
 "soy"
 ],
@@ -6026,8 +5671,8 @@
 "input_tokens": 856,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1082,
-"cost_usd": 0.00253
+"output_tokens": 961,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -6593,11 +6238,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:52:35Z",
+"classified_at": "2026-09-06T17:55:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study manipulated expectation about receiving an active drug (cocaine) and tested neural and behavioral responses, matching the inclusion rule for expectancy manipulations of active drugs (active_drug_context_manipulation).",
+"rationale": "Within-subject expectancy manipulation of an active cocaine infusion investigated how expectation altered neural and behavioral responses, qualifying as an active_drug_context_manipulation placebo-effect design.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6614,7 +6259,8 @@
 "adults"
 ],
 "condition_domain": [
-"addiction_craving"
+"addiction_craving",
+"other"
 ],
 "outcome_measures": [
 "fmri",
@@ -6629,32 +6275,35 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_dopamine"
 ],
 "moderators": [
+"prior_experience",
 "expectation_level"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Compared expected versus unexpected intravenous cocaine infusions in regular cocaine users and found that expectation modulated BOLD responses in OFC, frontal pole and amygdala while not altering subcortical pharmacologic responses.",
-"key_finding": "Unexpected (vs. expected) cocaine produced greater amygdala and lateral OFC BOLD engagement, while expectation did not alter nucleus accumbens, VTA or ventral putamen responses.",
+"summary": "Compared expected versus unexpected intravenous cocaine within regular cocaine users and found expectation altered cortical BOLD responses and subjective ratings, while key subcortical dopamine-related regions were not modulated.",
+"key_finding": "Expectation changed medial/lateral OFC and amygdala BOLD responses to cocaine but did not alter nucleus accumbens, ventral putamen, VTA, or thalamic responses.",
 "sample_size": 26,
 "free_keywords": [
 "cocaine infusion",
 "BOLD",
 "orbitofrontal cortex",
 "amygdala",
+"nucleus accumbens",
 "ventral tegmental area",
 "expectation"
 ],
 "usage": {
-"input_tokens": 787,
-"cache_read_input_tokens": 5888,
+"input_tokens": 531,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 991,
-"cost_usd": 0.00233
+"output_tokens": 878,
+"cost_usd": 0.00204
 }
 },
 "sources": [
@@ -6836,11 +6485,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:52:23Z",
+"classified_at": "2026-09-06T17:54:22Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Review explicitly focused on classical conditioning as a mechanism producing anticipatory nausea/vomiting (learned nocebo-like responses) in chemotherapy patients and experimental models, matching inclusion criterion for mechanisms and reviews of placebo/nocebo phenomena.",
+"confidence": 0.85,
+"rationale": "Review explicitly focused on classical conditioning mechanisms of anticipatory nausea/vomiting (learned nocebo-like responses) and interventions to ameliorate them, meeting inclusion criterion for mechanism and review papers on placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6849,7 +6498,7 @@
 "nocebo_effect"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "healthy_adult",
 "cancer"
@@ -6874,9 +6523,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
 "prior_treatment_experience",
-"emotion_anxiety_regulation"
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "sex_gender",
@@ -6886,23 +6534,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed evidence that classical (Pavlovian) conditioning contributes to anticipatory nausea and vomiting in chemotherapy patients and in a rotation-induced motion-sickness human model, and discussed conditioning-based interventions.",
-"key_finding": "Argued that conditioned nausea explains anticipatory nausea in ~20-30% of chemotherapy patients and that a healthy- volunteer rotation model demonstrated conditioning mechanisms with gender as an important moderator.",
+"summary": "Reviewed evidence that nausea and vomiting can be acquired by classical conditioning, described healthy-human rotation models and chemotherapy-related anticipatory nausea, and summarized conditioning-based interventions to reduce AN/ANV.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "anticipatory nausea",
 "anticipatory vomiting",
-"chemotherapy",
 "motion sickness",
+"chemotherapy",
+"conditioned nausea",
 "rotation model",
-"conditioned nausea"
+"conditioned emesis"
 ],
 "usage": {
 "input_tokens": 835,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1067,
-"cost_usd": 0.00249
+"output_tokens": 957,
+"cost_usd": 0.00227
 }
 },
 "sources": [
@@ -7097,16 +6746,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:53:09Z",
+"classified_at": "2026-09-06T17:54:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Within-subject experimental manipulation of expectations/uncertainty directly tested their causal influence on pain ratings and anticipatory neural responses, making expectation-driven placebo/context effects the study focus.",
+"rationale": "Within-subject experimental manipulation of verbal cues/expectations altered pain ratings and anticipatory neural responses, so expectancy-driven placebo/nocebo mechanisms were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_and_nocebo",
 "placebo_effect"
 ],
 "article_type": "empirical_primary",
@@ -7143,23 +6793,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Manipulated cues about impending laser heat intensity and certainty in healthy adults and found expectations biased pain ratings and elicited anticipatory neural activity that correlated with laser-evoked potentials.",
-"key_finding": "Expectation cues (certain high vs low) shifted pain ratings and anticipatory EEG responses tracked expected intensity and predicted LEP amplitude.",
+"summary": "Manipulated cues about upcoming laser heat intensity and found that expectations biased pain ratings and elicited anticipatory EEG responses that predicted laser-evoked potentials.",
+"key_finding": "Expectation cues (certain high vs low) reliably biased subjective pain and anticipatory neural activity correlated with LEP amplitude.",
 "sample_size": 15,
 "free_keywords": [
-"laser heat",
 "laser-evoked potential",
-"LORETA",
-"anticipatory activity",
+"LEP",
+"anticipatory EEG",
+"uncertainty",
 "dorsolateral prefrontal",
-"posterior cingulate"
+"cue-based expectation"
 ],
 "usage": {
-"input_tokens": 794,
-"cache_read_input_tokens": 5888,
+"input_tokens": 538,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 893,
-"cost_usd": 0.00213
+"output_tokens": 831,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -9544,11 +9194,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:54:16Z",
+"classified_at": "2026-09-06T17:54:44Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Meta-analysis explicitly analyzed placebo-treated arms and quantified placebo-arm changes and clinical worsening, making placebo response the paper's focus (rule 2).",
+"rationale": "Meta-analysis explicitly pooled and analyzed outcomes in placebo-treated arms of PAH RCTs, making placebo response the analytic focus (rule 2).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9565,12 +9215,12 @@
 "adults"
 ],
 "condition_domain": [
-"cardiovascular_bp"
+"cardiovascular_bp",
+"respiratory"
 ],
 "outcome_measures": [
 "behavioral_performance",
-"clinical_endpoint",
-"clinician_rated"
+"clinical_endpoint"
 ],
 "design": [
 "meta_analytic"
@@ -9582,29 +9232,29 @@
 "trial_methodology_placebo_response"
 ],
 "moderators": [
-"trial_characteristics"
+"none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Found that placebo-treated patients with pulmonary arterial hypertension showed small declines in 6-minute walk distance, worsened pulmonary hemodynamics, and higher odds of clinical worsening over 12–18 weeks in a pooled analysis.",
-"key_finding": "Placebo arms (n=868 patients across 13 trials) showed a mean 6MWD decrease of 8.4 m (95% CI -14.6 to -2.2) and increased risk of clinical worsening (OR 1.81, 95% CI 1.30–2.53).",
+"summary": "Pooled randomized trials of pulmonary arterial hypertension found that placebo-treated patients showed small declines in 6MWD, worsened pulmonary hemodynamics, and higher risk of clinical worsening over 12–18 weeks.",
+"key_finding": "Placebo arms (n=868 across 13 trials) had a mean 6MWD decrease of 8.4 m (95% CI -14.6 to -2.2) and increased pulmonary vascular resistance, with 1.81-fold higher odds of clinical worsening.",
 "sample_size": 13,
 "free_keywords": [
 "pulmonary arterial hypertension",
 "6-minute walk",
 "pulmonary vascular resistance",
 "clinical worsening",
-"placebo arms",
+"placebo arm",
 "randomized trials"
 ],
 "usage": {
 "input_tokens": 827,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1057,
-"cost_usd": 0.00247
+"output_tokens": 872,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -11726,11 +11376,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:55:17Z",
+"classified_at": "2026-09-06T17:54:23Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Empirical analysis focused on placebo-related phenomena (blinding/belief about drug assignment) and their relation to abstinence, meeting inclusion as placebo science / trial methodology about placebo response.",
+"confidence": 0.82,
+"rationale": "The paper empirically analyzed participants' beliefs about drug assignment and their relation to smoking abstinence (blinding/methodology of placebo in RCTs), making placebo a primary subject (placebo science/trial methodology).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -11757,37 +11407,35 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"mixed_inconsistent"
+"not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response",
-"prior_treatment_experience"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
-"prior_experience"
+"treatment_characteristics"
 ],
 "intervention_type": [
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed whether participants' beliefs about receiving nortriptyline versus placebo related to biochemically verified smoking abstinence and found belief was associated with side-effects and short-term smoking status but not with follow-up abstinence.",
-"key_finding": "Belief about drug assignment was associated with experiencing drug side-effects and with end-of-treatment smoking status, but was not related to abstinence at long-term follow-up.",
+"summary": "Analyzed whether smokers' beliefs about receiving nortriptyline versus placebo predicted biochemically verified abstinence in two RCTs and examined predictors of correct guessing, finding belief linked to side-effects and treatment success but not to abstinence at long-term follow-up.",
+"key_finding": "Belief about drug assignment was related to side-effects and short-term treatment success but was not associated with abstinence at final follow-up.",
 "sample_size": 262,
 "free_keywords": [
 "nortriptyline",
 "smoking cessation",
 "blinding",
-"guess",
+"treatment guess",
 "abstinence",
-"side-effects",
-"biochemical verification"
+"side-effects"
 ],
 "usage": {
 "input_tokens": 830,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1220,
-"cost_usd": 0.00279
+"output_tokens": 1212,
+"cost_usd": 0.00278
 }
 },
 "sources": [
@@ -12075,11 +11723,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:55:37Z",
+"classified_at": "2026-09-06T17:54:27Z",
 "screening": {
 "decision": "include",
-"confidence": 0.86,
-"rationale": "Randomized trial explicitly tested response expectancies and credibility as mediators of hypnotic and CBT pain interventions and examined hypnotic suggestibility as a moderator, making placebo/expectation mechanisms an explicit study focus (mechanisms of placebo-like effects).",
+"confidence": 0.85,
+"rationale": "Randomized trial that explicitly tested response expectancies and treatment credibility as mediators and hypnotic suggestibility as a moderator of analgesic interventions, so placebo/expectation mechanisms were a primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -12106,13 +11754,11 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective",
-"mixed_inconsistent"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"classical_conditioning",
-"treatment_cues_dose_route"
+"prior_treatment_experience"
 ],
 "moderators": [
 "personality_traits",
@@ -12123,23 +11769,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested mediators (response expectancies, credibility) and moderator (hypnotic suggestibility) of hypnotic, cognitive-behavioral, and placebo-control analogue pain interventions in healthy volunteers; found expectancies and credibility mediated treatment and suggestibility moderated hypnotic relief.",
-"key_finding": "Response expectancies and treatment credibility independently mediated pain reduction; hypnotic suggestibility predicted benefit from hypnosis only.",
+"summary": "Tested whether response expectancies and treatment credibility mediated hypnotic and CBT analgesia and whether hypnotic suggestibility moderated outcomes in an analogue pain RCT; found mediation by expectancies/credibility and hypnosis-specific moderation by suggestibility.",
+"key_finding": "Response expectancies and treatment credibility independently mediated pain reduction, with mediation increasing after experience; hypnotic suggestibility predicted benefit only for the hypnotic intervention.",
 "sample_size": 124,
 "free_keywords": [
 "hypnosis",
 "cognitive-behavioral therapy",
 "suggestibility",
 "treatment credibility",
+"expectancy mediation",
 "analogue pain",
-"mediator analysis"
+"randomized trial"
 ],
 "usage": {
 "input_tokens": 818,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1066,
-"cost_usd": 0.00248
+"output_tokens": 1136,
+"cost_usd": 0.00262
 }
 },
 "sources": [
@@ -13555,11 +13202,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:56:42Z",
+"classified_at": "2026-09-06T17:54:26Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Secondary analysis of 69 randomized, placebo-controlled AD trials that made the placebo arm's change (placebo response/decline) the analytic focus and tested study-design and demographic predictors.",
+"confidence": 0.85,
+"rationale": "Secondary analysis pooled placebo-group outcomes from 66-69 randomized, placebo-controlled AD trials and explicitly studied predictors of decline in placebo-treated subjects (placebo response as the analytic focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -13570,7 +13217,7 @@
 "article_type": "secondary_analysis",
 "species": "human",
 "population": [
-"other_clinical"
+"other_neurological"
 ],
 "age_group": [
 "older_adults"
@@ -13582,8 +13229,7 @@
 "clinician_rated"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
-"observational"
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "significant_objective"
@@ -13593,32 +13239,31 @@
 ],
 "moderators": [
 "trial_characteristics",
-"disease_severity_duration",
-"age",
-"sex_gender"
+"disease_severity_duration"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Analyzed 69 placebo-controlled AD trials and found study duration predicted greater cognitive decline in placebo groups, while more sites, more evaluations, and milder baseline MMSE were associated with less decline.",
-"key_finding": "Longer study duration consistently predicted greater decline in placebo-treated subjects; increased number of sites and evaluations and higher baseline MMSE were associated with reduced decline.",
+"summary": "Analyzed 66–69 randomized, placebo-controlled Alzheimer's trials and found study duration consistently predicted cognitive decline in placebo-treated subjects, while more sites, more evaluations, and milder baseline severity were associated with less decline.",
+"key_finding": "Study duration consistently predicted greater decline on ADAS-Cog in placebo arms; more sites/assessments and higher baseline MMSE were associated with reduced decline.",
 "sample_size": 69,
 "free_keywords": [
-"adenheimer's disease",
-"ADAS-Cog",
-"MMSE",
-"APOE",
+"alzheimers disease",
+"adas-cog",
+"mmse",
+"apoe",
+"multicenter",
 "clinical-trial-design",
 "placebo-arm",
-"randomized-controlled-trials"
+"cognitive-decline"
 ],
 "usage": {
 "input_tokens": 970,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 714,
-"cost_usd": 0.00182
+"output_tokens": 816,
+"cost_usd": 0.00202
 }
 },
 "sources": [
@@ -14540,76 +14185,59 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 378,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:48:11Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-04T00:13:09Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized trial directly compared biofeedback to a sham-feedback control to test whether improvements reflect specific learning (operant conditioning) versus non-specific attention, meeting criteria for an experimentally isolated placebo/sham effect investigation.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "Title indicates a sham-controlled RCT of biofeedback versus sham and standard therapy, but no abstract or full text was available to determine whether placebo/sham effects were an explicit focus or merely a control for efficacy.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"other_clinical"
-],
-"age_group": [
-"adults"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
-"nausea_gi"
+"other"
 ],
-"outcome_measures": [
-"self_report",
-"behavioral_performance",
-"clinical_endpoint"
-],
+"outcome_measures": [],
 "design": [
 "parallel_groups_rct"
 ],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"classical_conditioning",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"none_reported"
-],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
 "intervention_type": [
-"sham_psychological"
+"sham_psychological",
+"sham_device",
+"not_applicable"
 ]
 },
-"summary": "Randomized trial compared biofeedback, sham-feedback, and standard therapy in 77 patients with dyssynergic defecation and found biofeedback produced greater physiological and symptomatic improvement than sham or standard therapy.",
-"key_finding": "Biofeedback corrected dyssynergia and improved defecation index, balloon expulsion time, and bowel frequency/satisfaction versus sham and standard therapy (N=77).",
-"sample_size": 77,
+"summary": "No abstract available; reported a randomized trial comparing biofeedback, sham feedback, and standard therapy for dyssynergic defecation.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
-"biofeedback",
 "dyssynergic defecation",
-"anorectal manometry",
-"balloon expulsion",
-"colonic transit"
+"biofeedback",
+"sham feedback",
+"pelvic floor",
+"constipation"
 ],
 "usage": {
-"input_tokens": 950,
-"cache_read_input_tokens": 5888,
+"input_tokens": 59,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1184,
-"cost_usd": 0.00275
+"output_tokens": 641,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -14919,11 +14547,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:56:56Z",
+"classified_at": "2026-09-06T17:54:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized trial explicitly manipulated consultation context (homeopathic care vs. self-prescribed medicine) to test contextual/placebo effects, meeting criterion for placebo effect isolation.",
+"rationale": "Randomized trial explicitly tested the contextual effect of homeopathic consultation versus self-prescribed homeopathic medicine, isolating context as the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14954,8 +14582,7 @@
 ],
 "mechanisms": [
 "provider_patient_interaction",
-"therapeutic_ritual_context",
-"verbal_suggestion_expectation"
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -14964,23 +14591,23 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Randomized trial compared homeopathic consultation plus individualized prescriptions vs. parent-administered self-prescribed homeopathic remedy for preventing pediatric URTI and found no significant clinical differences between groups.",
-"key_finding": "No significant difference in mean URTI scores over 12 weeks (39.0 vs 43.9; p=0.782).",
+"summary": "Randomized trial compared homeopathic consultation plus individualized prescribing versus parent self-prescribed homeopathic medicine in children and found no significant differences in URTI outcomes over 12 weeks.",
+"key_finding": "No clinically relevant differences between homeopathic care and self-prescribed homeopathic medicine on URTI scores or days ill (n=208).",
 "sample_size": 208,
 "free_keywords": [
 "homeopathy",
 "upper respiratory tract infection",
 "children",
-"contextual effect",
 "consultation",
-"placebo context"
+"contextual effect",
+"preventive trial"
 ],
 "usage": {
 "input_tokens": 804,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1072,
-"cost_usd": 0.00249
+"output_tokens": 821,
+"cost_usd": 0.00199
 }
 },
 "sources": [
@@ -17663,11 +17290,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:54:44Z",
+"classified_at": "2026-09-06T17:54:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments explicitly tested conditioned immunosuppression via CS–US (classical conditioning) manipulations, making placebo-like conditioned responses the study focus (mechanisms/moderators).",
+"rationale": "Animal experiments explicitly tested Pavlovian (classical) conditioning of immunosuppression (conditioned immunosuppression), meeting inclusion criteria for mechanisms of placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -17697,33 +17324,34 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"treatment_characteristics",
-"prior_experience"
+"prior_experience",
+"treatment_characteristics"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that conditioned immunosuppression in rats was enhanced by multiple CS–US pairings or presenting the CS in compound, producing reliable immunosuppression under those procedural conditions.",
-"key_finding": "Three CS–US pairings induced conditioned immunosuppression; a single pairing only produced immunosuppression when the CS was presented in compound with a previously nonreinforced cue.",
+"summary": "Tested Pavlovian conditioning of immunosuppression in rats and found that multiple CS–US pairings or compound-CS training produced reliable conditioned immunosuppression.",
+"key_finding": "Three CS–cyclophosphamide pairings produced conditioned immunosuppression, and a compound CS allowed immunosuppression after a single pairing.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
 "conditioned taste aversion",
-"gustatory CS",
-"supernormal conditioning",
-"rats",
+"gustatory conditioned stimulus",
+"Pavlovian conditioning",
+"rat",
 "immunosuppression"
 ],
 "usage": {
 "input_tokens": 680,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1041,
-"cost_usd": 0.0024
+"output_tokens": 1012,
+"cost_usd": 0.00234
 }
 },
 "sources": [
@@ -18941,11 +18569,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:52:05Z",
+"classified_at": "2026-09-06T17:54:29Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Developed and validated an acupuncture expectancy instrument, making placebo/expectation measurement the explicit focus (placebo science/methods).",
+"rationale": "Developed and validated an expectancy instrument for acupuncture, a measurement methods paper directly relevant to placebo/expectation research (methods_measurement), so it meets inclusion as placebo science measurement work.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -18968,14 +18596,14 @@
 "self_report"
 ],
 "design": [
+"observational",
 "survey_interview"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"trial_methodology_placebo_response"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -18984,22 +18612,23 @@
 "not_applicable"
 ]
 },
-"summary": "Developed and preliminarily validated a four-item acupuncture expectancy scale in 200 adult outpatients in Beijing, showing good reliability and construct validity.",
-"key_finding": "Scale had Cronbach's alpha = 0.82 and correlated with perceived efficacy (r=0.44), satisfaction (r=0.49), and confidence (r=0.51).",
+"summary": "Developed and preliminarily validated a four-item acupuncture expectancy scale in 200 Chinese outpatient participants, showing good internal consistency and construct validity.",
+"key_finding": "Scale showed Cronbach's alpha = 0.82 and correlated with perceived efficacy (r=0.44), satisfaction (r=0.49), and confidence (r=0.51).",
 "sample_size": 200,
 "free_keywords": [
 "acupuncture",
 "expectancy scale",
-"psychometrics",
+"validation",
 "Beijing",
-"chronic disease"
+"Cronbach alpha",
+"perceived efficacy"
 ],
 "usage": {
 "input_tokens": 826,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 722,
-"cost_usd": 0.0018
+"output_tokens": 705,
+"cost_usd": 0.00176
 }
 },
 "sources": [

@@ -356,18 +356,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:28:53Z",
+"classified_at": "2026-09-03T04:32:01Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "The title explicitly frames 'Surgery as a placebo', indicating the paper's primary subject is placebo phenomena in surgical contexts.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates focus on surgical placebo but available text is insufficient to determine whether it is a review/commentary or reports empirical data on placebo/sham surgery.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -375,35 +375,50 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "human",
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [],
-"age_group": [],
-"condition_domain": [],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"mechanisms": [
+"trial_methodology_placebo_response",
+"history_conceptual"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"sham_surgery"
+]
 },
-"summary": "Discusses the concept of surgery functioning as a placebo and its implications for surgical trials, ethics, and clinical practice.",
+"summary": "Likely discussed the concept of surgical procedures functioning as placebos; no abstract or data were available to confirm empirical content.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sham surgery",
 "surgical placebo",
-"randomized surgical trials",
-"placebo ethics"
+"operative placebo",
+"surgical trials",
+"placebo in surgery",
+"Johnson Lancet 1994"
 ],
 "usage": {
-"input_tokens": 578,
+"input_tokens": 400,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 555,
-"cost_usd": 0.0014
+"output_tokens": 651,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -897,11 +912,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:55:01Z",
+"classified_at": "2026-09-06T17:57:31Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Human experimental study used classical discriminative conditioning (CS+ paired with epinephrine) to induce and test conditioned changes in NK cells, making placebo-like conditioned responses the explicit focus.",
+"rationale": "Human experimental study that used classical discriminative conditioning to elicit conditioned changes in NK cells, making conditioned immune responses the study's primary focus (mechanism of placebo-like effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -930,8 +945,7 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -940,24 +954,23 @@
 "other"
 ]
 },
-"summary": "Found that discriminative classical conditioning (CS+ paired with epinephrine) produced conditioned increases in NK+ cell number and NK cell activity on re-exposure to the CS+ in healthy volunteers.",
-"key_finding": "Re-exposure to the CS+ (previously paired with epinephrine) produced significant increases in NK+ cell counts and elevated NK cell activity versus the CS-.",
+"summary": "Conditioned discriminative cues paired with epinephrine increased NK+ cell counts and NK cell activity on test trials in healthy humans.",
+"key_finding": "Re-exposure to the CS+ produced significant increases in NK+ cell numbers and elevated NK cell activity compared with the unreinforced CS-.",
 "sample_size": null,
 "free_keywords": [
 "natural killer cells",
-"nk activity",
-"classical conditioning",
+"NK+",
 "epinephrine",
+"classical conditioning",
 "discriminative learning",
-"immune conditioning",
-"psychoneuroimmunology"
+"conditioned immunomodulation"
 ],
 "usage": {
 "input_tokens": 790,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1168,
-"cost_usd": 0.00268
+"output_tokens": 917,
+"cost_usd": 0.00218
 }
 },
 "sources": [
@@ -1247,11 +1260,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:52:18Z",
+"classified_at": "2026-09-06T17:57:32Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "The paper empirically studied patient blindability and the methodological implications of placebo use in double-blind pharmacological trials, making placebo methodology the primary focus (placebo_science_other).",
+"rationale": "Paper empirically examined patient blindability and methodological implications of placebo-controlled trials, making placebo research methodology the primary focus (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1259,7 +1272,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "empirical_primary",
+"article_type": "secondary_analysis",
 "species": "human",
 "population": [
 "depression",
@@ -1269,55 +1282,48 @@
 "adults"
 ],
 "condition_domain": [
-"mood_depression",
-"anxiety_stress"
+"mood_depression"
 ],
 "outcome_measures": [
 "self_report",
 "clinician_rated",
-"autonomic",
 "other"
 ],
 "design": [
-"parallel_groups_rct",
-"observational"
+"observational",
+"placebo_arm_secondary_analysis"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
 "trial_methodology_placebo_response",
-"nocebo_communication_disclosure",
-"treatment_cues_dose_route"
+"nocebo_communication_disclosure"
 ],
 "moderators": [
-"treatment_characteristics",
-"prior_experience"
+"trial_characteristics"
 ],
 "intervention_type": [
-"inert_pill_capsule",
-"active_drug_context_manipulation"
+"not_applicable"
 ]
 },
-"summary": "Examined patient blindability in double-blind pharmacological trials for OCD and major depression and found patients could often correctly identify active medication versus placebo based on improvement and side effects.",
-"key_finding": "Found that clinical improvement and side effects predicted correct identification of active drug versus placebo, challenging patient blindability in RCTs.",
+"summary": "Examined patient ability to correctly guess medication versus inert placebo in double-blind antidepressant/OCD trials and discussed implications for blinding and trial methodology.",
+"key_finding": "Found that patients used clinical improvement and side effects to correctly identify treatment versus placebo, challenging blindability in trials.",
 "sample_size": null,
 "free_keywords": [
+"blinding",
+"double-blind",
+"unblinding",
 "clomipramine",
 "trazodone",
-"double-blind",
-"blindability",
-"side-effects",
-"clinical trials",
-"placebo-controlled",
-"methodology"
+"obsessive-compulsive disorder"
 ],
 "usage": {
 "input_tokens": 568,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 950,
-"cost_usd": 0.00219
+"output_tokens": 812,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -1379,11 +1385,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:55:37Z",
+"classified_at": "2026-09-06T17:57:36Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment explicitly tested classical conditioning of morphine-induced immune changes and pharmacologically manipulated expression with nadolol, making conditioned placebo-like responses the study focus (mechanisms of conditioned immunomodulation).",
+"confidence": 0.85,
+"rationale": "Animal Pavlovian conditioning study that explicitly tested conditioned morphine-induced immune alterations and pharmacologically manipulated expression with a beta-adrenergic blocker, fitting inclusion for mechanisms of conditioned placebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1413,35 +1419,33 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
 "neurobiology_other_neurochemical"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Found that environmental cues conditioned morphine-induced immunosuppression in rats and that nadolol given before testing blocked expression of some conditioned immune changes.",
-"key_finding": "Nadolol administered prior to test sessions attenuated the expression of a subset of conditioned morphine-induced alterations in NK activity, IL-2 production, and lymphocyte proliferation.",
+"summary": "Found that conditioned morphine-induced immunosuppression in rats was expressed via peripheral beta-adrenergic receptors, since nadolol given before testing attenuated some conditioned immune changes.",
+"key_finding": "Nadolol administered prior to test prevented expression of a subset of conditioned decreases in NK activity, IL-2 production, and lymphocyte proliferation.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "nadolol",
-"conditioned immunosuppression",
+"conditioning",
 "natural killer cells",
 "interleukin-2",
-"lymphocyte proliferation",
-"lewis rats"
+"lewis rats",
+"immunosuppression"
 ],
 "usage": {
 "input_tokens": 804,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1237,
-"cost_usd": 0.00282
+"output_tokens": 1307,
+"cost_usd": 0.00296
 }
 },
 "sources": [
@@ -2286,11 +2290,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:00:24Z",
+"classified_at": "2026-09-06T17:57:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal behavioral conditioning manipulated a contextual cue (odor) to elicit immune (NK cell) responses, making placebo-like conditioned response the explicit focus (mechanisms of CNS immunoregulation).",
+"confidence": 0.85,
+"rationale": "Animal experiment explicitly tested behavioral (classical) conditioning of immune (NK) activity, making placebo-like conditioned responses the study focus (mechanisms of conditioned immunomodulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2320,7 +2324,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "prior_experience"
@@ -2329,24 +2334,25 @@
 "other"
 ]
 },
-"summary": "Found that odor-based behavioral conditioning in mice enhanced baseline and activated NK cell activity, demonstrating CNS-mediated modulation of immune function.",
-"key_finding": "Behavioral conditioning with Poly I:C-associated odor increased NK cell lytic activity compared with controls, with effects moderated by prior exposure to the conditioning apparatus.",
+"summary": "Found that odor-conditioned mice showed enhanced baseline and activated NK cell activity, demonstrating CNS-mediated conditioned immunomodulation influenced by prior exposure to the conditioning context.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "poly I:C",
 "interferon",
-"natural killer cells",
-"olfactory conditioning",
+"natural killer",
+"odor conditioning",
 "psychoneuroimmunology",
+"IL-2",
 "mice",
-"IL-2"
+"behavioral conditioning"
 ],
 "usage": {
 "input_tokens": 846,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1015,
-"cost_usd": 0.00239
+"output_tokens": 1035,
+"cost_usd": 0.00243
 }
 },
 "sources": [
@@ -2892,24 +2898,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0165-0270(94)90138-4",
 "cited_by_count": 22,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:53:45Z",
+"classified_at": "2026-09-06T17:57:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment explicitly developed and tested a Pavlovian cue/context conditioning protocol to isolate conditioned drug (cocaine) responses from habituation and stress, addressing mechanisms of conditioned drug effects relevant to placebo-like context effects (rule 3).",
+"confidence": 0.9,
+"rationale": "Animal experiment explicitly tested Pavlovian (classical) conditioning of cocaine-induced motor activation, isolating conditioned drug effects from habituation and stress, meeting inclusion for mechanisms of placebo via conditioning.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2920,12 +2926,11 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"motor_function",
-"other"
+"motor_function"
 ],
 "outcome_measures": [
 "behavioral_performance",
-"other"
+"neuroendocrine"
 ],
 "design": [
 "animal_experiment",
@@ -2942,27 +2947,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Developed a modified Pavlovian paired-unpaired protocol in rats and found cocaine-paired contextual cues produced conditioned motoric responses at 1, 7, and 21 days, separable from habituation and stress effects.",
-"key_finding": "Identified reliable cocaine-conditioned motor activation at 1, 7, and 21 days post-conditioning, distinguishable from habituation and stress.",
+"summary": "Developed a modified Pavlovian paired-unpaired protocol in rats and found conditioned cocaine-induced motor activation at 1, 7, and 21 days post-conditioning, distinguishable from habituation and stress.",
+"key_finding": "Found a cocaine-conditioned motor response persisting to 21 days post-conditioning.",
 "sample_size": null,
 "free_keywords": [
 "cocaine",
 "conditioned locomotion",
 "paired-unpaired protocol",
-"Sprague-Dawley",
-"habituation",
-"Pavlovian conditioning",
-"contextual cues"
+"Sprague-Dawley rats",
+"psychostimulant sensitization",
+"conditioning paradigm"
 ],
 "usage": {
 "input_tokens": 786,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1017,
-"cost_usd": 0.00238
+"output_tokens": 949,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -3127,71 +3131,51 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:29:02Z",
+"classified_at": "2026-09-03T04:32:16Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states the paper is about 'accessing the placebo effect', indicating placebo is the paper's subject (clinical/ethical/practical focus).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title indicates focus on placebo in chiropractic but insufficient information to determine whether it reports empirical placebo/nocebo effects or is a review/commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "narrative_review",
+"study_focus": [],
+"article_type": "empirical_primary",
 "species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"global_health_qol"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"provider_patient_interaction",
-"therapeutic_ritual_context",
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses how chiropractic holism may access and utilize placebo effects in clinical practice.",
+"summary": "No abstract available; the paper's title suggested discussion of chiropractic approaches to 'accessing the placebo effect', but methods and results were not provided in the record.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chiropractic",
 "holism",
-"therapeutic ritual",
+"placebo effect",
 "physician-patient relations",
-"placebo effect"
+"manual therapy"
 ],
 "usage": {
-"input_tokens": 586,
+"input_tokens": 408,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 685,
-"cost_usd": 0.00166
+"output_tokens": 669,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -3742,11 +3726,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:52:47Z",
+"classified_at": "2026-09-06T17:57:38Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment explicitly tested Pavlovian (classical) conditioning of hypoalgesic responses and the role of NMDA receptors, i.e., mechanisms of conditioned (placebo-like) analgesia.",
+"confidence": 0.95,
+"rationale": "Animal experiment manipulated Pavlovian conditioning of hypoalgesia and tested NMDA blockade effects on acquisition and extinction, directly studying mechanisms of conditioned (placebo-like) analgesia.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3775,8 +3759,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits",
-"neurobiology_other_neurochemical"
+"neurobiology_other_neurochemical",
+"neural_systems_circuits"
 ],
 "moderators": [
 "pharmacological_manipulation"
@@ -3785,23 +3769,25 @@
 "other"
 ]
 },
-"summary": "Tested Pavlovian conditioned hypoalgesia in rats and found that the NMDA antagonist MK-801 disrupted acquisition and extinction but not expression of the conditioned hypoalgesic response.",
-"key_finding": "MK-801 blocked acquisition and extinction of conditioned hypoalgesia in the hot-plate task, implicating NMDA-dependent learning mechanisms.",
+"summary": "Found that the NMDA antagonist MK-801 blocked acquisition and extinction of conditioned hypoalgesia in rats but did not affect expression, implicating NMDA-dependent learning mechanisms in conditioned analgesia.",
+"key_finding": "MK-801 disrupted acquisition and extinction of conditioned hypoalgesic responses without altering expression or baseline nociception.",
 "sample_size": null,
 "free_keywords": [
-"mk-801",
-"dizocilpine",
-"nmda antagonist",
-"hot-plate",
+"MK-801",
+"NMDA",
 "conditioned hypoalgesia",
-"wistar rat"
+"hot plate",
+"Wistar rat",
+"learning",
+"extinction",
+"analgesia"
 ],
 "usage": {
 "input_tokens": 819,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1199,
-"cost_usd": 0.00275
+"output_tokens": 1330,
+"cost_usd": 0.00301
 }
 },
 "sources": [
@@ -4452,59 +4438,51 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:29:10Z",
+"classified_at": "2026-09-03T04:32:25Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly addresses the ethical use of placebos, so placebo science (ethics) is the paper's main subject.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "Insufficient information (no abstract/full text) to determine whether placebo/nocebo phenomena are the study focus versus an ethical discussion or illustrative case reports.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "case_report",
 "species": "human",
-"population": [
-"clinicians_providers"
-],
+"population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
+"effects": [],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Discusses ethical considerations and dilemmas around the use of placebos in clinical practice.",
+"summary": "Likely discussed ethical considerations and cases of placebo use in nursing practice, but the abstract/full text was unavailable to confirm focus or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "ethics",
 "nursing",
-"clinical practice",
-"deception",
-"informed consent"
+"placebo use",
+"back pain",
+"case report"
 ],
 "usage": {
-"input_tokens": 547,
+"input_tokens": 369,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 603,
-"cost_usd": 0.00149
+"output_tokens": 687,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -4687,17 +4665,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:56:25Z",
+"classified_at": "2026-09-06T17:57:36Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal conditioning experiment showed that a taste CS alone produced an analgesic conditioned response after morphine pairings, so placebo-like conditioned analgesia was the explicit object of study (classical conditioning of analgesia).",
+"rationale": "Animal conditioning experiment tested a taste CS that produced an analgesic conditioned response after morphine pairings, directly studying conditioned (placebo-like) analgesia (mechanism study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -4721,36 +4700,33 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neurobiology_opioid"
+"classical_conditioning"
 ],
 "moderators": [
-"treatment_characteristics",
-"prior_experience"
+"treatment_characteristics"
 ],
 "intervention_type": [
-"placebo_food_drink"
+"other"
 ]
 },
-"summary": "Found that a taste conditioned stimulus previously paired with morphine produced an analgesic conditioned response (increased hot-plate paw-lick latencies) in rats, dissociable from conditioned taste aversion.",
-"key_finding": "Presentation of the saccharin CS alone increased paw-lick latencies (conditioned analgesia); higher morphine doses were needed to condition analgesia than taste aversion, and timing of US delivery affected conditioning.",
+"summary": "Found that a taste cue paired with morphine produced a conditioned analgesic response (increased hot-plate paw-lick latencies) in rats, dissociable from conditioned taste aversion.",
+"key_finding": "Presentation of the conditioned taste cue alone increased hot-plate latencies, indicating an analgesic conditioned response after morphine pairings; lithium produced taste aversion without analgesia.",
 "sample_size": null,
 "free_keywords": [
 "saccharin",
 "hot plate",
-"paw-lick latency",
-"conditioned analgesia",
+"conditioned taste aversion",
 "morphine",
 "lithium",
-"sprague-dawley",
-"taste-cue conditioning"
+"Sprague-Dawley",
+"paw-lick latency"
 ],
 "usage": {
 "input_tokens": 719,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1187,
-"cost_usd": 0.0027
+"output_tokens": 959,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -5069,11 +5045,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:53:25Z",
+"classified_at": "2026-09-06T17:57:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Animal experiments showed learned (conditioned) increases in pain responsivity via classical conditioning, which fits inclusion as an animal model of context-driven (nocebo-like) effects.",
+"confidence": 0.85,
+"rationale": "Animal experiments explicitly tested conditioned (cue-linked) hyperalgesia using illness-inducing agents and a conditioned taste-aversion paradigm, fitting inclusion of conditioned/nocebo-like mechanisms in animal models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5102,8 +5078,7 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning",
-"neural_systems_circuits"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -5112,25 +5087,25 @@
 "not_applicable"
 ]
 },
-"summary": "Demonstrated that acute illness (LiCl, LPS) produced hyperalgesia in rats and that illness-induced hyperalgesia could be conditioned to a novel taste (saccharin).",
-"key_finding": "Conditioned hyperalgesia matched the magnitude and duration of acute illness-induced hyperalgesia in tail-flick and formalin tests.",
+"summary": "Found that systemic illness-inducing agents (LiCl, LPS) produced acute hyperalgesia in rats and that a conditioned taste-aversion procedure produced comparable conditioned hyperalgesia.",
+"key_finding": "Conditioned hyperalgesia to a novel taste was comparable in magnitude and duration to acute illness-induced hyperalgesia.",
 "sample_size": null,
 "free_keywords": [
 "lithium chloride",
 "lipopolysaccharide",
-"conditioned taste aversion",
+"conditioned hyperalgesia",
 "formalin test",
 "tail-flick",
+"conditioned taste aversion",
 "saccharin",
-"rats",
-"hyperalgesia"
+"sprague-dawley rats"
 ],
 "usage": {
 "input_tokens": 750,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1042,
-"cost_usd": 0.00242
+"output_tokens": 1066,
+"cost_usd": 0.00247
 }
 },
 "sources": [
@@ -5195,19 +5170,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:51:32Z",
+"classified_at": "2026-09-06T17:57:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal classical-conditioning experiments directly tested conditioned analgesia and anti-analgesia mechanisms using pharmacological blockade at the spinal level, so placebo/nocebo-like conditioned responses were the explicit focus.",
+"confidence": 0.9,
+"rationale": "Animal classical-conditioning experiments explicitly investigated conditioned analgesia and conditioned anti-analgesia mechanisms at the spinal level, meeting inclusion for mechanistic placebo/nocebo models (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect",
-"nocebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -5236,32 +5209,29 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Performed conditioned analgesia/anti-analgesia experiments in rats and found conditioned analgesia depended on spinal mu and delta opioid receptors while conditioned anti-analgesia was mediated by CCK and abolished opioid analgesia.",
-"key_finding": "Found conditioned analgesia was mediated by spinal mu and delta opioid receptors and conditioned anti-analgesia was blocked by a CCK antagonist; safety cues abolished opioid-mediated analgesia.",
+"summary": "Performed conditioned analgesia and conditioned anti-analgesia experiments in rats and found spinal mu/delta opioid receptors mediated conditioned analgesia while a CCK antagonist abolished conditioned anti-analgesia.",
+"key_finding": "Conditioned analgesia depended on spinal mu and delta opioid receptors, and conditioned anti-analgesia was eliminated by a cholecystokinin antagonist.",
 "sample_size": null,
 "free_keywords": [
 "conditioned analgesia",
 "conditioned anti-analgesia",
 "cholecystokinin",
-"spinal cord",
+"intrathecal",
 "naltrexone",
-"mu opiate receptor",
-"delta opiate receptor",
-"rats"
+"sprague-dawley"
 ],
 "usage": {
 "input_tokens": 846,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1412,
-"cost_usd": 0.00318
+"output_tokens": 889,
+"cost_usd": 0.00214
 }
 },
 "sources": [
@@ -5292,27 +5262,27 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 76,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:29:18Z",
+"classified_at": "2026-09-04T00:14:56Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly asks whether exercise effects on psychological variables can be separated from placebo effects, indicating placebo effects are the paper's subject (methodological/empirical focus).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text available; title indicates placebo/measurement issues in exercise but insufficient information to determine if empirical placebo/nocebo effects were studied.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
-"article_type": "empirical_primary",
-"species": "human",
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -5320,7 +5290,7 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"other"
+"sport_exercise_performance"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -5341,22 +5311,23 @@
 "not_applicable"
 ]
 },
-"summary": "Asked whether the true effects of exercise on psychological outcomes could be separated from placebo effects.",
+"summary": "Insufficient information to judge methods or results; title asked whether true exercise effects on psychological variables can be separated from placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "exercise",
 "psychological variables",
-"placebo effects",
-"expectation",
-"methodology"
+"placebo",
+"placebo response",
+"methodology",
+"sport psychology"
 ],
 "usage": {
-"input_tokens": 542,
+"input_tokens": 414,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 538,
-"cost_usd": 0.00136
+"output_tokens": 761,
+"cost_usd": 0.00177
 }
 },
 "sources": [
@@ -5526,18 +5497,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:39:07Z",
+"classified_at": "2026-09-06T17:57:37Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Used a balanced placebo design to dissociate pharmacological vs. expectancy effects, with expectancy producing enhanced creativity, meeting the criterion for expectation/context placebo-effect research (active_drug_context_manipulation).",
+"confidence": 0.95,
+"rationale": "Used a balanced placebo design to dissociate pharmacological versus expectancy effects, and the paper's primary analysis tested expectancy (placebo) effects on creativity.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_effect",
-"placebo_response"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5551,43 +5522,46 @@
 "cognition"
 ],
 "outcome_measures": [
-"behavioral_performance"
+"behavioral_performance",
+"self_report"
 ],
 "design": [
 "balanced_placebo"
 ],
 "effects": [
-"significant_objective"
+"significant_objective",
+"null_objective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design and found that believing one had consumed alcohol increased novelty and structural recombination in a creative task, while actual alcohol had no pharmacological effect.",
-"key_finding": "Belief of having consumed alcohol enhanced creative output irrespective of actual ethanol ingestion.",
+"summary": "Found that believing one had consumed alcohol enhanced novelty and structural recombination on a creativity task, while actual alcohol had no pharmacological effect.",
+"key_finding": "Expectancy of alcohol increased creative novelty regardless of whether alcohol was consumed; no pharmacological effect was observed.",
 "sample_size": null,
 "free_keywords": [
 "balanced placebo design",
-"creativity",
-"wildflower task",
+"alcohol expectancy",
+"creativity task",
+"wildflower arrangements",
 "ethanol",
-"expectancy",
 "novelty",
-"structural recombination"
+"placebo_expectation"
 ],
 "usage": {
 "input_tokens": 669,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 698,
-"cost_usd": 0.00171
+"output_tokens": 785,
+"cost_usd": 0.00188
 }
 },
 "sources": [
@@ -5620,18 +5594,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:29:27Z",
+"classified_at": "2026-09-03T04:32:31Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly links belief to healing, indicating placebo/expectation mechanisms are the paper's subject (placebo effect focus).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text available; title and MeSH suggest placebo/mental-healing topic but insufficient information to determine whether placebo/nocebo phenomena were an explicit empirical focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -5639,7 +5613,7 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "theory_commentary",
+"article_type": "narrative_review",
 "species": "human",
 "population": [
 "not_applicable"
@@ -5660,8 +5634,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"clinical_use_ethics_attitudes"
 ],
 "moderators": [
 "none_reported"
@@ -5670,23 +5643,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed how patients' beliefs and expectations contribute to healing and the placebo effect in clinical care.",
+"summary": "Insufficient information in the record to determine whether this 1994 Nursing Times article presented original empirical placebo research; title and indexing suggest discussion of belief/mental healing and placebo concepts.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"mental healing",
+"placebo effect",
 "belief",
-"expectation",
-"placebo",
 "nursing",
-"healing",
-"suggestion"
+"attitude to health"
 ],
 "usage": {
-"input_tokens": 543,
+"input_tokens": 365,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 696,
-"cost_usd": 0.00167
+"output_tokens": 660,
+"cost_usd": 0.00156
 }
 },
 "sources": [
@@ -6189,28 +6161,27 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:29:52Z",
+"classified_at": "2026-09-03T04:33:30Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly names the placebo effect and contrasts it with natural history, indicating the paper's subject is placebo phenomena (review/analysis).",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text available and the title is ambiguous about whether placebo phenomena are the paper's empirical focus or a conceptual discussion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -6230,8 +6201,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"history_conceptual",
-"trial_methodology_placebo_response"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -6240,21 +6210,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed distinctions between the natural history of disease and the placebo effect and discussed implications for interpreting clinical change.",
+"summary": "No abstract available; the title indicated a discussion of the relation between disease natural history and the placebo effect, but the paper's empirical focus could not be determined from available metadata.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "natural history",
-"placebo response",
 "disease course",
-"historical perspective"
+"placebo effect",
+"perspectives in biology and medicine",
+"1994"
 ],
 "usage": {
-"input_tokens": 546,
+"input_tokens": 368,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 927,
-"cost_usd": 0.00214
+"output_tokens": 724,
+"cost_usd": 0.00169
 }
 },
 "sources": [
@@ -7628,72 +7599,69 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:39:51Z",
+"classified_at": "2026-09-06T17:57:40Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "Used a balanced-placebo design manipulating alcohol content and expectancy to test placebo/expectancy effects on anxiety, meeting the criterion for experimental isolation of context/expectation effects (active drug context manipulation).",
+"confidence": 0.9,
+"rationale": "Used a balanced-placebo design manipulating alcohol expectancy versus beverage content to test expectancy (placebo-like) effects and moderators, so placebo/context effects were an explicit experimental focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult",
-"general_public"
+"healthy_adult"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"anxiety_stress",
-"other"
+"anxiety_stress"
 ],
 "outcome_measures": [
 "self_report",
 "behavioral_performance"
 ],
 "design": [
-"balanced_placebo"
+"balanced_placebo",
+"parallel_groups_rct"
 ],
 "effects": [
+"significant_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"prior_treatment_experience"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "expectation_level",
-"personality_traits",
 "prior_experience"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2x2 balanced-placebo design in 72 female social drinkers and found that alcohol expectancy reduced self-reported anxiety only in participants with positive alcohol-related beliefs, while self-disclosure behavior was unaffected.",
-"key_finding": "Alcohol expectancy reduced self-reported social anxiety in women who held positive beliefs about alcohol's social effects; no effects on observed self-disclosure.",
+"summary": "Found that alcohol expectancy reduced self-reported social anxiety in women who held positive alcohol beliefs, with beliefs moderating expectancy effects, and no effects on observed self-disclosure.",
+"key_finding": "In 72 female social drinkers, expectancy reduced anxiety only in participants with positive alcohol-related beliefs (balanced-placebo 2x2x2 design).",
 "sample_size": 72,
 "free_keywords": [
-"balanced-placebo",
+"balanced placebo",
 "alcohol expectancy",
-"social anxiety",
 "self-disclosure",
+"social anxiety",
 "female social drinkers"
 ],
 "usage": {
 "input_tokens": 698,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 845,
-"cost_usd": 0.00201
+"output_tokens": 932,
+"cost_usd": 0.00219
 }
 },
 "sources": [
@@ -7823,127 +7791,6 @@
 "landing_url": "https://doi.org/10.1016/0165-0327(94)90146-5",
 "cited_by_count": 29,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "doi:10.1007/bf02245216",
-"title": "Nimodipine and haloperidol attenuate behavioural sensitization to cocaine but only nimodipine blocks the establishment of conditioned locomotion induced by cocaine.",
-"authors": [
-"Reimer AR",
-"Martin-Iverson MT"
-],
-"journal": "Psychopharmacology",
-"journal_abbrev": "Psychopharmacology (Berl)",
-"year": 1994,
-"date": "1994-01-01",
-"doi": "10.1007/bf02245216",
-"pmid": "7862852",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2041436340",
-"abstract": "The classical conditioning of the behavioural effects of cocaine has been shown to contribute to behavioural sensitization. In the present experiments, it was demonstrated that the effects of cocaine in rats can be conditioned to contextual stimuli. Furthermore, sensitization to cocaine's locomotor effects were demonstrated, and shown to be context specific. Nimodipine (10 mg/kg, SC), an L-type dihydropyridine Ca2+ channel antagonist, appeared to completely block the establishment of conditioning of cocaine's effects, but only partially blocked sensitization to cocaine. Haloperidol (0.05 mg/kg, IP), a relatively specific D2 dopamine receptor antagonist, attenuated behavioral sensitization but had no influence on the establishment of the conditioned component of cocaine. These results indicate that the sensitization to, and the development of classical conditioning of, cocaine's behavioural effects can be pharmacologically dissociated, but that a non-associative process involved in sensitization is normally overridden by conditioning factors.",
-"keywords": [],
-"mesh": [
-"Animals",
-"Behavior, Animal",
-"Cocaine",
-"Conditioning, Operant",
-"Dose-Response Relationship, Drug",
-"Haloperidol",
-"Male",
-"Motor Activity",
-"Nimodipine",
-"Rats",
-"Rats, Sprague-Dawley",
-"Stimulation, Chemical"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1007/bf02245216",
-"cited_by_count": 54,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:55:51Z",
-"screening": {
-"decision": "include",
-"confidence": 0.62,
-"rationale": "Non-human animal experiments that manipulated contextual cues to produce conditioned locomotor responses to cocaine address classical conditioning mechanisms relevant to placebo/nocebo processes.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"motor_function",
-"other"
-],
-"outcome_measures": [
-"behavioral_performance",
-"motor_kinematic"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"significant_objective"
-],
-"mechanisms": [
-"classical_conditioning",
-"neurobiology_dopamine",
-"neurobiology_other_neurochemical",
-"neural_systems_circuits"
-],
-"moderators": [
-"pharmacological_manipulation",
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
-},
-"summary": "Demonstrated in rats that contextual cues were conditioned to cocaine's locomotor effects, that sensitization was context-specific, and that nimodipine blocked conditioning while haloperidol attenuated sensitization.",
-"key_finding": "Nimodipine (10 mg/kg) prevented establishment of conditioned locomotion to cocaine, whereas haloperidol (0.05 mg/kg) reduced behavioral sensitization but did not block conditioning.",
-"sample_size": null,
-"free_keywords": [
-"cocaine",
-"locomotor sensitization",
-"conditioning",
-"nimodipine",
-"haloperidol",
-"contextual cues",
-"rats",
-"behavioral sensitization"
-],
-"usage": {
-"input_tokens": 686,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1161,
-"cost_usd": 0.00264
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "1994-01-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1007/bf01276539",

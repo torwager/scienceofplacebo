@@ -671,22 +671,23 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T04:52:49Z",
+"classified_at": "2026-09-06T17:52:50Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Factorial manipulation of nicotine pharmacology and instructed nicotine content (balanced-placebo style) tested effects on craving and smoking behavior, making expectancy/placebo mechanisms the study focus.",
+"confidence": 0.9,
+"rationale": "Balanced-placebo manipulation of nicotine expectancy crossed with active vs. inert lozenge directly tested placebo/expectancy effects on craving and smoking behavior.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult"
+"substance_use"
 ],
 "age_group": [
 "adults"
@@ -699,41 +700,42 @@
 "behavioral_performance"
 ],
 "design": [
-"parallel_groups_rct",
 "balanced_placebo"
 ],
 "effects": [
 "mixed_inconsistent"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
 "expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"inert_pill_capsule"
+"inert_pill_capsule",
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Tested pharmacological and expectancy components of nicotine lozenges on craving and self-administration in 154 smokers and found that expectancy and nicotine had inconsistent effects, with some expectancy effects evident only among participants who believed the instructions.",
-"key_finding": "Nicotine reduced smoking intentions and withdrawal craving overall, whereas instructed nicotine content affected intentions and craving only among 'believers'; unanticipated smoking opportunities shortened latency to smoke (p<0.001).",
+"summary": "Randomized balanced-placebo study manipulated nicotine content instructions and lozenge pharmacology in 154 smokers and found both pharmacological nicotine and expectancy influenced craving and smoking intentions, with some effects present only among participants who believed the instructions.",
+"key_finding": "Nicotine reduced intentions to smoke and withdrawal-related craving overall, while nicotine expectancy reduced these outcomes among participants who believed the content instructions; unanticipated smoking opportunities shortened latency to smoke.",
 "sample_size": 154,
 "free_keywords": [
 "nicotine lozenge",
 "balanced placebo",
-"smoking opportunity",
+"smoking lapse",
 "craving",
 "self-administration",
-"expectancy",
-"believers"
+"nicotine replacement therapy",
+"smokers"
 ],
 "usage": {
 "input_tokens": 832,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1440,
-"cost_usd": 0.00324
+"output_tokens": 1102,
+"cost_usd": 0.00256
 }
 },
 "sources": [
@@ -1677,11 +1679,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:01:39Z",
+"classified_at": "2026-09-06T17:51:47Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study explicitly contrasted regular SCP neurofeedback against sham feedback to test neural mechanisms and feasibility of a double-blind placebo-controlled design, isolating placebo/sham effects.",
+"rationale": "Randomized sham-controlled neurofeedback trial that explicitly compared regular SCP training to sham feedback and analyzed regulation performance, neural (EEG/fMRI) changes, and feasibility of blinding, making placebo effects/controls a central focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1711,11 +1713,12 @@
 "within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "neural_systems_circuits",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -1724,15 +1727,14 @@
 "sham_device"
 ]
 },
-"summary": "Compared 16 sessions of SCP neurofeedback versus sham feedback in 20 healthy adults and found greater intermediate CNV enhancement and concomitant fMRI changes in the SCP group, while blinding was feasible.",
-"key_finding": "Found a larger intermediate increase in CNV (EEG) and localized fMRI changes (ACC, posterior parietal) in the SCP-trained group versus sham, with regulation capability improving only in the SCP group (N=20).",
+"summary": "Compared 16 sessions of slow cortical potential neurofeedback versus sham feedback in 20 healthy adults and found neural (EEG CNV, fMRI) changes differing between groups and feasible double-blind sham control, while task performance improved similarly in both groups.",
+"key_finding": "SCP-trained participants showed a larger intermediate CNV enhancement and distinct fMRI changes (ACC, posterior parietal) versus sham, and participants could not reliably identify treatment assignment.",
 "sample_size": 20,
 "free_keywords": [
 "slow cortical potentials",
-"SCP",
-"contingent negative variation",
 "CNV",
 "neurofeedback",
+"sham feedback",
 "anterior cingulate",
 "posterior parietal"
 ],
@@ -1740,8 +1742,8 @@
 "input_tokens": 919,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1093,
-"cost_usd": 0.00256
+"output_tokens": 1140,
+"cost_usd": 0.00266
 }
 },
 "sources": [
@@ -2409,11 +2411,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:01:59Z",
+"classified_at": "2026-09-06T17:51:48Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper experimentally manipulated clinician instructional set (verbal suggestion) and tested whether changed expectations affected clinical outcomes, making placebo/context expectation a stated focus in a secondary analysis of an RCT.",
+"rationale": "Randomized manipulation of clinician instructional set (verbal suggestion) changed expectation and was tested for effects on patient-reported pain/function, meeting inclusion for expectancy/context manipulation of an active treatment.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2436,8 +2438,7 @@
 "self_report"
 ],
 "design": [
-"parallel_groups_rct",
-"single_group_pre_post"
+"parallel_groups_rct"
 ],
 "effects": [
 "null_subjective"
@@ -2454,24 +2455,25 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Performed a planned secondary analysis of an RCT testing whether a positive versus neutral instructional set changed expectations for thoracic manipulation and whether expectation changes affected shoulder pain and function; expectation increased but pain/function did not improve.",
-"key_finding": "Positive instructional set significantly increased positive expectation (p=0.019) but produced no statistically significant short-term differences in SPADI or NPRS outcomes.",
+"summary": "Planned secondary analysis randomized patients to a positive or neutral instructional set prior to thoracic or scapular HVLAT manipulation, found messaging increased positive expectations in 23% but did not change short-term shoulder pain or function.",
+"key_finding": "A positive instructional set increased positive expectation (23% change, p=0.019) but produced no significant short-term improvement in SPADI or NPRS versus other subjects.",
 "sample_size": null,
 "free_keywords": [
 "thoracic manipulation",
-"HVLATM",
 "shoulder pain",
+"HVLAT",
 "instructional set",
 "expectation",
 "SPADI",
-"NPRS"
+"numeric pain rating",
+"manual therapy"
 ],
 "usage": {
 "input_tokens": 813,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1276,
-"cost_usd": 0.0029
+"output_tokens": 1047,
+"cost_usd": 0.00244
 }
 },
 "sources": [
@@ -3641,7 +3643,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1371/journal.pone.0039661",
+"id": "doi:10.1371/journal.pone.0113654",
 "title": "The definition of placebo in the informed consent forms of clinical trials.",
 "authors": [
 "Hernández A",
@@ -3653,9 +3655,9 @@
 "journal_abbrev": "PLoS One",
 "year": 2014,
 "date": "2014-11-25",
-"doi": "10.1371/journal.pone.0039661",
+"doi": "10.1371/journal.pone.0113654",
 "pmid": "25423149",
-"pmcid": "PMC3819667",
+"pmcid": "PMC4244087",
 "abstract": "AIM: Lack of knowledge concerning the nature of placebo and why it is necessary may influence the participation of patients in clinical trials. The objective of the present study is to review how placebo is described in written information for participants in clinical trials to be evaluated by a Human Research Ethics Committee. METHODS: All research protocols submitted for evaluation in a Spanish hospital during 2007-2013 were reviewed. The main characteristics of the studies using a placebo were collected. Three authors read each of them to determine how the term \"placebo\" was explained and if there was any comment on its efficacy and safety. RESULTS: Two thousand seven-hundred and forty research protocols were evaluated, of which three hundred and fifty-nine used a placebo. Pharmaceutical companies sponsored most placebo-controlled clinical trials (91.9%), and phase III studies were the commonest (59.9%). Oncology (15.0%), cardiology (14.2%), and neurology (13.1%) made the greatest contributions. A review of the informed consent forms showed that placebo was described in a similar manner in most studies: the explanation was limited to between four and eight words. Very few gave information about the risks of its use or adverse reactions from its administration. None of the studies provided details about the placebo effect. And 23 lacked any information about placebo at all. CONCLUSIONS: Explanations about placebo in informed consent forms is often scarce, and information about the placebo effect and associated risks are absent. This situation may influence a full understanding of placebo by participants in clinical trials and might reduce their informed decision to participate.",
 "keywords": [],
 "mesh": [
@@ -3674,11 +3676,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:11:04Z",
+"classified_at": "2026-09-06T17:51:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.95,
-"rationale": "The paper's primary aim was to analyze how placebos and their effects are described in participant information leaflets, addressing placebo science and informed consent (placebo_science_other).",
+"confidence": 0.9,
+"rationale": "Documentary observational study that explicitly examined how 'placebo' and the placebo effect were described in informed consent forms, making placebo the main subject (placebo science/ethics).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3689,7 +3691,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public"
+"not_applicable"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -3701,8 +3703,7 @@
 "not_applicable"
 ],
 "design": [
-"observational",
-"survey_interview"
+"observational"
 ],
 "effects": [
 "not_applicable"
@@ -3717,24 +3718,23 @@
 "not_applicable"
 ]
 },
-"summary": "Analyzed 45 participant information leaflets from UK RCTs and found that placebos were described less often and less neutrally than active treatments, leaving participants incompletely informed about possible placebo effects.",
-"key_finding": null,
-"sample_size": 45,
+"summary": "Reviewed informed consent forms from clinical trial protocols and found placebo explanations were brief or absent, risks/adverse reactions were rarely mentioned, and none described the placebo effect.",
+"key_finding": "Of 359 placebo-using protocols, explanations were typically 4–8 words, very few mentioned risks, none described the placebo effect, and 23 forms lacked any placebo information.",
+"sample_size": 359,
 "free_keywords": [
 "informed consent",
-"participant information leaflet",
-"ukcrn",
-"randomisation",
+"clinical trials",
 "ethics",
-"placebo_description",
-"clinical_trial_information"
+"placebo definition",
+"phase III",
+"Spain"
 ],
 "usage": {
-"input_tokens": 825,
+"input_tokens": 753,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 757,
-"cost_usd": 0.00187
+"output_tokens": 754,
+"cost_usd": 0.00184
 }
 },
 "sources": [
@@ -4749,6 +4749,122 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
+"id": "doi:10.3389/fnbeh.2014.00375",
+"title": "Nocebo effect in randomized clinical trials of antidepressants in children and adolescents: systematic review and meta-analysis.",
+"authors": [
+"Rojas-Mirquez JC",
+"Rodriguez-Zuñiga MJ",
+"Bonilla-Escobar FJ",
+"Garcia-Perdomo HA",
+"Petkov M",
+"Becerra L",
+"Borsook D",
+"Linnman C"
+],
+"journal": "Frontiers in behavioral neuroscience",
+"journal_abbrev": "Front Behav Neurosci",
+"year": 2014,
+"date": "2014-11-03",
+"doi": "10.3389/fnbeh.2014.00375",
+"pmid": "25404901",
+"pmcid": "PMC4217505",
+"abstract": "OBJECTIVE: To compare the incidence of adverse events between active and placebo arms of randomized clinical trials in depressive children and adolescents (C&A) with antidepressant treatments, in order to look for similarities in both groups that allow to establish a possible nocebo effect. METHODS: Systematic search strategy (January 1974-March 2013) in electronic databases, conference abstracts, and reference list of systematic reviews and included studies to identify parallel randomized placebo-controlled trials of antidepressants in C&A (<19 years) with major depressive disorder, and one or more interventions of any orally administered antidepressant. The pooled adverse events were calculated based on a fixed-effect model and statistical analysis involved the risk ratio (RR) of adverse events, with 95% confidence intervals (95% CI). RESULTS: Sixteen studies were included in the review, of which seven studies with a sample of 1911 patients had data to include in the meta-analysis. There was similar risk for the incidence of adverse events between non-active and active group (global RR 1.04, 95% CI: 0.97-1.11). CONCLUSION: Depressive C&A allocated to placebo or active group had similar risk to develop adverse events. These similarities in both groups are attributed to the nocebo effect. It is of note that defining \"nocebo\" effects is challenging in clinical populations because adverse effects may be attributed to the intervention or may be manifestation of the disease itself. The inclusion of a no-treatment arm may be warranted. Nocebo effects are likely when adverse events of placebo mimic the adverse events of active treatment, as was the case here.",
+"keywords": [
+"adolescents",
+"antidepressants",
+"children",
+"meta-analysis",
+"nocebo"
+],
+"mesh": [],
+"pub_types": [
+"Journal Article"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-04T00:11:12Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Meta-analysis explicitly examined adverse events in placebo arms versus active arms to assess nocebo effects in pediatric antidepressant RCTs, making nocebo response the analytic focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"nocebo_response"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"depression"
+],
+"age_group": [
+"children_adolescents"
+],
+"condition_domain": [
+"adverse_events",
+"mood_depression"
+],
+"outcome_measures": [
+"self_report",
+"clinician_rated"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"null_objective"
+],
+"mechanisms": [
+"nocebo_communication_disclosure",
+"trial_methodology_placebo_response"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"inert_pill_capsule",
+"not_applicable"
+]
+},
+"summary": "Meta-analysis pooled adverse events from placebo-controlled antidepressant RCTs in children and adolescents and found similar incidence of adverse events in placebo and active arms, attributing similarities to possible nocebo effects.",
+"key_finding": "Pooled risk ratio for adverse events in placebo versus active arms was 1.04 (95% CI 0.97–1.11), indicating no significant difference.",
+"sample_size": 7,
+"free_keywords": [
+"major depressive disorder",
+"children and adolescents",
+"adverse events",
+"risk ratio",
+"antidepressant trials"
+],
+"usage": {
+"input_tokens": 767,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 983,
+"cost_usd": 0.0023
+}
+},
+"sources": [
+"pubmed_query",
+"reference_mining"
+],
+"date_added": "2014-11-03",
+"private_pdf": {
+"available": true,
+"store_key": "wendt_2014_catecholomethyltransferase_val158met_polymorphism_is_associated.pdf",
+"source": "downloaded",
+"sha256": "d63b504a4c7e326c"
+},
+"language": "eng"
+},
+{
 "id": "doi:10.1371/journal.pone.0111776",
 "title": "Nonspecific adverse events in knee osteoarthritis clinical trials: a systematic review.",
 "authors": [
@@ -4865,123 +4981,6 @@
 "source": "downloaded",
 "sha256": "7cff02124aeeae36"
 }
-},
-{
-"id": "doi:10.1371/journal.pone.0107665",
-"title": "Nocebo effect in randomized clinical trials of antidepressants in children and adolescents: systematic review and meta-analysis.",
-"authors": [
-"Rojas-Mirquez JC",
-"Rodriguez-Zuñiga MJ",
-"Bonilla-Escobar FJ",
-"Garcia-Perdomo HA",
-"Petkov M",
-"Becerra L",
-"Borsook D",
-"Linnman C"
-],
-"journal": "Frontiers in behavioral neuroscience",
-"journal_abbrev": "Front Behav Neurosci",
-"year": 2014,
-"date": "2014-11-03",
-"doi": "10.1371/journal.pone.0107665",
-"pmid": "25404901",
-"pmcid": "PMC4164653",
-"abstract": "OBJECTIVE: To compare the incidence of adverse events between active and placebo arms of randomized clinical trials in depressive children and adolescents (C&A) with antidepressant treatments, in order to look for similarities in both groups that allow to establish a possible nocebo effect. METHODS: Systematic search strategy (January 1974-March 2013) in electronic databases, conference abstracts, and reference list of systematic reviews and included studies to identify parallel randomized placebo-controlled trials of antidepressants in C&A (<19 years) with major depressive disorder, and one or more interventions of any orally administered antidepressant. The pooled adverse events were calculated based on a fixed-effect model and statistical analysis involved the risk ratio (RR) of adverse events, with 95% confidence intervals (95% CI). RESULTS: Sixteen studies were included in the review, of which seven studies with a sample of 1911 patients had data to include in the meta-analysis. There was similar risk for the incidence of adverse events between non-active and active group (global RR 1.04, 95% CI: 0.97-1.11). CONCLUSION: Depressive C&A allocated to placebo or active group had similar risk to develop adverse events. These similarities in both groups are attributed to the nocebo effect. It is of note that defining \"nocebo\" effects is challenging in clinical populations because adverse effects may be attributed to the intervention or may be manifestation of the disease itself. The inclusion of a no-treatment arm may be warranted. Nocebo effects are likely when adverse events of placebo mimic the adverse events of active treatment, as was the case here.",
-"keywords": [
-"adolescents",
-"antidepressants",
-"children",
-"meta-analysis",
-"nocebo"
-],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-03T03:49:55Z",
-"screening": {
-"decision": "include",
-"confidence": 0.95,
-"rationale": "Meta-analysis explicitly examined adverse events in placebo versus active arms to assess nocebo effects (placebo/nocebo response focus).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_response"
-],
-"article_type": "meta_analysis",
-"species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
-"condition_domain": [
-"adverse_events",
-"mood_depression"
-],
-"outcome_measures": [
-"self_report",
-"clinical_endpoint"
-],
-"design": [
-"meta_analytic"
-],
-"effects": [
-"null_subjective"
-],
-"mechanisms": [
-"nocebo_communication_disclosure",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Pooled RCT data in children and adolescents with major depression were meta-analysed to compare adverse-event rates in placebo versus active arms and found similar incidence between groups.",
-"key_finding": "Found no difference in adverse-event risk between placebo and active arms (RR 1.04, 95% CI 0.97–1.11), interpreted as consistent with nocebo effects.",
-"sample_size": 7,
-"free_keywords": [
-"major depressive disorder",
-"children adolescents",
-"adverse events",
-"antidepressants",
-"nocebo",
-"placebo arm",
-"meta-analysis"
-],
-"usage": {
-"input_tokens": 761,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1070,
-"cost_usd": 0.00248
-}
-},
-"sources": [
-"pubmed_query",
-"reference_mining"
-],
-"date_added": "2014-11-03",
-"private_pdf": {
-"available": true,
-"store_key": "wendt_2014_catecholomethyltransferase_val158met_polymorphism_is_associated.pdf",
-"source": "downloaded",
-"sha256": "d63b504a4c7e326c"
-},
-"language": "eng"
 },
 {
 "id": "doi:10.7556/jaoa.2014.172",
@@ -7965,24 +7964,24 @@
 "oa_pdf_url": "https://www.jneurosci.org/content/jneuro/34/39/13000.full.pdf",
 "landing_url": "https://doi.org/10.1523/jneurosci.1820-14.2014",
 "cited_by_count": 102,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:06:07Z",
+"classified_at": "2026-09-06T17:52:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Animal experiment manipulated predictive cues (auditory signals for sucrose vs quinine) and measured cue-elicited neural representations, addressing mechanisms of outcome-specific expectation relevant to placebo/nocebo processes (conditioning/context effects).",
+"confidence": 0.85,
+"rationale": "Controlled animal experiment manipulated outcome-predictive cues and demonstrated expectation-evoked neural responses in gustatory cortex, a mechanistic study of expectation learning relevant to placebo mechanisms (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -8007,8 +8006,9 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
-"neural_systems_circuits"
+"computational_predictive_processing",
+"neural_systems_circuits",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
@@ -8017,25 +8017,23 @@
 "other"
 ]
 },
-"summary": "Recorded single-neuron activity in gustatory cortex of rats and found cue-selective anticipatory neural responses that developed with learning and could produce taste-like activity when sucrose was omitted.",
-"key_finding": "Found that auditory cues predicting sucrose versus quinine selectively activated gustatory-cortex neurons, and expectation alone could evoke sucrose-like neural responses on omitted trials.",
+"summary": "Recorded single-neuron activity in gustatory cortex of rats and found cue-selective anticipatory neural responses that developed with learning and produced sucrose-like activity when sucrose was omitted.",
+"key_finding": "Cue-specific auditory predictors evoked differential GC neuron responses and produced anticipatory sucrose-like activity even on omitted trials.",
 "sample_size": null,
 "free_keywords": [
 "gustatory cortex",
 "sucrose",
 "quinine",
-"anticipatory response",
-"single-unit recording",
-"Long-Evans",
-"auditory cue",
-"conditioning"
+"single-unit",
+"anticipatory activity",
+"cue-selective"
 ],
 "usage": {
 "input_tokens": 727,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1024,
-"cost_usd": 0.00238
+"output_tokens": 1176,
+"cost_usd": 0.00268
 }
 },
 "sources": [
@@ -9697,237 +9695,6 @@
 "landing_url": "https://doi.org/10.1056/nejmp1406388",
 "cited_by_count": 83,
 "openalex_checked": "2026-09-02v2"
-},
-{
-"id": "pmid:25317301",
-"title": "Persistent of Neck/Shoulder Pain among Computer Office Workers with Specific Attention to Pain Expectation, Somatization Tendency, and Beliefs.",
-"authors": [
-"Sadeghian F",
-"Raei M",
-"Amiri M"
-],
-"journal": "International journal of preventive medicine",
-"journal_abbrev": "Int J Prev Med",
-"year": 2014,
-"date": "2014-09-01",
-"doi": null,
-"pmid": "25317301",
-"pmcid": "PMC4192780",
-"openalex_id": "https://openalex.org/W1485188698",
-"abstract": "BACKGROUND: Neck and shoulder pains are the prevalent complaints among computer office workers. The purpose of this study was to assess the relationship of somatization tendency, expectation of pain, mental health and beliefs about causation of pain with persistence of neck/shoulder pains among computer office workers. METHODS: This research is a kind of prospective cohort study with 1-year follow-up. It has done among all eligible computer office workers of Shahroud universities (n = 182) in 2008-2009 and 1-year later. Data were collected using the Cultural and Psychosocial Influences on Disability questionnaire. Multiple logistic regression analysis was used to analyze the data through SPSS (P < 0.05). RESULTS: At the baseline 100 (54.9%) of participants reported neck/shoulder pains and at follow-up 34.3% of them reported persistence pains. Significant relationships were found between persistence of neck/shoulder pains and negative expectation about pain in next 1-year P = 0.002, (odds ratio [OR] =8.3, 95% confidence interval [CI]: 2.1-32.9) and somatization tendency P = 0.01, (OR = 6.5, 95% CI: 1.6-27.4). CONCLUSIONS: Pain expectation and somatization tendency recognized as associated risk factors of persistent neck/shoulder pain among computer operators. This confirmed some other similar studies on work-related musculoskeletal disorders in Europe countries in recent years.",
-"keywords": [
-"Beliefs",
-"computer office workers",
-"neck pain",
-"shoulder pains",
-"somatization tendency"
-],
-"mesh": [],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "green",
-"oa_pdf_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4192780",
-"landing_url": "https://pubmed.ncbi.nlm.nih.gov/25317301",
-"cited_by_count": 13,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:04:33Z",
-"screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Prospective cohort explicitly measured baseline pain expectation and somatization as predictors of persistent neck/shoulder pain, making expectation effects the paper's focus (observational study of expectation-related symptom persistence).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"nocebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"nocebo_communication_disclosure",
-"verbal_suggestion_expectation",
-"emotion_anxiety_regulation"
-],
-"moderators": [
-"personality_traits",
-"expectation_level"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Found that negative expectation of future pain and higher somatization tendency predicted one-year persistence of neck/shoulder pain among computer office workers.",
-"key_finding": "Negative expectation about pain (OR = 8.3) and somatization tendency (OR = 6.5) were associated with persistent neck/shoulder pain at one year.",
-"sample_size": 182,
-"free_keywords": [
-"computer office workers",
-"neck pain",
-"shoulder pain",
-"somatization",
-"pain expectation",
-"prospective cohort",
-"work-related musculoskeletal"
-],
-"usage": {
-"input_tokens": 750,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1230,
-"cost_usd": 0.00279
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2014-09-01",
-"private_pdf": null
-},
-{
-"id": "doi:10.5993/ajhb.38.5.2",
-"title": "Impact of expectations on the effects of exercise on psychological distress.",
-"authors": [
-"Helgadóttir B",
-"Ekblom Ö",
-"Forsell Y"
-],
-"journal": "American journal of health behavior",
-"journal_abbrev": "Am J Health Behav",
-"year": 2014,
-"date": "2014-09-01",
-"doi": "10.5993/ajhb.38.5.2",
-"pmid": "24933134",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W1986124113",
-"abstract": "OBJECTIVE: To evaluate the influence of expectations on effectiveness of exercise in reducing psychological distress. METHOD: Data came from a Swedish longitudinal population-based study consisting of 4631 people aged 20-64 years. Psychological distress was measured with the Major Depressive Inventory. Expectations (positive expectations or indifference) towards exercise were combined with exercise (regular exercise: yes or no). RESULTS: Indifferent non-exercisers had increased risk of psychological distress. Regular exercisers who were indifferent towards exercise as a self-help method were less likely to be psychologically distressed compared to exercisers with positive expectations. CONCLUSION: The results encourage systematic use of exercise in prevention and rehabilitation of persons suffering from psychological distress. People's personal expectations might not be needed for treatment effect.",
-"keywords": [],
-"mesh": [
-"Adaptation, Psychological",
-"Adult",
-"Attitude to Health",
-"Major Depressive Disorder",
-"Exercise",
-"Female",
-"Humans",
-"Longitudinal Studies",
-"Male",
-"Middle Aged",
-"Risk Factors",
-"Self Care",
-"Stress, Psychological",
-"Sweden",
-"Young Adult"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.5993/ajhb.38.5.2",
-"cited_by_count": 3,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:10:02Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The study explicitly measured participants' expectations and tested how expectations moderated the effect of exercise on psychological distress, which addresses expectation (a placebo-related) mechanism as a predictor of health outcome in an empirical sample.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"general_public"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression",
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience"
-],
-"moderators": [
-"expectation_level",
-"sex_gender"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Analyzed longitudinal population data and found that baseline expectations toward exercise moderated the association between regular exercise and psychological distress, with indifferent non-exercisers at higher risk and indifferent exercisers less likely to be distressed.",
-"key_finding": "Regular exercisers who were indifferent toward exercise showed lower psychological distress compared to exercisers with positive expectations; indifferent non-exercisers had increased risk.",
-"sample_size": 4631,
-"free_keywords": [
-"exercise expectancy",
-"major depressive inventory",
-"population-based",
-"longitudinal",
-"psychological distress",
-"expectation moderator"
-],
-"usage": {
-"input_tokens": 628,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1107,
-"cost_usd": 0.00252
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2014-09-01",
-"private_pdf": null
 },
 {
 "id": "doi:10.1590/0004-282x20140087",
@@ -12921,151 +12688,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1186/1471-2474-15-248",
-"title": "A prospective study of the association of patient expectations with changes in health-related quality of life outcomes, following total joint replacement.",
-"authors": [
-"Gonzalez Saenz de Tejada M",
-"Escobar A",
-"Bilbao A",
-"Herrera-Espiñeira C",
-"García-Perez L",
-"Aizpuru F",
-"Sarasqueta C"
-],
-"journal": "BMC musculoskeletal disorders",
-"journal_abbrev": "BMC Musculoskelet Disord",
-"year": 2014,
-"date": "2014-07-23",
-"doi": "10.1186/1471-2474-15-248",
-"pmid": "25055728",
-"pmcid": "PMC4123493",
-"openalex_id": "https://openalex.org/W2127082548",
-"abstract": "BACKGROUND: Patient expectations regarding surgery may be related to outcomes in total joint replacement (TJR). The aim of this study was to determine the association of patient expectations with health related quality of life (HRQoL) outcomes measured by Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC) and Short Form 12 (SF-12) and satisfaction with current symptoms measured on a 4-point Likert scale, one year after surgery, adjusting for Body Mass Index (BMI), age, gender, joint, education, previous intervention and baseline scores. METHODS: Consecutive patients preparing for TJR of the knee or hip due to primary osteoarthritis (OA) in 15 hospitals in Spain were recruited for the study. Patients completed questionnaires before surgery and 12 months afterwards: five questions about expectations before surgery; an item to measure satisfaction; two HRQoL instruments-WOMAC and SF-12; as well as questions about sociodemographic information. To determine the association of patient expectations at baseline, with changes in HRQoL 12 months after surgery and with satisfaction, general linear models and logistic regression analysis were performed. RESULTS: A total of 892 patients took part in the study. Patients who had higher pain relief or ability to walk expectations improved more in HRQoL at 12 months. Moreover, patients with high daily activity expectations were more satisfied. CONCLUSIONS: Patients with higher baseline expectations for TJR, improved more in HRQoL at one year and had more likelihood to be satisfied than patients with lower expectations, adjusted for BMI, age, gender, joint, education, previous intervention and HRQoL baseline scores.",
-"keywords": [],
-"mesh": [
-"Aged",
-"Arthralgia",
-"Arthroplasty, Replacement, Hip",
-"Arthroplasty, Replacement, Knee",
-"Disability Evaluation",
-"Female",
-"Humans",
-"Linear Models",
-"Logistic Models",
-"Male",
-"Middle Aged",
-"Odds Ratio",
-"Osteoarthritis, Hip",
-"Osteoarthritis, Knee",
-"Pain Measurement",
-"Postoperative Pain",
-"Patient Satisfaction",
-"Prospective Studies",
-"Quality of Life",
-"Recovery of Function",
-"Risk Factors",
-"Spain",
-"Surveys and Questionnaires",
-"Time Factors",
-"Treatment Outcome"
-],
-"pub_types": [
-"Journal Article",
-"Multicenter Study",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "gold",
-"oa_pdf_url": "https://bmcmusculoskeletdisord.biomedcentral.com/counter/pdf/10.1186/1471-2474-15-248",
-"landing_url": "https://doi.org/10.1186/1471-2474-15-248",
-"cited_by_count": 69,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:08:40Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Prospective observational study tested baseline patient expectations as predictors of change in patient-reported outcomes after joint replacement, making expectation a measured predictor of health-relevant outcomes (fits inclusion for expectation/context effects).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"pain",
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"prior_treatment_experience",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"expectation_level",
-"disease_severity_duration"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Prospective cohort study found that higher preoperative expectations predicted greater improvements in HRQoL (WOMAC, SF-12) and higher satisfaction one year after hip or knee replacement.",
-"key_finding": "Higher baseline expectations for pain relief, walking ability, and daily activities predicted larger improvements in WOMAC and SF-12 scores and greater likelihood of satisfaction at 12 months (N=892).",
-"sample_size": 892,
-"free_keywords": [
-"total joint replacement",
-"hip replacement",
-"knee replacement",
-"osteoarthritis",
-"WOMAC",
-"SF-12",
-"patient expectations",
-"prospective cohort"
-],
-"usage": {
-"input_tokens": 866,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 994,
-"cost_usd": 0.00235
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2014-07-23",
-"private_pdf": {
-"available": true,
-"store_key": "gonzalez_2014_a_prospective_study_of_the.pdf",
-"source": "downloaded",
-"sha256": "a049226176cd6565"
-}
-},
-{
 "id": "doi:10.1177/1740774514543538",
 "title": "Ethical considerations in design of a study to evaluate a US Food and Drug Administration-approved indication: antivenom versus placebo for copperhead envenomation.",
 "authors": [
@@ -14352,7 +13974,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1371/journal.pone.0092938",
+"id": "doi:10.1371/journal.pone.0101822",
 "title": "When and why placebo-prescribing is acceptable and unacceptable: a focus group study of patients' views.",
 "authors": [
 "Bishop FL",
@@ -14363,9 +13985,9 @@
 "journal_abbrev": "PLoS One",
 "year": 2014,
 "date": "2014-07-09",
-"doi": "10.1371/journal.pone.0092938",
+"doi": "10.1371/journal.pone.0101822",
 "pmid": "25006673",
-"pmcid": "PMC3973570",
+"pmcid": "PMC4089920",
 "abstract": "BACKGROUND: Surveys of doctors suggest that they use placebos and placebo effects clinically to help patients. However, patients' views are not well-understood. We aimed to identify when and why placebo-prescribing in primary care might be acceptable and unacceptable to patients. METHODS: A purposive diverse sample of 58 English-speaking adults (18 men; aged 19-80 years) participated in 11 focus groups. Vignettes describing doctors prescribing placebos in primary care were used to initiate discussions. Data were analyzed inductively. RESULTS: Participants discussed diverse harms and benefits of placebo-prescribing for individual patients, carers, healthcare providers, and society. Two perspectives on placebo-prescribing were identified. First, the \"consequentialist\" perspective focused on the potential for beneficial outcomes of placebo-prescribing. Here, some participants thought placebos are beneficial and should be used clinically; they often invoked the power of the mind or mind-body interactions. Others saw placebos as ineffective and therefore a waste of time and money. Second, the \"respecting autonomy\" perspective emphasized the harms caused by the deceptive processes thought necessary for placebo-prescribing. Here, participants judged placebo-prescribing unacceptable because placebo-prescribers deceive patients, thus a doctor who prescribes placebos cannot be trusted and patients' autonomy is compromised. They also saw placebo-responders as gullible, which deterred them from trying placebos themselves. Overall, the word \"placebo\" was often thought to imply \"ineffective\"; some participants suggested alternative carefully chosen language that could enable doctors to prescribe placebos without directly lying to patients. CONCLUSIONS: Negative views of placebos derive from beliefs that placebos do not work and/or that they require deception by the doctor. Positive views are pragmatic in that if placebos work then any associated processes (e.g. mechanisms, deception) are deemed unimportant. Public education about placebos and their effects is warranted and research to identify optimal ways of harnessing placebo effects in clinical practice is needed.",
 "keywords": [],
 "mesh": [
@@ -14394,11 +14016,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-05T21:01:43Z",
+"classified_at": "2026-09-04T00:11:09Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Focus-group empirical study whose primary aim was patients' views about placebo-prescribing (placebo science/ethics/attitudes), fitting inclusion rule for placebo_science_other.",
+"rationale": "Qualitative empirical study whose explicit aim was to explore patients' views on placebo-prescribing and ethics, fitting 'placebo_science_other' inclusion for surveys/focus-groups of attitudes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14419,8 +14041,7 @@
 "other"
 ],
 "outcome_measures": [
-"self_report",
-"not_applicable"
+"self_report"
 ],
 "design": [
 "survey_interview"
@@ -14438,24 +14059,24 @@
 "not_applicable"
 ]
 },
-"summary": "Used focus groups to explore when and why patients considered placebo-prescribing acceptable or unacceptable in primary care, finding divided consequentialist and autonomy perspectives.",
-"key_finding": "Found that participants split between a consequentialist view (placebos acceptable if they work) and an autonomy-based view (unacceptable due to required deception).",
+"summary": "Explored patients' views in focus groups about when placebo-prescribing in primary care is acceptable, finding consequentialist and autonomy-based perspectives.",
+"key_finding": null,
 "sample_size": 58,
 "free_keywords": [
 "focus groups",
 "primary care",
 "deception",
-"informed consent",
-"public attitudes",
+"autonomy",
 "mind-body",
-"patient trust"
+"trust",
+"patient attitudes"
 ],
 "usage": {
 "input_tokens": 872,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 677,
-"cost_usd": 0.00172
+"output_tokens": 582,
+"cost_usd": 0.00153
 }
 },
 "sources": [
@@ -14470,6 +14091,118 @@
 "sha256": "f8e0c3c91e12e4b4"
 },
 "language": "eng"
+},
+{
+"id": "doi:10.1038/nrgastro.2014.118",
+"title": "Neurogastroenterology: Neuronal correlates of placebo in chronic FGIDs.",
+"authors": [
+"Zhou Q",
+"Verne GN"
+],
+"journal": "Nature reviews. Gastroenterology & hepatology",
+"journal_abbrev": "Nat Rev Gastroenterol Hepatol",
+"year": 2014,
+"date": "2014-07-08",
+"doi": "10.1038/nrgastro.2014.118",
+"pmid": "25001971",
+"pmcid": "PMC5690476",
+"openalex_id": null,
+"abstract": "Placebo analgesia is increasingly appreciated in many difficult to treat chronic functional gastrointestinal disorders such as IBS. However, investigations of interactions between psychological and biological placebo factors are still in early stages. Now, technologies have been developed that enable neural mechanisms of placebo analgesia to be studied more directly in humans.",
+"keywords": [],
+"mesh": [
+"Analgesia",
+"Chronic Disease",
+"Gastrointestinal Diseases",
+"Humans",
+"Neural Pathways",
+"Pain",
+"Placebos"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, N.I.H., Extramural"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:51:52Z",
+"screening": {
+"decision": "include",
+"confidence": 0.8,
+"rationale": "Narrative review explicitly focused on neural mechanisms of placebo analgesia in chronic functional gastrointestinal disorders (placebo is the main subject).",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "narrative_review",
+"species": "human",
+"population": [
+"gi_ibs"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain",
+"nausea_gi"
+],
+"outcome_measures": [
+"fmri",
+"pet_neurochemical",
+"neuroendocrine"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"neural_systems_circuits",
+"verbal_suggestion_expectation",
+"neurobiology_opioid"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
+},
+"summary": "Reviews neural mechanisms of placebo analgesia in chronic functional gastrointestinal disorders and discusses emerging technologies for studying these effects in humans.",
+"key_finding": null,
+"sample_size": null,
+"free_keywords": [
+"irritable bowel syndrome",
+"functional dyspepsia",
+"visceral pain",
+"placebo analgesia",
+"brain-gut axis"
+],
+"usage": {
+"input_tokens": 511,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 764,
+"cost_usd": 0.0018
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2014-07-08",
+"private_pdf": null
 },
 {
 "id": "doi:10.1177/2156587214528513",
@@ -16207,7 +15940,7 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1136/postgradmedj-2012-131730",
+"id": "doi:10.15171/ijhpm.2014.54",
 "title": "Qualitative study of Nocebo Phenomenon (NP) involved in doctor-patient communication.",
 "authors": [
 "Ashraf B",
@@ -16218,9 +15951,9 @@
 "journal_abbrev": "Int J Health Policy Manag",
 "year": 2014,
 "date": "2014-06-02",
-"doi": "10.1136/postgradmedj-2012-131730",
+"doi": "10.15171/ijhpm.2014.54",
 "pmid": "24987718",
-"pmcid": "PMC2815077",
+"pmcid": "PMC4075099",
 "abstract": "BACKGROUND: Doctor-patient communication has far reaching influences on the overall well-being of the patients. Words are powerful tools in the doctor's armamentarium, having both healing as well as harming effects. Doctors need to be conscious about the choice of their words. This study aimed to determine the frequency and pattern of Nocebo Phenomenon (NP) un-intentionally induced by the communication of surgeons and anesthetists through the course of various interventional procedures such as surgery, anesthesia, and crucial communication encounters with their patients. METHODS: The study was carried out by the Department of Medical Education (DME), Pakistan Institute of Medical Sciences (PIMS), Shaheed Zulfiqar Ali Bhutto Medical University (SZABMU), Islamabad over six months period. All residents and faculty members serving at our institute in various surgical and anesthesia departments constituted the study population. A questionnaire was employed as the data collection tool. RESULTS: Significant proportions of the doctor-patient communications under scrutiny entailed NP. It was more frequently observed in association with female gender of the involved professionals, residency status versus faculty position, and shorter professional experience (i.e. <5 years). Although the participants endorsed the fact that the choice of their words influenced the well-being of their patients, none of them were actually aware of the concept of NP. CONCLUSION: NP existed in the clinical practice of the surgeons and anesthetists during their communication with patients. It was more frequently found among females, residents and professionals with less than five years of working experience. There is need to create awareness among these professionals about the subtle negative messages conveyed by such communication and alert them that the nocebo effects have negative repercussions on the clinical outcomes of their patients. The professionals should be formally educated to avoid nocebo words and phrases.",
 "keywords": [
 "Doctor-Patient Communication",
@@ -16241,11 +15974,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:12:15Z",
+"classified_at": "2026-09-06T17:51:55Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Empirical survey explicitly investigated the nocebo phenomenon in doctor–patient communication, making placebo/nocebo the paper's primary focus (placebo science / clinician attitudes),",
+"confidence": 0.85,
+"rationale": "Empirical survey explicitly studied the nocebo phenomenon in doctor–patient communication as the paper's primary focus (qualitative questionnaire of clinicians).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -16265,7 +15998,10 @@
 "adverse_events"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"self_report",
+"self_report",
+"behavioral_performance"
 ],
 "design": [
 "survey_interview"
@@ -16275,34 +16011,35 @@
 ],
 "mechanisms": [
 "nocebo_communication_disclosure",
-"provider_patient_interaction",
-"clinical_use_ethics_attitudes"
+"provider_patient_interaction"
 ],
 "moderators": [
 "sex_gender",
+"provider_characteristics",
 "prior_experience"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Surveyed surgeons and anesthetists about nocebo-inducing communication and found clinicians frequently reported such phenomena, especially among female, resident, and less-experienced professionals.",
-"key_finding": "Found high reported frequency of nocebo-related communication, more common among female clinicians, residents, and those with <5 years' experience.",
+"summary": "Surveyed surgeons and anesthetists about unintentional nocebo communication and found nocebo-eliciting phrases were common, especially among female clinicians, residents, and those with <5 years' experience.",
+"key_finding": "Found that many clinicians reported unintentionally inducing nocebo phenomena in communication; frequency was higher for female professionals, trainees, and less-experienced staff.",
 "sample_size": null,
 "free_keywords": [
+"nocebo",
+"doctor-patient communication",
 "surgeons",
 "anesthetists",
-"communication",
-"questionnaire",
-"Pakistan",
-"medical education"
+"residents",
+"awareness",
+"qualitative survey"
 ],
 "usage": {
-"input_tokens": 559,
-"cache_read_input_tokens": 6144,
+"input_tokens": 784,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 835,
-"cost_usd": 0.00196
+"output_tokens": 987,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -18769,11 +18506,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T04:54:41Z",
+"classified_at": "2026-09-06T17:51:55Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Included because the study explicitly measured an analgesic placebo response (PET) and tested BDNF genotype as a moderator of placebo-related DA release.",
+"rationale": "Placebo analgesia (with vs without placebo) and its dopaminergic response were measured and analyzed as outcomes and moderated by BDNF genotype, so placebo response was an explicit focus (rule 2/3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -18794,15 +18531,16 @@
 "other"
 ],
 "outcome_measures": [
-"self_report",
 "fmri",
-"pet_neurochemical"
+"pet_neurochemical",
+"self_report"
 ],
 "design": [
 "within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"significant_objective",
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "genetics_placebome",
@@ -18817,25 +18555,22 @@
 "other"
 ]
 },
-"summary": "Tested BDNF Val66Met effects on reward/stress processing and found Met carriers showed a blunted nucleus accumbens dopamine response to an analgesic placebo.",
-"key_finding": "BDNF Met(66) carriers exhibited reduced pain-stress-induced DA release and a blunted DA response to the analgesic placebo in the NAc.",
+"summary": "Studied healthy adults genotyped for BDNF Val66Met with fMRI reward task and a sustained pain challenge during PET, finding genotype differences in DA responses and a blunted dopaminergic response to analgesic placebo in Met carriers.",
+"key_finding": "BDNF Met(66) carriers showed blunted nucleus accumbens dopamine response to analgesic placebo and altered anticipatory reward/loss activation.",
 "sample_size": 49,
 "free_keywords": [
 "bdnf val66met",
-"dopamine",
-"nucleus accumbens",
 "monetary incentive delay",
-"pet",
-"fmri",
-"analgesic placebo",
-"d2/3 receptors"
+"nucleus accumbens",
+"dopamine d2/3 pet",
+"placebo analgesia"
 ],
 "usage": {
 "input_tokens": 917,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1214,
-"cost_usd": 0.0028
+"output_tokens": 1005,
+"cost_usd": 0.00239
 }
 },
 "sources": [
@@ -19892,11 +19627,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:14:23Z",
+"classified_at": "2026-09-06T17:51:55Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized controlled trial experimentally manipulated therapeutic verbal suggestion versus neutral noise on postoperative pain and opioid use, testing a context/expectation intervention.",
+"rationale": "Randomized controlled trial that experimentally manipulated therapeutic suggestion versus neutral noise to test its effect on postoperative pain and opioid use, making placebo/context effects the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -19908,15 +19643,13 @@
 "species": "human",
 "population": [
 "pediatric_clinical",
-"surgical_patients",
-"other_clinical"
+"surgical_patients"
 ],
 "age_group": [
 "children_adolescents"
 ],
 "condition_domain": [
-"pain",
-"adverse_events"
+"pain"
 ],
 "outcome_measures": [
 "self_report",
@@ -19930,8 +19663,7 @@
 "significant_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -19940,24 +19672,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial in 94 children found that therapeutic suggestions played during emergence from anesthesia reduced 30-minute postoperative pain scores and reduced IV opioid requirement.",
-"key_finding": "Therapeutic suggestion reduced pain at 30 minutes (P = .04) and increased likelihood of lower IV opioid use in 4–8-year-old tonsillectomy patients.",
+"summary": "Randomized trial in 4–8-year-old children found that therapeutic suggestions played as they emerged from anesthesia reduced pain at 30 minutes and reduced IV opioid requirements.",
+"key_finding": "Therapeutic suggestion lowered 30-minute post-extubation pain (p = .04) and was associated with a 70% increased likelihood of receiving less IV opioid.",
 "sample_size": 94,
 "free_keywords": [
 "tonsillectomy",
-"postoperative pain",
-"pediatric anesthesia",
-"postanesthesia care unit",
+"post-anesthesia care unit",
+"pediatric",
 "intravenous opioid",
 "therapeutic suggestion",
-"randomized"
+"emergence from anesthesia"
 ],
 "usage": {
 "input_tokens": 667,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 824,
-"cost_usd": 0.00196
+"output_tokens": 907,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -20994,125 +20725,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.2106/jbjs.j.00229",
-"title": "Attitudes and beliefs about placebo surgery among orthopedic shoulder surgeons in the United Kingdom.",
-"authors": [
-"Wartolowska K",
-"Beard DJ",
-"Carr AJ"
-],
-"journal": "PloS one",
-"journal_abbrev": "PLoS One",
-"year": 2014,
-"date": "2014-03-14",
-"doi": "10.2106/jbjs.j.00229",
-"pmid": "24632880",
-"pmcid": "PMC3703438",
-"abstract": "OBJECTIVES: To survey surgeons on their beliefs and attitudes towards the use of placebo in surgery. METHODS: British orthopedic shoulder surgeons, attending a national conference in the United Kingdom, were asked to complete a self-report online questionnaire about their beliefs and attitudes towards the use of placebo related to surgical intervention. The survey included questions about ethical issues, the mechanism of placebo effects, and any concerns regarding its use. RESULTS: 100 surgeons who participated in the survey believed that placebo surgery is ethically acceptable (96%), especially as a part of a clinical trial (46%). Respondents thought that a placebo effect in surgery is real i.e. has a scientific basis (92%), that placebo can be therapeutically beneficial (77%), and that it involves psychological mechanisms (96%). Over half of the respondents (58%) have used a surgical procedure with a significant placebo component at least once in their professional career. Their main concern about placebo use in surgery was that it might involve an element of deception. CONCLUSIONS AND IMPLICATIONS: Surgeons generally agreed that a placebo component to surgical intervention might exist. They also supported placebo use in clinical trials and considered it ethical, providing it does not involve deception of patients. More studies are needed, particularly among other surgical specialties and with larger numbers of participants, to better understand the use of placebo in surgery.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Attitude of Health Personnel",
-"Culture",
-"Female",
-"Health Care Surveys",
-"Humans",
-"Male",
-"Middle Aged",
-"Orthopedics",
-"Placebo Effect",
-"Shoulder",
-"Specialties, Surgical",
-"Surveys and Questionnaires",
-"United Kingdom"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:11:17Z",
-"screening": {
-"decision": "include",
-"confidence": 0.95,
-"rationale": "Survey study whose explicit focus was clinicians' beliefs and ethics about placebo (placebo surgery), fitting 'placebo_science_other' inclusion.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"self_report",
-"not_applicable"
-],
-"design": [
-"survey_interview"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Surveyed UK orthopedic shoulder surgeons and found broad acceptance that placebo surgery exists and can be ethical in trials, with concern about deception and many reporting prior use of procedures with placebo components.",
-"key_finding": "96% believed placebo surgery has a scientific basis; 58% reported having used a procedure with a significant placebo component.",
-"sample_size": 100,
-"free_keywords": [
-"placebo surgery",
-"orthopedic surgeons",
-"attitudes",
-"ethics",
-"deception",
-"clinical trial",
-"shoulder"
-],
-"usage": {
-"input_tokens": 739,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 773,
-"cost_usd": 0.00188
-}
-},
-"sources": [
-"pubmed_query"
-],
-"date_added": "2014-03-14",
-"private_pdf": {
-"available": true,
-"store_key": "wartolowska_2014_attitudes_and_beliefs_about_placebo.pdf",
-"source": "downloaded",
-"sha256": "970cb64bf5e45410"
-},
-"language": "eng"
-},
-{
 "id": "doi:10.1556/imas.6.2014.1.1",
 "title": "Shortening the length of stay and mechanical ventilation time by using positive suggestions via MP3 players for ventilated patients.",
 "authors": [
@@ -21154,13 +20766,13 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:13:47Z",
+"classified_at": "2026-09-06T17:51:54Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Randomized trial explicitly tested standardized positive suggestive messages versus control and music to shorten ICU stay and ventilation, isolating a context/expectation intervention.",
+"confidence": 0.9,
+"rationale": "Randomized trial manipulated standardized positive suggestive messages versus control/music and found reduced ICU length of stay and ventilation time, so placebo/context (expectation/suggestion) effects were the study focus (mechanism manipulated).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
@@ -21198,24 +20810,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized ICU patients on mechanical ventilation received standardized positive suggestive messages via MP3, and the suggestive-message group had shorter ICU stay and ventilation time than control and music groups.",
-"key_finding": "Study group had significantly shorter ICU stay (134.2 ± 73.3 vs. 314.2 ± 178.4 h) and ventilation time (85.2 ± 34.9 vs. 232.0 ± 165.6 h) versus unified control.",
+"summary": "Randomized ICU study tested standardized positive suggestive messages via MP3 versus music and usual care and found shorter ICU stay and mechanical ventilation time in the suggestion group.",
+"key_finding": "Study group had shorter ICU stay (134.2 ± 73.3 vs. 314.2 ± 178.4 h) and ventilator time (85.2 ± 34.9 vs. 232.0 ± 165.6 h) versus unified control.",
 "sample_size": null,
 "free_keywords": [
 "icu",
 "mechanical ventilation",
-"suggestive audio",
 "mp3",
-"relaxation music",
-"length of stay",
-"critical care"
+"suggestive communication",
+"saps II",
+"length of stay"
 ],
 "usage": {
-"input_tokens": 711,
-"cache_read_input_tokens": 5888,
+"input_tokens": 455,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 879,
-"cost_usd": 0.00208
+"output_tokens": 769,
+"cost_usd": 0.00181
 }
 },
 "sources": [
@@ -21228,6 +20839,130 @@
 "source": "downloaded",
 "sha256": "5636b5bd6d08ff44"
 }
+},
+{
+"id": "doi:10.1371/journal.pone.0091699",
+"title": "Attitudes and beliefs about placebo surgery among orthopedic shoulder surgeons in the United Kingdom.",
+"authors": [
+"Wartolowska K",
+"Beard DJ",
+"Carr AJ"
+],
+"journal": "PloS one",
+"journal_abbrev": "PLoS One",
+"year": 2014,
+"date": "2014-03-14",
+"doi": "10.1371/journal.pone.0091699",
+"pmid": "24632880",
+"pmcid": "PMC3954758",
+"abstract": "OBJECTIVES: To survey surgeons on their beliefs and attitudes towards the use of placebo in surgery. METHODS: British orthopedic shoulder surgeons, attending a national conference in the United Kingdom, were asked to complete a self-report online questionnaire about their beliefs and attitudes towards the use of placebo related to surgical intervention. The survey included questions about ethical issues, the mechanism of placebo effects, and any concerns regarding its use. RESULTS: 100 surgeons who participated in the survey believed that placebo surgery is ethically acceptable (96%), especially as a part of a clinical trial (46%). Respondents thought that a placebo effect in surgery is real i.e. has a scientific basis (92%), that placebo can be therapeutically beneficial (77%), and that it involves psychological mechanisms (96%). Over half of the respondents (58%) have used a surgical procedure with a significant placebo component at least once in their professional career. Their main concern about placebo use in surgery was that it might involve an element of deception. CONCLUSIONS AND IMPLICATIONS: Surgeons generally agreed that a placebo component to surgical intervention might exist. They also supported placebo use in clinical trials and considered it ethical, providing it does not involve deception of patients. More studies are needed, particularly among other surgical specialties and with larger numbers of participants, to better understand the use of placebo in surgery.",
+"keywords": [],
+"mesh": [
+"Adult",
+"Attitude of Health Personnel",
+"Culture",
+"Female",
+"Health Care Surveys",
+"Humans",
+"Male",
+"Middle Aged",
+"Orthopedics",
+"Placebo Effect",
+"Shoulder",
+"Specialties, Surgical",
+"Surveys and Questionnaires",
+"United Kingdom"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, Non-U.S. Gov't"
+],
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-04T00:10:45Z",
+"screening": {
+"decision": "include",
+"confidence": 0.95,
+"rationale": "Systematic review and meta-analysis explicitly examined treatment-specific and non-specific (sham/placebo) effects of surgery using randomized sham-controlled trials, making placebo response/effect the paper's focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect",
+"placebo_response"
+],
+"article_type": "meta_analysis",
+"species": "human",
+"population": [
+"mixed_clinical",
+"surgical_patients"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain",
+"nausea_gi",
+"other"
+],
+"outcome_measures": [
+"self_report",
+"clinical_endpoint"
+],
+"design": [
+"meta_analytic"
+],
+"effects": [
+"mixed_inconsistent"
+],
+"mechanisms": [
+"trial_methodology_placebo_response",
+"therapeutic_ritual_context"
+],
+"moderators": [
+"treatment_characteristics",
+"trial_characteristics"
+],
+"intervention_type": [
+"sham_surgery"
+]
+},
+"summary": "Reviewed randomized sham-controlled trials of invasive procedures and meta-analysed treatment-specific versus non-specific (sham) effects, finding generally large non-specific effects and variable specific benefits across conditions.",
+"key_finding": "Pooled SMD between active and sham procedures was 0.34 overall (95% CI 0.20–0.49); surgery versus sham was non-significant for pain (SMD=0.13) but larger for GERD (SMD=0.65) and weight-loss procedures (SMD≈0.52).",
+"sample_size": 55,
+"free_keywords": [
+"sham surgery",
+"gastroesophageal reflux",
+"weight loss",
+"obesity",
+"standardised mean difference",
+"non-specific effects"
+],
+"usage": {
+"input_tokens": 706,
+"cache_read_input_tokens": 6144,
+"cache_creation_input_tokens": 0,
+"output_tokens": 1243,
+"cost_usd": 0.00282
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2014-03-14",
+"private_pdf": {
+"available": true,
+"store_key": "wartolowska_2014_attitudes_and_beliefs_about_placebo.pdf",
+"source": "downloaded",
+"sha256": "970cb64bf5e45410"
+},
+"language": "eng"
 },
 {
 "id": "doi:10.1017/s1461145714000224",
@@ -21484,6 +21219,141 @@
 "landing_url": "https://doi.org/10.1523/jneurosci.3931-13.2014",
 "cited_by_count": 71,
 "openalex_checked": "2026-09-02v2"
+},
+{
+"id": "doi:10.1523/jneurosci.3155-13.2014",
+"title": "Functional network architecture predicts psychologically mediated analgesia related to treatment in chronic knee pain patients.",
+"authors": [
+"Hashmi JA",
+"Kong J",
+"Spaeth R",
+"Khan S",
+"Kaptchuk TJ",
+"Gollub RL"
+],
+"journal": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+"journal_abbrev": "J Neurosci",
+"year": 2014,
+"date": "2014-03-12",
+"doi": "10.1523/jneurosci.3155-13.2014",
+"pmid": "24623770",
+"pmcid": "PMC3951694",
+"openalex_id": null,
+"abstract": "Placebo analgesia is an indicator of how efficiently the brain translates psychological signals conveyed by a treatment procedure into pain relief. It has been demonstrated that functional connectivity between distributed brain regions predicts placebo analgesia in chronic back pain patients. Greater network efficiency in baseline brain networks may allow better information transfer and facilitate adaptive physiological responses to psychological aspects of treatment. Here, we theorized that topological network alignments in resting state scans predict psychologically conditioned analgesic responses to acupuncture treatment in chronic knee osteoarthritis pain patients (n = 45). Analgesia was induced by building positive expectations toward acupuncture treatment with verbal suggestion and heat pain conditioning on a test site of the arm. This procedure induced significantly more analgesia after sham or real acupuncture on the test site than in a control site. The psychologically conditioned analgesia was invariant to sham versus real treatment. Efficiency of information transfer within local networks calculated with graph-theoretic measures (local efficiency and clustering coefficients) significantly predicted conditioned analgesia. Clustering coefficients in regions associated with memory, motivation, and pain modulation were closely involved in predicting analgesia. Moreover, women showed higher clustering coefficients and marginally greater pain reduction than men. Overall, analgesic response to placebo cues can be predicted from a priori resting state data by observing local network topology. Such low-cost synchronizations may represent preparatory resources that facilitate subsequent performance of brain circuits in responding to adaptive environmental cues. This suggests a potential utility of network measures in predicting placebo response for clinical use.",
+"keywords": [
+"brain network",
+"chronic pain",
+"placebo",
+"predictive analysis",
+"resting state",
+"synchronization"
+],
+"mesh": [
+"Acupuncture Analgesia",
+"Adaptation, Psychological",
+"Arthralgia",
+"Chronic Pain",
+"Conditioning, Psychological",
+"Connectome",
+"Cortical Synchronization",
+"Cues",
+"Female",
+"Humans",
+"Male",
+"Middle Aged",
+"Osteoarthritis, Knee",
+"Placebo Effect",
+"Predictive Value of Tests",
+"Rest"
+],
+"pub_types": [
+"Journal Article",
+"Research Support, N.I.H., Extramural",
+"Research Support, Non-U.S. Gov't"
+],
+"oa_status": null,
+"oa_pdf_url": null,
+"landing_url": null,
+"cited_by_count": null,
+"scope": "core",
+"classification": {
+"taxonomy_version": "1.0.0",
+"prompt_version": "2.0.0",
+"provider": "openai",
+"model": "gpt-5-mini",
+"input_mode": "title_abstract",
+"classified_at": "2026-09-06T17:51:57Z",
+"screening": {
+"decision": "include",
+"confidence": 0.9,
+"rationale": "Study experimentally induced psychologically conditioned (verbal suggestion + conditioning) analgesia and tested/sham acupuncture, with placebo-responsive analgesia and resting-state predictors as the primary focus.",
+"exclusion_reason": null,
+"peer_reviewed": true
+},
+"tags": {
+"study_focus": [
+"placebo_effect"
+],
+"article_type": "empirical_primary",
+"species": "human",
+"population": [
+"chronic_pain"
+],
+"age_group": [
+"adults"
+],
+"condition_domain": [
+"pain"
+],
+"outcome_measures": [
+"self_report",
+"fmri"
+],
+"design": [
+"within_subject_experimental"
+],
+"effects": [
+"significant_subjective",
+"significant_objective"
+],
+"mechanisms": [
+"verbal_suggestion_expectation",
+"classical_conditioning",
+"neural_systems_circuits"
+],
+"moderators": [
+"sex_gender"
+],
+"intervention_type": [
+"sham_acupuncture"
+]
+},
+"summary": "Induced conditioned analgesia with verbal suggestion and heat-pain conditioning in knee osteoarthritis patients and found resting-state network topology predicted analgesic (placebo) responses after sham or real acupuncture.",
+"key_finding": "Resting-state local network efficiency and clustering coefficients predicted the magnitude of psychologically conditioned analgesia (placebo analgesia) in chronic knee pain patients (n=45).",
+"sample_size": 45,
+"free_keywords": [
+"knee osteoarthritis",
+"resting-state functional connectivity",
+"graph theory",
+"clustering coefficient",
+"conditioned analgesia",
+"heat pain",
+"acupuncture",
+"placebo analgesia"
+],
+"usage": {
+"input_tokens": 801,
+"cache_read_input_tokens": 5888,
+"cache_creation_input_tokens": 0,
+"output_tokens": 795,
+"cost_usd": 0.00194
+}
+},
+"sources": [
+"pubmed_query"
+],
+"date_added": "2014-03-12",
+"private_pdf": null
 },
 {
 "id": "doi:10.1016/j.jpsychores.2014.02.011",
@@ -22658,64 +22528,50 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1136/bmj.g1635",
 "cited_by_count": 4,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:02:18Z",
+"classified_at": "2026-09-06T17:51:58Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names 'Placebo controlled trials', indicating the paper's focus is on placebo-controlled trial methodology/placebo science rather than using placebo merely as a comparator.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided and title suggests a methodological piece about placebo-controlled trials, so it's unclear whether placebo/nocebo effects are the paper's explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviews issues related to placebo-controlled trials and their methodology.",
+"summary": "Full text unavailable; title and MeSH suggest a methodological discussion of placebo-controlled trials and research design, but the abstract is missing so focus on placebo/nocebo is unclear.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo-controlled trials",
+"research design",
 "randomized controlled trials",
-"blinding",
-"clinical trials",
 "methodology"
 ],
 "usage": {
-"input_tokens": 598,
+"input_tokens": 470,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 578,
-"cost_usd": 0.00145
+"output_tokens": 619,
+"cost_usd": 0.0015
 }
 },
 "sources": [
@@ -23167,23 +23023,23 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T04:55:38Z",
+"classified_at": "2026-09-06T17:52:20Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Used a balanced-placebo design (expectancy x alcohol administration) experimentally manipulating drug context/expectation, which fits inclusion rule for active_drug_context_manipulation placebo-effect studies.",
+"confidence": 0.9,
+"rationale": "Used a balanced placebo design manipulating alcohol expectancy/administration to test causal effects of expectation/context on smoking urge (expectancy placebo-effect design).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public"
+"other_clinical",
+"healthy_adult"
 ],
 "age_group": [
 "adults"
@@ -23195,43 +23051,43 @@
 "self_report"
 ],
 "design": [
-"balanced_placebo",
-"parallel_groups_rct"
+"balanced_placebo"
 ],
 "effects": [
 "mixed_inconsistent",
-"significant_subjective",
-"null_subjective"
+"significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"clinical_use_ethics_attitudes",
-"computational_predictive_processing"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
-"trial_characteristics"
+"trial_characteristics",
+"expectation_level"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"active_drug_context_manipulation",
+"verbal_suggestion_only"
 ]
 },
-"summary": "Used a balanced-placebo alcohol design and found alcohol increased self-reported urge to smoke after 3-h deprivation (n=32) but not after overnight abstinence (n=96).",
-"key_finding": "Alcohol administration increased urge to smoke significantly after 3-hour deprivation but produced a smaller, non-significant effect after overnight abstinence.",
+"summary": "Tested alcohol and alcohol-expectancy effects on self-reported urge to smoke using a balanced-placebo design and found alcohol increased urge after 3-hour deprivation but not after overnight abstinence.",
+"key_finding": "Alcohol administration increased self-reported smoking urge following 3-h deprivation (n=32) but produced smaller, nonsignificant effects after overnight abstinence (n=96).",
 "sample_size": 128,
 "free_keywords": [
 "balanced placebo",
+"smoking deprivation",
 "alcohol expectancy",
 "urge to smoke",
-"smoking deprivation",
-"laboratory study"
+"craving",
+"laboratory study",
+"time-of-abstinence",
+"cigarette craving"
 ],
 "usage": {
-"input_tokens": 671,
-"cache_read_input_tokens": 5888,
+"input_tokens": 415,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1088,
-"cost_usd": 0.00249
+"output_tokens": 871,
+"cost_usd": 0.002
 }
 },
 "sources": [
@@ -24175,18 +24031,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:16:50Z",
+"classified_at": "2026-09-06T17:53:08Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "The paper explicitly analyzed how doctor–patient encounter and patient expectations influenced pain outcomes in a randomized trial, making placebo/contextual effects and trial methodology a primary focus (mechanisms/moderators of response).",
+"rationale": "The trial explicitly analyzed doctor–patient encounter and patient expectations as predictors/mediators of clinical outcomes, making placebo/context effects the object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response",
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -24211,35 +24066,37 @@
 "mechanisms": [
 "provider_patient_interaction",
 "verbal_suggestion_expectation",
-"trial_methodology_placebo_response",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "expectation_level",
-"provider_characteristics",
-"treatment_characteristics"
+"treatment_characteristics",
+"provider_characteristics"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Analyzed effects of doctor–patient encounter and patient expectations on low back pain outcomes in a 4-arm randomized dose trial of spinal manipulation and found DPE effects comparable in magnitude to dose at 6 and 12 weeks.",
-"key_finding": "Doctor–patient encounter had standardized total effects on pain (|β|total = 0.22 at 6 weeks and 0.15 at 12 weeks), comparable to manipulation dose effects (|β|total = 0.11 and 0.12).",
+"summary": "Randomized 400 chronic low back pain patients to 0/6/12/18 chiropractic manipulation sessions and found patient-rated doctor–patient encounter had effects on pain at 6 and 12 weeks comparable to dose of manipulation, while baseline expectations had no notable effect.",
+"key_finding": "Doctor–patient encounter had standardized total effects on pain (|β|total = 0.22 at 6 weeks and 0.15 at 12 weeks), comparable to dose effects (|β|total = 0.11 and 0.12).",
 "sample_size": 400,
 "free_keywords": [
 "spinal manipulation",
+"chiropractic",
 "doctor-patient encounter",
 "low back pain",
-"path analysis",
 "dose",
+"path analysis",
+"expectation",
 "light massage control"
 ],
 "usage": {
 "input_tokens": 913,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1193,
-"cost_usd": 0.00276
+"output_tokens": 967,
+"cost_usd": 0.00231
 }
 },
 "sources": [
@@ -25600,137 +25457,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.1370/afm.1583",
-"title": "Managing expectations of antibiotics for upper respiratory tract infections: a qualitative study.",
-"authors": [
-"Mustafa M",
-"Wood F",
-"Butler CC",
-"Elwyn G"
-],
-"journal": "Annals of family medicine",
-"journal_abbrev": "Ann Fam Med",
-"year": 2014,
-"date": "2014-01-01",
-"doi": "10.1370/afm.1583",
-"pmid": "24445101",
-"pmcid": "PMC3896536",
-"openalex_id": "https://openalex.org/W2148545689",
-"abstract": "PURPOSE: Communication experts have suggested that it is good practice to ask patients' directly whether they expect to receive antibiotics as part of asking about the triad of ideas, concerns, and expectations for health care. Our aim was to explore the views and experiences of family physicians about using this strategy with their patients, focusing the interview on the problem of eliciting expectations of antibiotics as a possible treatment for upper respiratory tract infections. METHODS: We conducted a qualitative study using semistructured interviews with 20 family physicians in South Wales, United Kingdom, and performing thematic analysis. RESULTS: Family physicians assumed most patients or parents wanted antibiotics, as well as wanting to be \"checked out\" to make sure the illness was \"nothing serious.\" Physicians said they did not ask direct questions about expectations, as that might lead to confrontation. They preferred to elicit expectations for antibiotics in an indirect manner, before performing a physical examination. The majority described reporting their findings of the examination as a \"running commentary\" so as to influence expectations and help avoid generating resistance to a soon-to-be-made-explicit plan not to prescribe antibiotics. The physicians used the running commentary to preserve and enhance the physician-patient relationship. CONCLUSIONS: Real-world family physicians use indirect methods to explore expectations for treatment and, on the basis of their physical examination, build an argument for reassuring the patient or parent. In contrast to proposed models in the communication literature, interventions to promote appropriate antibiotic prescribing might include a focus on training in communication skills that (1) integrates these indirect methods as part of building collaborative physician-patient relationships and (2) uses the running commentary of examination findings to facilitate participation in clinical decisions.",
-"keywords": [
-"antibacterial agents",
-"family practice",
-"health communication",
-"inappropriate prescribing",
-"physician-patient relations",
-"primary care",
-"qualitative research",
-"upper respiratory tract infections"
-],
-"mesh": [
-"Anti-Bacterial Agents",
-"Attitude of Health Personnel",
-"Communication",
-"Family Practice",
-"Female",
-"Humans",
-"Male",
-"Patient Preference",
-"Patient Satisfaction",
-"Physician-Patient Relations",
-"Practice Patterns, Physicians'",
-"Qualitative Research",
-"Respiratory Tract Infections",
-"Wales"
-],
-"pub_types": [
-"Journal Article"
-],
-"oa_status": "diamond",
-"oa_pdf_url": "http://www.annfammed.org/content/12/1/29.full.pdf",
-"landing_url": "https://doi.org/10.1370/afm.1583",
-"cited_by_count": 65,
-"scope": "adjacent",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:16:30Z",
-"screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Qualitative empirical study explicitly focused on clinicians' methods for eliciting and managing patient expectations about antibiotics — a placebo-science adjacent topic (communication/expectation management) relevant to placebo use and clinical context.",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"respiratory"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"survey_interview"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Interviewed 20 family physicians about how they elicited and managed patients' expectations for antibiotics for upper respiratory infections, finding they used indirect questioning and a running commentary to shape expectations.",
-"key_finding": "Found that physicians avoided direct questions about expectations and used examination 'running commentary' to influence patient expectations and avoid confrontation.",
-"sample_size": 20,
-"free_keywords": [
-"antibiotic_prescribing",
-"upper_respiratory_infection",
-"running_commentary",
-"doctor_patient_communication",
-"expectations",
-"wales"
-],
-"usage": {
-"input_tokens": 798,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 614,
-"cost_usd": 0.00157
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2014-01-01",
-"private_pdf": {
-"available": true,
-"store_key": "mustafa_2014_managing_expectations_of_antibiotics_for.pdf",
-"source": "downloaded",
-"sha256": "61d4c54eed059ad9"
-}
-},
-{
 "id": "doi:10.1097/nnd.0000000000000097",
 "title": "Placebo/nocebo/tomato effect…it's all about attitude, perception, and expectation.",
 "authors": [
@@ -26034,11 +25760,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:19:42Z",
+"classified_at": "2026-09-06T17:52:03Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Observational cohort explicitly measured patient recovery expectations and tested their association with 3-month outcomes, making expectations a primary focus relevant to placebo/expectation effects.",
+"confidence": 0.8,
+"rationale": "Measured patients' recovery expectations and tested their association with subsequent clinical outcomes, making expectation/placebo-relevant processes the study's focus (observational prognostic study of expectation effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -26049,10 +25775,11 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"chronic_pain"
+"other_clinical"
 ],
 "age_group": [
-"adults"
+"adults",
+"mixed_unspecified"
 ],
 "condition_domain": [
 "pain"
@@ -26068,33 +25795,36 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"prior_experience"
+"prior_experience",
+"disease_severity_duration"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Measured baseline recovery expectations in 1,169 primary-care and chiropractic patients with low back pain and found expectations were significantly associated with 3-month pain and global perceived recovery but explained only a small portion of variance.",
-"key_finding": "Expectations predicted 3-month pain intensity and global perceived effect, but added little explained variance for pain outcomes.",
+"summary": "Prospective cohort study found baseline recovery expectations were significantly associated with 3-month low back pain intensity and global perceived effect but explained only a small portion of variance in pain outcomes.",
+"key_finding": "Expectations predicted 3-month outcomes (adjusted R up to 0.32 for LBP intensity; AUC for global perceived effect 0.77 in GP patients) but added little explanatory power beyond other prognostic factors.",
 "sample_size": 1169,
 "free_keywords": [
 "low back pain",
-"recovery expectation",
-"global perceived effect",
+"recovery expectations",
 "prognosis",
-"general practice",
+"primary care",
 "chiropractic",
-"prospective cohort"
+"global perceived effect",
+"predictors",
+"cohort"
 ],
 "usage": {
 "input_tokens": 918,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 972,
-"cost_usd": 0.00232
+"output_tokens": 790,
+"cost_usd": 0.00196
 }
 },
 "sources": [
@@ -26700,18 +26430,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T21:02:39Z",
+"classified_at": "2026-09-03T03:52:49Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly states the paper addresses implications for placebo effects in patient-centered care, making placebo effects the paper's subject per inclusion rule 4 (reviews/theory on placebo).",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title and MeSH suggest a conceptual discussion of patient-centered care and placebo effects but insufficient detail to confirm whether placebo phenomena are the paper's explicit analytic focus or a secondary discussion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -26740,10 +26470,9 @@
 "not_applicable"
 ],
 "mechanisms": [
-"provider_patient_interaction",
-"therapeutic_ritual_context",
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"provider_patient_interaction",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -26752,22 +26481,21 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews implications of patient-centered care for understanding and applying placebo effects in clinical research and practice.",
+"summary": "Insufficient abstract text to determine methods; title indicated a conceptual discussion of how patient-centered care relates to placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "patient-centered care",
-"clinical communication",
-"therapeutic relationship",
+"physician-patient relationship",
 "placebo mechanisms",
-"empathy"
+"clinical communication"
 ],
 "usage": {
-"input_tokens": 567,
+"input_tokens": 389,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 540,
-"cost_usd": 0.00137
+"output_tokens": 737,
+"cost_usd": 0.00172
 }
 },
 "sources": [

@@ -752,61 +752,52 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:33:53Z",
+"classified_at": "2026-09-03T04:24:56Z",
 "screening": {
 "decision": "uncertain",
-"confidence": 0.6,
-"rationale": "Abstract outlines a hypothesis/proposal to apply classical conditioning to psoriasis treatment but provides no clear methods or results indicating an empirical test of placebo/nocebo phenomena.",
-"exclusion_reason": null,
+"confidence": 0.35,
+"rationale": "Abstract presents a hypothesis and research suggestion about applying classical conditioning to psoriasis treatment but does not clearly report empirical methods or results, so inclusion is unclear.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
-"species": "human",
+"species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [
-"other",
 "other"
 ],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"treatment_cues_dose_route"
 ],
-"moderators": [
-"none_reported"
-],
+"moderators": [],
 "intervention_type": [
+"open_label_placebo",
 "other"
 ]
 },
-"summary": "Proposed applying Pavlovian (classical) conditioning to elicit conditioned pharmacotherapeutic responses to reduce corticosteroid use in psoriasis.",
+"summary": "Proposed that classical (Pavlovian) conditioning could produce conditioned pharmacotherapeutic responses to reduce corticosteroid use in psoriasis and called for research to test this approach.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psoriasis",
-"corticosteroids",
 "classical conditioning",
 "conditioned pharmacotherapeutic response",
-"Ader"
+"corticosteroid-sparing",
+"placebo theory"
 ],
 "usage": {
-"input_tokens": 547,
+"input_tokens": 497,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 916,
-"cost_usd": 0.00212
+"output_tokens": 635,
+"cost_usd": 0.00154
 }
 },
 "sources": [
@@ -1129,11 +1120,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:10:24Z",
+"classified_at": "2026-09-06T17:56:01Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study experimentally manipulated pain expectation (nonpainful stimuli intermixed with painful vs. not) and tested its effects on perception and brain responses, isolating an expectation/nocebo-like effect.",
+"rationale": "Experimental manipulation of pain expectation contrasted nonpainful stimuli in pain-expectation versus no-expectation contexts, making expectation/nocebo-like modulation the stated focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1150,7 +1141,8 @@
 "adults"
 ],
 "condition_domain": [
-"pain"
+"pain",
+"sensory_perception"
 ],
 "outcome_measures": [
 "self_report",
@@ -1165,8 +1157,7 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"neural_systems_circuits",
-"emotion_anxiety_regulation"
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
@@ -1175,22 +1166,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that uncertain expectation of pain increased ACC and PO/PI brain responses and amplified perceived unpleasantness to identical nonpainful warm stimuli.",
-"key_finding": "Expectation increased ACC signal magnitude and expanded PO/PI activation while raising subjective unpleasantness of innocuous stimuli.",
+"summary": "Found that uncertain expectation of pain increased perceived unpleasantness of identical nonpainful stimuli and enhanced ACC and PO/PI fMRI responses.",
+"key_finding": "Expectation of pain amplified self-reported unpleasantness and increased ACC signal change and PO/PI activated volume to innocuous thermal stimuli.",
 "sample_size": null,
 "free_keywords": [
-"anterior cingulate",
+"anterior cingulate cortex",
 "posterior insula",
 "event-related fMRI",
-"warm stimuli",
-"pain anticipation"
+"thermal stimulation",
+"unpleasantness",
+"pain expectation"
 ],
 "usage": {
 "input_tokens": 793,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 841,
-"cost_usd": 0.00203
+"output_tokens": 861,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -1366,11 +1358,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:08:57Z",
+"classified_at": "2026-09-06T17:56:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "The paper explicitly analyzed and reported objective remissions in the placebo arm and discussed placebo-associated spontaneous regression rates, making placebo response the analytic focus.",
+"confidence": 0.92,
+"rationale": "Placebo-arm remissions and their rate were a stated focus (validity of historical spontaneous regression rate) and the paper reports and interprets placebo responses from the randomized trial.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1409,25 +1401,24 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Found that 6% of patients randomized to placebo experienced objective tumor remissions (3 CR, 3 PR) in a double-blind multicentre RCT of interferon-gamma for metastatic renal cell carcinoma.",
-"key_finding": "Six of 97 patients (6%) receiving placebo had validated complete or partial remissions (3 CR, 3 PR), comparable to the interferon-gamma arm (4%).",
+"summary": "Reported and analyzed tumor regressions in the placebo arm of a multicenter randomized double-blind trial in metastatic renal cell carcinoma, finding a 6% objective response rate on placebo.",
+"key_finding": "Observed 6% (3/49? see full text) objective response rate (CR+PR) on placebo, comparable to or exceeding historical spontaneous rates and prompting discussion of higher phase II thresholds.",
 "sample_size": 197,
 "free_keywords": [
 "metastatic renal cell carcinoma",
-"interferon-gamma",
-"nephrectomy",
 "spontaneous regression",
-"tumor response",
-"multicentre randomized",
-"placebo arm",
-"phase II threshold"
+"nephrectomy",
+"interferon-gamma",
+"complete response",
+"partial response",
+"randomized placebo-controlled trial"
 ],
 "usage": {
 "input_tokens": 916,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 928,
-"cost_usd": 0.00223
+"output_tokens": 910,
+"cost_usd": 0.0022
 }
 },
 "sources": [
@@ -1481,24 +1472,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1006/appe.2000.0339",
 "cited_by_count": 47,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:10:58Z",
+"classified_at": "2026-09-06T17:56:03Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Human experimental study of classical conditioning of flavour preferences by caffeine (mechanism relevant to placebo learning), with training/test manipulations and extinction.",
+"confidence": 0.6,
+"rationale": "Human experimental study of classical (pharmacological) conditioning of flavour preference by caffeine and its extinction, which addresses mechanisms (conditioning, contingency) relevant to placebo-like learned responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1509,8 +1500,8 @@
 "adults"
 ],
 "condition_domain": [
-"sensory_perception",
-"appetite_metabolism"
+"appetite_metabolism",
+"sensory_perception"
 ],
 "outcome_measures": [
 "self_report"
@@ -1528,31 +1519,31 @@
 "prior_treatment_experience"
 ],
 "moderators": [
-"prior_experience",
 "none_reported"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"active_drug_context_manipulation",
+"placebo_food_drink"
 ]
 },
-"summary": "Found that flavour liking increased with caffeinated-paired training in caffeine-deprived adults and that liking was maintained only when caffeine and deprivation contingencies persisted, with extinction when contingencies were broken.",
-"key_finding": "Conditioned flavour preference increased across training and persisted only under continued caffeine-deprivation contingency; extinction occurred when caffeine was removed or deprivation absent.",
+"summary": "Found that flavour preferences were conditioned by caffeinated drinks under deprivation and maintained when contingency remained, but extinguished or reduced when caffeine or deprivation state changed.",
+"key_finding": "Conditioned liking for a novel caffeinated drink increased across training and persisted only when caffeine remained paired with deprivation; removal of caffeine or deprivation led to extinction or marked decreases.",
 "sample_size": 36,
 "free_keywords": [
 "caffeine",
-"flavour conditioning",
+"conditioned flavour preference",
 "extinction",
 "deprivation",
-"hedonic rating",
-"taste preference",
-"conditioning paradigm"
+"flavoured beverage",
+"conditioning",
+"appetite"
 ],
 "usage": {
 "input_tokens": 749,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1125,
-"cost_usd": 0.00258
+"output_tokens": 1205,
+"cost_usd": 0.00274
 }
 },
 "sources": [
@@ -1834,18 +1825,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:31:43Z",
+"classified_at": "2026-09-06T17:56:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating alcohol administration and expectancy (an active-drug context manipulation) to test effects on sexual perception, so placebo/expectation mechanisms were an explicit focus.",
+"rationale": "Used a balanced-placebo design manipulating alcohol administration and expectancy, isolating expectancy/placebo effects of an active drug (rule: include balanced-placebo designs as placebo_effect/active_drug_context_manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1856,8 +1846,7 @@
 "adults"
 ],
 "condition_domain": [
-"sexual_function",
-"cognition"
+"sexual_function"
 ],
 "outcome_measures": [
 "self_report",
@@ -1868,42 +1857,38 @@
 "balanced_placebo"
 ],
 "effects": [
-"significant_subjective",
 "mixed_inconsistent"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"attention_cognitive_appraisal",
-"clinical_use_ethics_attitudes"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "sex_gender",
-"culture_ethnicity",
-"none_reported"
+"expectation_level",
+"culture_ethnicity"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design with 88 dyads to test alcohol consumption and expectancy on sexual judgments and found alcohol intake increased perceived sexual disinhibition while expectancy set did not.",
-"key_finding": "Alcohol consumption (but not alcohol expectancy) increased sexualized perceptions and disinhibition; intoxicated participants exaggerated clear dating cues and ignored ambiguous cues.",
+"summary": "Used a balanced-placebo design (88 dyads) to test alcohol consumption and expectancy on sexual judgments and found consumption increased perceived sexual disinhibition while expectancy set had no effect.",
+"key_finding": "Alcohol consumption increased perceived sexual behavior and disinhibition; alcohol expectancy manipulation produced no reliable effects.",
 "sample_size": 176,
 "free_keywords": [
 "balanced placebo",
 "alcohol expectancy",
 "sexual perception",
 "disinhibition",
-"dating cues",
-"dyads",
-"cognitive impairment"
+"videotaped interaction",
+"gender differences"
 ],
 "usage": {
 "input_tokens": 770,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 974,
-"cost_usd": 0.00229
+"output_tokens": 955,
+"cost_usd": 0.00225
 }
 },
 "sources": [
@@ -2200,18 +2185,19 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:11:25Z",
+"classified_at": "2026-09-06T17:56:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Study explicitly tested classical conditioning of anticipatory nausea and anticipatory immune responses using within-subject environmental (home vs hospital) CS variation, making conditioned/nocebo responses the study focus.",
+"rationale": "Study explicitly tested whether anticipatory nausea and anticipatory immune changes in pediatric chemotherapy patients show features of a classically conditioned response (classical conditioning of symptom and immune outcomes), meeting criterion 3 (mechanisms) and 1/2 (conditioned anticipatory effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect",
-"placebo_and_nocebo"
+"placebo_and_nocebo",
+"nocebo_response",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -2240,161 +2226,40 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"therapeutic_ritual_context",
-"prior_treatment_experience"
+"prior_treatment_experience",
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"treatment_characteristics",
 "prior_experience"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Studied 19 pediatric cancer patients across two chemotherapy cycles and found anticipatory nausea and environment-sensitive immune changes consistent with conditioned responses.",
-"key_finding": "Anticipatory nausea correlated with chemo emetogenicity and NK cell activity plus IFN-γ increased from home to hospital, predominantly in patients with anticipatory nausea.",
+"summary": "Measured anticipatory nausea/vomiting and immune markers across two chemotherapy cycles in 19 pediatric cancer patients and found conditioned anticipatory symptoms and environment-sensitive immune changes.",
+"key_finding": "Found that 7/19 patients reported anticipatory nausea and that NK cell activity and IFN-γ increased from home to hospital, particularly in patients with anticipatory nausea, consistent with classically conditioned responses.",
 "sample_size": 19,
 "free_keywords": [
 "anticipatory nausea",
 "chemotherapy",
-"conditioning",
-"nkca",
-"ifn-gamma",
-"pediatric",
-"classical conditioning"
+"conditioned response",
+"natural killer cell activity",
+"interferon-gamma",
+"pediatric oncology",
+"anticipatory immune modulation"
 ],
 "usage": {
 "input_tokens": 924,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1146,
-"cost_usd": 0.00267
+"output_tokens": 981,
+"cost_usd": 0.00234
 }
 },
 "sources": [
 "pubmed_audit"
 ],
 "date_added": "2000-09-01",
-"private_pdf": null
-},
-{
-"id": "doi:10.1177/074873000129001369",
-"title": "Responses of the circadian system of rats to conditioned and unconditioned stimuli.",
-"authors": [
-"de Groot MH",
-"Rusak B"
-],
-"journal": "Journal of biological rhythms",
-"journal_abbrev": "J Biol Rhythms",
-"year": 2000,
-"date": "2000-08-01",
-"doi": "10.1177/074873000129001369",
-"pmid": "10942258",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2061460755",
-"abstract": "The circadian systems of rodents respond to light pulses presented during the subjective night with phase shifts and altered cellular activity in the suprachiasmatic nuclei (SCN), including expression of immediate-early genes (IEGs) such as c-fos. A recent study showed that a nonphotic stimulus (an air disturbance generated by a fan) that does not normally induce the expression of c-fos-like immunoreactivity in the SCN of rats can be made to do so after being paired repeatedly with a light pulse in a Pavlovian conditioning paradigm. Furthermore, after conditioning (but not after noncontingent exposure to these stimuli), the fan also induced phase shifts in activity and body temperature rhythms comparable to those produced by light. The authors performed three experiments designed to replicate and extend these findings in rats. In experiment 1, rats were tested for conditioning effects of repeated pairings of a light pulse with a neutral air disturbance under a full photoperiod. In experiment 2, a modified conditioning paradigm was used in which a skeleton photoperiod served as both the entraining zeitgeber and the unconditioned stimulus. Animals in the paired and unpaired training conditions were exposed to both the light pulse and the air disturbance, but the air disturbance signaled the onset of light in the paired condition only. Phase shifts of wheel-running activity rhythms and gene expression in the SCN, intergeniculate leaflet, and paraventricular nucleus of the thalamus were assessed in animals following either of the training conditions or the control procedures. Experiment 3 assessed whether the air disturbance could entrain the circadian activity rhythms of rats with or without previous pairing with light in a classical conditioning paradigm. No evidence for classical conditioning, nor for unconditioned effects of the air disturbance on the circadian system, was found in these studies.",
-"keywords": [],
-"mesh": [
-"Air",
-"Animals",
-"Brain",
-"Circadian Rhythm",
-"Conditioning, Classical",
-"Darkness",
-"Immunohistochemistry",
-"Light",
-"Male",
-"Motor Activity",
-"Photic Stimulation",
-"Photoperiod",
-"Proto-Oncogene Proteins c-fos",
-"Rats",
-"Rats, Wistar",
-"Reproducibility of Results",
-"Research Design"
-],
-"pub_types": [
-"Journal Article",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.1177/074873000129001369",
-"cited_by_count": 13,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:12:33Z",
-"screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiments explicitly tested Pavlovian (classical) conditioning of circadian responses, a mechanistic study of conditioned context effects relevant to placebo/nocebo mechanisms (rule 3).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
-"species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"behavioral_performance",
-"genetic_molecular"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"null_objective"
-],
-"mechanisms": [
-"classical_conditioning",
-"neural_systems_circuits"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
-},
-"summary": "Tested whether a neutral air stimulus paired with light would elicit conditioned phase shifts and SCN gene expression in rats and found no evidence for conditioned effects or unconditioned air-stimulus effects on circadian rhythms.",
-"key_finding": "No reliable conditioned phase shifts or c-fos induction by the air disturbance were observed after paired training.",
-"sample_size": null,
-"free_keywords": [
-"suprachiasmatic nucleus",
-"c-fos",
-"wheel-running",
-"air disturbance",
-"skeleton photoperiod",
-"entrainment"
-],
-"usage": {
-"input_tokens": 855,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1102,
-"cost_usd": 0.00256
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2000-08-01",
 "private_pdf": null
 },
 {
@@ -3145,11 +3010,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:14:18Z",
+"classified_at": "2026-09-06T17:56:11Z",
 "screening": {
 "decision": "include",
-"confidence": 0.82,
-"rationale": "Animal conditioning study showed that drug-paired context (mock injection in drug-associated environment) elicited conditioned behavioral and neural responses, addressing classical conditioning mechanisms relevant to placebo-like contextual effects.",
+"confidence": 0.9,
+"rationale": "Animal conditioning study that experimentally paired morphine with an environment and tested conditioned (placebo-like) Fos responses to mock injection in the drug-paired context, addressing classical conditioning mechanisms relevant to placebo/nocebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3160,15 +3025,15 @@
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
 "population": [],
-"age_group": [],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
-"motor_function",
 "other"
 ],
 "outcome_measures": [
 "behavioral_performance",
-"genetic_molecular",
-"other"
+"genetic_molecular"
 ],
 "design": [
 "animal_experiment"
@@ -3179,33 +3044,34 @@
 "mechanisms": [
 "classical_conditioning",
 "neural_systems_circuits",
-"prior_treatment_experience"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "saline_injection_infusion"
 ]
 },
-"summary": "Found that morphine-paired environmental cues elicited conditioned motor activation and increased Fos gene expression in cortical and limbic brain regions in rats after mock injection.",
-"key_finding": "Exposure to the drug-paired context without morphine produced conditioned behavioral activation and elevated Fos in prefrontal cortex, cingulate, nucleus accumbens and preoptic area, which waned by 14 days.",
+"summary": "Found that rats previously given morphine in a distinct environment showed conditioned motor activation and increased Fos expression in cortical and limbic regions when returned to the drug-paired context after a mock injection.",
+"key_finding": "Conditioned exposure to a morphine-paired context elicited region-specific increases in Fos expression and behavioral activation that decayed by 14 days.",
 "sample_size": null,
 "free_keywords": [
 "morphine",
-"c-fos",
-"conditioned motor activation",
-"nucleus accumbens",
-"prefrontal cortex",
+"fos",
+"conditioned_response",
+"contextual_cues",
+"nucleus_accumbens",
+"prefrontal_cortex",
 "relapse",
-"contextual conditioning"
+"sprague-dawley rat"
 ],
 "usage": {
 "input_tokens": 774,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1348,
-"cost_usd": 0.00304
+"output_tokens": 1286,
+"cost_usd": 0.00291
 }
 },
 "sources": [
@@ -3549,11 +3415,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:11:53Z",
+"classified_at": "2026-09-06T17:56:04Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Paper is a review of blinding procedures in antidepressant placebo-controlled trials, fitting 'placebo science' (methodology of placebo use) inclusion criteria.",
+"rationale": "Paper is a review of blinding procedures in antidepressant placebo-controlled trials, addressing placebo-related trial methodology (placebo_science_other) rather than measuring placebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3564,10 +3430,10 @@
 "article_type": "systematic_review",
 "species": "human",
 "population": [
-"not_applicable"
+"depression"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "mood_depression"
@@ -3592,24 +3458,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed methods for protecting blinding in double-blind placebo-controlled antidepressant trials and assessed their use in trials published in 1998, finding safeguards were rarely employed.",
+"summary": "Reviews methods and adequacy of blindness protection in placebo-controlled antidepressant trials and assessed trials from 1998 using a seven-item checklist.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
 "double-blind",
 "antidepressant trials",
-"methodology",
-"quality checklist",
-"expectancy",
-"reporting"
+"masking",
+"trial methodology",
+"bias"
 ],
 "usage": {
 "input_tokens": 617,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 713,
-"cost_usd": 0.00173
+"output_tokens": 536,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -4781,18 +4646,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:15:56Z",
+"classified_at": "2026-09-06T17:56:08Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Human experimental study explicitly tested Pavlovian conditioning of insulin/glucose using CS–placebo test sessions, so conditioned placebo-type responses were the object of study (mechanisms of placebo via classical conditioning).",
+"confidence": 0.91,
+"rationale": "Human experimental study explicitly tested Pavlovian (placebo-controlled) conditioning of insulin/glucose responses with a CS-placebo test, so conditioned placebo-like responses were the study focus (mechanisms of conditioned physiological placebo responses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_effect",
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4807,12 +4672,10 @@
 ],
 "outcome_measures": [
 "neuroendocrine",
-"clinical_endpoint",
 "self_report"
 ],
 "design": [
-"parallel_groups_rct",
-"within_subject_experimental"
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_objective",
@@ -4827,26 +4690,27 @@
 ],
 "intervention_type": [
 "saline_injection_infusion",
-"verbal_suggestion_only"
+"placebo_food_drink"
 ]
 },
-"summary": "Demonstrated that Pavlovian conditioning produced conditioned decreases in blood glucose and trends toward conditioned insulin and cortisol changes in healthy humans using CS–insulin/CS–glucose versus CS–placebo pairings.",
-"key_finding": "Found conditioned decrease in blood glucose and a trend for conditioned baseline insulin increase, plus increased cortisol and neuroglycopenic symptoms in CS–placebo test sessions following CS–insulin pairings.",
+"summary": "Conducted placebo-controlled human experiments showing that Pavlovian CS–US pairings with insulin or glucose produced conditioned decreases in blood glucose, endocrine changes, and neuroglycopenic symptoms on CS-placebo test trials.",
+"key_finding": "Found conditioned decrease in blood glucose and increased cortisol and neuroglycopenic symptoms in subjects previously paired with CS–insulin versus CS–placebo.",
 "sample_size": null,
 "free_keywords": [
 "insulin conditioning",
-"glucose",
+"glucose conditioning",
+"Pavlovian",
 "cephalic-phase insulin release",
+"neuroglycopenia",
 "cortisol",
-"pavlovian conditioning",
-"neuroglycopenia"
+"conditioning paradigm"
 ],
 "usage": {
-"input_tokens": 516,
-"cache_read_input_tokens": 6144,
+"input_tokens": 772,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1193,
-"cost_usd": 0.00267
+"output_tokens": 991,
+"cost_usd": 0.00232
 }
 },
 "sources": [
@@ -4892,32 +4756,33 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/s0166-4328(99)00191-6",
 "cited_by_count": 40,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:16:09Z",
+"classified_at": "2026-09-06T17:56:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Paper explicitly reviewed and presented data on Pavlovian (classical) conditioning of immune function in animals and humans, studying conditioned immunomodulation (mechanism of placebo-like learning).",
+"confidence": 0.8,
+"rationale": "Paper explicitly reviewed and presented animal and human data on Pavlovian (classical) conditioning of immune function, a mechanism of conditioned/placebo-like responses (inclusion per rule 3: mechanisms and animal models with cue/context contrast).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
-"article_type": "empirical_primary",
+"article_type": "narrative_review",
 "species": "nonhuman_animal",
 "population": [
-"not_applicable"
+"healthy_adult",
+"other_clinical"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
 "immune_inflammation"
@@ -4927,10 +4792,11 @@
 "neuroendocrine"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
@@ -4944,23 +4810,23 @@
 "other"
 ]
 },
-"summary": "Reviewed and presented animal and human data showing that Pavlovian conditioning can modulate immune function and discussed neural mechanisms and clinical translation challenges.",
-"key_finding": null,
+"summary": "Reviewed animal and human studies of Pavlovian conditioning of immune function, presented lab data, and concluded that conditioned immunomodulation is demonstrable but its neural mechanisms and clinical relevance remain unclear.",
+"key_finding": "Presented animal and human data showing conditioned changes in immune measures can be elicited, but mechanisms and translational relevance were inconsistent and incompletely understood.",
 "sample_size": null,
 "free_keywords": [
-"conditioned immunomodulation",
-"pavlovian conditioning",
 "conditioned immunosuppression",
-"behavioral immunology",
+"pavlovian conditioning",
+"conditioned immunomodulation",
 "rats",
-"neural mechanisms"
+"cytokines",
+"neuroimmune"
 ],
 "usage": {
 "input_tokens": 601,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 924,
-"cost_usd": 0.00215
+"output_tokens": 1326,
+"cost_usd": 0.00295
 }
 },
 "sources": [
@@ -6661,11 +6527,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:17:00Z",
+"classified_at": "2026-09-06T17:56:12Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Paper is an ethical perspective whose primary subject is the use of placebos in psychiatric research (placebo science/ethics), meeting inclusion rule 5.",
+"confidence": 0.85,
+"rationale": "Paper is a conceptual/ethical analysis focused explicitly on the use of placebo controls in psychiatric research (placebo science), meeting inclusion rule 5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6674,7 +6540,7 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -6694,7 +6560,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"clinical_use_ethics_attitudes"
+"clinical_use_ethics_attitudes",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -6703,22 +6570,23 @@
 "not_applicable"
 ]
 },
-"summary": "Argued for ethically permissible use of placebo-controlled trials in psychiatry under four standards balancing scientific merit, minimized risks, informed consent, and post-trial treatment.",
-"key_finding": "Rejected an absolute ban on placebo-controlled psychiatric trials and proposed four ethical standards to guide their use.",
+"summary": "Discussed the ethics of placebo-controlled trials in psychiatry and articulated four standards for their ethical use.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "research ethics",
 "psychiatry",
-"placebo-controlled trials",
+"clinical trials",
 "informed consent",
-"clinical equipoise"
+"placebo-controlled",
+"trial design"
 ],
 "usage": {
 "input_tokens": 670,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 658,
-"cost_usd": 0.00163
+"output_tokens": 946,
+"cost_usd": 0.00221
 }
 },
 "sources": [
@@ -7101,11 +6969,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:16:51Z",
+"classified_at": "2026-09-06T17:56:12Z",
 "screening": {
 "decision": "include",
-"confidence": 0.75,
-"rationale": "Title indicates a conceptual/ethical discussion of placebo-controlled trials with no abstract available, so the paper is likely about placebo science (ethics/methodology).",
+"confidence": 0.6,
+"rationale": "Title indicates the paper discusses placebo-controlled trials and their ethics/methodology, making placebo the primary subject despite no abstract being available.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7114,7 +6982,7 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -7143,22 +7011,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed ethical and scientific issues surrounding the use of placebo-controlled trials in clinical research.",
+"summary": "Discusses the scientific and ethical debate over use of placebo-controlled trials in medicine and whether they represent good science or neglectful practice.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"ethics",
 "placebo-controlled trials",
-"research ethics",
-"clinical trial methodology",
+"clinical trial design",
 "control groups",
-"medical neglect"
+"research ethics"
 ],
 "usage": {
 "input_tokens": 432,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 636,
-"cost_usd": 0.00153
+"output_tokens": 537,
+"cost_usd": 0.00133
 }
 },
 "sources": [
@@ -7352,17 +7220,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:09:50Z",
+"classified_at": "2026-09-06T17:56:11Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment used repeated apomorphine–vehicle pairings to produce conditioned (placebo-like) erectile responses to vehicle, so placebo/nocebo phenomena (classical conditioning of response) were the explicit focus.",
+"confidence": 0.86,
+"rationale": "Animal experiment demonstrated conditioned (vehicle-evoked) erectile responses after repeated apomorphine exposure, an animal model of classical conditioning relevant to placebo mechanisms (mechanisms of placebo-like conditioned responses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -7373,48 +7241,49 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"sexual_function"
+"other"
 ],
 "outcome_measures": [
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"within_subject_experimental",
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_dopamine",
-"prior_treatment_experience"
+"neurobiology_dopamine"
 ],
 "moderators": [
-"none_reported"
+"prior_experience",
+"sex_gender"
 ],
 "intervention_type": [
 "saline_injection_infusion",
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Demonstrated that repeated apomorphine–vehicle pairings in rats produced increased erections to subsequent vehicle (conditioned) administration, and that castration abolished these conditioned erections and yawning.",
-"key_finding": "Conditioned vehicle administration increased mean erections per session from ~0.75 (naive) to ~1.8 after repeated apomorphine pairing; castration markedly reduced conditioned erections.",
+"summary": "Found that repeated apomorphine administrations in male rats produced conditioned erections and yawns to subsequent vehicle injections, and castration abolished these conditioned responses.",
+"key_finding": "Conditioned vehicle-evoked erections increased after apomorphine exposure (mean erections per session rose) and were dramatically reduced after castration, indicating androgen dependence.",
 "sample_size": 8,
 "free_keywords": [
 "apomorphine",
-"castration",
 "conditioned erection",
+"castration",
+"wistar rat",
 "yawning",
-"dopamine",
-"wistar rat"
+"androgen-dependent",
+"dopamine agonist"
 ],
 "usage": {
 "input_tokens": 945,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1058,
-"cost_usd": 0.0025
+"output_tokens": 1102,
+"cost_usd": 0.00259
 }
 },
 "sources": [
@@ -8232,11 +8101,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:17:46Z",
+"classified_at": "2026-09-06T17:56:11Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Paper's explicit focus is the historical origin of placebo controls, so placebo science is the main subject (review of placebo history).",
+"confidence": 0.92,
+"rationale": "Paper's primary focus is the history and origin of placebo controls—placebo is the main subject (historical review).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -8246,9 +8115,15 @@
 ],
 "article_type": "narrative_review",
 "species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [
 "not_applicable"
 ],
@@ -8268,23 +8143,22 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews historical evidence that single-blind placebo controls originated within 19th-century homeopathy and influenced later clinical trial methods.",
-"key_finding": "Argued that homeopaths independently developed single-blind placebo controls in the 19th century, likely seeding later placebo-controlled experiments.",
+"summary": "Reviews historical evidence that single-blind placebo controls originated within 19th-century homeopathy and likely influenced later placebo-controlled trials.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "homeopathy",
-"history of medicine",
 "single-blind",
-"placebo controls",
+"placebo control history",
 "19th century",
-"clinical trial methodology"
+"therapeutic trials"
 ],
 "usage": {
 "input_tokens": 557,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 755,
-"cost_usd": 0.0018
+"output_tokens": 751,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -9069,75 +8943,52 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 272,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:34:26Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-04T00:14:45Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Paper empirically tested sham TMS control conditions and their validity (methodology of placebo/sham controls), making placebo/sham the main focus (placebo_science_other).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title explicitly addresses whether sham TMS forms are active but available information is insufficient to confirm whether placebo/sham effects were the explicit object of study or a control question.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"sensory_perception"
-],
-"outcome_measures": [
-"self_report",
-"spinal_peripheral_electrophysiology"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"significant_subjective",
-"significant_objective"
-],
-"mechanisms": [
-"treatment_cues_dose_route",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"sham_neurostimulation",
-"sham_device"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Tested different TMS coil positions in nine healthy adults and found no coil position provided negligible cortical stimulation while preserving scalp sensation, indicating current sham methods are imperfect.",
-"key_finding": "Found that all studied sham coil positions produced either detectable cortical stimulation or reduced scalp sensation, so none met criteria for an ideal sham (n=9).",
-"sample_size": 9,
+"summary": "Title suggested the paper examined whether some sham TMS procedures produce active effects in controlled treatment studies; abstract was not available.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
-"transcranial magnetic stimulation",
-"motor-evoked potential",
-"TMS coil",
-"sham control",
-"blinding"
+"tms",
+"sham-tms",
+"placebo-control",
+"blinding",
+"controlled treatment",
+"biological psychiatry"
 ],
 "usage": {
-"input_tokens": 743,
-"cache_read_input_tokens": 5888,
+"input_tokens": 172,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 722,
-"cost_usd": 0.00178
+"output_tokens": 765,
+"cost_usd": 0.00173
 }
 },
 "sources": [
@@ -9957,11 +9808,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:13:27Z",
+"classified_at": "2026-09-06T17:56:14Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Narrative review focused on behavioral/classical conditioning processes (including conditioned immunomodulation and aversions) as mechanisms for idiopathic environmental intolerance, which pertains to conditioned/nocebo-like symptom generation and thus fits placebo/nocebo science.",
+"confidence": 0.8,
+"rationale": "Narrative review focused on conditioning mechanisms (classical conditioning, conditioned immunomodulation, aversions) as explanations for idiopathic environmental intolerance, which addresses mechanisms relevant to placebo/nocebo-type responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9970,9 +9821,9 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
-"not_applicable"
+"other_clinical"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -9991,8 +9842,9 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"prior_treatment_experience",
-"neurobiology_other_neurochemical"
+"neurobiology_other_neurochemical",
+"emotion_anxiety_regulation",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -10001,7 +9853,7 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed theories and evidence that behavioral conditioning (including pharmacologic sensitization, conditioned immunomodulation and taste/odor aversions) may contribute to development and maintenance of idiopathic environmental intolerance, and discussed treatment implications.",
+"summary": "Reviewed evidence that behavioral conditioning (including pharmacologic sensitization, conditioned immunomodulation, and taste/odor aversions) may contribute to development and maintenance of idiopathic environmental intolerance and discussed treatment implications.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -10009,14 +9861,17 @@
 "multiple chemical sensitivity",
 "conditioned immunomodulation",
 "taste aversion",
-"psychophysiology"
+"desensitization",
+"behavioral conditioning",
+"psychophysiology",
+"environmental triggers"
 ],
 "usage": {
 "input_tokens": 599,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 850,
-"cost_usd": 0.002
+"output_tokens": 887,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -10061,11 +9916,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:20:39Z",
+"classified_at": "2026-09-06T17:56:17Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Nonhuman animal experiment manipulated exposure timing of an intervention and measured conditioned (classical conditioning) analgesia as the outcome, meeting inclusion for animal models of conditioned placebo-like responses.",
+"confidence": 0.9,
+"rationale": "Animal experiment directly investigated classical conditioning of analgesia and how electromagnetic pre-exposure altered the conditioned analgesic response, addressing mechanisms of conditioned (placebo-like) effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10088,7 +9943,8 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
@@ -10098,30 +9954,32 @@
 "neural_systems_circuits"
 ],
 "moderators": [
-"treatment_characteristics"
+"neurostimulation",
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that pre-conditioning exposure to patterned weak magnetic fields attenuated fear-conditioned analgesia in rats, while post-conditioning exposure potentiated analgesia.",
-"key_finding": "Pre-conditioning electromagnetic exposure significantly reduced conditioned analgesic response; post-conditioning exposure enhanced pain sensitivity reduction.",
+"summary": "Tested in rats whether whole-body patterned magnetic-field exposure before or after fear-conditioning altered conditioned analgesia and found pre-conditioning exposure attenuated anticipatory analgesia.",
+"key_finding": "Pre-conditioning exposure to patterned electromagnetic stimulation significantly reduced fear-conditioned analgesia, whereas post-conditioning exposure potentiated reductions in pain sensitivity.",
 "sample_size": null,
 "free_keywords": [
-"wistar rat",
+"fear-conditioned analgesia",
 "hotplate",
-"conditioned analgesia",
 "magnetic field",
-"pulsed electromagnetic stimulation",
+"wistar rat",
+"ultrasonic tone",
+"footshock",
 "long-term potentiation",
-"ultrasonic tone"
+"primed burst potentiation"
 ],
 "usage": {
-"input_tokens": 631,
-"cache_read_input_tokens": 5888,
+"input_tokens": 375,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1227,
-"cost_usd": 0.00276
+"output_tokens": 1163,
+"cost_usd": 0.00257
 }
 },
 "sources": [
@@ -10378,71 +10236,53 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:34:52Z",
+"classified_at": "2026-09-03T04:26:13Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names placebos in relation to pin-prick pain, indicating placebo effects/responses are the paper's subject.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title is ambiguous, so it's unclear whether placebo/nocebo effects were an explicit focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
-"article_type": "empirical_primary",
+"study_focus": [],
+"article_type": "editorial_letter",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"treatment_cues_dose_route"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"topical_cream"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated placebo-induced changes in responses to pin-prick stimuli, focusing on placebo analgesia.",
+"summary": "Insufficient information to determine whether the paper investigated placebo or nocebo phenomena; no abstract was available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "pin-prick",
-"experimental pain",
+"placebo",
 "analgesia",
-"placebo analgesia"
+"western journal of medicine",
+"2000",
+"letter",
+"unknown authors"
 ],
 "usage": {
-"input_tokens": 534,
+"input_tokens": 356,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 701,
-"cost_usd": 0.00168
+"output_tokens": 545,
+"cost_usd": 0.00133
 }
 },
 "sources": [
@@ -11492,71 +11332,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:35:12Z",
+"classified_at": "2026-09-03T04:26:17Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly addresses the placebo effect as the paper's subject, meeting inclusion for placebo science/theory/commentary.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; MeSH lists 'Placebo Effect' but insufficient information to determine whether placebo/nocebo was the primary focus or merely mentioned.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses whether the placebo effect truly exists and its implications for mind–body medicine.",
+"summary": "No abstract available; insufficient information to judge whether placebo effects were the article's primary focus despite MeSH tagging for placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo effect",
 "mind-body",
-"placebo debate",
+"somatoform disorders",
 "asthma",
-"somatoform",
-"expectancy"
+"arousal"
 ],
 "usage": {
-"input_tokens": 564,
+"input_tokens": 386,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 735,
-"cost_usd": 0.00176
+"output_tokens": 488,
+"cost_usd": 0.00122
 }
 },
 "sources": [
@@ -11703,18 +11523,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:35:21Z",
+"classified_at": "2026-09-03T04:26:18Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly addresses the evidence for physiologic placebo effects, making placebo phenomena the paper's primary subject (review/critique of placebo science).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title suggests a critical/theoretical piece rather than an empirical study, so inclusion is unclear.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
@@ -11722,8 +11542,8 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
-"species": "human",
+"article_type": "theory_commentary",
+"species": "not_applicable",
 "population": [
 "not_applicable"
 ],
@@ -11743,7 +11563,7 @@
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -11752,22 +11572,23 @@
 "not_applicable"
 ]
 },
-"summary": "Argued that most drug studies provided little if any evidence to support physiologic effects of the placebo.",
+"summary": "Argues that most drug trials provide little or no evidence supporting physiologic placebo effects.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"placebo effect",
 "placebo evidence",
-"trial methodology",
-"physiologic placebo",
+"double-blind",
+"methodology",
 "mind-body",
-"placebo effect critique"
+"somatoform"
 ],
 "usage": {
-"input_tokens": 585,
+"input_tokens": 407,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 635,
-"cost_usd": 0.00156
+"output_tokens": 715,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -12034,11 +11855,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:13:59Z",
+"classified_at": "2026-09-06T17:56:18Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Randomized laboratory manipulation of outcome expectancies produced changes in motivation and later smoking, so expectancy/context effects were the causal focus of the study.",
+"confidence": 0.9,
+"rationale": "Randomized manipulation of outcome expectancies as a causal test of expectation effects on smoking motivation and later smoking behavior, making placebo/expectation mechanisms the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -12049,7 +11870,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"substance_use"
+"other_clinical"
 ],
 "age_group": [
 "adults"
@@ -12069,32 +11890,32 @@
 "significant_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"social_observational_learning"
 ],
 "moderators": [
-"none_reported"
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized heavy smokers received crossed expectancy manipulations and showed increased quitting motivation and reduced smoking at 3-month follow-up after the health-consequences manipulation.",
-"key_finding": "Health-consequences expectancy manipulation increased motivation to quit and reduced smoking three months later (N=123).",
+"summary": "Randomized laboratory experiment manipulated smoking-related expectancies and found the health-consequence expectancy increased motivation to quit and reduced smoking three months later.",
+"key_finding": "Health-consequence expectancy manipulation increased motivation to quit and produced reduced smoking at 3-month follow-up.",
 "sample_size": 123,
 "free_keywords": [
-"smoking cessation",
+"heavy smokers",
 "motivation to quit",
-"expectancy manipulation",
-"health consequences",
-"mood management",
-"2x2 factorial"
+"videotaped intervention",
+"factorial design",
+"expectancy manipulation"
 ],
 "usage": {
 "input_tokens": 607,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 956,
-"cost_usd": 0.00221
+"output_tokens": 735,
+"cost_usd": 0.00177
 }
 },
 "sources": [

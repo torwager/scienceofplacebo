@@ -479,17 +479,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:15:59Z",
+"classified_at": "2026-09-06T18:01:36Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Animal experiment reported conditioning of autonomic responses to atropine and morphine, which is a mechanistic model of placebo-like conditioned responses (classical conditioning).",
+"rationale": "Animal experiment studied classical conditioning of autonomic (placebo-like) responses to pharmacological agents, making placebo/nocebo phenomena the explicit object (conditioned responses).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -500,50 +500,48 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"cardiovascular_bp",
-"nausea_gi",
 "other"
 ],
 "outcome_measures": [
-"autonomic",
-"other"
+"autonomic"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
+"saline_injection_infusion",
 "other"
 ]
 },
-"summary": "Found that dogs developed conditioned autonomic responses after pairing atropine or morphine with a stimulus.",
-"key_finding": "Conditioning with atropine and morphine produced measurable autonomic changes (heart rate, salivation, gastric secretion) in dogs.",
+"summary": "Found that dogs developed conditioned autonomic responses (heart rate, salivation, gastric secretion) after pairing inert injections with atropine and morphine.",
+"key_finding": "Conditioned autonomic responses to saline injections were elicited after pairing with atropine and morphine.",
 "sample_size": null,
 "free_keywords": [
 "classical conditioning",
+"autonomic responses",
+"dogs",
 "atropine",
 "morphine",
-"dogs",
-"autonomic responses",
 "heart rate",
-"salivation",
-"gastric juice"
+"salivation"
 ],
 "usage": {
 "input_tokens": 448,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 977,
-"cost_usd": 0.00221
+"output_tokens": 844,
+"cost_usd": 0.00195
 }
 },
 "sources": [
@@ -804,63 +802,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:55:30Z",
+"classified_at": "2026-09-03T04:47:06Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names 'Placebo effects', indicating the paper's subject is placebo phenomena (a review or discussion of placebo effects).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title suggests the paper addresses placebo effects but available information is insufficient to confirm that placebo/nocebo is the explicit focus or to classify article type confidently.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reviews placebo effects.",
+"summary": "Insufficient information to determine whether the paper empirically studied placebo/nocebo effects; title indicates it discussed placebo effects but no abstract is available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo",
+"placebo effects",
 "bmj",
 "1970",
-"history",
-"placebo_effects"
+"color"
 ],
 "usage": {
-"input_tokens": 535,
+"input_tokens": 357,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 680,
-"cost_usd": 0.00164
+"output_tokens": 720,
+"cost_usd": 0.00168
 }
 },
 "sources": [
@@ -913,11 +899,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:15:47Z",
+"classified_at": "2026-09-06T18:01:15Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title indicates an animal classical-conditioning study of hypoglycemia using pseudoconditioning controls, meeting inclusion as an animal model of conditioned (placebo-like) physiological responses (mechanisms of conditioned responses).",
+"confidence": 0.75,
+"rationale": "Animal experiment studying classical conditioning of hypoglycemia with pseudoconditioning controls addresses conditioned physiological (placebo-like) responses and their mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -937,15 +923,15 @@
 "endocrine_hormonal"
 ],
 "outcome_measures": [
+"immune_inflammatory",
 "clinical_endpoint",
-"neuroendocrine"
+"other"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
-"not_applicable"
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning"
@@ -954,25 +940,26 @@
 "none_reported"
 ],
 "intervention_type": [
-"saline_injection_infusion"
+"not_applicable"
 ]
 },
-"summary": "Studied conditioned hypoglycemia in rats and used pseudoconditioning controls to separate associative from nonassociative effects.",
+"summary": "Reported an animal experiment on classical conditioning of hypoglycemia in rats using pseudoconditioning controls to isolate conditioned blood-glucose responses.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "insulin",
+"conditioned hypoglycemia",
 "rats",
+"pseudoconditioning",
 "blood glucose",
-"classical conditioning",
-"pseudoconditioning"
+"classical conditioning"
 ],
 "usage": {
 "input_tokens": 455,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1127,
-"cost_usd": 0.00251
+"output_tokens": 1206,
+"cost_usd": 0.00267
 }
 },
 "sources": [
@@ -1007,41 +994,49 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:55:43Z",
+"classified_at": "2026-09-03T04:46:46Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly states the study examined the 'suggestive effect of placebo' on chronic urticaria intensity, indicating placebo effects/responses were the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text available; title explicitly names placebo and chronic urticaria but methods and results are not provided to confirm whether placebo/nocebo was the primary studied effect.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
 "dermatology"
 ],
-"age_group": [],
+"age_group": [
+"adults"
+],
 "condition_domain": [
-"itch"
+"other"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"clinician_rated"
 ],
-"design": [],
-"effects": [],
+"design": [
+"single_group_pre_post"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -1050,22 +1045,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that placebo suggestion influenced the intensity of chronic urticaria symptoms.",
+"summary": "No abstract available; title indicated the study examined the suggestive (placebo) effect on intensity of chronic urticaria in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "chronic urticaria",
 "hives",
-"suggestion",
 "placebo",
-"skin pruritus"
+"suggestion",
+"urticaria intensity"
 ],
 "usage": {
-"input_tokens": 564,
+"input_tokens": 386,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 665,
-"cost_usd": 0.00162
+"output_tokens": 705,
+"cost_usd": 0.00165
 }
 },
 "sources": [
@@ -1113,33 +1108,39 @@
 "oa_pdf_url": null,
 "landing_url": null,
 "cited_by_count": null,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:56:07Z",
+"classified_at": "2026-09-04T00:15:45Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Title explicitly states placebo effects in psychotherapy and psychoanalysis, indicating placebo phenomena are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "Title explicitly addresses placebo effects in psychotherapy, but no abstract or full text was available to determine whether empirical data or a review/theoretical discussion was the primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "other"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -1147,30 +1148,31 @@
 "not_applicable"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"therapeutic_ritual_context",
-"provider_patient_interaction",
-"history_conceptual"
+"history_conceptual",
+"clinical_use_ethics_attitudes"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Reviews placebo effects in psychotherapy and psychoanalysis.",
+"summary": "Discusses placebo effects in psychotherapy and psychoanalysis.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"psychotherapy",
 "psychoanalysis",
-"placebo effect",
-"expectation",
-"therapeutic alliance"
+"psychotherapy",
+"placebo_effects",
+"clinical_trial_history"
 ],
 "usage": {
-"input_tokens": 568,
+"input_tokens": 440,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 833,
-"cost_usd": 0.00196
+"output_tokens": 768,
+"cost_usd": 0.00179
 }
 },
 "sources": [
@@ -1228,68 +1230,50 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1007/bf00401501",
 "cited_by_count": 25,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T19:56:24Z",
+"classified_at": "2026-09-06T18:01:16Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly states 'setting, patient, and doctor effects on drug response', indicating the paper studied contextual/expectancy influences on treatment response (placebo/context effects).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full-text provided to determine whether placebo/nocebo phenomena were an explicit focus despite MeSH terms including Placebos and title implying context effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"anxiety_disorders"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"anxiety_stress"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"provider_patient_interaction",
-"therapeutic_ritual_context"
-],
-"moderators": [
-"provider_characteristics",
-"treatment_characteristics"
-],
-"intervention_type": [
-"active_drug_context_manipulation"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined how setting, patient, and doctor factors influenced drug response in neurotic (anxiety) patients.",
+"summary": "Insufficient information in the record; title indicated a clinical trial on setting, patient, and doctor effects on drug response in neurotic patients, but no details on placebo/nocebo focus were available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"neurosis",
 "diazepam",
 "phenobarbital",
-"placebo",
-"doctor-patient-relationship"
+"neurotic patients",
+"doctor-patient interaction"
 ],
 "usage": {
-"input_tokens": 614,
-"cache_read_input_tokens": 5888,
+"input_tokens": 230,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1096,
-"cost_usd": 0.00249
+"output_tokens": 686,
+"cost_usd": 0.00158
 }
 },
 "sources": [

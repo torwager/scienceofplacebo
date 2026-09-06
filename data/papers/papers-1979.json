@@ -378,18 +378,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:09:52Z",
+"classified_at": "2026-09-03T04:42:47Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly addresses the placebo effect and response-set changes with retesting as a source of bias, making placebo phenomena the paper's subject (methodological/placebo science).",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "Title and MeSH indicate placebo and methodological focus but no abstract or full text was available to confirm whether empirical data or methods were primary, so inclusion is uncertain.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -399,10 +399,18 @@
 ],
 "article_type": "methods_measurement",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -419,23 +427,22 @@
 "not_applicable"
 ]
 },
-"summary": "Argued that placebo effects and changes in response set with retesting can introduce bias in research findings.",
+"summary": "Addressed placebo effects and changes in response set on re-testing as a potential source of bias in research, but abstract/full text were not available to determine methods or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"response_set",
-"retesting",
+"response-set",
+"re-testing",
 "bias",
-"placebo effect",
-"neuropharmacology",
-"methodology"
+"psychiatric-status-ratings",
+"placebo"
 ],
 "usage": {
-"input_tokens": 564,
+"input_tokens": 386,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 694,
-"cost_usd": 0.00168
+"output_tokens": 685,
+"cost_usd": 0.00161
 }
 },
 "sources": [
@@ -928,41 +935,43 @@
 "oa_pdf_url": "https://ard.bmj.com/content/annrheumdis/38/5/471.full.pdf",
 "landing_url": "https://doi.org/10.1136/ard.38.5.471",
 "cited_by_count": 84,
-"scope": "core",
+"scope": "adjacent",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:08:30Z",
+"classified_at": "2026-09-06T18:00:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Observed and analyzed patients' expectations as a predictor of surgical outcomes (expectation measured and related to health-relevant outcomes), meeting inclusion for expectation effects as a predictor.",
+"confidence": 0.72,
+"rationale": "Observational study measured patients' expectations as a predictor of surgical outcomes, meeting the criterion to include studies of expectation effects when they relate to health outcomes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical",
-"not_applicable"
+"surgical_patients"
 ],
 "age_group": [
 "adults",
 "older_adults"
 ],
 "condition_domain": [
-"other"
+"pain",
+"motor_function",
+"global_health_qol"
 ],
 "outcome_measures": [
 "self_report",
-"clinician_rated"
+"clinician_rated",
+"clinical_endpoint"
 ],
 "design": [
 "observational"
@@ -971,7 +980,8 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"prior_treatment_experience"
 ],
 "moderators": [
 "none_reported"
@@ -980,23 +990,22 @@
 "not_applicable"
 ]
 },
-"summary": "Measured preoperative expectations and related recalled fulfillment to postoperative pain and quality-of-life in 88 hip replacement patients and found fulfilled expectations were associated with greater quality of life.",
-"key_finding": "Found that patients whose expectations were fulfilled reported significantly greater quality of life after total hip replacement; 55% had expectations fulfilled and 86% rated the operation successful.",
+"summary": "Assessed recalled expectations in 88 hip replacement patients and found that fulfilled expectations were associated with greater quality-of-life after surgery.",
+"key_finding": "Patients with fulfilled expectations reported significantly better quality of life than those with unfulfilled expectations.",
 "sample_size": 88,
 "free_keywords": [
 "total hip replacement",
-"hip arthroplasty",
 "expectations",
-"quality of life",
 "visual analogue scale",
+"quality of life",
 "retrospective"
 ],
 "usage": {
 "input_tokens": 638,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 921,
-"cost_usd": 0.00215
+"output_tokens": 892,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -1053,11 +1062,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T23:08:11Z",
+"classified_at": "2026-09-06T18:00:34Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment that explicitly tested classical conditioning of an immunosuppressive response (CS reexposure reduced antibody titers), meeting inclusion criterion for placebo-like conditioned effects/mechanisms.",
+"rationale": "Animal experiments explicitly tested conditioned (classical conditioning) immunosuppression, a mechanistic model of placebo-like/contextual effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1067,17 +1076,14 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
+"population": [],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory"
+"immune_inflammatory",
+"behavioral_performance"
 ],
 "design": [
 "animal_experiment"
@@ -1095,25 +1101,24 @@
 "other"
 ]
 },
-"summary": "Conditioned taste aversion paired with cyclophosphamide or LiCl reduced subsequent TNP-specific antibody titers in mice, indicating conditioned immunosuppression.",
-"key_finding": "Conditioned animals reexposed to the saccharin CS showed significantly attenuated anti-TNP antibody responses compared with controls.",
+"summary": "Found that taste-conditioned cues paired with immunosuppressive drugs produced reduced anti-TNP antibody titers in mice, demonstrating conditioned immunosuppression.",
+"key_finding": "Conditioned reexposure to saccharin after pairing with cyclophosphamide or LiCl significantly attenuated the anti-TNP antibody response versus controls.",
 "sample_size": null,
 "free_keywords": [
-"conditioned immunosuppression",
-"saccharin",
 "cyclophosphamide",
-"licl",
-"trinitrophenyl (TNP)",
-"lipopolysaccharide",
-"ader and cohen",
-"mouse"
+"saccharin",
+"trinitrophenyl",
+"TNP",
+"conditioned immunosuppression",
+"LiCl",
+"passive hemagglutination"
 ],
 "usage": {
 "input_tokens": 707,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 814,
-"cost_usd": 0.00195
+"output_tokens": 905,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -1476,18 +1481,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T18:21:38Z",
+"classified_at": "2026-09-06T18:00:32Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Randomized manipulation of outcome expectancies (success vs failure) was the explicit experimental focus and causally affected motor performance, meeting inclusion for expectation/context placebo effects.",
+"rationale": "Study experimentally manipulated outcome expectancies and prior-task cues to test effects on motor performance, making expectation/placebo-like mechanisms the primary focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1515,29 +1519,30 @@
 "prior_treatment_experience"
 ],
 "moderators": [
+"expectation_level",
 "prior_experience"
 ],
 "intervention_type": [
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized expectancy (success vs failure) and previous-task-cue manipulations influenced motor performance on a stabilometer, with high-expectancy participants showing superior performance over time.",
-"key_finding": "High-expectancy instructions produced significantly better motor performance over time compared with low-expectancy (failure) instructions.",
+"summary": "Manipulated success versus failure expectancies and prior-task cue similarity in female college students and found higher expectancy produced better motor performance over time.",
+"key_finding": "High-expectancy groups showed significantly better stabilometer performance over time than low-expectancy groups (n=60).",
 "sample_size": 60,
 "free_keywords": [
 "pursuit rotor",
 "stabilometer",
-"expectancy manipulation",
 "motor learning",
-"performance feedback",
-"female college students"
+"expectancy manipulation",
+"self-enhancement theory",
+"female collegiate students"
 ],
 "usage": {
 "input_tokens": 595,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 923,
-"cost_usd": 0.00214
+"output_tokens": 859,
+"cost_usd": 0.00201
 }
 },
 "sources": [
@@ -1921,68 +1926,52 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1080/00029157.1979.10404004",
 "cited_by_count": 7,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:10:12Z",
+"classified_at": "2026-09-06T18:00:30Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly states that posthypnotic suggestion was used to modify depressive symptoms, indicating suggestion/expectation effects on symptoms as the paper's focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Insufficient information (no abstract) to determine whether posthypnotic suggestion was studied as a placebo/expectancy effect or as a clinical hypnotic intervention; only case reports listed.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "case_report",
 "species": "human",
-"population": [
-"depression"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"single_group_pre_post"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Reported cases in which posthypnotic verbal suggestion modified depressive symptoms.",
+"summary": "No abstract available; reported case reports of modifying depressive symptoms using posthypnotic suggestion, but text is insufficient to judge whether placebo/nocebo phenomena were the study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "posthypnotic suggestion",
 "hypnosis",
 "depression",
-"case report"
+"case report",
+"clinical hypnosis",
+"1979"
 ],
 "usage": {
-"input_tokens": 563,
+"input_tokens": 435,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 728,
-"cost_usd": 0.00174
+"output_tokens": 689,
+"cost_usd": 0.00163
 }
 },
 "sources": [
@@ -2480,25 +2469,23 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:10:22Z",
+"classified_at": "2026-09-03T04:43:02Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly frames acupuncture as a placebo, indicating the paper's focus is placebo phenomena rather than using placebo as a comparator.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or text available; title suggests discussion of acupuncture-as-placebo but insufficient information to determine whether it reported empirical placebo/nocebo data or was a commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -2507,28 +2494,27 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"history_conceptual"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Argues that acupuncture should be understood as a placebo, discussing placebo-related explanations and implications for interpreting acupuncture effects.",
+"summary": "Insufficient information (no abstract) to determine whether the paper reported empirical data or was a commentary on acupuncture as a placebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "acupuncture",
 "placebo",
-"ritual",
-"complementary medicine",
-"sham acupuncture"
+"placebo-aspect",
+"western journal of medicine",
+"1979",
+"havener"
 ],
 "usage": {
-"input_tokens": 535,
+"input_tokens": 357,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 589,
-"cost_usd": 0.00146
+"output_tokens": 546,
+"cost_usd": 0.00133
 }
 },
 "sources": [
@@ -2574,57 +2560,36 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0021-843x.88.3.282",
 "cited_by_count": 229,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:10:31Z",
+"classified_at": "2026-09-06T18:00:30Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly studies suggestions for analgesia and cognitive strategies on pain, making suggestion/expectation mechanisms the paper's focus (placebo-related phenomena).",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or methods available; the title suggests an experimental study of hypnosis/suggestion for analgesia (which could implicate expectation/placebo mechanisms) but the paper's explicit focus on placebo/nocebo phenomena cannot be confirmed from the available record.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"within_subject_experimental"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined how hypnotic susceptibility, analgesia suggestions, and cognitive strategies affected reductions in pain.",
+"summary": "No abstract available; title indicated an empirical study of hypnotic susceptibility, analgesic suggestions, and cognitive strategies for reducing pain in humans.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
@@ -2632,15 +2597,14 @@
 "analgesia",
 "suggestion",
 "cognitive strategies",
-"pain reduction",
-"1979"
+"pain"
 ],
 "usage": {
-"input_tokens": 580,
+"input_tokens": 452,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 656,
-"cost_usd": 0.0016
+"output_tokens": 666,
+"cost_usd": 0.00159
 }
 },
 "sources": [
@@ -2901,56 +2865,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:10:42Z",
+"classified_at": "2026-09-03T04:43:04Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names placebo as the subject ('The pleasing placebo'), indicating the paper discusses placebo phenomena and thus meets inclusion for placebo science content.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available and the title alone does not reveal whether the paper empirically studied placebo/nocebo phenomena.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"therapeutic_ritual_context"
-],
+"mechanisms": [],
 "moderators": [],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "Discusses the placebo concept and its pleasurable or beneficial aspects in the context of pharmacy practice.",
+"summary": "Insufficient information to determine whether the article empirically studied placebo or nocebo effects; no abstract was available.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"pleasing placebo",
+"american pharmacy",
+"1979",
 "placebo",
-"pharmacy",
-"placebo effect",
-"1970s"
+"gerald"
 ],
 "usage": {
-"input_tokens": 533,
-"cache_read_input_tokens": 5888,
+"input_tokens": 227,
+"cache_read_input_tokens": 6016,
 "cache_creation_input_tokens": 0,
-"output_tokens": 640,
-"cost_usd": 0.00156
+"output_tokens": 615,
+"cost_usd": 0.00144
 }
 },
 "sources": [
@@ -2984,18 +2943,18 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 106,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:10:53Z",
+"classified_at": "2026-09-04T00:15:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names the placebo effect as the subject, implying the paper studied placebo phenomena (likely experimental) rather than using placebo as a mere control.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title explicitly names 'placebo effect' but insufficient information to determine whether placebo/nocebo was the study's explicit focus or how it was studied.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3006,7 +2965,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"healthy_adult"
+"general_public"
 ],
 "age_group": [
 "adults"
@@ -3020,9 +2979,11 @@
 "design": [
 "within_subject_experimental"
 ],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
-"attention_cognitive_appraisal"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "none_reported"
@@ -3031,22 +2992,21 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Investigated how self-focused attention influenced the placebo effect, testing whether self-focus altered placebo-driven responses in participants.",
+"summary": "No abstract available; title indicated the study examined self-focused attention in relation to the placebo effect, but study details were not provided.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "self-focused attention",
 "placebo effect",
 "social psychology",
-"expectancy",
-"attention"
+"1979"
 ],
 "usage": {
-"input_tokens": 551,
-"cache_read_input_tokens": 5888,
+"input_tokens": 167,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 777,
-"cost_usd": 0.00184
+"output_tokens": 600,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -3207,25 +3167,23 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1037//0022-006x.47.1.179",
 "cited_by_count": 4,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:11:10Z",
+"classified_at": "2026-09-06T18:00:30Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly cites 'expectancy' and pain control, indicating the study focused on expectancy/coping effects on pain (placebo-related mechanisms).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text was provided and the title mentions expectancy and coping but does not make placebo/nocebo phenomena an explicit stated aim, so inclusion cannot be determined from available information.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [],
@@ -3236,32 +3194,26 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined cognitive strategies, expectancy, and coping style as factors in the control of pain.",
+"summary": "Insufficient information to determine whether the study experimentally examined placebo or nocebo effects; title indicated a focus on expectancy and cognitive coping in pain control.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "expectancy",
-"coping",
-"cognitive strategies",
-"pain control"
+"cognitive coping",
+"pain control",
+"1979",
+"Karoly"
 ],
 "usage": {
-"input_tokens": 567,
+"input_tokens": 439,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 624,
-"cost_usd": 0.00154
+"output_tokens": 649,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -3317,18 +3269,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:11:48Z",
+"classified_at": "2026-09-06T18:00:33Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Title and MeSH terms indicate human experimental study of conditioned (classical conditioning) drug responses to cues, which targets placebo/nocebo mechanisms (conditioned drug responses).",
+"confidence": 0.7,
+"rationale": "Studied conditioned drug responses (classical conditioning) in humans with physiological measures, addressing mechanisms of placebo/nocebo-type responses.",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
-"placebo_response",
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3339,53 +3290,49 @@
 "adults"
 ],
 "condition_domain": [
-"addiction_craving",
-"cardiovascular_bp",
 "other"
 ],
 "outcome_measures": [
-"autonomic",
-"self_report",
-"behavioral_performance",
-"other"
+"autonomic"
 ],
 "design": [
-"within_subject_experimental"
+"within_subject_experimental",
+"animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"not_applicable"
 ],
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_opioid",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"prior_treatment_experience"
 ],
 "moderators": [
-"personality_traits",
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
-"active_drug_context_manipulation",
-"verbal_suggestion_only"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Studied conditioned physiological and behavioral responses to opioid drugs elicited by naturalistic cues in humans, implicating classical conditioning of drug effects.",
+"summary": "Studied conditioned drug responses to naturalistic stimuli in humans, measuring physiological responses such as heart rate and skin temperature.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "hydromorphone",
 "methadone",
 "naltrexone",
+"classical conditioning",
 "heart rate",
 "skin temperature",
-"conditioning"
+"self-administration"
 ],
 "usage": {
 "input_tokens": 465,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 939,
-"cost_usd": 0.00214
+"output_tokens": 1008,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -3440,11 +3387,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:08:38Z",
+"classified_at": "2026-09-06T18:00:35Z",
 "screening": {
 "decision": "include",
-"confidence": 0.6,
-"rationale": "Animal experiment examined conditioning and extinction of morphine-related conditioned hyperthermia and analgesic tolerance, which addresses classical conditioning mechanisms relevant to placebo/nocebo phenomena (animal cue/context contrast).",
+"confidence": 0.7,
+"rationale": "Animal experiment testing conditioned drug-related responses (conditioning/extinction of morphine effects) addresses mechanisms of placebo-like conditioned responses (classical conditioning) and therefore meets inclusion rule 3.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3469,39 +3416,39 @@
 "autonomic"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
-"other"
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Studied extinction effects on conditioned hyperthermia and morphine analgesic tolerance in rats to probe learned (conditioned) drug responses.",
+"summary": "Found that extinction differentially affected conditioned hyperthermia and conditioned analgesic tolerance to morphine in rats.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "morphine",
 "conditioned tolerance",
-"conditioned hyperthermia",
+"hyperthermia",
 "extinction",
 "rats",
-"analgesia",
-"drug conditioning"
+"analgesic tolerance"
 ],
 "usage": {
-"input_tokens": 471,
-"cache_read_input_tokens": 5888,
+"input_tokens": 215,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 703,
-"cost_usd": 0.00167
+"output_tokens": 858,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -3545,71 +3492,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/286234",
 "cited_by_count": 5,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:11:20Z",
+"classified_at": "2026-09-06T18:00:35Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names expectation and experienced pain, indicating the paper studied expectancy effects on injection pain.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and the title alone (injection pain: memory, expectation and experienced pain) does not establish that placebo/nocebo phenomena were the explicit focus, so inclusion cannot be determined.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_effect"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"verbal_suggestion_only"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined the relationships among memory, expectation, and experienced injection pain in adult dental patients.",
+"summary": "No abstract or full text available; title suggested a study of expectation and memory in injection pain but it is unclear whether placebo/nocebo effects were a focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"dental injection",
 "injection pain",
 "expectation",
 "memory",
-"dentistry"
+"dental anesthesia",
+"analgesia"
 ],
 "usage": {
-"input_tokens": 565,
+"input_tokens": 437,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 702,
-"cost_usd": 0.00169
+"output_tokens": 660,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -4141,11 +4068,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T23:08:01Z",
+"classified_at": "2026-09-06T18:00:36Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiment demonstrating conditioned (classical) immunosuppression with adrenal involvement addresses mechanisms of conditioned physiological responses (placebo-like) and fits inclusion criterion 3.",
+"confidence": 0.78,
+"rationale": "Animal experiment on conditioned immunosuppression examines classical conditioning mechanisms of physiological placebo-like responses (adrenal involvement), so placebo/nocebo mechanisms are the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4158,9 +4085,7 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "immune_inflammation"
 ],
@@ -4176,32 +4101,32 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_other_neurochemical",
-"neural_systems_circuits"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that classical conditioning produced immunosuppression in rats and implicated adrenal mechanisms in the conditioned response.",
-"key_finding": "Conditioned cues produced measurable immunosuppression with adrenal involvement in rats.",
+"summary": "Found that adrenal involvement contributed to conditioned immunosuppression in rats, demonstrating a learned modulation of immune function.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned immunosuppression",
 "cyclophosphamide",
-"lithium",
-"adrenal glands",
-"rats"
+"rat",
+"adrenal cortex",
+"hemagglutination",
+"lithium"
 ],
 "usage": {
 "input_tokens": 462,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 742,
-"cost_usd": 0.00175
+"output_tokens": 827,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -4241,18 +4166,18 @@
 "Journal Article",
 "Research Support, U.S. Gov't, P.H.S."
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:11:40Z",
+"classified_at": "2026-09-03T04:43:13Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "The title explicitly states the paper evaluated the reliability and validity of a 'placebo test', indicating placebo measurement was the paper's primary subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text available; title implies a methods/measurement paper about a 'placebo test' in psychiatric samples but insufficient information to confirm that placebo/nocebo phenomena were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4263,15 +4188,14 @@
 "article_type": "methods_measurement",
 "species": "human",
 "population": [
-"healthy_adult",
-"depression",
-"anxiety_disorders"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"other"
+"mood_depression",
+"anxiety_stress"
 ],
 "outcome_measures": [
 "not_applicable"
@@ -4292,22 +4216,22 @@
 "not_applicable"
 ]
 },
-"summary": "Validated and reported on the reliability and validity of a placebo test instrument in a psychiatric context.",
+"summary": "Insufficient information to judge focus; title suggested assessment of the reliability and validity of a placebo test in psychiatric (depression/anxiety) samples.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo test",
-"psychometrics",
 "reliability",
 "validity",
-"psychiatric assessment"
+"psychiatric",
+"placebo_scale"
 ],
 "usage": {
-"input_tokens": 572,
+"input_tokens": 394,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 756,
-"cost_usd": 0.0018
+"output_tokens": 686,
+"cost_usd": 0.00162
 }
 },
 "sources": [

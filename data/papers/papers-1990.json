@@ -976,11 +976,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:52:58Z",
+"classified_at": "2026-09-06T17:58:22Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper specifically analyzed age-related responses in the placebo and active arms of an RCT, making the placebo response a primary analytic focus.",
+"rationale": "The RCT explicitly analyzed age-related responses in the placebo arm and compared placebo versus active treatment, making placebo response a focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -988,10 +988,10 @@
 "study_focus": [
 "placebo_response"
 ],
-"article_type": "secondary_analysis",
+"article_type": "empirical_primary",
 "species": "human",
 "population": [
-"cardiovascular"
+"other_clinical"
 ],
 "age_group": [
 "older_adults"
@@ -1004,7 +1004,6 @@
 "autonomic"
 ],
 "design": [
-"placebo_arm_secondary_analysis",
 "parallel_groups_rct"
 ],
 "effects": [
@@ -1020,25 +1019,24 @@
 "inert_pill_capsule"
 ]
 },
-"summary": "Analyzed age-related blood-pressure reductions in placebo and active antihypertensive arms of an RCT in 742 elderly patients and found both placebo and drug BP-lowering effects increased with age.",
-"key_finding": "Found that systolic and diastolic blood-pressure reductions after 3 months increased with age in both placebo and active treatment groups, with no difference in age-related slopes between groups.",
+"summary": "Analyzed age-related blood-pressure reductions in a double-blind placebo-controlled antihypertensive trial (N=742) and found similar, increasing hypotensive responses with age on both placebo and active treatment.",
+"key_finding": "Found that both placebo and active antihypertensive treatment produced greater systolic and diastolic BP reductions in older patients, with no difference in slopes between groups.",
 "sample_size": 742,
 "free_keywords": [
 "hypertension",
-"elderly",
 "systolic blood pressure",
 "diastolic blood pressure",
+"elderly",
 "EWPHE",
-"benzothiadiazine",
-"antihypertensive",
-"age-moderation"
+"diuretic",
+"benzothiadiazine"
 ],
 "usage": {
 "input_tokens": 710,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 866,
-"cost_usd": 0.00206
+"output_tokens": 1101,
+"cost_usd": 0.00253
 }
 },
 "sources": [
@@ -1099,11 +1097,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:50:21Z",
+"classified_at": "2026-09-06T17:58:19Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized double-blind trial that manipulated intraoperative verbal suggestions versus blank tape to test effects on postoperative analgesic requirements, directly targeting expectation/context effects.",
+"rationale": "Randomized trial that manipulated intraoperative verbal suggestions versus blank tape to test effects on postoperative analgesic requirements, isolating a placebo/context effect.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1114,8 +1112,7 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"surgical_patients",
-"healthy_adult"
+"surgical_patients"
 ],
 "age_group": [
 "adults"
@@ -1125,8 +1122,7 @@
 ],
 "outcome_measures": [
 "self_report",
-"healthcare_utilization",
-"clinical_endpoint"
+"healthcare_utilization"
 ],
 "design": [
 "parallel_groups_rct"
@@ -1146,23 +1142,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized double-blind trial found that positive suggestions played during general anaesthesia reduced 24-hour morphine requirements after hysterectomy but did not change pain scores.",
-"key_finding": "Positive intraoperative suggestions reduced mean morphine use by 14.6 mg over 24 hours (51.0 mg vs 65.7 mg; p=0.028).",
+"summary": "Randomized double-blind trial found that positive taped suggestions played under general anaesthesia reduced 24-hour morphine consumption after hysterectomy, while pain scores did not differ between groups.",
+"key_finding": "Positive intraoperative suggestions reduced mean 24-hour morphine use by 14.6 mg (51.0 mg vs 65.7 mg; p=0.028) with no difference in reported pain scores.",
 "sample_size": 60,
 "free_keywords": [
 "hysterectomy",
-"intraoperative suggestion",
+"intraoperative",
+"morphine consumption",
 "patient-controlled analgesia",
-"morphine",
 "general anaesthesia",
-"postoperative analgesia"
+"positive suggestion",
+"taped message"
 ],
 "usage": {
 "input_tokens": 804,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 872,
-"cost_usd": 0.00209
+"output_tokens": 772,
+"cost_usd": 0.00189
 }
 },
 "sources": [
@@ -1214,18 +1211,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:50:09Z",
+"classified_at": "2026-09-06T17:58:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment tested conditioned cue-induced hypoalgesia and its opioid mediation, which addresses mechanisms of placebo-like/contextual analgesia (classical conditioning and pharmacological blockade).",
+"rationale": "Animal experiment explicitly studied conditioned (cue-induced) hypoalgesia and its opioid-mediated mechanism and extinction, meeting criteria for mechanistic placebo-like conditioning studies.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -1250,33 +1246,36 @@
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_opioid",
-"treatment_cues_dose_route"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "pharmacological_manipulation",
 "prior_experience"
 ],
 "intervention_type": [
+"topical_cream",
 "other"
 ]
 },
-"summary": "Found that odors paired with social defeat produced conditioned hypoalgesia (reduced paw-licking) in rats, that naltrexone blocked the hypoalgesia when given at test, and that extended odor exposure extinguished the effect.",
-"key_finding": "Conditioned odor cues produced analgesia after defeat, which was reduced by naltrexone given at test, implicating opioid-mediated conditioned analgesia.",
+"summary": "Found that odors paired with social defeat produced conditioned hypoalgesia to formalin in rats, that naltrexone blocked this hypoalgesia during testing, and that odor exposure extinguished the effect.",
+"key_finding": "Naltrexone given at test reduced conditioned hypoalgesia, implicating opioid mechanisms; extinction via prolonged odor exposure abolished the conditioned analgesia.",
 "sample_size": null,
 "free_keywords": [
 "formalin",
-"conditioned analgesia",
-"defeat stress",
-"colony odor",
+"paw licking",
+"conditioned hypoalgesia",
+"naltrexone",
+"extinction",
 "freezing",
-"naltrexone"
+"alpha-colony odor",
+"defeat stress"
 ],
 "usage": {
 "input_tokens": 693,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1155,
-"cost_usd": 0.00263
+"output_tokens": 1143,
+"cost_usd": 0.00261
 }
 },
 "sources": [
@@ -1332,17 +1331,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:49:55Z",
+"classified_at": "2026-09-06T17:58:22Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments tested associative (classical conditioning) cue-drug pairings producing conditioned immunosuppression, making placebo/nocebo-related associative learning the explicit focus.",
+"rationale": "Animal experiments showed an associative (classical conditioning) immunosuppressive effect of a flavor cue paired with cyclosporine versus unpaired control, directly studying conditioned placebo-like effects.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -1366,33 +1366,34 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"treatment_cues_dose_route",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Found that pairing a flavored solution with cyclosporine produced conditioned immunosuppressive effects that inhibited adjuvant arthritis in rats, without inducing taste aversion.",
-"key_finding": "Conditioned flavor-cyclosporine pairings reduced development of adjuvant arthritis in immunized rats.",
+"summary": "Found that a flavored solution previously paired with cyclosporine suppressed development of adjuvant arthritis in rats, demonstrating conditioned immunosuppressive effects without conditioned taste aversion.",
+"key_finding": "Conditioned flavor cues produced immunosuppressive effects that reduced adjuvant arthritis compared with unpaired controls.",
 "sample_size": null,
 "free_keywords": [
 "cyclosporine",
 "conditioned immunosuppression",
 "adjuvant arthritis",
-"taste conditioning",
-"flavored solution",
-"rats",
-"associative learning"
+"taste aversion",
+"classical conditioning",
+"rat"
 ],
 "usage": {
 "input_tokens": 603,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 889,
-"cost_usd": 0.00208
+"output_tokens": 908,
+"cost_usd": 0.00211
 }
 },
 "sources": [
@@ -1547,18 +1548,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:25:37Z",
+"classified_at": "2026-09-03T04:35:29Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly references placebos and likely discusses placebo effects or their interpretation, so the paper's main subject is placebo science/commentary.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text provided; title and MeSH suggest a commentary about placebo effects and physician–patient relations but insufficient information to confirm whether placebo is the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1572,29 +1573,35 @@
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
-"mechanisms": [],
+"mechanisms": [
+"clinical_use_ethics_attitudes"
+],
 "moderators": [],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Commentary that discussed issues in interpreting placebo effects and cautioned clinicians about being misled by placebo-related findings.",
+"summary": "Appeared to discuss placebo effects and physician–patient relations, but no abstract or full text was available to determine whether it reported original data or empirical placebo/nocebo findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
-"clinical interpretation",
-"physician-patient-relations",
-"bias"
+"placebo effect",
+"physician-patient relations",
+"editorial",
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 6429,
-"cache_read_input_tokens": 0,
+"input_tokens": 363,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 738,
-"cost_usd": 0.00308
+"output_tokens": 770,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -2095,17 +2102,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:48:07Z",
+"classified_at": "2026-09-06T17:58:24Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Included because a nonhuman animal experiment manipulated a conditioned cue (camphor odor) paired with immunotherapy and then tested the cue alone, isolating conditioned immunotherapeutic effects.",
+"rationale": "Animal experiment explicitly tested classical conditioning of an immunotherapeutic effect by comparing camphor-odor reexposure versus controls, so conditioned placebo-like effects were the study focus (mechanism = classical conditioning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_science_other"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2116,7 +2124,8 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"immune_inflammation"
+"immune_inflammation",
+"other"
 ],
 "outcome_measures": [
 "clinical_endpoint",
@@ -2130,34 +2139,34 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route"
+"other"
 ],
 "moderators": [
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that camphor odor conditioned to allogeneic spleen-cell immunization delayed tumor growth in mice, indicating conditioned immunotherapeutic effects.",
-"key_finding": "Conditioned animals exposed to camphor alone showed delayed YC8 lymphoma growth and sometimes outperformed continuous immunotherapy controls.",
+"summary": "Found that pairing camphor odor with allogeneic spleen-cell immunotherapy conditioned an odor-elicited protective effect that delayed tumor growth in mice, sometimes outperforming continuous immunotherapy.",
+"key_finding": "Reexposure to camphor odor alone produced a conditioned delay in YC8 lymphoma growth and in some cases exceeded the continuous-immunotherapy control.",
 "sample_size": null,
 "free_keywords": [
 "camphor",
-"conditioning",
+"conditioned immunotherapy",
 "YC8 lymphoma",
 "BALB/c",
 "DBA/2",
-"allogeneic spleen cells",
+"classical conditioning",
 "tumor growth",
-"immunotherapy"
+"mice"
 ],
 "usage": {
 "input_tokens": 721,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1139,
-"cost_usd": 0.00261
+"output_tokens": 1173,
+"cost_usd": 0.00267
 }
 },
 "sources": [
@@ -2462,24 +2471,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1016/0006-8993(90)90971-d",
 "cited_by_count": 13,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:51:22Z",
+"classified_at": "2026-09-06T17:58:44Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested Pavlovian conditioning of drug-related motor responses, meeting inclusion as a mechanistic conditioning study relevant to placebo/nocebo processes (rule 3).",
+"rationale": "Animal Pavlovian conditioning study that directly tested context-paired versus unpaired drug exposure to elicit conditioned motor responses, addressing classical conditioning mechanisms relevant to placebo-like conditioned responses (inclusion rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2507,30 +2516,30 @@
 "neurobiology_dopamine"
 ],
 "moderators": [
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that caffeine elicited a conditioned antiparkinsonian contralateral rotation in 6-OHDA rats when apomorphine had been Pavlovian-paired with the test context, implicating conditioning rather than simple pharmacological priming.",
-"key_finding": "Conditioned contralateral rotation was activated by caffeine in the apomorphine-paired group but not in the unpaired (priming) group.",
+"summary": "Found that rats given apomorphine paired with a test environment later showed contralateral rotation when given caffeine, implicating Pavlovian conditioning mechanisms in caffeine-elicited antiparkinsonian responses.",
+"key_finding": "Conditioning (apomorphine paired with context) enabled caffeine to activate a conditioned contralateral rotation, whereas unpaired (priming) treatment did not.",
 "sample_size": null,
 "free_keywords": [
 "6-ohda",
 "apomorphine",
 "caffeine",
-"contralateral rotation",
-"rat",
-"parkinsonian model",
-"pavlovian conditioning"
+"adenosine",
+"conditioned rotation",
+"rats",
+"substantia nigra"
 ],
 "usage": {
 "input_tokens": 744,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1172,
-"cost_usd": 0.00268
+"output_tokens": 996,
+"cost_usd": 0.00233
 }
 },
 "sources": [
@@ -2701,17 +2710,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:47:38Z",
+"classified_at": "2026-09-06T17:58:25Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment tested conditioned immunosuppression (saccharin cue) that causally altered graft survival, so placebo/nocebo-like conditioned effect was the study focus (mechanism: classical conditioning).",
+"rationale": "Animal experiment demonstrating classical conditioning (saccharin cue paired with cyclophosphamide) produced specific, prolonged allograft survival, so placebo-like conditioned immunosuppression was the study focus (mechanism experimentally manipulated).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -2721,8 +2731,8 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"clinical_endpoint",
-"immune_inflammatory"
+"immune_inflammatory",
+"clinical_endpoint"
 ],
 "design": [
 "animal_experiment"
@@ -2734,32 +2744,31 @@
 "classical_conditioning"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
 "placebo_food_drink"
 ]
 },
-"summary": "Found that pairing cyclophosphamide with a novel taste (saccharin) produced conditioned immunosuppression in mice, and re-exposure to the taste prolonged survival of skin allografts from specific donors.",
-"key_finding": "Conditioned re-exposure to saccharin after cyclophosphamide+taste pairing prolonged mean graft survival times (e.g., MST increased from ~12–14 to 16–29 days depending on conditioning and donor-specific transfusion).",
+"summary": "Found that pairing cyclophosphamide with a novel saccharin taste produced conditioned immunosuppression in mice that prolonged specific skin allograft survival upon re-exposure to the taste cue.",
+"key_finding": "Conditioned saccharin exposure prolonged BALB/c skin graft mean survival time from ~12–14 days to 16–29 days depending on prior manipulations.",
 "sample_size": null,
 "free_keywords": [
 "saccharin",
 "cyclophosphamide",
+"graft survival",
 "skin allograft",
 "conditioned immunosuppression",
-"psychoneuroimmunology",
-"A/J",
+"A/J mice",
 "BALB/c",
-"graft survival"
+"psychoneuroimmunology"
 ],
 "usage": {
 "input_tokens": 774,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1001,
-"cost_usd": 0.00234
+"output_tokens": 968,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -2917,11 +2926,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:48:30Z",
+"classified_at": "2026-09-06T17:58:46Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal Pavlovian conditioning experiment that tested extinction and reinstatement (challenge with caffeine) of a learned drug-induced response, fitting inclusion criterion for conditioned placebo/nocebo mechanisms (classical conditioning) in animals.",
+"rationale": "Nonhuman animal Pavlovian conditioning study that experimentally induced, extinguished, and reinstated a conditioned drug response (classical conditioning mechanism), meeting inclusion for mechanism-focused placebo/nocebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2941,8 +2950,7 @@
 "motor_function"
 ],
 "outcome_measures": [
-"behavioral_performance",
-"motor_kinematic"
+"behavioral_performance"
 ],
 "design": [
 "animal_experiment"
@@ -2952,35 +2960,35 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_dopamine",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_dopamine"
 ],
 "moderators": [
-"prior_experience"
+"prior_experience",
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"not_applicable"
+"other"
 ]
 },
-"summary": "Found that rats conditioned to apomorphine showed an extinguished rotational response that was reinstated months later by a caffeine challenge in paired but not unpaired animals.",
-"key_finding": "Caffeine challenge reinstated conditioned contralateral rotation in previously paired (conditioned) rats but not in unpaired controls.",
+"summary": "Found that Pavlovian conditioning with apomorphine produced a conditioned contralateral rotation in rats that extinguished but was reinstated months later by a caffeine challenge.",
+"key_finding": "Caffeine (10 mg/kg) reinstated an extinguished, conditioned dopaminergic rotation response in paired but not unpaired rats.",
 "sample_size": 12,
 "free_keywords": [
 "apomorphine",
 "caffeine",
 "6-ohda",
-"conditioning",
+"substantia nigra",
 "extinction",
 "reinstatement",
-"contralateral rotation",
-"substantia nigra"
+"conditioned rotation"
 ],
 "usage": {
 "input_tokens": 797,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1210,
-"cost_usd": 0.00277
+"output_tokens": 1144,
+"cost_usd": 0.00263
 }
 },
 "sources": [
@@ -3388,11 +3396,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:48:43Z",
+"classified_at": "2026-09-06T17:58:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Between-group expectancy (expectation for analgesia) was contrasted with a no-treatment control, isolating expectation effects on pain (placebo-effect criterion 1).",
+"rationale": "Between-group expectancy manipulation (verbal suggestion for analgesia) versus no-treatment and coping-strategy conditions made placebo/expectation effects an explicit experimental focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3415,7 +3423,8 @@
 "self_report"
 ],
 "design": [
-"parallel_groups_rct"
+"parallel_groups_rct",
+"within_subject_experimental"
 ],
 "effects": [
 "mixed_inconsistent"
@@ -3425,32 +3434,30 @@
 "attention_cognitive_appraisal"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"other"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Compared expectancy-for-analgesia, four cognitive coping strategies, and no treatment in a cold-pressor task; coping strategies reduced self-reported pain, expectancy-only did not, and absorption predicted additional pain reduction.",
-"key_finding": "Cognitive coping strategies produced significant pain attenuation but an expectancy-for-analgesia manipulation alone did not; absorption moderated strategy-related pain reduction.",
+"summary": "Randomized groups used cognitive coping strategies, an expectancy-for-analgesia instruction, or no treatment during cold-pressor pain; coping strategies reduced self-reported pain, while expectancy-alone produced no significant analgesia.",
+"key_finding": "Coping strategies produced significant pain attenuation; expectation-only increased analgesic expectancy but did not reduce pain.",
 "sample_size": 96,
 "free_keywords": [
 "cold pressor",
+"coping strategies",
 "imaginal distraction",
-"reinterpretation",
-"cognitive coping",
+"imaginal reinterpretation",
 "absorption",
-"expectancy",
-"analgesia",
-"pain ratings"
+"expectancy"
 ],
 "usage": {
 "input_tokens": 630,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1024,
-"cost_usd": 0.00235
+"output_tokens": 898,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -3633,17 +3640,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:45:21Z",
+"classified_at": "2026-09-06T17:58:48Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating expectancy with an active drug (alcohol), so expectancy/placebo effects were an explicit focus (rule: expectancy manipulations of an active drug are included).",
+"rationale": "Used a balanced-placebo design to manipulate expectancy with an active drug, so placebo/expectation effects were explicitly isolated and tested (expectancy shown not to drive cognitive changes).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3667,31 +3675,35 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"neural_systems_circuits"
 ],
 "moderators": [
+"treatment_characteristics",
 "expectation_level"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Tested expectancy and dose effects using a balanced-placebo design with alcohol; found high dose impaired neuropsychological performance while expectancy did not significantly affect cognition.",
-"key_finding": "High alcohol dose produced deficits in planning, verbal fluency, memory and motor control; expectancy (placebo) produced no reliable effects on these objective cognitive outcomes.",
+"summary": "Used a balanced-placebo design in 72 men to separate alcohol pharmacology from expectancy and found high alcohol dose impaired several prefrontal-related cognitive functions, while expectancy had no significant effect.",
+"key_finding": "High alcohol dose produced significant cognitive impairment; manipulated expectancy (placebo) did not significantly affect objective cognitive outcomes.",
 "sample_size": 72,
 "free_keywords": [
+"alcohol",
 "balanced-placebo",
-"ethanol",
-"executive function",
+"blood alcohol concentration",
+"neuropsychological tests",
+"prefrontal",
 "verbal fluency",
-"neuropsychological battery"
+"planning"
 ],
 "usage": {
 "input_tokens": 629,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 847,
-"cost_usd": 0.002
+"output_tokens": 1181,
+"cost_usd": 0.00267
 }
 },
 "sources": [
@@ -3747,11 +3759,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:51:36Z",
+"classified_at": "2026-09-06T17:58:28Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Animal experiment tested classical conditioning of immunosuppression (a conditioned/contextual modulation of physiological outcomes) and pharmacologically manipulated it, meeting inclusion for mechanistic placebo-like conditioning effects.",
+"confidence": 0.9,
+"rationale": "Animal experiment explicitly studied classical conditioning of immunosuppression and tested dexamethasone modulation, meeting inclusion as a mechanistic placebo-relevant study (classical conditioning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3792,25 +3804,25 @@
 "other"
 ]
 },
-"summary": "Found that rats re-exposed to a saccharin CS previously paired with cyclophosphamide showed conditioned suppression of PWM-induced spleen cell proliferation, and that dexamethasone treatment before conditioning or re-exposure abolished this conditioned immunosuppression.",
-"key_finding": "Dexamethasone given either at conditioning or before re-exposure blocked the conditioned reduction in PWM-induced spleen cell proliferation.",
+"summary": "Found that rats conditioned with saccharin paired with cyclophosphamide showed reduced PWM-induced spleen cell proliferation upon re-exposure, and that dexamethasone treatment before conditioning or test abrogated this conditioned immunosuppression.",
+"key_finding": "Dexamethasone given either before conditioning or before CS re-exposure blocked the behaviorally conditioned reduction in PWM-induced spleen cell proliferation.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
 "saccharin",
-"conditioned taste aversion",
+"conditioned immunosuppression",
 "spleen cell proliferation",
 "IgM",
-"pokeweed mitogen",
 "dexamethasone",
-"corticosterone"
+"corticosterone",
+"pokeweed mitogen"
 ],
 "usage": {
 "input_tokens": 704,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1122,
-"cost_usd": 0.00257
+"output_tokens": 1163,
+"cost_usd": 0.00265
 }
 },
 "sources": [
@@ -3841,25 +3853,23 @@
 "oa_pdf_url": "",
 "landing_url": null,
 "cited_by_count": 187,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:25:49Z",
+"classified_at": "2026-09-04T00:15:15Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names changing expectations as central to psychotherapy, indicating expectancy mechanisms (a placebo/nocebo-related topic) are the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text available and the title suggests a theoretical piece about expectation in psychotherapy, so it's unclear whether placebo/nocebo phenomena are the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "not_applicable",
 "population": [],
@@ -3870,26 +3880,26 @@
 "effects": [],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"history_conceptual"
 ],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Argued that changing patients' expectations is a central mechanism driving psychotherapy's effectiveness.",
+"summary": "Insufficient information to determine whether the paper empirically studied placebo/nocebo effects; title suggests a theoretical discussion of expectations in psychotherapy.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"expectancy",
+"expectation",
+"expectancy effects",
 "psychotherapy",
-"expectation-change",
-"therapeutic-context"
+"placebo-related theory"
 ],
 "usage": {
-"input_tokens": 530,
-"cache_read_input_tokens": 5888,
+"input_tokens": 146,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1063,
-"cost_usd": 0.00241
+"output_tokens": 595,
+"cost_usd": 0.00138
 }
 },
 "sources": [
@@ -3922,56 +3932,50 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:25:59Z",
+"classified_at": "2026-09-03T04:35:51Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names 'The placebo effect', indicating the paper's primary subject is placebo phenomena (review/overview) per inclusion rule for reviews of placebo effects.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text provided; title indicates discussion of the placebo effect but insufficient information to determine whether it is an empirical study, systematic review, or narrative/commentary focused on placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"design": [],
+"effects": [],
 "mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Reviewed the placebo effect and its implications for clinical nursing practice.",
+"summary": "No abstract available; title indicated a discussion of the placebo effect in a nursing journal but methods and focus (empirical vs. commentary) were not reported.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "nursing",
 "placebo effect",
 "magic pills",
-"overview"
+"clinical practice"
 ],
 "usage": {
-"input_tokens": 541,
+"input_tokens": 363,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 752,
-"cost_usd": 0.00179
+"output_tokens": 528,
+"cost_usd": 0.00129
 }
 },
 "sources": [
@@ -4246,73 +4250,52 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:26:08Z",
+"classified_at": "2026-09-03T04:35:47Z",
 "screening": {
-"decision": "include",
-"confidence": 0.75,
-"rationale": "Title explicitly names placebo as an experimental factor affecting murine breast cancer, meeting inclusion for placebo/nocebo as the subject.",
-"exclusion_reason": null,
-"peer_reviewed": false
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Title mentions placebo but no abstract or full text available to confirm whether placebo/nocebo phenomena were an explicit focus or method in this animal study.",
+"exclusion_reason": "insufficient_information",
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"cognition",
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"animal_experiment"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"other"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"other"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Investigated placebo and melatonin effects on murine breast cancer across secular or circannual time frames.",
+"summary": "No abstract available; title suggested an investigation of placebo and melatonin effects on murine breast cancer but available information was insufficient to judge focus on placebo/nocebo.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "melatonin",
-"murine",
+"mouse",
 "breast cancer",
 "circannual",
 "seasonality",
-"secular"
+"placebo (unclear)"
 ],
 "usage": {
-"input_tokens": 577,
+"input_tokens": 399,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 776,
-"cost_usd": 0.00184
+"output_tokens": 590,
+"cost_usd": 0.00143
 }
 },
 "sources": [
@@ -4894,13 +4877,13 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:57:54Z",
+"classified_at": "2026-09-06T17:58:28Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title and publication venue indicate an ethical/ methodological analysis of placebo-controlled trials, so placebo is the paper's main subject despite no abstract being available (placebo science/ethics focus).",
+"confidence": 0.8,
+"rationale": "Paper is an ethics/analysis piece focused on the role and logic of placebo-controlled trials, making placebo the main subject (placebo science/ethics).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
@@ -4912,7 +4895,9 @@
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
@@ -4923,24 +4908,26 @@
 "moderators": [
 "none_reported"
 ],
-"intervention_type": []
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discusses the ethical and methodological logic of placebo-controlled trials and the clinical purpose of using placebos in research.",
+"summary": "Discusses the ethical logic and clinical purpose of placebo-controlled trials and their implications for research design and informed consent.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"research ethics",
 "placebo-controlled trials",
-"deception",
+"ethics",
 "informed consent",
-"clinical purpose"
+"deception",
+"research design"
 ],
 "usage": {
 "input_tokens": 476,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 703,
-"cost_usd": 0.00167
+"output_tokens": 698,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -5701,11 +5688,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:50:45Z",
+"classified_at": "2026-09-06T17:58:31Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Nonhuman animal experiment that used classical (taste) conditioning to produce a conditioned antipyretic response to LPS, matching inclusion criterion for conditioned placebo-like effects (mechanisms and moderators).",
+"rationale": "Animal experiment used classical conditioning (saccharin CS paired with alpha-MSH UCS) to produce conditioned antipyretic and pyrogenic responses, so placebo-like conditioned responses were the explicit object of study (rule 3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5715,9 +5702,7 @@
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [
-"not_applicable"
-],
+"population": [],
 "age_group": [],
 "condition_domain": [
 "immune_inflammation"
@@ -5727,7 +5712,8 @@
 "immune_inflammatory"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
@@ -5742,24 +5728,23 @@
 "other"
 ]
 },
-"summary": "Conditioned taste aversion pairing saccharin with alpha-MSH produced a learned antipyretic response that suppressed LPS-induced fever in rats.",
-"key_finding": "Found that both alpha-MSH antipyresis and LPS-induced fever were significantly conditionable, demonstrating conditioned suppression of fever.",
+"summary": "Demonstrated in rats that alpha-MSH produced antipyresis and that pairing alpha-MSH with a novel saccharin taste produced a conditioned suppression of LPS-induced fever.",
+"key_finding": "Found that both the antipyretic effect of alpha-MSH and the LPS-induced fever could be elicited conditionally by the saccharin CS, indicating conditioned modulation of fever.",
 "sample_size": null,
 "free_keywords": [
 "alpha-msh",
-"saccharin",
 "lipopolysaccharide",
-"fever",
+"saccharin",
 "conditioned antipyresis",
-"rats",
-"conditioned taste aversion"
+"fever",
+"rat"
 ],
 "usage": {
-"input_tokens": 699,
-"cache_read_input_tokens": 5888,
+"input_tokens": 443,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1111,
-"cost_usd": 0.00254
+"output_tokens": 951,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -6162,11 +6147,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:50:30Z",
+"classified_at": "2026-09-06T17:58:31Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study explicitly tested a Pavlovian 'placebo-like' conditioned response to amphetamine-substitution (saline) in rats and manipulated mechanisms with D1/D2 antagonists, meeting criteria for placebo/nocebo mechanisms in animal experiments.",
+"rationale": "Animal experiment explicitly studied a Pavlovian conditioned (placebo-like) response to saline after amphetamine and tested dopaminergic pharmacological modulation, meeting criterion for placebo/nocebo mechanisms in animal models.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6197,8 +6182,9 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_dopamine",
-"prior_treatment_experience"
+"neurobiology_other_neurochemical",
+"neurobiology_opioid",
+"neurobiology_dopamine"
 ],
 "moderators": [
 "pharmacological_manipulation"
@@ -6207,23 +6193,25 @@
 "saline_injection_infusion"
 ]
 },
-"summary": "Measured conditioned (placebo-like) amphetamine-induced circling in female rats after saline substitution and tested effects of D1/D2 antagonists on expression and extinction.",
-"key_finding": "Expression of the conditioned (placebo-like) circling on saline was attenuated by both D1 and D2 antagonists, while sensitization to amphetamine was attenuated by the D1 antagonist only.",
+"summary": "Found that saline substitution after repeated amphetamine produced a Pavlovian conditioned circling response in rats that was attenuated by D1 and D2 antagonists, with D1 blockade preventing sensitization.",
+"key_finding": "D1 antagonist (SCH 23390) attenuated sensitization to amphetamine and both D1 and D2 antagonists reduced expression of the conditioned (placebo-like) circling response.",
 "sample_size": null,
 "free_keywords": [
 "amphetamine",
 "sch-23390",
 "metoclopramide",
-"circling",
 "sensitization",
-"extinction"
+"pavlovian conditioning",
+"circling behavior",
+"female rats",
+"stereotypy"
 ],
 "usage": {
 "input_tokens": 635,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 718,
-"cost_usd": 0.00174
+"output_tokens": 1041,
+"cost_usd": 0.00239
 }
 },
 "sources": [

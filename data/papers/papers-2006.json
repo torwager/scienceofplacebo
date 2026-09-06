@@ -1870,11 +1870,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:00:15Z",
+"classified_at": "2026-09-06T17:54:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Experimental 2x2 manipulation of posthypnotic suggestion versus no suggestion and VR distraction versus no VR directly tested analgesic (context/expectation) effects on thermal pain.",
+"rationale": "Experimental 2x2 manipulation contrasted posthypnotic suggestion (hypnosis) versus no-hypnosis and VR distraction versus no VR to test analgesic (expectation/suggestion) effects on thermal pain, so placebo-like context/expectation effects were the focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1889,7 +1889,8 @@
 "healthy_pediatric"
 ],
 "age_group": [
-"mixed_unspecified"
+"children_adolescents",
+"adults"
 ],
 "condition_domain": [
 "pain"
@@ -1901,37 +1902,39 @@
 "parallel_groups_rct"
 ],
 "effects": [
-"mixed_inconsistent"
+"significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"attention_cognitive_appraisal"
+"attention_cognitive_appraisal",
+"therapeutic_ritual_context"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"expectation_level"
 ],
 "intervention_type": [
 "verbal_suggestion_only",
 "digital_virtual"
 ]
 },
-"summary": "Tested posthypnotic suggestion and virtual reality distraction in a 2x2 between-groups experiment and found PHS-induced analgesia in highly hypnotizable participants while VR reduced pain regardless of hypnotizability.",
-"key_finding": "Posthypnotic suggestion reduced thermal pain specifically in high hypnotizables, whereas VR distraction produced analgesia independent of hypnotizability.",
+"summary": "Tested posthypnotic suggestion and virtual reality distraction in a 2x2 between-groups experiment and found hypnosis produced analgesia in highly hypnotizable participants while VR distraction reduced pain regardless of hypnotizability.",
+"key_finding": "For high hypnotizables, audio hypnosis plus VR reduced worst pain by ~22% and unpleasantness by ~25% relative to VR alone; hypnosis effects were moderated by hypnotizability while VR effects were not.",
 "sample_size": null,
 "free_keywords": [
 "posthypnotic suggestion",
-"virtual reality",
-"thermal pain",
+"virtual reality distraction",
 "hypnotizability",
-"distraction",
+"thermal pain",
+"analgesia",
 "pain unpleasantness"
 ],
 "usage": {
-"input_tokens": 662,
-"cache_read_input_tokens": 5888,
+"input_tokens": 406,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1062,
-"cost_usd": 0.00244
+"output_tokens": 1014,
+"cost_usd": 0.00228
 }
 },
 "sources": [
@@ -2600,26 +2603,38 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T20:01:52Z",
+"classified_at": "2026-09-06T17:54:32Z",
 "screening": {
 "decision": "include",
-"confidence": 0.78,
-"rationale": "Paper is an ethics commentary explicitly arguing about the use of placebo-controlled trials, so placebo is the main subject (placebo_science_other).",
+"confidence": 0.85,
+"rationale": "Paper is an explicit ethical argument about placebo-controlled trials (placebo as the main subject), so it fits 'placebo_science_other' inclusion (ethics/clinical use).",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
+"species": "human",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
 "clinical_use_ethics_attitudes"
 ],
@@ -2630,22 +2645,23 @@
 "not_applicable"
 ]
 },
-"summary": "Argued that placebo-controlled trials are ethical even where guidelines recommend therapy, discussing research design and ethics in anticoagulation trials.",
+"summary": "Argued that placebo-controlled trials can be ethical in clinical areas where guidelines recommend therapy, addressing research-design and ethical considerations in anticoagulant studies.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"ethics",
-"placebo-controlled trials",
-"clinical guidelines",
-"thrombosis",
-"fondaparinux"
+"anticoagulants",
+"venous thrombosis",
+"fondaparinux",
+"research ethics",
+"clinical equipoise",
+"placebo-controlled trials"
 ],
 "usage": {
 "input_tokens": 470,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 601,
-"cost_usd": 0.00147
+"output_tokens": 703,
+"cost_usd": 0.00167
 }
 },
 "sources": [
@@ -2681,71 +2697,53 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:45:24Z",
+"classified_at": "2026-09-03T04:13:48Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Title explicitly frames whether clinical improvement after epidural corticosteroid injections is a placebo effect versus injection or anti-inflammatory effect, making placebo effects the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "Title explicitly addresses whether benefits are placebo, injection or anti-inflammatory, but no abstract or full text was available to confirm if placebo/nocebo was the explicit focus or a secondary discussion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [
-"chronic_pain"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"pain"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"treatment_cues_dose_route",
-"therapeutic_ritual_context",
-"trial_methodology_placebo_response"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"saline_injection_infusion",
-"inert_pill_capsule",
-"other"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discussed whether improvements after epidural corticosteroid injections for sciatica reflect placebo/injection/context effects versus true anti-inflammatory drug effects.",
+"summary": "Title questioned whether epidural corticosteroid injection benefits for sciatica reflect placebo, injection-mechanical, or anti-inflammatory effects; abstract not available to determine study focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sciatica",
+"epidural corticosteroid injection",
 "epidural steroid",
-"epidural injection",
-"back pain",
+"placebo effect",
 "injection effect"
 ],
 "usage": {
-"input_tokens": 581,
+"input_tokens": 403,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 728,
-"cost_usd": 0.00175
+"output_tokens": 729,
+"cost_usd": 0.00171
 }
 },
 "sources": [
@@ -3032,83 +3030,74 @@
 "oa_pdf_url": "https://europepmc.org/articles/pmc2117652?pdf=render",
 "landing_url": null,
 "cited_by_count": 204,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:45:39Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-04T00:13:21Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Primary empirical study experimentally compared active DBS versus sham programming and reported responses to sham/placebo stimulation, making placebo/nocebo responses an explicit focus.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "Title indicates responses to active and sham DBS programming (suggesting placebo/sham effects) but no abstract or full text was available to confirm whether placebo/nocebo phenomena were an explicit focus or a primary analysis.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical",
-"anxiety_disorders"
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"mood_depression",
-"sensory_perception",
-"adverse_events",
 "other"
 ],
 "outcome_measures": [
 "self_report",
 "clinician_rated",
-"autonomic",
-"other"
+"motor_kinematic"
 ],
 "design": [
-"crossover_rct",
 "within_subject_experimental"
 ],
 "effects": [
-"mixed_inconsistent"
+"not_applicable"
 ],
 "mechanisms": [
-"neural_systems_circuits",
-"treatment_cues_dose_route"
+"treatment_cues_dose_route",
+"neural_systems_circuits"
 ],
 "moderators": [
-"treatment_characteristics"
+"none_reported"
 ],
 "intervention_type": [
 "sham_neurostimulation"
 ]
 },
-"summary": "Tested acute responses to active versus sham deep brain stimulation in five treatment-refractory OCD patients and reported both stimulation-elicited improvements and worsening, with sensory and autonomic responses clustered at ventral contacts.",
-"key_finding": "Acute active and sham DBS trials produced sensory, autonomic, and mood responses, with non-mood and physiological responses significantly associated with ventral lead contacts.",
-"sample_size": 5,
+"summary": "Reported responses during active and sham DBS programming in the internal capsule/nucleus accumbens region, but no abstract was available to confirm focus on placebo/nocebo effects.",
+"key_finding": null,
+"sample_size": null,
 "free_keywords": [
 "deep brain stimulation",
-"anterior limb internal capsule",
+"internal capsule",
 "nucleus accumbens",
-"OCD",
-"ventral contacts",
-"autonomic changes",
-"taste smell",
-"stimulation trials"
+"sham programming",
+"neuromodulation"
 ],
 "usage": {
-"input_tokens": 925,
-"cache_read_input_tokens": 5888,
+"input_tokens": 49,
+"cache_read_input_tokens": 6272,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1271,
-"cost_usd": 0.00292
+"output_tokens": 775,
+"cost_usd": 0.00172
 }
 },
 "sources": [
@@ -3523,11 +3512,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:04:52Z",
+"classified_at": "2026-09-06T17:54:35Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Paper's explicit focus is on the placebo value of surgical ritual and sham operations (placebo science of sham surgery), matching inclusion of placebo-science reviews/commentaries.",
+"rationale": "Conceptual/theoretical paper whose primary focus was the placebo value of surgical ritual and sham operations, directly addressing placebo science.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3535,10 +3524,10 @@
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "narrative_review",
+"article_type": "theory_commentary",
 "species": "human",
 "population": [
-"surgical_patients"
+"not_applicable"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -3557,34 +3546,32 @@
 ],
 "mechanisms": [
 "therapeutic_ritual_context",
-"provider_patient_interaction",
-"treatment_cues_dose_route",
+"verbal_suggestion_expectation",
 "history_conceptual"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"sham_surgery"
+"not_applicable"
 ]
 },
-"summary": "Discussed how perioperative ritual and sham operations function as placebo mechanisms that can contribute to perceived surgical benefits, especially for pain outcomes.",
+"summary": "Argued that the ritual elements of surgery resemble shamanistic practices and contribute a strong placebo/suggestive value that must be considered when evaluating surgical effectiveness.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sham surgery",
 "ritual",
-"perioperative",
+"surgical placebo",
 "suggestibility",
-"shamanism",
-"placebo"
+"perioperative"
 ],
 "usage": {
 "input_tokens": 676,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 664,
-"cost_usd": 0.00164
+"output_tokens": 929,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -4136,11 +4123,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:03:14Z",
+"classified_at": "2026-09-06T17:54:34Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized experiment manipulated analgesic versus relaxation suggestions (expectation/context) and measured clinical pain, so placebo-related context effects were the explicit focus.",
+"rationale": "Randomized experiment manipulated verbal suggestions (analgesia vs relaxation; hypnosis vs relaxation) and tested effects on clinical pain, making placebo/expectation mechanisms the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4170,7 +4157,8 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"therapeutic_ritual_context"
+"therapeutic_ritual_context",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
@@ -4179,23 +4167,23 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized trial in 45 fibromyalgia patients compared analgesia versus relaxation suggestions (and hypnosis framing) and found analgesia suggestions produced greater reductions in pain intensity and sensory pain.",
-"key_finding": "Hypnosis with analgesia suggestions reduced VAS pain intensity and McGill sensory scores more than hypnosis with relaxation suggestions; relaxation labeled as hypnosis did not outperform relaxation training.",
+"summary": "Randomized fibromyalgia trial compared analgesia versus relaxation suggestions delivered via hypnosis or relaxation training and found greater reductions in self-reported pain with hypnotic analgesia suggestions.",
+"key_finding": "Hypnosis with analgesia suggestions produced larger decreases in VAS pain and McGill sensory scores than hypnosis with relaxation suggestions; hypnotic relaxation did not outperform relaxation training.",
 "sample_size": 45,
 "free_keywords": [
 "fibromyalgia",
 "hypnosis",
-"analgesia suggestion",
 "relaxation",
-"visual analogue scale",
-"mcgill pain questionnaire"
+"analgesia suggestion",
+"mcgill pain questionnaire",
+"visual analogue scale"
 ],
 "usage": {
 "input_tokens": 693,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 830,
-"cost_usd": 0.00198
+"output_tokens": 871,
+"cost_usd": 0.00206
 }
 },
 "sources": [
@@ -4368,11 +4356,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:02:20Z",
+"classified_at": "2026-09-06T17:54:34Z",
 "screening": {
 "decision": "include",
-"confidence": 0.81,
-"rationale": "Empirical study explicitly investigated treatment credibility and expectancy relevant to placebo control design in OMT trials, addressing placebo-methodology issues (placebo science), matching inclusion criterion 5.",
+"confidence": 0.88,
+"rationale": "Empirical study explicitly measured treatment credibility and expectancy for sham versus active osteopathic manipulative treatment, addressing placebo-control methodology and expectation effects (placebo science), so it meets inclusion as placebo_science_other.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4395,29 +4383,30 @@
 "self_report"
 ],
 "design": [
-"observational",
-"survey_interview"
+"survey_interview",
+"single_group_pre_post"
 ],
 "effects": [
 "not_applicable"
 ],
 "mechanisms": [
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"provider_patient_interaction"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"not_applicable"
+"sham_exercise_physical"
 ]
 },
-"summary": "Assessed treatment-credibility ratings for osteopathic manipulative treatment versus sham and untreated controls in a low-back pain trial sample and examined changes over six months.",
-"key_finding": "Found that participants rated OMT as more credible than sham manipulative treatment at baseline and follow-up (P<.05).",
+"summary": "Measured and compared perceived credibility and expectancy for sham manipulative treatment versus osteopathic manipulative treatment in a low back pain trial sample and found OMT rated as more credible.",
+"key_finding": "Found that subjects (N=91) perceived OMT as more credible than sham manipulative treatment at baseline and 6-month follow-up (p<.05).",
 "sample_size": 91,
 "free_keywords": [
 "osteopathic manipulative treatment",
 "sham manipulation",
-"treatment credibility",
+"treatment credibility scale",
 "low back pain",
 "blinding",
 "expectancy"
@@ -4426,8 +4415,8 @@
 "input_tokens": 898,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 752,
-"cost_usd": 0.00188
+"output_tokens": 772,
+"cost_usd": 0.00192
 }
 },
 "sources": [
@@ -4739,17 +4728,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:04:00Z",
+"classified_at": "2026-09-06T17:54:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments explicitly tested classical conditioning of physiological/behavioral responses to a peripheral pharmacological unconditioned stimulus, making conditioned responses the study focus (mechanism of conditioned symptoms).",
+"rationale": "Animal conditioning study tested cue (odor)-paired pharmacological US producing a conditioned behavioural response (startle) and assessed conditioned pain responses, meeting inclusion for mechanistic classical-conditioning models of placebo/nocebo-like responses.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -4761,47 +4750,48 @@
 ],
 "condition_domain": [
 "pain",
-"anxiety_stress"
+"sensory_perception"
 ],
 "outcome_measures": [
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
-"significant_objective",
-"null_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
 "neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Demonstrated that pairing an odor with peripheral pyridostigmine produced conditioned facilitation of startle in rats but did not produce conditioned changes in thermal paw-lick latency.",
-"key_finding": "Conditioned odor paired with pyridostigmine produced a durable increase in startle reactivity but failed to produce conditioned hyperalgesia on a heated-plate paw-lick test.",
+"summary": "Found that odor paired with peripheral cholinesterase inhibitor pyridostigmine produced conditioned facilitation of startle in rats but did not produce conditioned changes in thermal paw-lick latency (no conditioned hyperalgesia).",
+"key_finding": "Conditioned enhancement of startle persisted for weeks, while no conditioned hyperalgesia was observed.",
 "sample_size": null,
 "free_keywords": [
 "pyridostigmine",
-"odor-potentiated startle",
-"conditioned startle",
-"thermal nociception",
-"sprague-dawley",
-"gulf war illness"
+"startle",
+"paw-lick",
+"conditioned response",
+"gulf war illness",
+"cholinergic",
+"rat",
+"thermal nociception"
 ],
 "usage": {
 "input_tokens": 763,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1171,
-"cost_usd": 0.00268
+"output_tokens": 1128,
+"cost_usd": 0.00259
 }
 },
 "sources": [
@@ -6155,136 +6145,6 @@
 "openalex_checked": "2026-09-02v2"
 },
 {
-"id": "doi:10.2106/jbjs.e.00147",
-"title": "Patient expectations regarding total knee arthroplasty: differences among the United States, United Kingdom, and Australia.",
-"authors": [
-"Lingard EA",
-"Sledge CB",
-"Learmonth ID",
-"Kinemax Outcomes Group"
-],
-"journal": "The Journal of bone and joint surgery. American volume",
-"journal_abbrev": "J Bone Joint Surg Am",
-"year": 2006,
-"date": "2006-06-01",
-"doi": "10.2106/jbjs.e.00147",
-"pmid": "16757751",
-"pmcid": null,
-"openalex_id": "https://openalex.org/W2170137273",
-"abstract": "BACKGROUND: Total knee arthroplasty is an effective treatment for severe osteoarthritis of the knee. Our aim was to determine whether patients from the United Kingdom, United States, and Australia have different preoperative expectations regarding total knee arthroplasty and whether these expectations have an impact on outcomes and patient satisfaction. METHODS: Patients from the United Kingdom, the United States, and Australia were recruited into a prospective observational study of primary total knee arthroplasty for the treatment of osteoarthritis. Preoperative expectations, Western Ontario and McMaster Universities Osteoarthritis Index (WOMAC) and Short Form-36 (SF-36) scores, and demographic, socioeconomic, and follow-up data, including satisfaction with outcome, were obtained from self-administered patient questionnaires. RESULTS: A total of 598 patients with a mean age of sixty-nine years at the time of the index arthroplasty were recruited; 58% were women. The majority of patients expected to have no pain at twelve months after the surgery, and with the numbers available there was no significant difference among the countries with regard to pain expectations. Australian patients were more likely than patients in the United Kingdom or the United States to expect better function at twelve months after the surgery. With the numbers available, satisfaction scores at twelve months did not differ significantly among the countries and were not influenced by preoperative expectations. Australian patients were more likely than patients in the United Kingdom or the United States to be unwilling to undergo total knee arthroplasty again at twelve months under similar circumstances. CONCLUSIONS: Patients from different countries have different expectations regarding total knee arthroplasty, which are not fully explained by differences in sociodemographic factors, clinical characteristics, and pain and functional status. Australian patients had the highest expectations but, despite reporting similar outcomes and satisfaction following total knee arthroplasty, they were more likely not to want to have the surgery again under similar circumstances.",
-"keywords": [],
-"mesh": [
-"Adult",
-"Aged",
-"Aged, 80 and over",
-"Arthroplasty, Replacement, Knee",
-"Australia",
-"Cohort Studies",
-"Female",
-"Health Knowledge, Attitudes, Practice",
-"Humans",
-"Male",
-"Middle Aged",
-"Osteoarthritis, Knee",
-"Postoperative Pain",
-"Patient Satisfaction",
-"Recovery of Function",
-"Treatment Outcome",
-"United Kingdom",
-"United States",
-"Walking"
-],
-"pub_types": [
-"Comparative Study",
-"Journal Article",
-"Multicenter Study",
-"Research Support, Non-U.S. Gov't"
-],
-"oa_status": "closed",
-"oa_pdf_url": null,
-"landing_url": "https://doi.org/10.2106/jbjs.e.00147",
-"cited_by_count": 216,
-"scope": "core",
-"classification": {
-"taxonomy_version": "1.0.0",
-"prompt_version": "2.0.0",
-"provider": "openai",
-"model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:04:27Z",
-"screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Observational study measured preoperative expectations and tested their impact on postoperative outcomes/satisfaction, so expectations were an explicit predictor of clinical outcomes (fits inclusion for expectation effects).",
-"exclusion_reason": null,
-"peer_reviewed": true
-},
-"tags": {
-"study_focus": [
-"placebo_response"
-],
-"article_type": "empirical_primary",
-"species": "human",
-"population": [
-"surgical_patients",
-"other_clinical"
-],
-"age_group": [
-"adults",
-"older_adults"
-],
-"condition_domain": [
-"pain",
-"motor_function",
-"global_health_qol"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"mixed_inconsistent"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
-},
-"summary": "Measured preoperative expectations in 598 patients undergoing total knee arthroplasty across three countries and tested whether expectations predicted 12-month outcomes and satisfaction.",
-"key_finding": "Found that expectations differed by country but did not significantly influence 12-month satisfaction, with Australians more likely to expect better function yet less willing to undergo surgery again.",
-"sample_size": 598,
-"free_keywords": [
-"total knee arthroplasty",
-"TKA",
-"osteoarthritis",
-"expectations",
-"WOMAC",
-"SF-36",
-"patient satisfaction",
-"multinational"
-],
-"usage": {
-"input_tokens": 908,
-"cache_read_input_tokens": 5888,
-"cache_creation_input_tokens": 0,
-"output_tokens": 1140,
-"cost_usd": 0.00265
-}
-},
-"sources": [
-"pubmed_audit"
-],
-"date_added": "2006-06-01",
-"private_pdf": null
-},
-{
 "id": "doi:10.1002/hup.765",
 "title": "Differences in cognitive factors between \"true drug\" versus \"placebo pattern\" response to fluoxetine as defined by pattern analysis.",
 "authors": [
@@ -6423,72 +6283,50 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "full_text",
-"classified_at": "2026-09-05T20:46:13Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:14:20Z",
 "screening": {
-"decision": "include",
-"confidence": 0.9,
-"rationale": "Ethics commentary explicitly addresses the use, ethics, and prescribing of placebos in clinical practice, making placebo science the paper's main subject (placebo_science_other).",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text provided and the title suggests an ethics/commentary on prescribing placebos but content and focus on placebo science cannot be confirmed from the available record.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [
-"clinicians_providers"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"clinical_use_ethics_attitudes",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Commentary discussed ethical issues of prescribing placebos in clinical practice, arguing deception undermines trust and advocating informed consent and alternatives.",
+"summary": "No abstract available; title suggests a commentary on the ethics or practice of prescribing placebos but the article's aims and methods are not discernible from the record.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"medical ethics",
-"informed consent",
-"deception",
-"vitamin b-12",
-"clinical case"
+"placebo",
+"prescribing",
+"ethics",
+"clinical_practice"
 ],
 "usage": {
-"input_tokens": 2817,
+"input_tokens": 354,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 637,
-"cost_usd": 0.00213
+"output_tokens": 711,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -8610,17 +8448,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:05:27Z",
+"classified_at": "2026-09-06T17:54:37Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The study experimentally manipulated treatments including a placebo control and no-treatment arm and explicitly tested response expectancies as a mediator of pain outcomes (mechanism of placebo/context effects).",
+"rationale": "Randomized trial included both a placebo control and a no-treatment control and tested response expectancies as a mediator of pain outcomes (explicitly addressing expectation/placebo mechanisms).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -8628,7 +8467,7 @@
 "healthy_adult"
 ],
 "age_group": [
-"adults"
+"mixed_unspecified"
 ],
 "condition_domain": [
 "pain"
@@ -8637,8 +8476,7 @@
 "self_report"
 ],
 "design": [
-"parallel_groups_rct",
-"placebo_vs_no_treatment_arm"
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_subjective"
@@ -8647,30 +8485,31 @@
 "verbal_suggestion_expectation"
 ],
 "moderators": [
-"personality_traits"
+"personality_traits",
+"expectation_level"
 ],
 "intervention_type": [
 "sham_psychological",
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that response expectancies partially mediated pain relief across psychological interventions and that hypnotic suggestibility moderated benefit from hypnotic treatments.",
-"key_finding": "Response expectancies partially mediated treatment effects on pain; hypnotic suggestibility predicted analgesic response only for hypnotic interventions.",
+"summary": "Randomized analogue pain trial compared distraction, CBT, hypnotic variations, placebo control, and no-treatment, and found response expectancies partially mediated treatment effects while hypnotic suggestibility moderated hypnotic benefits.",
+"key_finding": "Found that response expectancies partially mediated pain relief across treatments and hypnotic suggestibility predicted benefit from hypnotic interventions (N=188 randomized).",
 "sample_size": 188,
 "free_keywords": [
 "hypnotic suggestibility",
-"response expectancy",
 "cognitive behavioral therapy",
 "distraction",
 "analogue pain",
-"mediation"
+"mediator",
+"randomized"
 ],
 "usage": {
 "input_tokens": 619,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1020,
-"cost_usd": 0.00234
+"output_tokens": 1092,
+"cost_usd": 0.00249
 }
 },
 "sources": [
@@ -10304,22 +10143,22 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:02:31Z",
+"classified_at": "2026-09-06T17:54:39Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Experimental manipulation of mental context reinstatement targeted context-driven return of fear (renewal), making contextual/conditioning mechanisms the study focus (an experimentally isolated context effect).",
+"confidence": 0.85,
+"rationale": "Experimental manipulation of mental reinstatement of treatment context tested its effect on context-driven return of fear after exposure, meeting inclusion for context/conditioning effects on symptoms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"other_clinical"
+"anxiety_disorders"
 ],
 "age_group": [
 "adults"
@@ -10328,7 +10167,8 @@
 "anxiety_stress"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"behavioral_performance"
 ],
 "design": [
 "parallel_groups_rct"
@@ -10338,7 +10178,7 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"verbal_suggestion_expectation"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
@@ -10347,23 +10187,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Tested whether mental reinstatement of the treatment context reduced context-dependent return of fear after exposure therapy in spider-fearful participants and found reinstatement attenuated return of fear at one-week follow-up.",
-"key_finding": "Mental reinstatement instructions given before reexposure in a novel context reduced self-reported return of fear compared with no reinstatement.",
+"summary": "Tested whether mental reinstatement of the treatment context reduced context-based return of fear after exposure in spider-fearful participants and found reinstatement attenuated return of fear at 1-week follow-up.",
+"key_finding": "Participants who mentally reinstated the treatment context showed less return of fear in a new context than those who did not.",
 "sample_size": 48,
 "free_keywords": [
-"renewal",
-"return of fear",
 "exposure therapy",
-"spiders",
+"renewal",
 "context reinstatement",
-"phobia"
+"spider phobia",
+"return of fear"
 ],
 "usage": {
 "input_tokens": 660,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 957,
-"cost_usd": 0.00223
+"output_tokens": 981,
+"cost_usd": 0.00227
 }
 },
 "sources": [
@@ -10539,27 +10378,25 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:46:39Z",
+"classified_at": "2026-09-03T04:14:53Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly centers on 'placebo', indicating the paper's main subject is placebo phenomena (likely a commentary/review) per inclusion rule 5.",
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title suggests an editorial/commentary about placebo but insufficient information to confirm it meets inclusion criteria.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
-"species": "not_applicable",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
@@ -10570,22 +10407,21 @@
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Appeared to discuss placebo phenomena and their significance; framed as a commentary on the placebo concept.",
+"summary": "Insufficient information to judge; title suggests an editorial or commentary discussing placebo phenomena.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo",
+"editorial",
 "commentary",
-"history",
-"ethics",
-"placebo_concept"
+"placebo",
+"complementary therapies"
 ],
 "usage": {
-"input_tokens": 550,
+"input_tokens": 372,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 625,
-"cost_usd": 0.00153
+"output_tokens": 581,
+"cost_usd": 0.0014
 }
 },
 "sources": [
@@ -11733,30 +11569,33 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:08:21Z",
+"classified_at": "2026-09-06T17:55:04Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment manipulated contextual cue (fear conditioning) and measured resulting analgesia and physiological correlates, fitting inclusion for conditioned/contextual placebo-like effects (classical conditioning).",
+"rationale": "Animal experiment manipulated contextual fear conditioning to produce conditioned analgesia and measured its behavioral, monoaminergic and HPA correlates, so placebo-like/contextual analgesia (a conditioning-based placebo model) was the explicit focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
 "outcome_measures": [
 "behavioral_performance",
 "neuroendocrine",
-"other"
+"genetic_molecular"
 ],
 "design": [
 "animal_experiment"
@@ -11766,34 +11605,36 @@
 ],
 "mechanisms": [
 "classical_conditioning",
+"neural_systems_circuits",
 "neurobiology_dopamine",
-"neural_systems_circuits"
+"emotion_anxiety_regulation"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Reported that re-exposure to a shock-paired context reduced formalin-evoked nociceptive behavior in rats and was associated with altered dopaminergic markers and corticosterone changes.",
-"key_finding": "Fear-conditioned context produced analgesia (reduced formalin pain behaviors) with increased DOPAC:dopamine in PAG and altered thalamic dopamine and corticosterone.",
+"summary": "Found that rats re-exposed to a footshock-paired context showed reduced formalin-evoked nociceptive behavior (fear-conditioned analgesia) with altered PAG/thalamic dopamine metabolites and elevated corticosterone.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "formalin test",
 "periaqueductal gray",
-"ultrasonic vocalization",
 "corticosterone",
+"ultrasonic vocalization",
 "fear conditioning",
 "rat",
-"dopamine"
+"3,4-dihydroxyphenylacetic acid",
+"thalamus"
 ],
 "usage": {
 "input_tokens": 1008,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1210,
-"cost_usd": 0.00282
+"output_tokens": 1188,
+"cost_usd": 0.00278
 }
 },
 "sources": [
@@ -12807,11 +12648,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T19:59:24Z",
+"classified_at": "2026-09-06T17:55:03Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Paper is an ethical analysis about the use of placebo controls in perinatal HIV trials, with placebo methodology and ethics as its explicit focus (placebo_science_other).",
+"rationale": "Paper's explicit focus is the ethics and appropriateness of placebo-controlled trials in perinatal HIV transmission, making placebo science the main subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -12820,12 +12661,22 @@
 "placebo_science_other"
 ],
 "article_type": "theory_commentary",
-"species": "not_applicable",
-"population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
+"species": "human",
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
 "effects": [
 "not_applicable"
 ],
@@ -12834,27 +12685,32 @@
 "trial_methodology_placebo_response",
 "history_conceptual"
 ],
-"moderators": [],
-"intervention_type": []
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Discussed ethical arguments for and against placebo-controlled trials of perinatal HIV interventions in developing countries and concluded placebo controls were ethical for breastfeeding populations but not non-breastfeeding ones.",
-"key_finding": null,
+"summary": "Discusses the ethics of placebo-controlled trials for preventing perinatal HIV transmission in developing countries and argued placebo controls may be ethical for breastfeeding populations but not for non-breastfeeding ones.",
+"key_finding": "Concluded that placebo-controlled studies were defensible for breastfeeding populations lacking proven effective interventions, whereas they were unethical where protocol 076 (zidovudine) was effective.",
 "sample_size": null,
 "free_keywords": [
 "perinatal hiv",
-"breastfeeding",
+"vertical transmission",
 "protocol 076",
+"zidovudine",
 "nevirapine",
 "developing countries",
-"ethics",
-"placebo-controlled trials"
+"breastfeeding",
+"research ethics"
 ],
 "usage": {
 "input_tokens": 780,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 815,
-"cost_usd": 0.00197
+"output_tokens": 757,
+"cost_usd": 0.00186
 }
 },
 "sources": [
@@ -14392,11 +14248,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:02:42Z",
+"classified_at": "2026-09-06T17:54:41Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Paper's primary focus was the ethics and methodological debate about placebo-controlled trials in osteoporosis (placebo science/ethics), meeting inclusion rule 5 for placebo_science_other.",
+"rationale": "Paper's primary focus was the ethics and methodology of using placebos in clinical trials (placebo science/ethics), fitting the bibliography's 'placebo_science_other' inclusion rule.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -14405,7 +14261,7 @@
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
-"species": "not_applicable",
+"species": "human",
 "population": [
 "not_applicable"
 ],
@@ -14426,8 +14282,7 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response",
-"history_conceptual"
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -14436,24 +14291,25 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed the ethical and regulatory debate over using placebo controls in osteoporosis trials and recommended stakeholder collaboration to find acceptable trial designs.",
+"summary": "Discussed ethical, regulatory, and methodological debates about using placebo controls in osteoporosis trials and urged stakeholder collaboration to develop acceptable trial designs.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "osteoporosis",
-"fracture",
-"declaration_of_helsinki",
-"FDA",
-"EMA",
+"fragility fracture",
 "ethics",
-"informed_consent"
+"informed consent",
+"declaration of helsinki",
+"regulatory agencies",
+"irb",
+"noninferiority"
 ],
 "usage": {
 "input_tokens": 782,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 743,
-"cost_usd": 0.00183
+"output_tokens": 566,
+"cost_usd": 0.00147
 }
 },
 "sources": [

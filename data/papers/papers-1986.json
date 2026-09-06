@@ -264,18 +264,18 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:22:21Z",
+"classified_at": "2026-09-03T04:38:18Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly references the balanced-placebo design and expectancy, indicating the paper studied expectancy/placebo-like effects of alcohol.",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "Title indicates a balanced-placebo design investigating alcohol expectancy and experimenter demands, but no abstract or full text was available to confirm whether placebo/nocebo phenomena were the explicit analytic focus or to extract outcomes.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -285,20 +285,30 @@
 ],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"healthy_adult"
+],
+"age_group": [
+"adults"
+],
 "condition_domain": [
 "other"
 ],
 "outcome_measures": [
-"self_report"
+"self_report",
+"behavioral_performance",
+"autonomic"
 ],
 "design": [
 "balanced_placebo"
 ],
-"effects": [],
+"effects": [
+"not_applicable"
+],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"provider_patient_interaction",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "expectation_level",
@@ -308,21 +318,23 @@
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design to study alcohol expectancy effects and the role of experimenter demand on those expectancies.",
+"summary": "Title indicated a balanced-placebo experiment testing alcohol expectancy and experimenter demand effects, but no abstract was available to confirm results or sample size.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol",
 "balanced-placebo",
+"alcohol",
 "expectancy",
-"experimenter demand"
+"experimenter demand",
+"intoxication",
+"arousal"
 ],
 "usage": {
-"input_tokens": 580,
+"input_tokens": 402,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 857,
-"cost_usd": 0.00201
+"output_tokens": 790,
+"cost_usd": 0.00183
 }
 },
 "sources": [
@@ -617,18 +629,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:22:32Z",
+"classified_at": "2026-09-03T04:39:53Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "The title explicitly discusses 'placebos' and draws lessons distinguishing ineffective drugs from placebos, indicating placebo science is the paper's subject.",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and title suggests an opinion about labeling of drugs rather than reporting empirical placebo data, so insufficient information to judge inclusion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -638,9 +650,15 @@
 ],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
-"age_group": [],
-"condition_domain": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
 "outcome_measures": [
 "not_applicable"
 ],
@@ -660,23 +678,22 @@
 "not_applicable"
 ]
 },
-"summary": "Argued that ineffective drugs should not be equated with placebos, using flunarizine and cinnarizine as illustrative examples.",
+"summary": "No abstract available; title argued that ineffective drugs (flunarizine, cinnarizine) should not be considered placebos, likely a commentary.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "flunarizine",
 "cinnarizine",
-"ineffective_drugs",
-"placebo_definition",
-"drug_vs_placebo",
-"Lancet_1986"
+"placebo terminology",
+"lancet",
+"1986"
 ],
 "usage": {
-"input_tokens": 599,
+"input_tokens": 421,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 890,
-"cost_usd": 0.00208
+"output_tokens": 616,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -854,11 +871,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:32:35Z",
+"classified_at": "2026-09-06T17:59:18Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "The paper explicitly analyzed predictors of response within the placebo arm (DST predicting placebo response), meeting the criterion for placebo-arm analyses focused on placebo response.",
+"rationale": "Although a drug versus placebo RCT, the paper specifically analyzed predictors of response within the placebo arm (DST predicted poorer placebo response), making placebo response an analytic focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -878,44 +895,45 @@
 "mood_depression"
 ],
 "outcome_measures": [
-"clinician_rated"
+"clinician_rated",
+"self_report"
 ],
 "design": [
 "parallel_groups_rct",
 "placebo_arm_secondary_analysis"
 ],
 "effects": [
-"significant_subjective"
+"significant_objective"
 ],
 "mechanisms": [
-"neurobiology_other_neurochemical",
-"trial_methodology_placebo_response"
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule"
+"inert_pill_capsule",
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Found that a positive dexamethasone suppression test predicted poorer clinical response to placebo among depressed inpatients.",
-"key_finding": "Positive DST status predicted significantly poorer placebo response in depressed inpatients (placebo completers n=17).",
-"sample_size": 17,
+"summary": "Reported that a positive dexamethasone suppression test predicted significantly poorer clinical response among depressed patients randomized to placebo in two double-blind drug versus placebo trials.",
+"key_finding": "Among 17 placebo-treated patients who completed ≥3 weeks, positive DST predicted significantly poorer placebo response compared with negative DST.",
+"sample_size": 61,
 "free_keywords": [
 "dexamethasone suppression test",
 "DST",
 "major depression",
 "sertraline",
 "oxaprotiline",
-"placebo responder",
-"antidepressant trial"
+"HPA axis",
+"remission"
 ],
 "usage": {
-"input_tokens": 627,
-"cache_read_input_tokens": 5888,
+"input_tokens": 371,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1285,
-"cost_usd": 0.00287
+"output_tokens": 1142,
+"cost_usd": 0.00253
 }
 },
 "sources": [
@@ -1905,18 +1923,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:44:12Z",
+"classified_at": "2026-09-06T17:59:16Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Used a balanced-placebo design manipulating expectancy about alcohol (an active drug) so the study experimentally isolated expectation/context effects (active_drug_context_manipulation).",
+"confidence": 0.86,
+"rationale": "Used a balanced-placebo expectancy manipulation of alcohol (an active drug context manipulation), which meets the inclusion rule for expectancy/placebo-effect studies of active drugs.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_and_nocebo"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -1941,33 +1958,34 @@
 "null_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
+"placebo_food_drink",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that alcohol intoxication impaired long-term memory recall, while experimentally induced alcohol expectancy produced no significant effect on memory or metamemory in a balanced-placebo design.",
-"key_finding": "Alcohol impaired recall; expectancy (placebo) instructions did not affect recall, confidence, or feeling-of-knowing judgments.",
+"summary": "Used a balanced-placebo design with alcohol versus placebo beverages and alcohol-expectancy manipulations to test effects on recall and metamemory; found intoxication impaired recall but expectancy produced no reliable effects on memory or confidence.",
+"key_finding": "Found alcohol intoxication impaired long-term recall, while expectancy of alcohol had no significant effect on recall, recognition, or metamemory judgments.",
 "sample_size": null,
 "free_keywords": [
-"balanced placebo",
-"alcohol",
+"balanced-placebo",
+"alcohol intoxication",
 "metamemory",
 "feeling-of-knowing",
-"recall",
-"recognition test"
+"recognition test",
+"recall"
 ],
 "usage": {
 "input_tokens": 674,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1002,
-"cost_usd": 0.00232
+"output_tokens": 878,
+"cost_usd": 0.00207
 }
 },
 "sources": [
@@ -2638,11 +2656,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:28:31Z",
+"classified_at": "2026-09-06T17:59:19Z",
 "screening": {
 "decision": "include",
 "confidence": 0.8,
-"rationale": "Classical conditioning of stress-induced analgesia in mice directly manipulated cue-context pairing to produce analgesia, addressing conditioning mechanisms relevant to placebo-like effects.",
+"rationale": "Animal experiment used classical conditioning to produce and transfer stress-induced analgesia, directly studying conditioned analgesic (placebo-like) effects and mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2665,15 +2683,15 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid"
+"neurobiology_opioid",
+"emotion_anxiety_regulation"
 ],
 "moderators": [
 "none_reported"
@@ -2682,24 +2700,25 @@
 "other"
 ]
 },
-"summary": "Found that classical conditioning produced transfer of stress-induced analgesia (increased tail-flick latency) across sensory cues in BALB/c mice, implicating opioid-mediated mechanisms.",
-"key_finding": null,
+"summary": "Found that classical conditioning produced stress-induced analgesia in BALB/c mice, with conditioned light or tone stimuli increasing tail-flick latencies and suggesting opioid involvement and emotional generalization.",
+"key_finding": "Conditioned cues across sensory modalities elevated tail-flick latency, indicating transferred stress-induced analgesia potentially mediated by opioids.",
 "sample_size": null,
 "free_keywords": [
 "tail-flick",
 "stress-induced analgesia",
-"BALB/c",
+"BALB/c mice",
+"classical conditioning",
 "pulsed light",
 "pulsed tone",
-"classical conditioning",
-"opioid"
+"opioid-mediated",
+"generalization"
 ],
 "usage": {
 "input_tokens": 517,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1069,
-"cost_usd": 0.00241
+"output_tokens": 939,
+"cost_usd": 0.00215
 }
 },
 "sources": [
@@ -3210,19 +3229,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:28:44Z",
+"classified_at": "2026-09-06T17:59:28Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Randomized manipulation of expectancy (information conditions vs no-info) tested effects on premenstrual symptoms and mood, meeting the criterion for an experimentally isolated context/expectation effect.",
+"confidence": 0.85,
+"rationale": "Randomized manipulation of expectancies about premenstrual symptoms with symptom and mood outcomes makes placebo/nocebo (expectation) the explicit focus, satisfying inclusion rule for expectation/context experiments.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_and_nocebo",
-"placebo_effect",
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -3238,17 +3255,18 @@
 ],
 "outcome_measures": [
 "self_report",
-"behavioral_performance"
+"behavioral_performance",
+"clinician_rated"
 ],
 "design": [
 "parallel_groups_rct"
 ],
 "effects": [
-"significant_subjective",
-"significant_objective"
+"significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"attention_cognitive_appraisal"
 ],
 "moderators": [
 "none_reported"
@@ -3257,22 +3275,22 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Found that manipulating expectancy via informational framing altered premenstrual symptom expectations and self-reported negative mood, with the 'psychological' information group reporting fewer symptoms and less negative mood premenstrually.",
-"key_finding": "Psychological-information (lowering expectation) group reported reduced premenstrual negative mood and fewer symptoms compared with biological-information and no-information groups (N=51).",
+"summary": "Manipulated information about biological versus psychological causes of premenstrual symptoms in 51 mothers and found that psychological framing reduced symptom expectations and premenstrual negative mood compared with biological or no-information groups.",
+"key_finding": "Found that participants given a psychological explanation reported lower symptom expectations and less negative premenstrual mood and fewer symptoms than the biological-information or no-information groups.",
 "sample_size": 51,
 "free_keywords": [
 "premenstrual syndrome",
 "expectancy manipulation",
 "mother-child interaction",
 "task persistence",
-"pre-menstrual mood"
+"mood"
 ],
 "usage": {
 "input_tokens": 611,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1051,
-"cost_usd": 0.0024
+"output_tokens": 965,
+"cost_usd": 0.00223
 }
 },
 "sources": [
@@ -3314,11 +3332,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T00:15:28Z",
+"classified_at": "2026-09-06T17:59:23Z",
 "screening": {
 "decision": "include",
 "confidence": 0.7,
-"rationale": "Title identifies a meta-analysis explicitly about alcohol expectancy effects (placebo/expectancy is the paper's focus) meeting inclusion rule for meta-analyses of placebo/expectation phenomena.",
+"rationale": "Meta-analysis explicitly about alcohol consumption and expectancy effects, which centers on expectancy/placebo-like effects (balanced-placebo and told/untold designs) and therefore studies placebo/expectancy mechanisms (rule 4/3).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -3339,7 +3357,8 @@
 ],
 "outcome_measures": [
 "self_report",
-"behavioral_performance"
+"behavioral_performance",
+"clinician_rated"
 ],
 "design": [
 "meta_analytic"
@@ -3349,32 +3368,36 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"social_observational_learning"
+"social_observational_learning",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"placebo_food_drink",
-"verbal_suggestion_only"
+"verbal_suggestion_only",
+"active_drug_context_manipulation"
 ]
 },
-"summary": "Meta-analyzed studies of alcohol consumption and expectancy to assess how beliefs about alcohol influenced social and behavioral outcomes.",
+"summary": "Meta-analyzed studies of alcohol consumption and expectancy to assess how pharmacological alcohol and alcohol-related expectancies affected social and behavioral outcomes.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"alcohol expectancy",
-"alcohol-placebo",
-"beverage placebo",
+"alcohol expectancies",
+"balanced placebo",
+"intoxication",
 "social behavior",
-"meta-analysis"
+"meta-analysis",
+"hull-bond",
+"placebo alcohol",
+"expectancy effects"
 ],
 "usage": {
 "input_tokens": 174,
 "cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 887,
-"cost_usd": 0.00197
+"output_tokens": 952,
+"cost_usd": 0.0021
 }
 },
 "sources": [
@@ -3772,75 +3795,53 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
-"input_mode": "title_abstract",
-"classified_at": "2026-09-05T20:22:56Z",
+"input_mode": "title_only",
+"classified_at": "2026-09-03T04:38:44Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "The paper explicitly investigated 'placebo-like' (nonclinical placebo) therapeutic effects of an educational/RE therapy simulation by comparing treated students with untreated controls, making placebo-like effects the study's focus.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.4,
+"rationale": "No abstract or full text provided; title implies placebo-like effects of education about REBT but available information is insufficient to confirm that placebo/nocebo phenomena were the study's explicit focus or that an experimental contrast was used.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"healthy_adult"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"mood_depression",
-"anxiety_stress"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational",
-"single_group_pre_post"
-],
-"effects": [
-"significant_subjective"
-],
-"mechanisms": [
-"therapeutic_ritual_context",
-"provider_patient_interaction",
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"disease_severity_duration"
-],
-"intervention_type": [
-"other"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Compared students receiving rational-emotive therapy simulations to untreated controls and found improvements in mental health in the treated group, interpreted as nonclinical placebo-like effects of the pedagogical process.",
-"key_finding": "Improvement in treated students but not untreated controls, predicted by baseline emotional/social distress.",
+"summary": "Insufficient information (no abstract) to determine whether the study experimentally tested placebo/nocebo effects; title suggested education about rational-emotive therapy produced placebo-like effects.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "rational-emotive therapy",
-"undergraduate",
-"psychotherapy simulation",
-"demoralization",
-"pedagogy"
+"psychoeducation",
+"placebo-like",
+"psychotherapy",
+"anger",
+"adaptation",
+"1986"
 ],
 "usage": {
-"input_tokens": 596,
+"input_tokens": 394,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1120,
-"cost_usd": 0.00254
+"output_tokens": 614,
+"cost_usd": 0.00147
 }
 },
 "sources": [
@@ -4574,67 +4575,52 @@
 "oa_pdf_url": null,
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/3726962",
 "cited_by_count": 1,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:23:07Z",
+"classified_at": "2026-09-06T17:59:20Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names 'expectations in treatment', indicating expectancy/placebo-related mechanisms were the paper's subject (meets inclusion rule for expectation effects).",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided; title mentions expectations in strabismus treatment but insufficient information to determine whether placebo/nocebo phenomena were an explicit focus.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"pediatric_clinical"
-],
-"age_group": [
-"children_adolescents"
-],
-"condition_domain": [
-"sensory_perception"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
 "outcome_measures": [],
 "design": [],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Based on the title, investigated expectations in the treatment of strabismus, focusing on monocular and binocular vision.",
+"summary": "Insufficient information to determine whether expectations about strabismus treatment were studied as placebo/nocebo phenomena; full text needed.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "strabismus",
-"binocular vision",
 "monocular vision",
-"oculomotor",
-"pediatric ophthalmology"
+"binocular vision",
+"expectations",
+"ophthalmology",
+"pediatric"
 ],
 "usage": {
-"input_tokens": 563,
+"input_tokens": 435,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 852,
-"cost_usd": 0.00199
+"output_tokens": 522,
+"cost_usd": 0.0013
 }
 },
 "sources": [
@@ -4875,11 +4861,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T00:15:28Z",
+"classified_at": "2026-09-06T17:59:48Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments explicitly tested Pavlovian conditioned (second-order) analgesia as a causal conditioned effect on pain sensitivity, meeting inclusion for mechanisms/animal models of placebo-like effects.",
+"rationale": "Animal experiments explicitly tested conditioned (Pavlovian) analgesia, a placebo-relevant associative mechanism (second-order conditioning) with pharmacological manipulation, so placebo-like effects and mechanisms were the study focus.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -4892,9 +4878,7 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
@@ -4909,34 +4893,33 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid",
-"prior_treatment_experience"
+"neurobiology_opioid"
 ],
 "moderators": [
-"pharmacological_manipulation",
-"prior_experience"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
-"other"
+"not_applicable"
 ]
 },
-"summary": "Found that a Pavlovian second-order conditioned stimulus produced analgesia (longer pain-response latencies) in rats, and that post-conditioning morphine-shock pairings attenuated this second-order analgesia.",
-"key_finding": "Second-order CS produced significant conditioned analgesia on hot-plate latency, which was reduced after paired morphine-shock presentations.",
+"summary": "Found that Pavlovian second-order conditioning produced conditioned analgesia in rats (longer pain-response latencies), and that post-conditioning morphine-shock pairings attenuated this second-order analgesia.",
+"key_finding": "Second-order CS produced significant analgesia on hot-plate latency, and pairing morphine with the shock US after conditioning reduced the conditioned analgesia.",
 "sample_size": null,
 "free_keywords": [
 "second-order conditioning",
-"morphine",
+"conditioned analgesia",
 "hot-plate",
-"rats",
+"morphine",
+"rat",
 "thermal nociception",
-"conditioned analgesia"
+"classical conditioning"
 ],
 "usage": {
-"input_tokens": 442,
-"cache_read_input_tokens": 6144,
+"input_tokens": 698,
+"cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 961,
-"cost_usd": 0.00219
+"output_tokens": 1205,
+"cost_usd": 0.00273
 }
 },
 "sources": [
@@ -4979,24 +4962,24 @@
 "Journal Article",
 "Research Support, Non-U.S. Gov't"
 ],
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:29:00Z",
+"classified_at": "2026-09-06T17:59:23Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Animal experiments tested classical conditioning of drug effects on immune (NK) activity, directly examining cue-driven modulation of drug-induced responses (mechanism of conditioned tolerance).",
+"confidence": 0.85,
+"rationale": "Animal experiments explicitly tested classical conditioning of drug-induced NK cell tolerance with extinction and CS preexposure manipulations, making placebo-like conditioned responses the study focus (mechanisms of conditioned drug effects).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_science_other"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -5020,7 +5003,6 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"treatment_cues_dose_route",
 "prior_treatment_experience"
 ],
 "moderators": [
@@ -5030,25 +5012,25 @@
 "other"
 ]
 },
-"summary": "Found that pairing poly I:C injections with environmental cues produced conditioned tolerance of NK cell activation, and that extinction and CS preexposure disrupted this tolerance.",
-"key_finding": "Conditioned environmental cues modulated poly I:C‑induced NK cell activity: extinction reversed tolerance and CS preexposure prevented its development.",
+"summary": "Found that environmental cues paired with repeated poly I:C injections produced conditioned tolerance of NK cell activation in mice, and that extinction and CS preexposure modified this tolerance.",
+"key_finding": "Extinction after treatment reversed tolerance and CS preexposure inhibited tolerance development, supporting a Pavlovian conditioning account of drug-induced immunological tolerance.",
 "sample_size": null,
 "free_keywords": [
 "poly i:c",
 "natural killer cells",
-"conditioned tolerance",
+"drug tolerance",
+"classical conditioning",
 "extinction",
 "latent inhibition",
-"classical conditioning",
-"mice",
+"dbA mice",
 "immunostimulation"
 ],
 "usage": {
-"input_tokens": 706,
-"cache_read_input_tokens": 5888,
+"input_tokens": 450,
+"cache_read_input_tokens": 6144,
 "cache_creation_input_tokens": 0,
-"output_tokens": 838,
-"cost_usd": 0.002
+"output_tokens": 988,
+"cost_usd": 0.00224
 }
 },
 "sources": [
@@ -5087,70 +5069,45 @@
 "oa_pdf_url": "https://figshare.com/articles/thesis/SEXUALITY_EXPECTATIONS_AND_OUTCOMES_IN_WOMEN_HAVING_HYSTERECTOMIES_/10946597",
 "landing_url": "https://pubmed.ncbi.nlm.nih.gov/3641663",
 "cited_by_count": 2,
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:23:28Z",
+"classified_at": "2026-09-06T17:59:22Z",
 "screening": {
-"decision": "include",
-"confidence": 0.6,
-"rationale": "Title explicitly names 'sexuality expectations' and 'outcomes' in women undergoing hysterectomy, indicating expectancy effects on clinical outcomes are the study focus (expectation as predictor/moderator).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text was provided and the title alone does not reveal whether placebo/nocebo phenomena were the explicit focus, so inclusion cannot be determined.",
 "exclusion_reason": null,
-"peer_reviewed": false
+"peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_response"
-],
+"study_focus": [],
 "article_type": "empirical_primary",
 "species": "human",
-"population": [
-"surgical_patients"
-],
-"age_group": [
-"adults"
-],
-"condition_domain": [
-"sexual_function"
-],
-"outcome_measures": [
-"self_report"
-],
-"design": [
-"observational"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Examined associations between preoperative sexuality expectations and postoperative sexual outcomes in women undergoing hysterectomy.",
+"summary": "No abstract available; insufficient information to determine whether the study examined placebo/nocebo effects related to sexuality expectations after hysterectomy.",
 "key_finding": null,
 "sample_size": null,
-"free_keywords": [
-"hysterectomy",
-"sexual function",
-"expectations",
-"gynecology"
-],
+"free_keywords": [],
 "usage": {
-"input_tokens": 554,
+"input_tokens": 426,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 666,
-"cost_usd": 0.00162
+"output_tokens": 541,
+"cost_usd": 0.00134
 }
 },
 "sources": [
@@ -5564,17 +5521,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:42:39Z",
+"classified_at": "2026-09-06T17:59:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Used a 2x2 balanced-placebo design manipulating alcohol ingestion versus expectation to test effects of intoxication/expectancy on perception and self-evaluation, an experimental isolation of context/expectation effects (balanced_placebo).",
+"confidence": 0.85,
+"rationale": "Used a 2x2 balanced placebo design manipulating alcohol administration and expectancy, so placebo/expectancy effects were an explicit focus (active_drug context manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_response"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -5591,40 +5549,39 @@
 "self_report"
 ],
 "design": [
-"balanced_placebo",
-"parallel_groups_rct"
+"balanced_placebo"
 ],
 "effects": [
 "significant_subjective"
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"neural_systems_circuits"
+"attention_cognitive_appraisal"
 ],
 "moderators": [
-"expectation_level"
+"none_reported"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2 balanced-placebo design in 40 college men and found that alcohol intoxication or alcohol expectancy blunted perception of negative interpersonal feedback and reduced negative self-evaluations of videotaped interactions.",
-"key_finding": "Intoxicated (or alcohol-expected) subjects maintained stable self-ratings after negative feedback, indicating expectancy/drug-related attenuation of negative self-evaluation.",
+"summary": "Used a 2x2 balanced placebo design in 40 male college students and found that alcohol intoxication or alcohol expectancy reduced perception of negative interpersonal feedback and negative self-evaluations.",
+"key_finding": "Intoxicated or alcohol-expecting subjects showed attenuated perception of negative feedback compared with sober/non-expecting subjects.",
 "sample_size": 40,
 "free_keywords": [
-"alcohol expectancy",
 "balanced placebo",
+"alcohol expectancy",
+"intoxication",
 "self-evaluation",
 "interpersonal feedback",
-"college men"
+"videotape"
 ],
 "usage": {
 "input_tokens": 699,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 988,
-"cost_usd": 0.0023
+"output_tokens": 884,
+"cost_usd": 0.00209
 }
 },
 "sources": [
@@ -5683,11 +5640,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T22:32:46Z",
+"classified_at": "2026-09-06T17:59:29Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Animal experiment investigating conditioned (fear-induced) opioid-mediated analgesia—an experimental model of conditioning mechanisms relevant to placebo/nocebo research (classical conditioning, opioid mediation).",
+"confidence": 0.8,
+"rationale": "Animal experiment investigating conditioned (fear-induced) opiate analgesia addresses mechanisms of conditioned placebo-like analgesia (classical conditioning and endogenous opioids), matching inclusion rule for animal cue/context contrasts.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5708,44 +5665,44 @@
 ],
 "outcome_measures": [
 "behavioral_performance",
-"other"
+"spinal_peripheral_electrophysiology"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
 "significant_objective"
 ],
 "mechanisms": [
 "classical_conditioning",
-"neurobiology_opioid",
-"treatment_cues_dose_route"
+"neurobiology_opioid"
 ],
 "moderators": [
-"none_reported"
+"pharmacological_manipulation"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that conditioned fear produced opioid-mediated analgesia in an animal model, implicating classical conditioning and endogenous opioids in stress analgesia.",
-"key_finding": "Conditioned fear induced analgesia that was opioid-sensitive (reversed by opioid antagonists such as naloxone).",
+"summary": "Reported that fear-conditioned cues produced opiate-sensitive analgesia in animals, implicating classical conditioning and endogenous opioids.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "conditioned analgesia",
 "fear conditioning",
+"endogenous opioids",
 "naloxone",
-"endogenous opioid",
 "stress analgesia",
-"conditioned hypoalgesia"
+"formaline",
+"rat",
+"pain threshold"
 ],
 "usage": {
 "input_tokens": 507,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1022,
-"cost_usd": 0.00232
+"output_tokens": 1018,
+"cost_usd": 0.00231
 }
 },
 "sources": [
@@ -5787,72 +5744,50 @@
 "Case Reports",
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:23:45Z",
+"classified_at": "2026-09-03T04:39:04Z",
 "screening": {
-"decision": "include",
-"confidence": 0.85,
-"rationale": "Title explicitly frames placebo effect and symptom anticipation as related phenomena, indicating placebo/nocebo is the paper's subject (conceptual/theoretical focus).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and insufficient information in the record to determine whether placebo/nocebo phenomena were the paper's primary empirical focus or a conceptual/commentary discussion.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_and_nocebo"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "case_report",
 "species": "human",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation",
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discussed the relation between placebo effects and symptom anticipation, arguing they are two related phenomena.",
+"summary": "No abstract available; title linked the placebo effect and symptom anticipation, and MeSH included 'Placebos' and Raynaud disease, but the record lacked details to judge whether placebo phenomena were a primary empirical focus.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
+"montaigne",
 "symptom anticipation",
-"nocebo",
-"placebo concept",
-"expectation",
-"montaigne"
+"raynaud",
+"plethysmography"
 ],
 "usage": {
-"input_tokens": 588,
+"input_tokens": 410,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 539,
-"cost_usd": 0.00137
+"output_tokens": 650,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -5918,17 +5853,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:32:58Z",
+"classified_at": "2026-09-06T17:59:27Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiments explicitly tested classical conditioning of immunosuppression (CS-US) and measured conditioned immune and behavioral responses, making conditioned placebo/nocebo mechanisms the study focus.",
+"rationale": "Animal experiments explicitly tested conditioned immunosuppression via CS-US pairing, a classical-conditioning model of placebo-like responses (mechanism is the study focus).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"nocebo_effect"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -5952,33 +5887,34 @@
 "significant_objective"
 ],
 "mechanisms": [
-"classical_conditioning"
+"classical_conditioning",
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"other"
+"placebo_food_drink"
 ]
 },
-"summary": "Demonstrated that pairing saccharin (CS) with cyclophosphamide (US) produced conditioned suppression of plaque-forming-cell immunologic responses in rats and mice, with effects persisting at CS-US delays up to 6 hours.",
-"key_finding": "Reexposure to the saccharin CS reliably suppressed immune plaque-forming-cell responses in Fisher 344 rats and BALB/c mice, with no clear delay gradient up to 6 hours.",
+"summary": "Demonstrated conditioned immunosuppression in rats and mice: saccharin CS paired with cyclophosphamide US produced reduced plaque-forming-cell responses, with conditioned effects observed with CS-US delays up to 6 hours.",
+"key_finding": "Found reliable conditioned suppression of the plaque-forming-cell response in Fisher 344 rats and Balb/c mice, persisting with CS-US delays up to 6 hours.",
 "sample_size": null,
 "free_keywords": [
-"saccharin",
 "cyclophosphamide",
+"saccharin",
 "conditioned immunosuppression",
-"plaque-forming cells",
+"plaque-forming-cell",
 "taste aversion",
-"Fisher344",
-"BALB/c"
+"F344",
+"Balb/c"
 ],
 "usage": {
 "input_tokens": 650,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1252,
-"cost_usd": 0.00281
+"output_tokens": 1033,
+"cost_usd": 0.00238
 }
 },
 "sources": [
@@ -6033,11 +5969,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:33:57Z",
+"classified_at": "2026-09-06T17:59:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested classical conditioning of immunosuppression (cue paired with cyclophosphamide) and measured conditioned suppression of NK cell function, fitting inclusion rule for conditioned placebo/nocebo models.",
+"rationale": "Animal classical conditioning study where a saccharin cue paired with cyclophosphamide produced conditioned immunosuppression (NK cell suppression) on re-exposure, meeting inclusion as a mechanistic placebo-like conditioning experiment.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6061,15 +5997,13 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment",
-"within_subject_experimental"
+"animal_experiment"
 ],
 "effects": [
-"significant_objective"
+"mixed_inconsistent"
 ],
 "mechanisms": [
-"classical_conditioning",
-"treatment_cues_dose_route"
+"classical_conditioning"
 ],
 "moderators": [
 "none_reported"
@@ -6078,24 +6012,23 @@
 "other"
 ]
 },
-"summary": "Found that saccharin paired with cyclophosphamide produced conditioned aversion and re-exposure to saccharin alone later suppressed natural killer cell cytotoxicity in rats.",
-"key_finding": "Re-exposure to the saccharin CS reinstated immunosuppressive effects and reduced NK cell cytotoxicity compared with baseline/controls.",
+"summary": "Paired saccharin taste with cyclophosphamide in rats and found that re-exposure to saccharin alone later elicited conditioned suppression of natural killer cell cytotoxicity, while other immune measures were not conditioned.",
+"key_finding": "Re-exposure to the saccharin cue produced a conditioned reduction in NK cell cytotoxicity despite absence of the drug.",
 "sample_size": null,
 "free_keywords": [
 "cyclophosphamide",
-"conditioned immunosuppression",
 "saccharin",
 "natural killer cells",
-"interleukin-2",
-"IgG",
-"sprague-dawley"
+"conditioned taste aversion",
+"immunosuppression",
+"splenocytes"
 ],
 "usage": {
 "input_tokens": 728,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1209,
-"cost_usd": 0.00275
+"output_tokens": 1083,
+"cost_usd": 0.0025
 }
 },
 "sources": [
@@ -6385,17 +6318,18 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T22:39:04Z",
+"classified_at": "2026-09-06T17:59:30Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Animal experiment explicitly tested Pavlovian conditioning of a drug-induced motor response (context paired with apomorphine) as a mechanism of conditioned placebo-like effects (inclusion criterion 3).",
+"rationale": "Animal experiments showed Pavlovian (context) conditioning produced drug-like motor improvements in hemi-parkinsonian rats, directly studying conditioned placebo-like responses (mechanism-focused animal model).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect"
+"placebo_effect",
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "nonhuman_animal",
@@ -6409,7 +6343,8 @@
 "motor_function"
 ],
 "outcome_measures": [
-"behavioral_performance"
+"behavioral_performance",
+"motor_kinematic"
 ],
 "design": [
 "animal_experiment",
@@ -6421,32 +6356,32 @@
 "mechanisms": [
 "classical_conditioning",
 "neurobiology_dopamine",
-"neural_systems_circuits"
+"treatment_cues_dose_route"
 ],
 "moderators": [
-"prior_experience"
+"none_reported"
 ],
 "intervention_type": [
-"active_drug_context_manipulation"
+"other"
 ]
 },
-"summary": "Demonstrated that contexts paired with apomorphine produced conditioned contralateral rotation in hemi-parkinsonian rats when tested drug-free or with other drugs, implicating Pavlovian conditioning in pharmacological responses.",
-"key_finding": "Contextual cues previously paired with apomorphine elicited contralateral rotational behavior in the absence of the drug, showing robust conditioned drug effects.",
+"summary": "Found that environments paired with apomorphine elicited contralateral rotations in hemi-parkinsonian rats in the absence of drug, demonstrating Pavlovian conditioning of a drug-like anti-parkinsonian response.",
+"key_finding": "Contextual cues previously paired with apomorphine produced the drug-typical contralateral rotation when tested drug-free, indicating conditioned pharmacological effects.",
 "sample_size": 18,
 "free_keywords": [
 "apomorphine",
 "6-hydroxydopamine",
 "hemi-parkinsonian",
-"conditioned rotation",
-"rat",
-"pavlovian conditioning"
+"contralateral rotation",
+"Pavlovian conditioning",
+"amphetamine challenge"
 ],
 "usage": {
 "input_tokens": 805,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 924,
-"cost_usd": 0.0022
+"output_tokens": 978,
+"cost_usd": 0.0023
 }
 },
 "sources": [

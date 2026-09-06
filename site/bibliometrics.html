@@ -63,7 +63,7 @@
   <div class="page-head">
     <p class="eyebrow">Bibliometrics</p>
     <h1>The shape of placebo research</h1>
-    <p>A descriptive analysis of the papers in this database: how the literature has grown, what kinds of studies are published, in whom, measured how, and where. Figures are recomputed from the database on every build, so they reflect the collection as it stands today (papers marked <em>adjacent</em> are included; excluded candidates are not). Every bar, band and author is clickable and opens the matching papers in the database in a new tab.</p>
+    <p>A descriptive analysis of the papers in this database: how the literature has grown, what kinds of studies are published, in whom, measured how, and where. Figures are recomputed from the database on every build, so they reflect the collection as it stands today (papers marked <em>adjacent</em> are included in the year and tag charts; the most-cited list is core papers only). Every bar and band is clickable and opens the matching papers in the database in a new tab. How papers are found and tagged is described on the <a href="methods.html">methods page</a>.</p>
   </div>
   <div class="cite">
     <b>Prior work.</b> The first dedicated bibliometric study of this literature used the JIPS database: Weimer K, Buschhart C, Broelz EK, Enck P, Horing B. <a href="https://pubmed.ncbi.nlm.nih.gov/35401284/" target="_blank" rel="noopener">Bibliometric properties of placebo literature from the JIPS database: a descriptive study</a>. <i>Frontiers in Psychiatry</i> 2022. They analysed about 5,000 curated articles from 1946 onward and described publication growth, article types, topics, authorship networks and citation impact, comparing placebo research with addiction research as a reference field. The figures below follow the same descriptive spirit on an automatically screened and tagged collection, and add the tag axes this site assigns (study focus, design, population, outcome modality, findings).
@@ -92,7 +92,7 @@
   document.getElementById("foot-updated").textContent = "Data updated " + state.stats.updated + ".";
 
   document.getElementById("nums").innerHTML = [
-    [B.n.toLocaleString(), "papers"], [B.years[0] + "–" + B.years[B.years.length - 1], "years covered"], [B.n_journals.toLocaleString(), "journals"], [B.n_authors.toLocaleString(), "distinct authors"], [B.n_jips_seed.toLocaleString(), "from JIPS lists"]
+    [B.n.toLocaleString(), "papers"], [B.years[0] + "–" + B.years[B.years.length - 1], "years covered"], [B.n_journals.toLocaleString(), "journals"], [B.n_jips_seed.toLocaleString(), "from JIPS lists"]
   ].map(([v, l]) => `<div class="num"><b>${v}</b><span>${l}</span></div>`).join("");
 
   // ---------- chart builders (inline SVG) ----------
@@ -198,9 +198,7 @@
     card("Mechanisms and topics", "Mechanistic or topical focus.", hbars(tc.mechanisms || [], { axis: "mechanisms", k: 14, color: "var(--s7)", aria: "Mechanisms" }) + table(tc.mechanisms || [], ["Mechanism", "Papers"], "mechanisms")),
     card("Findings", "What the papers reported about placebo or nocebo effects on subjective and objective outcomes.", hbars(tc.effects || [], { axis: "effects", k: 6, color: "var(--s3)", aria: "Findings" }) + table(tc.effects || [], ["Finding", "Papers"], "effects")),
     card("Journals", "Journals publishing the most papers in the collection.", hbars(B.top_journals, { k: 15, aria: "Top journals" }) + table(B.top_journals, ["Journal", "Papers"])),
-    card("Most frequent authors", "Authors appearing most often in author lists (any position).", hbars(B.top_authors, { k: 15, color: "var(--s5)", aria: "Most frequent authors", linkAuthor: true }) + table(B.top_authors, ["Author", "Papers"])),
-    card("Most frequent first and senior authors", "First authors (left) and last authors (right).", `<div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem">${hbars(B.top_first_authors, { k: 10, color: "var(--s1)", aria: "First authors", linkAuthor: true })}${hbars(B.top_last_authors, { k: 10, color: "var(--s4)", aria: "Last authors", linkAuthor: true })}</div>`, true),
-    card("Most cited", "Citation counts from OpenAlex.", `<table><tr><th>Paper</th><th class="n">Citations</th></tr>${B.most_cited.slice(0, 15).map(p => `<tr><td><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a><div class="small muted">${esc(p.a)} · ${esc(p.j)} · ${p.y}</div></td><td class="n">${p.cites}</td></tr>`).join("")}</table>`, true),
+    card("Most cited", "Citation counts from OpenAlex; core papers only.", `<table><tr><th>Paper</th><th class="n">Citations</th></tr>${B.most_cited.slice(0, 15).map(p => `<tr><td><a href="paper.html?id=${encodeURIComponent(p.id)}">${esc(p.t)}</a><div class="small muted">${esc(p.a)} · ${esc(p.j)} · ${p.y}</div></td><td class="n">${p.cites}</td></tr>`).join("")}</table>`, true),
   ].join("");
   const viz = document.getElementById("viz");
   viz.innerHTML = html;

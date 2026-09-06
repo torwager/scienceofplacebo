@@ -609,23 +609,24 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1034/j.1600-065x.2001.1840120.x",
 "cited_by_count": 41,
-"scope": "adjacent",
+"scope": "core",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:51:01Z",
+"classified_at": "2026-09-06T17:55:46Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Review focused on behavioural conditioning of immune function in rats, which is a classical-conditioning animal model relevant to placebo mechanisms (mechanisms of conditioned responses in brain-immune communication).",
+"confidence": 0.9,
+"rationale": "Review focused on behavioural (classical) conditioning of immune function in rats as an in vivo model of brain-immune communication, which maps onto placebo/nocebo learning mechanisms and is therefore within scope (mechanistic animal models).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
+"placebo_effect",
 "placebo_science_other"
 ],
 "article_type": "narrative_review",
@@ -640,8 +641,7 @@
 "immune_inflammation"
 ],
 "outcome_measures": [
-"immune_inflammatory",
-"neuroendocrine"
+"immune_inflammatory"
 ],
 "design": [
 "not_applicable"
@@ -651,7 +651,8 @@
 ],
 "mechanisms": [
 "classical_conditioning",
-"neural_systems_circuits"
+"neural_systems_circuits",
+"neurobiology_other_neurochemical"
 ],
 "moderators": [
 "none_reported"
@@ -660,23 +661,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed animal models of behavioural conditioning of immune function in rats, describing neural and humoral pathways and clinical implications such as conditioned modification of graft survival.",
+"summary": "Reviewed animal models of behavioural (classical) conditioning of immune function in rats and discussed neural and humoral pathways and clinical relevance such as altered allograft survival.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychoneuroimmunology",
 "conditioned immunosuppression",
-"rat",
+"rat model",
 "cytokines",
 "allograft survival",
-"brain-immune communication"
+"afferent-efferent pathways"
 ],
 "usage": {
 "input_tokens": 778,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1000,
-"cost_usd": 0.00234
+"output_tokens": 992,
+"cost_usd": 0.00233
 }
 },
 "sources": [
@@ -709,62 +710,51 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:35:47Z",
+"classified_at": "2026-09-03T04:23:15Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names 'The placebo effect', indicating placebo is the paper's main subject (commentary/editorial).",
+"decision": "uncertain",
+"confidence": 0.35,
+"rationale": "No abstract or full text available; title and MeSH terms suggest the placebo effect/topic but insufficient information to determine if it is an empirical study, meta-analysis, or commentary.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "editorial_letter",
-"species": "not_applicable",
+"study_focus": [],
+"article_type": "narrative_review",
+"species": "human",
 "population": [],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"history_conceptual"
-],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"design": [],
+"effects": [],
+"mechanisms": [],
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses the placebo effect in a commentary format.",
+"summary": "No abstract available; title and indexing suggested the paper discussed the placebo effect, but the record lacked sufficient information to determine study type or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "dermatology",
-"editorial",
 "placebo-effect",
+"meta-analysis",
+"randomized-controlled-trials",
 "commentary"
 ],
 "usage": {
-"input_tokens": 556,
+"input_tokens": 378,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 679,
-"cost_usd": 0.00164
+"output_tokens": 622,
+"cost_usd": 0.00149
 }
 },
 "sources": [
@@ -823,11 +813,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:54:14Z",
+"classified_at": "2026-09-06T17:55:45Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Paper is a narrative review whose primary focus is the ethics and scientific justification for placebo-controlled trials in children with schizophrenia (placebo science).",
+"rationale": "Narrative review whose primary focus was the ethical and scientific justification for using placebo controls in children with schizophrenia (placebo as main subject).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -857,7 +847,8 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
-"history_conceptual"
+"history_conceptual",
+"trial_methodology_placebo_response"
 ],
 "moderators": [
 "none_reported"
@@ -866,21 +857,24 @@
 "not_applicable"
 ]
 },
-"summary": "Reviews ethical and scientific arguments for the use of placebo-controlled trials to evaluate new drugs in children with schizophrenia.",
-"key_finding": "Authors concluded there is compelling scientific and ethical justification for appropriately conducted placebo-controlled studies in childhood schizophrenia to improve access to safe, effective medications.",
+"summary": "Reviews ethical and scientific arguments for using placebo controls in clinical trials involving children with schizophrenia and argues such studies can be justified to ensure safe and effective treatment.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"childhood schizophrenia",
-"placebo ethics",
-"clinical trials",
-"informed consent"
+"pediatric psychiatry",
+"antipsychotics",
+"ethics",
+"informed consent",
+"clinical_trials",
+"children",
+"regulatory_policy"
 ],
 "usage": {
 "input_tokens": 591,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 636,
-"cost_usd": 0.00157
+"output_tokens": 539,
+"cost_usd": 0.00137
 }
 },
 "sources": [
@@ -940,11 +934,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:29:25Z",
+"classified_at": "2026-09-06T17:55:51Z",
 "screening": {
 "decision": "include",
-"confidence": 0.9,
-"rationale": "Balanced-placebo design manipulated drug administration and expectancy to test causal effects of expectancy (placebo) on performance, meeting the criterion for placebo-effect studies (expectancy manipulation of an active drug).",
+"confidence": 0.95,
+"rationale": "Used a balanced-placebo design manipulating drug administration and expectancy, so placebo/expectancy effects were an explicit experimental focus (active drug context manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -961,15 +955,15 @@
 "children_adolescents"
 ],
 "condition_domain": [
+"cognition",
 "other"
 ],
 "outcome_measures": [
-"self_report",
-"behavioral_performance"
+"behavioral_performance",
+"self_report"
 ],
 "design": [
-"balanced_placebo",
-"parallel_groups_rct"
+"balanced_placebo"
 ],
 "effects": [
 "null_subjective",
@@ -978,34 +972,35 @@
 "mechanisms": [
 "verbal_suggestion_expectation",
 "treatment_cues_dose_route",
-"open_label_placebo"
+"clinical_use_ethics_attitudes",
+"other"
 ],
 "moderators": [
 "none_reported"
 ],
 "intervention_type": [
-"inert_pill_capsule",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a balanced-placebo design (MPH vs placebo crossed with told-MPH vs told-placebo) in 137 boys with ADHD during a social interaction task and found no effect of methylphenidate or expectancy on persistence, performance, or attributions.",
-"key_finding": "Balanced-placebo manipulation showed no reliable expectancy (placebo) effects of told drug versus told placebo on task persistence, performance, or self-attributions.",
+"summary": "Tested methylphenidate and expectancy in a balanced-placebo design in 137 boys with ADHD and found neither drug nor expectancy affected task persistence, performance, self-evaluations, or attributions.",
+"key_finding": "Neither methylphenidate administration nor expectancy reliably altered social-task persistence, performance, or self-evaluations in boys with ADHD (N=137).",
 "sample_size": 137,
 "free_keywords": [
-"adhd",
+"ADHD",
 "methylphenidate",
-"balanced-placebo",
+"balanced placebo",
+"expectancy",
 "social interaction",
-"task persistence",
-"confederate",
+"self-evaluation",
+"persistence",
 "boys"
 ],
 "usage": {
 "input_tokens": 705,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 836,
-"cost_usd": 0.002
+"output_tokens": 951,
+"cost_usd": 0.00223
 }
 },
 "sources": [
@@ -1065,11 +1060,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T05:29:35Z",
+"classified_at": "2026-09-06T17:56:09Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Used a balanced-placebo (expectancy x alcohol) experimental design to test causal effects of alcohol and alcohol expectancies on perception and response times, making expectancy/placebo processes the study focus (expectancy manipulation of an active drug).",
+"rationale": "Used a balanced-placebo 2x2 design manipulating alcohol ingestion and expectancy (an active-drug expectancy manipulation), isolating expectation/context effects on perception.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1080,24 +1075,21 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"general_public",
-"not_applicable"
+"general_public"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
-"sensory_perception",
-"cognition",
-"adverse_events"
+"cognition"
 ],
 "outcome_measures": [
 "self_report",
 "behavioral_performance"
 ],
 "design": [
-"parallel_groups_rct",
-"balanced_placebo"
+"balanced_placebo",
+"parallel_groups_rct"
 ],
 "effects": [
 "significant_subjective",
@@ -1105,26 +1097,22 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
-"treatment_cues_dose_route",
-"open_label_placebo",
-"clinical_use_ethics_attitudes",
-"other"
+"treatment_cues_dose_route"
 ],
 "moderators": [
 "expectation_level"
 ],
 "intervention_type": [
-"placebo_food_drink",
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Used a 2x2 balanced-placebo design to test alcohol and alcohol-expectancy effects on men's perception of a woman's sexual arousal in a date-rape vignette and found that both intoxication and expecting alcohol delayed recognizing inappropriate sexual advances and increased early arousal ratings.",
-"key_finding": "Alcohol consumption and the expectation of alcohol each independently slowed detection of inappropriate sexual behavior and increased perceived female arousal ratings at early refusal points.",
+"summary": "Used a 2x2 balanced-placebo design to show that both alcohol consumption and expecting alcohol delayed men's recognition of inappropriate sexual advances and increased early ratings of female arousal.",
+"key_finding": "Participants who drank alcohol or were told they had drank took longer to signal inappropriateness and rated the woman's arousal higher during early refusals.",
 "sample_size": null,
 "free_keywords": [
 "balanced placebo",
 "alcohol expectancy",
-"date-rape analogue",
+"date-rape vignette",
 "sexual perception",
 "reaction time"
 ],
@@ -1132,8 +1120,8 @@
 "input_tokens": 643,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 924,
-"cost_usd": 0.00216
+"output_tokens": 846,
+"cost_usd": 0.002
 }
 },
 "sources": [
@@ -1161,18 +1149,18 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:35:58Z",
+"classified_at": "2026-09-03T04:23:35Z",
 "screening": {
-"decision": "include",
-"confidence": 0.65,
-"rationale": "Title explicitly names placebos and psychotherapy, indicating placebo/placebo-like phenomena and perception are the paper's subject (review/commentary presumed).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text available; title implies a review/commentary on placebo, psychotherapy and product perception but available text is insufficient to confirm that placebo/nocebo phenomena are the paper's explicit focus or primary analysis.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1183,31 +1171,50 @@
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
-"age_group": [],
-"condition_domain": [],
-"outcome_measures": [],
-"design": [],
-"effects": [],
-"mechanisms": [],
-"moderators": [],
-"intervention_type": []
+"age_group": [
+"mixed_unspecified"
+],
+"condition_domain": [
+"other"
+],
+"outcome_measures": [
+"not_applicable"
+],
+"design": [
+"not_applicable"
+],
+"effects": [
+"not_applicable"
+],
+"mechanisms": [
+"history_conceptual",
+"therapeutic_ritual_context",
+"clinical_use_ethics_attitudes"
+],
+"moderators": [
+"none_reported"
+],
+"intervention_type": [
+"not_applicable"
+]
 },
-"summary": "Reviews conceptual links between placebos, psychotherapy, and product perception, discussing placebo-related mechanisms and implications.",
+"summary": "Appears to review intersections of placebo effects, psychotherapy, and product perception, but no abstract was available to confirm scope or findings.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "psychotherapy",
 "product perception",
+"expectation",
 "placebo effect",
 "marketing",
-"expectation"
+"mindset"
 ],
 "usage": {
-"input_tokens": 540,
+"input_tokens": 362,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 658,
-"cost_usd": 0.0016
+"output_tokens": 635,
+"cost_usd": 0.00151
 }
 },
 "sources": [
@@ -1266,11 +1273,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:56:30Z",
+"classified_at": "2026-09-06T17:55:49Z",
 "screening": {
 "decision": "include",
-"confidence": 0.91,
-"rationale": "Paper is a topical review from an FDA perspective whose primary focus is the scientific and ethical basis of placebo-controlled trials (placebo science and trial methodology), matching inclusion rule 4/5.",
+"confidence": 0.9,
+"rationale": "Narrative review focused explicitly on the scientific and ethical basis of placebo-controlled trials in depression and schizophrenia, making placebo methodology and ethics the paper's main subject (placebo science).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -1281,7 +1288,8 @@
 "article_type": "narrative_review",
 "species": "human",
 "population": [
-"not_applicable"
+"depression",
+"psychosis"
 ],
 "age_group": [
 "mixed_unspecified"
@@ -1311,22 +1319,23 @@
 "not_applicable"
 ]
 },
-"summary": "Reviewed the scientific rationale and ethical considerations for conducting placebo-controlled trials in depression and schizophrenia and presented preliminary data on trial failure rates and suicides.",
-"key_finding": "Argued that placebo-controlled trials can be scientifically necessary and ethically acceptable in depression and schizophrenia, using preliminary failure-rate and suicide data to illustrate the points.",
+"summary": "Reviewed the scientific rationale and ethical arguments for conducting placebo-controlled trials in depression and schizophrenia and presented preliminary data on trial failure rates and suicides.",
+"key_finding": "Argued that placebo-controlled trials can be scientifically necessary and ethically acceptable in these disorders, supported by preliminary data on trial failure rates and suicides.",
 "sample_size": null,
 "free_keywords": [
 "FDA",
 "placebo-controlled trials",
 "ethics",
+"psychopharmacology",
 "suicide",
-"psychopharmacology"
+"trial failure rates"
 ],
 "usage": {
 "input_tokens": 608,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 761,
-"cost_usd": 0.00182
+"output_tokens": 851,
+"cost_usd": 0.002
 }
 },
 "sources": [
@@ -2187,11 +2196,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T20:58:41Z",
+"classified_at": "2026-09-06T17:55:54Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Observational study tested patients' pretreatment expectations as a predictor of anticipatory nausea (a nocebo-like response), making placebo/nocebo phenomena the paper's explicit focus.",
+"rationale": "Study explicitly tested patients' expectations as a predictor of anticipatory nausea (a nocebo-like response), meeting inclusion criterion 2 (placebo/nocebo response as object of study).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -2205,7 +2214,8 @@
 "cancer"
 ],
 "age_group": [
-"adults"
+"adults",
+"older_adults"
 ],
 "condition_domain": [
 "nausea_gi"
@@ -2220,8 +2230,7 @@
 "significant_subjective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation",
-"classical_conditioning"
+"verbal_suggestion_expectation"
 ],
 "moderators": [
 "expectation_level"
@@ -2230,22 +2239,25 @@
 "not_applicable"
 ]
 },
-"summary": "Reported that pretreatment expectations predicted development of anticipatory nausea before the third chemotherapy cycle in female cancer patients.",
-"key_finding": "Expecting nausea strongly predicted anticipatory nausea (Spearman r = 0.41, P = 0.001); 40% of those who expected nausea developed AN versus 0% who did not.",
+"summary": "Found that pretreatment expectations predicted development of anticipatory nausea in chemotherapy patients, with expecting nausea the strongest predictor of AN by cycle three.",
+"key_finding": "Anticipatory nausea occurred in 40% of patients who expected nausea, 13% who were uncertain, and 0% who did not expect nausea; expecting nausea was the strongest predictor (chi2=13.15, P<0.001).",
 "sample_size": 63,
 "free_keywords": [
 "anticipatory nausea",
 "chemotherapy",
-"expectation",
-"anticipatory emesis",
-"logistic regression"
+"chemotherapy-induced nausea",
+"expectancy",
+"predictors",
+"logistic regression",
+"female",
+"cycle 3"
 ],
 "usage": {
 "input_tokens": 662,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 862,
-"cost_usd": 0.00204
+"output_tokens": 909,
+"cost_usd": 0.00213
 }
 },
 "sources": [
@@ -4334,18 +4346,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:02:03Z",
+"classified_at": "2026-09-06T17:55:52Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized double-blind trial explicitly manipulated intra-operative music and therapeutic suggestions to test effects on postoperative recovery, meeting criterion 1 for experimental placebo/context effects.",
+"rationale": "Randomized double-blind trial experimentally manipulated intra-operative music and therapeutic suggestions versus control sounds to test their effects on postoperative recovery (a context/placebo-like manipulation).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_effect",
-"placebo_response"
+"placebo_effect"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -4357,12 +4368,13 @@
 ],
 "condition_domain": [
 "pain",
-"fatigue"
+"nausea_gi",
+"fatigue",
+"global_health_qol"
 ],
 "outcome_measures": [
 "self_report",
 "behavioral_performance",
-"clinical_endpoint",
 "healthcare_utilization"
 ],
 "design": [
@@ -4379,28 +4391,25 @@
 "none_reported"
 ],
 "intervention_type": [
-"verbal_suggestion_only",
-"other"
+"verbal_suggestion_only"
 ]
 },
-"summary": "Randomized double-blind trial found that intra-operative music and therapeutic suggestions during general anaesthesia produced some postoperative benefits (less rescue analgesic use, reduced fatigue, earlier mobilisation) after hysterectomy.",
-"key_finding": "Music combined with therapeutic suggestions reduced rescue analgesic use on the day of surgery and reduced fatigue at discharge; some outcomes showed no difference.",
+"summary": "Randomized double-blind trial found that intra-operative music and music with therapeutic suggestions improved some postoperative recovery outcomes (less rescue analgesic use, earlier mobilisation, reduced fatigue) after hysterectomy.",
+"key_finding": "Music combined with therapeutic suggestions reduced need for rescue analgesic on day of surgery and music alone improved analgesia and earlier mobilisation on postoperative day 1.",
 "sample_size": 90,
 "free_keywords": [
 "hysterectomy",
-"intra-operative",
-"music therapy",
-"therapeutic suggestions",
-"patient-controlled analgesia",
-"postoperative pain",
-"randomized"
+"general anaesthesia",
+"intraoperative music",
+"therapeutic suggestion",
+"patient-controlled analgesia"
 ],
 "usage": {
 "input_tokens": 812,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 996,
-"cost_usd": 0.00234
+"output_tokens": 912,
+"cost_usd": 0.00217
 }
 },
 "sources": [
@@ -4922,54 +4931,53 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:36:18Z",
+"classified_at": "2026-09-03T04:23:50Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names 'Clinical use of placebo', indicating placebo is the paper's main subject (ethics/clinical use).",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.25,
+"rationale": "No abstract or full text provided and title alone is insufficient to determine whether the paper empirically studied placebo effects or was a commentary on clinical/ethical use.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "theory_commentary",
 "species": "human",
-"population": [],
+"population": [
+"not_applicable"
+],
 "age_group": [],
 "condition_domain": [],
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"clinical_use_ethics_attitudes"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Discusses the clinical use and likely ethical implications of placebo in medical practice.",
+"summary": "Unavailable abstract; title suggests a discussion of the clinical use of placebo, likely addressing ethical and practical issues rather than reporting new empirical data.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"clinical practice",
+"placebo",
+"clinical use",
 "ethics",
-"placebo_prescribing",
-"physician attitudes"
+"physician prescribing",
+"virtual mentor"
 ],
 "usage": {
-"input_tokens": 532,
+"input_tokens": 354,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 707,
-"cost_usd": 0.00169
+"output_tokens": 672,
+"cost_usd": 0.00158
 }
 },
 "sources": [
@@ -5024,64 +5032,48 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:03:47Z",
+"classified_at": "2026-09-06T17:55:50Z",
 "screening": {
 "decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly focuses on blinding in placebo-controlled trials, a methodological topic about placebo research (placebo science).",
+"confidence": 0.8,
+"rationale": "Title indicates the paper addresses methodological issues of blinding in placebo-controlled trials, making placebo science the main subject (methodology review/commentary).",
 "exclusion_reason": null,
-"peer_reviewed": true
+"peer_reviewed": false
 },
 "tags": {
 "study_focus": [
 "placebo_science_other"
 ],
-"article_type": "editorial_letter",
+"article_type": "theory_commentary",
 "species": "not_applicable",
-"population": [
-"not_applicable"
-],
-"age_group": [
-"mixed_unspecified"
-],
-"condition_domain": [
-"other"
-],
-"outcome_measures": [
-"not_applicable"
-],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
+"population": [],
+"age_group": [],
+"condition_domain": [],
+"outcome_measures": [],
+"design": [],
+"effects": [],
 "mechanisms": [
 "trial_methodology_placebo_response"
 ],
-"moderators": [
-"none_reported"
-],
-"intervention_type": [
-"not_applicable"
-]
+"moderators": [],
+"intervention_type": []
 },
-"summary": "Discusses blinding and masking issues in placebo-controlled trials and their implications for trial validity and placebo response measurement.",
+"summary": "Commentary discussed methodological issues and challenges in blinding placebo-controlled randomized trials.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "blinding",
-"double-blind",
-"masking",
+"placebo-controlled trials",
 "randomized controlled trials",
-"trial methodology"
+"trial methodology",
+"allocation concealment"
 ],
 "usage": {
 "input_tokens": 435,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 750,
-"cost_usd": 0.00176
+"output_tokens": 599,
+"cost_usd": 0.00145
 }
 },
 "sources": [
@@ -5118,33 +5110,39 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "core",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:36:28Z",
+"classified_at": "2026-09-03T04:23:49Z",
 "screening": {
-"decision": "include",
-"confidence": 0.8,
-"rationale": "Title explicitly names placebo response and endogenous opioids in relation to pain, indicating placebo mechanisms/response are the paper's subject (eligible under mechanism/review criteria).",
+"decision": "uncertain",
+"confidence": 0.6,
+"rationale": "No abstract or full text provided; title indicates focus on endogenous opioids and placebo analgesia but insufficient information to determine if this is an empirical study, review, or commentary and whether placebo effects were experimentally isolated.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_science_other"
 ],
 "article_type": "narrative_review",
 "species": "human",
-"population": [],
-"age_group": [],
+"population": [
+"not_applicable"
+],
+"age_group": [
+"mixed_unspecified"
+],
 "condition_domain": [
 "pain"
 ],
-"outcome_measures": [],
+"outcome_measures": [
+"not_applicable"
+],
 "design": [
 "not_applicable"
 ],
@@ -5152,7 +5150,8 @@
 "not_applicable"
 ],
 "mechanisms": [
-"neurobiology_opioid"
+"neurobiology_opioid",
+"neural_systems_circuits"
 ],
 "moderators": [
 "none_reported"
@@ -5161,23 +5160,22 @@
 "not_applicable"
 ]
 },
-"summary": "Discussed endogenous opioid mechanisms underlying the placebo response in pain and implications for placebo analgesia.",
+"summary": "Insufficient abstract information; title suggested the paper discussed endogenous opioid mechanisms in placebo analgesia.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "placebo analgesia",
-"endogenous opioid",
-"endorphin",
-"analgesia",
-"placebo response",
-"pain"
+"endogenous opioids",
+"opioid peptides",
+"pain modulation",
+"naloxone"
 ],
 "usage": {
-"input_tokens": 578,
+"input_tokens": 400,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 651,
-"cost_usd": 0.00159
+"output_tokens": 831,
+"cost_usd": 0.00191
 }
 },
 "sources": [
@@ -5479,11 +5477,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:03:23Z",
+"classified_at": "2026-09-06T17:56:18Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Animal experimental study explicitly examined conditioned analgesia and social (observational) acquisition of that analgesic response, fitting inclusion criterion for mechanisms of placebo-like conditioned responses.",
+"rationale": "Animal experiment explicitly studied conditioned (learning-induced) analgesia and observational social learning of analgesia, a mechanism relevant to placebo-like conditioned responses (classical conditioning and social learning).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5496,9 +5494,7 @@
 "population": [
 "not_applicable"
 ],
-"age_group": [
-"mixed_unspecified"
-],
+"age_group": [],
 "condition_domain": [
 "pain"
 ],
@@ -5506,7 +5502,8 @@
 "behavioral_performance"
 ],
 "design": [
-"animal_experiment"
+"animal_experiment",
+"within_subject_experimental"
 ],
 "effects": [
 "significant_objective"
@@ -5517,30 +5514,29 @@
 "emotion_anxiety_regulation"
 ],
 "moderators": [
-"none_reported"
+"prior_experience"
 ],
 "intervention_type": [
 "other"
 ]
 },
-"summary": "Found that mice developed one-trial conditioned analgesia and active avoidance to biting flies, and naive observer mice acquired the same conditioned analgesia and burying behavior after witnessing demonstrators.",
-"key_finding": "Observer mice displayed conditioned analgesia and self-burying 24 hours after witnessing demonstrator mice attacked by biting flies, indicating social transmission of conditioned analgesia.",
+"summary": "Found that mice acquired conditioned analgesia and avoidance after direct exposure to biting flies and that observer mice acquired the same conditioned analgesia and avoidance via social learning without direct experience.",
+"key_finding": "One-trial conditioned analgesia and active avoidance were induced by direct fly attack and were transmitted to observers via social learning.",
 "sample_size": null,
 "free_keywords": [
 "biting flies",
 "conditioned analgesia",
 "social learning",
-"observer mice",
+"mouse",
 "self-burying",
-"avoidance",
-"classical conditioning"
+"fear conditioning"
 ],
 "usage": {
 "input_tokens": 646,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1054,
-"cost_usd": 0.00242
+"output_tokens": 1032,
+"cost_usd": 0.00237
 }
 },
 "sources": [
@@ -5597,11 +5593,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:03:36Z",
+"classified_at": "2026-09-06T17:55:53Z",
 "screening": {
 "decision": "include",
-"confidence": 0.85,
-"rationale": "Paper's explicit focus is the ethical acceptability and research methodology of sham neurosurgery (placebo) in Parkinson's disease, which falls under placebo science (ethics/methodology).",
+"confidence": 0.9,
+"rationale": "Paper's primary focus is the ethical analysis of sham neurosurgery/placebo controls in Parkinson's research, making placebo science the main subject (placebo_science_other).",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -5612,18 +5608,15 @@
 "article_type": "theory_commentary",
 "species": "human",
 "population": [
-"not_applicable"
+"parkinson_movement"
 ],
 "age_group": [
-"mixed_unspecified"
+"adults"
 ],
 "condition_domain": [
-"pain",
-"other"
+"motor_function"
 ],
-"outcome_measures": [
-"not_applicable"
-],
+"outcome_measures": [],
 "design": [
 "not_applicable"
 ],
@@ -5641,23 +5634,23 @@
 "sham_surgery"
 ]
 },
-"summary": "Argued that sham neurosurgery for Parkinson's disease raises ethical concerns (informed consent, therapeutic misconception, bodily integrity) and recommended less harmful alternative research designs.",
-"key_finding": "Concluded that sham neurosurgery in PD is morally problematic and that intrapatient quantitative designs are preferable.",
+"summary": "Argued that sham neurosurgery in Parkinson's disease raises ethical problems (informed consent, therapeutic misconception, bodily integrity) and proposed less harmful alternative research designs.",
+"key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"parkinson's disease",
-"neurosurgery",
-"fetal tissue transplantation",
-"research ethics",
+"sham surgery",
+"fetal mesencephalic transplantation",
 "informed consent",
-"therapeutic misconception"
+"therapeutic misconception",
+"neurosurgery ethics",
+"Parkinson's disease"
 ],
 "usage": {
 "input_tokens": 648,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 687,
-"cost_usd": 0.00168
+"output_tokens": 619,
+"cost_usd": 0.00155
 }
 },
 "sources": [
@@ -6432,11 +6425,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:04:10Z",
+"classified_at": "2026-09-06T17:56:13Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Paper's primary focus was the ethics and methodology of placebo-controlled trials in MS (placebo is the main subject), meeting inclusion rule 5 for placebo science adjuncts.",
+"rationale": "Paper's primary focus was ethical issues about placebo-controlled trials in MS, i.e., placebo science/ethics, which meets inclusion criterion 5.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -6453,7 +6446,6 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"other",
 "other"
 ],
 "outcome_measures": [
@@ -6467,7 +6459,8 @@
 ],
 "mechanisms": [
 "clinical_use_ethics_attitudes",
-"trial_methodology_placebo_response"
+"trial_methodology_placebo_response",
+"history_conceptual"
 ],
 "moderators": [
 "none_reported"
@@ -6476,23 +6469,23 @@
 "not_applicable"
 ]
 },
-"summary": "Discusses ethical and methodological recommendations from a task force on the use of placebo-controlled trials in multiple sclerosis, concluding such trials can be ethical under specified conditions.",
-"key_finding": null,
+"summary": "Discussed ethical and practical issues of placebo-controlled clinical trials in multiple sclerosis and concluded such trials can be ethical under specified informed-consent and treatment-access conditions.",
+"key_finding": "Concluded placebo-controlled trials in MS may be ethical when participants are fully informed and have access to effective therapies outside the trial.",
 "sample_size": null,
 "free_keywords": [
 "multiple sclerosis",
 "task force",
-"ethics",
 "placebo-controlled trials",
-"informed consent",
-"clinical trial design"
+"ethics",
+"clinical equipoise",
+"informed consent"
 ],
 "usage": {
 "input_tokens": 587,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 505,
-"cost_usd": 0.0013
+"output_tokens": 556,
+"cost_usd": 0.00141
 }
 },
 "sources": [
@@ -6642,62 +6635,51 @@
 "oa_pdf_url": null,
 "landing_url": "https://doi.org/10.1076/ceyr.22.5.321.5496",
 "cited_by_count": 34,
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:36:50Z",
+"classified_at": "2026-09-06T17:55:53Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly names 'Expectations' in treatment of retinal diseases, implying placebo/expectation effects as the paper's subject and it is listed as a review.",
-"exclusion_reason": null,
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract and insufficient information in the title to determine whether placebo/nocebo phenomena were an explicit focus versus a general review of expectations in retinal neuroprotection.",
+"exclusion_reason": "insufficient_information",
 "peer_reviewed": true
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
+"study_focus": [],
 "article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
-"condition_domain": [
-"other"
-],
+"condition_domain": [],
 "outcome_measures": [],
-"design": [
-"not_applicable"
-],
-"effects": [
-"not_applicable"
-],
-"mechanisms": [
-"verbal_suggestion_expectation"
-],
+"design": [],
+"effects": [],
+"mechanisms": [],
 "moderators": [],
-"intervention_type": [
-"not_applicable"
-]
+"intervention_type": []
 },
-"summary": "Reviewed the role of patient and treatment expectations in retinal disease management and implications for neuroprotection.",
+"summary": "Insufficient information to determine whether placebo/nocebo phenomena were studied; the paper reviewed expectations and neuroprotection in retinal diseases.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"retina",
-"neuroprotection",
-"retinal disease",
-"expectation"
+"retinal neuroprotection",
+"expectations",
+"retinal diseases",
+"photoreceptors",
+"retinal ganglion cells"
 ],
 "usage": {
-"input_tokens": 586,
+"input_tokens": 458,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 757,
-"cost_usd": 0.00181
+"output_tokens": 608,
+"cost_usd": 0.00148
 }
 },
 "sources": [
@@ -7649,11 +7631,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:05:27Z",
+"classified_at": "2026-09-06T17:56:00Z",
 "screening": {
 "decision": "include",
-"confidence": 0.86,
-"rationale": "Animal experimental study explicitly tested social (observational) conditioning of analgesia and its mechanisms (NMDA and opioid manipulations), meeting criterion 3 for mechanistic placebo-like learning models.",
+"confidence": 0.85,
+"rationale": "Animal experiment explicitly studied social (observational) conditioning of analgesia and its neuropharmacological mediators (NMDA, naloxone), meeting inclusion for mechanisms of conditioned placebo-like analgesia.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -7695,24 +7677,25 @@
 "not_applicable"
 ]
 },
-"summary": "Found that observer mice acquired long-term conditioned analgesia and burying after witnessing demonstrators attacked by flies, and that NMDA antagonism blocked this socially learned conditioned analgesia while naloxone did not.",
-"key_finding": "Socially acquired conditioned analgesia in mice was blocked by NMDA receptor antagonist NPC 12626 but not by naloxone, implicating NMDA-dependent learning rather than opioid-mediated mechanisms.",
+"summary": "Found that observer mice developed socially transmitted conditioned analgesia and avoidance after witnessing fly-attacked demonstrators, and that NMDA receptor blockade before observation prevented acquisition while naloxone reduced acute analgesia but not conditioned responses.",
+"key_finding": "NMDA antagonist (NPC 12626) blocked acquisition of socially transmitted conditioned analgesia; naloxone reduced immediate analgesia but did not block conditioned analgesia.",
 "sample_size": null,
 "free_keywords": [
 "stable fly",
-"conditioned analgesia",
-"social transmission",
+"social learning",
 "naloxone",
-"NPC 12626",
+"NPC12626",
+"conditioned analgesia",
+"self-burying",
 "mice",
-"self-burying"
+"NMDA receptor"
 ],
 "usage": {
 "input_tokens": 733,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 1313,
-"cost_usd": 0.00296
+"output_tokens": 1383,
+"cost_usd": 0.0031
 }
 },
 "sources": [
@@ -8010,11 +7993,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-04T21:01:27Z",
+"classified_at": "2026-09-06T17:56:25Z",
 "screening": {
 "decision": "include",
-"confidence": 0.8,
-"rationale": "Narrative review addressing ethical issues of sham (placebo) operations—placebo science/ethics is the explicit subject.",
+"confidence": 0.75,
+"rationale": "Review article about the ethics and use of sham (placebo) operations makes placebo the main subject and fits 'placebo science' reviews.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -8031,7 +8014,6 @@
 "mixed_unspecified"
 ],
 "condition_domain": [
-"sexual_function",
 "other"
 ],
 "outcome_measures": [
@@ -8051,27 +8033,27 @@
 "none_reported"
 ],
 "intervention_type": [
-"sham_surgery"
+"not_applicable"
 ]
 },
-"summary": "Debated ethical arguments for and against performing sham surgical operations in controlled trials.",
+"summary": "Reviews ethical arguments and considerations about performing sham (placebo) surgical operations.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
 "sham surgery",
 "neurosurgery",
-"research ethics",
+"ethics",
 "informed consent",
 "clinical trials",
-"placebo",
-"deception"
+"placebo surgery",
+"randomized controlled trials"
 ],
 "usage": {
 "input_tokens": 443,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 580,
-"cost_usd": 0.00142
+"output_tokens": 761,
+"cost_usd": 0.00178
 }
 },
 "sources": [
@@ -8499,17 +8481,17 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:06:20Z",
+"classified_at": "2026-09-06T17:55:59Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Measured response expectancies as a predictor/mediator of experimental (cold-pressor) pain experience, making placebo-related expectation mechanisms an explicit focus.",
+"rationale": "Measured anticipatory pain expectancies and tested their (mediating) relation to experimental pain experience, making expectations the paper's focus relevant to placebo/nocebo mechanisms.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
 "tags": {
 "study_focus": [
-"placebo_response"
+"placebo_and_nocebo"
 ],
 "article_type": "empirical_primary",
 "species": "human",
@@ -8526,6 +8508,7 @@
 "self_report"
 ],
 "design": [
+"single_group_pre_post",
 "within_subject_experimental"
 ],
 "effects": [
@@ -8533,32 +8516,37 @@
 ],
 "mechanisms": [
 "verbal_suggestion_expectation",
+"prior_treatment_experience",
 "attention_cognitive_appraisal"
 ],
 "moderators": [
+"personality_traits",
+"mood_anxiety_state",
 "none_reported"
 ],
 "intervention_type": [
 "not_applicable"
 ]
 },
-"summary": "Measured expectancies, catastrophizing and depression in undergraduates before a cold-pressor test and found expectancies mediated the relation between catastrophizing/depression and reported pain.",
-"key_finding": "Pain expectancies partially mediated the relation between catastrophizing (and between depression) and reported pain during cold-pressor; N=120.",
+"summary": "Measured pain and distress expectancies before a cold-pressor task in 120 undergraduates and found expectancies mediated the relation between catastrophizing/depression and reported pain.",
+"key_finding": "Pain expectancies partially mediated the relation between catastrophizing and pain experience, and between depression and pain experience.",
 "sample_size": 120,
 "free_keywords": [
-"cold pressor",
+"cold-pressor",
+"ice water",
 "catastrophizing",
 "depression",
-"expectancy mediation",
+"expectancy",
 "experimental pain",
+"mediation",
 "undergraduates"
 ],
 "usage": {
 "input_tokens": 622,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 618,
-"cost_usd": 0.00154
+"output_tokens": 1098,
+"cost_usd": 0.0025
 }
 },
 "sources": [
@@ -9332,11 +9320,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:05:41Z",
+"classified_at": "2026-09-06T17:56:23Z",
 "screening": {
 "decision": "include",
 "confidence": 0.85,
-"rationale": "Animal experiments manipulated a conditioned fear context to enhance morphine analgesia, testing classical conditioning modulation of drug analgesia (a placebo-like context effect) and sex differences, so placebo/nocebo phenomena were an explicit focus.",
+"rationale": "Animal experiments manipulated a conditioned fear context to alter morphine analgesia (an active-drug context manipulation probing conditioning mechanisms), making placebo-relevant conditioning mechanisms the explicit object of study.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -9369,29 +9357,31 @@
 "neurobiology_opioid"
 ],
 "moderators": [
-"sex_gender"
+"sex_gender",
+"prior_experience"
 ],
 "intervention_type": [
 "active_drug_context_manipulation"
 ]
 },
-"summary": "Found that conditioned fear context enhanced morphine analgesia in male but not female rats, with estrous cycle modulating the effect in females.",
-"key_finding": "Conditioned fear context increased morphine analgesia in males; females showed reduced conditioned enhancement, varying by estrous phase (higher during diestrus I).",
+"summary": "Tested whether a context conditioned with shock enhanced morphine analgesia in male and female rats and found females showed reduced conditioned fear-induced enhancement, varying across estrous phase.",
+"key_finding": "Found that conditioned fear context enhanced morphine analgesia in males but not females overall, with females showing greater enhancement during diestrus I than estrus.",
 "sample_size": null,
 "free_keywords": [
-"rat",
 "morphine",
 "conditioned fear",
+"Sprague-Dawley",
 "sex differences",
 "diestrus",
+"freezing",
 "analgesia"
 ],
 "usage": {
 "input_tokens": 714,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 984,
-"cost_usd": 0.00229
+"output_tokens": 1532,
+"cost_usd": 0.00339
 }
 },
 "sources": [
@@ -10070,26 +10060,24 @@
 "pub_types": [
 "Journal Article"
 ],
-"scope": "adjacent",
+"scope": "review",
 "classification": {
 "taxonomy_version": "1.0.0",
 "prompt_version": "2.0.0",
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_only",
-"classified_at": "2026-09-05T20:37:26Z",
+"classified_at": "2026-09-03T04:24:34Z",
 "screening": {
-"decision": "include",
-"confidence": 0.7,
-"rationale": "Title explicitly addresses the existence/nature of the placebo, indicating placebo is the paper's main subject (conceptual/theoretical discussion).",
+"decision": "uncertain",
+"confidence": 0.3,
+"rationale": "No abstract or full text provided and title alone is insufficient to determine whether the paper is a conceptual/theoretical piece or an empirical study focused on placebo effects.",
 "exclusion_reason": null,
 "peer_reviewed": false
 },
 "tags": {
-"study_focus": [
-"placebo_science_other"
-],
-"article_type": "theory_commentary",
+"study_focus": [],
+"article_type": "narrative_review",
 "species": "not_applicable",
 "population": [],
 "age_group": [],
@@ -10097,27 +10085,25 @@
 "outcome_measures": [],
 "design": [],
 "effects": [],
-"mechanisms": [
-"history_conceptual"
-],
+"mechanisms": [],
 "moderators": [],
 "intervention_type": []
 },
-"summary": "Discusses the conceptual question of whether the placebo exists and the meanings of placebo phenomena.",
+"summary": "No abstract available; title suggests a conceptual or review discussion about the existence/meaning of the placebo, but content is unavailable to confirm scope.",
 "key_finding": null,
 "sample_size": null,
 "free_keywords": [
-"placebo_concept",
+"placebo",
+"philosophy",
 "mind-body",
-"research_design",
-"philosophy"
+"conceptual"
 ],
 "usage": {
-"input_tokens": 559,
+"input_tokens": 381,
 "cache_read_input_tokens": 5888,
 "cache_creation_input_tokens": 0,
-"output_tokens": 560,
-"cost_usd": 0.00141
+"output_tokens": 707,
+"cost_usd": 0.00166
 }
 },
 "sources": [
@@ -10871,11 +10857,11 @@
 "provider": "openai",
 "model": "gpt-5-mini",
 "input_mode": "title_abstract",
-"classified_at": "2026-09-04T21:07:59Z",
+"classified_at": "2026-09-06T17:57:06Z",
 "screening": {
 "decision": "include",
 "confidence": 0.9,
-"rationale": "Randomized double-blind trial explicitly tested intra-operative verbal suggestions versus neutral control to influence postoperative pain and nausea, meeting the criterion for an experimentally isolated context/expectation effect.",
+"rationale": "Randomized trial experimentally manipulated intra-operative verbal suggestions (expectation/context) to test effects on postoperative pain and nausea, making placebo/context effects the stated aim.",
 "exclusion_reason": null,
 "peer_reviewed": true
 },
@@ -10886,19 +10872,18 @@
 "article_type": "empirical_primary",
 "species": "human",
 "population": [
-"surgical_patients"
+"surgical_patients",
+"other_clinical"
 ],
 "age_group": [
 "adults"
 ],
 "condition_domain": [
 "pain",
-"nausea_gi",
-"adverse_events"
+"nausea_gi"
 ],
 "outcome_measures": [
 "self_report",
-"clinical_endpoint",
 "healthcare_utilization"
 ],
 "design": [
@@ -10909,7 +10894,8 @@
 "null_objective"
 ],
 "mechanisms": [
-"verbal_suggestion_expectation"
+"verbal_suggestion_expectation",
+"therapeutic_ritual_context"
 ],
 "moderators": [
 "none_reported"
@@ -10918,23 +10904,24 @@
 "verbal_suggestion_only"
 ]
 },
-"summary": "Randomized double-blind trial tested positive intra-operative taped suggestions versus white noise in 140 women undergoing hysterectomy and found no reduction in postoperative pain, nausea, or analgesic/anti-emetic use.",
-"key_finding": "Positive intra-operative suggestions did not reduce postoperative pain scores, nausea/vomiting, morphine consumption, or anti-emetic use.",
+"summary": "Randomized double-blind trial tested positive intra-operative auditory suggestions versus white noise in 140 hysterectomy patients and found no reduction in postoperative pain, nausea, or morphine/anti-emetic use.",
+"key_finding": "Positive intra-operative suggestions did not reduce postoperative pain or nausea scores nor morphine or anti-emetic consumption (N=140).",
 "sample_size": 140,
 "free_keywords": [
 "hysterectomy",
 "intra-operative suggestion",
-"taped suggestions",
-"postoperative pain",
+"auditory suggestion",
+"general anaesthesia",
 "postoperative nausea",
+"postoperative pain",
 "morphine consumption"
 ],
 "usage": {
-"input_tokens": 592,
-"cache_read_input_tokens": 5888,
+"input_tokens": 6480,
+"cache_read_input_tokens": 0,
 "cache_creation_input_tokens": 0,
-"output_tokens": 947,
-"cost_usd": 0.00219
+"output_tokens": 795,
+"cost_usd": 0.00321
 }
 },
 "sources": [

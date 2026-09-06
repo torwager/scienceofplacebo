@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How the database is built | Science of Placebo</title>
+<meta name="description" content="Exact search queries, seed sets, screening and inclusion rules, and the keyword-tagging process behind the Science of Placebo database, with its limitations for systematic reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="Science of Placebo"><meta property="og:title" content="How the database is built | Science of Placebo"><meta property="og:description" content="Exact search queries, seed sets, screening rules and the tagging process behind the database."><meta property="og:type" content="website"><meta property="og:url" content="https://scienceofplacebo.org/methods.html"><meta property="og:image" content="https://scienceofplacebo.org/assets/og.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://scienceofplacebo.org/assets/og.jpg">
+<link rel="canonical" href="https://scienceofplacebo.org/methods.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="assets/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<!-- Cloudflare Web Analytics (cookie-free, no personal data) --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "e3230426a27e4a2cbef073af1a539766"}'></script>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+  .prose pre { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1rem; font-size: .78rem; line-height: 1.5; overflow-x: auto; white-space: pre-wrap; }
+  .prose table { border-collapse: collapse; width: 100%; font-size: .9rem; margin: .6rem 0 1rem; }
+  .prose th, .prose td { text-align: left; padding: .4rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .prose th { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .toc { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .8rem 1.1rem; font-size: .9rem; margin-bottom: 1.4rem; }
+  .toc a { margin-right: 1rem; }
+  .prose h2 { scroll-margin-top: 90px; }
+  .note { border-left: 3px solid var(--amber); background: var(--amber-soft); padding: .7rem 1rem; border-radius: 0 10px 10px 0; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<main class="wrap">
+  <div class="page-head"><p class="eyebrow">Methods</p><h1>How the database is built</h1>
+    <p>What is searched, how papers are screened, where the historical collection came from, and how the keyword tags are assigned. Read this before using the database for a systematic review or a bibliometric claim; the last section says what it is and is not suitable for.</p></div>
+  <div class="toc"><a href="#sources">Sources and queries</a><a href="#seeds">Historical collection</a><a href="#screening">Screening rules</a><a href="#tags">Keyword tags</a><a href="#quality">Quality and limitations</a><a href="#data">Data and code</a></div>
+  <div class="prose">
+
+    <h2 id="sources">1. Sources searched, and the exact queries</h2>
+    <p>A worker runs once a day (about 09:20 UTC) and queries three sources. Every candidate it has ever looked at is remembered, so a paper is screened once; the windows below overlap on purpose.</p>
+    <table><tr><th>Source</th><th>What it contributes</th><th>Window</th></tr>
+      <tr><td><b>PubMed</b> (NCBI E-utilities)</td><td>Primary source. Two queries: a <i>core</i> query built from MeSH headings and placebo/nocebo phrases, and a <i>broad</i> net of any record mentioning placebo or nocebo in title or abstract that the core query missed. Both go to the same screening.</td><td>Records added to PubMed in the last 5 days (Entrez date)</td></tr>
+      <tr><td><b>Europe PMC</b></td><td>Preprints (medRxiv, bioRxiv, PsyArXiv, Research Square and others indexed there) matching placebo/nocebo phrases in title or abstract.</td><td>First indexed in the last 5 days</td></tr>
+      <tr><td><b>OpenAlex</b></td><td>Journal articles and preprints outside PubMed matching the phrase set below, plus open-access links and citation counts for everything.</td><td>Published in the last 60 days</td></tr></table>
+    <p><b>PubMed core query</b> (tuned against the JIPS lists: it recovers 90% of the papers JIPS selected in 2016–2025; the misses are mainly letters and commentaries, which are excluded anyway):</p>
+<pre>("Placebo Effect"[MeSH] OR "Nocebo Effect"[MeSH] OR placebo effect*[tiab] OR placebo response*[tiab]
+ OR placebo responder*[tiab] OR placebo analgesi*[tiab] OR placebo hypoalgesi*[tiab] OR nocebo*[tiab]
+ OR "open-label placebo*"[tiab] OR "open label placebo*"[tiab] OR "placebo mechanism*"[tiab]
+ OR "placebo research"[tiab] OR "placebo studies"[tiab] OR "expectancy effect*"[tiab]
+ OR "treatment expectation*"[tiab] OR "placebo condition*"[tiab] OR "placebo manipulation*"[tiab]
+ OR "placebo group*"[ti] OR "placebo treatment*"[ti] OR "placebo arm*"[ti] OR "placebo rate*"[tiab]
+ OR "response to placebo"[tiab] OR "sham surgery"[ti] OR "sham acupuncture"[ti]
+ OR "placebo-induced"[tiab] OR "placebo induced"[tiab] OR "nocebo-induced"[tiab])
+OR (placebo*[ti] NOT ("placebo-controlled"[ti] OR "placebo controlled"[ti] OR "versus placebo"[ti]
+ OR "vs placebo"[ti] OR "vs. placebo"[ti] OR "compared with placebo"[ti] OR "compared to placebo"[ti]
+ OR "placebo-controlled"[tiab]))</pre>
+    <p><b>PubMed broad net</b>: <code>(placebo*[tiab] OR nocebo*[tiab]) NOT (core query)</code>. This admits roughly a thousand records a month, nearly all placebo-controlled trials; the screener rejects them, at the cost of about a fifth of a cent each.</p>
+    <p><b>Europe PMC</b>: <code>TITLE:"placebo effect*" OR TITLE:nocebo OR TITLE:"placebo response*" OR TITLE:"open-label placebo" OR TITLE:"placebo analgesia" OR ABSTRACT:"placebo effect*" OR ABSTRACT:"nocebo effect*" OR ABSTRACT:"placebo response*" OR ABSTRACT:"open-label placebo"</code>, restricted to preprints (<code>SRC:PPR</code>); journal articles are left to PubMed.</p>
+    <p><b>OpenAlex</b>: title-and-abstract search for <code>"placebo effect" | "placebo effects" | "placebo response" | "placebo responses" | "placebo analgesia" | nocebo | "open-label placebo" | "treatment expectation" | "expectancy effects"</code>, types article and preprint.</p>
+    <p><b>Not searched</b>: Google Scholar (no API; its terms forbid automated querying), Embase, Scopus, Web of Science and PsycINFO (subscription databases without a free API). See the limitations section.</p>
+
+    <h2 id="seeds">2. Where the historical collection came from</h2>
+    <table><tr><th>Seed</th><th>Method</th><th>Size</th></tr>
+      <tr><td><b>JIPS monthly lists</b></td><td>Every monthly "placebo and nocebo publications" post of the <a href="https://jips.online/" target="_blank" rel="noopener">Journal of Interdisciplinary Placebo Studies</a> database (June 2016 to April 2025), read through the site's public post feed; PubMed ids extracted and the records fetched from PubMed. JIPS hand-selects from PubMed hits for "placebo" and "nocebo"; their selections went through the same screening as everything else, and papers listed by JIPS are marked as such on their pages.</td><td>109 posts, 2,268 papers</td></tr>
+      <tr><td><b>PubMed backfill</b></td><td>The core query above with no date limit, run once (September 2026), all years.</td><td>22,224 candidates, 1940–2026</td></tr>
+      <tr><td><b>Alternative PubMed queries</b></td><td>Eleven queries the core query does not cover: placebo with no-treatment, natural-history, waitlist or treatment-as-usual arms; expectancy or expectation in the title with pain, symptom or treatment terms; conditioning in the title with analgesia, immune, drug or placebo terms; suggestion in the title with symptom terms; sham effects; context and meaning-response terms; open-hidden and balanced-placebo designs; placebo with imaging, opioid, dopamine, naloxone or spinal terms; the "Placebos" MeSH heading; placebo analgesia mechanisms; placebo-response predictors. Never-seen records first passed a title-level screen (a model judging from title and journal only whether the placebo or nocebo focus is explicit; about 6% pass), then the full screen.</td><td>53,283 records; 3,043 fully screened; 518 core added</td></tr>
+      <tr><td><b>Reference mining</b></td><td>Reference lists of the full-text PDFs in the project's collection were parsed; references whose text mentions placebo, nocebo, expectancy, suggestion, conditioning or sham were resolved to PubMed or OpenAlex records and screened. This is where older papers that never used the word placebo in an abstract come from.</td><td>14,063 references; 1,528 screened; 172 core added</td></tr>
+      <tr><td><b>Citation audit</b></td><td>The 6,000 most-cited works in Semantic Scholar whose titles mention placebo, nocebo, sham, expectancy, conditioning or suggestion were checked against the collection; the 413 never seen were screened (nearly all were efficacy trials and were excluded).</td><td>6,000 checked</td></tr></table>
+
+    <h2 id="screening">3. Screening: what is included</h2>
+    <p>Two stages. A rule-based prefilter removes, without any model call: comments, editorials, letters, news, errata and retractions (by PubMed publication type); non-English records; study protocols and trial registrations without results (publication type "Clinical Trial Protocol" or a title containing "study protocol", "trial protocol", "protocol for a", "protocol paper").</p>
+    <p>Everything else is read by a large language model (currently OpenAI gpt-5-mini at low reasoning effort; the same prompt runs on Claude Sonnet 5 when an Anthropic key is configured) from the title, abstract, journal, publication types and MeSH terms, with full text when available. The prompt encodes the definitions of Wager and Atlas (2015, <i>Nature Reviews Neuroscience</i>). In summary, a paper is <b>included</b> when placebo or nocebo phenomena are an explicit focus, in one of these forms:</p>
+    <ul>
+      <li><b>Placebo or nocebo effect, experimentally isolated</b>: a placebo, sham, or manipulated treatment context contrasted with a reduced or absent context (placebo versus no treatment, natural history, waitlist or treatment as usual; open versus hidden administration; balanced placebo design; conditioning versus control; verbal suggestion versus neutral instruction; high- versus low-expectation instructions; dose, price, brand or route manipulations of an otherwise identical treatment). A drug-versus-placebo comparison is <i>not</i> a placebo-effect design.</li>
+      <li><b>Placebo or nocebo response as the object of study</b>: change on an inert or sham treatment (or adverse events on placebo) is what the paper is about: magnitude, time course, predictors or moderators (expectation, quality of care, suggestion, personality, prior experience, trial characteristics), neural or physiological correlates, or meta-analyses pooling placebo or sham arms.</li>
+      <li><b>Mechanisms and moderators</b> of the above, including animal models with a cue or context contrast.</li>
+      <li><b>Reviews, meta-analyses and theory</b> whose subject is placebo or nocebo effects or responses.</li>
+      <li><b>Placebo science more broadly</b> (attitudes and prescribing surveys, ethics, blinding methodology, placebo manufacturing, education, history): stored as <span class="badge adjacent">adjacent</span> rather than core.</li>
+    </ul>
+    <p><b>Excluded</b>: efficacy or safety trials, secondary analyses and meta-analyses of treatment versus placebo whose analyses concern the active treatment, even when the abstract remarks that a placebo effect may explain improvement in both groups or measures expectations in both arms (the rule is to exclude when in doubt); papers measuring expectations, satisfaction or context without relating them to a placebo or nocebo effect or response; papers where placebo appears only as a keyword or phrase; non-scientific items; protocols.</p>
+    <p>The model returns include, exclude or uncertain with a confidence and a one-sentence rationale, shown on each paper page. A rule then assigns the <b>scope</b>: <i>core</i> when included with a study focus of placebo effect, nocebo effect, placebo response or nocebo response; <i>adjacent</i> when included only under "placebo science more broadly" or as a letter or editorial; <i>exclude</i> otherwise, and always for protocols. Uncertain decisions go to a review queue. Records with no abstract anywhere (checked in PubMed, Europe PMC, Semantic Scholar and Crossref) are decided from the title alone, included only when the placebo or nocebo focus is explicit in the title, and carry a "title only" badge.</p>
+    <p>The feed shows core papers; the database shows core and adjacent papers by default, with a toggle. The full prompt is public in the repository (<code>pipeline/prompts/classify_v2.md</code>, version 2.0.0, September 2026). Every stored paper records which prompt version and model judged it.</p>
+
+    <h2 id="tags">4. Keyword tags</h2>
+    <p>Tags are assigned in the same model call as the screening decision, from a fixed controlled vocabulary of 170 values on 12 axes. The model may only use values from the vocabulary; each value has a one-line definition the model sees. Tags describe what the paper studied or measured, not what its introduction discusses.</p>
+    <table><tr><th>Axis</th><th>Single or multiple</th><th>Values (examples)</th></tr>
+      <tr><td>Study focus</td><td>multiple</td><td>placebo effect, nocebo effect, placebo response, nocebo response, placebo and nocebo, placebo science (other)</td></tr>
+      <tr><td>Article type</td><td>single</td><td>empirical primary study, secondary analysis, meta-analysis, systematic review, narrative review, theory or commentary, case report, methods, editorial or letter</td></tr>
+      <tr><td>Species</td><td>single</td><td>human, non-human animal, computational</td></tr>
+      <tr><td>Population</td><td>multiple</td><td>healthy adults, healthy children, healthy older adults, chronic pain, acute clinical pain, chronic fatigue, depression, anxiety disorders, cancer, Parkinson's and movement disorders, IBS and GI, allergy and respiratory, cardiovascular, sleep, substance use, psychosis, dermatology, surgical patients, athletes, clinicians, general public, and others (29 values)</td></tr>
+      <tr><td>Age group</td><td>single</td><td>children and adolescents, adults, older adults, mixed</td></tr>
+      <tr><td>Domain</td><td>multiple</td><td>the outcome domain: pain, itch, nausea and GI, motor function, mood, anxiety and stress, fatigue, sleep, cognition, immune and inflammation, cardiovascular, respiratory, endocrine, sport performance, sensory perception, appetite, sexual function, addiction, adverse events, global health and quality of life (21 values)</td></tr>
+      <tr><td>Outcome measures</td><td>multiple</td><td>self-report, behavioral or performance, clinician-rated, clinical endpoint, autonomic, neuroendocrine, immune or inflammatory, structural MRI, fMRI, PET metabolism, PET neurochemical, EEG, MEG, NIRS, spinal or peripheral electrophysiology, TMS physiology, motor kinematics, genetic or molecular, pharmacokinetic, healthcare use (22 values)</td></tr>
+      <tr><td>Design</td><td>multiple</td><td>parallel-groups RCT, crossover RCT, within-subject experiment, open versus hidden, balanced placebo, placebo versus no-treatment arm, single-group pre-post, placebo-arm secondary analysis, observational, survey or qualitative, animal experiment, computational, meta-analytic (14 values)</td></tr>
+      <tr><td>Findings</td><td>multiple</td><td>effect on subjective outcomes, effect on objective outcomes, null on subjective, null on objective, mixed or inconsistent</td></tr>
+      <tr><td>Mechanism or topic</td><td>multiple</td><td>verbal suggestion and expectation, classical conditioning, social learning, open-label placebo, treatment cues (dose, route, price, brand), provider–patient interaction, therapeutic ritual and context, opioid, dopamine and other neurochemistry, neural systems, genetics, computational and predictive processing, emotion regulation, attention and appraisal, prior experience, nocebo communication and disclosure, media and social contagion, clinical use and ethics, trial methodology, harnessing placebo effects clinically, history and concepts (23 values)</td></tr>
+      <tr><td>Moderators</td><td>multiple</td><td>factors tested as modifying the effect: neurostimulation, pharmacological manipulation, personality, genetics, sex and gender, age, culture, prior experience, mood and anxiety state, expectation level, provider characteristics, treatment characteristics, disease severity, trial characteristics</td></tr>
+      <tr><td>Placebo type</td><td>multiple</td><td>the vehicle: inert pill or capsule, saline injection or infusion, topical cream, sham device, sham surgery, sham acupuncture, sham neurostimulation, sham psychological intervention, digital or virtual, open-label placebo, active-drug context manipulation, verbal suggestion only, placebo food or drink, sham exercise</td></tr></table>
+    <p>The model also writes the one-sentence summary on each card, a key finding where the abstract states one, the analysed sample size, and up to eight free keywords not covered by the vocabulary (specific conditions, drugs, paradigms, brain regions). The "Empirical, review or theory" chart on the bibliometrics page groups the article-type tag. The full vocabulary with definitions and chip colours is in <code>pipeline/taxonomy.json</code>.</p>
+
+    <h2 id="quality">5. Quality, error, and suitability for systematic reviews</h2>
+    <div class="note"><p style="margin:0"><b>This database is a discovery and monitoring tool, not a registered search.</b> Screening and tagging are done by a language model from titles and abstracts (full text only where available), with no second reviewer, and the query set is PubMed-centred and English-only. For a systematic review or meta-analysis, use it to find candidates, seed a search strategy, or check a completed search for misses; then run and report your own reproducible search in the databases your protocol requires and screen the results yourself.</p></div>
+    <ul>
+      <li><b>Model error</b>: tags and inclusion decisions are wrong in some cases. Spot checks against the JIPS selections found the exclusions to be largely correct (letters, comments, non-English, off-topic), but a formal accuracy study against a hand-rated gold set has not yet been done; when it is, precision and recall will be reported here. Each paper page shows the model's rationale and confidence and has a link to report an error; corrections override the model.</li>
+      <li><b>Coverage</b>: PubMed-indexed literature is well covered; journals outside PubMed and Europe PMC (much of psychology and social science, books, chapters, theses) are covered only where OpenAlex surfaces them. Embase, Scopus, Web of Science and PsycINFO are not searched.</li>
+      <li><b>Language</b>: non-English records are excluded at the prefilter.</li>
+      <li><b>Abstract-level tagging</b>: sample size, outcome measures and findings are as reported in the abstract; "title only" papers have tags derived from the title alone and should be verified before use.</li>
+      <li><b>Time</b>: the current year is incomplete in every chart; PubMed adds MeSH headings weeks after a record appears, so a paper found only through MeSH can appear late.</li>
+      <li><b>Provenance</b>: every record stores its source (which query or seed found it), the date it was added, and the prompt and model versions that judged it, so a subset can be described precisely in a methods section (for example, "papers tagged placebo effect and fMRI, found by the PubMed core query, screened by prompt 2.0.0").</li>
+    </ul>
+
+    <h2 id="data">6. Data and code</h2>
+    <p>The database is plain JSON in the public repository (<a href="https://github.com/torwager/scienceofplacebo" target="_blank" rel="noopener">github.com/torwager/scienceofplacebo</a>): one file per publication year under <code>data/papers/</code>, plus the ledger of every screened candidate. The pipeline (queries, prefilter, prompt, taxonomy, build) is in the same repository and runs as a scheduled GitHub Actions workflow; the whole history of the database is in git. Metadata, tags and summaries are CC-BY-4.0; abstracts remain the copyright of their publishers. Search results and personal lists can be exported as BibTeX, RIS, DOI lists or CSV from the database and My list pages.</p>
+  </div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/layout.js"></script>
+</body>
+</html>
