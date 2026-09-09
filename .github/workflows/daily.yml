@@ -56,8 +56,10 @@ jobs:
           git add data/
           if git diff --cached --quiet; then echo "no data changes"; else
             git commit -m "data: daily update $(date -u +%F)"
+            git stash --include-untracked -q || true   # generated site files must not block the rebase
             git pull --rebase origin main
             git push origin HEAD:main
+            git stash pop -q || true
           fi
       - name: Export discussions for the board page
         env:
