@@ -22,3 +22,15 @@ One-time backfill scripts live in `scripts/` (`backfill_fetch.py` → `backfill_
 ## Licences
 
 Code: MIT. Metadata, tags and summaries: CC-BY-4.0 (please credit Science of Placebo and, for the 2016–2025 seed set, JIPS). Abstracts remain the copyright of their publishers and are reproduced for indexing and discovery.
+
+## Seeding from subscription databases (Embase, PsycINFO, Scopus, Web of Science)
+
+These have no free API, so they are ingested from manual exports a few times a year:
+
+1. In the database (e.g. Embase via Ovid at the Dartmouth library), run a search such as
+   `(placebo effect* or nocebo* or placebo response* or "open-label placebo" or placebo analgesia).ti,ab.`
+   limited to the period since the last export, and export all results as **RIS** (with abstracts) or CSV.
+2. Run `python3 scripts/ingest_export.py ~/Downloads/embase-2026-09.ris --source embase`.
+   Records already screened are skipped; the rest are resolved to PubMed/OpenAlex where possible, prefiltered,
+   classified with the current prompt, and merged. Cost is about $0.002 per new record.
+3. Then `python3 scripts/integrity.py && python3 -m pipeline.build_site`, commit `data/` and push.
